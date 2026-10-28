@@ -4,12 +4,52 @@
   author: "Silvère-Martin Michiellot & Antigravity"
 )
 
+// ==========================================
+// RÈGLES DE FOLIOTAGE (CHARTE TYPOGRAPHIQUE DE L'ÉDITION)
+// - La couverture (plats 1, 2, 3 et 4) n'est jamais comptée ni foliotée :
+//   le compteur démarre à 1 sur la première belle page du bloc intérieur (faux-titre).
+// - Pages impaires = recto (droite) ; pages paires = verso (gauche).
+// - Pages liminaires (1 faux-titre, 2 blanche, 3 grand titre, 4 mentions légales,
+//   5 exergue/dédicace, 6 blanche, puis sommaire) : comptées mais muettes.
+// - Toute ouverture de volume, de chapitre ou d'annexe se fait en belle page (impaire)
+//   et reste muette ; le premier folio visible suit l'ouverture du Volume I.
+// - Pages blanches : comptées dans l'ordre arithmétique, jamais de folio ni de titre courant.
+// - Folio sur la marge extérieure : à gauche sur les versos (pairs), à droite sur les rectos (impairs).
+// ==========================================
+
+// Saut vers la prochaine belle page (impaire) avec balisage des pages blanches intercalaires
+#let recto() = {
+  [#metadata("fin-section") <fin-section>]
+  pagebreak(weak: true, to: "odd")
+  [#metadata("debut-section") <debut-section>]
+}
+
+// Le folio (et le titre courant) n'est visible que sur les pages de texte courant :
+// ni liminaire, ni page d'ouverture, ni page blanche.
+#let folio-visible() = {
+  let p = here().page()
+  let debut = query(<debut-texte>)
+  if debut.len() == 0 or p <= debut.first().location().page() { return false }
+  let fins = query(<fin-section>)
+  let debuts = query(<debut-section>)
+  for (i, d) in debuts.enumerate() {
+    let dp = d.location().page()
+    if dp == p { return false }
+    if i < fins.len() and p < dp {
+      let m = fins.at(i).location()
+      let mp = m.page()
+      if mp < p { return false }
+      if mp == p and m.position().y < 2.65cm { return false }
+    }
+  }
+  true
+}
+
 #set page(
   paper: "a4",
   margin: (top: 2.4cm, bottom: 2.4cm, left: 2.2cm, right: 2.2cm),
   header: context {
-    let page-num = counter(page).get().first()
-    if page-num > 4 [
+    if folio-visible() [
       #let cur-h2 = query(heading.where(level: 2)).filter(h => h.location().page() == here().position().page)
       #let ch-title = if cur-h2.len() > 0 {
         cur-h2.first().body
@@ -35,17 +75,19 @@
     ]
   },
   footer: context {
-    let page-num = counter(page).get().first()
-    if page-num > 2 [
-      #line(length: 100%, stroke: 0.5pt + rgb("#cbd5e1"))
-      #v(3pt)
-      #grid(
-        columns: (1fr, 1fr),
-        align: (left, right),
-        text(size: 8pt, fill: rgb("#94a3b8"), font: "Liberation Sans", style: "italic")[LA VOIE DU NOMBRE — Une Odyssée Constructive],
-        text(size: 8.5pt, fill: rgb("#0f172a"), font: "Liberation Sans", weight: "bold")[Page #page-num]
-      )
-    ]
+    if folio-visible() {
+      let page-num = counter(page).get().first()
+      let titre = text(size: 8pt, fill: rgb("#94a3b8"), font: "Liberation Sans", style: "italic")[LA VOIE DU NOMBRE — Une Odyssée Constructive]
+      let folio = text(size: 8.5pt, fill: rgb("#0f172a"), font: "Liberation Sans", weight: "bold")[Page #page-num]
+      line(length: 100%, stroke: 0.5pt + rgb("#cbd5e1"))
+      v(3pt)
+      // Folio toujours côté marge extérieure (jamais côté reliure)
+      if calc.even(page-num) {
+        grid(columns: (1fr, 1fr), align: (left, right), folio, titre)
+      } else {
+        grid(columns: (1fr, 1fr), align: (left, right), titre, folio)
+      }
+    }
   }
 )
 
@@ -267,6 +309,46 @@
 ]
 
 #pagebreak()
+// Plat 2 (intérieur de couverture) : hors décompte, jamais folioté
+#box()
+#pagebreak()
+
+// Début du bloc intérieur : la première belle page est la page 1 (muette)
+#counter(page).update(1)
+
+// ==========================================
+// PAGE 1 (RECTO) — FAUX-TITRE (MUETTE)
+// ==========================================
+#align(center + horizon)[
+  #text(size: 22pt, weight: "bold", fill: byrne-dark, font: "Liberation Serif", tracking: 0.06em)[LA VOIE DU NOMBRE]
+]
+#pagebreak()
+
+// PAGE 2 (VERSO) — PAGE BLANCHE (MUETTE)
+#box()
+#pagebreak()
+
+// ==========================================
+// PAGE 3 (RECTO) — GRAND TITRE (MUETTE)
+// ==========================================
+#align(center)[
+  #v(3.5cm)
+  #text(size: 13pt, weight: "bold", fill: byrne-blue, font: "Liberation Sans")[Silvère-Martin Michiellot & Antigravity]
+  #v(1.6cm)
+  #text(size: 32pt, weight: "bold", fill: byrne-dark, font: "Liberation Serif")[LA VOIE DU NOMBRE]
+  #v(0.4cm)
+  #line(length: 30%, stroke: 1pt + byrne-yellow)
+  #v(0.4cm)
+  #text(size: 14pt, weight: "bold", fill: byrne-red, font: "Liberation Sans")[Une Odyssée Constructive, du Premier Caillou au Baccalauréat]
+  #v(1fr)
+  #text(size: 10pt, fill: byrne-slate, font: "Liberation Sans")[ÉDITION INTÉGRALE DE RÉFÉRENCE — 2026]
+  #v(0.2cm)
+  #text(size: 9pt, fill: byrne-slate, font: "Liberation Sans")[Diffusion ouverte sous licence libre CC BY-SA 4.0]
+  #v(1.5cm)
+]
+#pagebreak()
+
+// PAGE 4 (VERSO) — MENTIONS LÉGALES (MUETTE)
 
 // ==========================================
 // 2. MENTIONS LÉGALES & COPYRIGHT (SANS FAUX ISBN)
@@ -329,6 +411,12 @@
 
 #pagebreak()
 
+// PAGE 6 (VERSO) — PAGE BLANCHE (MUETTE)
+#box()
+#pagebreak()
+
+// PAGE 7 (RECTO) ET SUIVANTES — SOMMAIRE (LIMINAIRE, MUET)
+
 // ==========================================
 // 4. SOMMAIRE GÉNÉRAL & DÉTAILLÉ (DEPTH: 2)
 // ==========================================
@@ -338,16 +426,17 @@
   depth: 2
 )
 
-#pagebreak()
+// Fin des pages liminaires : le folio devient visible après l'ouverture du Volume I
+#metadata("debut-texte") <debut-texte>
 
 
-#pagebreak()
+#recto()
 = VOLUME I --- L'ÂGE DE LA MAIN ET DE LA SAVANE (6 - 8 ans / CP - CE1)
 <volume-i-lâge-de-la-main-et-de-la-savane-6---8-ans-cp---ce1>
 
 #divider()
 
-#pagebreak()
+#recto()
 == CHAPITRE 1 : Les Yeux du Singe et le Sac de Cailloux
 <chapitre-1-les-yeux-du-singe-et-le-sac-de-cailloux>
 #quote_box[
@@ -1036,7 +1125,7 @@ de Dix] !
 
 #divider()
 
-#pagebreak()
+#recto()
 == CHAPITRE 2 : La Main à Cinq Doigts et les Paquets de Dix
 <chapitre-2-la-main-à-cinq-doigts-et-les-paquets-de-dix>
 #quote_box[
@@ -1697,7 +1786,7 @@ Justice] !
 
 #divider()
 
-#pagebreak()
+#recto()
 == CHAPITRE 3 : La Chasse Partagée et la Balance de Justice
 <chapitre-3-la-chasse-partagée-et-la-balance-de-justice>
 #quote_box[
@@ -2302,7 +2391,7 @@ Voyageuse] !
 
 #divider()
 
-#pagebreak()
+#recto()
 == CHAPITRE 4 : Le Boulier du Marchand et la Retenue Voyageuse
 <chapitre-4-le-boulier-du-marchand-et-la-retenue-voyageuse>
 #quote_box[
@@ -3207,7 +3296,7 @@ Magiques] !
 
 #divider()
 
-#pagebreak()
+#recto()
 == CHAPITRE 5 : Le Mur de Briques et les Rectangles Magiques
 <chapitre-5-le-mur-de-briques-et-les-rectangles-magiques>
 #quote_box[
@@ -4032,7 +4121,7 @@ Rendez-vous au #strong[Chapitre 6 : La Coudée du Pharaon et le Sablier]
 
 #divider()
 
-#pagebreak()
+#recto()
 == CHAPITRE 6 : La Coudée du Pharaon et le Sablier
 <chapitre-6-la-coudée-du-pharaon-et-le-sablier>
 #quote_box[
@@ -4673,7 +4762,7 @@ Les Formes du Monde et la Ficelle du Jardinier] !
 
 #divider()
 
-#pagebreak()
+#recto()
 == CHAPITRE 7 : Les Formes du Monde et la Ficelle du Jardinier
 <chapitre-7-les-formes-du-monde-et-la-ficelle-du-jardinier>
 #quote_box[
@@ -5284,13 +5373,13 @@ le #strong[Volume II : Les Pierres Rebelles et les Nombres Solitaires] !
 
 #divider()
 
-#pagebreak()
+#recto()
 = VOLUME II --- LE SECRET DU PARTAGE ET LES GRANDEURS DU MONDE (8 - 11 ans / CE2 - CM2)
 <volume-ii-le-secret-du-partage-et-les-grandeurs-du-monde-8---11-ans-ce2---cm2>
 
 #divider()
 
-#pagebreak()
+#recto()
 == CHAPITRE 8 : Les Pierres Rebelles et les Nombres Solitaires
 <chapitre-8-les-pierres-rebelles-et-les-nombres-solitaires>
 #quote_box[
@@ -5777,7 +5866,7 @@ premiers multipliés entre eux].
 
 #divider()
 
-#pagebreak()
+#recto()
 == CHAPITRE 9 : Le Reste du Festin et les Équipes de Jeu
 <chapitre-9-le-reste-du-festin-et-les-équipes-de-jeu>
 #quote_box[
@@ -6621,7 +6710,7 @@ Galette Brisée et le Tamis de Mesure] !
 
 #divider()
 
-#pagebreak()
+#recto()
 == CHAPITRE 10 : La Galette Brisée et le Tamis de Mesure
 <chapitre-10-la-galette-brisée-et-le-tamis-de-mesure>
 #quote_box[
@@ -7268,7 +7357,7 @@ de Simon Stevin] !
 
 #divider()
 
-#pagebreak()
+#recto()
 == CHAPITRE 11 : Les Dixièmes de Simon Stevin
 <chapitre-11-les-dixièmes-de-simon-stevin>
 #quote_box[
@@ -7911,7 +8000,7 @@ Mètre de la Révolution] !
 
 #divider()
 
-#pagebreak()
+#recto()
 == CHAPITRE 12 : Le Mètre de la Révolution
 <chapitre-12-le-mètre-de-la-révolution>
 #quote_box[
@@ -8544,7 +8633,7 @@ Grand-Mère et la Règle de Trois] !
 
 #divider()
 
-#pagebreak()
+#recto()
 == CHAPITRE 13 : La Recette de la Grand-Mère et la Règle de Trois
 <chapitre-13-la-recette-de-la-grand-mère-et-la-règle-de-trois>
 #quote_box[
@@ -9193,7 +9282,7 @@ froids que le zéro ? Plongeons de l'autre côté du miroir au
 
 #divider()
 
-#pagebreak()
+#recto()
 == CHAPITRE 14 : L'Ardoise du Marchand et le Trou de Sable
 <chapitre-14-lardoise-du-marchand-et-le-trou-de-sable>
 #quote_box[
@@ -9817,13 +9906,13 @@ ans)] !
 
 #divider()
 
-#pagebreak()
+#recto()
 = VOLUME III --- L'ÉTOILE D'ALEXANDRIE ET L'ESPACE EUCLIDIEN (11 - 13 ans / 6e - 5e)
 <volume-iii-létoile-dalexandrie-et-lespace-euclidien-11---13-ans-6e---5e>
 
 #divider()
 
-#pagebreak()
+#recto()
 == CHAPITRE 15 : La Crue du Nil et la Corde à Treize Nœuds
 <chapitre-15-la-crue-du-nil-et-la-corde-à-treize-nœuds>
 #quote_box[
@@ -10348,7 +10437,7 @@ Vérification : $38 + 142 + 38 + 142 = 360$, un tour complet. ✔
 
 #divider()
 
-#pagebreak()
+#recto()
 == CHAPITRE 16 : La Roue du Potier et le Secret d'Archimède
 <chapitre-16-la-roue-du-potier-et-le-secret-darchimède>
 #quote_box[
@@ -11091,7 +11180,7 @@ semblables], que nous allons percer au chapitre suivant.
 
 #divider()
 
-#pagebreak()
+#recto()
 == CHAPITRE 17 : L'Ombre de la Pyramide et le Bâton Planté
 <chapitre-17-lombre-de-la-pyramide-et-le-bâton-planté>
 #quote_box[
@@ -11841,7 +11930,7 @@ de la notation scientifique] !
 
 #divider()
 
-#pagebreak()
+#recto()
 == CHAPITRE 18 : Le Grain de Riz sur l'Échiquier
 <chapitre-18-le-grain-de-riz-sur-léchiquier>
 #quote_box[
@@ -12561,7 +12650,7 @@ mystique de Crotone avec #strong[le Théorème de Pythagore] !
 
 #divider()
 
-#pagebreak()
+#recto()
 == CHAPITRE 19 : Le Secret Interdit des Pythagoriciens
 <chapitre-19-le-secret-interdit-des-pythagoriciens>
 #quote_box[
@@ -13280,7 +13369,7 @@ pourquoi « moins par moins donne plus » ? C'est le secret de
 
 #divider()
 
-#pagebreak()
+#recto()
 == CHAPITRE 20 : L'Île au Trésor et les Deux Sentiers
 <chapitre-20-lîle-au-trésor-et-les-deux-sentiers>
 #quote_box[
@@ -13958,7 +14047,7 @@ chapitre suivant !
 
 #divider()
 
-#pagebreak()
+#recto()
 == CHAPITRE 21 : Le Percepteur et les Cent Morceaux
 <chapitre-21-le-percepteur-et-les-cent-morceaux>
 #quote_box[
@@ -14727,13 +14816,13 @@ avec des lettres comme $x$, et où la balance de justice devient une
 
 #divider()
 
-#pagebreak()
+#recto()
 = VOLUME IV --- L'ALCHIMIE DES SYMBOLES ET LE FEU ALGÉBRIQUE (13 - 15 ans / 4e - 3e)
 <volume-iv-lalchimie-des-symboles-et-le-feu-algébrique-13---15-ans-4e---3e>
 
 #divider()
 
-#pagebreak()
+#recto()
 == CHAPITRE 22 : Le Sac Mystère sur la Balance d'Al-Khwarizmi
 <chapitre-22-le-sac-mystère-sur-la-balance-dal-khwarizmi>
 #quote_box[
@@ -15167,7 +15256,7 @@ sait résoudre.
 
 #divider()
 
-#pagebreak()
+#recto()
 == CHAPITRE 23 : Le Carré Complété et les Identités Remarquables
 <chapitre-23-le-carré-complété-et-les-identités-remarquables>
 #quote_box[
@@ -16125,7 +16214,7 @@ Marchands et les Inégalités].
 
 #divider()
 
-#pagebreak()
+#recto()
 == CHAPITRE 24 : Les Deux Marchands et les Inégalités
 <chapitre-24-les-deux-marchands-et-les-inégalités>
 #quote_box[
@@ -17069,7 +17158,7 @@ Droite du Tarif].
 
 #divider()
 
-#pagebreak()
+#recto()
 == CHAPITRE 25 : La Machine à Doubler et la Droite du Tarif
 <chapitre-25-la-machine-à-doubler-et-la-droite-du-tarif>
 #quote_box[
@@ -17905,7 +17994,7 @@ Magique].
 
 #divider()
 
-#pagebreak()
+#recto()
 == CHAPITRE 26 : Le Pliage de Papier et le Miroir Magique
 <chapitre-26-le-pliage-de-papier-et-le-miroir-magique>
 #quote_box[
@@ -18781,7 +18870,7 @@ et la Boîte du Potier].
 
 #divider()
 
-#pagebreak()
+#recto()
 == CHAPITRE 27 : Le Découpage des Terres et la Boîte du Potier
 <chapitre-27-le-découpage-des-terres-et-la-boîte-du-potier>
 #quote_box[
@@ -19216,7 +19305,7 @@ a. Comme $1 upright(" ha") = 100$ a : $54\,4 upright(" a") = 0\,544$ ha.
 
 #divider()
 
-#pagebreak()
+#recto()
 == CHAPITRE 28 : Ératosthène et le Tour de la Terre
 <chapitre-28-ératosthène-et-le-tour-de-la-terre>
 #quote_box[
@@ -20024,7 +20113,7 @@ d'#strong[Euclide].
 
 #divider()
 
-#pagebreak()
+#recto()
 == CHAPITRE 29 : Le Partage d'Euclide
 <chapitre-29-le-partage-deuclide>
 #quote_box[
@@ -20984,7 +21073,7 @@ et dans les salons du XVIIe siècle : nous allons apprendre à dompter la
 
 #divider()
 
-#pagebreak()
+#recto()
 == CHAPITRE 30 : La Roulette du Destin et la Survie du Chasseur
 <chapitre-30-la-roulette-du-destin-et-la-survie-du-chasseur>
 #quote_box[
@@ -21891,13 +21980,13 @@ vont prendre des flèches, s'envoler dans le ciel et devenir des
 
 #divider()
 
-#pagebreak()
+#recto()
 = VOLUME V --- LE MOUVEMENT, L'ANGLE ET LE SPECTRE DE LA FORME (15 - 17 ans / 2nde - 1ère)
 <volume-v-le-mouvement-langle-et-le-spectre-de-la-forme-15---17-ans-2nde---1ère>
 
 #divider()
 
-#pagebreak()
+#recto()
 == CHAPITRE 31 : Le Tribunal de la Logique
 <chapitre-31-le-tribunal-de-la-logique>
 #quote_box[
@@ -22538,7 +22627,7 @@ la partie négative : $x = - 4$ vérifie bien $\(- 4\)^2 = 16 > 9$.
 
 #divider()
 
-#pagebreak()
+#recto()
 == CHAPITRE 32 : Le Voilier dans la Tempête et la Flèche Libre
 <chapitre-32-le-voilier-dans-la-tempête-et-la-flèche-libre>
 #quote_box[
@@ -23527,7 +23616,7 @@ trajectoires se croisent ? C'est ce que nous allons découvrir dans
 
 #divider()
 
-#pagebreak()
+#recto()
 == CHAPITRE 33 : La Ligne de Mire
 <chapitre-33-la-ligne-de-mire>
 #quote_box[
@@ -24309,7 +24398,7 @@ explorer dans #strong[Le Métier Jacquard et la Boîte à Fabriquer].
 
 #divider()
 
-#pagebreak()
+#recto()
 == CHAPITRE 34 : Le Métier Jacquard et la Boîte à Fabriquer
 <chapitre-34-le-métier-jacquard-et-la-boîte-à-fabriquer>
 #quote_box[
@@ -25267,7 +25356,7 @@ Parabole].
 
 #divider()
 
-#pagebreak()
+#recto()
 == CHAPITRE 35 : La Fontaine de Galilée et la Parabole
 <chapitre-35-la-fontaine-de-galilée-et-la-parabole>
 #quote_box[
@@ -26108,7 +26197,7 @@ l'Escalier et le Prêt de l'Usurier].
 
 #divider()
 
-#pagebreak()
+#recto()
 == CHAPITRE 36 : Les Marches de l'Escalier et le Prêt de l'Usurier
 <chapitre-36-les-marches-de-lescalier-et-le-prêt-de-lusurier>
 #quote_box[
@@ -27020,7 +27109,7 @@ et le courant alternatif ? C'est ce que nous allons découvrir dans
 
 #divider()
 
-#pagebreak()
+#recto()
 == CHAPITRE 37 : La Grande Roue et le Cercle qui s'Enroule
 <chapitre-37-la-grande-roue-et-le-cercle-qui-senroule>
 #quote_box[
@@ -27598,7 +27687,7 @@ cercle qui tranche.
 
 #divider()
 
-#pagebreak()
+#recto()
 == CHAPITRE 38 : Tirer la Corde et l'Ombre Efficace
 <chapitre-38-tirer-la-corde-et-lombre-efficace>
 #quote_box[
@@ -28593,7 +28682,7 @@ suivant.
 
 #divider()
 
-#pagebreak()
+#recto()
 == CHAPITRE 39 : Le Skieur et la Planche sous la Semelle
 <chapitre-39-le-skieur-et-la-planche-sous-la-semelle>
 #quote_box[
@@ -29650,7 +29739,7 @@ l'#strong[exponentielle], au chapitre suivant.
 
 #divider()
 
-#pagebreak()
+#recto()
 == CHAPITRE 40 : La Colonie de Bactéries
 <chapitre-40-la-colonie-de-bactéries>
 #quote_box[
@@ -30551,7 +30640,7 @@ suivant avec #strong[le sondeur et l'écart-type].
 
 #divider()
 
-#pagebreak()
+#recto()
 == CHAPITRE 41 : Le Sondeur et l'Écart-Type
 <chapitre-41-le-sondeur-et-lécart-type>
 #quote_box[
@@ -31496,7 +31585,7 @@ Bayes], au chapitre suivant.
 
 #divider()
 
-#pagebreak()
+#recto()
 == CHAPITRE 42 : Le Médecin, le Test et l'Arbre des Possibles
 <chapitre-42-le-médecin-le-test-et-larbre-des-possibles>
 #quote_box[
@@ -32411,13 +32500,13 @@ Flux et de la Vitesse], qui t'attend dès le prochain chapitre !
 
 #divider()
 
-#pagebreak()
+#recto()
 = VOLUME VI --- L'INFINI APPRIVOISÉ ET L'ÉDIFICE MODERNE (17 - 18 ans / Terminale & Maths Expertes)
 <volume-vi-linfini-apprivoisé-et-lédifice-moderne-17---18-ans-terminale-maths-expertes>
 
 #divider()
 
-#pagebreak()
+#recto()
 == CHAPITRE 43 : L'Escalier sans Fin et les Dominos
 <chapitre-43-lescalier-sans-fin-et-les-dominos>
 #quote_box[
@@ -33000,7 +33089,7 @@ formule du produit $\(u v\)' = u' v + u v'$ avec $u = x + n$, $v = e^x$
 
 #divider()
 
-#pagebreak()
+#recto()
 == CHAPITRE 44 : Le Coureur qui ne Touche jamais la Ligne
 <chapitre-44-le-coureur-qui-ne-touche-jamais-la-ligne>
 #quote_box[
@@ -34130,7 +34219,7 @@ au chapitre 45.
 
 #divider()
 
-#pagebreak()
+#recto()
 == CHAPITRE 45 : L'Horizon des Courbes
 <chapitre-45-lhorizon-des-courbes>
 #quote_box[
@@ -35154,7 +35243,7 @@ chapitre 46.
 
 #divider()
 
-#pagebreak()
+#recto()
 == CHAPITRE 46 : Le Fil sans Coupure
 <chapitre-46-le-fil-sans-coupure>
 #quote_box[
@@ -36354,7 +36443,7 @@ C'est l'art des engrenages et de la courbure : rendez-vous au chapitre
 
 #divider()
 
-#pagebreak()
+#recto()
 == CHAPITRE 47 : Le Jardin qui Grandit et la Chaîne d'Engrenages
 <chapitre-47-le-jardin-qui-grandit-et-la-chaîne-dengrenages>
 #quote_box[
@@ -37467,7 +37556,7 @@ C'est l'épopée de #strong[John Napier] et de la fonction
 
 #divider()
 
-#pagebreak()
+#recto()
 == CHAPITRE 48 : Le Logarithme de Napier et les Tables des Navigateurs
 <chapitre-48-le-logarithme-de-napier-et-les-tables-des-navigateurs>
 #quote_box[
@@ -39155,7 +39244,7 @@ chapitre 49 avec #strong[la balançoire et les fonctions qui ondulent].
 
 #divider()
 
-#pagebreak()
+#recto()
 == CHAPITRE 49 : La Balançoire et les Fonctions qui Ondulent
 <chapitre-49-la-balançoire-et-les-fonctions-qui-ondulent>
 #quote_box[
@@ -40527,7 +40616,7 @@ d'eau] et la découverte du calcul intégral.
 
 #divider()
 
-#pagebreak()
+#recto()
 == CHAPITRE 50 : Le Tonneau Rempli de Tranches d'Eau
 <chapitre-50-le-tonneau-rempli-de-tranches-deau>
 #quote_box[
@@ -41649,7 +41738,7 @@ rendez-vous au chapitre 51 avec #strong[la tasse de thé qui refroidit].
 
 #divider()
 
-#pagebreak()
+#recto()
 == CHAPITRE 51 : La Tasse de Thé qui Refroidit
 <chapitre-51-la-tasse-de-thé-qui-refroidit>
 #quote_box[
@@ -42509,7 +42598,7 @@ la géométrie vectorielle en 3D.
 
 #divider()
 
-#pagebreak()
+#recto()
 == CHAPITRE 52 : La Cathédrale dans l'Espace
 <chapitre-52-la-cathédrale-dans-lespace>
 #quote_box[
@@ -43457,7 +43546,7 @@ de choisir].
 
 #divider()
 
-#pagebreak()
+#recto()
 == CHAPITRE 53 : Le Cadenas à Code et les Façons de Choisir
 <chapitre-53-le-cadenas-à-code-et-les-façons-de-choisir>
 #quote_box[
@@ -44526,7 +44615,7 @@ Lancers de la Pièce].
 
 #divider()
 
-#pagebreak()
+#recto()
 == CHAPITRE 54 : Les Mille Lancers de la Pièce
 <chapitre-54-les-mille-lancers-de-la-pièce>
 #quote_box[
@@ -45555,7 +45644,7 @@ Droit].
 
 #divider()
 
-#pagebreak()
+#recto()
 == CHAPITRE 55 : Le Tourbillon à Angle Droit
 <chapitre-55-le-tourbillon-à-angle-droit>
 #quote_box[
@@ -46585,7 +46674,7 @@ tourne, les aiguilles se rejoignent modulo $n$ : bienvenue dans
 
 #divider()
 
-#pagebreak()
+#recto()
 == CHAPITRE 56 : Les Messages Secrets et l'Horloge des Restes
 <chapitre-56-les-messages-secrets-et-lhorloge-des-restes>
 #quote_box[
@@ -47554,7 +47643,7 @@ Revisité : Matrices et Graphes].
 
 #divider()
 
-#pagebreak()
+#recto()
 == CHAPITRE 57 : Le Métier Jacquard Revisité : Matrices et Graphes
 <chapitre-57-le-métier-jacquard-revisité-matrices-et-graphes>
 #quote_box[
@@ -48552,7 +48641,7 @@ la Fin du Voyage].
 
 #divider()
 
-#pagebreak()
+#recto()
 == CHAPITRE 58 : La Fin du Voyage
 <chapitre-58-la-fin-du-voyage>
 #quote_box[
@@ -49303,6 +49392,7 @@ l'esprit humain.] Bon voyage vers tes nouvelles découvertes !
 
 
 
+#recto()
 = CONCLUSION GÉNÉRALE & ÉPILOGUE : L'ÉDIFICE DU NOMBRE ET LA LIBERTÉ DE L'ESPRIT
 
 #align(center)[
@@ -49331,8 +49421,7 @@ Les mathématiques t'ont transmis le plus précieux de tous les trésors : *la l
 
 Le grand livre du monde est désormais ouvert devant tes yeux. Tu en connais la langue. Va de l'avant, explore, questionne sans crainte, et garde toujours vivante en toi la curiosité du premier caillou.
 
-#pagebreak()
-
+#recto()
 = ANNEXE A : FORMULAIRE & VALEURS REMARQUABLES DE RÉFÉRENCE
 
 == I. Table Exacte des Lignes Trigonométriques Remarquables
@@ -49427,8 +49516,7 @@ Le grand livre du monde est désormais ouvert devant tes yeux. Tu en connais la 
   [$(ln u)'$], [$u' / u$], [Composition logarithmique ($u > 0$)]
 )
 
-#pagebreak()
-
+#recto()
 = ANNEXE B : TABLE UNIVERSELLE DES NOTATIONS & SYMBOLES
 
 #set text(size: 9pt)
@@ -49466,8 +49554,7 @@ Le grand livre du monde est désormais ouvert devant tes yeux. Tu en connais la 
   [$binom(n, k)$], [Combinaison], [Nombre de façons de choisir $k$ éléments parmi $n$ sans ordre : $n! / (k!(n-k)!)$]
 )
 
-#pagebreak()
-
+#recto()
 = INDEX THÉMATIQUE DÉTAILLÉ
 
 #set text(size: 9pt)
@@ -49509,8 +49596,7 @@ Le grand livre du monde est désormais ouvert devant tes yeux. Tu en connais la 
   [Valeurs Intermédiaires (TVI)], [Vol. VI, Ch. 46], [Théorème topologique assurant qu'une fonction continue traverse toutes les valeurs]
 )
 
-#pagebreak()
-
+#recto()
 = BIBLIOGRAPHIE HISTORIQUE & DIDACTIQUE ANNOTÉE
 
 #v(0.3cm)
@@ -49544,8 +49630,16 @@ Le grand livre du monde est désormais ouvert devant tes yeux. Tu en connais la 
 - *Sweller, John* (2011), *Cognitive Load Theory*, Springer.
   _Théorie de la charge cognitive : équilibre indispensable entre mémoire de travail et mémoire à long terme._
 
-#pagebreak()
+// Le bloc intérieur se termine sur un verso (page paire) : page blanche muette si nécessaire
+#metadata("fin-section") <fin-section>
+#pagebreak(to: "odd")
 #set page(header: none, footer: none)
+#metadata("debut-section") <debut-section>
+// Plat 3 (intérieur de couverture arrière) : hors décompte, jamais folioté
+#box()
+#pagebreak()
+
+// Plat 4 (quatrième de couverture) : jamais foliotée
 
 // ==========================================
 // 5. QUATRIÈME DE COUVERTURE (BACK COVER)

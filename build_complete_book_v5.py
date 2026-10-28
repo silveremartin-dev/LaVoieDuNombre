@@ -6,7 +6,9 @@ Master Book Builder v5 for LA VOIE DU NOMBRE
 - Clean copyright page without fake ISBN
 - Clickable depth-2 Sommaire with genuine page numbers
 - Running headers: active volume left, active chapter right (checks current page first)
-- Footers: LA VOIE DU NOMBRE left, Page right (suppressed on cover & back cover)
+- Foliotage éditorial : couverture (plats 1-4) hors décompte, page 1 = faux-titre,
+  liminaires muets, ouvertures de volumes/chapitres en belle page muette,
+  pages blanches sans folio, folio toujours sur la marge extérieure (jamais côté reliure)
 - Uniform left alignment on exercises (first-line-indent: 0pt)
 - Automatic blank line before all **Exercice and **Solution to prevent concatenation
 - Sticky headings & callouts to prevent orphan headers at page bottoms
@@ -51,12 +53,52 @@ PREAMBLE = """
   author: "Silvère-Martin Michiellot & Antigravity"
 )
 
+// ==========================================
+// RÈGLES DE FOLIOTAGE (CHARTE TYPOGRAPHIQUE DE L'ÉDITION)
+// - La couverture (plats 1, 2, 3 et 4) n'est jamais comptée ni foliotée :
+//   le compteur démarre à 1 sur la première belle page du bloc intérieur (faux-titre).
+// - Pages impaires = recto (droite) ; pages paires = verso (gauche).
+// - Pages liminaires (1 faux-titre, 2 blanche, 3 grand titre, 4 mentions légales,
+//   5 exergue/dédicace, 6 blanche, puis sommaire) : comptées mais muettes.
+// - Toute ouverture de volume, de chapitre ou d'annexe se fait en belle page (impaire)
+//   et reste muette ; le premier folio visible suit l'ouverture du Volume I.
+// - Pages blanches : comptées dans l'ordre arithmétique, jamais de folio ni de titre courant.
+// - Folio sur la marge extérieure : à gauche sur les versos (pairs), à droite sur les rectos (impairs).
+// ==========================================
+
+// Saut vers la prochaine belle page (impaire) avec balisage des pages blanches intercalaires
+#let recto() = {
+  [#metadata("fin-section") <fin-section>]
+  pagebreak(weak: true, to: "odd")
+  [#metadata("debut-section") <debut-section>]
+}
+
+// Le folio (et le titre courant) n'est visible que sur les pages de texte courant :
+// ni liminaire, ni page d'ouverture, ni page blanche.
+#let folio-visible() = {
+  let p = here().page()
+  let debut = query(<debut-texte>)
+  if debut.len() == 0 or p <= debut.first().location().page() { return false }
+  let fins = query(<fin-section>)
+  let debuts = query(<debut-section>)
+  for (i, d) in debuts.enumerate() {
+    let dp = d.location().page()
+    if dp == p { return false }
+    if i < fins.len() and p < dp {
+      let m = fins.at(i).location()
+      let mp = m.page()
+      if mp < p { return false }
+      if mp == p and m.position().y < 2.65cm { return false }
+    }
+  }
+  true
+}
+
 #set page(
   paper: "a4",
   margin: (top: 2.4cm, bottom: 2.4cm, left: 2.2cm, right: 2.2cm),
   header: context {
-    let page-num = counter(page).get().first()
-    if page-num > 4 [
+    if folio-visible() [
       #let cur-h2 = query(heading.where(level: 2)).filter(h => h.location().page() == here().position().page)
       #let ch-title = if cur-h2.len() > 0 {
         cur-h2.first().body
@@ -82,17 +124,19 @@ PREAMBLE = """
     ]
   },
   footer: context {
-    let page-num = counter(page).get().first()
-    if page-num > 2 [
-      #line(length: 100%, stroke: 0.5pt + rgb("#cbd5e1"))
-      #v(3pt)
-      #grid(
-        columns: (1fr, 1fr),
-        align: (left, right),
-        text(size: 8pt, fill: rgb("#94a3b8"), font: "Liberation Sans", style: "italic")[LA VOIE DU NOMBRE — Une Odyssée Constructive],
-        text(size: 8.5pt, fill: rgb("#0f172a"), font: "Liberation Sans", weight: "bold")[Page #page-num]
-      )
-    ]
+    if folio-visible() {
+      let page-num = counter(page).get().first()
+      let titre = text(size: 8pt, fill: rgb("#94a3b8"), font: "Liberation Sans", style: "italic")[LA VOIE DU NOMBRE — Une Odyssée Constructive]
+      let folio = text(size: 8.5pt, fill: rgb("#0f172a"), font: "Liberation Sans", weight: "bold")[Page #page-num]
+      line(length: 100%, stroke: 0.5pt + rgb("#cbd5e1"))
+      v(3pt)
+      // Folio toujours côté marge extérieure (jamais côté reliure)
+      if calc.even(page-num) {
+        grid(columns: (1fr, 1fr), align: (left, right), folio, titre)
+      } else {
+        grid(columns: (1fr, 1fr), align: (left, right), titre, folio)
+      }
+    }
   }
 )
 
@@ -314,6 +358,46 @@ PREAMBLE = """
 ]
 
 #pagebreak()
+// Plat 2 (intérieur de couverture) : hors décompte, jamais folioté
+#box()
+#pagebreak()
+
+// Début du bloc intérieur : la première belle page est la page 1 (muette)
+#counter(page).update(1)
+
+// ==========================================
+// PAGE 1 (RECTO) — FAUX-TITRE (MUETTE)
+// ==========================================
+#align(center + horizon)[
+  #text(size: 22pt, weight: "bold", fill: byrne-dark, font: "Liberation Serif", tracking: 0.06em)[LA VOIE DU NOMBRE]
+]
+#pagebreak()
+
+// PAGE 2 (VERSO) — PAGE BLANCHE (MUETTE)
+#box()
+#pagebreak()
+
+// ==========================================
+// PAGE 3 (RECTO) — GRAND TITRE (MUETTE)
+// ==========================================
+#align(center)[
+  #v(3.5cm)
+  #text(size: 13pt, weight: "bold", fill: byrne-blue, font: "Liberation Sans")[Silvère-Martin Michiellot & Antigravity]
+  #v(1.6cm)
+  #text(size: 32pt, weight: "bold", fill: byrne-dark, font: "Liberation Serif")[LA VOIE DU NOMBRE]
+  #v(0.4cm)
+  #line(length: 30%, stroke: 1pt + byrne-yellow)
+  #v(0.4cm)
+  #text(size: 14pt, weight: "bold", fill: byrne-red, font: "Liberation Sans")[Une Odyssée Constructive, du Premier Caillou au Baccalauréat]
+  #v(1fr)
+  #text(size: 10pt, fill: byrne-slate, font: "Liberation Sans")[ÉDITION INTÉGRALE DE RÉFÉRENCE — 2026]
+  #v(0.2cm)
+  #text(size: 9pt, fill: byrne-slate, font: "Liberation Sans")[Diffusion ouverte sous licence libre CC BY-SA 4.0]
+  #v(1.5cm)
+]
+#pagebreak()
+
+// PAGE 4 (VERSO) — MENTIONS LÉGALES (MUETTE)
 
 // ==========================================
 // 2. MENTIONS LÉGALES & COPYRIGHT (SANS FAUX ISBN)
@@ -376,6 +460,12 @@ PREAMBLE = """
 
 #pagebreak()
 
+// PAGE 6 (VERSO) — PAGE BLANCHE (MUETTE)
+#box()
+#pagebreak()
+
+// PAGE 7 (RECTO) ET SUIVANTES — SOMMAIRE (LIMINAIRE, MUET)
+
 // ==========================================
 // 4. SOMMAIRE GÉNÉRAL & DÉTAILLÉ (DEPTH: 2)
 // ==========================================
@@ -385,7 +475,8 @@ PREAMBLE = """
   depth: 2
 )
 
-#pagebreak()
+// Fin des pages liminaires : le folio devient visible après l'ouverture du Volume I
+#metadata("debut-texte") <debut-texte>
 """
 
 # ==============================================================================
@@ -393,6 +484,7 @@ PREAMBLE = """
 # ==============================================================================
 
 BACK_MATTER = r"""
+#recto()
 = CONCLUSION GÉNÉRALE & ÉPILOGUE : L'ÉDIFICE DU NOMBRE ET LA LIBERTÉ DE L'ESPRIT
 
 #align(center)[
@@ -421,8 +513,7 @@ Les mathématiques t'ont transmis le plus précieux de tous les trésors : *la l
 
 Le grand livre du monde est désormais ouvert devant tes yeux. Tu en connais la langue. Va de l'avant, explore, questionne sans crainte, et garde toujours vivante en toi la curiosité du premier caillou.
 
-#pagebreak()
-
+#recto()
 = ANNEXE A : FORMULAIRE & VALEURS REMARQUABLES DE RÉFÉRENCE
 
 == I. Table Exacte des Lignes Trigonométriques Remarquables
@@ -517,8 +608,7 @@ Le grand livre du monde est désormais ouvert devant tes yeux. Tu en connais la 
   [$(ln u)'$], [$u' / u$], [Composition logarithmique ($u > 0$)]
 )
 
-#pagebreak()
-
+#recto()
 = ANNEXE B : TABLE UNIVERSELLE DES NOTATIONS & SYMBOLES
 
 #set text(size: 9pt)
@@ -556,8 +646,7 @@ Le grand livre du monde est désormais ouvert devant tes yeux. Tu en connais la 
   [$binom(n, k)$], [Combinaison], [Nombre de façons de choisir $k$ éléments parmi $n$ sans ordre : $n! / (k!(n-k)!)$]
 )
 
-#pagebreak()
-
+#recto()
 = INDEX THÉMATIQUE DÉTAILLÉ
 
 #set text(size: 9pt)
@@ -599,8 +688,7 @@ Le grand livre du monde est désormais ouvert devant tes yeux. Tu en connais la 
   [Valeurs Intermédiaires (TVI)], [Vol. VI, Ch. 46], [Théorème topologique assurant qu'une fonction continue traverse toutes les valeurs]
 )
 
-#pagebreak()
-
+#recto()
 = BIBLIOGRAPHIE HISTORIQUE & DIDACTIQUE ANNOTÉE
 
 #v(0.3cm)
@@ -634,8 +722,16 @@ Le grand livre du monde est désormais ouvert devant tes yeux. Tu en connais la 
 - *Sweller, John* (2011), *Cognitive Load Theory*, Springer.
   _Théorie de la charge cognitive : équilibre indispensable entre mémoire de travail et mémoire à long terme._
 
-#pagebreak()
+// Le bloc intérieur se termine sur un verso (page paire) : page blanche muette si nécessaire
+#metadata("fin-section") <fin-section>
+#pagebreak(to: "odd")
 #set page(header: none, footer: none)
+#metadata("debut-section") <debut-section>
+// Plat 3 (intérieur de couverture arrière) : hors décompte, jamais folioté
+#box()
+#pagebreak()
+
+// Plat 4 (quatrième de couverture) : jamais foliotée
 
 // ==========================================
 // 5. QUATRIÈME DE COUVERTURE (BACK COVER)
@@ -1665,9 +1761,9 @@ def postprocess_typst(typst_content):
 
     typst_content = re.sub(r'(`{3,})data_table\s*\n([\s\S]*?)\1', repl_table, typst_content)
 
-    # 8. Top-level clean pagebreaks before Volumes and Chapters
-    typst_content = re.sub(r'^(== CHAPITRE\b)', r'#pagebreak()\n\1', typst_content, flags=re.MULTILINE)
-    typst_content = re.sub(r'^(= VOLUME\b)', r'#pagebreak()\n\1', typst_content, flags=re.MULTILINE)
+    # 8. Ouverture des Volumes et Chapitres en belle page (recto impair, page d'ouverture muette)
+    typst_content = re.sub(r'^(== CHAPITRE\b)', r'#recto()\n\1', typst_content, flags=re.MULTILINE)
+    typst_content = re.sub(r'^(= VOLUME\b)', r'#recto()\n\1', typst_content, flags=re.MULTILINE)
 
     # 9. Strip ALL residual box-drawing characters from document text streams
     typst_content = re.sub(r'[─│┌┐└┘├┤┬┴┼═║╔╗╚╝╠╣╦╩╬▲►▼◄╭╮╯╰╱╲★●■]', '', typst_content)

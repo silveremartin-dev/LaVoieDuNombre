@@ -70,6 +70,19 @@ Toutes les figures SVG et schémas du livre respectent le code couleur fonctionn
 
 ---
 
+## 5 bis. MISE EN PAGE ET FOLIOTAGE
+
+1. **Foliotage éditorial (numérotation des pages) :**
+   - *Comptage vs affichage :* tout le bloc intérieur est compté, mais le folio n'est visible que sur les pages de texte courant.
+   - *Couverture hors décompte :* les plats 1, 2, 3 et 4 (première, intérieurs et quatrième de couverture) ne sont jamais comptés ni foliotés ; la couverture n'est **jamais** la page 1.
+   - *Page 1 = première belle page du bloc intérieur :* p. 1 faux-titre (recto), p. 2 blanche (verso), p. 3 grand titre, p. 4 mentions légales, p. 5 exergue/dédicace, p. 6 blanche, puis sommaire — toutes comptées mais **muettes**.
+   - *Recto/verso :* pages impaires à droite, paires à gauche. Toute ouverture de partie, de chapitre ou d'annexe se fait en belle page (impaire) et reste muette ; le premier folio visible apparaît sur la page suivante.
+   - *Pages blanches :* comptées dans l'ordre arithmétique, jamais de folio ni de titre courant.
+   - *Placement :* folio centré ou sur la marge extérieure (gauche sur les pages paires, droite sur les impaires), **jamais côté reliure (petit fond)**.
+   - *Fin de bloc :* le bloc intérieur se termine sur une page paire (verso), suivi des plats 3 et 4.
+
+---
+
 ## 6. LICENCE ET DIFFUSION LIBRE
 
 L'ensemble de l'œuvre (*La Voie du Nombre* et *Le Guide de l'Accompagnateur*), textes, figures vectorielles et scripts de compilation, est publié sous licence **Creative Commons Attribution - Partage dans les Mêmes Conditions 4.0 International (CC BY-SA 4.0)**.
