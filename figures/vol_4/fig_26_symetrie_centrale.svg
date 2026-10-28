@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 650 240" width="100%" height="240">
+  <rect width="650" height="240" fill="#f8fafc" rx="10" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text x="325" y="26" font-family="Liberation Sans, sans-serif" font-size="14" font-weight="bold" fill="#0f172a" text-anchor="middle">La symétrie centrale : rotation d'un demi-tour (180°) autour du centre O</text>
+
+  <g transform="translate(130, 45)">
+    <!-- Line connecting M, O, M' -->
+    <line x1="40" y1="130" x2="360" y2="30" stroke="#0f172a" stroke-width="2" stroke-dasharray="4,4"/>
+
+    <!-- Center point O -->
+    <circle cx="200" cy="80" r="5" fill="#d97706" stroke="#0f172a" stroke-width="2"/>
+    <text x="200" y="105" font-family="Liberation Sans, sans-serif" font-size="13" font-weight="bold" fill="#0f172a" text-anchor="middle">Centre O</text>
+
+    <!-- Point M -->
+    <circle cx="40" cy="130" r="5" fill="#1d4ed8"/>
+    <text x="25" y="135" font-family="Liberation Sans, sans-serif" font-size="14" font-weight="bold" fill="#1d4ed8">M</text>
+
+    <!-- Point M' -->
+    <circle cx="360" cy="30" r="5" fill="#b91c1c"/>
+    <text x="372" y="35" font-family="Liberation Sans, sans-serif" font-size="14" font-weight="bold" fill="#b91c1c">M'</text>
+
+    <!-- Rotation arrow 180 deg -->
+    <path d="M 60 115 A 150 150 0 0 1 340 45" fill="none" stroke="#15803d" stroke-width="2" stroke-dasharray="3,3"/>
+    <text x="200" y="35" font-family="Liberation Sans, sans-serif" font-size="11" font-weight="bold" fill="#15803d" text-anchor="middle">Demi-tour : 180°</text>
+
+    <!-- Equality marks -->
+    <line x1="118" y1="102" x2="122" y2="108" stroke="#1d4ed8" stroke-width="2"/>
+    <line x1="278" y1="52" x2="282" y2="58" stroke="#1d4ed8" stroke-width="2"/>
+  </g>
+
+  <text x="325" y="215" font-family="Liberation Sans, sans-serif" font-size="11.5" font-weight="bold" fill="#0f172a" text-anchor="middle">Le point O est le milieu du segment [MM'] : OM = OM'</text>
+  <text x="325" y="232" font-family="Liberation Sans, sans-serif" font-size="10.5" fill="#64748b" text-anchor="middle">Une symétrie centrale conserve les longueurs, les angles, les aires et le parallélisme</text>
+</svg>

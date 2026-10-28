@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 540 230" width="100%" height="230">
+  <rect width="540" height="230" fill="#f8fafc" rx="8" stroke="#cbd5e1" stroke-width="1"/>
+  <g transform="translate(180, 115)">
+    <!-- Cercle unité R = 80 -->
+    <circle cx="0" cy="0" r="80" fill="#eff6ff" stroke="#1d4ed8" stroke-width="2"/>
+    
+    <!-- Axes cos et sin -->
+    <line x1="-105" y1="0" x2="115" y2="0" stroke="#0f172a" stroke-width="2"/>
+    <polygon points="120,0 110,-4 110,4" fill="#0f172a"/>
+    <text x="110" y="16" font-family="Liberation Sans" font-size="12" font-weight="bold" fill="#1d4ed8">cos x</text>
+    
+    <line x1="0" y1="105" x2="0" y2="-115" stroke="#0f172a" stroke-width="2"/>
+    <polygon points="0,-120 -4,-110 4,-110" fill="#0f172a"/>
+    <text x="10" y="-110" font-family="Liberation Sans" font-size="12" font-weight="bold" fill="#b91c1c">sin x</text>
+    
+    <!-- Rayon angle θ = 45° -->
+    <line x1="0" y1="0" x2="56.5" y2="-56.5" stroke="#0f172a" stroke-width="2.5"/>
+    <circle cx="56.5" cy="-56.5" r="5" fill="#d97706"/>
+    <text x="68" y="-62" font-family="Liberation Sans" font-size="12" font-weight="bold" fill="#d97706">M (cos θ, sin θ)</text>
+    
+    <!-- Projections cos et sin -->
+    <line x1="56.5" y1="0" x2="56.5" y2="-56.5" stroke="#b91c1c" stroke-width="2" stroke-dasharray="3"/>
+    <line x1="0" y1="-56.5" x2="56.5" y2="-56.5" stroke="#1d4ed8" stroke-width="2" stroke-dasharray="3"/>
+    
+    <line x1="0" y1="0" x2="56.5" y2="0" stroke="#1d4ed8" stroke-width="4"/>
+    <line x1="0" y1="0" x2="0" y2="-56.5" stroke="#b91c1c" stroke-width="4"/>
+    
+    <!-- Arc angle θ -->
+    <path d="M 25,0 A 25 25 0 0 0 17.6,-17.6" fill="none" stroke="#d97706" stroke-width="2"/>
+    <text x="32" y="-8" font-family="Liberation Sans" font-size="11" font-weight="bold" fill="#d97706">θ</text>
+  </g>
+  <g transform="translate(360, 50)" font-family="Liberation Sans" font-size="11.5">
+    <rect x="0" y="0" width="160" height="110" rx="6" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.5"/>
+    <text x="80" y="22" font-weight="bold" fill="#0f172a" text-anchor="middle">Propriétés clés :</text>
+    <text x="12" y="45" fill="#1d4ed8">• cos² θ + sin² θ = 1</text>
+    <text x="12" y="65" fill="#b91c1c">• -1 ≤ cos θ ≤ 1</text>
+    <text x="12" y="85" fill="#b91c1c">• -1 ≤ sin θ ≤ 1</text>
+    <text x="12" y="102" fill="#15803d">• Rayon unité : R = 1</text>
+  </g>
+</svg>

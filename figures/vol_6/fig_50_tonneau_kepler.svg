@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 540 240" width="100%" height="100%">
+  <rect width="540" height="240" fill="#f8fafc" rx="8"/>
+  <text x="270" y="28" text-anchor="middle" font-family="Liberation Sans" font-size="15" font-weight="bold" fill="#0f172a">La Stéréométrie des Tonneaux de Kepler (1615) : L'Intégrale par Tranches d'Aire S(x)·dx</text>
+  
+  <g transform="translate(90, 60)">
+    <!-- Barrel outline -->
+    <ellipse cx="180" cy="65" rx="170" ry="55" fill="#eff6ff" stroke="#0f172a" stroke-width="2"/>
+    
+    <!-- Thin slices -->
+    
+      <ellipse cx="40" cy="65" rx="12" ry="45.0" fill="none" stroke="#475569" stroke-dasharray="3,3" stroke-width="1.2"/>
+    
+      <ellipse cx="75" cy="65" rx="12" ry="47.5" fill="none" stroke="#475569" stroke-dasharray="3,3" stroke-width="1.2"/>
+    
+      <ellipse cx="110" cy="65" rx="12" ry="50.0" fill="none" stroke="#475569" stroke-dasharray="3,3" stroke-width="1.2"/>
+    
+      <ellipse cx="145" cy="65" rx="12" ry="52.5" fill="none" stroke="#475569" stroke-dasharray="3,3" stroke-width="1.2"/>
+    
+      <ellipse cx="180" cy="65" rx="12" ry="55.0" fill="none" stroke="#475569" stroke-dasharray="3,3" stroke-width="1.2"/>
+    
+      <ellipse cx="215" cy="65" rx="12" ry="52.5" fill="none" stroke="#475569" stroke-dasharray="3,3" stroke-width="1.2"/>
+    
+      <ellipse cx="250" cy="65" rx="12" ry="50.0" fill="none" stroke="#475569" stroke-dasharray="3,3" stroke-width="1.2"/>
+    
+      <ellipse cx="285" cy="65" rx="12" ry="47.5" fill="none" stroke="#475569" stroke-dasharray="3,3" stroke-width="1.2"/>
+    
+      <ellipse cx="320" cy="65" rx="12" ry="45.0" fill="none" stroke="#475569" stroke-dasharray="3,3" stroke-width="1.2"/>
+    
+    
+    <!-- Highlighted single slice dx -->
+    <ellipse cx="215" cy="65" rx="14" ry="54" fill="#d97706" fill-opacity="0.5" stroke="#b91c1c" stroke-width="2"/>
+    <text x="215" y="145" text-anchor="middle" font-family="Liberation Sans" font-size="12" font-weight="bold" fill="#b91c1c">Tranche élémentaire : dV = S(x) · dx</text>
+  </g>
+  <text x="270" y="222" text-anchor="middle" font-family="Liberation Sans" font-size="13" font-weight="bold" fill="#1d4ed8">Volume Total : V = &#8747; S(x) dx  — Naissance du Calcul Intégral Moderne</text>
+</svg>

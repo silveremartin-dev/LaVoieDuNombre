@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 180" width="100%" height="180">
+  <rect width="500" height="180" fill="#f8fafc" rx="8" stroke="#cbd5e1" stroke-width="1"/>
+  <g transform="translate(80, 130)">
+    <!-- Côté [BA) horizontal -->
+    <line x1="0" y1="0" x2="220" y2="0" stroke="#1d4ed8" stroke-width="3"/>
+    <circle cx="220" cy="0" r="4" fill="#1d4ed8"/>
+    <text x="235" y="5" font-family="Liberation Sans" font-size="14" font-weight="bold" fill="#1d4ed8">A</text>
+    <text x="120" y="22" font-family="Liberation Sans" font-size="12" fill="#64748b">Côté [BA)</text>
+    
+    <!-- Côté [BC) oblique -->
+    <line x1="0" y1="0" x2="160" y2="-90" stroke="#1d4ed8" stroke-width="3"/>
+    <circle cx="160" cy="-90" r="4" fill="#1d4ed8"/>
+    <text x="175" y="-95" font-family="Liberation Sans" font-size="14" font-weight="bold" fill="#1d4ed8">C</text>
+    <text x="60" y="-65" font-family="Liberation Sans" font-size="12" fill="#64748b">Côté [BC)</text>
+    
+    <!-- Sommet B -->
+    <circle cx="0" cy="0" r="6" fill="#b91c1c"/>
+    <text x="-25" y="5" font-family="Liberation Sans" font-size="14" font-weight="bold" fill="#b91c1c">B</text>
+    <text x="-45" y="24" font-family="Liberation Sans" font-size="11" font-weight="bold" fill="#b91c1c">Sommet</text>
+    
+    <!-- Arc d'ouverture angulaire -->
+    <path d="M 60,0 A 60 60 0 0 0 52,-29" fill="none" stroke="#d97706" stroke-width="2.5"/>
+    <text x="75" y="-12" font-family="Liberation Sans" font-size="12" font-weight="bold" fill="#d97706">Ouverture angulaire</text>
+  </g>
+  <text x="250" y="165" font-family="Liberation Sans" font-size="12" fill="#475569" text-anchor="middle">L'angle mesure l'écartement des deux demi-droites, indépendamment de leur longueur</text>
+</svg>

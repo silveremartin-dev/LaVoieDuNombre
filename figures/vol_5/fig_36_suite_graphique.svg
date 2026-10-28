@@ -1,0 +1,64 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 650 250" width="100%" height="250">
+  <defs>
+    <marker id="arr-dark7" viewBox="0 0 10 10" refX="6" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+      <path d="M 0 1 L 10 5 L 0 9 z" fill="#0f172a"/>
+    </marker>
+  </defs>
+  <rect width="650" height="250" fill="#f8fafc" rx="10" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text x="325" y="26" font-family="Liberation Sans, sans-serif" font-size="14" font-weight="bold" fill="#0f172a" text-anchor="middle">Représentation graphique d'une suite numérique : un nuage de points isolés (n, u_n)</text>
+
+  <g transform="translate(100, 45)">
+    <!-- Axes -->
+    <line x1="20" y1="140" x2="450" y2="140" stroke="#0f172a" stroke-width="1.5" marker-end="url(#arr-dark7)"/>
+    <text x="445" y="155" font-family="Liberation Sans, sans-serif" font-size="11" font-weight="bold" fill="#0f172a">n (entier naturel)</text>
+    <line x1="50" y1="160" x2="50" y2="20" stroke="#0f172a" stroke-width="1.5" marker-end="url(#arr-dark7)"/>
+    <text x="38" y="20" font-family="Liberation Sans, sans-serif" font-size="11" font-weight="bold" fill="#0f172a">u_n</text>
+
+    <!-- Discrete points: n = 0, 1, 2, 3, 4, 5, 6 -->
+    <!-- u_n = 2 + 10/(n+1) -> n=0: 120, n=1: 70, n=2: 53, n=3: 45, n=4: 40, n=5: 37, n=6: 35 -->
+    <!-- Ceiling line L = 30 -->
+    <line x1="50" y1="100" x2="430" y2="100" stroke="#b91c1c" stroke-width="1.5" stroke-dasharray="4,3"/>
+    <text x="435" y="103" font-family="Liberation Sans, sans-serif" font-size="11" font-weight="bold" fill="#b91c1c">Limite L</text>
+
+    <!-- Points (red bullets) -->
+    <!-- n=0 (x=50) -->
+    <circle cx="50" cy="30" r="5" fill="#1d4ed8"/>
+    <text x="50" y="155" font-family="Liberation Sans, sans-serif" font-size="10.5" fill="#0f172a" text-anchor="middle">0</text>
+    <text x="58" y="32" font-family="Liberation Sans, sans-serif" font-size="10.5" font-weight="bold" fill="#1d4ed8">u0</text>
+
+    <!-- n=1 (x=110) -->
+    <circle cx="110" cy="55" r="5" fill="#1d4ed8"/>
+    <line x1="110" y1="140" x2="110" y2="55" stroke="#64748b" stroke-width="1" stroke-dasharray="2,2"/>
+    <text x="110" y="155" font-family="Liberation Sans, sans-serif" font-size="10.5" fill="#0f172a" text-anchor="middle">1</text>
+    <text x="118" y="57" font-family="Liberation Sans, sans-serif" font-size="10.5" font-weight="bold" fill="#1d4ed8">u1</text>
+
+    <!-- n=2 (x=170) -->
+    <circle cx="170" cy="72" r="5" fill="#1d4ed8"/>
+    <line x1="170" y1="140" x2="170" y2="72" stroke="#64748b" stroke-width="1" stroke-dasharray="2,2"/>
+    <text x="170" y="155" font-family="Liberation Sans, sans-serif" font-size="10.5" fill="#0f172a" text-anchor="middle">2</text>
+    <text x="178" y="74" font-family="Liberation Sans, sans-serif" font-size="10.5" font-weight="bold" fill="#1d4ed8">u2</text>
+
+    <!-- n=3 (x=230) -->
+    <circle cx="230" cy="82" r="5" fill="#1d4ed8"/>
+    <line x1="230" y1="140" x2="230" y2="82" stroke="#64748b" stroke-width="1" stroke-dasharray="2,2"/>
+    <text x="230" y="155" font-family="Liberation Sans, sans-serif" font-size="10.5" fill="#0f172a" text-anchor="middle">3</text>
+    <text x="238" y="84" font-family="Liberation Sans, sans-serif" font-size="10.5" font-weight="bold" fill="#1d4ed8">u3</text>
+
+    <!-- n=4 (x=290) -->
+    <circle cx="290" cy="88" r="5" fill="#1d4ed8"/>
+    <line x1="290" y1="140" x2="290" y2="88" stroke="#64748b" stroke-width="1" stroke-dasharray="2,2"/>
+    <text x="290" y="155" font-family="Liberation Sans, sans-serif" font-size="10.5" fill="#0f172a" text-anchor="middle">4</text>
+
+    <!-- n=5 (x=350) -->
+    <circle cx="350" cy="92" r="5" fill="#1d4ed8"/>
+    <line x1="350" y1="140" x2="350" y2="92" stroke="#64748b" stroke-width="1" stroke-dasharray="2,2"/>
+    <text x="350" y="155" font-family="Liberation Sans, sans-serif" font-size="10.5" fill="#0f172a" text-anchor="middle">5</text>
+
+    <!-- n=6 (x=410) -->
+    <circle cx="410" cy="95" r="5" fill="#1d4ed8"/>
+    <line x1="410" y1="140" x2="410" y2="95" stroke="#64748b" stroke-width="1" stroke-dasharray="2,2"/>
+    <text x="410" y="155" font-family="Liberation Sans, sans-serif" font-size="10.5" fill="#0f172a" text-anchor="middle">6</text>
+  </g>
+
+  <text x="325" y="235" font-family="Liberation Sans, sans-serif" font-size="11" fill="#64748b" text-anchor="middle">Une suite n'est JAMAIS une ligne continue : c'est un ensemble de points discrets définis uniquement pour n entier</text>
+</svg>

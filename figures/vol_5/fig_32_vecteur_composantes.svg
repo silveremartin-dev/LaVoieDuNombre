@@ -1,0 +1,38 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 280" width="100%" height="100%">
+  <rect width="500" height="280" fill="#f8fafc" rx="8"/>
+  <text x="250" y="28" text-anchor="middle" font-family="Liberation Sans" font-size="15" font-weight="bold" fill="#0f172a">Décomposition Vectorielle Fondamentale : u&#8407; = x i&#8407; + y j&#8407;</text>
+  
+  <g transform="translate(80, 220)">
+    <!-- Axes -->
+    <line x1="0" y1="0" x2="350" y2="0" stroke="#0f172a" stroke-width="2"/>
+    <polygon points="355,0 345,-5 345,5" fill="#0f172a"/>
+    <text x="365" y="4" font-family="Liberation Sans" font-size="14" font-weight="bold" fill="#0f172a">x</text>
+    
+    <line x1="0" y1="0" x2="0" y2="-170" stroke="#0f172a" stroke-width="2"/>
+    <polygon points="0,-175 -5,-165 5,-165" fill="#0f172a"/>
+    <text x="-5" y="-185" font-family="Liberation Sans" font-size="14" font-weight="bold" fill="#0f172a">y</text>
+    
+    <!-- Dashed projection lines -->
+    <line x1="240" y1="0" x2="240" y2="-130" stroke="#475569" stroke-dasharray="4,4"/>
+    <line x1="0" y1="-130" x2="240" y2="-130" stroke="#475569" stroke-dasharray="4,4"/>
+    
+    <!-- Unit vectors i and j -->
+    <line x1="0" y1="0" x2="70" y2="0" stroke="#b91c1c" stroke-width="3.5"/>
+    <polygon points="75,0 65,-4 65,4" fill="#b91c1c"/>
+    <text x="35" y="18" text-anchor="middle" font-family="Liberation Sans" font-size="13" font-weight="bold" fill="#b91c1c">i&#8407;</text>
+    
+    <line x1="0" y1="0" x2="0" y2="-70" stroke="#15803d" stroke-width="3.5"/>
+    <polygon points="0,-75 -4,-65 4,-65" fill="#15803d"/>
+    <text x="-16" y="-35" font-family="Liberation Sans" font-size="13" font-weight="bold" fill="#15803d">j&#8407;</text>
+    
+    <!-- Main vector u -->
+    <line x1="0" y1="0" x2="238" y2="-128" stroke="#1d4ed8" stroke-width="3.5"/>
+    <polygon points="240,-130 228,-134 233,-124" fill="#1d4ed8"/>
+    <text x="110" y="-80" font-family="Liberation Sans" font-size="16" font-weight="bold" fill="#1d4ed8">u&#8407;</text>
+    
+    <text x="240" y="20" text-anchor="middle" font-family="Liberation Sans" font-size="12" font-weight="bold" fill="#0f172a">x</text>
+    <text x="-18" y="-126" text-anchor="middle" font-family="Liberation Sans" font-size="12" font-weight="bold" fill="#0f172a">y</text>
+    <text x="250" y="-138" font-family="Liberation Sans" font-size="13" font-weight="bold" fill="#0f172a">M(x ; y)</text>
+  </g>
+  <text x="250" y="260" text-anchor="middle" font-family="Liberation Sans" font-size="13" font-weight="bold" fill="#0f172a">Tout vecteur du plan s'exprime de façon unique comme combinaison linéaire des vecteurs de base.</text>
+</svg>

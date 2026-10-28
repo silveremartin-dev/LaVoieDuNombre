@@ -1,0 +1,43 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 650 250" width="100%" height="250">
+  <defs>
+    <marker id="arr-dark5" viewBox="0 0 10 10" refX="6" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+      <path d="M 0 1 L 10 5 L 0 9 z" fill="#0f172a"/>
+    </marker>
+  </defs>
+  <rect width="650" height="250" fill="#f8fafc" rx="10" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text x="325" y="26" font-family="Liberation Sans, sans-serif" font-size="14" font-weight="bold" fill="#0f172a" text-anchor="middle">Résolution graphique de l'équation f(x) = k : intersections avec la droite y = k</text>
+
+  <g transform="translate(100, 45)">
+    <!-- Axes -->
+    <line x1="20" y1="140" x2="440" y2="140" stroke="#0f172a" stroke-width="1.5" marker-end="url(#arr-dark5)"/>
+    <text x="435" y="155" font-family="Liberation Sans, sans-serif" font-size="11" font-weight="bold" fill="#0f172a">x</text>
+    <line x1="50" y1="160" x2="50" y2="20" stroke="#0f172a" stroke-width="1.5" marker-end="url(#arr-dark5)"/>
+    <text x="38" y="20" font-family="Liberation Sans, sans-serif" font-size="11" font-weight="bold" fill="#0f172a">y</text>
+
+    <!-- Horizontal line y = k -->
+    <line x1="30" y1="70" x2="420" y2="70" stroke="#b91c1c" stroke-width="2.5" stroke-dasharray="6,4"/>
+    <text x="15" y="74" font-family="Liberation Sans, sans-serif" font-size="12" font-weight="bold" fill="#b91c1c">k</text>
+    <text x="425" y="74" font-family="Liberation Sans, sans-serif" font-size="12" font-weight="bold" fill="#b91c1c">y = k</text>
+
+    <!-- Curve C_f (polynomial wave) -->
+    <path d="M 50 135 C 100 20, 160 30, 220 90 C 260 130, 320 140, 390 40" fill="none" stroke="#1d4ed8" stroke-width="3"/>
+    <text x="395" y="35" font-family="Liberation Sans, sans-serif" font-size="13" font-weight="bold" fill="#1d4ed8">Cf</text>
+
+    <!-- Intersection 1 -->
+    <circle cx="85" cy="70" r="5" fill="#d97706" stroke="#0f172a" stroke-width="1.5"/>
+    <line x1="85" y1="70" x2="85" y2="140" stroke="#64748b" stroke-width="1.5" stroke-dasharray="2,2"/>
+    <text x="85" y="155" font-family="Liberation Sans, sans-serif" font-size="11" font-weight="bold" fill="#1d4ed8" text-anchor="middle">x1</text>
+
+    <!-- Intersection 2 -->
+    <circle cx="200" cy="70" r="5" fill="#d97706" stroke="#0f172a" stroke-width="1.5"/>
+    <line x1="200" y1="70" x2="200" y2="140" stroke="#64748b" stroke-width="1.5" stroke-dasharray="2,2"/>
+    <text x="200" y="155" font-family="Liberation Sans, sans-serif" font-size="11" font-weight="bold" fill="#1d4ed8" text-anchor="middle">x2</text>
+
+    <!-- Intersection 3 -->
+    <circle cx="355" cy="70" r="5" fill="#d97706" stroke="#0f172a" stroke-width="1.5"/>
+    <line x1="355" y1="70" x2="355" y2="140" stroke="#64748b" stroke-width="1.5" stroke-dasharray="2,2"/>
+    <text x="355" y="155" font-family="Liberation Sans, sans-serif" font-size="11" font-weight="bold" fill="#1d4ed8" text-anchor="middle">x3</text>
+  </g>
+
+  <text x="325" y="235" font-family="Liberation Sans, sans-serif" font-size="11.5" fill="#64748b" text-anchor="middle">Les solutions de l'équation f(x) = k sont les abscisses des points d'intersection de la courbe Cf avec la droite horizontale y = k</text>
+</svg>

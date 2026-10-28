@@ -1,0 +1,47 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 650 250" width="100%" height="250">
+  <rect width="650" height="250" fill="#f8fafc" rx="10" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text x="325" y="28" font-family="Liberation Sans, sans-serif" font-size="14" font-weight="bold" fill="#0f172a" text-anchor="middle">Principe du produit matriciel : Ligne i × Colonne j = c_ij</text>
+
+  <!-- Matrix A (Ligne i highlighted) -->
+  <g transform="translate(50, 50)" font-family="Liberation Sans, sans-serif">
+    <text x="65" y="20" font-size="13" font-weight="bold" fill="#1d4ed8">Matrice A</text>
+    <path d="M 15 35 L 10 35 L 10 135 L 15 135" fill="none" stroke="#0f172a" stroke-width="2"/>
+    <path d="M 125 35 L 130 35 L 130 135 L 125 135" fill="none" stroke="#0f172a" stroke-width="2"/>
+    <!-- Highlighted row 2 -->
+    <rect x="15" y="70" width="110" height="30" rx="4" fill="#dbeafe" stroke="#1d4ed8" stroke-width="1.5"/>
+    <text x="30" y="55" font-size="12" fill="#64748b">a11</text> <text x="70" y="55" font-size="12" fill="#64748b">a12</text> <text x="110" y="55" font-size="12" fill="#64748b">a13</text>
+    <text x="30" y="90" font-size="13" font-weight="bold" fill="#1d4ed8">a21</text>
+    <text x="70" y="90" font-size="13" font-weight="bold" fill="#1d4ed8">a22</text>
+    <text x="110" y="90" font-size="13" font-weight="bold" fill="#1d4ed8">a23</text>
+    <text x="30" y="125" font-size="12" fill="#64748b">a31</text> <text x="70" y="125" font-size="12" fill="#64748b">a32</text> <text x="110" y="125" font-size="12" fill="#64748b">a33</text>
+  </g>
+
+  <text x="210" y="135" font-family="Liberation Sans, sans-serif" font-size="20" font-weight="bold" fill="#0f172a">×</text>
+
+  <!-- Matrix B (Colonne j highlighted) -->
+  <g transform="translate(245, 50)" font-family="Liberation Sans, sans-serif">
+    <text x="65" y="20" font-size="13" font-weight="bold" fill="#b91c1c">Matrice B</text>
+    <path d="M 15 35 L 10 35 L 10 135 L 15 135" fill="none" stroke="#0f172a" stroke-width="2"/>
+    <path d="M 125 35 L 130 35 L 130 135 L 125 135" fill="none" stroke="#0f172a" stroke-width="2"/>
+    <!-- Highlighted col 2 -->
+    <rect x="55" y="38" width="35" height="92" rx="4" fill="#fee2e2" stroke="#b91c1c" stroke-width="1.5"/>
+    <text x="25" y="55" font-size="12" fill="#64748b">b11</text> <text x="65" y="55" font-size="13" font-weight="bold" fill="#b91c1c">b12</text> <text x="105" y="55" font-size="12" fill="#64748b">b13</text>
+    <text x="25" y="90" font-size="12" fill="#64748b">b21</text> <text x="65" y="90" font-size="13" font-weight="bold" fill="#b91c1c">b22</text> <text x="105" y="90" font-size="12" fill="#64748b">b23</text>
+    <text x="25" y="125" font-size="12" fill="#64748b">b31</text> <text x="65" y="125" font-size="13" font-weight="bold" fill="#b91c1c">b32</text> <text x="105" y="125" font-size="12" fill="#64748b">b33</text>
+  </g>
+
+  <text x="405" y="135" font-family="Liberation Sans, sans-serif" font-size="20" font-weight="bold" fill="#0f172a">=</text>
+
+  <!-- Matrix C (Result cell highlighted) -->
+  <g transform="translate(440, 50)" font-family="Liberation Sans, sans-serif">
+    <text x="65" y="20" font-size="13" font-weight="bold" fill="#15803d">Matrice C = A × B</text>
+    <path d="M 15 35 L 10 35 L 10 135 L 15 135" fill="none" stroke="#0f172a" stroke-width="2"/>
+    <path d="M 125 35 L 130 35 L 130 135 L 125 135" fill="none" stroke="#0f172a" stroke-width="2"/>
+    <rect x="55" y="70" width="35" height="30" rx="4" fill="#dcfce7" stroke="#15803d" stroke-width="2"/>
+    <text x="25" y="55" font-size="12" fill="#64748b">c11</text> <text x="65" y="55" font-size="12" fill="#64748b">c12</text> <text x="105" y="55" font-size="12" fill="#64748b">c13</text>
+    <text x="25" y="90" font-size="12" fill="#64748b">c21</text> <text x="62" y="90" font-size="13" font-weight="bold" fill="#15803d">c22</text> <text x="105" y="90" font-size="12" fill="#64748b">c23</text>
+    <text x="25" y="125" font-size="12" fill="#64748b">c31</text> <text x="65" y="125" font-size="12" fill="#64748b">c32</text> <text x="105" y="125" font-size="12" fill="#64748b">c33</text>
+  </g>
+
+  <text x="325" y="218" font-family="Liberation Sans, sans-serif" font-size="12.5" font-weight="bold" fill="#0f172a" text-anchor="middle">Formule : c_22 = a_21 × b_12 + a_22 × b_22 + a_23 × b_32</text>
+</svg>

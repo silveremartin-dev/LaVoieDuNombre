@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 200" width="100%" height="100%">
+  <rect width="600" height="200" fill="#f8fafc" rx="8"/>
+  <text x="300" y="28" text-anchor="middle" font-family="Liberation Sans" font-size="15" font-weight="bold" fill="#0f172a">Fractions Équivalentes : 1/2 et 2/4 Représentent la Même Longueur</text>
+  
+  <!-- Strip 1: 1/2 -->
+  <g transform="translate(60, 50)">
+    <text x="-10" y="24" text-anchor="end" font-family="Liberation Sans" font-size="13" font-weight="bold" fill="#0f172a">Pliée en 2 :</text>
+    <rect x="0" y="0" width="240" height="38" fill="#1d4ed8" stroke="#0f172a" stroke-width="1.5"/>
+    <text x="120" y="24" text-anchor="middle" font-family="Liberation Sans" font-size="14" font-weight="bold" fill="#ffffff">Bleu (1/2)</text>
+    <rect x="240" y="0" width="240" height="38" fill="#ffffff" stroke="#0f172a" stroke-width="1.5"/>
+    <text x="360" y="24" text-anchor="middle" font-family="Liberation Sans" font-size="14" fill="#475569">Blanc (1/2)</text>
+  </g>
+  
+  <!-- Strip 2: 2/4 -->
+  <g transform="translate(60, 110)">
+    <text x="-10" y="24" text-anchor="end" font-family="Liberation Sans" font-size="13" font-weight="bold" fill="#0f172a">Pliée en 4 :</text>
+    <rect x="0" y="0" width="120" height="38" fill="#1d4ed8" stroke="#0f172a" stroke-width="1.5"/>
+    <text x="60" y="24" text-anchor="middle" font-family="Liberation Sans" font-size="13" font-weight="bold" fill="#ffffff">1/4</text>
+    <rect x="120" y="0" width="120" height="38" fill="#1d4ed8" stroke="#0f172a" stroke-width="1.5"/>
+    <text x="180" y="24" text-anchor="middle" font-family="Liberation Sans" font-size="13" font-weight="bold" fill="#ffffff">1/4</text>
+    <rect x="240" y="0" width="120" height="38" fill="#ffffff" stroke="#0f172a" stroke-width="1.5"/>
+    <text x="300" y="24" text-anchor="middle" font-family="Liberation Sans" font-size="13" fill="#475569">1/4</text>
+    <rect x="360" y="0" width="120" height="38" fill="#ffffff" stroke="#0f172a" stroke-width="1.5"/>
+    <text x="420" y="24" text-anchor="middle" font-family="Liberation Sans" font-size="13" fill="#475569">1/4</text>
+  </g>
+  
+  <text x="300" y="180" text-anchor="middle" font-family="Liberation Sans" font-size="14" font-weight="bold" fill="#1d4ed8">Conclusion Visuelle : 1/2 = 2/4</text>
+</svg>

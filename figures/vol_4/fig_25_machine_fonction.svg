@@ -1,0 +1,41 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 650 240" width="100%" height="240">
+  <defs>
+    <marker id="arr-blue12" viewBox="0 0 10 10" refX="6" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+      <path d="M 0 1 L 10 5 L 0 9 z" fill="#1d4ed8"/>
+    </marker>
+  </defs>
+  <rect width="650" height="240" fill="#f8fafc" rx="10" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text x="325" y="26" font-family="Liberation Sans, sans-serif" font-size="14" font-weight="bold" fill="#0f172a" text-anchor="middle">La fonction mathématique comme machine transformatrice : x ↦ f(x)</text>
+
+  <!-- Input x -->
+  <g transform="translate(60, 70)">
+    <circle cx="40" cy="40" r="30" fill="#ffffff" stroke="#1d4ed8" stroke-width="2.5"/>
+    <text x="40" y="46" font-family="Liberation Sans, sans-serif" font-size="18" font-weight="bold" fill="#1d4ed8" text-anchor="middle">x</text>
+    <text x="40" y="90" font-family="Liberation Sans, sans-serif" font-size="12" font-weight="bold" fill="#0f172a" text-anchor="middle">Antécédent</text>
+    <text x="40" y="105" font-family="Liberation Sans, sans-serif" font-size="10.5" fill="#64748b" text-anchor="middle">(Entrée)</text>
+    <!-- Arrow into machine -->
+    <line x1="75" y1="40" x2="165" y2="40" stroke="#1d4ed8" stroke-width="3" marker-end="url(#arr-blue12)"/>
+  </g>
+
+  <!-- The Machine Box (center) -->
+  <g transform="translate(240, 50)">
+    <rect width="170" height="110" rx="10" fill="#ffffff" stroke="#0f172a" stroke-width="2.5"/>
+    <rect x="15" y="12" width="140" height="28" rx="5" fill="#eff6ff" stroke="#1d4ed8" stroke-width="1"/>
+    <text x="85" y="31" font-family="Liberation Sans, sans-serif" font-size="13" font-weight="bold" fill="#1d4ed8" text-anchor="middle">MACHINE f</text>
+    <text x="85" y="65" font-family="Liberation Sans, sans-serif" font-size="13" font-weight="bold" fill="#b91c1c" text-anchor="middle">Règle de calcul :</text>
+    <text x="85" y="90" font-family="Liberation Sans, sans-serif" font-size="14" font-weight="bold" fill="#0f172a" text-anchor="middle">f(x) = 2x + 1</text>
+  </g>
+
+  <!-- Arrow out of machine -->
+  <line x1="415" y1="110" x2="505" y2="110" stroke="#1d4ed8" stroke-width="3" marker-end="url(#arr-blue12)"/>
+
+  <!-- Output f(x) -->
+  <g transform="translate(480, 70)">
+    <circle cx="60" cy="40" r="30" fill="#ffffff" stroke="#15803d" stroke-width="2.5"/>
+    <text x="60" y="46" font-family="Liberation Sans, sans-serif" font-size="16" font-weight="bold" fill="#15803d" text-anchor="middle">f(x)</text>
+    <text x="60" y="90" font-family="Liberation Sans, sans-serif" font-size="12" font-weight="bold" fill="#0f172a" text-anchor="middle">Image</text>
+    <text x="60" y="105" font-family="Liberation Sans, sans-serif" font-size="10.5" fill="#64748b" text-anchor="middle">(Sortie unique)</text>
+  </g>
+
+  <text x="325" y="215" font-family="Liberation Sans, sans-serif" font-size="11" fill="#64748b" text-anchor="middle">Principe fondamental : à chaque antécédent x correspond une unique image f(x)</text>
+</svg>

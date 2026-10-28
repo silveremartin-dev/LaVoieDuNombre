@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 130" width="100%" height="130">
+  <rect width="600" height="130" fill="#f8fafc" rx="8" stroke="#cbd5e1" stroke-width="1"/>
+  <text x="300" y="24" font-family="Liberation Sans, sans-serif" font-size="12" font-weight="bold" fill="#0f172a" text-anchor="middle">Le bâton d'entailles : 45 traits continus gravés au couteau</text>
+  
+  <!-- Bâton en bois -->
+  <g transform="translate(30, 40)">
+    <rect x="0" y="0" width="540" height="40" rx="6" fill="#fef3c7" stroke="#b45309" stroke-width="2"/>
+    <!-- 45 entailles réparties uniformément -->
+    <path d="
+      M 12,6 L 12,34 M 24,6 L 24,34 M 36,6 L 36,34 M 48,6 L 48,34 M 60,6 L 60,34
+      M 72,6 L 72,34 M 84,6 L 84,34 M 96,6 L 96,34 M 108,6 L 108,34 M 120,6 L 120,34
+      M 132,6 L 132,34 M 144,6 L 144,34 M 156,6 L 156,34 M 168,6 L 168,34 M 180,6 L 180,34
+      M 192,6 L 192,34 M 204,6 L 204,34 M 216,6 L 216,34 M 228,6 L 228,34 M 240,6 L 240,34
+      M 252,6 L 252,34 M 264,6 L 264,34 M 276,6 L 276,34 M 288,6 L 288,34 M 300,6 L 300,34
+      M 312,6 L 312,34 M 324,6 L 324,34 M 336,6 L 336,34 M 348,6 L 348,34 M 360,6 L 360,34
+      M 372,6 L 372,34 M 384,6 L 384,34 M 396,6 L 396,34 M 408,6 L 408,34 M 420,6 L 420,34
+      M 432,6 L 432,34 M 444,6 L 444,34 M 456,6 L 456,34 M 468,6 L 468,34 M 480,6 L 480,34
+      M 492,6 L 492,34 M 504,6 L 504,34 M 516,6 L 516,34 M 528,6 L 528,34
+    " stroke="#92400e" stroke-width="2" stroke-linecap="round"/>
+  </g>
+  <text x="300" y="108" font-family="Liberation Sans, sans-serif" font-size="11" font-style="italic" fill="#b91c1c" text-anchor="middle">Saturation cognitive : l'œil ne peut distinguer 44, 45 ou 46 traits sans recompter depuis le début !</text>
+</svg>

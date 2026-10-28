@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 650 250" width="100%" height="250">
+  <defs>
+    <marker id="arr-dark6" viewBox="0 0 10 10" refX="6" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+      <path d="M 0 1 L 10 5 L 0 9 z" fill="#0f172a"/>
+    </marker>
+  </defs>
+  <rect width="650" height="250" fill="#f8fafc" rx="10" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text x="325" y="26" font-family="Liberation Sans, sans-serif" font-size="14" font-weight="bold" fill="#0f172a" text-anchor="middle">Anatomie d'une droite affine : y = m·x + p (Pente m et Ordonnée à l'origine p)</text>
+
+  <g transform="translate(140, 45)">
+    <!-- Axes -->
+    <line x1="20" y1="150" x2="380" y2="150" stroke="#0f172a" stroke-width="1.5" marker-end="url(#arr-dark6)"/>
+    <text x="375" y="165" font-family="Liberation Sans, sans-serif" font-size="11" font-weight="bold" fill="#0f172a">x</text>
+    <line x1="80" y1="170" x2="80" y2="20" stroke="#0f172a" stroke-width="1.5" marker-end="url(#arr-dark6)"/>
+    <text x="68" y="22" font-family="Liberation Sans, sans-serif" font-size="11" font-weight="bold" fill="#0f172a">y</text>
+
+    <!-- Droite affine y = 0.6x + 40 (scaled) -->
+    <line x1="30" y1="140" x2="350" y2="40" stroke="#1d4ed8" stroke-width="3"/>
+    <text x="355" y="45" font-family="Liberation Sans, sans-serif" font-size="12" font-weight="bold" fill="#1d4ed8">d : y = mx + p</text>
+
+    <!-- Ordonnée à l'origine p (intersection with Oy) -->
+    <circle cx="80" cy="124" r="5" fill="#b91c1c"/>
+    <text x="45" y="127" font-family="Liberation Sans, sans-serif" font-size="12" font-weight="bold" fill="#b91c1c">p = f(0)</text>
+
+    <!-- Triangle de pente (avance de 1, monte de m) -->
+    <!-- Point 1 at x = 160, y = 99 -->
+    <circle cx="160" cy="99" r="4" fill="#0f172a"/>
+    <!-- Avance de 1 (dx = 60) -->
+    <line x1="160" y1="99" x2="230" y2="99" stroke="#0f172a" stroke-width="2" stroke-dasharray="3,3"/>
+    <text x="195" y="115" font-family="Liberation Sans, sans-serif" font-size="11" font-weight="bold" fill="#0f172a">Avance : +1</text>
+    <!-- Monte de m (dy = 22) -->
+    <line x1="230" y1="99" x2="230" y2="77" stroke="#b91c1c" stroke-width="2.5"/>
+    <text x="238" y="90" font-family="Liberation Sans, sans-serif" font-size="12" font-weight="bold" fill="#b91c1c">Monte : +m</text>
+    <!-- Point 2 at x = 230, y = 77 -->
+    <circle cx="230" cy="77" r="4" fill="#0f172a"/>
+  </g>
+
+  <text x="325" y="235" font-family="Liberation Sans, sans-serif" font-size="11" fill="#64748b" text-anchor="middle">Coefficient directeur m = (yB - yA) / (xB - xA) : mesure le taux d'accroissement constant de la droite</text>
+</svg>

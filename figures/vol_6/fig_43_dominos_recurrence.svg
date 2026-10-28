@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 540 180" width="100%" height="180">
+  <rect width="540" height="180" fill="#f8fafc" rx="8" stroke="#cbd5e1" stroke-width="1"/>
+  <text x="270" y="24" font-family="Liberation Sans" font-size="13" font-weight="bold" fill="#0f172a" text-anchor="middle">LE PRINCIPE DE RÉCURRENCE : L'EFFET DOMINO UNIVERSEL</text>
+  <!-- Sol -->
+  <line x1="30" y1="130" x2="510" y2="130" stroke="#0f172a" stroke-width="2"/>
+  
+  <!-- Domino 0 qui tombe (Initialisation) -->
+  <g transform="translate(60, 60)">
+    <rect x="0" y="0" width="12" height="65" rx="2" fill="#b91c1c" transform="rotate(30 0 65)"/>
+    <text x="5" y="85" font-family="Liberation Sans" font-size="11" font-weight="bold" fill="#b91c1c" text-anchor="middle">P(0)</text>
+    <text x="5" y="98" font-family="Liberation Sans" font-size="10" fill="#b91c1c" text-anchor="middle">Initialisation</text>
+  </g>
+  
+  <!-- Dominos 1, 2, 3 en chute -->
+  <rect x="120" y="62" width="12" height="65" rx="2" fill="#d97706" transform="rotate(22 120 127)"/>
+  <text x="135" y="145" font-family="Liberation Sans" font-size="11" fill="#d97706" text-anchor="middle">P(1)</text>
+  
+  <rect x="180" y="63" width="12" height="65" rx="2" fill="#d97706" transform="rotate(15 180 128)"/>
+  <text x="195" y="145" font-family="Liberation Sans" font-size="11" fill="#d97706" text-anchor="middle">P(2)</text>
+  
+  <!-- Dominos n et n+1 (Hérédité) -->
+  <g transform="translate(290, 65)">
+    <rect x="0" y="0" width="12" height="65" rx="2" fill="#1d4ed8"/>
+    <text x="6" y="80" font-family="Liberation Sans" font-size="11" font-weight="bold" fill="#1d4ed8" text-anchor="middle">P(n)</text>
+    
+    <path d="M 15,20 L 45,20" fill="none" stroke="#1d4ed8" stroke-width="2"/>
+    <polygon points="50,20 42,16 42,24" fill="#1d4ed8"/>
+    
+    <rect x="55" y="0" width="12" height="65" rx="2" fill="#15803d"/>
+    <text x="61" y="80" font-family="Liberation Sans" font-size="11" font-weight="bold" fill="#15803d" text-anchor="middle">P(n+1)</text>
+    <text x="33" y="102" font-family="Liberation Sans" font-size="10" font-weight="bold" fill="#1d4ed8" text-anchor="middle">Hérédité</text>
+  </g>
+  
+  <g transform="translate(420, 50)" font-family="Liberation Sans" font-size="11.5">
+    <rect x="0" y="0" width="105" height="75" rx="4" fill="#eff6ff" stroke="#1d4ed8"/>
+    <text x="52" y="20" font-weight="bold" fill="#1d4ed8" text-anchor="middle">Conclusion :</text>
+    <text x="52" y="42" font-weight="bold" fill="#0f172a" text-anchor="middle">Vrai pour</text>
+    <text x="52" y="60" font-weight="bold" fill="#15803d" text-anchor="middle">tout entier n !</text>
+  </g>
+</svg>

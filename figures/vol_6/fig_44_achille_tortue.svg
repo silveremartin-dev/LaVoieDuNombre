@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 650 240" width="100%" height="240">
+  <rect width="650" height="240" fill="#f8fafc" rx="10" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text x="325" y="26" font-family="Liberation Sans, sans-serif" font-size="14" font-weight="bold" fill="#0f172a" text-anchor="middle">Le paradoxe de Zénon : la somme infinie convergente d'Achille et de la tortue</text>
+
+  <g transform="translate(60, 50)">
+    <!-- Main track -->
+    <line x1="20" y1="90" x2="520" y2="90" stroke="#0f172a" stroke-width="2.5"/>
+
+    <!-- Départ Achille (0m) -->
+    <circle cx="40" cy="90" r="5" fill="#1d4ed8"/>
+    <text x="40" y="70" font-family="Liberation Sans, sans-serif" font-size="12" font-weight="bold" fill="#1d4ed8" text-anchor="middle">Achille (0)</text>
+
+    <!-- Départ Tortue (100m) -->
+    <circle cx="240" cy="90" r="5" fill="#15803d"/>
+    <text x="240" y="70" font-family="Liberation Sans, sans-serif" font-size="12" font-weight="bold" fill="#15803d" text-anchor="middle">Tortue (+100m)</text>
+
+    <!-- Step 1: Achille reaches 100m, Tortue is at 110m -->
+    <path d="M 40 90 Q 140 30 240 90" fill="none" stroke="#1d4ed8" stroke-width="2"/>
+    <text x="140" y="55" font-family="Liberation Sans, sans-serif" font-size="10.5" fill="#1d4ed8" text-anchor="middle">+100 m</text>
+
+    <!-- Step 2: Achille reaches 110m, Tortue is at 111m -->
+    <circle cx="340" cy="90" r="4" fill="#15803d"/>
+    <path d="M 240 90 Q 290 60 340 90" fill="none" stroke="#1d4ed8" stroke-width="1.8"/>
+    <text x="290" y="70" font-family="Liberation Sans, sans-serif" font-size="10" fill="#1d4ed8" text-anchor="middle">+10 m</text>
+
+    <!-- Step 3: Achille reaches 111m -->
+    <circle cx="390" cy="90" r="3.5" fill="#15803d"/>
+    <path d="M 340 90 Q 365 75 390 90" fill="none" stroke="#1d4ed8" stroke-width="1.5"/>
+    <text x="365" y="80" font-family="Liberation Sans, sans-serif" font-size="9" fill="#1d4ed8" text-anchor="middle">+1 m</text>
+
+    <!-- Convergence point (Drapeau de dépassement) -->
+    <line x1="444.4" y1="40" x2="444.4" y2="120" stroke="#b91c1c" stroke-width="2" stroke-dasharray="3,3"/>
+    <polygon points="444.4,40 470,50 444.4,60" fill="#b91c1c"/>
+    <text x="444.4" y="135" font-family="Liberation Sans, sans-serif" font-size="11" font-weight="bold" fill="#b91c1c" text-anchor="middle">Dépassement : 111.11... m</text>
+  </g>
+
+  <text x="325" y="215" font-family="Liberation Sans, sans-serif" font-size="11.5" font-weight="bold" fill="#0f172a" text-anchor="middle">S = 100 + 10 + 1 + 0.1 + 0.01 + ... = 100 / (1 - 0.1) = 1000 / 9 = 111,11... mètres</text>
+  <text x="325" y="232" font-family="Liberation Sans, sans-serif" font-size="10.5" fill="#64748b" text-anchor="middle">Une infinité d'intervalles de temps de plus en plus courts peut s'écouler en un temps total fini</text>
+</svg>

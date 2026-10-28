@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 560 160" width="100%" height="160">
+  <rect width="560" height="160" fill="#f8fafc" rx="8" stroke="#cbd5e1" stroke-width="1"/>
+  <!-- Panier 1 -->
+  <g transform="translate(40, 30)">
+    <rect x="0" y="10" width="110" height="60" rx="6" fill="#fef2f2" stroke="#b91c1c" stroke-width="1.5"/>
+    <circle cx="30" cy="40" r="8" fill="#b91c1c"/>
+    <circle cx="50" cy="40" r="8" fill="#b91c1c"/>
+    <circle cx="70" cy="40" r="8" fill="#b91c1c"/>
+    <circle cx="90" cy="40" r="8" fill="#b91c1c"/>
+    <text x="55" y="90" font-family="Liberation Sans, sans-serif" font-size="12" font-weight="bold" fill="#b91c1c" text-anchor="middle">4 pommes</text>
+  </g>
+  <text x="175" y="70" font-family="Liberation Sans, sans-serif" font-size="24" font-weight="bold" fill="#0f172a" text-anchor="middle">+</text>
+  <!-- Panier 2 -->
+  <g transform="translate(200, 30)">
+    <rect x="0" y="10" width="90" height="60" rx="6" fill="#eff6ff" stroke="#1d4ed8" stroke-width="1.5"/>
+    <circle cx="25" cy="40" r="8" fill="#1d4ed8"/>
+    <circle cx="45" cy="40" r="8" fill="#1d4ed8"/>
+    <circle cx="65" cy="40" r="8" fill="#1d4ed8"/>
+    <text x="45" y="90" font-family="Liberation Sans, sans-serif" font-size="12" font-weight="bold" fill="#1d4ed8" text-anchor="middle">3 poires</text>
+  </g>
+  <text x="325" y="70" font-family="Liberation Sans, sans-serif" font-size="24" font-weight="bold" fill="#0f172a" text-anchor="middle">=</text>
+  <!-- Grande marmite -->
+  <g transform="translate(360, 25)">
+    <path d="M 10,25 Q 10,75 80,75 Q 150,75 150,25 Z" fill="#f0fdf4" stroke="#15803d" stroke-width="2"/>
+    <circle cx="35" cy="45" r="7" fill="#b91c1c"/>
+    <circle cx="55" cy="45" r="7" fill="#b91c1c"/>
+    <circle cx="75" cy="45" r="7" fill="#b91c1c"/>
+    <circle cx="95" cy="45" r="7" fill="#b91c1c"/>
+    <circle cx="115" cy="45" r="7" fill="#1d4ed8"/>
+    <circle cx="65" cy="62" r="7" fill="#1d4ed8"/>
+    <circle cx="95" cy="62" r="7" fill="#1d4ed8"/>
+    <text x="80" y="100" font-family="Liberation Sans, sans-serif" font-size="13" font-weight="bold" fill="#15803d" text-anchor="middle">7 fruits au total</text>
+  </g>
+  <text x="280" y="145" font-family="Liberation Sans, sans-serif" font-size="12" fill="#475569" text-anchor="middle">L'addition réunit deux collections distinctes sous un même total</text>
+</svg>

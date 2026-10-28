@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 560 170" width="100%" height="170">
+  <rect width="560" height="170" fill="#f8fafc" rx="8" stroke="#cbd5e1" stroke-width="1"/>
+  <text x="280" y="24" font-family="Liberation Sans" font-size="13" font-weight="bold" fill="#0f172a" text-anchor="middle">LE DÉROULEMENT DU CERCLE : 1 TOUR COMPLET = π × d</text>
+  <!-- Ligne de sol -->
+  <line x1="30" y1="120" x2="530" y2="120" stroke="#0f172a" stroke-width="2"/>
+  <!-- Cercle de départ -->
+  <circle cx="80" cy="80" r="40" fill="#eff6ff" stroke="#1d4ed8" stroke-width="2"/>
+  <circle cx="80" cy="120" r="4" fill="#b91c1c"/>
+  <text x="80" y="136" font-family="Liberation Sans" font-size="11" font-weight="bold" fill="#b91c1c" text-anchor="middle">Départ (0)</text>
+  <!-- Cercle d'arrivée (1 tour complet) -->
+  <circle cx="430" cy="80" r="40" fill="#eff6ff" stroke="#1d4ed8" stroke-width="2" stroke-dasharray="3"/>
+  <circle cx="430" cy="120" r="4" fill="#b91c1c"/>
+  <text x="430" y="136" font-family="Liberation Sans" font-size="11" font-weight="bold" fill="#b91c1c" text-anchor="middle">Arrivée</text>
+  <!-- Segment déroulé -->
+  <line x1="80" y1="120" x2="430" y2="120" stroke="#b91c1c" stroke-width="3"/>
+  <text x="255" y="112" font-family="Liberation Sans" font-size="12" font-weight="bold" fill="#b91c1c" text-anchor="middle">Longueur déroulée = Périmètre = π × d ≈ 3,1416 × d</text>
+  <text x="255" y="80" font-family="Liberation Sans" font-size="11" fill="#475569" text-anchor="middle">La roue fait un peu plus de 3 tours de son diamètre sur le sol</text>
+</svg>

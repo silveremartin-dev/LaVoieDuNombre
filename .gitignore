@@ -1,0 +1,14 @@
+# Fichiers temporaires de compilation
+temp_*
+*.tmp
+*.log
+
+# Cache Python
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Systèmes d'exploitation & logs
+.DS_Store
+Thumbs.db
+.system_generated/

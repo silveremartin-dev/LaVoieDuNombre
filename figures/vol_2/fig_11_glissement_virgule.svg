@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 520 160" width="100%" height="160">
+  <rect width="520" height="160" fill="#f8fafc" rx="8" stroke="#cbd5e1" stroke-width="1"/>
+  <text x="260" y="25" font-family="Liberation Sans" font-size="14" font-weight="bold" fill="#0f172a" text-anchor="middle">MULTIPLICATION PAR 10, 100, 1000 : GLISSEMENT DE LA VIRGULE</text>
+  <g transform="translate(60, 45)" font-family="Liberation Sans" font-size="13">
+    <text x="0" y="25" font-weight="bold" fill="#1d4ed8">3,45 × 10</text>
+    <text x="140" y="25" fill="#0f172a">➔ glisse de 1 rang vers la droite ➔</text>
+    <text x="360" y="25" font-weight="bold" fill="#15803d">34,5</text>
+    
+    <text x="0" y="55" font-weight="bold" fill="#1d4ed8">3,45 × 100</text>
+    <text x="140" y="55" fill="#0f172a">➔ glisse de 2 rangs vers la droite ➔</text>
+    <text x="360" y="55" font-weight="bold" fill="#15803d">345</text>
+    
+    <text x="0" y="85" font-weight="bold" fill="#1d4ed8">3,45 × 1 000</text>
+    <text x="140" y="85" fill="#0f172a">➔ glisse de 3 rangs vers la droite ➔</text>
+    <text x="360" y="85" font-weight="bold" fill="#15803d">3 450</text>
+  </g>
+</svg>

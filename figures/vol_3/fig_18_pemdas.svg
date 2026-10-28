@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 240" width="100%" height="100%">
+  <rect width="600" height="240" fill="#f8fafc" rx="8"/>
+  <text x="300" y="28" text-anchor="middle" font-family="Liberation Sans" font-size="15" font-weight="bold" fill="#0f172a">L'Échelle Universelle des Priorités Opératoires (PEMDAS)</text>
+  
+  <!-- Step 1: Parentheses -->
+  <rect x="50" y="45" width="500" height="38" fill="#b91c1c" rx="6"/>
+  <text x="70" y="69" font-family="Liberation Sans" font-size="14" font-weight="bold" fill="#ffffff">1. P — Parenthèses</text>
+  <text x="530" y="69" text-anchor="end" font-family="Liberation Sans" font-size="12" fill="#ffffff">Priorité absolue : calculer l'intérieur d'abord</text>
+  
+  <!-- Step 2: Exposants -->
+  <rect x="50" y="90" width="500" height="38" fill="#d97706" rx="6"/>
+  <text x="70" y="114" font-family="Liberation Sans" font-size="14" font-weight="bold" fill="#ffffff">2. E — Exposants &amp; Puissances</text>
+  <text x="530" y="114" text-anchor="end" font-family="Liberation Sans" font-size="12" fill="#ffffff">Calculer les carrés, cubes, racines</text>
+  
+  <!-- Step 3: Multiplications & Divisions -->
+  <rect x="50" y="135" width="500" height="38" fill="#1d4ed8" rx="6"/>
+  <text x="70" y="159" font-family="Liberation Sans" font-size="14" font-weight="bold" fill="#ffffff">3. M / D — Multiplications &amp; Divisions</text>
+  <text x="530" y="159" text-anchor="end" font-family="Liberation Sans" font-size="12" fill="#ffffff">Même rang : exécuter de gauche à droite</text>
+  
+  <!-- Step 4: Additions & Soustractions -->
+  <rect x="50" y="180" width="500" height="38" fill="#15803d" rx="6"/>
+  <text x="70" y="204" font-family="Liberation Sans" font-size="14" font-weight="bold" fill="#ffffff">4. A / S — Additions &amp; Soustractions</text>
+  <text x="530" y="204" text-anchor="end" font-family="Liberation Sans" font-size="12" fill="#ffffff">Dernier rang : exécuter de gauche à droite</text>
+</svg>

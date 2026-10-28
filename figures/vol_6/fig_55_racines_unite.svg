@@ -1,0 +1,44 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 650 300" width="100%" height="300">
+  <rect width="650" height="300" fill="#f8fafc" rx="10" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text x="325" y="26" font-family="Liberation Sans, sans-serif" font-size="14" font-weight="bold" fill="#0f172a" text-anchor="middle">Racines 6-ièmes de l'unité et hexagone régulier dans le plan complexe</text>
+
+  <g transform="translate(325, 160)">
+    <!-- Axes Re and Im -->
+    <line x1="-150" y1="0" x2="150" y2="0" stroke="#0f172a" stroke-width="1.5"/>
+    <text x="145" y="-8" font-family="Liberation Sans, sans-serif" font-size="12" font-weight="bold" fill="#0f172a">Re</text>
+    <line x1="0" y1="110" x2="0" y2="-110" stroke="#0f172a" stroke-width="1.5"/>
+    <text x="8" y="-100" font-family="Liberation Sans, sans-serif" font-size="12" font-weight="bold" fill="#0f172a">Im</text>
+
+    <!-- Unit circle -->
+    <circle cx="0" cy="0" r="90" fill="none" stroke="#cbd5e1" stroke-width="1.5" stroke-dasharray="4,3"/>
+
+    <!-- Regular hexagon polygon -->
+    <polygon points="90,0 45,-77.94 -45,-77.94 -90,0 -45,77.94 45,77.94" fill="#eff6ff" fill-opacity="0.6" stroke="#1d4ed8" stroke-width="2.5"/>
+
+    <!-- 6 Roots points and labels -->
+    <!-- ω0 = 1 -->
+    <circle cx="90" cy="0" r="5" fill="#b91c1c"/>
+    <text x="100" y="15" font-family="Liberation Sans, sans-serif" font-size="11.5" font-weight="bold" fill="#b91c1c">ω0 = 1</text>
+
+    <!-- ω1 = e^(iπ/3) -->
+    <circle cx="45" cy="-77.94" r="5" fill="#1d4ed8"/>
+    <text x="52" y="-85" font-family="Liberation Sans, sans-serif" font-size="11.5" font-weight="bold" fill="#1d4ed8">ω1 = e^(iπ/3)</text>
+
+    <!-- ω2 = e^(i2π/3) -->
+    <circle cx="-45" cy="-77.94" r="5" fill="#1d4ed8"/>
+    <text x="-125" y="-85" font-family="Liberation Sans, sans-serif" font-size="11.5" font-weight="bold" fill="#1d4ed8">ω2 = e^(i2π/3)</text>
+
+    <!-- ω3 = -1 -->
+    <circle cx="-90" cy="0" r="5" fill="#b91c1c"/>
+    <text x="-140" y="15" font-family="Liberation Sans, sans-serif" font-size="11.5" font-weight="bold" fill="#b91c1c">ω3 = -1</text>
+
+    <!-- ω4 = e^(i4π/3) -->
+    <circle cx="-45" cy="77.94" r="5" fill="#1d4ed8"/>
+    <text x="-125" y="95" font-family="Liberation Sans, sans-serif" font-size="11.5" font-weight="bold" fill="#1d4ed8">ω4 = e^(i4π/3)</text>
+
+    <!-- ω5 = e^(i5π/3) -->
+    <circle cx="45" cy="77.94" r="5" fill="#1d4ed8"/>
+    <text x="52" y="95" font-family="Liberation Sans, sans-serif" font-size="11.5" font-weight="bold" fill="#1d4ed8">ω5 = e^(i5π/3)</text>
+  </g>
+  <text x="325" y="285" font-family="Liberation Sans, sans-serif" font-size="11.5" fill="#64748b" text-anchor="middle">Les racines z^n = 1 forment un polygone régulier à n côtés inscrit dans le cercle trigonométrique</text>
+</svg>

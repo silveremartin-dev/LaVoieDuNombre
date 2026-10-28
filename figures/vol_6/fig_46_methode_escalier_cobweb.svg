@@ -1,0 +1,52 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 650 250" width="100%" height="250">
+  <defs>
+    <marker id="arr-dark9" viewBox="0 0 10 10" refX="6" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+      <path d="M 0 1 L 10 5 L 0 9 z" fill="#0f172a"/>
+    </marker>
+  </defs>
+  <rect width="650" height="250" fill="#f8fafc" rx="10" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text x="325" y="26" font-family="Liberation Sans, sans-serif" font-size="14" font-weight="bold" fill="#0f172a" text-anchor="middle">La méthode de l'escalier (Cobweb) : itération graphique de u_(n+1) = f(u_n)</text>
+
+  <g transform="translate(130, 45)">
+    <!-- Axes -->
+    <line x1="20" y1="150" x2="380" y2="150" stroke="#0f172a" stroke-width="1.5" marker-end="url(#arr-dark9)"/>
+    <text x="375" y="165" font-family="Liberation Sans, sans-serif" font-size="11" font-weight="bold" fill="#0f172a">x</text>
+    <line x1="40" y1="170" x2="40" y2="20" stroke="#0f172a" stroke-width="1.5" marker-end="url(#arr-dark9)"/>
+    <text x="28" y="22" font-family="Liberation Sans, sans-serif" font-size="11" font-weight="bold" fill="#0f172a">y</text>
+
+    <!-- Bissectrice y = x (diagonal line) -->
+    <line x1="40" y1="150" x2="330" y2="30" stroke="#64748b" stroke-width="2" stroke-dasharray="4,4"/>
+    <text x="335" y="35" font-family="Liberation Sans, sans-serif" font-size="11" font-weight="bold" fill="#64748b">y = x</text>
+
+    <!-- Curve y = f(x) (square root or bounded curve) -->
+    <path d="M 40 150 Q 140 30 350 45" fill="none" stroke="#1d4ed8" stroke-width="3"/>
+    <text x="355" y="55" font-family="Liberation Sans, sans-serif" font-size="12" font-weight="bold" fill="#1d4ed8">y = f(x)</text>
+
+    <!-- Fixed point L (intersection with y=x) -->
+    <circle cx="280" cy="50" r="4.5" fill="#d97706" stroke="#0f172a" stroke-width="1.5"/>
+    <text x="290" y="48" font-family="Liberation Sans, sans-serif" font-size="11" font-weight="bold" fill="#0f172a">Point Fixe L</text>
+
+    <!-- Cobweb steps in RED -->
+    <!-- u0 = 70 -->
+    <line x1="70" y1="150" x2="70" y2="120" stroke="#b91c1c" stroke-width="2.5"/>
+    <circle cx="70" cy="150" r="3.5" fill="#b91c1c"/>
+    <text x="70" y="165" font-family="Liberation Sans, sans-serif" font-size="10.5" font-weight="bold" fill="#b91c1c" text-anchor="middle">u0</text>
+    <!-- horizontal to y=x: y=120 -> x on y=x is at (150 - 120)*... x = 112 -->
+    <line x1="70" y1="120" x2="112" y2="120" stroke="#b91c1c" stroke-width="2.5"/>
+    <!-- vertical to curve: x=112 -> y=85 -->
+    <line x1="112" y1="120" x2="112" y2="85" stroke="#b91c1c" stroke-width="2.5"/>
+    <text x="112" y="165" font-family="Liberation Sans, sans-serif" font-size="10.5" font-weight="bold" fill="#b91c1c" text-anchor="middle">u1</text>
+    <!-- horizontal to y=x: y=85 -> x=197 -->
+    <line x1="112" y1="85" x2="197" y2="85" stroke="#b91c1c" stroke-width="2.5"/>
+    <!-- vertical to curve: x=197 -> y=62 -->
+    <line x1="197" y1="85" x2="197" y2="62" stroke="#b91c1c" stroke-width="2.5"/>
+    <text x="197" y="165" font-family="Liberation Sans, sans-serif" font-size="10.5" font-weight="bold" fill="#b91c1c" text-anchor="middle">u2</text>
+    <!-- horizontal to y=x: y=62 -> x=252 -->
+    <line x1="197" y1="62" x2="252" y2="62" stroke="#b91c1c" stroke-width="2.5"/>
+    <!-- vertical to curve: x=252 -> y=53 -->
+    <line x1="252" y1="62" x2="252" y2="53" stroke="#b91c1c" stroke-width="2.5"/>
+    <text x="252" y="165" font-family="Liberation Sans, sans-serif" font-size="10.5" font-weight="bold" fill="#b91c1c" text-anchor="middle">u3</text>
+  </g>
+
+  <text x="325" y="235" font-family="Liberation Sans, sans-serif" font-size="11" fill="#64748b" text-anchor="middle">La droite y = x sert de miroir de renvoi : la sortie f(u_n) devient immédiatement l'entrée u_(n+1) de l'étape suivante</text>
+</svg>

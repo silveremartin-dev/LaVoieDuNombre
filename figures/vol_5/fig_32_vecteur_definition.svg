@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 520 180" width="100%" height="180">
+  <rect width="520" height="180" fill="#f8fafc" rx="8" stroke="#cbd5e1" stroke-width="1"/>
+  <g transform="translate(80, 130)">
+    <!-- Droite support (direction) en pointillé -->
+    <line x1="-30" y1="20" x2="230" y2="-120" stroke="#94a3b8" stroke-width="1.5" stroke-dasharray="4"/>
+    <text x="210" y="-125" font-family="Liberation Sans" font-size="11" fill="#64748b">Direction (pente de la droite)</text>
+    
+    <!-- Vecteur AB -->
+    <line x1="20" y1="-10" x2="160" y2="-85" stroke="#1d4ed8" stroke-width="3.5"/>
+    <polygon points="168,-90 155,-80 160,-92" fill="#1d4ed8"/>
+    
+    <circle cx="20" cy="-10" r="4.5" fill="#0f172a"/>
+    <text x="10" y="10" font-family="Liberation Sans" font-size="14" font-weight="bold" fill="#0f172a">A (origine)</text>
+    <circle cx="160" cy="-85" r="4.5" fill="#0f172a"/>
+    <text x="175" y="-80" font-family="Liberation Sans" font-size="14" font-weight="bold" fill="#0f172a">B (extrémité)</text>
+    
+    <text x="90" y="-60" font-family="Liberation Sans" font-size="14" font-weight="bold" fill="#1d4ed8">u = AB</text>
+  </g>
+  <g transform="translate(340, 50)" font-family="Liberation Sans" font-size="12">
+    <rect x="0" y="0" width="150" height="85" rx="6" fill="#eff6ff" stroke="#1d4ed8" stroke-width="1.5"/>
+    <text x="12" y="22" font-weight="bold" fill="#0f172a">Les 3 composantes :</text>
+    <text x="12" y="42" fill="#1d4ed8">1. Direction (la droite)</text>
+    <text x="12" y="60" fill="#b91c1c">2. Sens (la flèche ➔)</text>
+    <text x="12" y="78" fill="#15803d">3. Norme ||u|| (longueur)</text>
+  </g>
+</svg>

@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 520 200" width="100%" height="200">
+  <rect width="520" height="200" fill="#f8fafc" rx="8" stroke="#cbd5e1" stroke-width="1"/>
+  <text x="260" y="24" font-family="Liberation Sans" font-size="13" font-weight="bold" fill="#0f172a" text-anchor="middle">LE THÉORÈME DES GENDARMES (ÉTAU)</text>
+  <g transform="translate(60, 150)">
+    <!-- Axes -->
+    <line x1="0" y1="0" x2="330" y2="0" stroke="#0f172a" stroke-width="2"/>
+    <polygon points="335,0 325,-4 325,4" fill="#0f172a"/>
+    <text x="325" y="16" font-family="Liberation Sans" font-size="12" font-weight="bold" fill="#0f172a">n</text>
+    
+    <line x1="0" y1="10" x2="0" y2="-120" stroke="#0f172a" stroke-width="2"/>
+    <polygon points="0,-125 -4,-115 4,-115" fill="#0f172a"/>
+    <text x="10" y="-115" font-family="Liberation Sans" font-size="12" font-weight="bold" fill="#0f172a">u_n</text>
+    
+    <!-- Ligne de limite L -->
+    <line x1="0" y1="-60" x2="310" y2="-60" stroke="#b91c1c" stroke-width="1.5" stroke-dasharray="4"/>
+    <text x="-15" y="-56" font-family="Liberation Sans" font-size="12" font-weight="bold" fill="#b91c1c">L</text>
+    
+    <!-- Gendarme supérieur w_n -->
+    <path d="M 20,-115 Q 120,-80 300,-62" fill="none" stroke="#1d4ed8" stroke-width="2.5"/>
+    <text x="150" y="-95" font-family="Liberation Sans" font-size="11" font-weight="bold" fill="#1d4ed8">w_n (gendarme haut ➔ L)</text>
+    
+    <!-- Suite coincée u_n (ondulante) -->
+    <path d="M 20,-90 Q 60,-50 100,-75 Q 160,-52 220,-65 Q 260,-58 300,-60" fill="none" stroke="#0f172a" stroke-width="2"/>
+    <text x="180" y="-45" font-family="Liberation Sans" font-size="12" font-weight="bold" fill="#0f172a">u_n coincée !</text>
+    
+    <!-- Gendarme inférieur v_n -->
+    <path d="M 20,-15 Q 120,-40 300,-58" fill="none" stroke="#15803d" stroke-width="2.5"/>
+    <text x="150" y="-22" font-family="Liberation Sans" font-size="11" font-weight="bold" fill="#15803d">v_n (gendarme bas ➔ L)</text>
+  </g>
+  <g transform="translate(400, 60)" font-family="Liberation Sans" font-size="11">
+    <rect x="0" y="0" width="105" height="85" rx="4" fill="#eff6ff" stroke="#1d4ed8"/>
+    <text x="52" y="18" font-weight="bold" fill="#1d4ed8" text-anchor="middle">Encadrement :</text>
+    <text x="52" y="38" fill="#0f172a" text-anchor="middle">v_n ≤ u_n ≤ w_n</text>
+    <text x="52" y="58" fill="#b91c1c" text-anchor="middle">lim v_n = L</text>
+    <text x="52" y="74" fill="#b91c1c" text-anchor="middle">lim w_n = L</text>
+  </g>
+</svg>

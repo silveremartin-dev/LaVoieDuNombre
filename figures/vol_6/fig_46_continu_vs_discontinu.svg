@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 650 240" width="100%" height="240">
+  <rect width="650" height="240" fill="#f8fafc" rx="10" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text x="325" y="26" font-family="Liberation Sans, sans-serif" font-size="14" font-weight="bold" fill="#0f172a" text-anchor="middle">Intuition de la continuité : Trajectoire sans levée de plume vs Saut de palier</text>
+
+  <!-- Left: Continuous curve (Altitude du téléphérique) -->
+  <g transform="translate(40, 45)">
+    <rect width="250" height="150" rx="6" fill="#ffffff" stroke="#cbd5e1" stroke-width="1.5"/>
+    <text x="125" y="22" font-family="Liberation Sans, sans-serif" font-size="12" font-weight="bold" fill="#15803d" text-anchor="middle">CONTINUE : aucun saut d'état</text>
+    <line x1="25" y1="125" x2="225" y2="125" stroke="#0f172a" stroke-width="1.2"/>
+    <line x1="35" y1="135" x2="35" y2="35" stroke="#0f172a" stroke-width="1.2"/>
+    <path d="M 35 110 C 80 120 120 60 160 70 C 190 80 210 40 220 45" fill="none" stroke="#15803d" stroke-width="3"/>
+    <text x="125" y="140" font-family="Liberation Sans, sans-serif" font-size="10.5" fill="#64748b" text-anchor="middle">Tracée d'un seul trait sans lever le crayon</text>
+  </g>
+
+  <!-- Right: Discontinuous step function (Tarif postal / palier) -->
+  <g transform="translate(360, 45)">
+    <rect width="250" height="150" rx="6" fill="#ffffff" stroke="#cbd5e1" stroke-width="1.5"/>
+    <text x="125" y="22" font-family="Liberation Sans, sans-serif" font-size="12" font-weight="bold" fill="#b91c1c" text-anchor="middle">DISCONTINUE : rupture et saut</text>
+    <line x1="25" y1="125" x2="225" y2="125" stroke="#0f172a" stroke-width="1.2"/>
+    <line x1="35" y1="135" x2="35" y2="35" stroke="#0f172a" stroke-width="1.2"/>
+    <!-- Step 1: [35, 90] at y = 105 -->
+    <line x1="35" y1="105" x2="90" y2="105" stroke="#b91c1c" stroke-width="3"/>
+    <circle cx="35" cy="105" r="3" fill="#b91c1c"/>
+    <circle cx="90" cy="105" r="3" fill="#ffffff" stroke="#b91c1c" stroke-width="1.5"/>
+    <!-- Step 2: [90, 150] at y = 75 -->
+    <line x1="90" y1="75" x2="150" y2="75" stroke="#b91c1c" stroke-width="3"/>
+    <circle cx="90" cy="75" r="3" fill="#b91c1c"/>
+    <circle cx="150" cy="75" r="3" fill="#ffffff" stroke="#b91c1c" stroke-width="1.5"/>
+    <!-- Step 3: [150, 215] at y = 45 -->
+    <line x1="150" y1="45" x2="215" y2="45" stroke="#b91c1c" stroke-width="3"/>
+    <circle cx="150" cy="45" r="3" fill="#b91c1c"/>
+    <circle cx="215" cy="45" r="3" fill="#ffffff" stroke="#b91c1c" stroke-width="1.5"/>
+    <text x="125" y="140" font-family="Liberation Sans, sans-serif" font-size="10.5" fill="#64748b" text-anchor="middle">Sauts instantanés : lim f(x) ≠ f(x0)</text>
+  </g>
+
+  <text x="325" y="222" font-family="Liberation Sans, sans-serif" font-size="11" fill="#64748b" text-anchor="middle">En mathématiques, la continuité en x0 signifie que f(x) converge vers f(x0) quand x se rapproche de x0</text>
+</svg>

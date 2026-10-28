@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 540 210" width="100%" height="210">
+  <rect width="540" height="210" fill="#f8fafc" rx="8" stroke="#cbd5e1" stroke-width="1"/>
+  <g transform="translate(140, 140)">
+    <!-- Axes -->
+    <line x1="-60" y1="0" x2="200" y2="0" stroke="#0f172a" stroke-width="2"/>
+    <polygon points="205,0 195,-4 195,4" fill="#0f172a"/>
+    <text x="195" y="16" font-family="Liberation Sans" font-size="12" font-weight="bold" fill="#0f172a">x</text>
+    
+    <line x1="0" y1="40" x2="0" y2="-120" stroke="#0f172a" stroke-width="2"/>
+    <polygon points="0,-125 -4,-115 4,-115" fill="#0f172a"/>
+    <text x="10" y="-115" font-family="Liberation Sans" font-size="12" font-weight="bold" fill="#0f172a">y</text>
+    
+    <!-- Droite y = 0.5x + 30 (pente positive a > 0) -->
+    <line x1="-40" y1="-10" x2="160" y2="-110" stroke="#1d4ed8" stroke-width="3"/>
+    
+    <!-- Ordonnée à l'origine (0, b) -->
+    <circle cx="0" cy="-30" r="5" fill="#b91c1c"/>
+    <text x="-35" y="-26" font-family="Liberation Sans" font-size="12" font-weight="bold" fill="#b91c1c">b (0, b)</text>
+    
+    <!-- Triangle de pente Δx, Δy -->
+    <line x1="40" y1="-50" x2="120" y2="-50" stroke="#d97706" stroke-width="2" stroke-dasharray="3"/>
+    <line x1="120" y1="-50" x2="120" y2="-90" stroke="#15803d" stroke-width="2" stroke-dasharray="3"/>
+    <text x="80" y="-38" font-family="Liberation Sans" font-size="11" font-weight="bold" fill="#d97706" text-anchor="middle">Δx</text>
+    <text x="135" y="-68" font-family="Liberation Sans" font-size="11" font-weight="bold" fill="#15803d">Δy</text>
+  </g>
+  <g transform="translate(340, 50)" font-family="Liberation Sans" font-size="12">
+    <rect x="0" y="0" width="160" height="90" rx="6" fill="#eff6ff" stroke="#1d4ed8" stroke-width="1.5"/>
+    <text x="80" y="25" font-weight="bold" fill="#1d4ed8" text-anchor="middle">f(x) = a x + b</text>
+    <text x="10" y="50" fill="#b91c1c">• b : ordonnée à l'origine</text>
+    <text x="10" y="70" fill="#15803d">• a = Δy / Δx : coefficient</text>
+    <text x="25" y="84" fill="#15803d">directeur (pente)</text>
+  </g>
+</svg>

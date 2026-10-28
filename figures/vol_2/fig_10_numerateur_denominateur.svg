@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 520 160" width="100%" height="160">
+  <rect width="520" height="160" fill="#f8fafc" rx="8" stroke="#cbd5e1" stroke-width="1"/>
+  <!-- Fraction 3/4 -->
+  <g transform="translate(80, 80)">
+    <text x="0" y="-12" font-family="Liberation Serif" font-size="34" font-weight="bold" fill="#1d4ed8" text-anchor="middle">3</text>
+    <line x1="-25" y1="0" x2="25" y2="0" stroke="#0f172a" stroke-width="3.5"/>
+    <text x="0" y="35" font-family="Liberation Serif" font-size="34" font-weight="bold" fill="#b91c1c" text-anchor="middle">4</text>
+  </g>
+  <!-- Explications fléchées -->
+  <g transform="translate(140, 30)" font-family="Liberation Sans">
+    <path d="M 0,25 L 30,10 L 70,10" fill="none" stroke="#1d4ed8" stroke-width="1.5"/>
+    <text x="80" y="14" font-size="12" font-weight="bold" fill="#1d4ed8">LE NUMÉRATEUR (latin numerare = compter)</text>
+    <text x="80" y="30" font-size="11" fill="#475569">Il COMPTE le nombre de parts choisies (ici 3 parts).</text>
+    
+    <path d="M 0,50 L 50,50" fill="none" stroke="#0f172a" stroke-width="1.5"/>
+    <text x="60" y="54" font-size="11" font-weight="bold" fill="#0f172a">Trait de fraction : l'opérateur de partage (division)</text>
+    
+    <path d="M 0,75 L 30,90 L 70,90" fill="none" stroke="#b91c1c" stroke-width="1.5"/>
+    <text x="80" y="94" font-size="12" font-weight="bold" fill="#b91c1c">LE DÉNOMINATEUR (latin denominare = nommer)</text>
+    <text x="80" y="110" font-size="11" fill="#475569">Il NOMME la taille de la famille (coupé en 4 parts égales).</text>
+  </g>
+</svg>

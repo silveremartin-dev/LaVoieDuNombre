@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 540 210" width="100%" height="210">
+  <rect width="540" height="210" fill="#f8fafc" rx="8" stroke="#cbd5e1" stroke-width="1"/>
+  <!-- Asymptote verticale -->
+  <g transform="translate(80, 110)">
+    <text x="60" y="-85" font-family="Liberation Sans" font-size="12" font-weight="bold" fill="#b91c1c" text-anchor="middle">Asymptote Verticale x = a</text>
+    <line x1="-50" y1="40" x2="160" y2="40" stroke="#0f172a" stroke-width="1.5"/>
+    <line x1="0" y1="80" x2="0" y2="-70" stroke="#0f172a" stroke-width="1.5"/>
+    <!-- Ligne verticale x = 50 -->
+    <line x1="50" y1="80" x2="50" y2="-70" stroke="#b91c1c" stroke-width="2" stroke-dasharray="4"/>
+    <text x="50" y="55" font-family="Liberation Sans" font-size="11" font-weight="bold" fill="#b91c1c" text-anchor="middle">x = a</text>
+    <!-- Courbe 1/(x-a) -->
+    <path d="M 46,-70 Q 44,20 10,35" fill="none" stroke="#1d4ed8" stroke-width="2.5"/>
+    <path d="M 54,80 Q 56,50 120,43" fill="none" stroke="#1d4ed8" stroke-width="2.5"/>
+  </g>
+  <!-- Asymptote horizontale -->
+  <g transform="translate(340, 110)">
+    <text x="60" y="-85" font-family="Liberation Sans" font-size="12" font-weight="bold" fill="#15803d" text-anchor="middle">Asymptote Horizontale y = L</text>
+    <line x1="-50" y1="40" x2="160" y2="40" stroke="#0f172a" stroke-width="1.5"/>
+    <line x1="0" y1="80" x2="0" y2="-70" stroke="#0f172a" stroke-width="1.5"/>
+    <!-- Ligne horizontale y = -20 -->
+    <line x1="-50" y1="-20" x2="160" y2="-20" stroke="#15803d" stroke-width="2" stroke-dasharray="4"/>
+    <text x="145" y="-25" font-family="Liberation Sans" font-size="11" font-weight="bold" fill="#15803d">y = L</text>
+    <!-- Courbe tendant vers y = L -->
+    <path d="M 10,70 Q 40,-15 150,-19" fill="none" stroke="#1d4ed8" stroke-width="2.5"/>
+  </g>
+</svg>

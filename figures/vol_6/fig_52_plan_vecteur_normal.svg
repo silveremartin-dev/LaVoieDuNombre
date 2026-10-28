@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 540 210" width="100%" height="210">
+  <rect width="540" height="210" fill="#f8fafc" rx="8" stroke="#cbd5e1" stroke-width="1"/>
+  <g transform="translate(180, 140)">
+    <!-- Plan P en perspective cavalière (parallélogramme) -->
+    <polygon points="0,-20 180,-20 130,40 -50,40" fill="#eff6ff" stroke="#1d4ed8" stroke-width="2"/>
+    <text x="150" y="30" font-family="Liberation Sans" font-size="13" font-weight="bold" fill="#1d4ed8">Plan (P)</text>
+    
+    <!-- Point A dans le plan -->
+    <circle cx="60" cy="10" r="4.5" fill="#0f172a"/>
+    <text x="45" y="26" font-family="Liberation Sans" font-size="12" font-weight="bold" fill="#0f172a">A (x₀, y₀, z₀)</text>
+    
+    <!-- Vecteur normal n orthogonal au plan -->
+    <line x1="60" y1="10" x2="60" y2="-85" stroke="#b91c1c" stroke-width="3.5"/>
+    <polygon points="60,-92 55,-80 65,-80" fill="#b91c1c"/>
+    <text x="72" y="-70" font-family="Liberation Sans" font-size="13" font-weight="bold" fill="#b91c1c">n (a, b, c)</text>
+    
+    <!-- Angle droit avec le plan -->
+    <line x1="60" y1="-10" x2="75" y2="-10" stroke="#b91c1c" stroke-width="1.5"/>
+    <line x1="75" y1="-10" x2="75" y2="10" stroke="#b91c1c" stroke-width="1.5"/>
+  </g>
+  <g transform="translate(370, 50)" font-family="Liberation Sans" font-size="11.5">
+    <rect x="0" y="0" width="150" height="95" rx="6" fill="#fef2f2" stroke="#b91c1c" stroke-width="1.5"/>
+    <text x="75" y="22" font-weight="bold" fill="#b91c1c" text-anchor="middle">Équation du Plan :</text>
+    <text x="10" y="44" font-weight="bold" fill="#0f172a">a x + b y + c z + d = 0</text>
+    <text x="10" y="66" fill="#475569">AM · n = 0</text>
+    <text x="10" y="85" fill="#15803d">Orthogonal à toute droite de (P)</text>
+  </g>
+</svg>

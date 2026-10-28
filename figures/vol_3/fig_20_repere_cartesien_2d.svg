@@ -1,0 +1,50 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 520 210" width="100%" height="210">
+  <rect width="520" height="210" fill="#f8fafc" rx="8" stroke="#cbd5e1" stroke-width="1"/>
+  <g transform="translate(160, 110)">
+    <!-- Axes x et y -->
+    <line x1="-130" y1="0" x2="150" y2="0" stroke="#0f172a" stroke-width="2"/>
+    <polygon points="155,0 145,-4 145,4" fill="#0f172a"/>
+    <text x="145" y="18" font-family="Liberation Sans" font-size="12" font-weight="bold" fill="#0f172a">x</text>
+    
+    <line x1="0" y1="90" x2="0" y2="-90" stroke="#0f172a" stroke-width="2"/>
+    <polygon points="0,-95 -4,-85 4,-85" fill="#0f172a"/>
+    <text x="10" y="-85" font-family="Liberation Sans" font-size="12" font-weight="bold" fill="#0f172a">y</text>
+    <text x="-12" y="15" font-family="Liberation Sans" font-size="11" font-weight="bold" fill="#64748b">O</text>
+    
+    <!-- Graduations -->
+<line x1="-90" y1="-3" x2="-90" y2="3" stroke="#0f172a" stroke-width="1.5"/>
+<text x="-90" y="15" font-family="Liberation Sans" font-size="10" fill="#64748b" text-anchor="middle">-3</text>
+<line x1="-60" y1="-3" x2="-60" y2="3" stroke="#0f172a" stroke-width="1.5"/>
+<text x="-60" y="15" font-family="Liberation Sans" font-size="10" fill="#64748b" text-anchor="middle">-2</text>
+<line x1="-30" y1="-3" x2="-30" y2="3" stroke="#0f172a" stroke-width="1.5"/>
+<text x="-30" y="15" font-family="Liberation Sans" font-size="10" fill="#64748b" text-anchor="middle">-1</text>
+<line x1="30" y1="-3" x2="30" y2="3" stroke="#0f172a" stroke-width="1.5"/>
+<text x="30" y="15" font-family="Liberation Sans" font-size="10" fill="#64748b" text-anchor="middle">1</text>
+<line x1="60" y1="-3" x2="60" y2="3" stroke="#0f172a" stroke-width="1.5"/>
+<text x="60" y="15" font-family="Liberation Sans" font-size="10" fill="#64748b" text-anchor="middle">2</text>
+<line x1="90" y1="-3" x2="90" y2="3" stroke="#0f172a" stroke-width="1.5"/>
+<text x="90" y="15" font-family="Liberation Sans" font-size="10" fill="#64748b" text-anchor="middle">3</text>
+<line x1="120" y1="-3" x2="120" y2="3" stroke="#0f172a" stroke-width="1.5"/>
+<text x="120" y="15" font-family="Liberation Sans" font-size="10" fill="#64748b" text-anchor="middle">4</text>
+<line x1="-3" y1="60" x2="3" y2="60" stroke="#0f172a" stroke-width="1.5"/>
+<text x="-12" y="64" font-family="Liberation Sans" font-size="10" fill="#64748b" text-anchor="middle">-2</text>
+<line x1="-3" y1="30" x2="3" y2="30" stroke="#0f172a" stroke-width="1.5"/>
+<text x="-12" y="34" font-family="Liberation Sans" font-size="10" fill="#64748b" text-anchor="middle">-1</text>
+<line x1="-3" y1="-30" x2="3" y2="-30" stroke="#0f172a" stroke-width="1.5"/>
+<text x="-12" y="-26" font-family="Liberation Sans" font-size="10" fill="#64748b" text-anchor="middle">1</text>
+<line x1="-3" y1="-60" x2="3" y2="-60" stroke="#0f172a" stroke-width="1.5"/>
+<text x="-12" y="-56" font-family="Liberation Sans" font-size="10" fill="#64748b" text-anchor="middle">2</text>
+    <!-- Point A(3, 2) -->
+    <line x1="90" y1="0" x2="90" y2="-60" stroke="#1d4ed8" stroke-width="1.5" stroke-dasharray="3"/>
+    <line x1="0" y1="-60" x2="90" y2="-60" stroke="#1d4ed8" stroke-width="1.5" stroke-dasharray="3"/>
+    <circle cx="90" cy="-60" r="5" fill="#b91c1c"/>
+    <text x="105" y="-65" font-family="Liberation Sans" font-size="13" font-weight="bold" fill="#b91c1c">A (3 ; 2)</text>
+  </g>
+  <g transform="translate(340, 60)" font-family="Liberation Sans" font-size="12">
+    <text x="0" y="15" font-weight="bold" fill="#0f172a">Coordonnées du point :</text>
+    <text x="0" y="40" fill="#1d4ed8">• Abscisse x = 3 (horizontal)</text>
+    <text x="0" y="65" fill="#15803d">• Ordonnée y = 2 (vertical)</text>
+    <text x="0" y="95" fill="#64748b">René Descartes (1637) :</text>
+    <text x="0" y="112" fill="#64748b">unir algèbre et géométrie</text>
+  </g>
+</svg>

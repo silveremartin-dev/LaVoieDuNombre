@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 650 240" width="100%" height="240">
+  <defs>
+    <marker id="arr-blue14" viewBox="0 0 10 10" refX="6" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+      <path d="M 0 1 L 10 5 L 0 9 z" fill="#1d4ed8"/>
+    </marker>
+  </defs>
+  <rect width="650" height="240" fill="#f8fafc" rx="10" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text x="325" y="26" font-family="Liberation Sans, sans-serif" font-size="14" font-weight="bold" fill="#0f172a" text-anchor="middle">La règle de trois : le tableau de proportionnalité et le coefficient multiplicateur</text>
+
+  <g transform="translate(130, 50)" font-family="Liberation Sans, sans-serif">
+    <!-- Table structure -->
+    <rect width="280" height="100" rx="6" fill="#ffffff" stroke="#0f172a" stroke-width="2"/>
+    <line x1="0" y1="50" x2="280" y2="50" stroke="#cbd5e1" stroke-width="1.5"/>
+    <line x1="140" y1="0" x2="140" y2="100" stroke="#cbd5e1" stroke-width="1.5"/>
+
+    <!-- Row 1: Personnes -->
+    <text x="70" y="32" font-size="13" font-weight="bold" fill="#1d4ed8" text-anchor="middle">4 personnes</text>
+    <text x="210" y="32" font-size="13" font-weight="bold" fill="#1d4ed8" text-anchor="middle">6 personnes</text>
+
+    <!-- Row 2: Chocolat -->
+    <text x="70" y="82" font-size="13" font-weight="bold" fill="#b91c1c" text-anchor="middle">200 g</text>
+    <text x="210" y="82" font-size="14" font-weight="bold" fill="#15803d" text-anchor="middle">x = 300 g</text>
+
+    <!-- Multiplier arrow downwards: × 50 -->
+    <path d="M 295 25 C 330 25, 330 75, 295 75" fill="none" stroke="#1d4ed8" stroke-width="2.5" marker-end="url(#arr-blue14)"/>
+    <text x="365" y="55" font-size="12" font-weight="bold" fill="#1d4ed8" text-anchor="middle">× 50 (g/pers)</text>
+
+    <!-- Passing through 1 person (horizontal method) -->
+    <text x="140" y="130" font-size="11.5" fill="#0f172a" text-anchor="middle">Méthode du retour à l'unité : 1 personne = 200 ÷ 4 = 50 g</text>
+  </g>
+
+  <text x="325" y="218" font-family="Liberation Sans, sans-serif" font-size="12" font-weight="bold" fill="#0f172a" text-anchor="middle">Produit en croix : x = (200 × 6) ÷ 4 = 1200 ÷ 4 = 300 grammes</text>
+</svg>

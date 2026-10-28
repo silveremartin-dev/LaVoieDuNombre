@@ -1,0 +1,167 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 680 430" width="100%" height="430">
+  <defs>
+    <style>
+      .title { font-family: 'Liberation Sans', sans-serif; font-size: 14px; font-weight: bold; fill: #1d4ed8; }
+      .branch-lbl { font-family: 'Liberation Sans', sans-serif; font-size: 11px; font-weight: bold; }
+      .node-txt { font-family: 'Liberation Sans', sans-serif; font-size: 11px; font-weight: bold; fill: #ffffff; }
+      .leaf-lbl { font-family: 'Liberation Mono', monospace; font-size: 11.5px; font-weight: bold; fill: #0f172a; }
+      .prob-lbl { font-family: 'Liberation Sans', sans-serif; font-size: 11px; fill: #475569; }
+      .k-lbl { font-family: 'Liberation Sans', sans-serif; font-size: 11px; font-weight: bold; }
+    </style>
+  </defs>
+
+  <!-- Background card -->
+  <rect width="680" height="430" fill="#f8fafc" rx="8" stroke="#cbd5e1" stroke-width="1.5"/>
+  <rect x="20" y="12" width="640" height="32" rx="6" fill="#eff6ff" stroke="#bfdbfe" stroke-width="1"/>
+  <text x="340" y="33" class="title" text-anchor="middle">Arbre Pondéré du Schéma de Bernoulli (n = 3 épreuves indépendantes)</text>
+
+  <!-- Stage column headers -->
+  <text x="50" y="62" font-family="Liberation Sans" font-size="11" font-weight="bold" fill="#64748b" text-anchor="middle">Départ</text>
+  <text x="160" y="62" font-family="Liberation Sans" font-size="11" font-weight="bold" fill="#64748b" text-anchor="middle">1ère épreuve</text>
+  <text x="270" y="62" font-family="Liberation Sans" font-size="11" font-weight="bold" fill="#64748b" text-anchor="middle">2e épreuve</text>
+  <text x="380" y="62" font-family="Liberation Sans" font-size="11" font-weight="bold" fill="#64748b" text-anchor="middle">3e épreuve</text>
+  <text x="530" y="62" font-family="Liberation Sans" font-size="11" font-weight="bold" fill="#1e293b" text-anchor="middle">Issue  |  Probabilité  |  k succès</text>
+  <line x1="30" y1="68" x2="650" y2="68" stroke="#e2e8f0" stroke-width="1"/>
+
+  <!-- Level 1 lines from Root (50, 240) -->
+  <!-- To S1 (160, 150) -->
+  <line x1="50" y1="240" x2="160" y2="150" stroke="#1d4ed8" stroke-width="2.5"/>
+  <text x="96" y="185" class="branch-lbl" fill="#1d4ed8">p</text>
+  <!-- To E1 (160, 330) -->
+  <line x1="50" y1="240" x2="160" y2="330" stroke="#b91c1c" stroke-width="2.5"/>
+  <text x="96" y="300" class="branch-lbl" fill="#b91c1c">1 - p</text>
+
+  <!-- Root node -->
+  <circle cx="50" cy="240" r="6" fill="#0f172a"/>
+
+  <!-- Level 2 lines -->
+  <!-- From S1 (160, 150) to S2 (270, 110) & E2 (270, 190) -->
+  <line x1="160" y1="150" x2="270" y2="110" stroke="#1d4ed8" stroke-width="2"/>
+  <text x="210" y="122" class="branch-lbl" fill="#1d4ed8">p</text>
+  <line x1="160" y1="150" x2="270" y2="190" stroke="#b91c1c" stroke-width="2"/>
+  <text x="210" y="180" class="branch-lbl" fill="#b91c1c">1 - p</text>
+
+  <!-- From E1 (160, 330) to S2 (270, 290) & E2 (270, 370) -->
+  <line x1="160" y1="330" x2="270" y2="290" stroke="#1d4ed8" stroke-width="2"/>
+  <text x="210" y="302" class="branch-lbl" fill="#1d4ed8">p</text>
+  <line x1="160" y1="330" x2="270" y2="370" stroke="#b91c1c" stroke-width="2"/>
+  <text x="210" y="360" class="branch-lbl" fill="#b91c1c">1 - p</text>
+
+  <!-- Stage 1 Nodes -->
+  <circle cx="160" cy="150" r="10" fill="#1d4ed8"/>
+  <text x="160" y="154" class="node-txt" text-anchor="middle">S</text>
+  <circle cx="160" cy="330" r="10" fill="#b91c1c"/>
+  <text x="160" y="334" class="node-txt" text-anchor="middle">E</text>
+
+  <!-- Level 3 lines -->
+  <!-- From S2 (270, 110) -->
+  <line x1="270" y1="110" x2="380" y2="90" stroke="#1d4ed8" stroke-width="1.8"/>
+  <text x="325" y="93" class="branch-lbl" fill="#1d4ed8">p</text>
+  <line x1="270" y1="110" x2="380" y2="130" stroke="#b91c1c" stroke-width="1.8"/>
+  <text x="325" y="127" class="branch-lbl" fill="#b91c1c">1 - p</text>
+
+  <!-- From E2 (270, 190) -->
+  <line x1="270" y1="190" x2="380" y2="170" stroke="#1d4ed8" stroke-width="1.8"/>
+  <text x="325" y="173" class="branch-lbl" fill="#1d4ed8">p</text>
+  <line x1="270" y1="190" x2="380" y2="210" stroke="#b91c1c" stroke-width="1.8"/>
+  <text x="325" y="207" class="branch-lbl" fill="#b91c1c">1 - p</text>
+
+  <!-- From S2 (270, 290) -->
+  <line x1="270" y1="290" x2="380" y2="270" stroke="#1d4ed8" stroke-width="1.8"/>
+  <text x="325" y="273" class="branch-lbl" fill="#1d4ed8">p</text>
+  <line x1="270" y1="290" x2="380" y2="310" stroke="#b91c1c" stroke-width="1.8"/>
+  <text x="325" y="307" class="branch-lbl" fill="#b91c1c">1 - p</text>
+
+  <!-- From E2 (270, 370) -->
+  <line x1="270" y1="370" x2="380" y2="350" stroke="#1d4ed8" stroke-width="1.8"/>
+  <text x="325" y="353" class="branch-lbl" fill="#1d4ed8">p</text>
+  <line x1="270" y1="370" x2="380" y2="390" stroke="#b91c1c" stroke-width="1.8"/>
+  <text x="325" y="387" class="branch-lbl" fill="#b91c1c">1 - p</text>
+
+  <!-- Stage 2 Nodes -->
+  <circle cx="270" cy="110" r="9" fill="#1d4ed8"/>
+  <text x="270" y="114" class="node-txt" text-anchor="middle">S</text>
+  <circle cx="270" cy="190" r="9" fill="#b91c1c"/>
+  <text x="270" y="194" class="node-txt" text-anchor="middle">E</text>
+  <circle cx="270" cy="290" r="9" fill="#1d4ed8"/>
+  <text x="270" y="294" class="node-txt" text-anchor="middle">S</text>
+  <circle cx="270" cy="370" r="9" fill="#b91c1c"/>
+  <text x="270" y="374" class="node-txt" text-anchor="middle">E</text>
+
+  <!-- Stage 3 Nodes & Leaf Rows -->
+  <!-- Row 1: SSS -->
+  <circle cx="380" cy="90" r="8" fill="#1d4ed8"/>
+  <text x="380" y="93" class="node-txt" text-anchor="middle" font-size="9">S</text>
+  <line x1="392" y1="90" x2="430" y2="90" stroke="#94a3b8" stroke-dasharray="2,2"/>
+  <text x="440" y="94" class="leaf-lbl">S - S - S</text>
+  <text x="515" y="94" class="prob-lbl">p³</text>
+  <rect x="585" y="80" width="70" height="20" rx="4" fill="#dbeafe"/>
+  <text x="620" y="94" class="k-lbl" fill="#1d4ed8" text-anchor="middle">k = 3 succès</text>
+
+  <!-- Row 2: SSE -->
+  <circle cx="380" cy="130" r="8" fill="#b91c1c"/>
+  <text x="380" y="133" class="node-txt" text-anchor="middle" font-size="9">E</text>
+  <line x1="392" y1="130" x2="430" y2="130" stroke="#94a3b8" stroke-dasharray="2,2"/>
+  <text x="440" y="134" class="leaf-lbl">S - S - E</text>
+  <text x="515" y="134" class="prob-lbl">p² (1 - p)</text>
+  <rect x="585" y="120" width="70" height="20" rx="4" fill="#fef3c7"/>
+  <text x="620" y="134" class="k-lbl" fill="#b45309" text-anchor="middle">k = 2 succès</text>
+
+  <!-- Row 3: SES -->
+  <circle cx="380" cy="170" r="8" fill="#1d4ed8"/>
+  <text x="380" y="173" class="node-txt" text-anchor="middle" font-size="9">S</text>
+  <line x1="392" y1="170" x2="430" y2="170" stroke="#94a3b8" stroke-dasharray="2,2"/>
+  <text x="440" y="174" class="leaf-lbl">S - E - S</text>
+  <text x="515" y="174" class="prob-lbl">p² (1 - p)</text>
+  <rect x="585" y="160" width="70" height="20" rx="4" fill="#fef3c7"/>
+  <text x="620" y="174" class="k-lbl" fill="#b45309" text-anchor="middle">k = 2 succès</text>
+
+  <!-- Row 4: SEE -->
+  <circle cx="380" cy="210" r="8" fill="#b91c1c"/>
+  <text x="380" y="213" class="node-txt" text-anchor="middle" font-size="9">E</text>
+  <line x1="392" y1="210" x2="430" y2="210" stroke="#94a3b8" stroke-dasharray="2,2"/>
+  <text x="440" y="214" class="leaf-lbl">S - E - E</text>
+  <text x="515" y="214" class="prob-lbl">p (1 - p)²</text>
+  <rect x="585" y="200" width="70" height="20" rx="4" fill="#f1f5f9"/>
+  <text x="620" y="214" class="k-lbl" fill="#475569" text-anchor="middle">k = 1 succès</text>
+
+  <!-- Row 5: ESS -->
+  <circle cx="380" cy="270" r="8" fill="#1d4ed8"/>
+  <text x="380" y="273" class="node-txt" text-anchor="middle" font-size="9">S</text>
+  <line x1="392" y1="270" x2="430" y2="270" stroke="#94a3b8" stroke-dasharray="2,2"/>
+  <text x="440" y="274" class="leaf-lbl">E - S - S</text>
+  <text x="515" y="274" class="prob-lbl">p² (1 - p)</text>
+  <rect x="585" y="260" width="70" height="20" rx="4" fill="#fef3c7"/>
+  <text x="620" y="274" class="k-lbl" fill="#b45309" text-anchor="middle">k = 2 succès</text>
+
+  <!-- Row 6: ESE -->
+  <circle cx="380" cy="310" r="8" fill="#b91c1c"/>
+  <text x="380" y="313" class="node-txt" text-anchor="middle" font-size="9">E</text>
+  <line x1="392" y1="310" x2="430" y2="310" stroke="#94a3b8" stroke-dasharray="2,2"/>
+  <text x="440" y="314" class="leaf-lbl">E - S - E</text>
+  <text x="515" y="314" class="prob-lbl">p (1 - p)²</text>
+  <rect x="585" y="300" width="70" height="20" rx="4" fill="#f1f5f9"/>
+  <text x="620" y="314" class="k-lbl" fill="#475569" text-anchor="middle">k = 1 succès</text>
+
+  <!-- Row 7: EES -->
+  <circle cx="380" cy="350" r="8" fill="#1d4ed8"/>
+  <text x="380" y="353" class="node-txt" text-anchor="middle" font-size="9">S</text>
+  <line x1="392" y1="350" x2="430" y2="350" stroke="#94a3b8" stroke-dasharray="2,2"/>
+  <text x="440" y="354" class="leaf-lbl">E - E - S</text>
+  <text x="515" y="354" class="prob-lbl">p (1 - p)²</text>
+  <rect x="585" y="340" width="70" height="20" rx="4" fill="#f1f5f9"/>
+  <text x="620" y="354" class="k-lbl" fill="#475569" text-anchor="middle">k = 1 succès</text>
+
+  <!-- Row 8: EEE -->
+  <circle cx="380" cy="390" r="8" fill="#b91c1c"/>
+  <text x="380" y="393" class="node-txt" text-anchor="middle" font-size="9">E</text>
+  <line x1="392" y1="390" x2="430" y2="390" stroke="#94a3b8" stroke-dasharray="2,2"/>
+  <text x="440" y="394" class="leaf-lbl">E - E - E</text>
+  <text x="515" y="394" class="prob-lbl">(1 - p)³</text>
+  <rect x="585" y="380" width="70" height="20" rx="4" fill="#fee2e2"/>
+  <text x="620" y="394" class="k-lbl" fill="#b91c1c" text-anchor="middle">k = 0 succès</text>
+
+  <!-- Bottom highlight note -->
+  <line x1="30" y1="416" x2="650" y2="416" stroke="#cbd5e1" stroke-width="1"/>
+  <text x="340" y="426" font-family="Liberation Sans" font-size="10.5" fill="#1d4ed8" font-weight="bold" text-anchor="middle">Remarque : Pour k = 2 succès, il y a exactement (3 parmi 2) = 3 chemins distincts (SSE, SES, ESS), chacun de probabilité p²(1-p).</text>
+</svg>

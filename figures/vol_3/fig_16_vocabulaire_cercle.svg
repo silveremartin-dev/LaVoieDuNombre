@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 540 210" width="100%" height="210">
+  <rect width="540" height="210" fill="#f8fafc" rx="8" stroke="#cbd5e1" stroke-width="1"/>
+  <g transform="translate(160, 105)">
+    <circle cx="0" cy="0" r="75" fill="#eff6ff" stroke="#1d4ed8" stroke-width="2"/>
+    <circle cx="0" cy="0" r="4" fill="#0f172a"/>
+    <text x="-12" y="4" font-family="Liberation Sans" font-size="12" font-weight="bold" fill="#0f172a">O</text>
+    
+    <!-- Rayon OA -->
+    <line x1="0" y1="0" x2="53" y2="-53" stroke="#15803d" stroke-width="2.5"/>
+    <text x="32" y="-22" font-family="Liberation Sans" font-size="11" font-weight="bold" fill="#15803d">Rayon r</text>
+    
+    <!-- Diamètre BC -->
+    <line x1="-75" y1="0" x2="75" y2="0" stroke="#b91c1c" stroke-width="2.5"/>
+    <text x="-40" y="-8" font-family="Liberation Sans" font-size="11" font-weight="bold" fill="#b91c1c">Diamètre d = 2r</text>
+    
+    <!-- Corde et Arc DE -->
+    <line x1="-53" y1="53" x2="53" y2="53" stroke="#d97706" stroke-width="2"/>
+    <text x="0" y="47" font-family="Liberation Sans" font-size="10.5" font-weight="bold" fill="#d97706" text-anchor="middle">Corde [DE]</text>
+    <path d="M -53,53 A 75 75 0 0 0 53,53" fill="none" stroke="#7e22ce" stroke-width="3"/>
+  </g>
+  <g transform="translate(310, 40)" font-family="Liberation Sans" font-size="12">
+    <text x="0" y="20" fill="#0f172a" font-weight="bold">Éléments géométriques :</text>
+    <text x="0" y="45" fill="#15803d">• Rayon r : distance du centre au bord</text>
+    <text x="0" y="70" fill="#b91c1c">• Diamètre d = 2r : corde passant par le centre</text>
+    <text x="0" y="95" fill="#d97706">• Corde : segment joignant 2 points</text>
+    <text x="0" y="120" fill="#7e22ce">• Arc : portion courbe du cercle</text>
+    <text x="0" y="150" fill="#1d4ed8" font-weight="bold">Périmètre = 2 × π × r = π × d</text>
+  </g>
+</svg>

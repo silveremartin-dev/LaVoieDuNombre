@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 180" width="100%" height="180">
+  <rect width="500" height="180" fill="#f8fafc" rx="8" stroke="#cbd5e1" stroke-width="1"/>
+  <!-- Axe vertical de symétrie -->
+  <line x1="250" y1="15" x2="250" y2="155" stroke="#b91c1c" stroke-width="2" stroke-dasharray="5"/>
+  <text x="250" y="170" font-family="Liberation Sans" font-size="11" font-weight="bold" fill="#b91c1c" text-anchor="middle">Axe de symétrie (pliage)</text>
+  <!-- Papillon gauche -->
+  <g fill="#eff6ff" stroke="#1d4ed8" stroke-width="2">
+    <path d="M 250,50 Q 150,20 160,80 Q 170,110 250,90 Z"/>
+    <path d="M 250,90 Q 180,110 190,140 Q 220,150 250,110 Z"/>
+    <circle cx="185" cy="65" r="8" fill="#d97706" stroke="none"/>
+  </g>
+  <text x="180" y="130" font-family="Liberation Sans" font-size="12" font-weight="bold" fill="#1d4ed8" text-anchor="middle">Aile gauche</text>
+  <!-- Papillon droite (symétrique exacte) -->
+  <g fill="#eff6ff" stroke="#1d4ed8" stroke-width="2">
+    <path d="M 250,50 Q 350,20 340,80 Q 330,110 250,90 Z"/>
+    <path d="M 250,90 Q 320,110 310,140 Q 280,150 250,110 Z"/>
+    <circle cx="315" cy="65" r="8" fill="#d97706" stroke="none"/>
+  </g>
+  <text x="320" y="130" font-family="Liberation Sans" font-size="12" font-weight="bold" fill="#1d4ed8" text-anchor="middle">Aile droite</text>
+  <!-- Corps au milieu -->
+  <ellipse cx="250" cy="85" rx="5" ry="30" fill="#0f172a"/>
+</svg>

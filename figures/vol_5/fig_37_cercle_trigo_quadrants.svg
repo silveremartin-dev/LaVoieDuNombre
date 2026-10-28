@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 520 300" width="100%" height="100%">
+  <rect width="520" height="300" fill="#f8fafc" rx="8"/>
+  <text x="260" y="28" text-anchor="middle" font-family="Liberation Sans" font-size="15" font-weight="bold" fill="#0f172a">Les Quatre Quadrants Trigonométriques : Signes de cos(x) et sin(x)</text>
+  
+  <g transform="translate(260, 160)">
+    <!-- Circle -->
+    <circle cx="0" cy="0" r="105" fill="#ffffff" stroke="#0f172a" stroke-width="2"/>
+    
+    <!-- Axes -->
+    <line x1="-125" y1="0" x2="125" y2="0" stroke="#0f172a" stroke-width="1.8"/>
+    <line x1="0" y1="-125" x2="0" y2="125" stroke="#0f172a" stroke-width="1.8"/>
+    <text x="135" y="4" font-family="Liberation Sans" font-size="12" font-weight="bold" fill="#0f172a">cos (x)</text>
+    <text x="0" y="-133" text-anchor="middle" font-family="Liberation Sans" font-size="12" font-weight="bold" fill="#0f172a">sin (y)</text>
+    
+    <!-- Quadrant I -->
+    <rect x="15" y="-95" width="85" height="42" fill="#eff6ff" rx="4"/>
+    <text x="57" y="-78" text-anchor="middle" font-family="Liberation Sans" font-size="12" font-weight="bold" fill="#1d4ed8">Quadrant I</text>
+    <text x="57" y="-62" text-anchor="middle" font-family="Liberation Sans" font-size="11" fill="#0f172a">cos &gt; 0, sin &gt; 0</text>
+    
+    <!-- Quadrant II -->
+    <rect x="-100" y="-95" width="85" height="42" fill="#fef2f2" rx="4"/>
+    <text x="-57" y="-78" text-anchor="middle" font-family="Liberation Sans" font-size="12" font-weight="bold" fill="#b91c1c">Quadrant II</text>
+    <text x="-57" y="-62" text-anchor="middle" font-family="Liberation Sans" font-size="11" fill="#0f172a">cos &lt; 0, sin &gt; 0</text>
+    
+    <!-- Quadrant III -->
+    <rect x="-100" y="50" width="85" height="42" fill="#fef3c7" rx="4"/>
+    <text x="-57" y="67" text-anchor="middle" font-family="Liberation Sans" font-size="12" font-weight="bold" fill="#d97706">Quadrant III</text>
+    <text x="-57" y="83" text-anchor="middle" font-family="Liberation Sans" font-size="11" fill="#0f172a">cos &lt; 0, sin &lt; 0</text>
+    
+    <!-- Quadrant IV -->
+    <rect x="15" y="50" width="85" height="42" fill="#f0fdf4" rx="4"/>
+    <text x="57" y="67" text-anchor="middle" font-family="Liberation Sans" font-size="12" font-weight="bold" fill="#15803d">Quadrant IV</text>
+    <text x="57" y="83" text-anchor="middle" font-family="Liberation Sans" font-size="11" fill="#0f172a">cos &gt; 0, sin &lt; 0</text>
+  </g>
+</svg>

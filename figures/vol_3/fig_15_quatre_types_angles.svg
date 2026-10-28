@@ -1,0 +1,46 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 650 240" width="100%" height="240">
+  <rect width="650" height="240" fill="#f8fafc" rx="10" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text x="325" y="26" font-family="Liberation Sans, sans-serif" font-size="14" font-weight="bold" fill="#0f172a" text-anchor="middle">Classification géométrique des quatre types d'angles</text>
+
+  <!-- 1. Aigu -->
+  <g transform="translate(25, 45)">
+    <rect width="135" height="145" rx="6" fill="#ffffff" stroke="#cbd5e1" stroke-width="1"/>
+    <text x="67" y="22" font-family="Liberation Sans, sans-serif" font-size="11.5" font-weight="bold" fill="#1d4ed8" text-anchor="middle">AIGU</text>
+    <line x1="25" y1="105" x2="110" y2="105" stroke="#0f172a" stroke-width="2"/>
+    <line x1="25" y1="105" x2="85" y2="45" stroke="#1d4ed8" stroke-width="2.5"/>
+    <path d="M 50 105 A 25 25 0 0 0 43 88" fill="none" stroke="#d97706" stroke-width="2"/>
+    <text x="67" y="125" font-family="Liberation Sans, sans-serif" font-size="10.5" font-weight="bold" fill="#0f172a" text-anchor="middle">&lt; 90°</text>
+  </g>
+
+  <!-- 2. Droit -->
+  <g transform="translate(180, 45)">
+    <rect width="135" height="145" rx="6" fill="#ffffff" stroke="#cbd5e1" stroke-width="1"/>
+    <text x="67" y="22" font-family="Liberation Sans, sans-serif" font-size="11.5" font-weight="bold" fill="#b91c1c" text-anchor="middle">DROIT</text>
+    <line x1="25" y1="105" x2="110" y2="105" stroke="#0f172a" stroke-width="2"/>
+    <line x1="25" y1="105" x2="25" y2="40" stroke="#b91c1c" stroke-width="2.5"/>
+    <rect x="25" y="93" width="12" height="12" fill="none" stroke="#b91c1c" stroke-width="1.5"/>
+    <text x="67" y="125" font-family="Liberation Sans, sans-serif" font-size="10.5" font-weight="bold" fill="#b91c1c" text-anchor="middle">= 90°</text>
+  </g>
+
+  <!-- 3. Obtus -->
+  <g transform="translate(335, 45)">
+    <rect width="135" height="145" rx="6" fill="#ffffff" stroke="#cbd5e1" stroke-width="1"/>
+    <text x="67" y="22" font-family="Liberation Sans, sans-serif" font-size="11.5" font-weight="bold" fill="#d97706" text-anchor="middle">OBTUS</text>
+    <line x1="50" y1="105" x2="120" y2="105" stroke="#0f172a" stroke-width="2"/>
+    <line x1="50" y1="105" x2="15" y2="55" stroke="#d97706" stroke-width="2.5"/>
+    <path d="M 75 105 A 25 25 0 0 0 35 83" fill="none" stroke="#d97706" stroke-width="2"/>
+    <text x="67" y="125" font-family="Liberation Sans, sans-serif" font-size="10.5" font-weight="bold" fill="#0f172a" text-anchor="middle">90° &lt; α &lt; 180°</text>
+  </g>
+
+  <!-- 4. Plat -->
+  <g transform="translate(490, 45)">
+    <rect width="135" height="145" rx="6" fill="#ffffff" stroke="#cbd5e1" stroke-width="1"/>
+    <text x="67" y="22" font-family="Liberation Sans, sans-serif" font-size="11.5" font-weight="bold" fill="#15803d" text-anchor="middle">PLAT</text>
+    <line x1="15" y1="105" x2="120" y2="105" stroke="#15803d" stroke-width="2.5"/>
+    <circle cx="67" cy="105" r="3.5" fill="#0f172a"/>
+    <path d="M 45 105 A 22 22 0 0 1 89 105" fill="none" stroke="#d97706" stroke-width="2"/>
+    <text x="67" y="125" font-family="Liberation Sans, sans-serif" font-size="10.5" font-weight="bold" fill="#15803d" text-anchor="middle">= 180°</text>
+  </g>
+
+  <text x="325" y="218" font-family="Liberation Sans, sans-serif" font-size="11" fill="#64748b" text-anchor="middle">L'angle droit sert d'étalon universel pour mesurer et comparer toutes les ouvertures du plan</text>
+</svg>

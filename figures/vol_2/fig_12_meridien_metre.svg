@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 650 250" width="100%" height="250">
+  <rect width="650" height="250" fill="#f8fafc" rx="10" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text x="325" y="26" font-family="Liberation Sans, sans-serif" font-size="14" font-weight="bold" fill="#0f172a" text-anchor="middle">La naissance du mètre : la mesure du méridien terrestre par Delambre et Méchain (1792)</text>
+
+  <g transform="translate(180, 45)">
+    <!-- Globe outline -->
+    <circle cx="100" cy="90" r="75" fill="#eff6ff" stroke="#1d4ed8" stroke-width="2"/>
+    <!-- Equator -->
+    <ellipse cx="100" cy="90" rx="75" ry="25" fill="none" stroke="#cbd5e1" stroke-width="1.5" stroke-dasharray="4,3"/>
+    <text x="180" y="94" font-family="Liberation Sans, sans-serif" font-size="10.5" fill="#64748b">Équateur</text>
+    <!-- North Pole -->
+    <circle cx="100" cy="15" r="4" fill="#0f172a"/>
+    <text x="100" y="8" font-family="Liberation Sans, sans-serif" font-size="11" font-weight="bold" fill="#0f172a" text-anchor="middle">Pôle Nord</text>
+    <!-- South Pole -->
+    <circle cx="100" cy="165" r="4" fill="#0f172a"/>
+    <!-- Meridian line (quarter highlighted) -->
+    <!-- Arc from Pole to Equator in RED -->
+    <path d="M 100 15 A 75 75 0 0 0 25 90" fill="none" stroke="#b91c1c" stroke-width="4"/>
+    <!-- Dunkerque and Barcelone segment -->
+    <circle cx="92" cy="40" r="3.5" fill="#d97706" stroke="#0f172a" stroke-width="1"/>
+    <text x="100" y="42" font-family="Liberation Sans, sans-serif" font-size="10" font-weight="bold" fill="#0f172a">Dunkerque</text>
+    <circle cx="82" cy="65" r="3.5" fill="#d97706" stroke="#0f172a" stroke-width="1"/>
+    <text x="90" y="67" font-family="Liberation Sans, sans-serif" font-size="10" font-weight="bold" fill="#0f172a">Barcelone</text>
+    <path d="M 92 40 A 75 75 0 0 0 82 65" fill="none" stroke="#d97706" stroke-width="4"/>
+  </g>
+
+  <!-- Side info card -->
+  <g transform="translate(390, 60)" font-family="Liberation Sans, sans-serif">
+    <rect width="220" height="120" rx="8" fill="#ffffff" stroke="#cbd5e1" stroke-width="1.5"/>
+    <text x="110" y="24" font-size="12" font-weight="bold" fill="#b91c1c" text-anchor="middle">Le Mètre Républicain</text>
+    <text x="15" y="55" font-size="11" fill="#0f172a">1 Quart de Méridien</text>
+    <text x="15" y="75" font-size="11.5" font-weight="bold" fill="#1d4ed8">= 10 000 000 mètres</text>
+    <text x="15" y="105" font-size="10.5" fill="#64748b">« À tous les temps, à tous les peuples »</text>
+  </g>
+
+  <text x="325" y="235" font-family="Liberation Sans, sans-serif" font-size="11" fill="#64748b" text-anchor="middle">Le mètre a été défini comme la dix-millionième partie de la distance du Pôle Nord à l'Équateur</text>
+</svg>

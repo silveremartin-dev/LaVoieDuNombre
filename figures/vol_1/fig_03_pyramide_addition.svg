@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 450 200" width="100%" height="100%">
+  <rect width="450" height="200" fill="#f8fafc" rx="8"/>
+  <text x="225" y="28" text-anchor="middle" font-family="Liberation Sans" font-size="15" font-weight="bold" fill="#0f172a">La Pyramide Additive : Chaque Brique est la Somme des Deux Dessous</text>
+  
+  <!-- Top brick -->
+  <rect x="180" y="45" width="90" height="40" fill="#eff6ff" stroke="#1d4ed8" stroke-width="2" rx="4"/>
+  <text x="225" y="71" text-anchor="middle" font-family="Liberation Sans" font-size="18" font-weight="bold" fill="#b91c1c">15</text>
+  
+  <!-- Middle bricks -->
+  <rect x="130" y="95" width="90" height="40" fill="#ffffff" stroke="#475569" stroke-width="1.5" rx="4"/>
+  <text x="175" y="121" text-anchor="middle" font-family="Liberation Sans" font-size="16" font-weight="bold" fill="#0f172a">7</text>
+  
+  <rect x="230" y="95" width="90" height="40" fill="#ffffff" stroke="#475569" stroke-width="1.5" rx="4"/>
+  <text x="275" y="121" text-anchor="middle" font-family="Liberation Sans" font-size="16" font-weight="bold" fill="#0f172a">8</text>
+  
+  <!-- Base bricks -->
+  <rect x="80" y="145" width="90" height="40" fill="#ffffff" stroke="#cbd5e1" stroke-width="1.5" rx="4"/>
+  <text x="125" y="171" text-anchor="middle" font-family="Liberation Sans" font-size="16" font-weight="bold" fill="#15803d">3</text>
+  
+  <rect x="180" y="145" width="90" height="40" fill="#ffffff" stroke="#cbd5e1" stroke-width="1.5" rx="4"/>
+  <text x="225" y="171" text-anchor="middle" font-family="Liberation Sans" font-size="16" font-weight="bold" fill="#15803d">4</text>
+  
+  <rect x="280" y="145" width="90" height="40" fill="#ffffff" stroke="#cbd5e1" stroke-width="1.5" rx="4"/>
+  <text x="325" y="171" text-anchor="middle" font-family="Liberation Sans" font-size="16" font-weight="bold" fill="#15803d">4</text>
+</svg>

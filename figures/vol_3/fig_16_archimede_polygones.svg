@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 650 250" width="100%" height="250">
+  <rect width="650" height="250" fill="#f8fafc" rx="10" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text x="325" y="26" font-family="Liberation Sans, sans-serif" font-size="14" font-weight="bold" fill="#0f172a" text-anchor="middle">La méthode d'Archimède : encadrement de Pi par polygones inscrits et circonscrits</text>
+
+  <g transform="translate(200, 135)">
+    <!-- Circle in dark -->
+    <circle cx="0" cy="0" r="70" fill="none" stroke="#0f172a" stroke-width="3"/>
+    <text x="0" y="5" font-family="Liberation Sans, sans-serif" font-size="14" font-weight="bold" fill="#0f172a" text-anchor="middle">Périmètre = 2πR</text>
+
+    <!-- Inscribed regular hexagon (inner in BLUE) r = 70 -->
+    <!-- points at angles 0, 60, 120, 180, 240, 300 -->
+    <polygon points="70,0 35,-60.62 -35,-60.62 -70,0 -35,60.62 35,60.62" fill="#eff6ff" fill-opacity="0.5" stroke="#1d4ed8" stroke-width="2.5"/>
+    <text x="0" y="-35" font-family="Liberation Sans, sans-serif" font-size="11" font-weight="bold" fill="#1d4ed8" text-anchor="middle">Inscrit (intérieur)</text>
+
+    <!-- Circumscribed regular hexagon (outer in RED) R_out = 70 / cos(30) = 80.83 -->
+    <polygon points="80.83,0 40.41,-70 -40.41,-70 -80.83,0 -40.41,70 40.41,70" fill="none" stroke="#b91c1c" stroke-width="2.5" stroke-dasharray="5,4"/>
+    <text x="0" y="45" font-family="Liberation Sans, sans-serif" font-size="11" font-weight="bold" fill="#b91c1c" text-anchor="middle">Circonscrit (extérieur)</text>
+  </g>
+
+  <!-- Side info card -->
+  <g transform="translate(410, 55)" font-family="Liberation Sans, sans-serif">
+    <rect width="210" height="135" rx="8" fill="#ffffff" stroke="#cbd5e1" stroke-width="1.5"/>
+    <text x="105" y="24" font-size="12" font-weight="bold" fill="#0f172a" text-anchor="middle">L'étau d'Archimède</text>
+    <text x="15" y="52" font-size="11" fill="#1d4ed8">• Polygone inscrit &lt; 2πR</text>
+    <text x="15" y="75" font-size="11" fill="#b91c1c">• 2πR &lt; Polygone circonscrit</text>
+    <line x1="15" y1="88" x2="195" y2="88" stroke="#cbd5e1" stroke-width="1"/>
+    <text x="15" y="108" font-size="11.5" font-weight="bold" fill="#0f172a">Avec 96 côtés :</text>
+    <text x="15" y="125" font-size="12" font-weight="bold" fill="#15803d">3 + 10/71 &lt; π &lt; 3 + 1/7</text>
+  </g>
+
+  <text x="325" y="235" font-family="Liberation Sans, sans-serif" font-size="11" fill="#64748b" text-anchor="middle">En doublant successivement le nombre de côtés (6, 12, 24, 48, 96), le cercle est pris au piège entre les deux périmètres</text>
+</svg>
