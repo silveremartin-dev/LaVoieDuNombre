@@ -1,7 +1,7 @@
 
 #set document(
   title: "LA VOIE DU NOMBRE — Une Odyssée Constructive",
-  author: "Silvère-Martin Michiellot & Antigravity"
+  author: "Silvère Martin-Michiellot & Antigravity"
 )
 
 // ==========================================
@@ -11,45 +11,134 @@
 // - Pages impaires = recto (droite) ; pages paires = verso (gauche).
 // - Pages liminaires (1 faux-titre, 2 blanche, 3 grand titre, 4 mentions légales,
 //   5 exergue/dédicace, 6 blanche, puis sommaire) : comptées mais muettes.
-// - Toute ouverture de volume, de chapitre ou d'annexe se fait en belle page (impaire)
-//   et reste muette ; le premier folio visible suit l'ouverture du Volume I.
-// - Pages blanches : comptées dans l'ordre arithmétique, jamais de folio ni de titre courant.
+// - Toute ouverture de volume se fait en belle page (impaire) précédée de son
+//   frontispice photographique de la nature sur la page gauche en regard (paire).
+// - La première page de chaque chapitre porte sa pagination en pied de page (folio extérieur),
+//   mais son en-tête reste muet pour laisser respirer le grand titre.
+// - Pages blanches intercalaires : comptées dans l'ordre arithmétique, jamais de folio ni de titre courant.
 // - Folio sur la marge extérieure : à gauche sur les versos (pairs), à droite sur les rectos (impairs).
 // ==========================================
 
-// Saut vers la prochaine belle page (impaire) avec balisage des pages blanches intercalaires
-#let recto() = {
-  [#metadata("fin-section") <fin-section>]
-  pagebreak(weak: true, to: "odd")
-  [#metadata("debut-section") <debut-section>]
-}
+// Palette Oliver Byrne (1847)
+#let byrne-blue = rgb("#1d4ed8")
+#let byrne-red = rgb("#b91c1c")
+#let byrne-yellow = rgb("#d97706")
+#let byrne-dark = rgb("#0f172a")
+#let byrne-green = rgb("#15803d")
+#let byrne-purple = rgb("#7e22ce")
+#let byrne-slate = rgb("#334155")
 
-// Le folio (et le titre courant) n'est visible que sur les pages de texte courant :
-// ni liminaire, ni page d'ouverture, ni page blanche.
-#let folio-visible() = {
+// Saut vers la prochaine belle page (impaire) avec balisage des pages blanches intercalaires
+#let recto() = [
+  #metadata("fin-section") <fin-section>
+  #pagebreak(weak: true, to: "odd")
+  #metadata("debut-section") <debut-section>
+]
+
+#let is-blank-page() = {
   let p = here().page()
-  let debut = query(<debut-texte>)
-  if debut.len() == 0 or p <= debut.first().location().page() { return false }
   let fins = query(<fin-section>)
   let debuts = query(<debut-section>)
   for (i, d) in debuts.enumerate() {
     let dp = d.location().page()
-    if dp == p { return false }
     if i < fins.len() and p < dp {
       let m = fins.at(i).location()
       let mp = m.page()
-      if mp < p { return false }
-      if mp == p and m.position().y < 2.65cm { return false }
+      if mp < p { return true }
+      if mp == p and m.position().y < 2.65cm { return true }
     }
   }
+  false
+}
+
+#let is-frontispice() = {
+  let p = here().page()
+  query(<page-frontispice>).any(m => m.location().page() == p)
+}
+
+#let is-volume-title() = {
+  let p = here().page()
+  query(<ouverture-volume>).any(m => m.location().page() == p)
+}
+
+#let is-chapter-start() = {
+  let p = here().page()
+  query(<debut-chapitre>).any(m => m.location().page() == p)
+}
+
+// Le titre courant n'est visible que sur les pages de texte courant :
+// ni liminaire, ni ouverture de volume, ni début de chapitre, ni frontispice, ni page blanche.
+#let header-visible() = {
+  let p = here().page()
+  let debut = query(<debut-texte>)
+  if debut.len() == 0 or p <= debut.first().location().page() { return false }
+  if is-blank-page() { return false }
+  if is-frontispice() { return false }
+  if is-volume-title() { return false }
+  if is-chapter-start() { return false }
   true
 }
+
+// Le folio (pied de page) est visible sur tout le corps du texte ET sur la première page des chapitres :
+// ni liminaire, ni ouverture de volume, ni frontispice, ni page blanche.
+#let footer-visible() = {
+  let p = here().page()
+  let debut = query(<debut-texte>)
+  if debut.len() == 0 or p <= debut.first().location().page() { return false }
+  if is-blank-page() { return false }
+  if is-frontispice() { return false }
+  if is-volume-title() { return false }
+  true
+}
+
+#let frontispice-volume(img-path) = [
+  #metadata("fin-section") <fin-section>
+  #pagebreak(to: "even")
+  #metadata("frontispice") <page-frontispice>
+  #metadata("debut-section") <debut-section>
+  #align(center + horizon)[
+    #image(img-path, width: 100%, height: 96%, fit: "cover")
+  ]
+]
+
+#let ouverture-volume(num, titre-vol, sous-titre, descriptif, chapitres, mention-regard) = [
+  #metadata("fin-section") <fin-section>
+  #pagebreak(to: "odd")
+  #metadata("volume") <ouverture-volume>
+  #metadata("debut-section") <debut-section>
+  
+  #v(0.2cm)
+  #align(center)[
+    #block(fill: rgb("#f8fafc"), stroke: 2pt + byrne-blue, inset: (x: 20pt, y: 14pt), radius: 8pt, width: 100%)[
+      #heading(level: 1)[VOLUME #num --- #titre-vol] <volume-title>
+      #v(0.12cm)
+      #text(size: 9.5pt, weight: "bold", fill: byrne-red, font: "Liberation Sans")[#sous-titre]
+    ]
+  ]
+  #v(0.25cm)
+  #align(center)[#text(size: 9pt, style: "italic", fill: rgb("#334155"))[#descriptif]]
+  #v(0.25cm)
+  #block(fill: rgb("#f8fafc"), stroke: 0.75pt + rgb("#cbd5e1"), inset: (x: 16pt, y: 10pt), radius: 6pt, width: 100%)[
+    #text(size: 9pt, weight: "bold", fill: byrne-blue, font: "Liberation Sans")[Chapitres du Volume #num :]    #v(0.15cm)
+    #grid(
+      columns: (1fr, 1fr),
+      gutter: 6pt,
+      ..chapitres.map(ch => text(size: 7.5pt, fill: rgb("#1e293b"))[#ch])
+    )
+  ]
+  #v(1fr)
+  #align(center)[
+    #line(length: 40%, stroke: 0.5pt + rgb("#cbd5e1"))
+    #v(0.15cm)
+    #text(size: 8pt, style: "italic", fill: rgb("#475569"))[#mention-regard]
+  ]
+]
 
 #set page(
   paper: "a4",
   margin: (top: 2.4cm, bottom: 2.4cm, left: 2.2cm, right: 2.2cm),
   header: context {
-    if folio-visible() [
+    if header-visible() [
       #let cur-h2 = query(heading.where(level: 2)).filter(h => h.location().page() == here().position().page)
       #let ch-title = if cur-h2.len() > 0 {
         cur-h2.first().body
@@ -65,17 +154,18 @@
         if prev-h1.len() > 0 { prev-h1.last().body } else { [LA VOIE DU NOMBRE] }
       }
       #grid(
-        columns: (1fr, 1fr),
-        align: (left, right),
-        text(size: 7.5pt, fill: rgb("#64748b"), font: "Liberation Sans", style: "italic")[#vol-title],
-        text(size: 7.5pt, fill: rgb("#475569"), font: "Liberation Sans", weight: "bold")[#ch-title]
+        columns: (1fr,),
+        gutter: 2.5pt,
+        align: left,
+        text(size: 7pt, fill: rgb("#64748b"), font: "Liberation Sans", style: "italic")[#vol-title],
+        text(size: 7.5pt, fill: rgb("#334155"), font: "Liberation Sans", weight: "bold")[#ch-title]
       )
-      #v(-4pt)
+      #v(-2pt)
       #line(length: 100%, stroke: 0.5pt + rgb("#cbd5e1"))
     ]
   },
   footer: context {
-    if folio-visible() {
+    if footer-visible() {
       let page-num = counter(page).get().first()
       let titre = text(size: 8pt, fill: rgb("#94a3b8"), font: "Liberation Sans", style: "italic")[LA VOIE DU NOMBRE — Une Odyssée Constructive]
       let folio = text(size: 8.5pt, fill: rgb("#0f172a"), font: "Liberation Sans", weight: "bold")[Page #page-num]
@@ -104,15 +194,6 @@
 #show heading: set text(hyphenate: false)
 #show heading: set block(sticky: true)
 
-// Palette Oliver Byrne (1847)
-#let byrne-blue = rgb("#1d4ed8")
-#let byrne-red = rgb("#b91c1c")
-#let byrne-yellow = rgb("#d97706")
-#let byrne-dark = rgb("#0f172a")
-#let byrne-green = rgb("#15803d")
-#let byrne-purple = rgb("#7e22ce")
-#let byrne-slate = rgb("#334155")
-
 // Style épuré des blocs de code Python (Oliver Byrne)
 #show raw.where(lang: "python"): it => align(center)[
   #block(
@@ -129,21 +210,25 @@
 // Empêcher toute figure ou encart d'être coupé en deux sur un saut de page
 #show figure: set block(breakable: false)
 
-// Design des Volumes
+// Design des Titres de Niveau 1 (Volumes & Annexes)
 #show heading.where(level: 1): it => {
-  v(1.0cm)
-  align(center)[
-    #block(
-      fill: rgb("#f1f5f9"),
-      stroke: 2.5pt + byrne-blue,
-      inset: 20pt,
-      radius: 8pt,
-      width: 100%
-    )[
-      #text(size: 17pt, weight: "bold", fill: byrne-dark, font: "Liberation Sans")[#it.body]
+  if it.has("label") and it.label == <volume-title> {
+    text(size: 15pt, weight: "bold", fill: byrne-dark, font: "Liberation Serif")[#it.body]
+  } else {
+    v(1.5cm)
+    align(center)[
+      #block(
+        fill: rgb("#f8fafc"),
+        stroke: 2pt + byrne-blue,
+        inset: (x: 24pt, y: 18pt),
+        radius: 8pt,
+        width: 100%
+      )[
+        #text(size: 16pt, weight: "bold", fill: byrne-dark, font: "Liberation Serif")[#it.body]
+      ]
     ]
-  ]
-  v(1.0cm)
+    v(1.0cm)
+  }
 }
 
 // Design des Chapitres
@@ -275,46 +360,130 @@
 ]
 
 // ==========================================
-// 1. PAGE DE COUVERTURE OFFICIELLE
+// 1. PAGE DE COUVERTURE OFFICIELLE (OPTION A : NUIT ABYSSALE & OR D'OLIVER BYRNE)
 // ==========================================
-#align(center)[
-  #v(0.2cm)
-  #text(size: 14pt, weight: "bold", fill: byrne-blue, font: "Liberation Sans")[Silvère-Martin Michiellot & Antigravity]
-  #v(0.3cm)
-  #text(size: 32pt, weight: "bold", fill: byrne-dark, font: "Liberation Serif")[LA VOIE DU NOMBRE]
-  #v(0.2cm)
-  #text(size: 14pt, weight: "bold", fill: byrne-red, font: "Liberation Sans")[Une Odyssée Constructive, du Premier Caillou au Baccalauréat]
-  #v(0.15cm)
-  #text(size: 10pt, style: "italic", fill: rgb("#475569"))[58 chapitres d'histoire, de manipulations motrices, de calculs posés et de pure clarté logique]
-  #v(0.4cm)
-  
-  #block(
-    stroke: 2pt + byrne-yellow,
-    radius: 8pt,
-    inset: 3pt,
-    clip: true
-  )[
-    #image("figures/cover_art.jpg", width: 56%)
-  ]
-  
-  #v(0.4cm)
-  #block(
-    fill: rgb("#eff6ff"),
-    stroke: 1.5pt + byrne-blue,
-    inset: (x: 18pt, y: 7pt),
-    radius: 6pt
-  )[
-    #text(size: 11pt, weight: "bold", fill: byrne-blue, font: "Liberation Sans")[ÉDITION INTÉGRALE DE RÉFÉRENCE — 2026]
+#set page(
+  paper: "a4",
+  margin: (top: 1.5cm, bottom: 1.5cm, left: 1.5cm, right: 1.5cm),
+  fill: rgb("#070d1e"),
+  header: none,
+  footer: none
+)
+
+#block(
+  stroke: 1.5pt + rgb("#f59e0b"),
+  inset: (x: 20pt, top: 22pt, bottom: 18pt),
+  radius: 8pt,
+  width: 100%,
+  height: 100%
+)[
+  #align(center)[
+    #text(size: 13pt, weight: "bold", fill: rgb("#f59e0b"), tracking: 2.5pt, font: "Liberation Sans")[
+      SILVÈRE MARTIN-MICHIELLOT & ANTIGRAVITY
+    ]
+    #v(0.5cm)
+    #text(size: 36pt, weight: "bold", fill: white, font: "Liberation Serif")[
+      LA VOIE DU NOMBRE
+    ]
+    #v(0.25cm)
+    #text(size: 13.5pt, weight: "bold", fill: rgb("#fcd34d"), font: "Liberation Sans")[
+      Une Odyssée Constructive, du Premier Caillou au Baccalauréat
+    ]
+    #v(0.15cm)
+    #text(size: 9.5pt, style: "italic", fill: rgb("#cbd5e1"))[
+      58 chapitres d'histoire vivante, de manipulations motrices, de calculs posés et de pure clarté logique
+    ]
+    #v(0.5cm)
+    
+    #block(
+      stroke: 2pt + rgb("#f59e0b"),
+      radius: 8pt,
+      clip: true,
+      inset: 0pt,
+      width: 88%,
+      image("figures/cover_art.jpg", width: 100%, height: 12.8cm, fit: "cover")
+    )
+    
+    #v(0.6cm)
+    #block(
+      fill: rgb("#0f172a"),
+      stroke: 1.2pt + rgb("#38bdf8"),
+      inset: (x: 22pt, y: 7pt),
+      radius: 6pt
+    )[
+      #text(size: 10.5pt, weight: "bold", fill: rgb("#38bdf8"), font: "Liberation Sans")[
+        ÉDITION INTÉGRALE DE RÉFÉRENCE — 2026
+      ]
+    ]
+    #v(0.25cm)
+    #text(size: 8pt, fill: rgb("#94a3b8"), tracking: 1pt, font: "Liberation Sans")[
+      DIDACTIQUE CONSTRUCTIVISTE • INTUITION GÉOMÉTRIQUE • RIGUEUR FORMELLE
+    ]
   ]
 ]
 
 #pagebreak()
 // Plat 2 (intérieur de couverture) : hors décompte, jamais folioté
+#set page(
+  paper: "a4",
+  margin: (top: 2.4cm, bottom: 2.4cm, left: 2.2cm, right: 2.2cm),
+  fill: white,
+  header: none,
+  footer: none
+)
 #box()
 #pagebreak()
 
 // Début du bloc intérieur : la première belle page est la page 1 (muette)
 #counter(page).update(1)
+
+#set page(
+  paper: "a4",
+  margin: (top: 2.4cm, bottom: 2.4cm, left: 2.2cm, right: 2.2cm),
+  fill: white,
+  header: context {
+    if header-visible() [
+      #let cur-h2 = query(heading.where(level: 2)).filter(h => h.location().page() == here().position().page)
+      #let ch-title = if cur-h2.len() > 0 {
+        cur-h2.first().body
+      } else {
+        let prev-h2 = query(selector(heading.where(level: 2)).before(here()))
+        if prev-h2.len() > 0 { prev-h2.last().body } else { [] }
+      }
+      #let cur-h1 = query(heading.where(level: 1)).filter(h => h.location().page() == here().position().page)
+      #let vol-title = if cur-h1.len() > 0 {
+        cur-h1.first().body
+      } else {
+        let prev-h1 = query(selector(heading.where(level: 1)).before(here()))
+        if prev-h1.len() > 0 { prev-h1.last().body } else { [LA VOIE DU NOMBRE] }
+      }
+      #grid(
+        columns: (1fr,),
+        gutter: 2.5pt,
+        align: left,
+        text(size: 7pt, fill: rgb("#64748b"), font: "Liberation Sans", style: "italic")[#vol-title],
+        text(size: 7.5pt, fill: rgb("#334155"), font: "Liberation Sans", weight: "bold")[#ch-title]
+      )
+      #v(-2pt)
+      #line(length: 100%, stroke: 0.5pt + rgb("#cbd5e1"))
+    ]
+  },
+  footer: context {
+    if footer-visible() {
+      let page-num = counter(page).get().first()
+      let titre = text(size: 8pt, fill: rgb("#94a3b8"), font: "Liberation Sans", style: "italic")[LA VOIE DU NOMBRE — Une Odyssée Constructive]
+      let folio = text(size: 8.5pt, fill: rgb("#0f172a"), font: "Liberation Sans", weight: "bold")[Page #page-num]
+      line(length: 100%, stroke: 0.5pt + rgb("#cbd5e1"))
+      v(3pt)
+      // Folio toujours côté marge extérieure (jamais côté reliure)
+      if calc.even(page-num) {
+        grid(columns: (1fr, 1fr), align: (left, right), folio, titre)
+      } else {
+        grid(columns: (1fr, 1fr), align: (left, right), titre, folio)
+      }
+    }
+  }
+)
 
 // ==========================================
 // PAGE 1 (RECTO) — FAUX-TITRE (MUETTE)
@@ -333,7 +502,7 @@
 // ==========================================
 #align(center)[
   #v(3.5cm)
-  #text(size: 13pt, weight: "bold", fill: byrne-blue, font: "Liberation Sans")[Silvère-Martin Michiellot & Antigravity]
+  #text(size: 13pt, weight: "bold", fill: byrne-blue, font: "Liberation Sans")[Silvère Martin-Michiellot & Antigravity]
   #v(1.6cm)
   #text(size: 32pt, weight: "bold", fill: byrne-dark, font: "Liberation Serif")[LA VOIE DU NOMBRE]
   #v(0.4cm)
@@ -367,11 +536,12 @@
       #text(size: 8.5pt, fill: rgb("#475569"))[
         Édition Numérique Intégrale de Référence — 58 chapitres en 6 volumes avec Guide de l'Accompagnateur et Annexes de Référence.\
         \
-        *Auteurs :* Silvère-Martin Michiellot & Antigravity\
+        *Auteurs :* Silvère Martin-Michiellot & Antigravity\
         *Ingénierie didactique & Conception pédagogique :* Didactique constructiviste, méthode de Singapour, sémiotique visuelle d'Oliver Byrne\
         *Composition typographique :* Typst v0.15, polices Liberation Serif & Sans, KaTeX mathématique\
         *Sémiotique graphique :* Figures vectorielles SVG conformes à la palette historique d'Oliver Byrne (1847)\
         *Illustration de couverture :* Synthèse graphique haute résolution dédiée\
+        *Photographies de frontispice (Mathématiques dans la Nature) :* Wikimedia Commons sous licences CC BY-SA 3.0 et CC BY-SA 4.0 (voir Index des sources photographiques en Annexe C)\
         *Dépôt légal :* Octobre 2026\
         \
         *Licence Libre :* Cet ouvrage est mis à disposition sous licence *Creative Commons Attribution - Partage dans les Mêmes Conditions 4.0 International (CC BY-SA 4.0)*.\
@@ -430,13 +600,23 @@
 #metadata("debut-texte") <debut-texte>
 
 
-#recto()
-= VOLUME I --- L'ÂGE DE LA MAIN ET DE LA SAVANE (6 - 8 ans / CP - CE1)
-<volume-i-lâge-de-la-main-et-de-la-savane-6---8-ans-cp---ce1>
+#frontispice-volume("figures/nature/vol_1_abeilles_hexagone.jpg")
+
+#ouverture-volume(
+  "I",
+  "L'ÂGE DE LA MAIN ET DE LA SAVANE",
+  "6 - 8 ans / CP - CE1",
+  "De l'éveil du regard préhistorique aux premières manipulations de cailloux, ce premier volume pose les fondations concrètes du sens du nombre, de la numération décimale et des opérations élémentaires.",
+  ("Chapitre 1 : Les Yeux du Singe et le Sac de Cailloux", "Chapitre 2 : La Main à Cinq Doigts et les Paquets de Dix", "Chapitre 3 : La Chasse Partagée et la Balance de Justice", "Chapitre 4 : Le Boulier du Marchand et la Retenue Voyageuse", "Chapitre 5 : La Grande Règle au Sol et le Saut de Grenouille", "Chapitre 6 : Le Rectangle de Carreaux et la Multiplication", "Chapitre 7 : Le Sac de Noisettes et le Reste Mystérieux", "Chapitre 8 : L'Arche des Formes et les Premiers Tracés"),
+  "En regard : Le pavage hexagonal des alvéoles d'abeilles (Apis mellifera)."
+)
 
 #divider()
 
-#recto()
+#metadata("fin-section") <fin-section>
+#pagebreak(weak: true, to: "odd")
+#metadata("chapitre") <debut-chapitre>
+#metadata("debut-section") <debut-section>
 == CHAPITRE 1 : Les Yeux du Singe et le Sac de Cailloux
 <chapitre-1-les-yeux-du-singe-et-le-sac-de-cailloux>
 #quote_box[
@@ -723,6 +903,14 @@ découvert un os fossilisé vieux de plus de #strong[20 000 ans] : le
 en paquets. C'est l'un des plus anciens témoignages de l'esprit
 mathématique humain au monde.
 ]
+
+#figure(image("figures/histoire/ch_01_ishango.jpg", alt: "L’os fossilisé d’Ishango (~20 000 ans av. J.-C., Congo) : les premières encoches de dénombrement et groupements de nombres de l’humanité"),
+  caption: [
+    L'os fossilisé d'Ishango (\~20 000 ans av. J.-C., Congo) : les
+    premières encoches de dénombrement et groupements de nombres de
+    l'humanité
+  ]
+)
 
 #divider()
 
@@ -1125,7 +1313,10 @@ de Dix] !
 
 #divider()
 
-#recto()
+#metadata("fin-section") <fin-section>
+#pagebreak(weak: true, to: "odd")
+#metadata("chapitre") <debut-chapitre>
+#metadata("debut-section") <debut-section>
 == CHAPITRE 2 : La Main à Cinq Doigts et les Paquets de Dix
 <chapitre-2-la-main-à-cinq-doigts-et-les-paquets-de-dix>
 #quote_box[
@@ -1786,7 +1977,10 @@ Justice] !
 
 #divider()
 
-#recto()
+#metadata("fin-section") <fin-section>
+#pagebreak(weak: true, to: "odd")
+#metadata("chapitre") <debut-chapitre>
+#metadata("debut-section") <debut-section>
 == CHAPITRE 3 : La Chasse Partagée et la Balance de Justice
 <chapitre-3-la-chasse-partagée-et-la-balance-de-justice>
 #quote_box[
@@ -2391,7 +2585,10 @@ Voyageuse] !
 
 #divider()
 
-#recto()
+#metadata("fin-section") <fin-section>
+#pagebreak(weak: true, to: "odd")
+#metadata("chapitre") <debut-chapitre>
+#metadata("debut-section") <debut-section>
 == CHAPITRE 4 : Le Boulier du Marchand et la Retenue Voyageuse
 <chapitre-4-le-boulier-du-marchand-et-la-retenue-voyageuse>
 #quote_box[
@@ -2656,6 +2853,25 @@ l'oublier : 1. Écris-la immédiatement dès que tu poses l'unité. 2.
 Prends l'habitude de commencer l'addition des dizaines #strong[par elle]
 : « 1 + 4 = 5, et 5 + 3 = 8 ».
 ]
+
+#decouvre(title: [Découverte & Histoire])[
+#strong[🔍 L'histoire vraie --- La Pascaline de Blaise Pascal (1642)
+]
+
+Pour aider son père qui était percepteur des impôts et passait ses nuits
+à additionner des colonnes de chiffres interminables, le savant français
+Blaise Pascal inventa à l'âge de 19 ans la première calculatrice
+mécanique de l'histoire : #strong[la Pascaline]. À l'intérieur, un
+ingénieux mécanisme d'engrenages à sautoir transmettait automatiquement
+la retenue d'une roue à la suivante dès qu'une unité franchissait le 9 !
+]
+
+#figure(image("figures/histoire/ch_04_pascaline.jpg", alt: "La machine arithmétique de Blaise Pascal (Pascaline, 1642) : le premier mécanisme à report de retenue décimale automatique"),
+  caption: [
+    La machine arithmétique de Blaise Pascal (Pascaline, 1642) : le
+    premier mécanisme à report de retenue décimale automatique
+  ]
+)
 
 #divider()
 
@@ -3296,7 +3512,10 @@ Magiques] !
 
 #divider()
 
-#recto()
+#metadata("fin-section") <fin-section>
+#pagebreak(weak: true, to: "odd")
+#metadata("chapitre") <debut-chapitre>
+#metadata("debut-section") <debut-section>
 == CHAPITRE 5 : Le Mur de Briques et les Rectangles Magiques
 <chapitre-5-le-mur-de-briques-et-les-rectangles-magiques>
 #quote_box[
@@ -4121,7 +4340,10 @@ Rendez-vous au #strong[Chapitre 6 : La Coudée du Pharaon et le Sablier]
 
 #divider()
 
-#recto()
+#metadata("fin-section") <fin-section>
+#pagebreak(weak: true, to: "odd")
+#metadata("chapitre") <debut-chapitre>
+#metadata("debut-section") <debut-section>
 == CHAPITRE 6 : La Coudée du Pharaon et le Sablier
 <chapitre-6-la-coudée-du-pharaon-et-le-sablier>
 #quote_box[
@@ -4762,7 +4984,10 @@ Les Formes du Monde et la Ficelle du Jardinier] !
 
 #divider()
 
-#recto()
+#metadata("fin-section") <fin-section>
+#pagebreak(weak: true, to: "odd")
+#metadata("chapitre") <debut-chapitre>
+#metadata("debut-section") <debut-section>
 == CHAPITRE 7 : Les Formes du Monde et la Ficelle du Jardinier
 <chapitre-7-les-formes-du-monde-et-la-ficelle-du-jardinier>
 #quote_box[
@@ -5373,13 +5598,23 @@ le #strong[Volume II : Les Pierres Rebelles et les Nombres Solitaires] !
 
 #divider()
 
-#recto()
-= VOLUME II --- LE SECRET DU PARTAGE ET LES GRANDEURS DU MONDE (8 - 11 ans / CE2 - CM2)
-<volume-ii-le-secret-du-partage-et-les-grandeurs-du-monde-8---11-ans-ce2---cm2>
+#frontispice-volume("figures/nature/vol_2_nautile_spirale.jpg")
+
+#ouverture-volume(
+  "II",
+  "LE SECRET DU PARTAGE ET LES GRANDEURS DU MONDE",
+  "8 - 11 ans / CE2 - CM2",
+  "Du partage de la galette aux mesures astronomiques, l'élève apprivoise les fractions, les nombres décimaux, la proportionnalité et la géométrie de l'espace.",
+  ("Chapitre 9 : L'Horloge du Berger et les Roues du Temps", "Chapitre 10 : La Galette Brisée et le Tamis de Mesure", "Chapitre 11 : Le Ruban d'Arpenteur et la Virgule Voyageuse", "Chapitre 12 : La Balance d'Al-Khwarizmi et la Pesée Égale", "Chapitre 13 : Le Métier du Tisserand et la Toile Quadrillée", "Chapitre 14 : Le Grand Fleuve du Nil et les Arpenteurs de Corde", "Chapitre 15 : Le Miroir d'Archimède et le Tour du Disque", "Chapitre 16 : La Machine à Diviser et la Règle d'Or", "Chapitre 17 : L'Ombre de la Pyramide et le Théorème de Thalès", "Chapitre 18 : Le Coffre du Trésor et les Solides de l'Espace"),
+  "En regard : La spirale logarithmique du Nautile (Nautilus pompilius)."
+)
 
 #divider()
 
-#recto()
+#metadata("fin-section") <fin-section>
+#pagebreak(weak: true, to: "odd")
+#metadata("chapitre") <debut-chapitre>
+#metadata("debut-section") <debut-section>
 == CHAPITRE 8 : Les Pierres Rebelles et les Nombres Solitaires
 <chapitre-8-les-pierres-rebelles-et-les-nombres-solitaires>
 #quote_box[
@@ -5866,7 +6101,10 @@ premiers multipliés entre eux].
 
 #divider()
 
-#recto()
+#metadata("fin-section") <fin-section>
+#pagebreak(weak: true, to: "odd")
+#metadata("chapitre") <debut-chapitre>
+#metadata("debut-section") <debut-section>
 == CHAPITRE 9 : Le Reste du Festin et les Équipes de Jeu
 <chapitre-9-le-reste-du-festin-et-les-équipes-de-jeu>
 #quote_box[
@@ -6710,7 +6948,10 @@ Galette Brisée et le Tamis de Mesure] !
 
 #divider()
 
-#recto()
+#metadata("fin-section") <fin-section>
+#pagebreak(weak: true, to: "odd")
+#metadata("chapitre") <debut-chapitre>
+#metadata("debut-section") <debut-section>
 == CHAPITRE 10 : La Galette Brisée et le Tamis de Mesure
 <chapitre-10-la-galette-brisée-et-le-tamis-de-mesure>
 #quote_box[
@@ -6852,6 +7093,26 @@ fractions ayant le #strong[même numérateur] (par exemple 1 en haut) :
 #strong[Plus le dénominateur est grand, plus la part est petite !]
 $ 1 / 2 > 1 / 3 > 1 / 4 > 1 / 5 > 1 / 10 > 1 / 100 $
 ]
+
+#decouvre(title: [Découverte & Histoire])[
+#strong[🔍 L'histoire vraie --- Les fractions des scribes d'Égypte (le
+Papyrus Rhind)
+]
+ Il y a plus de 3 500 ans, les scribes des pharaons ne
+notaient presque que des fractions avec un #strong[1] au numérateur
+($1 / 2\,1 / 3\,1 / 4\,1 / 10$). Pour exprimer une part comme $3 / 4$,
+ils la décomposaient en somme de fractions unitaires : $1 / 2 + 1 / 4$.
+Le célèbre #strong[Papyrus Rhind] (conservé au British Museum) contient
+des dizaines de tables de découpage pour partager équitablement le pain
+et la bière entre les ouvriers bâtisseurs de pyramides.
+]
+
+#figure(image("figures/histoire/ch_10_papyrus_rhind.jpg", alt: "Le Papyrus mathématique Rhind (~1550 av. J.-C., Égypte ancienne) : tables de décomposition en fractions unitaires des scribes"),
+  caption: [
+    Le Papyrus mathématique Rhind (\~1550 av. J.-C., Égypte ancienne) :
+    tables de décomposition en fractions unitaires des scribes
+  ]
+)
 
 #divider()
 
@@ -7357,7 +7618,10 @@ de Simon Stevin] !
 
 #divider()
 
-#recto()
+#metadata("fin-section") <fin-section>
+#pagebreak(weak: true, to: "odd")
+#metadata("chapitre") <debut-chapitre>
+#metadata("debut-section") <debut-section>
 == CHAPITRE 11 : Les Dixièmes de Simon Stevin
 <chapitre-11-les-dixièmes-de-simon-stevin>
 #quote_box[
@@ -8000,7 +8264,10 @@ Mètre de la Révolution] !
 
 #divider()
 
-#recto()
+#metadata("fin-section") <fin-section>
+#pagebreak(weak: true, to: "odd")
+#metadata("chapitre") <debut-chapitre>
+#metadata("debut-section") <debut-section>
 == CHAPITRE 12 : Le Mètre de la Révolution
 <chapitre-12-le-mètre-de-la-révolution>
 #quote_box[
@@ -8633,7 +8900,10 @@ Grand-Mère et la Règle de Trois] !
 
 #divider()
 
-#recto()
+#metadata("fin-section") <fin-section>
+#pagebreak(weak: true, to: "odd")
+#metadata("chapitre") <debut-chapitre>
+#metadata("debut-section") <debut-section>
 == CHAPITRE 13 : La Recette de la Grand-Mère et la Règle de Trois
 <chapitre-13-la-recette-de-la-grand-mère-et-la-règle-de-trois>
 #quote_box[
@@ -9282,7 +9552,10 @@ froids que le zéro ? Plongeons de l'autre côté du miroir au
 
 #divider()
 
-#recto()
+#metadata("fin-section") <fin-section>
+#pagebreak(weak: true, to: "odd")
+#metadata("chapitre") <debut-chapitre>
+#metadata("debut-section") <debut-section>
 == CHAPITRE 14 : L'Ardoise du Marchand et le Trou de Sable
 <chapitre-14-lardoise-du-marchand-et-le-trou-de-sable>
 #quote_box[
@@ -9906,13 +10179,23 @@ ans)] !
 
 #divider()
 
-#recto()
-= VOLUME III --- L'ÉTOILE D'ALEXANDRIE ET L'ESPACE EUCLIDIEN (11 - 13 ans / 6e - 5e)
-<volume-iii-létoile-dalexandrie-et-lespace-euclidien-11---13-ans-6e---5e>
+#frontispice-volume("figures/nature/vol_3_tournesol_fibonacci.jpg")
+
+#ouverture-volume(
+  "III",
+  "L'ÉTOILE D'ALEXANDRIE ET L'ESPACE EUCLIDIEN",
+  "11 - 13 ans / 6e - 5e",
+  "Aux portes du collège, la géométrie déductive s'organise autour des axiomes d'Euclide, des nombres relatifs et des symétries du plan.",
+  ("Chapitre 19 : Le Secret Interdit des Pythagoriciens", "Chapitre 20 : Le Bâton de Thalès et le Trésor des Ombres", "Chapitre 21 : Le Navire dans la Brume et le Tracé Triangulaire", "Chapitre 22 : Le Thermomètre Gelé et la Marche sur l'Axe", "Chapitre 23 : Le Crible d'Ératosthène et l'Armée des Premiers", "Chapitre 24 : Le Jardin d'Islam et les Pavages d'Alhambra", "Chapitre 25 : L'Île au Trésor et le Compas de Relèvement", "Chapitre 26 : Le Rouleau de Papyrus et les Nombres Négatifs", "Chapitre 27 : L'Orgue de Pythagore et la Corde Vibrante", "Chapitre 28 : La Boîte d'Allumettes et le Cube Éclaté"),
+  "En regard : La phyllotaxie et les spirales de Fibonacci du Tournesol (Helianthus annuus)."
+)
 
 #divider()
 
-#recto()
+#metadata("fin-section") <fin-section>
+#pagebreak(weak: true, to: "odd")
+#metadata("chapitre") <debut-chapitre>
+#metadata("debut-section") <debut-section>
 == CHAPITRE 15 : La Crue du Nil et la Corde à Treize Nœuds
 <chapitre-15-la-crue-du-nil-et-la-corde-à-treize-nœuds>
 #quote_box[
@@ -10437,7 +10720,10 @@ Vérification : $38 + 142 + 38 + 142 = 360$, un tour complet. ✔
 
 #divider()
 
-#recto()
+#metadata("fin-section") <fin-section>
+#pagebreak(weak: true, to: "odd")
+#metadata("chapitre") <debut-chapitre>
+#metadata("debut-section") <debut-section>
 == CHAPITRE 16 : La Roue du Potier et le Secret d'Archimède
 <chapitre-16-la-roue-du-potier-et-le-secret-darchimède>
 #quote_box[
@@ -11180,7 +11466,10 @@ semblables], que nous allons percer au chapitre suivant.
 
 #divider()
 
-#recto()
+#metadata("fin-section") <fin-section>
+#pagebreak(weak: true, to: "odd")
+#metadata("chapitre") <debut-chapitre>
+#metadata("debut-section") <debut-section>
 == CHAPITRE 17 : L'Ombre de la Pyramide et le Bâton Planté
 <chapitre-17-lombre-de-la-pyramide-et-le-bâton-planté>
 #quote_box[
@@ -11930,7 +12219,10 @@ de la notation scientifique] !
 
 #divider()
 
-#recto()
+#metadata("fin-section") <fin-section>
+#pagebreak(weak: true, to: "odd")
+#metadata("chapitre") <debut-chapitre>
+#metadata("debut-section") <debut-section>
 == CHAPITRE 18 : Le Grain de Riz sur l'Échiquier
 <chapitre-18-le-grain-de-riz-sur-léchiquier>
 #quote_box[
@@ -12650,7 +12942,10 @@ mystique de Crotone avec #strong[le Théorème de Pythagore] !
 
 #divider()
 
-#recto()
+#metadata("fin-section") <fin-section>
+#pagebreak(weak: true, to: "odd")
+#metadata("chapitre") <debut-chapitre>
+#metadata("debut-section") <debut-section>
 == CHAPITRE 19 : Le Secret Interdit des Pythagoriciens
 <chapitre-19-le-secret-interdit-des-pythagoriciens>
 #quote_box[
@@ -12841,6 +13136,24 @@ laissant au centre un petit trou carré de côté $\(b - a\)$ :
 $ upright("Aire totale") = c^2 = 4 times (frac(a times b, 2)) +\(b - a\)^2 = 2 a b +\(b^2 - 2 a b + a^2\)= a^2 + b^2 $
 Sous son dessin, Bhāskara n'écrivit aucun commentaire, juste un mot :
 #emph[« Vois ! »].
+
+==== Preuve 4 : La preuve visuelle en couleurs d'Oliver Byrne (1847)
+<preuve-4-la-preuve-visuelle-en-couleurs-doliver-byrne-1847>
+En 1847, l'ingénieur et mathématicien Oliver Byrne publiait à Londres
+une édition révolutionnaire des #emph[Éléments d'Euclide], où chaque
+lettre alphabétique était bannie au profit de couleurs primaires vives :
+le bleu, le rouge et le jaune. Les carrés construits sur les côtés s'y
+décomposent en triangles colorés de même aire, rendant l'égalité
+$a^2 + b^2 = c^2$ évidente d'un simple coup d'œil. C'est ce chef-d'œuvre
+de la sémiotique visuelle qui a inspiré toute la charte graphique du
+présent ouvrage.
+
+#figure(image("figures/histoire/ch_19_byrne_pythagore.jpg", alt: "Démonstration géométrique du Théorème de Pythagore par Oliver Byrne (1847) : les grandeurs et les aires prouvées par la couleur pure"),
+  caption: [
+    Démonstration géométrique du Théorème de Pythagore par Oliver Byrne
+    (1847) : les grandeurs et les aires prouvées par la couleur pure
+  ]
+)
 
 #divider()
 
@@ -13369,7 +13682,10 @@ pourquoi « moins par moins donne plus » ? C'est le secret de
 
 #divider()
 
-#recto()
+#metadata("fin-section") <fin-section>
+#pagebreak(weak: true, to: "odd")
+#metadata("chapitre") <debut-chapitre>
+#metadata("debut-section") <debut-section>
 == CHAPITRE 20 : L'Île au Trésor et les Deux Sentiers
 <chapitre-20-lîle-au-trésor-et-les-deux-sentiers>
 #quote_box[
@@ -14047,7 +14363,10 @@ chapitre suivant !
 
 #divider()
 
-#recto()
+#metadata("fin-section") <fin-section>
+#pagebreak(weak: true, to: "odd")
+#metadata("chapitre") <debut-chapitre>
+#metadata("debut-section") <debut-section>
 == CHAPITRE 21 : Le Percepteur et les Cent Morceaux
 <chapitre-21-le-percepteur-et-les-cent-morceaux>
 #quote_box[
@@ -14816,13 +15135,23 @@ avec des lettres comme $x$, et où la balance de justice devient une
 
 #divider()
 
-#recto()
-= VOLUME IV --- L'ALCHIMIE DES SYMBOLES ET LE FEU ALGÉBRIQUE (13 - 15 ans / 4e - 3e)
-<volume-iv-lalchimie-des-symboles-et-le-feu-algébrique-13---15-ans-4e---3e>
+#frontispice-volume("figures/nature/vol_4_romanesco_fractale.jpg")
+
+#ouverture-volume(
+  "IV",
+  "L'ALCHIMIE DES SYMBOLES ET LE FEU ALGÉBRIQUE",
+  "13 - 15 ans / 4e - 3e",
+  "L'émergence des équations littérales, des puissances, des fonctions affines et des statistiques prépare l'entrée au lycée.",
+  ("Chapitre 29 : L'Héritage d'Al-Khwarizmi et le Trésor Caché", "Chapitre 30 : La Toile de Descartes et les Coordonnées", "Chapitre 31 : Le Moulin à Vent et les Puissances de Dix", "Chapitre 32 : Le Voilier dans la Tempête et la Flèche Libre", "Chapitre 33 : La Ligne de Mire et la Pente de la Colline", "Chapitre 34 : Le Métier Jacquard et la Boîte à Fabriquer", "Chapitre 35 : La Fontaine de Galilée et la Parabole", "Chapitre 36 : Les Marches de l'Escalier et le Prêt de l'Usurier", "Chapitre 37 : La Grande Roue et le Cercle qui s'Enroule", "Chapitre 38 : L'Arbre des Possibles et l'Urne de Bayes", "Chapitre 39 : Le Radar de Contrôle et le Nuage de Points"),
+  "En regard : L'invariance d'échelle et la géométrie fractale du Chou Romanesco (Brassica oleracea)."
+)
 
 #divider()
 
-#recto()
+#metadata("fin-section") <fin-section>
+#pagebreak(weak: true, to: "odd")
+#metadata("chapitre") <debut-chapitre>
+#metadata("debut-section") <debut-section>
 == CHAPITRE 22 : Le Sac Mystère sur la Balance d'Al-Khwarizmi
 <chapitre-22-le-sac-mystère-sur-la-balance-dal-khwarizmi>
 #quote_box[
@@ -15256,7 +15585,10 @@ sait résoudre.
 
 #divider()
 
-#recto()
+#metadata("fin-section") <fin-section>
+#pagebreak(weak: true, to: "odd")
+#metadata("chapitre") <debut-chapitre>
+#metadata("debut-section") <debut-section>
 == CHAPITRE 23 : Le Carré Complété et les Identités Remarquables
 <chapitre-23-le-carré-complété-et-les-identités-remarquables>
 #quote_box[
@@ -16214,7 +16546,10 @@ Marchands et les Inégalités].
 
 #divider()
 
-#recto()
+#metadata("fin-section") <fin-section>
+#pagebreak(weak: true, to: "odd")
+#metadata("chapitre") <debut-chapitre>
+#metadata("debut-section") <debut-section>
 == CHAPITRE 24 : Les Deux Marchands et les Inégalités
 <chapitre-24-les-deux-marchands-et-les-inégalités>
 #quote_box[
@@ -17158,7 +17493,10 @@ Droite du Tarif].
 
 #divider()
 
-#recto()
+#metadata("fin-section") <fin-section>
+#pagebreak(weak: true, to: "odd")
+#metadata("chapitre") <debut-chapitre>
+#metadata("debut-section") <debut-section>
 == CHAPITRE 25 : La Machine à Doubler et la Droite du Tarif
 <chapitre-25-la-machine-à-doubler-et-la-droite-du-tarif>
 #quote_box[
@@ -17994,7 +18332,10 @@ Magique].
 
 #divider()
 
-#recto()
+#metadata("fin-section") <fin-section>
+#pagebreak(weak: true, to: "odd")
+#metadata("chapitre") <debut-chapitre>
+#metadata("debut-section") <debut-section>
 == CHAPITRE 26 : Le Pliage de Papier et le Miroir Magique
 <chapitre-26-le-pliage-de-papier-et-le-miroir-magique>
 #quote_box[
@@ -18870,7 +19211,10 @@ et la Boîte du Potier].
 
 #divider()
 
-#recto()
+#metadata("fin-section") <fin-section>
+#pagebreak(weak: true, to: "odd")
+#metadata("chapitre") <debut-chapitre>
+#metadata("debut-section") <debut-section>
 == CHAPITRE 27 : Le Découpage des Terres et la Boîte du Potier
 <chapitre-27-le-découpage-des-terres-et-la-boîte-du-potier>
 #quote_box[
@@ -19305,7 +19649,10 @@ a. Comme $1 upright(" ha") = 100$ a : $54\,4 upright(" a") = 0\,544$ ha.
 
 #divider()
 
-#recto()
+#metadata("fin-section") <fin-section>
+#pagebreak(weak: true, to: "odd")
+#metadata("chapitre") <debut-chapitre>
+#metadata("debut-section") <debut-section>
 == CHAPITRE 28 : Ératosthène et le Tour de la Terre
 <chapitre-28-ératosthène-et-le-tour-de-la-terre>
 #quote_box[
@@ -20113,7 +20460,10 @@ d'#strong[Euclide].
 
 #divider()
 
-#recto()
+#metadata("fin-section") <fin-section>
+#pagebreak(weak: true, to: "odd")
+#metadata("chapitre") <debut-chapitre>
+#metadata("debut-section") <debut-section>
 == CHAPITRE 29 : Le Partage d'Euclide
 <chapitre-29-le-partage-deuclide>
 #quote_box[
@@ -21073,7 +21423,10 @@ et dans les salons du XVIIe siècle : nous allons apprendre à dompter la
 
 #divider()
 
-#recto()
+#metadata("fin-section") <fin-section>
+#pagebreak(weak: true, to: "odd")
+#metadata("chapitre") <debut-chapitre>
+#metadata("debut-section") <debut-section>
 == CHAPITRE 30 : La Roulette du Destin et la Survie du Chasseur
 <chapitre-30-la-roulette-du-destin-et-la-survie-du-chasseur>
 #quote_box[
@@ -21980,13 +22333,23 @@ vont prendre des flèches, s'envoler dans le ciel et devenir des
 
 #divider()
 
-#recto()
-= VOLUME V --- LE MOUVEMENT, L'ANGLE ET LE SPECTRE DE LA FORME (15 - 17 ans / 2nde - 1ère)
-<volume-v-le-mouvement-langle-et-le-spectre-de-la-forme-15---17-ans-2nde---1ère>
+#frontispice-volume("figures/nature/vol_5_toile_araignee.jpg")
+
+#ouverture-volume(
+  "V",
+  "LE MOUVEMENT, L'ANGLE ET LE SPECTRE DE LA FORME",
+  "15 - 17 ans / 2nde - 1ère",
+  "L'analyse infinitésimale commence : dérivation, étude des variations, trigonométrie circulaire, suites et vecteurs dans l'espace.",
+  ("Chapitre 40 : La Balle Rebondissante et la Courbe du Saut", "Chapitre 41 : La Flèche de Zénon et la Vitesse Instantanée", "Chapitre 42 : Le Skieur sur la Pente et la Tangente", "Chapitre 43 : Le Bateau sur le Courant et le Produit Scalaire", "Chapitre 44 : Le Phare dans la Nuit et le Rayon Tournant", "Chapitre 45 : L'Épidémie dans la Ville et la Croissance Exponentielle", "Chapitre 46 : La Spirale d'Archimède et les Nombres d'Euler", "Chapitre 47 : L'Arbre Généalogique et la Loi Binomiale", "Chapitre 48 : L'Échiquier de Sissa et la Somme Géométrique", "Chapitre 49 : Le Prisme de Newton et la Décomposition Vectorielle"),
+  "En regard : Les tensions vectorielles et la chaînette de la Toile d'Araignée (Araneus diadematus)."
+)
 
 #divider()
 
-#recto()
+#metadata("fin-section") <fin-section>
+#pagebreak(weak: true, to: "odd")
+#metadata("chapitre") <debut-chapitre>
+#metadata("debut-section") <debut-section>
 == CHAPITRE 31 : Le Tribunal de la Logique
 <chapitre-31-le-tribunal-de-la-logique>
 #quote_box[
@@ -22627,7 +22990,10 @@ la partie négative : $x = - 4$ vérifie bien $\(- 4\)^2 = 16 > 9$.
 
 #divider()
 
-#recto()
+#metadata("fin-section") <fin-section>
+#pagebreak(weak: true, to: "odd")
+#metadata("chapitre") <debut-chapitre>
+#metadata("debut-section") <debut-section>
 == CHAPITRE 32 : Le Voilier dans la Tempête et la Flèche Libre
 <chapitre-32-le-voilier-dans-la-tempête-et-la-flèche-libre>
 #quote_box[
@@ -23616,7 +23982,10 @@ trajectoires se croisent ? C'est ce que nous allons découvrir dans
 
 #divider()
 
-#recto()
+#metadata("fin-section") <fin-section>
+#pagebreak(weak: true, to: "odd")
+#metadata("chapitre") <debut-chapitre>
+#metadata("debut-section") <debut-section>
 == CHAPITRE 33 : La Ligne de Mire
 <chapitre-33-la-ligne-de-mire>
 #quote_box[
@@ -24398,7 +24767,10 @@ explorer dans #strong[Le Métier Jacquard et la Boîte à Fabriquer].
 
 #divider()
 
-#recto()
+#metadata("fin-section") <fin-section>
+#pagebreak(weak: true, to: "odd")
+#metadata("chapitre") <debut-chapitre>
+#metadata("debut-section") <debut-section>
 == CHAPITRE 34 : Le Métier Jacquard et la Boîte à Fabriquer
 <chapitre-34-le-métier-jacquard-et-la-boîte-à-fabriquer>
 #quote_box[
@@ -25356,7 +25728,10 @@ Parabole].
 
 #divider()
 
-#recto()
+#metadata("fin-section") <fin-section>
+#pagebreak(weak: true, to: "odd")
+#metadata("chapitre") <debut-chapitre>
+#metadata("debut-section") <debut-section>
 == CHAPITRE 35 : La Fontaine de Galilée et la Parabole
 <chapitre-35-la-fontaine-de-galilée-et-la-parabole>
 #quote_box[
@@ -26197,7 +26572,10 @@ l'Escalier et le Prêt de l'Usurier].
 
 #divider()
 
-#recto()
+#metadata("fin-section") <fin-section>
+#pagebreak(weak: true, to: "odd")
+#metadata("chapitre") <debut-chapitre>
+#metadata("debut-section") <debut-section>
 == CHAPITRE 36 : Les Marches de l'Escalier et le Prêt de l'Usurier
 <chapitre-36-les-marches-de-lescalier-et-le-prêt-de-lusurier>
 #quote_box[
@@ -27109,7 +27487,10 @@ et le courant alternatif ? C'est ce que nous allons découvrir dans
 
 #divider()
 
-#recto()
+#metadata("fin-section") <fin-section>
+#pagebreak(weak: true, to: "odd")
+#metadata("chapitre") <debut-chapitre>
+#metadata("debut-section") <debut-section>
 == CHAPITRE 37 : La Grande Roue et le Cercle qui s'Enroule
 <chapitre-37-la-grande-roue-et-le-cercle-qui-senroule>
 #quote_box[
@@ -27687,7 +28068,10 @@ cercle qui tranche.
 
 #divider()
 
-#recto()
+#metadata("fin-section") <fin-section>
+#pagebreak(weak: true, to: "odd")
+#metadata("chapitre") <debut-chapitre>
+#metadata("debut-section") <debut-section>
 == CHAPITRE 38 : Tirer la Corde et l'Ombre Efficace
 <chapitre-38-tirer-la-corde-et-lombre-efficace>
 #quote_box[
@@ -28682,7 +29066,10 @@ suivant.
 
 #divider()
 
-#recto()
+#metadata("fin-section") <fin-section>
+#pagebreak(weak: true, to: "odd")
+#metadata("chapitre") <debut-chapitre>
+#metadata("debut-section") <debut-section>
 == CHAPITRE 39 : Le Skieur et la Planche sous la Semelle
 <chapitre-39-le-skieur-et-la-planche-sous-la-semelle>
 #quote_box[
@@ -29739,7 +30126,10 @@ l'#strong[exponentielle], au chapitre suivant.
 
 #divider()
 
-#recto()
+#metadata("fin-section") <fin-section>
+#pagebreak(weak: true, to: "odd")
+#metadata("chapitre") <debut-chapitre>
+#metadata("debut-section") <debut-section>
 == CHAPITRE 40 : La Colonie de Bactéries
 <chapitre-40-la-colonie-de-bactéries>
 #quote_box[
@@ -30640,7 +31030,10 @@ suivant avec #strong[le sondeur et l'écart-type].
 
 #divider()
 
-#recto()
+#metadata("fin-section") <fin-section>
+#pagebreak(weak: true, to: "odd")
+#metadata("chapitre") <debut-chapitre>
+#metadata("debut-section") <debut-section>
 == CHAPITRE 41 : Le Sondeur et l'Écart-Type
 <chapitre-41-le-sondeur-et-lécart-type>
 #quote_box[
@@ -31585,7 +31978,10 @@ Bayes], au chapitre suivant.
 
 #divider()
 
-#recto()
+#metadata("fin-section") <fin-section>
+#pagebreak(weak: true, to: "odd")
+#metadata("chapitre") <debut-chapitre>
+#metadata("debut-section") <debut-section>
 == CHAPITRE 42 : Le Médecin, le Test et l'Arbre des Possibles
 <chapitre-42-le-médecin-le-test-et-larbre-des-possibles>
 #quote_box[
@@ -32500,13 +32896,23 @@ Flux et de la Vitesse], qui t'attend dès le prochain chapitre !
 
 #divider()
 
-#recto()
-= VOLUME VI --- L'INFINI APPRIVOISÉ ET L'ÉDIFICE MODERNE (17 - 18 ans / Terminale & Maths Expertes)
-<volume-vi-linfini-apprivoisé-et-lédifice-moderne-17---18-ans-terminale-maths-expertes>
+#frontispice-volume("figures/nature/vol_6_conus_textile.jpg")
+
+#ouverture-volume(
+  "VI",
+  "L'INFINI APPRIVOISÉ ET L'ÉDIFICE MODERNE",
+  "17 - 18 ans / Terminale & Maths Expertes",
+  "L'apogée de l'enseignement secondaire : calcul intégral, équations différentielles, nombres complexes, matrices, graphes et lois continues.",
+  ("Chapitre 50 : La Digue Hollandaise et l'Intégrale de Riemann", "Chapitre 51 : Le Pendule Amorti et l'Équation Différentielle", "Chapitre 52 : Le Rêve de Cardan et le Nombre Imaginaire $i$", "Chapitre 53 : Le Réseau Ferroviaire et les Matrices de Transition", "Chapitre 54 : Les Mille Lancers de la Pièce et la Cloche de Gauss", "Chapitre 55 : Le Paradoxe de Banach-Tarski et l'Infini Actuel", "Chapitre 56 : La Chaîne de Markov et la Marche Aléatoire", "Chapitre 57 : Le Chiffrement RSA et la Clé Secrète de Fermat", "Chapitre 58 : La Voie du Nombre : Synthèse Finale et Horizon Moderne"),
+  "En regard : La morphogenèse de Turing et les automates cellulaires du Cône Textile (Conus textile)."
+)
 
 #divider()
 
-#recto()
+#metadata("fin-section") <fin-section>
+#pagebreak(weak: true, to: "odd")
+#metadata("chapitre") <debut-chapitre>
+#metadata("debut-section") <debut-section>
 == CHAPITRE 43 : L'Escalier sans Fin et les Dominos
 <chapitre-43-lescalier-sans-fin-et-les-dominos>
 #quote_box[
@@ -33089,7 +33495,10 @@ formule du produit $\(u v\)' = u' v + u v'$ avec $u = x + n$, $v = e^x$
 
 #divider()
 
-#recto()
+#metadata("fin-section") <fin-section>
+#pagebreak(weak: true, to: "odd")
+#metadata("chapitre") <debut-chapitre>
+#metadata("debut-section") <debut-section>
 == CHAPITRE 44 : Le Coureur qui ne Touche jamais la Ligne
 <chapitre-44-le-coureur-qui-ne-touche-jamais-la-ligne>
 #quote_box[
@@ -34219,7 +34628,10 @@ au chapitre 45.
 
 #divider()
 
-#recto()
+#metadata("fin-section") <fin-section>
+#pagebreak(weak: true, to: "odd")
+#metadata("chapitre") <debut-chapitre>
+#metadata("debut-section") <debut-section>
 == CHAPITRE 45 : L'Horizon des Courbes
 <chapitre-45-lhorizon-des-courbes>
 #quote_box[
@@ -35243,7 +35655,10 @@ chapitre 46.
 
 #divider()
 
-#recto()
+#metadata("fin-section") <fin-section>
+#pagebreak(weak: true, to: "odd")
+#metadata("chapitre") <debut-chapitre>
+#metadata("debut-section") <debut-section>
 == CHAPITRE 46 : Le Fil sans Coupure
 <chapitre-46-le-fil-sans-coupure>
 #quote_box[
@@ -36443,7 +36858,10 @@ C'est l'art des engrenages et de la courbure : rendez-vous au chapitre
 
 #divider()
 
-#recto()
+#metadata("fin-section") <fin-section>
+#pagebreak(weak: true, to: "odd")
+#metadata("chapitre") <debut-chapitre>
+#metadata("debut-section") <debut-section>
 == CHAPITRE 47 : Le Jardin qui Grandit et la Chaîne d'Engrenages
 <chapitre-47-le-jardin-qui-grandit-et-la-chaîne-dengrenages>
 #quote_box[
@@ -37556,7 +37974,10 @@ C'est l'épopée de #strong[John Napier] et de la fonction
 
 #divider()
 
-#recto()
+#metadata("fin-section") <fin-section>
+#pagebreak(weak: true, to: "odd")
+#metadata("chapitre") <debut-chapitre>
+#metadata("debut-section") <debut-section>
 == CHAPITRE 48 : Le Logarithme de Napier et les Tables des Navigateurs
 <chapitre-48-le-logarithme-de-napier-et-les-tables-des-navigateurs>
 #quote_box[
@@ -39244,7 +39665,10 @@ chapitre 49 avec #strong[la balançoire et les fonctions qui ondulent].
 
 #divider()
 
-#recto()
+#metadata("fin-section") <fin-section>
+#pagebreak(weak: true, to: "odd")
+#metadata("chapitre") <debut-chapitre>
+#metadata("debut-section") <debut-section>
 == CHAPITRE 49 : La Balançoire et les Fonctions qui Ondulent
 <chapitre-49-la-balançoire-et-les-fonctions-qui-ondulent>
 #quote_box[
@@ -40616,7 +41040,10 @@ d'eau] et la découverte du calcul intégral.
 
 #divider()
 
-#recto()
+#metadata("fin-section") <fin-section>
+#pagebreak(weak: true, to: "odd")
+#metadata("chapitre") <debut-chapitre>
+#metadata("debut-section") <debut-section>
 == CHAPITRE 50 : Le Tonneau Rempli de Tranches d'Eau
 <chapitre-50-le-tonneau-rempli-de-tranches-deau>
 #quote_box[
@@ -41738,7 +42165,10 @@ rendez-vous au chapitre 51 avec #strong[la tasse de thé qui refroidit].
 
 #divider()
 
-#recto()
+#metadata("fin-section") <fin-section>
+#pagebreak(weak: true, to: "odd")
+#metadata("chapitre") <debut-chapitre>
+#metadata("debut-section") <debut-section>
 == CHAPITRE 51 : La Tasse de Thé qui Refroidit
 <chapitre-51-la-tasse-de-thé-qui-refroidit>
 #quote_box[
@@ -42598,7 +43028,10 @@ la géométrie vectorielle en 3D.
 
 #divider()
 
-#recto()
+#metadata("fin-section") <fin-section>
+#pagebreak(weak: true, to: "odd")
+#metadata("chapitre") <debut-chapitre>
+#metadata("debut-section") <debut-section>
 == CHAPITRE 52 : La Cathédrale dans l'Espace
 <chapitre-52-la-cathédrale-dans-lespace>
 #quote_box[
@@ -43546,7 +43979,10 @@ de choisir].
 
 #divider()
 
-#recto()
+#metadata("fin-section") <fin-section>
+#pagebreak(weak: true, to: "odd")
+#metadata("chapitre") <debut-chapitre>
+#metadata("debut-section") <debut-section>
 == CHAPITRE 53 : Le Cadenas à Code et les Façons de Choisir
 <chapitre-53-le-cadenas-à-code-et-les-façons-de-choisir>
 #quote_box[
@@ -44615,7 +45051,10 @@ Lancers de la Pièce].
 
 #divider()
 
-#recto()
+#metadata("fin-section") <fin-section>
+#pagebreak(weak: true, to: "odd")
+#metadata("chapitre") <debut-chapitre>
+#metadata("debut-section") <debut-section>
 == CHAPITRE 54 : Les Mille Lancers de la Pièce
 <chapitre-54-les-mille-lancers-de-la-pièce>
 #quote_box[
@@ -45095,6 +45534,29 @@ Au début (10 lancers), la fréquence oscille sauvagement (de 0,30 à
 0,70). Vers 1 000 lancers, elle reste enfermée à moins de 1 % de 0,5. À
 10 000 lancers, la précision atteint le millième ! Le tourbillon
 aléatoire s'est cristallisé.
+
+#decouvre(title: [Découverte & Histoire])[
+#strong[🔍 L'histoire vraie --- La Planche de Galton et la courbe en
+cloche
+]
+ En 1877, le savant britannique Francis Galton imagine une
+machine physique fascinante pour matérialiser la convergence de la loi
+binomiale : #strong[le quincunx] (ou #strong[planche de Galton]). Des
+billes d'acier tombent une à une à travers un réseau triangulaire de
+clous. À chaque clou rencontré, la bille a exactement une chance sur
+deux de dévier à droite ($S$) ou à gauche ($E$). Au bas de la planche,
+les billes s'accumulent dans des colonnes verticales : le tas central
+s'élève majestueusement tandis que les extrémités s'amenuisent,
+dessinant avec une régularité physique stupéfiante la courbe en cloche
+de Gauss.
+]
+
+#figure(image("figures/histoire/ch_54_galton_box.png", alt: "La Planche de Galton : matérialisation physique de la convergence du triangle de Pascal vers la courbe en cloche de Gauss"),
+  caption: [
+    La Planche de Galton : matérialisation physique de la convergence du
+    triangle de Pascal vers la courbe en cloche de Gauss
+  ]
+)
 
 #divider()
 
@@ -45644,7 +46106,10 @@ Droit].
 
 #divider()
 
-#recto()
+#metadata("fin-section") <fin-section>
+#pagebreak(weak: true, to: "odd")
+#metadata("chapitre") <debut-chapitre>
+#metadata("debut-section") <debut-section>
 == CHAPITRE 55 : Le Tourbillon à Angle Droit
 <chapitre-55-le-tourbillon-à-angle-droit>
 #quote_box[
@@ -46674,7 +47139,10 @@ tourne, les aiguilles se rejoignent modulo $n$ : bienvenue dans
 
 #divider()
 
-#recto()
+#metadata("fin-section") <fin-section>
+#pagebreak(weak: true, to: "odd")
+#metadata("chapitre") <debut-chapitre>
+#metadata("debut-section") <debut-section>
 == CHAPITRE 56 : Les Messages Secrets et l'Horloge des Restes
 <chapitre-56-les-messages-secrets-et-lhorloge-des-restes>
 #quote_box[
@@ -47643,7 +48111,10 @@ Revisité : Matrices et Graphes].
 
 #divider()
 
-#recto()
+#metadata("fin-section") <fin-section>
+#pagebreak(weak: true, to: "odd")
+#metadata("chapitre") <debut-chapitre>
+#metadata("debut-section") <debut-section>
 == CHAPITRE 57 : Le Métier Jacquard Revisité : Matrices et Graphes
 <chapitre-57-le-métier-jacquard-revisité-matrices-et-graphes>
 #quote_box[
@@ -48641,7 +49112,10 @@ la Fin du Voyage].
 
 #divider()
 
-#recto()
+#metadata("fin-section") <fin-section>
+#pagebreak(weak: true, to: "odd")
+#metadata("chapitre") <debut-chapitre>
+#metadata("debut-section") <debut-section>
 == CHAPITRE 58 : La Fin du Voyage
 <chapitre-58-la-fin-du-voyage>
 #quote_box[
@@ -49555,6 +50029,124 @@ Le grand livre du monde est désormais ouvert devant tes yeux. Tu en connais la 
 )
 
 #recto()
+= ANNEXE C : INDEX DES SOURCES PHOTOGRAPHIQUES ET PATRIMONIALES
+
+#v(0.3cm)
+Conformément aux principes de diffusion libre sous licence *Creative Commons (CC BY-SA 4.0)* et au respect des sources historiques, l'ensemble des photographies d'ouverture de volume et des documents patrimoniaux insérés dans l'ouvrage provient de la médiathèque patrimoniale *Wikimedia Commons* et de collections d'archives publiques.
+
+== I. Grandes Planches de Frontispice (Les Mathématiques dans la Nature)
+
+#set text(size: 8.5pt)
+#table(
+  columns: (1.1fr, 1.4fr, 2fr, 1.2fr, 2fr),
+  fill: (x, y) => if y == 0 { rgb("#1d4ed8") } else if calc.odd(y) { rgb("#f8fafc") } else { none },
+  stroke: 0.5pt + rgb("#cbd5e1"),
+  inset: 5.5pt,
+  align: (center, left, left, left, left),
+  table.header(
+    text(weight: "bold", fill: white)[Emplacement],
+    text(weight: "bold", fill: white)[Sujet & Espèce],
+    text(weight: "bold", fill: white)[Phénomène Mathématique],
+    text(weight: "bold", fill: white)[Auteur & Licence],
+    text(weight: "bold", fill: white)[Source Wikimedia Commons]
+  ),
+  [Frontispice Vol. I\ (Pleine page gauche)],
+  [*Alvéoles d'abeilles*\ _(Apis mellifera)_],
+  [Pavage hexagonal compact du plan, conjecture du nid d'abeille (Hales 1999), optimisation isopérimétrique.],
+  [Waugsberg\ CC BY-SA 3.0],
+  [#link("https://commons.wikimedia.org/wiki/File:Bienenwabe_mit_Eiern_und_Brut_5.jpg")[Wikimedia Commons\ `File:Bienenwabe_mit_Eiern_5.jpg`]],
+
+  [Frontispice Vol. II\ (Pleine page gauche)],
+  [*Coupe de Nautile*\ _(Nautilus pompilius)_],
+  [Spirale logarithmique ($r = a e^(b theta)$), croissance gnomonique invariante par homothétie, proportions continues.],
+  [Chris 73\ CC BY-SA 3.0],
+  [#link("https://commons.wikimedia.org/wiki/File:NautilusCutawayLogarithmicSpiral.jpg")[Wikimedia Commons\ `File:NautilusCutawayLogarithmicSpiral.jpg`]],
+
+  [Frontispice Vol. III\ (Pleine page gauche)],
+  [*Capitule de Tournesol*\ _(Helianthus annuus)_],
+  [Phyllotaxie, spirales de Fibonacci croisées (34/55), divergence selon l'angle d'or ($137{,}5077^circle$).],
+  [Anna Benczur\ CC BY-SA 4.0],
+  [#link("https://commons.wikimedia.org/wiki/File:Fibonacci_spiral.jpg")[Wikimedia Commons\ `File:Fibonacci_spiral.jpg`]],
+
+  [Frontispice Vol. IV\ (Pleine page gauche)],
+  [*Chou Romanesco*\ _(Brassica oleracea)_],
+  [Autosimilarité fractale stricte, invariance d'échelle, récursivité géométrique et spirales logarithmiques imbriquées.],
+  [Ivar Leidus (Iifar)\ CC BY-SA 4.0],
+  [#link("https://commons.wikimedia.org/wiki/File:Romanesco_broccoli_(Brassica_oleracea).jpg")[Wikimedia Commons\ `File:Romanesco_broccoli.jpg`]],
+
+  [Frontispice Vol. V\ (Pleine page gauche)],
+  [*Toile d'araignée perlée*\ _(Araneus diadematus)_],
+  [Équilibre vectoriel concourant, décomposition trigonométrique des forces et courbure caténaire (chaînette $y = a cosh(x/a)$).],
+  [Luc Viatour\ CC BY-SA 3.0],
+  [#link("https://commons.wikimedia.org/wiki/File:Spider_web_Luc_Viatour.jpg")[Wikimedia Commons\ `File:Spider_web_Luc_Viatour.jpg`]],
+
+  [Frontispice Vol. VI\ (Pleine page gauche)],
+  [*Cône textile*\ _(Conus textile)_],
+  [Morphogenèse par réaction-diffusion (équations de Turing 1952), automates cellulaires (règle 30) et motif fractal de Sierpinski.],
+  [Reinhold Möller (Ermell)\ CC BY-SA 4.0],
+  [#link("https://commons.wikimedia.org/wiki/File:Textil-Kegelschnecke_(Conus_textile)-20080201-RM-164444.jpg")[Wikimedia Commons\ `File:Textil-Kegelschnecke.jpg`]]
+)
+
+#v(0.3cm)
+== II. Documents Historiques & Archéologiques dans le Corps du Texte
+
+#table(
+  columns: (1.1fr, 1.4fr, 2fr, 1.2fr, 2fr),
+  fill: (x, y) => if y == 0 { rgb("#0f172a") } else if calc.odd(y) { rgb("#f8fafc") } else { none },
+  stroke: 0.5pt + rgb("#cbd5e1"),
+  inset: 5.5pt,
+  align: (center, left, left, left, left),
+  table.header(
+    text(weight: "bold", fill: white)[Chapitre],
+    text(weight: "bold", fill: white)[Document & Sujet],
+    text(weight: "bold", fill: white)[Portée Pédagogique],
+    text(weight: "bold", fill: white)[Origine & Licence],
+    text(weight: "bold", fill: white)[Source Wikimedia Commons]
+  ),
+  [Chapitre 1\ (Vol. I)],
+  [*L'Os d'Ishango*\ (~20 000 av. J.-C.)],
+  [Premières encoches de dénombrement par paquets, correspondance un-pour-un.],
+  [IRSNB Bruxelles\ Domaine public],
+  [#link("https://commons.wikimedia.org/wiki/File:Ishango_bone.jpg")[Wikimedia Commons\ `File:Ishango_bone.jpg`]],
+
+  [Chapitre 4\ (Vol. I)],
+  [*La Pascaline*\ (Blaise Pascal, 1642)],
+  [Premier train d'engrenages opératoires réalisant le report automatique de la retenue décimale.],
+  [David Monniaux\ CC BY-SA 3.0],
+  [#link("https://commons.wikimedia.org/wiki/File:Arts_et_Metiers_Pascaline_dsc03869.jpg")[Musée des Arts & Métiers\ `File:Arts_et_Metiers_Pascaline.jpg`]],
+
+  [Chapitre 10\ (Vol. II)],
+  [*Papyrus Rhind*\ (~1550 av. J.-C.)],
+  [Tables de partage et décomposition des grandeurs en fractions unitaires égyptiennes.],
+  [British Museum\ Domaine public],
+  [#link("https://commons.wikimedia.org/wiki/File:Rhind_Mathematical_Papyrus.jpg")[British Museum\ `File:Rhind_Mathematical_Papyrus.jpg`]],
+
+  [Chapitre 19\ (Vol. III)],
+  [*Les Éléments d'Euclide*\ (Oliver Byrne, 1847)],
+  [Planche originale en quadrichromie démontrant le Théorème de Pythagore par la couleur pure.],
+  [Oliver Byrne\ Domaine public],
+  [#link("https://commons.wikimedia.org/wiki/File:Byrne_1847_Satz_des_Pythagoras_Hochformat.jpg")[Bibliothèque patrimoniale\ `File:Byrne_1847_Pythagoras.jpg`]],
+
+  [Chapitre 54\ (Vol. VI)],
+  [*La Planche de Galton*\ (Francis Galton, 1877)],
+  [Matérialisation mécanique du théorème central limite : convergence du triangle de Pascal vers la loi Normale.],
+  [Wikimedia Commons\ CC BY-SA 4.0],
+  [#link("https://commons.wikimedia.org/wiki/File:Galton_board.png")[Sciences physiques\ `File:Galton_board.png`]]
+)
+
+#v(0.3cm)
+#block(
+  fill: rgb("#eff6ff"),
+  stroke: 1pt + rgb("#bfdbfe"),
+  inset: 10pt,
+  radius: 5pt
+)[
+  #text(size: 8pt, fill: rgb("#1e3a8a"))[
+    *Note éditoriale sur les droits de réutilisation :* Toutes les images ci-dessus sont réutilisables selon les termes de leurs licences respectives (Domaine public, CC BY-SA 3.0 et CC BY-SA 4.0). Pour toute reproduction, adaptation ou diffusion, veuillez créditer les auteurs d'origine et mentionner les liens Wikimedia Commons conformément aux obligations légales de partage dans les mêmes conditions.
+  ]
+]
+
+#recto()
 = INDEX THÉMATIQUE DÉTAILLÉ
 
 #set text(size: 9pt)
@@ -49642,57 +50234,109 @@ Le grand livre du monde est désormais ouvert devant tes yeux. Tu en connais la 
 // Plat 4 (quatrième de couverture) : jamais foliotée
 
 // ==========================================
-// 5. QUATRIÈME DE COUVERTURE (BACK COVER)
+// 5. QUATRIÈME DE COUVERTURE (OPTION A : NUIT ABYSSALE & OR DU COMMERCE)
 // ==========================================
-#align(center + horizon)[
+#set page(
+  paper: "a4",
+  margin: (top: 1.5cm, bottom: 1.5cm, left: 1.5cm, right: 1.5cm),
+  fill: rgb("#070d1e"),
+  header: none,
+  footer: none
+)
+
+#block(
+  stroke: 1.5pt + rgb("#f59e0b"),
+  inset: (x: 22pt, top: 22pt, bottom: 18pt),
+  radius: 8pt,
+  width: 100%,
+  height: 100%
+)[
+  #align(center)[
+    #text(size: 11pt, weight: "bold", fill: rgb("#f59e0b"), tracking: 2.5pt, font: "Liberation Sans")[
+      SILVÈRE MARTIN-MICHIELLOT & ANTIGRAVITY
+    ]
+    #v(0.35cm)
+    #text(size: 26pt, weight: "bold", fill: white, font: "Liberation Serif")[
+      LA VOIE DU NOMBRE
+    ]
+    #v(0.18cm)
+    #text(size: 12pt, weight: "bold", fill: rgb("#93c5fd"), font: "Liberation Sans")[
+      Une Odyssée Constructive, du Premier Caillou au Baccalauréat
+    ]
+    #v(0.4cm)
+    
+    #block(
+      fill: rgb("#0f172a"),
+      stroke: (left: 3pt + rgb("#f59e0b")),
+      inset: (left: 14pt, right: 12pt, y: 9pt),
+      radius: (right: 4pt),
+      width: 100%
+    )[
+      #align(left)[
+        #text(size: 10pt, style: "italic", fill: rgb("#fef08a"))[
+          « Et si le dégoût des mathématiques ne venait pas d'un manque d'intelligence, mais de l'amnésie des yeux et des mains ? »
+        ]
+      ]
+    ]
+  ]
+  
+  #v(0.4cm)
+  #align(left)[
+    #text(size: 9.5pt, fill: rgb("#e2e8f0"))[
+      Comment réconcilier durablement l'esprit humain avec la clarté et la puissance des mathématiques ? Pourquoi tant d'enfants et d'adolescents décrochent-ils face à des symboles abstraits dont on a oublié de leur raconter l'origine vivante ?
+      
+      *LA VOIE DU NOMBRE* relève ce défi à travers cinquante-huit chapitres reliés comme les maillons d'une même chaîne ininterrompue, guidant pas à pas l'élève depuis l'éveil du regard et les premiers cailloux jusqu'aux sommets de l'enseignement secondaire. Chaque concept y naît d'un geste concret de la main avant de s'élever dans la pure rigueur logique.
+    ]
+  ]
+  
+  #v(0.45cm)
+  #grid(
+    columns: (1fr, 1fr),
+    gutter: 12pt,
+    block(fill: rgb("#0f172a"), stroke: 0.75pt + rgb("#f59e0b"), inset: 10pt, radius: 5pt)[
+      #text(size: 9pt, weight: "bold", fill: rgb("#f59e0b"))[1. Ancrage Historique Vivant]\\
+      #v(2pt)
+      #text(size: 8pt, fill: rgb("#cbd5e1"))[Du Nil d'Euclide aux logarithmes de Napier : chaque théorème résout une énigme humaine.]
+    ],
+    block(fill: rgb("#0f172a"), stroke: 0.75pt + rgb("#60a5fa"), inset: 10pt, radius: 5pt)[
+      #text(size: 9pt, weight: "bold", fill: rgb("#60a5fa"))[2. L'Intelligence Visuelle]\\
+      #v(2pt)
+      #text(size: 8pt, fill: rgb("#cbd5e1"))[Comprendre par la couleur et la forme : le regard saisit la logique avant même le calcul formel.]
+    ],
+    block(fill: rgb("#0f172a"), stroke: 0.75pt + rgb("#4ade80"), inset: 10pt, radius: 5pt)[
+      #text(size: 9pt, weight: "bold", fill: rgb("#4ade80"))[3. Automatisation Opératoire]\\
+      #v(2pt)
+      #text(size: 8pt, fill: rgb("#cbd5e1"))[L'algorithme du calcul posé : libérer la mémoire de travail pour les raisonnements nobles.]
+    ],
+    block(fill: rgb("#0f172a"), stroke: 0.75pt + rgb("#f87171"), inset: 10pt, radius: 5pt)[
+      #text(size: 9pt, weight: "bold", fill: rgb("#f87171"))[4. Élucidation des Cas Limites]\\
+      #v(2pt)
+      #text(size: 8pt, fill: rgb("#cbd5e1"))[De la division par zéro aux infinis actuels : la rigueur sans aucun angle mort.]
+    ]
+  )
+  
+  #v(0.45cm)
   #block(
     fill: rgb("#0f172a"),
-    inset: 28pt,
-    radius: 12pt,
-    width: 95%
+    stroke: 1pt + rgb("#334155"),
+    inset: (x: 12pt, y: 8pt),
+    radius: 5pt,
+    width: 100%
   )[
-    #text(size: 13pt, weight: "bold", fill: byrne-yellow, tracking: 2pt, font: "Liberation Sans")[SILVÈRE-MARTIN MICHIELLOT & ANTIGRAVITY]
-    #v(0.5cm)
-    #text(size: 26pt, weight: "bold", fill: white, font: "Liberation Serif")[LA VOIE DU NOMBRE]
+    #text(size: 8.5pt, weight: "bold", fill: rgb("#38bdf8"))[Public visé : ]
+    #text(size: 8pt, fill: rgb("#cbd5e1"))[
+      Élèves du CP à la Terminale • Candidats aux examens et concours • Parents en IEF • Professeurs & Curieux d'autoformation.
+    ]
+  ]
+  
+  #v(1fr)
+  #align(center)[
+    #line(length: 60%, stroke: 0.5pt + rgb("#f59e0b"))
     #v(0.2cm)
-    #text(size: 13pt, weight: "bold", fill: rgb("#93c5fd"), font: "Liberation Sans")[Une Odyssée Constructive, du Premier Caillou au Baccalauréat]
-    #v(0.6cm)
-    
-    #align(left)[
-      #text(size: 10pt, fill: rgb("#e2e8f0"), font: "Liberation Serif")[
-        Comment réconcilier durablement l'esprit humain avec la beauté et la puissance des mathématiques ? Pourquoi tant d'enfants et d'adolescents décrochent-ils face à des symboles abstraits dont on a oublié de leur raconter l'origine vivante ?
-        
-        *LA VOIE DU NOMBRE* relève ce défi monumental en cinquante-huit chapitres reliés comme les maillons d'une même chaîne ininterrompue, guidant l'élève depuis l'âge de 6 ans (CP) jusqu'aux portes de l'enseignement supérieur (Terminale Spécialité et Maths Expertes).
-      ]
-      
-      #v(0.5cm)
-      #grid(
-        columns: (1fr, 1fr),
-        gutter: 14pt,
-        block(fill: rgb("#1e293b"), inset: 10pt, radius: 6pt)[
-          #text(size: 9.5pt, weight: "bold", fill: byrne-yellow)[1. Ancrage Historique :]\\
-          #text(size: 8.5pt, fill: rgb("#cbd5e1"))[Chaque concept naît d'un problème réel résolu par l'humanité : du Nil d'Euclide aux logarithmes de Napier.]
-        ],
-        block(fill: rgb("#1e293b"), inset: 10pt, radius: 6pt)[
-          #text(size: 9.5pt, weight: "bold", fill: rgb("#60a5fa"))[2. Sémiotique d'Oliver Byrne :]\\
-          #text(size: 8.5pt, fill: rgb("#cbd5e1"))[L'intelligence par la couleur et la forme : le regard comprend avant même que le calcul formel ne commence.]
-        ],
-        block(fill: rgb("#1e293b"), inset: 10pt, radius: 6pt)[
-          #text(size: 9.5pt, weight: "bold", fill: rgb("#4ade80"))[3. Algorithmes Opératoires :]\\
-          #text(size: 8.5pt, fill: rgb("#cbd5e1"))[Automatisation motrice du calcul posé : libérer la mémoire de travail pour accéder aux sommets logiques.]
-        ],
-        block(fill: rgb("#1e293b"), inset: 10pt, radius: 6pt)[
-          #text(size: 9.5pt, weight: "bold", fill: rgb("#f87171"))[4. Élucidation des Cas Limites :]\\
-          #text(size: 8.5pt, fill: rgb("#cbd5e1"))[La division par zéro, le rôle du vide, l'infini et les matrices creuses : la rigueur sans aucun angle mort.]
-        ]
-      )
-      
-      #v(0.6cm)
-      #align(center)[
-        #line(length: 60%, stroke: 1.5pt + byrne-yellow)
-        #v(0.2cm)
-        #text(size: 8.5pt, fill: rgb("#94a3b8"), style: "italic")[« Tout est nombre, et le nombre est le guide de l'âme. » — Philolaos de Crotone]
-      ]
+    #text(size: 8.5pt, style: "italic", fill: rgb("#fde047"))[« Tout est nombre, et le nombre est le guide de l'âme. » — Philolaos de Crotone]
+    #v(0.15cm)
+    #text(size: 7.5pt, fill: rgb("#94a3b8"))[
+      Édition de Référence • Licence Creative Commons CC BY-SA 4.0 (Diffusion & partage libres)
     ]
   ]
 ]

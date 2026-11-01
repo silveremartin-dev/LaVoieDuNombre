@@ -317,6 +317,11 @@ Au début (10 lancers), la fréquence oscille sauvagement (de 0,30 à 0,70).
 Vers 1 000 lancers, elle reste enfermée à moins de 1 % de 0,5.
 À 10 000 lancers, la précision atteint le millième ! Le tourbillon aléatoire s'est cristallisé.
 
+> **🔍 L'histoire vraie — La Planche de Galton et la courbe en cloche**
+> En 1877, le savant britannique Francis Galton imagine une machine physique fascinante pour matérialiser la convergence de la loi binomiale : **le quincunx** (ou **planche de Galton**). Des billes d'acier tombent une à une à travers un réseau triangulaire de clous. À chaque clou rencontré, la bille a exactement une chance sur deux de dévier à droite ($S$) ou à gauche ($E$). Au bas de la planche, les billes s'accumulent dans des colonnes verticales : le tas central s'élève majestueusement tandis que les extrémités s'amenuisent, dessinant avec une régularité physique stupéfiante la courbe en cloche de Gauss.
+
+![La Planche de Galton : matérialisation physique de la convergence du triangle de Pascal vers la courbe en cloche de Gauss](figures/histoire/ch_54_galton_box.png)
+
 ---
 
 ### 7. Exemples résolus pas à pas

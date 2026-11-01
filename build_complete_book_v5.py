@@ -50,7 +50,7 @@ DIAG_BY_LOC = {}
 PREAMBLE = """
 #set document(
   title: "LA VOIE DU NOMBRE — Une Odyssée Constructive",
-  author: "Silvère-Martin Michiellot & Antigravity"
+  author: "Silvère Martin-Michiellot & Antigravity"
 )
 
 // ==========================================
@@ -60,45 +60,135 @@ PREAMBLE = """
 // - Pages impaires = recto (droite) ; pages paires = verso (gauche).
 // - Pages liminaires (1 faux-titre, 2 blanche, 3 grand titre, 4 mentions légales,
 //   5 exergue/dédicace, 6 blanche, puis sommaire) : comptées mais muettes.
-// - Toute ouverture de volume, de chapitre ou d'annexe se fait en belle page (impaire)
-//   et reste muette ; le premier folio visible suit l'ouverture du Volume I.
-// - Pages blanches : comptées dans l'ordre arithmétique, jamais de folio ni de titre courant.
+// - Toute ouverture de volume se fait en belle page (impaire) précédée de son
+//   frontispice photographique de la nature sur la page gauche en regard (paire).
+// - La première page de chaque chapitre porte sa pagination en pied de page (folio extérieur),
+//   mais son en-tête reste muet pour laisser respirer le grand titre.
+// - Pages blanches intercalaires : comptées dans l'ordre arithmétique, jamais de folio ni de titre courant.
 // - Folio sur la marge extérieure : à gauche sur les versos (pairs), à droite sur les rectos (impairs).
 // ==========================================
 
-// Saut vers la prochaine belle page (impaire) avec balisage des pages blanches intercalaires
-#let recto() = {
-  [#metadata("fin-section") <fin-section>]
-  pagebreak(weak: true, to: "odd")
-  [#metadata("debut-section") <debut-section>]
-}
+// Palette Oliver Byrne (1847)
+#let byrne-blue = rgb("#1d4ed8")
+#let byrne-red = rgb("#b91c1c")
+#let byrne-yellow = rgb("#d97706")
+#let byrne-dark = rgb("#0f172a")
+#let byrne-green = rgb("#15803d")
+#let byrne-purple = rgb("#7e22ce")
+#let byrne-slate = rgb("#334155")
 
-// Le folio (et le titre courant) n'est visible que sur les pages de texte courant :
-// ni liminaire, ni page d'ouverture, ni page blanche.
-#let folio-visible() = {
+// Saut vers la prochaine belle page (impaire) avec balisage des pages blanches intercalaires
+#let recto() = [
+  #metadata("fin-section") <fin-section>
+  #pagebreak(weak: true, to: "odd")
+  #metadata("debut-section") <debut-section>
+]
+
+#let is-blank-page() = {
   let p = here().page()
-  let debut = query(<debut-texte>)
-  if debut.len() == 0 or p <= debut.first().location().page() { return false }
   let fins = query(<fin-section>)
   let debuts = query(<debut-section>)
   for (i, d) in debuts.enumerate() {
     let dp = d.location().page()
-    if dp == p { return false }
     if i < fins.len() and p < dp {
       let m = fins.at(i).location()
       let mp = m.page()
-      if mp < p { return false }
-      if mp == p and m.position().y < 2.65cm { return false }
+      if mp < p { return true }
+      if mp == p and m.position().y < 2.65cm { return true }
     }
   }
+  false
+}
+
+#let is-frontispice() = {
+  let p = here().page()
+  query(<page-frontispice>).any(m => m.location().page() == p)
+}
+
+#let is-volume-title() = {
+  let p = here().page()
+  query(<ouverture-volume>).any(m => m.location().page() == p)
+}
+
+#let is-chapter-start() = {
+  let p = here().page()
+  query(<debut-chapitre>).any(m => m.location().page() == p)
+}
+
+// Le titre courant n'est visible que sur les pages de texte courant :
+// ni liminaire, ni ouverture de volume, ni début de chapitre, ni frontispice, ni page blanche.
+#let header-visible() = {
+  let p = here().page()
+  let debut = query(<debut-texte>)
+  if debut.len() == 0 or p <= debut.first().location().page() { return false }
+  if is-blank-page() { return false }
+  if is-frontispice() { return false }
+  if is-volume-title() { return false }
+  if is-chapter-start() { return false }
   true
 }
+
+// Le folio (pied de page) est visible sur tout le corps du texte ET sur la première page des chapitres :
+// ni liminaire, ni ouverture de volume, ni frontispice, ni page blanche.
+#let footer-visible() = {
+  let p = here().page()
+  let debut = query(<debut-texte>)
+  if debut.len() == 0 or p <= debut.first().location().page() { return false }
+  if is-blank-page() { return false }
+  if is-frontispice() { return false }
+  if is-volume-title() { return false }
+  true
+}
+
+#let frontispice-volume(img-path) = [
+  #metadata("fin-section") <fin-section>
+  #pagebreak(to: "even")
+  #metadata("frontispice") <page-frontispice>
+  #metadata("debut-section") <debut-section>
+  #align(center + horizon)[
+    #image(img-path, width: 100%, height: 96%, fit: "cover")
+  ]
+]
+
+#let ouverture-volume(num, titre-vol, sous-titre, descriptif, chapitres, mention-regard) = [
+  #metadata("fin-section") <fin-section>
+  #pagebreak(to: "odd")
+  #metadata("volume") <ouverture-volume>
+  #metadata("debut-section") <debut-section>
+  
+  #v(0.2cm)
+  #align(center)[
+    #block(fill: rgb("#f8fafc"), stroke: 2pt + byrne-blue, inset: (x: 20pt, y: 14pt), radius: 8pt, width: 100%)[
+      #heading(level: 1)[VOLUME #num --- #titre-vol] <volume-title>
+      #v(0.12cm)
+      #text(size: 9.5pt, weight: "bold", fill: byrne-red, font: "Liberation Sans")[#sous-titre]
+    ]
+  ]
+  #v(0.25cm)
+  #align(center)[#text(size: 9pt, style: "italic", fill: rgb("#334155"))[#descriptif]]
+  #v(0.25cm)
+  #block(fill: rgb("#f8fafc"), stroke: 0.75pt + rgb("#cbd5e1"), inset: (x: 16pt, y: 10pt), radius: 6pt, width: 100%)[
+    #text(size: 9pt, weight: "bold", fill: byrne-blue, font: "Liberation Sans")[Chapitres du Volume #num :]\
+    #v(0.15cm)
+    #grid(
+      columns: (1fr, 1fr),
+      gutter: 6pt,
+      ..chapitres.map(ch => text(size: 7.5pt, fill: rgb("#1e293b"))[#ch])
+    )
+  ]
+  #v(1fr)
+  #align(center)[
+    #line(length: 40%, stroke: 0.5pt + rgb("#cbd5e1"))
+    #v(0.15cm)
+    #text(size: 8pt, style: "italic", fill: rgb("#475569"))[#mention-regard]
+  ]
+]
 
 #set page(
   paper: "a4",
   margin: (top: 2.4cm, bottom: 2.4cm, left: 2.2cm, right: 2.2cm),
   header: context {
-    if folio-visible() [
+    if header-visible() [
       #let cur-h2 = query(heading.where(level: 2)).filter(h => h.location().page() == here().position().page)
       #let ch-title = if cur-h2.len() > 0 {
         cur-h2.first().body
@@ -114,17 +204,18 @@ PREAMBLE = """
         if prev-h1.len() > 0 { prev-h1.last().body } else { [LA VOIE DU NOMBRE] }
       }
       #grid(
-        columns: (1fr, 1fr),
-        align: (left, right),
-        text(size: 7.5pt, fill: rgb("#64748b"), font: "Liberation Sans", style: "italic")[#vol-title],
-        text(size: 7.5pt, fill: rgb("#475569"), font: "Liberation Sans", weight: "bold")[#ch-title]
+        columns: (1fr,),
+        gutter: 2.5pt,
+        align: left,
+        text(size: 7pt, fill: rgb("#64748b"), font: "Liberation Sans", style: "italic")[#vol-title],
+        text(size: 7.5pt, fill: rgb("#334155"), font: "Liberation Sans", weight: "bold")[#ch-title]
       )
-      #v(-4pt)
+      #v(-2pt)
       #line(length: 100%, stroke: 0.5pt + rgb("#cbd5e1"))
     ]
   },
   footer: context {
-    if folio-visible() {
+    if footer-visible() {
       let page-num = counter(page).get().first()
       let titre = text(size: 8pt, fill: rgb("#94a3b8"), font: "Liberation Sans", style: "italic")[LA VOIE DU NOMBRE — Une Odyssée Constructive]
       let folio = text(size: 8.5pt, fill: rgb("#0f172a"), font: "Liberation Sans", weight: "bold")[Page #page-num]
@@ -153,15 +244,6 @@ PREAMBLE = """
 #show heading: set text(hyphenate: false)
 #show heading: set block(sticky: true)
 
-// Palette Oliver Byrne (1847)
-#let byrne-blue = rgb("#1d4ed8")
-#let byrne-red = rgb("#b91c1c")
-#let byrne-yellow = rgb("#d97706")
-#let byrne-dark = rgb("#0f172a")
-#let byrne-green = rgb("#15803d")
-#let byrne-purple = rgb("#7e22ce")
-#let byrne-slate = rgb("#334155")
-
 // Style épuré des blocs de code Python (Oliver Byrne)
 #show raw.where(lang: "python"): it => align(center)[
   #block(
@@ -178,21 +260,25 @@ PREAMBLE = """
 // Empêcher toute figure ou encart d'être coupé en deux sur un saut de page
 #show figure: set block(breakable: false)
 
-// Design des Volumes
+// Design des Titres de Niveau 1 (Volumes & Annexes)
 #show heading.where(level: 1): it => {
-  v(1.0cm)
-  align(center)[
-    #block(
-      fill: rgb("#f1f5f9"),
-      stroke: 2.5pt + byrne-blue,
-      inset: 20pt,
-      radius: 8pt,
-      width: 100%
-    )[
-      #text(size: 17pt, weight: "bold", fill: byrne-dark, font: "Liberation Sans")[#it.body]
+  if it.has("label") and it.label == <volume-title> {
+    text(size: 15pt, weight: "bold", fill: byrne-dark, font: "Liberation Serif")[#it.body]
+  } else {
+    v(1.5cm)
+    align(center)[
+      #block(
+        fill: rgb("#f8fafc"),
+        stroke: 2pt + byrne-blue,
+        inset: (x: 24pt, y: 18pt),
+        radius: 8pt,
+        width: 100%
+      )[
+        #text(size: 16pt, weight: "bold", fill: byrne-dark, font: "Liberation Serif")[#it.body]
+      ]
     ]
-  ]
-  v(1.0cm)
+    v(1.0cm)
+  }
 }
 
 // Design des Chapitres
@@ -324,46 +410,130 @@ PREAMBLE = """
 ]
 
 // ==========================================
-// 1. PAGE DE COUVERTURE OFFICIELLE
+// 1. PAGE DE COUVERTURE OFFICIELLE (OPTION A : NUIT ABYSSALE & OR D'OLIVER BYRNE)
 // ==========================================
-#align(center)[
-  #v(0.2cm)
-  #text(size: 14pt, weight: "bold", fill: byrne-blue, font: "Liberation Sans")[Silvère-Martin Michiellot & Antigravity]
-  #v(0.3cm)
-  #text(size: 32pt, weight: "bold", fill: byrne-dark, font: "Liberation Serif")[LA VOIE DU NOMBRE]
-  #v(0.2cm)
-  #text(size: 14pt, weight: "bold", fill: byrne-red, font: "Liberation Sans")[Une Odyssée Constructive, du Premier Caillou au Baccalauréat]
-  #v(0.15cm)
-  #text(size: 10pt, style: "italic", fill: rgb("#475569"))[58 chapitres d'histoire, de manipulations motrices, de calculs posés et de pure clarté logique]
-  #v(0.4cm)
-  
-  #block(
-    stroke: 2pt + byrne-yellow,
-    radius: 8pt,
-    inset: 3pt,
-    clip: true
-  )[
-    #image("figures/cover_art.jpg", width: 56%)
-  ]
-  
-  #v(0.4cm)
-  #block(
-    fill: rgb("#eff6ff"),
-    stroke: 1.5pt + byrne-blue,
-    inset: (x: 18pt, y: 7pt),
-    radius: 6pt
-  )[
-    #text(size: 11pt, weight: "bold", fill: byrne-blue, font: "Liberation Sans")[ÉDITION INTÉGRALE DE RÉFÉRENCE — 2026]
+#set page(
+  paper: "a4",
+  margin: (top: 1.5cm, bottom: 1.5cm, left: 1.5cm, right: 1.5cm),
+  fill: rgb("#070d1e"),
+  header: none,
+  footer: none
+)
+
+#block(
+  stroke: 1.5pt + rgb("#f59e0b"),
+  inset: (x: 20pt, top: 22pt, bottom: 18pt),
+  radius: 8pt,
+  width: 100%,
+  height: 100%
+)[
+  #align(center)[
+    #text(size: 13pt, weight: "bold", fill: rgb("#f59e0b"), tracking: 2.5pt, font: "Liberation Sans")[
+      SILVÈRE MARTIN-MICHIELLOT & ANTIGRAVITY
+    ]
+    #v(0.5cm)
+    #text(size: 36pt, weight: "bold", fill: white, font: "Liberation Serif")[
+      LA VOIE DU NOMBRE
+    ]
+    #v(0.25cm)
+    #text(size: 13.5pt, weight: "bold", fill: rgb("#fcd34d"), font: "Liberation Sans")[
+      Une Odyssée Constructive, du Premier Caillou au Baccalauréat
+    ]
+    #v(0.15cm)
+    #text(size: 9.5pt, style: "italic", fill: rgb("#cbd5e1"))[
+      58 chapitres d'histoire vivante, de manipulations motrices, de calculs posés et de pure clarté logique
+    ]
+    #v(0.5cm)
+    
+    #block(
+      stroke: 2pt + rgb("#f59e0b"),
+      radius: 8pt,
+      clip: true,
+      inset: 0pt,
+      width: 88%,
+      image("figures/cover_art.jpg", width: 100%, height: 12.8cm, fit: "cover")
+    )
+    
+    #v(0.6cm)
+    #block(
+      fill: rgb("#0f172a"),
+      stroke: 1.2pt + rgb("#38bdf8"),
+      inset: (x: 22pt, y: 7pt),
+      radius: 6pt
+    )[
+      #text(size: 10.5pt, weight: "bold", fill: rgb("#38bdf8"), font: "Liberation Sans")[
+        ÉDITION INTÉGRALE DE RÉFÉRENCE — 2026
+      ]
+    ]
+    #v(0.25cm)
+    #text(size: 8pt, fill: rgb("#94a3b8"), tracking: 1pt, font: "Liberation Sans")[
+      DIDACTIQUE CONSTRUCTIVISTE • INTUITION GÉOMÉTRIQUE • RIGUEUR FORMELLE
+    ]
   ]
 ]
 
 #pagebreak()
 // Plat 2 (intérieur de couverture) : hors décompte, jamais folioté
+#set page(
+  paper: "a4",
+  margin: (top: 2.4cm, bottom: 2.4cm, left: 2.2cm, right: 2.2cm),
+  fill: white,
+  header: none,
+  footer: none
+)
 #box()
 #pagebreak()
 
 // Début du bloc intérieur : la première belle page est la page 1 (muette)
 #counter(page).update(1)
+
+#set page(
+  paper: "a4",
+  margin: (top: 2.4cm, bottom: 2.4cm, left: 2.2cm, right: 2.2cm),
+  fill: white,
+  header: context {
+    if header-visible() [
+      #let cur-h2 = query(heading.where(level: 2)).filter(h => h.location().page() == here().position().page)
+      #let ch-title = if cur-h2.len() > 0 {
+        cur-h2.first().body
+      } else {
+        let prev-h2 = query(selector(heading.where(level: 2)).before(here()))
+        if prev-h2.len() > 0 { prev-h2.last().body } else { [] }
+      }
+      #let cur-h1 = query(heading.where(level: 1)).filter(h => h.location().page() == here().position().page)
+      #let vol-title = if cur-h1.len() > 0 {
+        cur-h1.first().body
+      } else {
+        let prev-h1 = query(selector(heading.where(level: 1)).before(here()))
+        if prev-h1.len() > 0 { prev-h1.last().body } else { [LA VOIE DU NOMBRE] }
+      }
+      #grid(
+        columns: (1fr,),
+        gutter: 2.5pt,
+        align: left,
+        text(size: 7pt, fill: rgb("#64748b"), font: "Liberation Sans", style: "italic")[#vol-title],
+        text(size: 7.5pt, fill: rgb("#334155"), font: "Liberation Sans", weight: "bold")[#ch-title]
+      )
+      #v(-2pt)
+      #line(length: 100%, stroke: 0.5pt + rgb("#cbd5e1"))
+    ]
+  },
+  footer: context {
+    if footer-visible() {
+      let page-num = counter(page).get().first()
+      let titre = text(size: 8pt, fill: rgb("#94a3b8"), font: "Liberation Sans", style: "italic")[LA VOIE DU NOMBRE — Une Odyssée Constructive]
+      let folio = text(size: 8.5pt, fill: rgb("#0f172a"), font: "Liberation Sans", weight: "bold")[Page #page-num]
+      line(length: 100%, stroke: 0.5pt + rgb("#cbd5e1"))
+      v(3pt)
+      // Folio toujours côté marge extérieure (jamais côté reliure)
+      if calc.even(page-num) {
+        grid(columns: (1fr, 1fr), align: (left, right), folio, titre)
+      } else {
+        grid(columns: (1fr, 1fr), align: (left, right), titre, folio)
+      }
+    }
+  }
+)
 
 // ==========================================
 // PAGE 1 (RECTO) — FAUX-TITRE (MUETTE)
@@ -382,7 +552,7 @@ PREAMBLE = """
 // ==========================================
 #align(center)[
   #v(3.5cm)
-  #text(size: 13pt, weight: "bold", fill: byrne-blue, font: "Liberation Sans")[Silvère-Martin Michiellot & Antigravity]
+  #text(size: 13pt, weight: "bold", fill: byrne-blue, font: "Liberation Sans")[Silvère Martin-Michiellot & Antigravity]
   #v(1.6cm)
   #text(size: 32pt, weight: "bold", fill: byrne-dark, font: "Liberation Serif")[LA VOIE DU NOMBRE]
   #v(0.4cm)
@@ -416,11 +586,12 @@ PREAMBLE = """
       #text(size: 8.5pt, fill: rgb("#475569"))[
         Édition Numérique Intégrale de Référence — 58 chapitres en 6 volumes avec Guide de l'Accompagnateur et Annexes de Référence.\\
         \\
-        *Auteurs :* Silvère-Martin Michiellot & Antigravity\\
+        *Auteurs :* Silvère Martin-Michiellot & Antigravity\\
         *Ingénierie didactique & Conception pédagogique :* Didactique constructiviste, méthode de Singapour, sémiotique visuelle d'Oliver Byrne\\
         *Composition typographique :* Typst v0.15, polices Liberation Serif & Sans, KaTeX mathématique\\
         *Sémiotique graphique :* Figures vectorielles SVG conformes à la palette historique d'Oliver Byrne (1847)\\
         *Illustration de couverture :* Synthèse graphique haute résolution dédiée\\
+        *Photographies de frontispice (Mathématiques dans la Nature) :* Wikimedia Commons sous licences CC BY-SA 3.0 et CC BY-SA 4.0 (voir Index des sources photographiques en Annexe C)\\
         *Dépôt légal :* Octobre 2026\\
         \\
         *Licence Libre :* Cet ouvrage est mis à disposition sous licence *Creative Commons Attribution - Partage dans les Mêmes Conditions 4.0 International (CC BY-SA 4.0)*.\\
@@ -647,6 +818,124 @@ Le grand livre du monde est désormais ouvert devant tes yeux. Tu en connais la 
 )
 
 #recto()
+= ANNEXE C : INDEX DES SOURCES PHOTOGRAPHIQUES ET PATRIMONIALES
+
+#v(0.3cm)
+Conformément aux principes de diffusion libre sous licence *Creative Commons (CC BY-SA 4.0)* et au respect des sources historiques, l'ensemble des photographies d'ouverture de volume et des documents patrimoniaux insérés dans l'ouvrage provient de la médiathèque patrimoniale *Wikimedia Commons* et de collections d'archives publiques.
+
+== I. Grandes Planches de Frontispice (Les Mathématiques dans la Nature)
+
+#set text(size: 8.5pt)
+#table(
+  columns: (1.1fr, 1.4fr, 2fr, 1.2fr, 2fr),
+  fill: (x, y) => if y == 0 { rgb("#1d4ed8") } else if calc.odd(y) { rgb("#f8fafc") } else { none },
+  stroke: 0.5pt + rgb("#cbd5e1"),
+  inset: 5.5pt,
+  align: (center, left, left, left, left),
+  table.header(
+    text(weight: "bold", fill: white)[Emplacement],
+    text(weight: "bold", fill: white)[Sujet & Espèce],
+    text(weight: "bold", fill: white)[Phénomène Mathématique],
+    text(weight: "bold", fill: white)[Auteur & Licence],
+    text(weight: "bold", fill: white)[Source Wikimedia Commons]
+  ),
+  [Frontispice Vol. I\ (Pleine page gauche)],
+  [*Alvéoles d'abeilles*\ _(Apis mellifera)_],
+  [Pavage hexagonal compact du plan, conjecture du nid d'abeille (Hales 1999), optimisation isopérimétrique.],
+  [Waugsberg\ CC BY-SA 3.0],
+  [#link("https://commons.wikimedia.org/wiki/File:Bienenwabe_mit_Eiern_und_Brut_5.jpg")[Wikimedia Commons\ `File:Bienenwabe_mit_Eiern_5.jpg`]],
+
+  [Frontispice Vol. II\ (Pleine page gauche)],
+  [*Coupe de Nautile*\ _(Nautilus pompilius)_],
+  [Spirale logarithmique ($r = a e^(b theta)$), croissance gnomonique invariante par homothétie, proportions continues.],
+  [Chris 73\ CC BY-SA 3.0],
+  [#link("https://commons.wikimedia.org/wiki/File:NautilusCutawayLogarithmicSpiral.jpg")[Wikimedia Commons\ `File:NautilusCutawayLogarithmicSpiral.jpg`]],
+
+  [Frontispice Vol. III\ (Pleine page gauche)],
+  [*Capitule de Tournesol*\ _(Helianthus annuus)_],
+  [Phyllotaxie, spirales de Fibonacci croisées (34/55), divergence selon l'angle d'or ($137{,}5077^circle$).],
+  [Anna Benczur\ CC BY-SA 4.0],
+  [#link("https://commons.wikimedia.org/wiki/File:Fibonacci_spiral.jpg")[Wikimedia Commons\ `File:Fibonacci_spiral.jpg`]],
+
+  [Frontispice Vol. IV\ (Pleine page gauche)],
+  [*Chou Romanesco*\ _(Brassica oleracea)_],
+  [Autosimilarité fractale stricte, invariance d'échelle, récursivité géométrique et spirales logarithmiques imbriquées.],
+  [Ivar Leidus (Iifar)\ CC BY-SA 4.0],
+  [#link("https://commons.wikimedia.org/wiki/File:Romanesco_broccoli_(Brassica_oleracea).jpg")[Wikimedia Commons\ `File:Romanesco_broccoli.jpg`]],
+
+  [Frontispice Vol. V\ (Pleine page gauche)],
+  [*Toile d'araignée perlée*\ _(Araneus diadematus)_],
+  [Équilibre vectoriel concourant, décomposition trigonométrique des forces et courbure caténaire (chaînette $y = a cosh(x/a)$).],
+  [Luc Viatour\ CC BY-SA 3.0],
+  [#link("https://commons.wikimedia.org/wiki/File:Spider_web_Luc_Viatour.jpg")[Wikimedia Commons\ `File:Spider_web_Luc_Viatour.jpg`]],
+
+  [Frontispice Vol. VI\ (Pleine page gauche)],
+  [*Cône textile*\ _(Conus textile)_],
+  [Morphogenèse par réaction-diffusion (équations de Turing 1952), automates cellulaires (règle 30) et motif fractal de Sierpinski.],
+  [Reinhold Möller (Ermell)\ CC BY-SA 4.0],
+  [#link("https://commons.wikimedia.org/wiki/File:Textil-Kegelschnecke_(Conus_textile)-20080201-RM-164444.jpg")[Wikimedia Commons\ `File:Textil-Kegelschnecke.jpg`]]
+)
+
+#v(0.3cm)
+== II. Documents Historiques & Archéologiques dans le Corps du Texte
+
+#table(
+  columns: (1.1fr, 1.4fr, 2fr, 1.2fr, 2fr),
+  fill: (x, y) => if y == 0 { rgb("#0f172a") } else if calc.odd(y) { rgb("#f8fafc") } else { none },
+  stroke: 0.5pt + rgb("#cbd5e1"),
+  inset: 5.5pt,
+  align: (center, left, left, left, left),
+  table.header(
+    text(weight: "bold", fill: white)[Chapitre],
+    text(weight: "bold", fill: white)[Document & Sujet],
+    text(weight: "bold", fill: white)[Portée Pédagogique],
+    text(weight: "bold", fill: white)[Origine & Licence],
+    text(weight: "bold", fill: white)[Source Wikimedia Commons]
+  ),
+  [Chapitre 1\ (Vol. I)],
+  [*L'Os d'Ishango*\ (~20 000 av. J.-C.)],
+  [Premières encoches de dénombrement par paquets, correspondance un-pour-un.],
+  [IRSNB Bruxelles\ Domaine public],
+  [#link("https://commons.wikimedia.org/wiki/File:Ishango_bone.jpg")[Wikimedia Commons\ `File:Ishango_bone.jpg`]],
+
+  [Chapitre 4\ (Vol. I)],
+  [*La Pascaline*\ (Blaise Pascal, 1642)],
+  [Premier train d'engrenages opératoires réalisant le report automatique de la retenue décimale.],
+  [David Monniaux\ CC BY-SA 3.0],
+  [#link("https://commons.wikimedia.org/wiki/File:Arts_et_Metiers_Pascaline_dsc03869.jpg")[Musée des Arts & Métiers\ `File:Arts_et_Metiers_Pascaline.jpg`]],
+
+  [Chapitre 10\ (Vol. II)],
+  [*Papyrus Rhind*\ (~1550 av. J.-C.)],
+  [Tables de partage et décomposition des grandeurs en fractions unitaires égyptiennes.],
+  [British Museum\ Domaine public],
+  [#link("https://commons.wikimedia.org/wiki/File:Rhind_Mathematical_Papyrus.jpg")[British Museum\ `File:Rhind_Mathematical_Papyrus.jpg`]],
+
+  [Chapitre 19\ (Vol. III)],
+  [*Les Éléments d'Euclide*\ (Oliver Byrne, 1847)],
+  [Planche originale en quadrichromie démontrant le Théorème de Pythagore par la couleur pure.],
+  [Oliver Byrne\ Domaine public],
+  [#link("https://commons.wikimedia.org/wiki/File:Byrne_1847_Satz_des_Pythagoras_Hochformat.jpg")[Bibliothèque patrimoniale\ `File:Byrne_1847_Pythagoras.jpg`]],
+
+  [Chapitre 54\ (Vol. VI)],
+  [*La Planche de Galton*\ (Francis Galton, 1877)],
+  [Matérialisation mécanique du théorème central limite : convergence du triangle de Pascal vers la loi Normale.],
+  [Wikimedia Commons\ CC BY-SA 4.0],
+  [#link("https://commons.wikimedia.org/wiki/File:Galton_board.png")[Sciences physiques\ `File:Galton_board.png`]]
+)
+
+#v(0.3cm)
+#block(
+  fill: rgb("#eff6ff"),
+  stroke: 1pt + rgb("#bfdbfe"),
+  inset: 10pt,
+  radius: 5pt
+)[
+  #text(size: 8pt, fill: rgb("#1e3a8a"))[
+    *Note éditoriale sur les droits de réutilisation :* Toutes les images ci-dessus sont réutilisables selon les termes de leurs licences respectives (Domaine public, CC BY-SA 3.0 et CC BY-SA 4.0). Pour toute reproduction, adaptation ou diffusion, veuillez créditer les auteurs d'origine et mentionner les liens Wikimedia Commons conformément aux obligations légales de partage dans les mêmes conditions.
+  ]
+]
+
+#recto()
 = INDEX THÉMATIQUE DÉTAILLÉ
 
 #set text(size: 9pt)
@@ -734,57 +1023,109 @@ Le grand livre du monde est désormais ouvert devant tes yeux. Tu en connais la 
 // Plat 4 (quatrième de couverture) : jamais foliotée
 
 // ==========================================
-// 5. QUATRIÈME DE COUVERTURE (BACK COVER)
+// 5. QUATRIÈME DE COUVERTURE (OPTION A : NUIT ABYSSALE & OR DU COMMERCE)
 // ==========================================
-#align(center + horizon)[
+#set page(
+  paper: "a4",
+  margin: (top: 1.5cm, bottom: 1.5cm, left: 1.5cm, right: 1.5cm),
+  fill: rgb("#070d1e"),
+  header: none,
+  footer: none
+)
+
+#block(
+  stroke: 1.5pt + rgb("#f59e0b"),
+  inset: (x: 22pt, top: 22pt, bottom: 18pt),
+  radius: 8pt,
+  width: 100%,
+  height: 100%
+)[
+  #align(center)[
+    #text(size: 11pt, weight: "bold", fill: rgb("#f59e0b"), tracking: 2.5pt, font: "Liberation Sans")[
+      SILVÈRE MARTIN-MICHIELLOT & ANTIGRAVITY
+    ]
+    #v(0.35cm)
+    #text(size: 26pt, weight: "bold", fill: white, font: "Liberation Serif")[
+      LA VOIE DU NOMBRE
+    ]
+    #v(0.18cm)
+    #text(size: 12pt, weight: "bold", fill: rgb("#93c5fd"), font: "Liberation Sans")[
+      Une Odyssée Constructive, du Premier Caillou au Baccalauréat
+    ]
+    #v(0.4cm)
+    
+    #block(
+      fill: rgb("#0f172a"),
+      stroke: (left: 3pt + rgb("#f59e0b")),
+      inset: (left: 14pt, right: 12pt, y: 9pt),
+      radius: (right: 4pt),
+      width: 100%
+    )[
+      #align(left)[
+        #text(size: 10pt, style: "italic", fill: rgb("#fef08a"))[
+          « Et si le dégoût des mathématiques ne venait pas d'un manque d'intelligence, mais de l'amnésie des yeux et des mains ? »
+        ]
+      ]
+    ]
+  ]
+  
+  #v(0.4cm)
+  #align(left)[
+    #text(size: 9.5pt, fill: rgb("#e2e8f0"))[
+      Comment réconcilier durablement l'esprit humain avec la clarté et la puissance des mathématiques ? Pourquoi tant d'enfants et d'adolescents décrochent-ils face à des symboles abstraits dont on a oublié de leur raconter l'origine vivante ?
+      
+      *LA VOIE DU NOMBRE* relève ce défi à travers cinquante-huit chapitres reliés comme les maillons d'une même chaîne ininterrompue, guidant pas à pas l'élève depuis l'éveil du regard et les premiers cailloux jusqu'aux sommets de l'enseignement secondaire. Chaque concept y naît d'un geste concret de la main avant de s'élever dans la pure rigueur logique.
+    ]
+  ]
+  
+  #v(0.45cm)
+  #grid(
+    columns: (1fr, 1fr),
+    gutter: 12pt,
+    block(fill: rgb("#0f172a"), stroke: 0.75pt + rgb("#f59e0b"), inset: 10pt, radius: 5pt)[
+      #text(size: 9pt, weight: "bold", fill: rgb("#f59e0b"))[1. Ancrage Historique Vivant]\\
+      #v(2pt)
+      #text(size: 8pt, fill: rgb("#cbd5e1"))[Du Nil d'Euclide aux logarithmes de Napier : chaque théorème résout une énigme humaine.]
+    ],
+    block(fill: rgb("#0f172a"), stroke: 0.75pt + rgb("#60a5fa"), inset: 10pt, radius: 5pt)[
+      #text(size: 9pt, weight: "bold", fill: rgb("#60a5fa"))[2. L'Intelligence Visuelle]\\
+      #v(2pt)
+      #text(size: 8pt, fill: rgb("#cbd5e1"))[Comprendre par la couleur et la forme : le regard saisit la logique avant même le calcul formel.]
+    ],
+    block(fill: rgb("#0f172a"), stroke: 0.75pt + rgb("#4ade80"), inset: 10pt, radius: 5pt)[
+      #text(size: 9pt, weight: "bold", fill: rgb("#4ade80"))[3. Automatisation Opératoire]\\
+      #v(2pt)
+      #text(size: 8pt, fill: rgb("#cbd5e1"))[L'algorithme du calcul posé : libérer la mémoire de travail pour les raisonnements nobles.]
+    ],
+    block(fill: rgb("#0f172a"), stroke: 0.75pt + rgb("#f87171"), inset: 10pt, radius: 5pt)[
+      #text(size: 9pt, weight: "bold", fill: rgb("#f87171"))[4. Élucidation des Cas Limites]\\
+      #v(2pt)
+      #text(size: 8pt, fill: rgb("#cbd5e1"))[De la division par zéro aux infinis actuels : la rigueur sans aucun angle mort.]
+    ]
+  )
+  
+  #v(0.45cm)
   #block(
     fill: rgb("#0f172a"),
-    inset: 28pt,
-    radius: 12pt,
-    width: 95%
+    stroke: 1pt + rgb("#334155"),
+    inset: (x: 12pt, y: 8pt),
+    radius: 5pt,
+    width: 100%
   )[
-    #text(size: 13pt, weight: "bold", fill: byrne-yellow, tracking: 2pt, font: "Liberation Sans")[SILVÈRE-MARTIN MICHIELLOT & ANTIGRAVITY]
-    #v(0.5cm)
-    #text(size: 26pt, weight: "bold", fill: white, font: "Liberation Serif")[LA VOIE DU NOMBRE]
+    #text(size: 8.5pt, weight: "bold", fill: rgb("#38bdf8"))[Public visé : ]
+    #text(size: 8pt, fill: rgb("#cbd5e1"))[
+      Élèves du CP à la Terminale • Candidats aux examens et concours • Parents en IEF • Professeurs & Curieux d'autoformation.
+    ]
+  ]
+  
+  #v(1fr)
+  #align(center)[
+    #line(length: 60%, stroke: 0.5pt + rgb("#f59e0b"))
     #v(0.2cm)
-    #text(size: 13pt, weight: "bold", fill: rgb("#93c5fd"), font: "Liberation Sans")[Une Odyssée Constructive, du Premier Caillou au Baccalauréat]
-    #v(0.6cm)
-    
-    #align(left)[
-      #text(size: 10pt, fill: rgb("#e2e8f0"), font: "Liberation Serif")[
-        Comment réconcilier durablement l'esprit humain avec la beauté et la puissance des mathématiques ? Pourquoi tant d'enfants et d'adolescents décrochent-ils face à des symboles abstraits dont on a oublié de leur raconter l'origine vivante ?
-        
-        *LA VOIE DU NOMBRE* relève ce défi monumental en cinquante-huit chapitres reliés comme les maillons d'une même chaîne ininterrompue, guidant l'élève depuis l'âge de 6 ans (CP) jusqu'aux portes de l'enseignement supérieur (Terminale Spécialité et Maths Expertes).
-      ]
-      
-      #v(0.5cm)
-      #grid(
-        columns: (1fr, 1fr),
-        gutter: 14pt,
-        block(fill: rgb("#1e293b"), inset: 10pt, radius: 6pt)[
-          #text(size: 9.5pt, weight: "bold", fill: byrne-yellow)[1. Ancrage Historique :]\\
-          #text(size: 8.5pt, fill: rgb("#cbd5e1"))[Chaque concept naît d'un problème réel résolu par l'humanité : du Nil d'Euclide aux logarithmes de Napier.]
-        ],
-        block(fill: rgb("#1e293b"), inset: 10pt, radius: 6pt)[
-          #text(size: 9.5pt, weight: "bold", fill: rgb("#60a5fa"))[2. Sémiotique d'Oliver Byrne :]\\
-          #text(size: 8.5pt, fill: rgb("#cbd5e1"))[L'intelligence par la couleur et la forme : le regard comprend avant même que le calcul formel ne commence.]
-        ],
-        block(fill: rgb("#1e293b"), inset: 10pt, radius: 6pt)[
-          #text(size: 9.5pt, weight: "bold", fill: rgb("#4ade80"))[3. Algorithmes Opératoires :]\\
-          #text(size: 8.5pt, fill: rgb("#cbd5e1"))[Automatisation motrice du calcul posé : libérer la mémoire de travail pour accéder aux sommets logiques.]
-        ],
-        block(fill: rgb("#1e293b"), inset: 10pt, radius: 6pt)[
-          #text(size: 9.5pt, weight: "bold", fill: rgb("#f87171"))[4. Élucidation des Cas Limites :]\\
-          #text(size: 8.5pt, fill: rgb("#cbd5e1"))[La division par zéro, le rôle du vide, l'infini et les matrices creuses : la rigueur sans aucun angle mort.]
-        ]
-      )
-      
-      #v(0.6cm)
-      #align(center)[
-        #line(length: 60%, stroke: 1.5pt + byrne-yellow)
-        #v(0.2cm)
-        #text(size: 8.5pt, fill: rgb("#94a3b8"), style: "italic")[« Tout est nombre, et le nombre est le guide de l'âme. » — Philolaos de Crotone]
-      ]
+    #text(size: 8.5pt, style: "italic", fill: rgb("#fde047"))[« Tout est nombre, et le nombre est le guide de l'âme. » — Philolaos de Crotone]
+    #v(0.15cm)
+    #text(size: 7.5pt, fill: rgb("#94a3b8"))[
+      Édition de Référence • Licence Creative Commons CC BY-SA 4.0 (Diffusion & partage libres)
     ]
   ]
 ]
@@ -1761,9 +2102,151 @@ def postprocess_typst(typst_content):
 
     typst_content = re.sub(r'(`{3,})data_table\s*\n([\s\S]*?)\1', repl_table, typst_content)
 
-    # 8. Ouverture des Volumes et Chapitres en belle page (recto impair, page d'ouverture muette)
-    typst_content = re.sub(r'^(== CHAPITRE\b)', r'#recto()\n\1', typst_content, flags=re.MULTILINE)
-    typst_content = re.sub(r'^(= VOLUME\b)', r'#recto()\n\1', typst_content, flags=re.MULTILINE)
+    # 8. Ouvertures de Volume en double page face-à-face (Frontispice gauche pure photo, ouverture droite complète)
+    volume_configs = [
+        (
+            "I",
+            "L'ÂGE DE LA MAIN ET DE LA SAVANE",
+            "6 - 8 ans / CP - CE1",
+            "figures/nature/vol_1_abeilles_hexagone.jpg",
+            "De l'éveil du regard préhistorique aux premières manipulations de cailloux, ce premier volume pose les fondations concrètes du sens du nombre, de la numération décimale et des opérations élémentaires.",
+            [
+                "Chapitre 1 : Les Yeux du Singe et le Sac de Cailloux",
+                "Chapitre 2 : La Main à Cinq Doigts et les Paquets de Dix",
+                "Chapitre 3 : La Chasse Partagée et la Balance de Justice",
+                "Chapitre 4 : Le Boulier du Marchand et la Retenue Voyageuse",
+                "Chapitre 5 : Le Mur de Briques et les Rectangles Magiques",
+                "Chapitre 6 : La Coudée du Pharaon et le Sablier",
+                "Chapitre 7 : Les Formes du Monde et la Ficelle du Jardinier"
+            ],
+            "En regard : Le pavage hexagonal des alvéoles d'abeilles (Apis mellifera)."
+        ),
+        (
+            "II",
+            "LE SECRET DU PARTAGE ET LES GRANDEURS DU MONDE",
+            "8 - 11 ans / CE2 - CM2",
+            "figures/nature/vol_2_nautile_spirale.jpg",
+            "Du partage de la galette aux mesures astronomiques, l'élève apprivoise les fractions, les nombres décimaux, la proportionnalité et la géométrie de l'espace.",
+            [
+                "Chapitre 8 : Les Pierres Rebelles et les Nombres Solitaires",
+                "Chapitre 9 : Le Reste du Festin et les Équipes de Jeu",
+                "Chapitre 10 : La Galette Brisée et le Tamis de Mesure",
+                "Chapitre 11 : Les Dixièmes de Simon Stevin",
+                "Chapitre 12 : Le Mètre de la Révolution",
+                "Chapitre 13 : La Recette de la Grand-Mère et la Règle de Trois",
+                "Chapitre 14 : L'Ardoise du Marchand et le Trou de Sable"
+            ],
+            "En regard : La spirale logarithmique du Nautile (Nautilus pompilius)."
+        ),
+        (
+            "III",
+            "L'ÉTOILE D'ALEXANDRIE ET L'ESPACE EUCLIDIEN",
+            "11 - 13 ans / 6e - 5e",
+            "figures/nature/vol_3_tournesol_fibonacci.jpg",
+            "Aux portes du collège, la géométrie déductive s'organise autour des axiomes d'Euclide, des nombres relatifs et des symétries du plan.",
+            [
+                "Chapitre 15 : La Crue du Nil et la Corde à Treize Nœuds",
+                "Chapitre 16 : La Roue du Potier et le Secret d'Archimède",
+                "Chapitre 17 : L'Ombre de la Pyramide et le Bâton Planté",
+                "Chapitre 18 : Le Grain de Riz sur l'Échiquier",
+                "Chapitre 19 : Le Secret Interdit des Pythagoriciens",
+                "Chapitre 20 : L'Île au Trésor et les Deux Sentiers",
+                "Chapitre 21 : Le Percepteur et les Cent Morceaux"
+            ],
+            "En regard : La phyllotaxie et les spirales de Fibonacci du Tournesol (Helianthus annuus)."
+        ),
+        (
+            "IV",
+            "L'ALCHIMIE DES SYMBOLES ET LE FEU ALGÉBRIQUE",
+            "13 - 15 ans / 4e - 3e",
+            "figures/nature/vol_4_romanesco_fractale.jpg",
+            "L'émergence des équations littérales, des puissances, des fonctions affines et des statistiques prépare l'entrée au lycée.",
+            [
+                "Chapitre 22 : Le Sac Mystère sur la Balance d'Al-Khwarizmi",
+                "Chapitre 23 : Le Carré Complété et les Identités Remarquables",
+                "Chapitre 24 : Les Deux Marchands et les Inégalités",
+                "Chapitre 25 : La Machine à Doubler et la Droite du Tarif",
+                "Chapitre 26 : Le Pliage de Papier et le Miroir Magique",
+                "Chapitre 27 : Le Découpage des Terres et la Boîte du Potier",
+                "Chapitre 28 : Ératosthène et le Tour de la Terre",
+                "Chapitre 29 : Le Partage d'Euclide",
+                "Chapitre 30 : La Roulette du Destin et la Survie du Chasseur"
+            ],
+            "En regard : L'invariance d'échelle et la géométrie fractale du Chou Romanesco (Brassica oleracea)."
+        ),
+        (
+            "V",
+            "LE MOUVEMENT, L'ANGLE ET LE SPECTRE DE LA FORME",
+            "15 - 17 ans / 2nde - 1ère",
+            "figures/nature/vol_5_toile_araignee.jpg",
+            "L'analyse infinitésimale commence : dérivation, étude des variations, trigonométrie circulaire, suites et vecteurs dans l'espace.",
+            [
+                "Chapitre 31 : Le Tribunal de la Logique",
+                "Chapitre 32 : Le Voilier dans la Tempête et la Flèche Libre",
+                "Chapitre 33 : La Ligne de Mire",
+                "Chapitre 34 : Le Métier Jacquard et la Boîte à Fabriquer",
+                "Chapitre 35 : La Fontaine de Galilée et la Parabole",
+                "Chapitre 36 : Les Marches de l'Escalier et le Prêt de l'Usurier",
+                "Chapitre 37 : La Grande Roue et le Cercle qui s'Enroule",
+                "Chapitre 38 : Tirer la Corde et l'Ombre Efficace",
+                "Chapitre 39 : Le Skieur et la Planche sous la Semelle",
+                "Chapitre 40 : La Colonie de Bactéries",
+                "Chapitre 41 : Le Sondeur et l'Écart-Type",
+                "Chapitre 42 : Le Médecin, le Test et l'Arbre des Possibles"
+            ],
+            "En regard : Les tensions vectorielles et la chaînette de la Toile d'Araignée (Araneus diadematus)."
+        ),
+        (
+            "VI",
+            "L'INFINI APPRIVOISÉ ET L'ÉDIFICE MODERNE",
+            "17 - 18 ans / Terminale & Maths Expertes",
+            "figures/nature/vol_6_conus_textile.jpg",
+            "L'apogée de l'enseignement secondaire : calcul intégral, équations différentielles, nombres complexes, matrices, graphes et lois continues.",
+            [
+                "Chapitre 43 : L'Escalier sans Fin et les Dominos",
+                "Chapitre 44 : Le Coureur qui ne Touche jamais la Ligne",
+                "Chapitre 45 : L'Horizon des Courbes",
+                "Chapitre 46 : Le Fil sans Coupure",
+                "Chapitre 47 : Le Jardin qui Grandit et la Chaîne d'Engrenages",
+                "Chapitre 48 : Le Logarithme de Napier et les Tables des Navigateurs",
+                "Chapitre 49 : La Balançoire et les Fonctions qui Ondulent",
+                "Chapitre 50 : Le Tonneau Rempli de Tranches d'Eau",
+                "Chapitre 51 : La Tasse de Thé qui Refroidit",
+                "Chapitre 52 : La Cathédrale dans l'Espace",
+                "Chapitre 53 : Le Cadenas à Code et les Façons de Choisir",
+                "Chapitre 54 : Les Mille Lancers de la Pièce",
+                "Chapitre 55 : Le Tourbillon à Angle Droit",
+                "Chapitre 56 : Les Messages Secrets et l'Horloge des Restes",
+                "Chapitre 57 : Le Métier Jacquard Revisité : Matrices et Graphes",
+                "Chapitre 58 : La Fin du Voyage"
+            ],
+            "En regard : La morphogenèse de Turing et les automates cellulaires du Cône Textile (Conus textile)."
+        )
+    ]
+    
+    for num, vol_title, sous_titre, img, desc, chapitres, mention in volume_configs:
+        vol_pattern = rf'^(= VOLUME\s+{num}\b[^\n]*(?:\n<[^>]+>)?(?:\n#divider\(\))?)'
+        ch_list_typst = ", ".join([f'"{ch}"' for ch in chapitres])
+        replacement = (
+            f'#frontispice-volume("{img}")\n\n'
+            f'#ouverture-volume(\n'
+            f'  "{num}",\n'
+            f'  "{vol_title}",\n'
+            f'  "{sous_titre}",\n'
+            f'  "{desc}",\n'
+            f'  ({ch_list_typst}),\n'
+            f'  "{mention}"\n'
+            f')'
+        )
+        typst_content = re.sub(vol_pattern, replacement, typst_content, flags=re.MULTILINE)
+
+    # 9. Ouverture des Chapitres en belle page (recto impair) avec pagination en pied de page
+    typst_content = re.sub(
+        r'^(== CHAPITRE\b)',
+        r'#metadata("fin-section") <fin-section>\n#pagebreak(weak: true, to: "odd")\n#metadata("chapitre") <debut-chapitre>\n#metadata("debut-section") <debut-section>\n\1',
+        typst_content,
+        flags=re.MULTILINE
+    )
 
     # 9. Strip ALL residual box-drawing characters from document text streams
     typst_content = re.sub(r'[─│┌┐└┘├┤┬┴┼═║╔╗╚╝╠╣╦╩╬▲►▼◄╭╮╯╰╱╲★●■]', '', typst_content)

@@ -154,6 +154,11 @@ Cette dizaine voyageuse s'appelle **la retenue**. On l'écrit en tout petit dans
 > 1. Écris-la immédiatement dès que tu poses l'unité.
 > 2. Prends l'habitude de commencer l'addition des dizaines **par elle** : « 1 + 4 = 5, et 5 + 3 = 8 ».
 
+> **🔍 L'histoire vraie — La Pascaline de Blaise Pascal (1642)**
+> Pour aider son père qui était percepteur des impôts et passait ses nuits à additionner des colonnes de chiffres interminables, le savant français Blaise Pascal inventa à l'âge de 19 ans la première calculatrice mécanique de l'histoire : **la Pascaline**. À l'intérieur, un ingénieux mécanisme d'engrenages à sautoir transmettait automatiquement la retenue d'une roue à la suivante dès qu'une unité franchissait le 9 !
+
+![La machine arithmétique de Blaise Pascal (Pascaline, 1642) : le premier mécanisme à report de retenue décimale automatique](figures/histoire/ch_04_pascaline.jpg)
+
 ---
 
 ### 5. La soustraction posée : ouvrir un paquet de 10

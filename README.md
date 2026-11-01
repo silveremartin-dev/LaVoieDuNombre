@@ -68,5 +68,5 @@ Cet ouvrage est mis à disposition selon les termes de la licence **[Creative Co
 Vous êtes libre de partager, copier, distribuer et adapter ce traité sous réserve de citation expresse des auteurs originaux et de diffusion sous une licence identique.
 
 ---
-**Auteurs :** Silvère-Martin Michiellot & Antigravity  
+**Auteurs :** Silvère Martin-Michiellot & Antigravity  
 **Édition :** 2026

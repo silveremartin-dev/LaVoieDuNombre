@@ -165,6 +165,11 @@ Au XIIe siècle en Inde, le mathématicien Bhāskara dessinait 4 triangles recta
 $$\text{Aire totale} = c^2 = 4 \times \left(\frac{a \times b}{2}\right) + (b - a)^2 = 2ab + (b^2 - 2ab + a^2) = a^2 + b^2$$
 Sous son dessin, Bhāskara n'écrivit aucun commentaire, juste un mot : *« Vois ! »*.
 
+#### Preuve 4 : La preuve visuelle en couleurs d'Oliver Byrne (1847)
+En 1847, l'ingénieur et mathématicien Oliver Byrne publiait à Londres une édition révolutionnaire des *Éléments d'Euclide*, où chaque lettre alphabétique était bannie au profit de couleurs primaires vives : le bleu, le rouge et le jaune. Les carrés construits sur les côtés s'y décomposent en triangles colorés de même aire, rendant l'égalité $a^2 + b^2 = c^2$ évidente d'un simple coup d'œil. C'est ce chef-d'œuvre de la sémiotique visuelle qui a inspiré toute la charte graphique du présent ouvrage.
+
+![Démonstration géométrique du Théorème de Pythagore par Oliver Byrne (1847) : les grandeurs et les aires prouvées par la couleur pure](figures/histoire/ch_19_byrne_pythagore.jpg)
+
 ---
 
 ### 4. La Racine carrée : remonter du carré vers le côté

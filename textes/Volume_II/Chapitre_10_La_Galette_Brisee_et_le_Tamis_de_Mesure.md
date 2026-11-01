@@ -113,6 +113,11 @@ $$\frac{1}{3} > \frac{1}{8}$$
 > **Plus le dénominateur est grand, plus la part est petite !**
 > $$\frac{1}{2} > \frac{1}{3} > \frac{1}{4} > \frac{1}{5} > \frac{1}{10} > \frac{1}{100}$$
 
+> **🔍 L'histoire vraie — Les fractions des scribes d'Égypte (le Papyrus Rhind)**
+> Il y a plus de 3 500 ans, les scribes des pharaons ne notaient presque que des fractions avec un **1** au numérateur ($\frac{1}{2}, \frac{1}{3}, \frac{1}{4}, \frac{1}{10}$). Pour exprimer une part comme $\frac{3}{4}$, ils la décomposaient en somme de fractions unitaires : $\frac{1}{2} + \frac{1}{4}$. Le célèbre **Papyrus Rhind** (conservé au British Museum) contient des dizaines de tables de découpage pour partager équitablement le pain et la bière entre les ouvriers bâtisseurs de pyramides.
+
+![Le Papyrus mathématique Rhind (~1550 av. J.-C., Égypte ancienne) : tables de décomposition en fractions unitaires des scribes](figures/histoire/ch_10_papyrus_rhind.jpg)
+
 ---
 
 ### 3. Comparer une fraction à l'unité : petit, égal ou géant ?

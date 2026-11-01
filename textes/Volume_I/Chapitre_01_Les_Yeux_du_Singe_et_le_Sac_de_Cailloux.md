@@ -165,6 +165,8 @@ Chaque fois qu'une bête passe, on donne un petit coup de pierre tranchante sur 
 > **🔍 L'histoire vraie — Le bâton d'Ishango**
 > Au bord du lac Édouard, entre le Congo et l'Ouganda en Afrique, des archéologues ont découvert un os fossilisé vieux de plus de **20 000 ans** : le **bâton d'Ishango**. Il porte des encoches soigneusement regroupées en paquets. C'est l'un des plus anciens témoignages de l'esprit mathématique humain au monde.
 
+![L'os fossilisé d'Ishango (~20 000 ans av. J.-C., Congo) : les premières encoches de dénombrement et groupements de nombres de l'humanité](figures/histoire/ch_01_ishango.jpg)
+
 ---
 
 ### 6. Écrire le monde : les dix chiffres de 0 à 9
