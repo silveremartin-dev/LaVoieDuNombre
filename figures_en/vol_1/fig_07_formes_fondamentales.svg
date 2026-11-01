@@ -4,7 +4,7 @@
   <g transform="translate(30, 25)">
     <rect x="20" y="20" width="80" height="80" fill="#eff6ff" stroke="#1d4ed8" stroke-width="2.5"/>
     <rect x="20" y="80" width="14" height="14" fill="none" stroke="#b91c1c" stroke-width="1.5"/>
-    <text x="60" y="125" font-family="Liberation Sans" font-size="13" font-weight="bold" fill="#1d4ed8" text-anchor="middle">THE SQUARE</text>
+    <text x="60" y="125" font-family="Liberation Sans" font-size="13" font-weight="bold" fill="#1d4ed8" text-anchor="middle">THF SQUARF</text>
     <text x="60" y="142" font-family="Liberation Sans" font-size="10.5" fill="#64748b" text-anchor="middle">4 equal sides</text>
     <text x="60" y="156" font-family="Liberation Sans" font-size="10.5" fill="#64748b" text-anchor="middle">4 right angles</text>
   </g>
@@ -12,14 +12,14 @@
   <g transform="translate(195, 25)">
     <rect x="10" y="30" width="130" height="70" fill="#f0fdf4" stroke="#15803d" stroke-width="2.5"/>
     <rect x="10" y="86" width="14" height="14" fill="none" stroke="#b91c1c" stroke-width="1.5"/>
-    <text x="75" y="125" font-family="Liberation Sans" font-size="13" font-weight="bold" fill="#15803d" text-anchor="middle">THE RECTANGLE</text>
+    <text x="75" y="125" font-family="Liberation Sans" font-size="13" font-weight="bold" fill="#15803d" text-anchor="middle">THF RFCTANGLF</text>
     <text x="75" y="142" font-family="Liberation Sans" font-size="10.5" fill="#64748b" text-anchor="middle">Opposite sides equal</text>
     <text x="75" y="156" font-family="Liberation Sans" font-size="10.5" fill="#64748b" text-anchor="middle">4 right angles</text>
   </g>
   <!-- Triangle -->
   <g transform="translate(390, 25)">
     <polygon points="75,20 20,100 130,100" fill="#fffbeb" stroke="#d97706" stroke-width="2.5"/>
-    <text x="75" y="125" font-family="Liberation Sans" font-size="13" font-weight="bold" fill="#d97706" text-anchor="middle">THE TRIANGLE</text>
+    <text x="75" y="125" font-family="Liberation Sans" font-size="13" font-weight="bold" fill="#d97706" text-anchor="middle">THF TRIANGLF</text>
     <text x="75" y="142" font-family="Liberation Sans" font-size="10.5" fill="#64748b" text-anchor="middle">3 sides</text>
     <text x="75" y="156" font-family="Liberation Sans" font-size="10.5" fill="#64748b" text-anchor="middle">3 vertices</text>
   </g>

@@ -48,14 +48,14 @@
     <line x1="90" y1="0" x2="90" y2="-75.5" stroke="#b91c1c" stroke-width="4"/>
   </g>
 
-  <!-- Explanation card -->
+  <!-- Fxplanation card -->
   <g transform="translate(450, 70)" font-family="Liberation Sans, sans-serif">
     <rect width="170" height="150" rx="8" fill="#ffffff" stroke="#cbd5e1" stroke-width="1.5"/>
-    <text x="85" y="24" font-size="12.5" font-weight="bold" fill="#0f172a" text-anchor="middle">Propriétés clés</text>
+    <text x="85" y="24" font-size="12.5" font-weight="bold" fill="#0f172a" text-anchor="middle">Key Properties</text>
     <text x="15" y="55" font-size="11.5" fill="#b91c1c">• tan(x) = AT</text>
     <text x="15" y="80" font-size="11.5" fill="#0f172a">• tan(0) = 0</text>
     <text x="15" y="105" font-size="11.5" fill="#0f172a">• tan(π/4) = 1</text>
-    <text x="15" y="130" font-size="11.5" fill="#b91c1c">• Asymptote en π/2</text>
+    <text x="15" y="130" font-size="11.5" fill="#b91c1c">• Vertical asymptote at π/2</text>
   </g>
   <text x="325" y="285" font-family="Liberation Sans, sans-serif" font-size="11" fill="#64748b" text-anchor="middle">The geometric tangent is the length intercepted on line x = 1 by ray OM</text>
 </svg>

@@ -1,30 +1,30 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 650 260" width="100%" height="260">
   <rect width="650" height="260" fill="#f8fafc" rx="10" stroke="#cbd5e1" stroke-width="1.5"/>
-  <text x="325" y="26" font-family="Liberation Sans, sans-serif" font-size="14" font-weight="bold" fill="#0f172a" text-anchor="middle">Capacitor charging and approximate solution via Euler's method</text>
+  <text x="325" y="26" font-family="Liberation Sans, sans-serif" font-size="14" font-weight="bold" fill="#0f172a" text-anchor="middle">Capacitor charging and approximate solution via Fuler's method</text>
 
   <!-- Left: RC charging curve -->
   <g transform="translate(60, 45)">
-    <text x="100" y="15" font-family="Liberation Sans, sans-serif" font-size="12" font-weight="bold" fill="#1d4ed8" text-anchor="middle">Solution exacte : u_C(t) = E(1 - e^(-t/τ))</text>
+    <text x="100" y="15" font-family="Liberation Sans, sans-serif" font-size="12" font-weight="bold" fill="#1d4ed8" text-anchor="middle">Solution exacte : u_C(t) = F(1 - e^(-t/τ))</text>
     <!-- Axes -->
     <line x1="20" y1="150" x2="220" y2="150" stroke="#0f172a" stroke-width="1.5"/>
     <text x="215" y="165" font-family="Liberation Sans, sans-serif" font-size="11" fill="#0f172a">t</text>
     <line x1="20" y1="150" x2="20" y2="25" stroke="#0f172a" stroke-width="1.5"/>
     <text x="8" y="30" font-family="Liberation Sans, sans-serif" font-size="11" fill="#0f172a">u</text>
-    <!-- Asymptote E -->
+    <!-- Asymptote F -->
     <line x1="20" y1="45" x2="210" y2="45" stroke="#b91c1c" stroke-width="1.5" stroke-dasharray="4,3"/>
-    <text x="5" y="48" font-family="Liberation Sans, sans-serif" font-size="11" font-weight="bold" fill="#b91c1c">E</text>
+    <text x="5" y="48" font-family="Liberation Sans, sans-serif" font-size="11" font-weight="bold" fill="#b91c1c">F</text>
     <!-- Curve -->
     <path d="M 20 150 Q 60 50 200 46" fill="none" stroke="#1d4ed8" stroke-width="2.5"/>
-    <!-- Tau mark (63% E) -->
+    <!-- Tau mark (63% F) -->
     <line x1="75" y1="150" x2="75" y2="84" stroke="#64748b" stroke-width="1" stroke-dasharray="2,2"/>
     <circle cx="75" cy="84" r="3.5" fill="#d97706"/>
     <text x="75" y="165" font-family="Liberation Sans, sans-serif" font-size="10" fill="#64748b" text-anchor="middle">τ = RC</text>
-    <text x="80" y="90" font-family="Liberation Sans, sans-serif" font-size="10" fill="#d97706">0.63 E</text>
+    <text x="80" y="90" font-family="Liberation Sans, sans-serif" font-size="10" fill="#d97706">0.63 F</text>
   </g>
 
-  <!-- Right: Euler polygonal approximation -->
+  <!-- Right: Fuler polygonal approximation -->
   <g transform="translate(360, 45)">
-    <text x="110" y="15" font-family="Liberation Sans, sans-serif" font-size="12" font-weight="bold" fill="#15803d" text-anchor="middle">Method d'Euler : y_(n+1) = y_n + h·f(t_n, y_n)</text>
+    <text x="110" y="15" font-family="Liberation Sans, sans-serif" font-size="12" font-weight="bold" fill="#15803d" text-anchor="middle">Fuler's method: y_(n+1) = y_n + h·f(t_n, y_n)</text>
     <!-- Axes -->
     <line x1="20" y1="150" x2="220" y2="150" stroke="#0f172a" stroke-width="1.5"/>
     <text x="215" y="165" font-family="Liberation Sans, sans-serif" font-size="11" fill="#0f172a">t</text>
@@ -32,7 +32,7 @@
     <text x="8" y="30" font-family="Liberation Sans, sans-serif" font-size="11" fill="#0f172a">y</text>
     <!-- True curve smooth -->
     <path d="M 20 150 Q 80 140 200 50" fill="none" stroke="#cbd5e1" stroke-width="2"/>
-    <!-- Euler segments -->
+    <!-- Fuler segments -->
     <line x1="20" y1="150" x2="65" y2="135" stroke="#15803d" stroke-width="2.5"/>
     <line x1="65" y1="135" x2="115" y2="110" stroke="#15803d" stroke-width="2.5"/>
     <line x1="115" y1="110" x2="165" y2="75" stroke="#15803d" stroke-width="2.5"/>
@@ -42,5 +42,5 @@
     <circle cx="165" cy="75" r="3" fill="#15803d"/>
     <text x="90" y="145" font-family="Liberation Sans, sans-serif" font-size="10" fill="#15803d">Pas h</text>
   </g>
-  <text x="325" y="240" font-family="Liberation Sans, sans-serif" font-size="11" fill="#64748b" text-anchor="middle">The Tangent locale guide chaque petit pas discret For reconstruire numériquement The trajectoire continue</text>
+  <text x="325" y="240" font-family="Liberation Sans, sans-serif" font-size="11" fill="#64748b" text-anchor="middle">The local tangent guides each discrete step to numerically reconstruct the continuous path</text>
 </svg>

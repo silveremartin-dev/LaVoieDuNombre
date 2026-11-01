@@ -44,7 +44,7 @@
     <text x="0" y="15" font-weight="bold" fill="#0f172a">Coordinates of the point:</text>
     <text x="0" y="40" fill="#1d4ed8">* Abscissa x = 3 (Horizontal)</text>
     <text x="0" y="65" fill="#15803d">* Ordinate y = 2 (Vertical)</text>
-    <text x="0" y="95" fill="#64748b">René Descartes (1637) :</text>
-    <text x="0" y="112" fill="#64748b">unir algèbre et géométrie</text>
+    <text x="0" y="95" fill="#64748b">René Descartes (1637):</text>
+    <text x="0" y="112" fill="#64748b">uniting algebra and geometry</text>
   </g>
 </svg>

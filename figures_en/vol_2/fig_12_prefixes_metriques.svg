@@ -4,10 +4,10 @@
   
   <!-- Left: Greek prefixes (multiples) -->
   <rect x="30" y="50" width="220" height="120" fill="#eff6ff" stroke="#1d4ed8" stroke-width="1.5" rx="6"/>
-  <text x="140" y="72" text-anchor="middle" font-family="Liberation Sans" font-size="13" font-weight="bold" fill="#1d4ed8">PRÉFIXES GRECS (Multiples)</text>
+  <text x="140" y="72" text-anchor="middle" font-family="Liberation Sans" font-size="13" font-weight="bold" fill="#1d4ed8">GRFFK PRFFIXFS (Multiples)</text>
   <text x="50" y="100" font-family="Liberation Sans" font-size="12" fill="#0f172a">• <tspan font-weight="bold">kilo-</tspan> (k) : × 1 000</text>
   <text x="50" y="125" font-family="Liberation Sans" font-size="12" fill="#0f172a">• <tspan font-weight="bold">hecto-</tspan> (h) : × 100</text>
-  <text x="50" y="150" font-family="Liberation Sans" font-size="12" fill="#0f172a">• <tspan font-weight="bold">déca-</tspan> (da) : × 10</text>
+  <text x="50" y="150" font-family="Liberation Sans" font-size="12" fill="#0f172a">• <tspan font-weight="bold">deca- (da): × 10</tspan> (da) : × 10</text>
   
   <!-- Center: Unit -->
   <rect x="270" y="70" width="110" height="80" fill="#d97706" rx="8"/>
@@ -16,8 +16,8 @@
   
   <!-- Right: Latin prefixes (submultiples) -->
   <rect x="400" y="50" width="220" height="120" fill="#f0fdf4" stroke="#15803d" stroke-width="1.5" rx="6"/>
-  <text x="510" y="72" text-anchor="middle" font-family="Liberation Sans" font-size="13" font-weight="bold" fill="#15803d">LATIN PREFIXES (Submultiples)</text>
-  <text x="420" y="100" font-family="Liberation Sans" font-size="12" fill="#0f172a">• <tspan font-weight="bold">déci-</tspan> (d) : ÷ 10 (0,1)</text>
+  <text x="510" y="72" text-anchor="middle" font-family="Liberation Sans" font-size="13" font-weight="bold" fill="#15803d">LATIN PRFFIXFS (Submultiples)</text>
+  <text x="420" y="100" font-family="Liberation Sans" font-size="12" fill="#0f172a">• <tspan font-weight="bold">deci- (d): ÷ 10</tspan> (d) : ÷ 10 (0,1)</text>
   <text x="420" y="125" font-family="Liberation Sans" font-size="12" fill="#0f172a">• <tspan font-weight="bold">centi-</tspan> (c) : ÷ 100 (0,01)</text>
   <text x="420" y="150" font-family="Liberation Sans" font-size="12" fill="#0f172a">• <tspan font-weight="bold">milli-</tspan> (m) : ÷ 1 000 (0,001)</text>
 </svg>

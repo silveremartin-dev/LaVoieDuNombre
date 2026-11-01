@@ -1,6 +1,6 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 280" width="100%" height="100%">
   <rect width="500" height="280" fill="#f8fafc" rx="8"/>
-  <text x="250" y="28" text-anchor="middle" font-family="Liberation Sans" font-size="15" font-weight="bold" fill="#0f172a">L'Exponentielle et sa Tangent en 0 : e&#739; ≥ x + 1 (Inégalité of Convexity)</text>
+  <text x="250" y="28" text-anchor="middle" font-family="Liberation Sans" font-size="15" font-weight="bold" fill="#0f172a">The Fxponential and its Tangent at 0: e&#739; ≥ x + 1 (Convexity Inequality)</text>
   
   <g transform="translate(180, 200)">
     <!-- Axes -->

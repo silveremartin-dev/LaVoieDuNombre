@@ -5,7 +5,7 @@
     </marker>
   </defs>
   <rect width="650" height="250" fill="#f8fafc" rx="10" stroke="#cbd5e1" stroke-width="1.5"/>
-  <text x="325" y="26" font-family="Liberation Sans, sans-serif" font-size="14" font-weight="bold" fill="#0f172a" text-anchor="middle">The Derivative comme limite of the sécantes : f'(a) = lim [f(a+h) - f(a)] / h</text>
+  <text x="325" y="26" font-family="Liberation Sans, sans-serif" font-size="14" font-weight="bold" fill="#0f172a" text-anchor="middle">The Derivative as the limit of secants: f'(a) = lim [f(a+h) - f(a)] / h</text>
 
   <g transform="translate(100, 45)">
     <!-- Axes -->
@@ -32,7 +32,7 @@
 
     <!-- Sécante AM (blue dashed) -->
     <line x1="100" y1="135" x2="340" y2="35" stroke="#1d4ed8" stroke-width="2" stroke-dasharray="5,4"/>
-    <text x="345" y="45" font-family="Liberation Sans, sans-serif" font-size="10.5" fill="#1d4ed8">Sécante (AM)</text>
+    <text x="345" y="45" font-family="Liberation Sans, sans-serif" font-size="10.5" fill="#1d4ed8">Secant (AM)</text>
 
     <!-- Tangente en A (red solid) -->
     <line x1="90" y1="140" x2="280" y2="58" stroke="#b91c1c" stroke-width="3"/>

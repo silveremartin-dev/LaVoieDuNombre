@@ -11,7 +11,7 @@
   <g transform="translate(60, 70)">
     <circle cx="40" cy="40" r="30" fill="#ffffff" stroke="#1d4ed8" stroke-width="2.5"/>
     <text x="40" y="46" font-family="Liberation Sans, sans-serif" font-size="18" font-weight="bold" fill="#1d4ed8" text-anchor="middle">x</text>
-    <text x="40" y="90" font-family="Liberation Sans, sans-serif" font-size="12" font-weight="bold" fill="#0f172a" text-anchor="middle">Antécédent</text>
+    <text x="40" y="90" font-family="Liberation Sans, sans-serif" font-size="12" font-weight="bold" fill="#0f172a" text-anchor="middle">Preimage (Input x)</text>
     <text x="40" y="105" font-family="Liberation Sans, sans-serif" font-size="10.5" fill="#64748b" text-anchor="middle">(Input)</text>
     <!-- Arrow into machine -->
     <line x1="75" y1="40" x2="165" y2="40" stroke="#1d4ed8" stroke-width="3" marker-end="url(#arr-blue12)"/>
@@ -21,7 +21,7 @@
   <g transform="translate(240, 50)">
     <rect width="170" height="110" rx="10" fill="#ffffff" stroke="#0f172a" stroke-width="2.5"/>
     <rect x="15" y="12" width="140" height="28" rx="5" fill="#eff6ff" stroke="#1d4ed8" stroke-width="1"/>
-    <text x="85" y="31" font-family="Liberation Sans, sans-serif" font-size="13" font-weight="bold" fill="#1d4ed8" text-anchor="middle">MACHINE f</text>
+    <text x="85" y="31" font-family="Liberation Sans, sans-serif" font-size="13" font-weight="bold" fill="#1d4ed8" text-anchor="middle">MACHINF f</text>
     <text x="85" y="65" font-family="Liberation Sans, sans-serif" font-size="13" font-weight="bold" fill="#b91c1c" text-anchor="middle">Rule of calcul :</text>
     <text x="85" y="90" font-family="Liberation Sans, sans-serif" font-size="14" font-weight="bold" fill="#0f172a" text-anchor="middle">f(x) = 2x + 1</text>
   </g>

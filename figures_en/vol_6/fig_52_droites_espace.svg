@@ -13,15 +13,15 @@
     <text x="85" y="135" font-family="Liberation Sans, sans-serif" font-size="10.5" fill="#64748b" text-anchor="middle">Collinear vectors</text>
   </g>
 
-  <!-- Case 2: Sécantes (coplanaires) -->
+  <!-- Case 2: Intersecting (coplanaires) -->
   <g transform="translate(240, 45)">
     <rect width="170" height="150" rx="6" fill="#ffffff" stroke="#cbd5e1" stroke-width="1"/>
-    <text x="85" y="24" font-family="Liberation Sans, sans-serif" font-size="12" font-weight="bold" fill="#b91c1c" text-anchor="middle">Sécantes</text>
+    <text x="85" y="24" font-family="Liberation Sans, sans-serif" font-size="12" font-weight="bold" fill="#b91c1c" text-anchor="middle">Intersecting</text>
     <line x1="25" y1="120" x2="145" y2="40" stroke="#b91c1c" stroke-width="2.5"/>
     <line x1="25" y1="50" x2="145" y2="110" stroke="#0f172a" stroke-width="2"/>
     <circle cx="85" cy="80" r="4.5" fill="#d97706"/>
     <text x="92" y="74" font-family="Liberation Sans, sans-serif" font-size="10.5" font-weight="bold" fill="#0f172a">I</text>
-    <text x="85" y="135" font-family="Liberation Sans, sans-serif" font-size="10.5" fill="#64748b" text-anchor="middle">Exactly 1 common point</text>
+    <text x="85" y="135" font-family="Liberation Sans, sans-serif" font-size="10.5" fill="#64748b" text-anchor="middle">Fxactly 1 common point</text>
   </g>
 
   <!-- Case 3: Non coplanaires (gauche) -->
@@ -35,7 +35,7 @@
     <!-- Line passing through space without touching -->
     <line x1="50" y1="35" x2="120" y2="135" stroke="#0f172a" stroke-width="2.5"/>
     <text x="123" y="140" font-family="Liberation Sans, sans-serif" font-size="10" fill="#0f172a">d2</text>
-    <text x="85" y="135" font-family="Liberation Sans, sans-serif" font-size="10.5" fill="#64748b" text-anchor="middle">Ni Parallel ni sécantes</text>
+    <text x="85" y="135" font-family="Liberation Sans, sans-serif" font-size="10.5" fill="#64748b" text-anchor="middle">Neither parallel nor intersecting (Skew)</text>
   </g>
   <text x="325" y="222" font-family="Liberation Sans, sans-serif" font-size="11.5" fill="#64748b" text-anchor="middle">In space, two non-intersecting lines are not necessarily parallel: they can be skew lines</text>
 </svg>

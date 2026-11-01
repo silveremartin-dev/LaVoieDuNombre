@@ -2,7 +2,7 @@
   <rect width="540" height="180" fill="#f8fafc" rx="8" stroke="#cbd5e1" stroke-width="1"/>
   <!-- Intersection A ∩ B -->
   <g transform="translate(40, 20)">
-    <text x="100" y="20" font-family="Liberation Sans" font-size="14" font-weight="bold" fill="#1d4ed8" text-anchor="middle">INTERSECTION A ∩ B</text>
+    <text x="100" y="20" font-family="Liberation Sans" font-size="14" font-weight="bold" fill="#1d4ed8" text-anchor="middle">INTFRSFCTION A ∩ B</text>
     <circle cx="75" cy="80" r="50" fill="#eff6ff" stroke="#1d4ed8" stroke-width="2"/>
     <circle cx="125" cy="80" r="50" fill="#f0fdf4" stroke="#15803d" stroke-width="2"/>
     <!-- Intersection colorée -->
@@ -13,7 +13,7 @@
   </g>
   <!-- Union A ∪ B -->
   <g transform="translate(300, 20)">
-    <text x="100" y="20" font-family="Liberation Sans" font-size="14" font-weight="bold" fill="#15803d" text-anchor="middle">RÉUNION A ∪ B</text>
+    <text x="100" y="20" font-family="Liberation Sans" font-size="14" font-weight="bold" fill="#15803d" text-anchor="middle">UNION A ∪ B</text>
     <circle cx="75" cy="80" r="50" fill="#dbeafe" stroke="#1d4ed8" stroke-width="2"/>
     <circle cx="125" cy="80" r="50" fill="#dbeafe" stroke="#15803d" stroke-width="2"/>
     <text x="50" y="85" font-family="Liberation Sans" font-size="13" font-weight="bold" fill="#1d4ed8">A</text>

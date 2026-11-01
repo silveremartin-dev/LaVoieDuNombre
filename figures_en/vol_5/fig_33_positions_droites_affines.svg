@@ -2,7 +2,7 @@
   <rect width="650" height="240" fill="#f8fafc" rx="10" stroke="#cbd5e1" stroke-width="1.5"/>
   <text x="325" y="26" font-family="Liberation Sans, sans-serif" font-size="14" font-weight="bold" fill="#0f172a" text-anchor="middle">Relative positions of two affine lines d and d' in the plane</text>
 
-  <!-- Case 1: Sécantes (m != m') -->
+  <!-- Case 1: Intersecting (m != m') -->
   <g transform="translate(30, 45)">
     <rect width="170" height="150" rx="6" fill="#ffffff" stroke="#cbd5e1" stroke-width="1"/>
     <text x="85" y="24" font-family="Liberation Sans, sans-serif" font-size="12" font-weight="bold" fill="#b91c1c" text-anchor="middle">Intersecting lines</text>
@@ -10,7 +10,7 @@
     <line x1="20" y1="40" x2="150" y2="120" stroke="#b91c1c" stroke-width="2.5"/>
     <circle cx="85" cy="80" r="4.5" fill="#d97706" stroke="#0f172a" stroke-width="1.5"/>
     <text x="92" y="75" font-family="Liberation Sans, sans-serif" font-size="11" font-weight="bold" fill="#0f172a">I(x, y)</text>
-    <text x="85" y="135" font-family="Liberation Sans, sans-serif" font-size="10.5" font-weight="bold" fill="#0f172a" text-anchor="middle">Pentes différentes : m ≠ m'</text>
+    <text x="85" y="135" font-family="Liberation Sans, sans-serif" font-size="10.5" font-weight="bold" fill="#0f172a" text-anchor="middle">Different slopes: m ≠ m'</text>
   </g>
 
   <!-- Case 2: Strictement parallèles (m = m', p != p') -->
@@ -19,7 +19,7 @@
     <text x="85" y="24" font-family="Liberation Sans, sans-serif" font-size="12" font-weight="bold" fill="#1d4ed8" text-anchor="middle">Strictement Parallel</text>
     <line x1="20" y1="90" x2="150" y2="40" stroke="#1d4ed8" stroke-width="2.5"/>
     <line x1="20" y1="130" x2="150" y2="80" stroke="#1d4ed8" stroke-width="2.5"/>
-    <text x="85" y="125" font-family="Liberation Sans, sans-serif" font-size="10.5" font-weight="bold" fill="#0f172a" text-anchor="middle">Même Slope : m = m'</text>
+    <text x="85" y="125" font-family="Liberation Sans, sans-serif" font-size="10.5" font-weight="bold" fill="#0f172a" text-anchor="middle">Same slope: m = m'</text>
     <text x="85" y="140" font-family="Liberation Sans, sans-serif" font-size="10" fill="#64748b" text-anchor="middle">Ordinate : p ≠ p' (0 pt commun)</text>
   </g>
 
@@ -28,7 +28,7 @@
     <rect width="170" height="150" rx="6" fill="#ffffff" stroke="#cbd5e1" stroke-width="1"/>
     <text x="85" y="24" font-family="Liberation Sans, sans-serif" font-size="12" font-weight="bold" fill="#15803d" text-anchor="middle">Coincident lines</text>
     <line x1="20" y1="110" x2="150" y2="50" stroke="#15803d" stroke-width="4"/>
-    <text x="85" y="125" font-family="Liberation Sans, sans-serif" font-size="10.5" font-weight="bold" fill="#0f172a" text-anchor="middle">m = m' et p = p'</text>
+    <text x="85" y="125" font-family="Liberation Sans, sans-serif" font-size="10.5" font-weight="bold" fill="#0f172a" text-anchor="middle">m = m' and b = b' (Coincident)</text>
     <text x="85" y="140" font-family="Liberation Sans, sans-serif" font-size="10" fill="#64748b" text-anchor="middle">Infinitely many common points</text>
   </g>
 

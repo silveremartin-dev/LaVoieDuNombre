@@ -1,6 +1,6 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 450 280" width="100%" height="100%">
   <rect width="450" height="280" fill="#f8fafc" rx="8"/>
-  <text x="225" y="28" text-anchor="middle" font-family="Liberation Sans" font-size="15" font-weight="bold" fill="#0f172a">The Square Units et The Diagonale Incommensurable √2</text>
+  <text x="225" y="28" text-anchor="middle" font-family="Liberation Sans" font-size="15" font-weight="bold" fill="#0f172a">Unit Square and the Incommensurable Diagonal √2</text>
   
   <g transform="translate(135, 60)">
     <rect x="0" y="0" width="180" height="180" fill="#eff6ff" stroke="#1d4ed8" stroke-width="2.5"/>

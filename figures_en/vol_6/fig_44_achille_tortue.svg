@@ -31,9 +31,9 @@
     <!-- Convergence point (Drapeau de dépassement) -->
     <line x1="444.4" y1="40" x2="444.4" y2="120" stroke="#b91c1c" stroke-width="2" stroke-dasharray="3,3"/>
     <polygon points="444.4,40 470,50 444.4,60" fill="#b91c1c"/>
-    <text x="444.4" y="135" font-family="Liberation Sans, sans-serif" font-size="11" font-weight="bold" fill="#b91c1c" text-anchor="middle">Dépassement : 111.11... m</text>
+    <text x="444.4" y="135" font-family="Liberation Sans, sans-serif" font-size="11" font-weight="bold" fill="#b91c1c" text-anchor="middle">Overtake: 111.11... m</text>
   </g>
 
-  <text x="325" y="215" font-family="Liberation Sans, sans-serif" font-size="11.5" font-weight="bold" fill="#0f172a" text-anchor="middle">S = 100 + 10 + 1 + 0.1 + 0.01 + ... = 100 / (1 - 0.1) = 1000 / 9 = 111,11... mètres</text>
+  <text x="325" y="215" font-family="Liberation Sans, sans-serif" font-size="11.5" font-weight="bold" fill="#0f172a" text-anchor="middle">S = 100 + 10 + 1 + 0.1 + 0.01 + ... = 100 / (1 - 0.1) = 1000 / 9 = 111.11... meters</text>
   <text x="325" y="232" font-family="Liberation Sans, sans-serif" font-size="10.5" fill="#64748b" text-anchor="middle">Infinitely many shrinking time intervals can elapse within a finite total time</text>
 </svg>

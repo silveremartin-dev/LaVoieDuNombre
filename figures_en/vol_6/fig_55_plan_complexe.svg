@@ -31,7 +31,7 @@
   </g>
   <g transform="translate(370, 50)" font-family="Liberation Sans" font-size="12">
     <rect x="0" y="0" width="150" height="90" rx="6" fill="#fffbeb" stroke="#d97706" stroke-width="1.5"/>
-    <text x="75" y="24" font-weight="bold" fill="#d97706" text-anchor="middle">Forme d'Euler :</text>
+    <text x="75" y="24" font-weight="bold" fill="#d97706" text-anchor="middle">Fuler Form:</text>
     <text x="12" y="48" font-weight="bold" fill="#0f172a">z = r · e^(i θ)</text>
     <text x="12" y="68" fill="#1d4ed8">r = √(a² + b²)</text>
     <text x="12" y="85" fill="#15803d">θ = arg(z)</text>

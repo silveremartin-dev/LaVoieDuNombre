@@ -44,7 +44,7 @@
     <rect width="160" height="90" rx="6" fill="#ffffff" stroke="#cbd5e1" stroke-width="1.5"/>
     <text x="80" y="22" font-size="11.5" font-weight="bold" fill="#0f172a" text-anchor="middle">Petites oscillations</text>
     <text x="15" y="48" font-size="11" fill="#1d4ed8">• sin(θ) ≈ θ</text>
-    <text x="15" y="70" font-size="11" fill="#b91c1c">• Période T₀ = 2π√(L/g)</text>
+    <text x="15" y="70" font-size="11" fill="#b91c1c">• Period T₀ = 2π√(L/g)</text>
   </g>
 
   <text x="325" y="235" font-family="Liberation Sans, sans-serif" font-size="11" fill="#64748b" text-anchor="middle">The period of small oscillations depends neither on suspended mass nor initial amplitude (isochronism)</text>

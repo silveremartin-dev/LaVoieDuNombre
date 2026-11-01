@@ -33,7 +33,7 @@
 
   <!-- Matrix side (right) -->
   <g transform="translate(360, 50)" font-family="Liberation Sans, sans-serif">
-    <text x="110" y="20" font-size="14" font-weight="bold" fill="#0f172a" text-anchor="middle">Matrix d'adjacence M</text>
+    <text x="110" y="20" font-size="14" font-weight="bold" fill="#0f172a" text-anchor="middle">Adjacency matrix M</text>
     <!-- Column headers -->
     <text x="70" y="50" font-size="12" font-weight="bold" fill="#1d4ed8">v1</text>
     <text x="110" y="50" font-size="12" font-weight="bold" fill="#b91c1c">v2</text>

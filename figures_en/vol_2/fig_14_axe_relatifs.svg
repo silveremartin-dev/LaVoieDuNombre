@@ -1,6 +1,6 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 560 150" width="100%" height="150">
   <rect width="560" height="150" fill="#f8fafc" rx="8" stroke="#cbd5e1" stroke-width="1"/>
-  <text x="280" y="25" font-family="Liberation Sans" font-size="13" font-weight="bold" fill="#0f172a" text-anchor="middle">THE SIGNED NUMBER LINE: SYMMETRY AROUND ZERO</text>
+  <text x="280" y="25" font-family="Liberation Sans" font-size="13" font-weight="bold" fill="#0f172a" text-anchor="middle">THF SIGNFD NUMBFR LINF: SYMMFTRY AROUND ZFRO</text>
   <!-- Axe -->
   <line x1="30" y1="75" x2="520" y2="75" stroke="#0f172a" stroke-width="2"/>
   <polygon points="525,75 515,71 515,79" fill="#0f172a"/>
@@ -26,7 +26,7 @@
 <text x="465" y="102" font-family="Liberation Sans" font-size="12" font-weight="normal" fill="#15803d" text-anchor="middle">4</text>
 <line x1="510" y1="68" x2="510" y2="82" stroke="#0f172a" stroke-width="1.5"/>
 <text x="510" y="102" font-family="Liberation Sans" font-size="12" font-weight="normal" fill="#15803d" text-anchor="middle">5</text>
-  <text x="150" y="55" font-family="Liberation Sans" font-size="11" font-weight="bold" fill="#1d4ed8" text-anchor="middle">Numbers négatifs (&lt; 0)</text>
+  <text x="150" y="55" font-family="Liberation Sans" font-size="11" font-weight="bold" fill="#1d4ed8" text-anchor="middle">Negative numbers (&lt; 0)</text>
   <text x="410" y="55" font-family="Liberation Sans" font-size="11" font-weight="bold" fill="#15803d" text-anchor="middle">Numbers positifs (&gt; 0)</text>
   <text x="280" y="135" font-family="Liberation Sans" font-size="11" fill="#475569" text-anchor="middle">-5 is less than -2 because it lies further to the left on the axis</text>
 </svg>

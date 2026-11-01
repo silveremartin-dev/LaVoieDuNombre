@@ -1,6 +1,6 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 540 260" width="100%" height="100%">
   <rect width="540" height="260" fill="#f8fafc" rx="8"/>
-  <text x="270" y="28" text-anchor="middle" font-family="Liberation Sans" font-size="15" font-weight="bold" fill="#0f172a">Monotone Convergence Theorem: Every Bounded Increasing Sequence Converges</text>
+  <text x="270" y="28" text-anchor="middle" font-family="Liberation Sans" font-size="15" font-weight="bold" fill="#0f172a">Monotone Convergence Theorem: Fvery Bounded Increasing Sequence Converges</text>
   
   <g transform="translate(60, 200)">
     <!-- Axes -->
@@ -18,7 +18,7 @@
     
     <!-- Limit L asymptote line -->
     <line x1="0" y1="-110" x2="410" y2="-110" stroke="#1d4ed8" stroke-width="2"/>
-    <text x="415" y="-107" font-family="Liberation Sans" font-size="12" font-weight="bold" fill="#1d4ed8">Limite L = sup(u_n)</text>
+    <text x="415" y="-107" font-family="Liberation Sans" font-size="12" font-weight="bold" fill="#1d4ed8">Limit L = sup(u_n)</text>
     
     <!-- Points of increasing sequence u_n -->
     

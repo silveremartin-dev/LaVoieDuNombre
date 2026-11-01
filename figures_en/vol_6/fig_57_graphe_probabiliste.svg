@@ -39,5 +39,5 @@
   <text x="325" y="186" font-family="Liberation Sans, sans-serif" font-size="12" font-weight="bold" fill="#b91c1c" text-anchor="middle">0.4</text>
 
   <!-- Formula note -->
-  <text x="325" y="235" font-family="Liberation Sans, sans-serif" font-size="12" fill="#64748b" text-anchor="middle">Matrix of transition : M = ((0.8, 0.2), (0.4, 0.6)) — Sum of chaque ligne = 1</text>
+  <text x="325" y="235" font-family="Liberation Sans, sans-serif" font-size="12" fill="#64748b" text-anchor="middle">Transition matrix: M = ((0.8, 0.2), (0.4, 0.6)) — Row sum = 1</text>
 </svg>

@@ -856,7 +856,7 @@ mathematical thought.
 ]
 
 
-#figure(image("figures/histoire/ch_01_ishango.jpg", alt: "The fossilized Ishango bone (~20,000 BCE, Congo): humanity’s earliest counting notches and numerical groupings"),
+#figure(image("figures_en/histoire/ch_01_ishango.jpg", alt: "The fossilized Ishango bone (~20,000 BCE, Congo): humanity’s earliest counting notches and numerical groupings"),
   caption: [
     The fossilized Ishango bone (\~20,000 BCE, Congo): humanity's
     earliest counting notches and numerical groupings
@@ -2640,7 +2640,7 @@ neighboring wheel whenever a dial turned past 9!
 ]
 
 
-#figure(image("figures/histoire/ch_04_pascaline.jpg", alt: "Blaise Pascal’s arithmetic machine (Pascaline, 1642): the first mechanical automatic decimal carry mechanism"),
+#figure(image("figures_en/histoire/ch_04_pascaline.jpg", alt: "Blaise Pascal’s arithmetic machine (Pascaline, 1642): the first mechanical automatic decimal carry mechanism"),
   caption: [
     Blaise Pascal's arithmetic machine (Pascaline, 1642): the first
     mechanical automatic decimal carry mechanism
@@ -3537,9 +3537,9 @@ $146 times 23$.
 
 This calculation is done in #strong[two distinct tiers]:
 
-#figure(image("figures_en/vol_1/fig_05_multiplication_posee_ret.svg", alt: "La multiplication posée à deux étages avec retenue"),
+#figure(image("figures_en/vol_1/fig_05_multiplication_posee_ret.svg", alt: "Two-stage column multiplication with regrouping (carry)"),
   caption: [
-    La multiplication posée à deux étages avec retenue
+    Two-stage column multiplication with regrouping (carry)
   ]
 )
 
@@ -6484,7 +6484,7 @@ among the workers building the pyramids.
 ]
 
 
-#figure(image("figures/histoire/ch_10_papyrus_rhind.jpg", alt: "The Rhind Mathematical Papyrus (~1550 BC, Ancient Egypt): scribes’ unit fraction decomposition tables"),
+#figure(image("figures_en/histoire/ch_10_papyrus_rhind.jpg", alt: "The Rhind Mathematical Papyrus (~1550 BC, Ancient Egypt): scribes’ unit fraction decomposition tables"),
   caption: [
     The Rhind Mathematical Papyrus (\~1550 BC, Ancient Egypt): scribes'
     unit fraction decomposition tables
@@ -12532,7 +12532,7 @@ $a^2 + b^2 = c^2$ self-evident at a single glance. It is this
 masterpiece of visual semiotics that inspired the chromatic charter of
 the present treatise.
 
-#figure(image("figures/histoire/ch_19_byrne_pythagore.jpg", alt: "Geometric proof of the Pythagorean Theorem by Oliver Byrne (1847): magnitudes and areas demonstrated through pure color"),
+#figure(image("figures_en/histoire/ch_19_byrne_pythagore.jpg", alt: "Geometric proof of the Pythagorean Theorem by Oliver Byrne (1847): magnitudes and areas demonstrated through pure color"),
   caption: [
     Geometric proof of the Pythagorean Theorem by Oliver Byrne (1847):
     magnitudes and areas demonstrated through pure color
@@ -15944,7 +15944,7 @@ $ - 2 > - 5 upright(" !") $
 
 #figure(image("figures_en/vol_4/fig_24_intervalles_droite.svg", alt: "Intersection et réunion d’intervalles sur l’axe des réels"),
   caption: [
-    Intersection et réunion d'intervalles sur l'axe des réels
+    Intersection and union of intervals on the real number line
   ]
 )
 
@@ -22010,9 +22010,9 @@ $ accent(A B, ⃗) + accent(B C, ⃗) = accent(A C, ⃗) . $
 ]
 
 
-#figure(image("figures_en/vol_5/fig_32_chasles_addition.svg", alt: "Vecteurs dans le plan : relation de Chasles u + v"),
+#figure(image("figures_en/vol_5/fig_32_chasles_addition.svg", alt: "Vectors in the plane: Chasles' identity $arrow(u) + arrow(v)$"),
   caption: [
-    Vecteurs dans le plan : relation de Chasles u + v
+    Vectors in the plane: Chasles' identity $arrow(u) + arrow(v)$
   ]
 )
 
@@ -26119,9 +26119,9 @@ The angle you have just traced---the angle that subtends an arc
 #strong[whose length is equal to the radius]---is the natural unit of
 the circle: it is #strong[one radian].
 
-#figure(image("figures_en/vol_5/fig_37_cercle_trigo_complet.svg", alt: "Le cercle trigonométrique complet et les lignes de sinus et cosinus"),
+#figure(image("figures_en/vol_5/fig_37_cercle_trigo_complet.svg", alt: "The complete trigonometric circle with sine and cosine lines"),
   caption: [
-    Le cercle trigonométrique complet et les lignes de sinus et cosinus
+    The complete trigonometric circle with sine and cosine lines
   ]
 )
 
@@ -32903,8 +32903,7 @@ What happens as the experimenter moves the object closer to the lens?
 
 #figure(image("figures_en/vol_6/fig_45_asymptotes_complete.svg", alt: "Comportement asymptotique aux bornes : asymptotes verticales et horizontales"),
   caption: [
-    Comportement asymptotique aux bornes : asymptotes verticales et
-    horizontales
+    Asymptotic behavior at infinity: vertical and horizontal asymptotes
   ]
 )
 
@@ -33874,9 +33873,9 @@ the mountain at $2200 upright(" meters")$. Can you state with certainty
 that at some precise moment during the morning, her altimeter read
 exactly $1500 upright(" meters")$?
 
-#figure(image("figures_en/vol_6/fig_46_tvi_continuite.svg", alt: "Théorème des Valeurs Intermédiaires (TVI) sur un intervalle fermé"),
+#figure(image("figures_en/vol_6/fig_46_tvi_continuite.svg", alt: "Intermediate Value Theorem (IVT) on a closed bounded interval"),
   caption: [
-    Théorème des Valeurs Intermédiaires (TVI) sur un intervalle fermé
+    Intermediate Value Theorem (IVT) on a closed bounded interval
   ]
 )
 
@@ -33896,9 +33895,9 @@ machine directly charges you €$4.00$. The price took an #strong[abrupt
 jump]. It never took the value €$2.87$ or €$3.50$. The pricing function
 is #strong[discontinuous].
 
-#figure(image("figures_en/vol_6/fig_46_continu_vs_discontinu.svg", alt: "Continuité mathématique : trajectoire continue vs saut de palier"),
+#figure(image("figures_en/vol_6/fig_46_continu_vs_discontinu.svg", alt: "Mathematical continuity: unbroken trajectory vs jump discontinuity"),
   caption: [
-    Continuité mathématique : trajectoire continue vs saut de palier
+    Mathematical continuity: unbroken trajectory vs jump discontinuity
   ]
 )
 
@@ -34208,8 +34207,7 @@ function curve $y = f\(x\)$ and the main diagonal line #strong[$y = x$].
 
 #figure(image("figures_en/vol_6/fig_46_methode_escalier_cobweb.svg", alt: "Méthode de l’escalier (Cobweb) : itération graphique de la suite u_(n+1) = f(u_n)"),
   caption: [
-    Méthode de l'escalier (Cobweb) : itération graphique de la suite
-    u\_(n+1) = f(u\_n)
+    Cobweb method: graphical iteration of the sequence $u_(n+1) = f(u_n)$
   ]
 )
 
@@ -35061,8 +35059,7 @@ crankset and a small 25-tooth cog on the rear wheel.
 
 #figure(image("figures_en/vol_6/fig_47_convexite_inflexion.svg", alt: "Convexité, concavité et point d’inflexion : position relative des tangentes"),
   caption: [
-    Convexité, concavité et point d'inflexion : position relative des
-    tangentes
+    Convexity, concavity, and inflection point: relative position of tangent lines
   ]
 )
 
@@ -37709,9 +37706,9 @@ plucked violin string, water sloshing in an enclosed bay, alternating
 electrons surging through a radio antenna---all obey this very same
 fundamental rhythmic cadence.
 
-#figure(image("figures_en/vol_6/fig_49_pendule_oscillant.svg", alt: "Le pendule simple : modélisation du mouvement périodique oscillant"),
+#figure(image("figures_en/vol_6/fig_49_pendule_oscillant.svg", alt: "The simple pendulum: mathematical model of periodic harmonic oscillation"),
   caption: [
-    Le pendule simple : modélisation du mouvement périodique oscillant
+    The simple pendulum: mathematical model of periodic harmonic oscillation
   ]
 )
 
@@ -37741,7 +37738,7 @@ constant speed, the moving shadow traces a pristine periodic curve:
 
 #figure(image("figures_en/vol_6/fig_49_onde_sinusoidale.svg", alt: "Génération de l’onde sinusoïdale par rotation du cercle"),
   caption: [
-    Génération de l'onde sinusoïdale par rotation du cercle
+    Generation of the sine wave through circular rotation
   ]
 )
 
@@ -38005,9 +38002,9 @@ $ sin x lt.eq x lt.eq tan x . quad square.filled.medium $
 ]
 
 
-#figure(image("figures_en/vol_6/fig_49_tangente_cercle.svg", alt: "Ligne trigonométrique de la tangente sur le cercle unité"),
+#figure(image("figures_en/vol_6/fig_49_tangente_cercle.svg", alt: "Trigonometric line of the tangent on the unit circle"),
   caption: [
-    Ligne trigonométrique de la tangente sur le cercle unité
+    Trigonometric line of the tangent on the unit circle
   ]
 )
 
@@ -39018,8 +39015,7 @@ these disks together] from the bottom to the top!
 
 #figure(image("figures_en/vol_6/fig_50_tonneau_kepler.svg", alt: "La stéréométrie des tonneaux de Kepler : calcul intégral par tranches"),
   caption: [
-    La stéréométrie des tonneaux de Kepler : calcul intégral par
-    tranches
+    Kepler's stereometry of wine casks: integral calculus via cross-sectional slices
   ]
 )
 
@@ -39045,8 +39041,7 @@ departure at time $t = a$ and arrival at time $t = b$?
 
 #figure(image("figures_en/vol_6/fig_50_riemann_integrale.svg", alt: "L’intégrale de Riemann : encadrement de l’aire sous la courbe par des rectangles"),
   caption: [
-    L'intégrale de Riemann : encadrement de l'aire sous la courbe par
-    des rectangles
+    The Riemann integral: bounding the area under the curve with upper and lower sums
   ]
 )
 
@@ -40154,8 +40149,7 @@ family of non-intersecting trajectories:
 
 #figure(image("figures_en/vol_6/fig_51_circuit_rc_euler.svg", alt: "Charge du condensateur et méthode d’Euler pour les équations différentielles"),
   caption: [
-    Charge du condensateur et méthode d'Euler pour les équations
-    différentielles
+    Capacitor RC charging and Euler's method for differential equations
   ]
 )
 
@@ -40852,7 +40846,7 @@ frame without touching. Such lines are said to be #strong[skew
 
 #figure(image("figures_en/vol_6/fig_52_vecteur_espace_3d.svg", alt: "Coordonnées et norme d’un vecteur dans l’espace à 3 dimensions"),
   caption: [
-    Coordonnées et norme d'un vecteur dans l'espace à 3 dimensions
+    Coordinates and Euclidean magnitude of a vector in 3-dimensional space
   ]
 )
 
@@ -40992,8 +40986,7 @@ directed by $arrow(u)_2$.
 
 #figure(image("figures_en/vol_6/fig_52_droites_espace.svg", alt: "Positions relatives de deux droites dans l’espace : parallèles, sécantes ou non coplanaires"),
   caption: [
-    Positions relatives de deux droites dans l'espace : parallèles,
-    sécantes ou non coplanaires
+    Relative positions of two lines in 3D space: parallel, intersecting, or skew
   ]
 )
 
@@ -41071,7 +41064,7 @@ plane $cal(P)$.
 
 #figure(image("figures_en/vol_6/fig_52_plan_vecteur_normal.svg", alt: "Cartesian equation of the plane and normal vector dans l’espace"),
   caption: [
-    Cartesian equation of the plane and normal vector dans l'espace
+    Cartesian equation of the plane and normal vector in 3D space
   ]
 )
 
@@ -42768,7 +42761,7 @@ independent: this would not constitute a Bernoulli scheme!
 Let us represent a Bernoulli scheme of $n = 3$ trials on a probability
 tree:
 
-#figure(image("figures/vol_6/fig_54_arbre_bernoulli.svg", alt: "Probability tree of a Bernoulli scheme with 3 independent trials"),
+#figure(image("figures_en/vol_6/fig_54_arbre_bernoulli.svg", alt: "Probability tree of a Bernoulli scheme with 3 independent trials"),
   caption: [
     Probability tree of a Bernoulli scheme with 3 independent trials
   ]
@@ -43105,7 +43098,7 @@ curve of Gauss with astonishing mechanical regularity.
 ]
 
 
-#figure(image("figures/histoire/ch_54_galton_box.png", alt: "The Galton Board: physical manifestation of the convergence of Pascal’s triangle to the Gaussian bell curve"),
+#figure(image("figures_en/histoire/ch_54_galton_box.png", alt: "The Galton Board: physical manifestation of the convergence of Pascal’s triangle to the Gaussian bell curve"),
   caption: [
     The Galton Board: physical manifestation of the convergence of
     Pascal's triangle to the Gaussian bell curve

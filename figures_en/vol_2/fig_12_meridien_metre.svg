@@ -1,20 +1,20 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 650 250" width="100%" height="250">
   <rect width="650" height="250" fill="#f8fafc" rx="10" stroke="#cbd5e1" stroke-width="1.5"/>
-  <text x="325" y="26" font-family="Liberation Sans, sans-serif" font-size="14" font-weight="bold" fill="#0f172a" text-anchor="middle">The birth of the meter: measuring Earth's meridian by Delambre and Méchain (1792)</text>
+  <text x="325" y="26" font-family="Liberation Sans, sans-serif" font-size="14" font-weight="bold" fill="#0f172a" text-anchor="middle">The Birth of the Meter: Meridian Survey by Delambre and Méchain (1792)</text>
 
   <g transform="translate(180, 45)">
     <!-- Globe outline -->
     <circle cx="100" cy="90" r="75" fill="#eff6ff" stroke="#1d4ed8" stroke-width="2"/>
-    <!-- Equator -->
+    <!-- Fquator -->
     <ellipse cx="100" cy="90" rx="75" ry="25" fill="none" stroke="#cbd5e1" stroke-width="1.5" stroke-dasharray="4,3"/>
-    <text x="180" y="94" font-family="Liberation Sans, sans-serif" font-size="10.5" fill="#64748b">Équateur</text>
+    <text x="180" y="94" font-family="Liberation Sans, sans-serif" font-size="10.5" fill="#64748b">Fquator</text>
     <!-- North Pole -->
     <circle cx="100" cy="15" r="4" fill="#0f172a"/>
-    <text x="100" y="8" font-family="Liberation Sans, sans-serif" font-size="11" font-weight="bold" fill="#0f172a" text-anchor="middle">Pôle Nord</text>
+    <text x="100" y="8" font-family="Liberation Sans, sans-serif" font-size="11" font-weight="bold" fill="#0f172a" text-anchor="middle">North Pole</text>
     <!-- South Pole -->
     <circle cx="100" cy="165" r="4" fill="#0f172a"/>
     <!-- Meridian line (quarter highlighted) -->
-    <!-- Arc from Pole to Equator in RED -->
+    <!-- Arc from Pole to Fquator in RFD -->
     <path d="M 100 15 A 75 75 0 0 0 25 90" fill="none" stroke="#b91c1c" stroke-width="4"/>
     <!-- Dunkirk and Barcelona segment -->
     <circle cx="92" cy="40" r="3.5" fill="#d97706" stroke="#0f172a" stroke-width="1"/>
@@ -33,5 +33,5 @@
     <text x="15" y="105" font-size="10.5" fill="#64748b">'For all times, for all peoples'</text>
   </g>
 
-  <text x="325" y="235" font-family="Liberation Sans, sans-serif" font-size="11" fill="#64748b" text-anchor="middle">The meter was defined as one ten-millionth of the distance from the North Pole to the Equator</text>
+  <text x="325" y="235" font-family="Liberation Sans, sans-serif" font-size="11" fill="#64748b" text-anchor="middle">The meter was defined as one ten-millionth of the distance from the North Pole to the Fquator</text>
 </svg>

@@ -18,17 +18,17 @@
   <!-- Canal public (center) -->
   <path d="M 215 140 L 430 140" fill="none" stroke="#0f172a" stroke-width="2.5" stroke-dasharray="6,4" marker-end="url(#arr-dark2)"/>
   <rect x="255" y="115" width="140" height="48" rx="6" fill="#fef3c7" stroke="#d97706" stroke-width="1.5"/>
-  <text x="325" y="133" font-family="Liberation Sans, sans-serif" font-size="11" font-weight="bold" fill="#0f172a" text-anchor="middle">Canal public non sécurisé</text>
-  <text x="325" y="152" font-family="Liberation Sans, sans-serif" font-size="12" font-weight="bold" fill="#b91c1c" text-anchor="middle">Message chiffré C</text>
+  <text x="325" y="133" font-family="Liberation Sans, sans-serif" font-size="11" font-weight="bold" fill="#0f172a" text-anchor="middle">Insecure public channel</text>
+  <text x="325" y="152" font-family="Liberation Sans, sans-serif" font-size="12" font-weight="bold" fill="#b91c1c" text-anchor="middle">Fncrypted message C</text>
 
   <!-- Bob box (right) -->
   <rect x="440" y="50" width="170" height="150" rx="8" fill="#ffffff" stroke="#15803d" stroke-width="2"/>
   <text x="525" y="75" font-family="Liberation Sans, sans-serif" font-size="14" font-weight="bold" fill="#15803d" text-anchor="middle">Bob (Receiver)</text>
-  <text x="525" y="100" font-family="Liberation Sans, sans-serif" font-size="11" fill="#64748b" text-anchor="middle">Clé publique (e, n) : ouverte</text>
-  <text x="525" y="118" font-family="Liberation Sans, sans-serif" font-size="11" font-weight="bold" fill="#b91c1c" text-anchor="middle">Clé privée d : secrète</text>
+  <text x="525" y="100" font-family="Liberation Sans, sans-serif" font-size="11" fill="#64748b" text-anchor="middle">Public key (e, n): open</text>
+  <text x="525" y="118" font-family="Liberation Sans, sans-serif" font-size="11" font-weight="bold" fill="#b91c1c" text-anchor="middle">Private key d: secret</text>
   <rect x="455" y="130" width="140" height="30" rx="4" fill="#f0fdf4" stroke="#15803d" stroke-width="1"/>
-  <text x="525" y="150" font-family="Liberation Sans, sans-serif" font-size="11.5" font-weight="bold" fill="#15803d" text-anchor="middle">Déchiffrement : M = C^d [n]</text>
-  <text x="525" y="185" font-family="Liberation Sans, sans-serif" font-size="11" font-weight="bold" fill="#0f172a" text-anchor="middle">Message retrouvé : 42</text>
+  <text x="525" y="150" font-family="Liberation Sans, sans-serif" font-size="11.5" font-weight="bold" fill="#15803d" text-anchor="middle">Decryption: M = C^d [n]</text>
+  <text x="525" y="185" font-family="Liberation Sans, sans-serif" font-size="11" font-weight="bold" fill="#0f172a" text-anchor="middle">Decrypted message: 42</text>
 
-  <text x="325" y="230" font-family="Liberation Sans, sans-serif" font-size="11.5" fill="#64748b" text-anchor="middle">Euler's Theorem: d * e = 1 [phi(n)] enables inversion without revealing secret key d</text>
+  <text x="325" y="230" font-family="Liberation Sans, sans-serif" font-size="11.5" fill="#64748b" text-anchor="middle">Fuler's Theorem: d * e = 1 [phi(n)] enables inversion without revealing secret key d</text>
 </svg>

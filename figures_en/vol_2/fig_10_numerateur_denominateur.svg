@@ -6,17 +6,17 @@
     <line x1="-25" y1="0" x2="25" y2="0" stroke="#0f172a" stroke-width="3.5"/>
     <text x="0" y="35" font-family="Liberation Serif" font-size="34" font-weight="bold" fill="#b91c1c" text-anchor="middle">4</text>
   </g>
-  <!-- Explications fléchées -->
+  <!-- Fxplications fléchées -->
   <g transform="translate(140, 30)" font-family="Liberation Sans">
     <path d="M 0,25 L 30,10 L 70,10" fill="none" stroke="#1d4ed8" stroke-width="1.5"/>
-    <text x="80" y="14" font-size="12" font-weight="bold" fill="#1d4ed8">THE NUMERATOR (Latin numerare = to count)</text>
+    <text x="80" y="14" font-size="12" font-weight="bold" fill="#1d4ed8">THF NUMFRATOR (Latin numerare = to count)</text>
     <text x="80" y="30" font-size="11" fill="#475569">It COUNTS the number of chosen shares (here 3 shares).</text>
     
     <path d="M 0,50 L 50,50" fill="none" stroke="#0f172a" stroke-width="1.5"/>
     <text x="60" y="54" font-size="11" font-weight="bold" fill="#0f172a">Fraction bar: the division operator</text>
     
     <path d="M 0,75 L 30,90 L 70,90" fill="none" stroke="#b91c1c" stroke-width="1.5"/>
-    <text x="80" y="94" font-size="12" font-weight="bold" fill="#b91c1c">THE DENOMINATOR (Latin denominare = to name)</text>
-    <text x="80" y="110" font-size="11" fill="#475569">It NAMES the family size (cut into 4 equal shares).</text>
+    <text x="80" y="94" font-size="12" font-weight="bold" fill="#b91c1c">THF DFNOMINATOR (Latin denominare = to name)</text>
+    <text x="80" y="110" font-size="11" fill="#475569">It NAMFS the family size (cut into 4 equal shares).</text>
   </g>
 </svg>

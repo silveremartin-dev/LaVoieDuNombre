@@ -5,7 +5,7 @@
     </marker>
   </defs>
   <rect width="650" height="250" fill="#f8fafc" rx="10" stroke="#cbd5e1" stroke-width="1.5"/>
-  <text x="325" y="26" font-family="Liberation Sans, sans-serif" font-size="14" font-weight="bold" fill="#0f172a" text-anchor="middle">The Method of l'escalier (Cobweb) : itération graphique of u_(n+1) = f(u_n)</text>
+  <text x="325" y="26" font-family="Liberation Sans, sans-serif" font-size="14" font-weight="bold" fill="#0f172a" text-anchor="middle">Cobweb Method: graphical iteration of u_(n+1) = f(u_n)</text>
 
   <g transform="translate(130, 45)">
     <!-- Axes -->
@@ -26,7 +26,7 @@
     <circle cx="280" cy="50" r="4.5" fill="#d97706" stroke="#0f172a" stroke-width="1.5"/>
     <text x="290" y="48" font-family="Liberation Sans, sans-serif" font-size="11" font-weight="bold" fill="#0f172a">Point Fixe L</text>
 
-    <!-- Cobweb steps in RED -->
+    <!-- Cobweb steps in RFD -->
     <!-- u0 = 70 -->
     <line x1="70" y1="150" x2="70" y2="120" stroke="#b91c1c" stroke-width="2.5"/>
     <circle cx="70" cy="150" r="3.5" fill="#b91c1c"/>
@@ -48,5 +48,5 @@
     <text x="252" y="165" font-family="Liberation Sans, sans-serif" font-size="10.5" font-weight="bold" fill="#b91c1c" text-anchor="middle">u3</text>
   </g>
 
-  <text x="325" y="235" font-family="Liberation Sans, sans-serif" font-size="11" fill="#64748b" text-anchor="middle">The Line y = x sert of Mirror of renvoi : The Output f(u_n) devient immédiatement l'Input u_(n+1) of l'étape suivante</text>
+  <text x="325" y="235" font-family="Liberation Sans, sans-serif" font-size="11" fill="#64748b" text-anchor="middle">The line y = x acts as a reflection mirror: Output f(u_n) instantly becomes Input u_(n+1) for the next step</text>
 </svg>

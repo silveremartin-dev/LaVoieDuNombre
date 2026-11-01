@@ -31,7 +31,7 @@
   </g>
   <g transform="translate(360, 50)" font-family="Liberation Sans" font-size="11.5">
     <rect x="0" y="0" width="160" height="110" rx="6" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.5"/>
-    <text x="80" y="22" font-weight="bold" fill="#0f172a" text-anchor="middle">Propriétés clés :</text>
+    <text x="80" y="22" font-weight="bold" fill="#0f172a" text-anchor="middle">Key Properties:</text>
     <text x="12" y="45" fill="#1d4ed8">• cos² θ + sin² θ = 1</text>
     <text x="12" y="65" fill="#b91c1c">• -1 ≤ cos θ ≤ 1</text>
     <text x="12" y="85" fill="#b91c1c">• -1 ≤ sin θ ≤ 1</text>

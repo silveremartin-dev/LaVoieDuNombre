@@ -1,6 +1,6 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 540 180" width="100%" height="180">
   <rect width="540" height="180" fill="#f8fafc" rx="8" stroke="#cbd5e1" stroke-width="1"/>
-  <text x="270" y="26" font-family="Liberation Sans, sans-serif" font-size="14" font-weight="bold" fill="#0f172a" text-anchor="middle">THE SENSORY FINGER TRICK FOR THE 9 TIMES TABLE (9 × 4 = 36)</text>
+  <text x="270" y="26" font-family="Liberation Sans, sans-serif" font-size="14" font-weight="bold" fill="#0f172a" text-anchor="middle">THF SFNSORY FINGFR TRICK FOR THF 9 TIMFS TABLF (9 × 4 = 36)</text>
   <g transform="translate(60, 45)">
     <!-- Main gauche : doigts 1, 2, 3 levés, doigt 4 baissé, doigt 5 levé -->
     <rect x="0" y="20" width="16" height="45" rx="4" fill="#1d4ed8"/>

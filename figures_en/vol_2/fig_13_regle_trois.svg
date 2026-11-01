@@ -5,7 +5,7 @@
     </marker>
   </defs>
   <rect width="650" height="240" fill="#f8fafc" rx="10" stroke="#cbd5e1" stroke-width="1.5"/>
-  <text x="325" y="26" font-family="Liberation Sans, sans-serif" font-size="14" font-weight="bold" fill="#0f172a" text-anchor="middle">The Rule of trois : The tableau of proportionnalité et The coefficient multiplicateur</text>
+  <text x="325" y="26" font-family="Liberation Sans, sans-serif" font-size="14" font-weight="bold" fill="#0f172a" text-anchor="middle">The Rule of Three: Proportionality Table and Multiplier Ratio</text>
 
   <g transform="translate(130, 50)" font-family="Liberation Sans, sans-serif">
     <!-- Table structure -->

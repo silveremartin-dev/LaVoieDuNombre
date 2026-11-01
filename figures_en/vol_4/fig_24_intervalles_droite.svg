@@ -31,5 +31,5 @@
 
   <!-- Summary note -->
   <text x="325" y="185" font-family="Liberation Sans, sans-serif" font-size="12" font-weight="bold" fill="#0f172a" text-anchor="middle">A bracket facing inward includes the endpoint; facing outward, it excludes it</text>
-  <text x="325" y="202" font-family="Liberation Sans, sans-serif" font-size="11" fill="#64748b" text-anchor="middle">Example: x in [-2, 5) is equivalent to the double inequality -2 ≤ x &lt; 5</text>
+  <text x="325" y="202" font-family="Liberation Sans, sans-serif" font-size="11" fill="#64748b" text-anchor="middle">Fxample: x in [-2, 5) is equivalent to the double inequality -2 ≤ x &lt; 5</text>
 </svg>

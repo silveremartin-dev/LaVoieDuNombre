@@ -28,7 +28,7 @@
   </g>
   <g transform="translate(370, 50)" font-family="Liberation Sans" font-size="12">
     <rect x="0" y="0" width="150" height="90" rx="6" fill="#eff6ff" stroke="#1d4ed8" stroke-width="1.5"/>
-    <text x="75" y="24" font-weight="bold" fill="#0f172a" text-anchor="middle">Fonctions Réciproques :</text>
+    <text x="75" y="24" font-weight="bold" fill="#0f172a" text-anchor="middle">Inverse Functions:</text>
     <text x="12" y="48" fill="#1d4ed8">• ln(e^x) = x</text>
     <text x="12" y="68" fill="#15803d">• e^(ln x) = x</text>
     <text x="12" y="85" fill="#64748b">Reflection across y = x</text>

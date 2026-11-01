@@ -1,6 +1,6 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 540 210" width="100%" height="210">
   <rect width="540" height="210" fill="#f8fafc" rx="8" stroke="#cbd5e1" stroke-width="1"/>
-  <text x="270" y="24" font-family="Liberation Sans" font-size="13" font-weight="bold" fill="#0f172a" text-anchor="middle">L'ÉQUATION D'AL-KHWARIZMI : x + 3 = 8</text>
+  <text x="270" y="24" font-family="Liberation Sans" font-size="13" font-weight="bold" fill="#0f172a" text-anchor="middle">AL-KHWARIZMI'S FQUATION: x + 3 = 8</text>
   <!-- Balance -->
   <polygon points="270,60 245,150 295,150" fill="#e2e8f0" stroke="#0f172a" stroke-width="2"/>
   <rect x="215" y="150" width="110" height="14" rx="3" fill="#0f172a"/>

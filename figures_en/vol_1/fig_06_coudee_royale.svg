@@ -1,6 +1,6 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 540 160" width="100%" height="160">
   <rect width="540" height="160" fill="#f8fafc" rx="8" stroke="#cbd5e1" stroke-width="1"/>
-  <text x="270" y="28" font-family="Liberation Sans, sans-serif" font-size="14" font-weight="bold" fill="#0f172a" text-anchor="middle">THE PHARAOH'S ROYAL CUBIT (~52.3 cm)</text>
+  <text x="270" y="28" font-family="Liberation Sans, sans-serif" font-size="14" font-weight="bold" fill="#0f172a" text-anchor="middle">THF PHARAOH'S ROYAL CUBIT (~52.3 cm)</text>
   <!-- Dessin de l'avant-bras -->
   <g transform="translate(60, 50)">
     <path d="M 30,35 Q 120,40 250,30 Q 340,25 380,20 L 400,20 L 390,30 L 370,40 Q 250,48 120,45 Q 50,55 30,35 Z" fill="#fffbeb" stroke="#d97706" stroke-width="2"/>

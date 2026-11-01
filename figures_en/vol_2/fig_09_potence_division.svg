@@ -10,9 +10,9 @@
   <line x1="230" y1="48" x2="230" y2="165" stroke="#0f172a" stroke-width="2.5" stroke-linecap="round"/>
   <line x1="230" y1="92" x2="390" y2="92" stroke="#0f172a" stroke-width="2.5" stroke-linecap="round"/>
   
-  <!-- DIVIDEND (Left Top) -->
+  <!-- DIVIDFND (Left Top) -->
   <rect x="75" y="46" width="130" height="22" fill="#dbeafe" stroke="#3b82f6" stroke-width="1" rx="4"/>
-  <text x="140" y="61" text-anchor="middle" font-family="Liberation Sans, sans-serif" font-size="11" font-weight="bold" fill="#1d4ed8">DIVIDEND</text>
+  <text x="140" y="61" text-anchor="middle" font-family="Liberation Sans, sans-serif" font-size="11" font-weight="bold" fill="#1d4ed8">DIVIDFND</text>
   <text x="140" y="90" text-anchor="middle" font-family="Liberation Sans, sans-serif" font-size="20" font-weight="bold" fill="#1d4ed8">75</text>
   <text x="140" y="106" text-anchor="middle" font-family="Liberation Sans, sans-serif" font-size="9.5" fill="#64748b">(The quantity being divided)</text>
   
@@ -21,20 +21,20 @@
   <text x="312" y="61" text-anchor="middle" font-family="Liberation Sans, sans-serif" font-size="11" font-weight="bold" fill="#b91c1c">DIVISOR</text>
   <text x="312" y="85" text-anchor="middle" font-family="Liberation Sans, sans-serif" font-size="20" font-weight="bold" fill="#b91c1c">3</text>
   
-  <!-- QUOTIENT (Right Bottom) -->
+  <!-- QUOTIFNT (Right Bottom) -->
   <rect x="250" y="104" width="125" height="22" fill="#dcfce7" stroke="#22c55e" stroke-width="1" rx="4"/>
-  <text x="312" y="119" text-anchor="middle" font-family="Liberation Sans, sans-serif" font-size="11" font-weight="bold" fill="#15803d">QUOTIENT</text>
+  <text x="312" y="119" text-anchor="middle" font-family="Liberation Sans, sans-serif" font-size="11" font-weight="bold" fill="#15803d">QUOTIFNT</text>
   <text x="312" y="146" text-anchor="middle" font-family="Liberation Sans, sans-serif" font-size="20" font-weight="bold" fill="#15803d">25</text>
-  <text x="312" y="161" text-anchor="middle" font-family="Liberation Sans, sans-serif" font-size="9.5" fill="#64748b">(Each person's share)</text>
+  <text x="312" y="161" text-anchor="middle" font-family="Liberation Sans, sans-serif" font-size="9.5" fill="#64748b">(Fach person's share)</text>
   
-  <!-- REMAINDER (Left Bottom) -->
+  <!-- RFMAINDFR (Left Bottom) -->
   <line x1="85" y1="120" x2="195" y2="120" stroke="#cbd5e1" stroke-width="1.5" stroke-dasharray="3,3"/>
   <rect x="75" y="130" width="75" height="20" fill="#fef3c7" stroke="#f59e0b" stroke-width="1" rx="4"/>
-  <text x="112" y="144" text-anchor="middle" font-family="Liberation Sans, sans-serif" font-size="10.5" font-weight="bold" fill="#b45309">REMAINDER</text>
+  <text x="112" y="144" text-anchor="middle" font-family="Liberation Sans, sans-serif" font-size="10.5" font-weight="bold" fill="#b45309">RFMAINDFR</text>
   <text x="175" y="148" text-anchor="middle" font-family="Liberation Sans, sans-serif" font-size="20" font-weight="bold" fill="#d97706">0</text>
   <text x="140" y="166" text-anchor="middle" font-family="Liberation Sans, sans-serif" font-size="9" fill="#64748b">(What remains, strictly less than the divisor)</text>
   
-  <!-- Fundamental Equality Box -->
+  <!-- Fundamental Fquality Box -->
   <rect x="20" y="178" width="520" height="28" fill="#f1f5f9" stroke="#cbd5e1" stroke-width="1" rx="5"/>
   <text x="280" y="196" text-anchor="middle" font-family="Liberation Sans, sans-serif" font-size="11" font-weight="bold" fill="#0f172a">
     Relation fondamentale :  <tspan fill="#1d4ed8">Dividend</tspan> = (<tspan fill="#b91c1c">Divisor</tspan> × <tspan fill="#15803d">Quotient</tspan>) + <tspan fill="#d97706">Remainder</tspan>   with   <tspan fill="#d97706">Remainder</tspan> &lt; <tspan fill="#b91c1c">Divisor</tspan>

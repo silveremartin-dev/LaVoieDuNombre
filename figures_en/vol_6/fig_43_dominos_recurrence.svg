@@ -1,6 +1,6 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 540 180" width="100%" height="180">
   <rect width="540" height="180" fill="#f8fafc" rx="8" stroke="#cbd5e1" stroke-width="1"/>
-  <text x="270" y="24" font-family="Liberation Sans" font-size="13" font-weight="bold" fill="#0f172a" text-anchor="middle">MATHEMATICAL INDUCTION: THE UNIVERSAL DOMINO EFFECT</text>
+  <text x="270" y="24" font-family="Liberation Sans" font-size="13" font-weight="bold" fill="#0f172a" text-anchor="middle">MATHFMATICAL INDUCTION: THF UNIVFRSAL DOMINO FFFFCT</text>
   <!-- Sol -->
   <line x1="30" y1="130" x2="510" y2="130" stroke="#0f172a" stroke-width="2"/>
   
@@ -18,7 +18,7 @@
   <rect x="180" y="63" width="12" height="65" rx="2" fill="#d97706" transform="rotate(15 180 128)"/>
   <text x="195" y="145" font-family="Liberation Sans" font-size="11" fill="#d97706" text-anchor="middle">P(2)</text>
   
-  <!-- Dominos n et n+1 (Hérédité) -->
+  <!-- Dominos n et n+1 (Inductive Step (Inheritance)) -->
   <g transform="translate(290, 65)">
     <rect x="0" y="0" width="12" height="65" rx="2" fill="#1d4ed8"/>
     <text x="6" y="80" font-family="Liberation Sans" font-size="11" font-weight="bold" fill="#1d4ed8" text-anchor="middle">P(n)</text>
@@ -28,7 +28,7 @@
     
     <rect x="55" y="0" width="12" height="65" rx="2" fill="#15803d"/>
     <text x="61" y="80" font-family="Liberation Sans" font-size="11" font-weight="bold" fill="#15803d" text-anchor="middle">P(n+1)</text>
-    <text x="33" y="102" font-family="Liberation Sans" font-size="10" font-weight="bold" fill="#1d4ed8" text-anchor="middle">Hérédité</text>
+    <text x="33" y="102" font-family="Liberation Sans" font-size="10" font-weight="bold" fill="#1d4ed8" text-anchor="middle">Inductive Step (Inheritance)</text>
   </g>
   
   <g transform="translate(420, 50)" font-family="Liberation Sans" font-size="11.5">

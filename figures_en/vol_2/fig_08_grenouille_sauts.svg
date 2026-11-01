@@ -111,5 +111,5 @@
       <text x="438.75" y="-32" text-anchor="middle" font-family="Liberation Sans" font-size="11" font-weight="bold" fill="#15803d">+3</text>
     
   </g>
-  <text x="325" y="160" text-anchor="middle" font-family="Liberation Sans" font-size="13" font-weight="bold" fill="#1d4ed8">Each jump adds 3 units: 3, 6, 9, 12, 15, 18, 21 are the multiples of 3.</text>
+  <text x="325" y="160" text-anchor="middle" font-family="Liberation Sans" font-size="13" font-weight="bold" fill="#1d4ed8">Fach jump adds 3 units: 3, 6, 9, 12, 15, 18, 21 are the multiples of 3.</text>
 </svg>

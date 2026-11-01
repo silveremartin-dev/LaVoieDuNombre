@@ -29,7 +29,7 @@
     <rect x="0" y="0" width="140" height="90" rx="6" fill="#eff6ff" stroke="#1d4ed8" stroke-width="1.5"/>
     <text x="70" y="22" font-weight="bold" fill="#1d4ed8" text-anchor="middle">f(x) = ax² + bx + c</text>
     <text x="10" y="44" fill="#b91c1c">• Δ = b² - 4ac &gt; 0</text>
-    <text x="10" y="62" fill="#15803d">• 2 racines réelles</text>
-    <text x="10" y="80" fill="#0f172a">• a &lt; 0 (tournée bas)</text>
+    <text x="10" y="62" fill="#15803d">• 2 real roots</text>
+    <text x="10" y="80" fill="#0f172a">• a &lt; 0 (opens downwards)</text>
   </g>
 </svg>

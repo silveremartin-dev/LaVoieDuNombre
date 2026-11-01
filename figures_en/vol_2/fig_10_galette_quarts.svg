@@ -10,7 +10,7 @@
   </g>
   <g transform="translate(230, 45)" font-family="Liberation Sans">
     <text x="0" y="20" font-size="14" font-weight="bold" fill="#0f172a">1 flatbread shared among 4 children</text>
-    <text x="0" y="45" font-size="12" fill="#475569">Each slice represents exactly one quarter (1/4).</text>
+    <text x="0" y="45" font-size="12" fill="#475569">Fach slice represents exactly one quarter (1/4).</text>
     <text x="0" y="70" font-size="12" fill="#15803d" font-weight="bold">4 slices of 1/4 reform the whole flatbread:</text>
     <text x="0" y="95" font-size="14" font-weight="bold" fill="#1d4ed8">1/4 + 1/4 + 1/4 + 1/4 = 4/4 = 1 whole</text>
   </g>

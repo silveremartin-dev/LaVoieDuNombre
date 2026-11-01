@@ -1,6 +1,6 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 540 220" width="100%" height="220">
   <rect width="540" height="220" fill="#f8fafc" rx="8" stroke="#cbd5e1" stroke-width="1"/>
-  <text x="270" y="24" font-family="Liberation Sans" font-size="13" font-weight="bold" fill="#0f172a" text-anchor="middle">DÉMONSTRATION GÉOMÉTRIQUE : (a + b)² = a² + 2ab + b²</text>
+  <text x="270" y="24" font-family="Liberation Sans" font-size="13" font-weight="bold" fill="#0f172a" text-anchor="middle">GFOMFTRIC PROOF: (a + b)² = a² + 2ab + b²</text>
   <g transform="translate(80, 45)">
     <!-- Carré a² (bleu) -->
     <rect x="0" y="0" width="90" height="90" fill="#eff6ff" stroke="#1d4ed8" stroke-width="2"/>

@@ -2,7 +2,7 @@
   <rect width="540" height="210" fill="#f8fafc" rx="8" stroke="#cbd5e1" stroke-width="1"/>
   <!-- Asymptote verticale -->
   <g transform="translate(80, 110)">
-    <text x="60" y="-85" font-family="Liberation Sans" font-size="12" font-weight="bold" fill="#b91c1c" text-anchor="middle">Asymptote Vertical x = a</text>
+    <text x="60" y="-85" font-family="Liberation Sans" font-size="12" font-weight="bold" fill="#b91c1c" text-anchor="middle">Vertical Asymptote x = a</text>
     <line x1="-50" y1="40" x2="160" y2="40" stroke="#0f172a" stroke-width="1.5"/>
     <line x1="0" y1="80" x2="0" y2="-70" stroke="#0f172a" stroke-width="1.5"/>
     <!-- Ligne verticale x = 50 -->
@@ -14,7 +14,7 @@
   </g>
   <!-- Asymptote horizontale -->
   <g transform="translate(340, 110)">
-    <text x="60" y="-85" font-family="Liberation Sans" font-size="12" font-weight="bold" fill="#15803d" text-anchor="middle">Asymptote Horizontal y = L</text>
+    <text x="60" y="-85" font-family="Liberation Sans" font-size="12" font-weight="bold" fill="#15803d" text-anchor="middle">Horizontal Asymptote y = L</text>
     <line x1="-50" y1="40" x2="160" y2="40" stroke="#0f172a" stroke-width="1.5"/>
     <line x1="0" y1="80" x2="0" y2="-70" stroke="#0f172a" stroke-width="1.5"/>
     <!-- Ligne horizontale y = -20 -->
