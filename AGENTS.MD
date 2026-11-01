@@ -1,90 +1,89 @@
-# AGENT.MD — MANIFESTE, OBJECTIFS ET DIRECTIVES DE CONCEPTION
-## Projet : « LA VOIE DU NOMBRE — Une Odyssée Constructive, du Premier Caillou au Baccalauréat »
+# AGENTS.MD — MANIFESTO, PEDAGOGICAL OBJECTIVES, AND DESIGN DIRECTIVES
+## Project: "THE WAY OF THE NUMBER — A Constructive Odyssey, from the First Pebble to Advanced High School Mathematics"
 
-> Ce document définit l'architecture intellectuelle, les objectifs pédagogiques fondamentaux, l'analyse des obstacles cognitifs et les protocoles opérationnels que tout agent (humain ou IA) doit respecter lors de la rédaction, de la révision ou de l'extension de la collection.
-
----
-
-## 1. TITRE ET IDENTITÉ DE L'ŒUVRE
-
-- **Titre Officiel :** *LA VOIE DU NOMBRE*
-- **Sous-titre :** *Une Odyssée Constructive, du Premier Caillou au Baccalauréat*
-- **Livre Compagnon :** *LE GUIDE DE L'ACCOMPAGNATEUR — Fondations Didactiques, Épistémologiques et Clés Pratiques*
-- **Architecture :** 58 chapitres répartis en 6 volumes d'apprentissage progressif (CP à Terminale Spécialité et Maths Expertes).
+> This document defines the intellectual architecture, fundamental pedagogical objectives, analysis of cognitive obstacles, and operational protocols that any agent (human or AI) must respect when writing, revising, or expanding the collection.
 
 ---
 
-## 2. LES TROIS IMPÉRATIFS ÉPISTÉMOLOGIQUES MAJEURS (ISSUES DE L'AUDIT INDÉPENDANT)
+## 1. TITLE AND IDENTITY OF THE WORK
 
-L'audit épistémologique et didactique indépendant a dégagé trois principes recteurs qui doivent guider toute contribution :
-
-### A. Le Dépassement de « l'Obstacle Métaphorique » (Bachelard / Brousseau vs Lakoff)
-La métaphore corporelle (le tas de cailloux, la marche sur le sentier, le rectangle de briques, la planche de ski) est indispensable pour allumer l'étincelle de la compréhension sans sidération. **Cependant, toute métaphore physique devient un obstacle épistémologique si elle n'est pas émancipée au bon moment.**
-- *La limite du rectangle :* la multiplication est d'abord une aire rectangulaire ($4 \times 6 = 24$). Mais cette image s'effondre pour le produit de deux nombres négatifs ($(-3) \times (-5) = +15$) ou de probabilités ($\frac{1}{2} \times \frac{1}{3} = \frac{1}{6}$). L'élève doit comprendre que la règle des signes relève de la **cohérence algébrique de la distributivité**, et non d'une géométrie impossible à surfaces négatives.
-- *La limite du skieur :* la dérivée comme planche sous les semelles fonctionne pour les courbes lisses ($C^1$). Elle devient un piège devant les points anguleux ($|x|$ en 0) ou les fonctions oscillantes ($x^2 \sin(1/x)$).
-- **Règle d'or :** L'expérience sensible est l'échafaudage de lancement ; dès que l'outil est éprouvé, l'agent doit expliciter la transition vers le formalisme logique autonome.
-
-### B. La Gestion de la Mémoire de Travail et la Symétrie de Charge
-- *La dérive verbale :* à vouloir tout expliquer par de longues proses narratives, l'ouvrage risque d'épuiser l'élève de 16-17 ans devant des chapitres de 50 à 70 Ko.
-- **Règle d'or :** La narration historique et humaine doit immédiatement être relayée par :
-  1. Des fiches réflexes structurées (« Ce qu'il faut retenir »).
-  2. Des arbres de décision algorithmiques clairs.
-  3. Des **gammes mécaniques d'automatismes (drill)** pour libérer 100 % de la mémoire de travail avant d'aborder des problèmes complexes.
-
-### C. L'Impasse du « Tout-Texte » en Géométrie : Le Primat des Figures Vectorielles
-- La géométrie ne peut pas s'enseigner par du texte seul ou des approximations typographiques en ASCII.
-- Selon la théorie des registres sémiotiques (Duval), l'intelligence géométrique naît du va-et-vient constant entre le tracé visuel et l'équation algébrique.
-- **Règle d'or :** Tout chapitre de géométrie, d'analyse ou de cinématique doit comporter des figures vectorielles nettes (SVG nativement inclus dans le Markdown, schémas Typst/CeTZ haute précision en PDF, diagrammes Mermaid pour les arbres de probabilités et organigrammes décisionnels, et illustrations générées pertinentes).
+- **Official Title:** *THE WAY OF THE NUMBER* (*La Voie du Nombre*)
+- **Subtitle:** *A Constructive Odyssey, from the First Pebble to Advanced High School Mathematics*
+- **Companion Book:** *THE COMPANION GUIDE — Didactic Foundations, Epistemological Pillars, and Practical Keys* (*Le Guide de l'Accompagnateur*)
+- **Architecture:** 58 chapters distributed across 6 progressive learning volumes (Grade 1 / CP to Grade 12 / Terminale Spécialité & Advanced Mathematics).
 
 ---
 
-## 3. LA DOCTRINE DU « LABORATOIRE DES CAS LIMITES »
+## 2. THE THREE MAJOR EPISTEMOLOGICAL IMPERATIVES (FROM THE INDEPENDENT AUDIT)
 
-Pour éviter de saturer l'attention cognitive de l'élève lors de la phase d'acquisition du geste principal, les cas pathologiques doivent être **isolés** :
-1. **Étape 1 — Le Réflexe Central :** On apprend d'abord la règle générale sur des cas massifs (ex. $4 \times 3 = 12$, la dérivée d'un polynôme, la division par un entier positif non nul).
-2. **Étape 2 — L'Enclos du Cas Limite :** Dans une sous-section séparée (`🛠️ Le Laboratoire des Cas Limites`), on explore les frontières sans polluer le réflexe :
-   - Que fait $4 \times 0$ ? Que fait $0 \times 0$ ?
-   - Pourquoi $\frac{0}{5} = 0$, mais $\frac{5}{0}$ est rigoureusement impossible ?
-   - Pourquoi $a^0 = 1$, et pourquoi $0^0$ est indéterminé ?
-   - Pourquoi le vecteur nul $\vec{0}$ a une norme nulle et toutes les directions à la fois ?
+The independent epistemological and didactic audit established three guiding principles that must govern any contribution:
 
----
+### A. Overcoming the "Metaphorical Obstacle" (Bachelard / Brousseau vs. Lakoff)
+Embodied physical metaphors (the heap of pebbles, walking along the trail, the brick rectangle, the ski board) are indispensable for sparking comprehension without paralysis. **However, every physical metaphor becomes an epistemological obstacle if it is not emancipated at the appropriate moment.**
+- *The limit of the rectangle:* multiplication is initially introduced as a rectangular area ($4 \times 6 = 24$). But this imagery collapses when multiplying two negative numbers ($(-3) \times (-5) = +15$) or probabilities ($\frac{1}{2} \times \frac{1}{3} = \frac{1}{6}$). The student must grasp that the sign rule stems from the **algebraic consistency of distributivity**, and not from an impossible geometry with negative surfaces.
+- *The limit of the skier:* the derivative visualized as a ski board under the soles works for smooth curves ($C^1$). It becomes a trap when facing sharp corners ($|x|$ at 0) or oscillating functions ($x^2 \sin(1/x)$).
+- **Golden Rule:** Sensible experience is the launch scaffold; as soon as the tool has been practiced, the agent must make explicit the transition toward autonomous logical formalism.
 
-## 4. LA CHARTE GRAPHIQUE CHROMATIQUE D'OLIVER BYRNE (1847)
+### B. Working Memory Management and Cognitive Load Symmetry
+- *Verbal drift:* by attempting to explain everything through lengthy narrative prose, the work risks exhausting a 16–17-year-old student faced with chapters of 50 to 70 KB.
+- **Golden Rule:** Historical and human narrative must immediately be followed by:
+  1. Structured reflex summary cards ("Core Takeaways / What You Need to Remember").
+  2. Clear algorithmic decision trees.
+  3. **Mechanical automation drills** to free 100% of working memory before tackling complex problems.
 
-Toutes les figures SVG et schémas du livre respectent le code couleur fonctionnel :
-- **Bleu (#1d4ed8) :** L'action motrice, l'avancée horizontale, l'axe des abscisses $x$, le premier vecteur $\vec{u}$, le côté horizontal.
-- **Rouge (#b91c1c) :** La contrainte, la hauteur verticale $y$, l'obstacle, la réaction, le deuxième vecteur $\vec{v}$.
-- **Jaune / Ambre (#d97706) :** Le produit, l'aire intérieure, l'énergie, le double produit $2ab$, le quotient.
-- **Vert (#15803d) :** Le bilan global (Chasles), la validation, le résultat, la tangente stable.
-- **Noir / Ardoise (#0f172a) :** Le squelette d'ancrage, les axes neutres, la grille de fond.
-
----
-
-## 5. TECHNOLOGIES ET FORMATS D'EXPORTATION
-
-- **Markdown enrichi :** formules en LaTeX `$...$` et `$$...$$`, figures vectorielles SVG inline intégrées directement dans les fichiers `.md`.
-- **Diagrammes structurels :** blocs `mermaid` pour les arbres de probabilités, flux algorithmiques et classifications.
-- **Typst pour l'édition de référence (PDF) :** typographie soignée, pagination continue, table des matières dynamique, index des notions et bibliographie patrimoniale complète.
-
+### C. The Dead-End of "All-Text" Geometry: Primacy of Vector Graphics
+- Geometry cannot be taught through text alone or typographical ASCII approximations.
+- According to Duval's theory of semiotic registers, geometric insight emerges from constant back-and-forth between visual diagrams and algebraic equations.
+- **Golden Rule:** Every chapter in geometry, analysis, or kinematics must include sharp vector figures (SVG natively embedded within Markdown, high-precision Typst/CeTZ diagrams in PDF, Mermaid diagrams for probability trees and decision flowcharts, and relevant curated illustrations).
 
 ---
 
-## 5 bis. MISE EN PAGE ET FOLIOTAGE
+## 3. THE DOCTRINE OF THE "EDGE-CASE LABORATORY"
 
-1. **Foliotage éditorial (numérotation des pages) :**
-   - *Comptage vs affichage :* tout le bloc intérieur est compté, mais le folio n'est visible que sur les pages de texte courant.
-   - *Couverture hors décompte :* les plats 1, 2, 3 et 4 (première, intérieurs et quatrième de couverture) ne sont jamais comptés ni foliotés ; la couverture n'est **jamais** la page 1.
-   - *Page 1 = première belle page du bloc intérieur :* p. 1 faux-titre (recto), p. 2 blanche (verso), p. 3 grand titre, p. 4 mentions légales, p. 5 exergue/dédicace, p. 6 blanche, puis sommaire — toutes comptées mais **muettes**.
-   - *Recto/verso :* pages impaires à droite, paires à gauche. Toute ouverture de partie, de chapitre ou d'annexe se fait en belle page (impaire) et reste muette ; le premier folio visible apparaît sur la page suivante.
-   - *Pages blanches :* comptées dans l'ordre arithmétique, jamais de folio ni de titre courant.
-   - *Placement :* folio centré ou sur la marge extérieure (gauche sur les pages paires, droite sur les impaires), **jamais côté reliure (petit fond)**.
-   - *Fin de bloc :* le bloc intérieur se termine sur une page paire (verso), suivi des plats 3 et 4.
+To avoid overloading the student's cognitive bandwidth during initial skill acquisition, pathological cases must be **isolated**:
+1. **Step 1 — The Core Reflex:** The general rule is first learned on robust, standard cases (e.g., $4 \times 3 = 12$, derivative of a polynomial, division by a non-zero positive integer).
+2. **Step 2 — The Edge-Case Enclosure:** In a dedicated separate subsection (`🛠️ The Edge-Case Laboratory`), boundary conditions are explored without polluting the core reflex:
+   - What happens with $4 \times 0$? What is $0 \times 0$?
+   - Why is $\frac{0}{5} = 0$, but $\frac{5}{0}$ is strictly undefined and impossible?
+   - Why is $a^0 = 1$, and why is $0^0$ an indeterminate form?
+   - Why does the zero vector $\vec{0}$ have zero magnitude and all directions simultaneously?
 
 ---
 
-## 6. LICENCE ET DIFFUSION LIBRE
+## 4. OLIVER BYRNE'S COLOR SEMIOTIC CHARTER (1847)
 
-L'ensemble de l'œuvre (*La Voie du Nombre* et *Le Guide de l'Accompagnateur*), textes, figures vectorielles et scripts de compilation, est publié sous licence **Creative Commons Attribution - Partage dans les Mêmes Conditions 4.0 International (CC BY-SA 4.0)**.
-- Le code source Markdown et les figures SVG sont hébergés et versionnés sur un dépôt GitHub public.
-- Les auteurs encouragent la redistribution, l'adaptation et la réutilisation pédagogique sous réserve de mention des crédits originaux et de partage sous licence identique.
+All SVG diagrams and book illustrations adhere to a functional color code:
+- **Blue (#1d4ed8):** Driving motor action, horizontal forward motion, abscissa axis $x$, first vector $\vec{u}$, horizontal side.
+- **Red (#b91c1c):** Vertical constraint, height $y$, obstacle, reaction, second vector $\vec{v}$.
+- **Yellow / Amber (#d97706):** Product, internal surface area, energy, cross-term $2ab$, quotient.
+- **Green (#15803d):** Overall balance (Chasles' relation), validation, final result, stable tangent.
+- **Black / Slate (#0f172a):** Anchoring framework, neutral axes, background grid.
+
+---
+
+## 5. TECHNOLOGIES AND EXPORT FORMATS
+
+- **Enriched Markdown:** LaTeX formulas `$...$` and `$$...$$`, inline SVG vector figures natively integrated directly in `.md` files.
+- **Structural Diagrams:** `mermaid` code blocks for probability trees, algorithmic flows, and conceptual classifications.
+- **Typst for the Definitive Reference Edition (PDF):** meticulous typography, continuous pagination, dynamic table of contents, concept index, and comprehensive heritage bibliography.
+
+---
+
+## 5 bis. LAYOUT AND EDITORIAL FOLIATION
+
+1. **Editorial Foliation (Page Numbering):**
+   - *Counting vs. Display:* The entire interior block is counted, but folios are visible only on body text pages.
+   - *Covers excluded from counting:* Covers 1, 2, 3, and 4 (front cover, inside covers, back cover) are never counted or numbered; the front cover is **never** page 1.
+   - *Page 1 = first recto page of interior block:* p. 1 half-title (recto), p. 2 blank (verso), p. 3 full title, p. 4 copyright/legal notices, p. 5 epigraph/dedication, p. 6 blank, then table of contents — all counted but **mute** (no printed page number).
+   - *Recto/Verso:* Odd pages on the right, even pages on the left. Every opening of a part, volume, chapter, or appendix starts on a recto (odd) page and remains mute in the header; the first visible folio appears on the subsequent page (or in the footer for chapter openers).
+   - *Blank pages:* Counted in arithmetic order, never displaying folios or running headers.
+   - *Placement:* Folios centered or placed on the outer margin (left on even pages, right on odd pages), **never on the inner gutter (binding side)**.
+   - *Block ending:* The interior block ends on an even page (verso), followed by inside back cover (Cover 3) and back cover (Cover 4).
+
+---
+
+## 6. OPEN LICENSING AND FREE DISTRIBUTION
+
+The entire work (*The Way of the Number* and *The Companion Guide*), including texts, vector graphics, and compilation scripts, is released under the **Creative Commons Attribution-ShareAlike 4.0 International (CC BY-SA 4.0)** license.
+- The Markdown source code and SVG figures are hosted and versioned on a public GitHub repository.
+- The authors encourage redistribution, adaptation, and pedagogical reuse, provided original credits are attributed and derivatives are shared under an identical license.
