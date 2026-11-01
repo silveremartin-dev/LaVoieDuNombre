@@ -293,7 +293,7 @@
   breakable: false
 )[
   #block(sticky: true, width: 100%)[
-    #text(size: 10.5pt, weight: "bold", fill: byrne-red, font: "Liberation Sans")[#title]
+    #text(size: 10.5pt, weight: "bold", fill: byrne-red, font: "Liberation Sans")[⚠️ #title]
     #v(3pt)
   ]
   #body
@@ -607,7 +607,7 @@
   "L'ÂGE DE LA MAIN ET DE LA SAVANE",
   "6 - 8 ans / CP - CE1",
   "De l'éveil du regard préhistorique aux premières manipulations de cailloux, ce premier volume pose les fondations concrètes du sens du nombre, de la numération décimale et des opérations élémentaires.",
-  ("Chapitre 1 : Les Yeux du Singe et le Sac de Cailloux", "Chapitre 2 : La Main à Cinq Doigts et les Paquets de Dix", "Chapitre 3 : La Chasse Partagée et la Balance de Justice", "Chapitre 4 : Le Boulier du Marchand et la Retenue Voyageuse", "Chapitre 5 : La Grande Règle au Sol et le Saut de Grenouille", "Chapitre 6 : Le Rectangle de Carreaux et la Multiplication", "Chapitre 7 : Le Sac de Noisettes et le Reste Mystérieux", "Chapitre 8 : L'Arche des Formes et les Premiers Tracés"),
+  ("Chapitre 1 : Les Yeux du Singe et le Sac de Cailloux", "Chapitre 2 : La Main à Cinq Doigts et les Paquets de Dix", "Chapitre 3 : La Chasse Partagée et la Balance de Justice", "Chapitre 4 : Le Boulier du Marchand et la Retenue Voyageuse", "Chapitre 5 : Le Mur de Briques et les Rectangles Magiques", "Chapitre 6 : La Coudée du Pharaon et le Sablier", "Chapitre 7 : Les Formes du Monde et la Ficelle du Jardinier"),
   "En regard : Le pavage hexagonal des alvéoles d'abeilles (Apis mellifera)."
 )
 
@@ -1095,7 +1095,7 @@ oisillon. Quel chiffre écris-tu pour chaque nid ? #emph[Résolution :]
 <exercices>
 ==== Niveau  (Je m'entraîne et j'applique)
 <niveau-je-mentraîne-et-japplique>
-#strong[Exercice 1.] Coup d'œil flash ! Regarde les trois dessins
+#strong[Exercice 1.1] Coup d'œil flash ! Regarde les trois dessins
 ci-dessous pendant un seul battement de cil. Donne la quantité de ronds
 de chaque boîte sans pointer ton doigt :
 
@@ -1103,20 +1103,20 @@ de chaque boîte sans pointer ton doigt :
 - Boîte B : ``
 - Boîte C : `    `
 
-#strong[Exercice 2.] Les chevaux et les selles. Dans un pré, il y a 4
+#strong[Exercice 1.2] Les chevaux et les selles. Dans un pré, il y a 4
 chevaux. Dans l'écurie, il y a 4 selles. Y a-t-il assez de selles pour
 que chaque cheval en reçoive une ? Utilise l'expression exacte.
 
-#strong[Exercice 3.] Les lapins et les carottes. Sur la table, tu as 3
+#strong[Exercice 1.3] Les lapins et les carottes. Sur la table, tu as 3
 lapins en peluche et 5 carottes en plastique. Relie chaque lapin à une
 carotte. Reste-t-il des carottes ? Y a-t-il plus de lapins ou plus de
 carottes ?
 
-#strong[Exercice 4.] Tracer les chiffres. Prends une feuille blanche et
+#strong[Exercice 1.4] Tracer les chiffres. Prends une feuille blanche et
 trace cinq fois de suite, bien proprement entre deux lignes : le chiffre
 #strong[2], le chiffre #strong[4] et le chiffre #strong[7].
 
-#strong[Exercice 5.] Le nid vide. Sur une branche, il y a 3 nids. Le
+#strong[Exercice 1.5] Le nid vide. Sur une branche, il y a 3 nids. Le
 premier contient 2 œufs, le deuxième contient 4 œufs, le troisième ne
 contient rien du tout. Écris sur ton cahier la liste des trois chiffres
 qui correspondent aux œufs de ces nids.
@@ -1125,28 +1125,28 @@ qui correspondent aux œufs de ces nids.
 
 ==== Niveau  (Je réfléchis et je compare)
 <niveau-je-réfléchis-et-je-compare>
-#strong[Exercice 6.] Le jeu du loup et du berger. Un berger a 6 cailloux
+#strong[Exercice 1.6] Le jeu du loup et du berger. Un berger a 6 cailloux
 dans sa bourse au départ du matin. Le soir, 5 brebis sont rentrées dans
 l'enclos, et le berger a retiré un caillou pour chacune d'elles. 1.
 Combien de cailloux reste-t-il dans la bourse ? 2. Toutes les brebis
 sont-elles à l'abri ? Que doit faire le berger ?
 
-#strong[Exercice 7.] Le piège des grands pas. Lola pose 4 gros coussins
+#strong[Exercice 1.7] Le piège des grands pas. Lola pose 4 gros coussins
 très espacés dans le salon. Tom pose 5 petites gommes serrées sur son
 bureau. Lola dit : #emph[« C'est moi qui ai le plus d'objets, car ma
 ligne va d'un bout à l'autre du salon ! »] A-t-elle raison ? Explique
 pourquoi avec la correspondance un-pour-un.
 
-#strong[Exercice 8.] Les oiseaux sur le fil. Sur un fil électrique, 5
+#strong[Exercice 1.8] Les oiseaux sur le fil. Sur un fil électrique, 5
 moineaux sont posés. 3 moineaux s'envolent d'un coup. Y a-t-il
 maintenant plus d'oiseaux sur le fil ou plus d'oiseaux dans le ciel ?
 
-#strong[Exercice 9.] Les bougies du gâteau. Pour son anniversaire, Léo a
+#strong[Exercice 1.9] Les bougies du gâteau. Pour son anniversaire, Léo a
 planté 6 bougies sur son gâteau. Sa petite sœur Maya a 4 bougies sur le
 sien. 1. Qui est le plus âgé ? 2. Combien de bougies Léo a-t-il de plus
 que Maya ?
 
-#strong[Exercice 10.] Chiffre ou nombre ? Dans les phrases suivantes,
+#strong[Exercice 1.10] Chiffre ou nombre ? Dans les phrases suivantes,
 dis si le mot souligné est un #strong[chiffre] ou un #strong[nombre] :
 \1. « Pour écrire le nombre 38, j'utilise le #strong[3] et le
 #strong[8]. » 2. « Dans ce panier, il y a un #strong[38] pommes. » 3. «
@@ -1156,7 +1156,7 @@ Mon numéro de dossard pour la course est le #strong[7]. »
 
 ==== Niveau  (Petits défis et énigmes)
 <niveau-petits-défis-et-énigmes>
-#strong[Exercice 11.] Le festin des écureuils gourmands. Quatre
+#strong[Exercice 1.11] Le festin des écureuils gourmands. Quatre
 écureuils (Grisou, Roux, Noisette et Câlin) ont chacun ramassé des
 glands :
 
@@ -1167,14 +1167,14 @@ glands :
 Range les quatre écureuils du plus gourmand (celui qui a le plus de
 glands) au moins gourmand.
 
-#strong[Exercice 12.] Le troupeau mystère. Un berger sort son troupeau
+#strong[Exercice 1.12] Le troupeau mystère. Un berger sort son troupeau
 le matin avec son sac de cailloux. Pendant la journée dans la prairie,
 deux brebis donnent naissance chacune à un petit agneau tout neuf. Le
 soir, toutes les bêtes (brebis et agneaux) rentrent dans l'enclos, et le
 berger retire un caillou de sa bourse pour chaque bête qui passe la
 porte. Que va-t-il se passer à la fin pour le berger ?
 
-#strong[Exercice 13.] Les dominos menteurs. Observe ces trois dominos :
+#strong[Exercice 1.13] Les dominos menteurs. Observe ces trois dominos :
 
 - Domino 1 : `[ • • | • • • ]`
 - Domino 2 : `[ • • • • | • ]`
@@ -1183,7 +1183,7 @@ porte. Que va-t-il se passer à la fin pour le berger ?
 Deux de ces dominos portent au total exactement le même nombre de
 points. Lesquels ?
 
-#strong[Exercice 14.] Le code secret de la caverne. Pour ouvrir la porte
+#strong[Exercice 1.14] Le code secret de la caverne. Pour ouvrir la porte
 secrète de la grotte, il faut taper un code formé de trois chiffres
 différents :
 
@@ -1194,7 +1194,7 @@ différents :
 
 Quel est le code secret à trois chiffres ?
 
-#strong[Exercice 15.] Le défi d'Ayumu à la maison. Prends 5 cartes à
+#strong[Exercice 1.15] Le défi d'Ayumu à la maison. Prends 5 cartes à
 jouer numérotées de 1 à 5. Mélange-les et pose-les face cachée sur la
 table devant toi. Demande à ton accompagnateur d'en retourner 3 au
 hasard pendant 2 secondes, puis de les recouvrir. Peux-tu nommer de
@@ -1205,54 +1205,54 @@ record de vitesse !
 
 === Solutions
 <solutions>
-#strong[Exercice 1.] - Boîte A : #strong[2]. - Boîte B : #strong[1]. -
+#strong[Solution 1.1] - Boîte A : #strong[2]. - Boîte B : #strong[1]. -
 Boîte C : #strong[3].
 
 Ton œil a reconnu ces quantités par subitizing sans avoir besoin de les
 compter une à une.
 
-#strong[Exercice 2.] Chaque cheval reçoit une selle et il ne reste
+#strong[Solution 1.2] Chaque cheval reçoit une selle et il ne reste
 aucune selle. Il y a #strong[autant] de selles que de chevaux.
 
-#strong[Exercice 3.] Si on relie chaque lapin à une carotte, 3 lapins
+#strong[Solution 1.3] Si on relie chaque lapin à une carotte, 3 lapins
 prennent 3 carottes. Il reste 2 carottes toutes seules. Il y a
 #strong[plus de carottes que de lapins] (ou moins de lapins que de
 carottes).
 
-#strong[Exercice 4.] Vérifie avec ton accompagnateur que ton crayon est
+#strong[Solution 1.4] Vérifie avec ton accompagnateur que ton crayon est
 bien parti du haut pour le 2 et le 7, et que les traits du 4 se coupent
 bien droit à angle droit.
 
-#strong[Exercice 5.] Les chiffres à écrire sont : #strong[2],
+#strong[Solution 1.5] Les chiffres à écrire sont : #strong[2],
 #strong[4], et #strong[0] pour le nid vide.
 
-#strong[Exercice 6.] 1. Il y avait 6 cailloux. On en a retiré 5 pour les
+#strong[Solution 1.6] 1. Il y avait 6 cailloux. On en a retiré 5 pour les
 5 brebis rentrées. Il reste donc #strong[1 caillou] au fond de la bourse
 ($6 - 5 = 1$). 2. Non, toutes les brebis ne sont pas à l'abri : il
 manque une brebis dehors. Le berger doit prendre sa torche et partir la
 chercher dans la nuit.
 
-#strong[Exercice 7.] Lola a tort ! Même si les coussins prennent plus de
+#strong[Solution 1.7] Lola a tort ! Même si les coussins prennent plus de
 place sur le sol, il n'y a que 4 coussins, alors qu'il y a 5 gommes chez
 Tom. Si on associe chaque coussin à une gomme, il reste une gomme sans
 coussin. Il y a donc #strong[plus de gommes que de coussins]. L'espace
 occupé ne change pas la quantité d'objets.
 
-#strong[Exercice 8.] Il y avait 5 moineaux. 3 s'envolent dans le ciel.
+#strong[Solution 1.8] Il y avait 5 moineaux. 3 s'envolent dans le ciel.
 Il en reste 2 sur le fil. Comme 3 est plus grand que 2, il y a
 #strong[plus d'oiseaux dans le ciel que sur le fil].
 
-#strong[Exercice 9.] 1. Léo a 6 bougies et Maya en a 4. C'est
+#strong[Solution 1.9] 1. Léo a 6 bougies et Maya en a 4. C'est
 #strong[Léo] le plus âgé car il a plus de bougies. 2. Si on associe 4
 bougies de Léo aux 4 bougies de Maya, il reste 2 bougies à Léo. Léo a
 #strong[2 bougies de plus] que sa sœur ($6 - 4 = 2$).
 
-#strong[Exercice 10.] 1. Un #strong[chiffre] (ce sont les symboles
+#strong[Solution 1.10] 1. Un #strong[chiffre] (ce sont les symboles
 d'écriture). 2. Un #strong[nombre] (il indique la quantité totale de
 pommes dans le panier). 3. Un #strong[chiffre] (utilisé comme symbole ou
 numéro).
 
-#strong[Exercice 11.] Analysons les informations une par une :
+#strong[Solution 1.11] Analysons les informations une par une :
 
 - Grisou et Roux sont à égalité : ils ont la même quantité.
 - Noisette en a plus que Grisou, donc Noisette est devant Grisou et
@@ -1263,14 +1263,14 @@ Du plus gourmand au moins gourmand, l'ordre est donc :
 #strong[Noisette], puis #strong[Grisou et Roux (ex æquo)], puis
 #strong[Câlin].
 
-#strong[Exercice 12.] Le berger avait un caillou par brebis au départ.
+#strong[Solution 1.12] Le berger avait un caillou par brebis au départ.
 Mais deux agneaux sont nés ! Le soir, il y a donc 2 bêtes de plus que de
 cailloux dans la bourse. Quand toutes les bêtes seront rentrées, la
 bourse sera vide alors qu'il restera encore #strong[2 agneaux] devant la
 porte. Le berger va comprendre avec joie que son troupeau s'est agrandi
 de deux bêtes !
 
-#strong[Exercice 13.] Comptons les points :
+#strong[Solution 1.13] Comptons les points :
 
 - Domino 1 : $2 + 3 = 5$ points.
 - Domino 2 : $4 + 1 = 5$ points.
@@ -1279,12 +1279,12 @@ de deux bêtes !
 Ce sont les #strong[dominos 1 et 2] qui portent exactement le même
 nombre total de points (5 points chacun).
 
-#strong[Exercice 14.] - Nombre d'yeux sur ton visage : 2. - Nombre de
+#strong[Solution 1.14] - Nombre d'yeux sur ton visage : 2. - Nombre de
 pattes d'un chien : 4. - Quantité nulle (rien du tout) : 0.
 
 Le code secret de la caverne est donc : #strong[2 - 4 - 0].
 
-#strong[Exercice 15.] Bravo pour ton entraînement ! Plus tu t'exerces à
+#strong[Solution 1.15] Bravo pour ton entraînement ! Plus tu t'exerces à
 photographier rapidement des petites quantités sans compter avec les
 doigts, plus ton cerveau développe sa mémoire visuelle immédiate,
 exactement comme le jeune singe Ayumu.
@@ -1559,9 +1559,7 @@ Sont-ils identiques ? Absolument pas !
   ]
 )
 
-#quote_box[
-#strong[📐 Règle d'or --- La valeur de position
-]
+#principe(title: [📐 Règle d'or — La valeur de position])[
  En mathématiques, la
 valeur d'un chiffre dépend entièrement de la #strong[place] (la colonne)
 qu'il occupe dans le nombre :
@@ -1596,11 +1594,7 @@ chiffre zéro (0)].
 
 $ 405 = 4 upright(" centaines, ") 0 upright(" dizaine et ") 5 upright(" unités") $
 
-#quote_box[
-#strong[📐 Règle Fondamentale --- Le Rôle du Zéro Gardien de Place
-]
-
-
+#principe(title: [📐 Règle Fondamentale — Le Rôle du Zéro Gardien de Place])[
 - Centaines Dizaines Unités
 - 4 0 5 ---\> 405
 - Le zéro empêche le 4 et le 5 de se coller !
@@ -1656,9 +1650,7 @@ utilisons deux petits symboles très pratiques :
   #strong[supérieur à] ». #emph[Exemple :] $9 > 4$ (9 est plus grand que
   4).
 
-#quote_box[
-#strong[🧭 Méthode --- Le crocodile gourmand
-]
+#methode(title: [🧭 Méthode — Le crocodile gourmand])[
  Imagine que les signes $<$
 et $>$ sont la #strong[bouche grande ouverte d'un crocodile très
 gourmand]. Le crocodile ouvre toujours sa grande gueule vers le plus
@@ -1789,15 +1781,15 @@ donc #strong[6]. 3. En réunissant 6 dizaines et 6 unités, on obtient :
 <exercices-1>
 ==== Niveau  (Je m'entraîne et j'applique)
 <niveau-je-mentraîne-et-japplique-1>
-#strong[Exercice 1.] Combien d'œufs ? Écris sous forme d'un nombre : 1.
+#strong[Exercice 2.1] Combien d'œufs ? Écris sous forme d'un nombre : 1.
 3 boîtes pleines de 10 œufs et 6 œufs isolés. 2. 5 boîtes pleines de 10
 œufs et 1 œuf isolé. 3. 8 boîtes pleines de 10 œufs et aucun œuf isolé.
 
-#strong[Exercice 2.] Dizaines ou unités ? Dans le nombre #strong[73] :
+#strong[Exercice 2.2] Dizaines ou unités ? Dans le nombre #strong[73] :
 \1. Quel est le chiffre des unités ? 2. Quel est le chiffre des dizaines
 ? 3. Que vaut le chiffre 7 ? (7 ou 70 ?)
 
-#strong[Exercice 3.] La bouche du crocodile. Complète avec le signe $<$
+#strong[Exercice 2.3] La bouche du crocodile. Complète avec le signe $<$
 ou $>$ :
 
 - $24 quad dots.h quad 42$
@@ -1805,7 +1797,7 @@ ou $>$ :
 - $89 quad dots.h quad 90$
 - $50 quad dots.h quad 15$
 
-#strong[Exercice 4.] Décomposer en somme. Décompose ces nombres comme
+#strong[Exercice 2.4] Décomposer en somme. Décompose ces nombres comme
 dans l'exemple ($25 = 20 + 5$) :
 
 - $48 = dots.h + dots.h$
@@ -1813,7 +1805,7 @@ dans l'exemple ($25 = 20 + 5$) :
 - $36 = dots.h + dots.h$
 - $94 = dots.h + dots.h$
 
-#strong[Exercice 5.] La droite graduée. Sur une droite graduée de 10 en
+#strong[Exercice 2.5] La droite graduée. Sur une droite graduée de 10 en
 10, quel nombre se trouve exactement à mi-chemin entre 20 et 30 ? Et
 entre 70 et 80 ?
 
@@ -1821,29 +1813,29 @@ entre 70 et 80 ?
 
 ==== Niveau  (Je réfléchis et je compare)
 <niveau-je-réfléchis-et-je-compare-1>
-#strong[Exercice 6.] Le gardien zéro. Écris en chiffres : 1. Cinq
+#strong[Exercice 2.6] Le gardien zéro. Écris en chiffres : 1. Cinq
 centaines, trois dizaines et deux unités. 2. Sept centaines, zéro
 dizaine et quatre unités. 3. Deux centaines, six dizaines et zéro unité.
 Que se passerait-il pour le deuxième nombre si on oubliait d'écrire le
 zéro ?
 
-#strong[Exercice 7.] Le plus grand nombre possible. Avec deux étiquettes
+#strong[Exercice 2.7] Le plus grand nombre possible. Avec deux étiquettes
 portant les chiffres #strong[3] et #strong[8], fabrique : 1. Le plus
 petit nombre à deux chiffres possible. 2. Le plus grand nombre à deux
 chiffres possible. Compare-les ensuite avec le signe $<$.
 
-#strong[Exercice 8.] Ranger dans l'ordre croissant. Range les nombres
+#strong[Exercice 2.8] Ranger dans l'ordre croissant. Range les nombres
 suivants du plus petit au plus grand (ordre croissant), en utilisant le
 signe $<$ :
 $ 54 quad\;quad 19 quad\;quad 72 quad\;quad 45 quad\;quad 78 quad\;quad 9 $
 
-#strong[Exercice 9.] Le compte du marchand de billes. Un marchand range
+#strong[Exercice 2.9] Le compte du marchand de billes. Un marchand range
 ses billes dans des sacs de 10. Il a 67 billes en vrac. 1. Combien de
 sacs complets de 10 billes peut-il remplir ? 2. Combien de billes lui
 restera-t-il hors des sacs ? 3. Combien de billes lui manque-t-il pour
 remplir un sac de plus ?
 
-#strong[Exercice 10.] Encadrement à la dizaine. Trouve la dizaine qui
+#strong[Exercice 2.10] Encadrement à la dizaine. Trouve la dizaine qui
 vient juste avant et la dizaine qui vient juste après chaque nombre :
 
 - $dots.h < 34 < dots.h$
@@ -1854,28 +1846,28 @@ vient juste avant et la dizaine qui vient juste après chaque nombre :
 
 ==== Niveau  (Petits défis et énigmes)
 <niveau-petits-défis-et-énigmes-1>
-#strong[Exercice 11.] Le nombre mystère de grand-mère. « Mon nombre
+#strong[Exercice 2.11] Le nombre mystère de grand-mère. « Mon nombre
 possède 2 chiffres. La somme de mes deux chiffres fait 10
 ($d + u = 10$). Mon chiffre des dizaines est 7. Qui suis-je ? »
 
-#strong[Exercice 12.] Le défi des Mayas et des Gaulois. 1. Un sage maya
+#strong[Exercice 2.12] Le défi des Mayas et des Gaulois. 1. Un sage maya
 compte avec ses mains et ses orteils. Il dit : « J'ai 3 vingtaines et 5
 unités ». Combien cela fait-il en tout pour nous ? 2. Écris le nombre 85
 à la manière d'un Gaulois qui parle de paquets de 20.
 
-#strong[Exercice 13.] Les pirates et le coffre d'or. Des pirates ouvrent
+#strong[Exercice 2.13] Les pirates et le coffre d'or. Des pirates ouvrent
 un coffre contenant 132 pièces d'or. Le capitaine veut faire des bourses
 de 10 pièces chacune. 1. Combien de bourses de 10 pièces entières les
 pirates peuvent-ils former ? 2. Combien de pièces d'or restera-t-il sur
 la table ?
 
-#strong[Exercice 14.] Le nombre inversé. Prends un nombre à deux
+#strong[Exercice 2.14] Le nombre inversé. Prends un nombre à deux
 chiffres dont le chiffre des dizaines est supérieur à celui des unités
 (par exemple 62). Inverse ses deux chiffres (cela donne 26). Est-ce que
 le nouveau nombre est toujours plus petit que le nombre de départ ?
 Explique pourquoi en parlant de la valeur des dizaines.
 
-#strong[Exercice 15.] Le jeu du loto des dizaines. Trouve tous les
+#strong[Exercice 2.15] Le jeu du loto des dizaines. Trouve tous les
 nombres à deux chiffres possibles dont le chiffre des dizaines est
 #strong[5], et dont le chiffre des unités est strictement plus grand que
 \6. Range-les ensuite du plus petit au plus grand.
@@ -1884,71 +1876,71 @@ nombres à deux chiffres possibles dont le chiffre des dizaines est
 
 === Solutions
 <solutions-1>
-#strong[Exercice 1.] 1. 3 boîtes de 10 et 6 œufs = #strong[36]. 2. 5
+#strong[Solution 2.1] 1. 3 boîtes de 10 et 6 œufs = #strong[36]. 2. 5
 boîtes de 10 et 1 œuf = #strong[51]. 3. 8 boîtes de 10 et 0 œuf =
 #strong[80].
 
-#strong[Exercice 2.] 1. Le chiffre des unités est #strong[3]. 2. Le
+#strong[Solution 2.2] 1. Le chiffre des unités est #strong[3]. 2. Le
 chiffre des dizaines est #strong[7]. 3. Le 7 est dans la colonne des
 dizaines : il représente 7 paquets de 10, donc il vaut #strong[70].
 
-#strong[Exercice 3.] - $24 < 42$ (2 dizaines est plus petit que 4
+#strong[Solution 2.3] - $24 < 42$ (2 dizaines est plus petit que 4
 dizaines). - $68 > 61$ (même dizaine 6, mais $8 > 1$). - $89 < 90$ (8
 dizaines est plus petit que 9 dizaines). - $50 > 15$ (5 dizaines contre
 1 dizaine).
 
-#strong[Exercice 4.] - $48 = 40 + 8$ - $72 = 70 + 2$ - $36 = 30 + 6$ -
+#strong[Solution 2.4] - $48 = 40 + 8$ - $72 = 70 + 2$ - $36 = 30 + 6$ -
 $94 = 90 + 4$
 
-#strong[Exercice 5.] - Entre 20 et 30, le milieu exact est #strong[25]
+#strong[Solution 2.5] - Entre 20 et 30, le milieu exact est #strong[25]
 ($20 + 5$). - Entre 70 et 80, le milieu exact est #strong[75]
 ($70 + 5$).
 
-#strong[Exercice 6.] 1. $500 + 30 + 2 = upright(bold(532))$. 2.
+#strong[Solution 2.6] 1. $500 + 30 + 2 = upright(bold(532))$. 2.
 $700 + 0 + 4 = upright(bold(704))$. 3.
 $200 + 60 + 0 = upright(bold(260))$. Si on oubliait le zéro dans le
 deuxième nombre, on écrirait 74, ce qui signifierait 7 dizaines et 4
 unités au lieu de 7 centaines et 4 unités. Le zéro est indispensable
 pour garder la place vide !
 
-#strong[Exercice 7.] 1. Le plus petit nombre : on met le plus petit
+#strong[Solution 2.7] 1. Le plus petit nombre : on met le plus petit
 chiffre en dizaine, soit #strong[38]. 2. Le plus grand nombre : on met
 le plus grand chiffre en dizaine, soit #strong[83]. Comparaison :
 $38 < 83$.
 
-#strong[Exercice 8.] En observant d'abord le nombre de chiffres (9 n'a
+#strong[Solution 2.8] En observant d'abord le nombre de chiffres (9 n'a
 qu'un chiffre, c'est le plus petit), puis les dizaines :
 $ 9 < 19 < 45 < 54 < 72 < 78 $
 
-#strong[Exercice 9.] 1. Dans 67, il y a 6 dizaines : il peut remplir
+#strong[Solution 2.9] 1. Dans 67, il y a 6 dizaines : il peut remplir
 #strong[6 sacs complets] de 10 billes. 2. Il lui reste #strong[7 billes]
 isolées. 3. Pour former un sac de 10 avec 7 billes, il lui manque
 $10 - 7 = upright(bold(3))$ billes.
 
-#strong[Exercice 10.] - $30 < 34 < 40$ - $50 < 58 < 60$ - $80 < 81 < 90$
+#strong[Solution 2.10] - $30 < 34 < 40$ - $50 < 58 < 60$ - $80 < 81 < 90$
 
-#strong[Exercice 11.] Le chiffre des dizaines est 7. On cherche le
+#strong[Solution 2.11] Le chiffre des dizaines est 7. On cherche le
 chiffre des unités tel que $7 + u = 10$. C'est l'ami de 7 pour faire 10,
 c'est-à-dire 3 ($7 + 3 = 10$). Le nombre mystère est donc #strong[73].
 
-#strong[Exercice 12.] 1. 3 vingtaines, c'est $20 + 20 + 20 = 60$. Avec 5
+#strong[Solution 2.12] 1. 3 vingtaines, c'est $20 + 20 + 20 = 60$. Avec 5
 unités en plus, cela donne $60 + 5 = upright(bold(65))$. 2. 85, c'est
 $80 + 5$, soit 4 paquets de vingt et 5 unités. Le Gaulois dirait : «
 #strong[quatre-vingt-cinq] ».
 
-#strong[Exercice 13.] 1. Dans 132, il y a 13 dizaines entières
+#strong[Solution 2.13] 1. Dans 132, il y a 13 dizaines entières
 ($13 times 10 = 130$). Les pirates peuvent donc remplir #strong[13
 bourses] entières. 2. Il restera #strong[2 pièces d'or] toutes seules
 hors des bourses.
 
-#strong[Exercice 14.] Oui, c'est toujours vrai ! Prenons un nombre dont
+#strong[Solution 2.14] Oui, c'est toujours vrai ! Prenons un nombre dont
 les dizaines sont plus grandes que les unités, par exemple 62 ($6 > 2$).
 Au départ, il a 6 dizaines (soit 60). En inversant les chiffres pour
 obtenir 26, il n'a plus que 2 dizaines (soit 20). Comme 2 dizaines est
 strictement inférieur à 6 dizaines, le nombre inversé sera
 #strong[toujours plus petit] que le nombre de départ.
 
-#strong[Exercice 15.] Le chiffre des dizaines doit être 5. Le chiffre
+#strong[Solution 2.15] Le chiffre des dizaines doit être 5. Le chiffre
 des unités doit être strictement supérieur à 6, ce qui laisse le choix
 entre 7, 8 et 9. Les nombres possibles sont donc : #strong[57],
 #strong[58] et #strong[59]. Rangés dans l'ordre croissant :
@@ -2074,9 +2066,7 @@ la marmite est rigoureusement identique :
 
 $ 4 + 3 = 3 + 4 $
 
-#quote_box[
-#strong[📐 Propriété --- La Commutativité de l'addition
-]
+#principe(title: [📐 Propriété — La Commutativité de l'addition])[
  Dans une
 addition, on peut #strong[changer l'ordre des nombres] sans changer le
 résultat final. On dit que l'addition est #strong[commutative].
@@ -2161,9 +2151,7 @@ deux plateaux sont à la même hauteur exacte !
 
 Le chef déclare : #emph[« C'est une égalité ! »]
 
-#quote_box[
-#strong[📐 Règle d'or --- Le signe $=$ est une balance
-]
+#principe(title: [📐 Règle d'or — Le signe $=$ est une balance])[
  Le signe
 #strong[$=$] (égal) ne veut #strong[PAS] dire : « appuie sur le bouton
 et calcule le résultat ». Le signe #strong[$=$] veut dire : #strong[« CE
@@ -2209,12 +2197,7 @@ tête à la vitesse de la lumière !
 On les appelle #strong[les amis de 10] ou les #strong[compléments à 10]
 :
 
-#quote_box[
-#strong[💡 Découverte & Histoire --- Les Amis de 10 et les Paires
-Complémentaires
-]
-
-
+#decouvre(title: [💡 Découverte & Histoire — Les Amis de 10 et les Paires Complémentaires])[
 - 0 + 10 = 10 (et 10 + 0 = 10)
 - 1 + 9 = 10 (et 9 + 1 = 10)
 - 2 + 8 = 10 (et 8 + 2 = 10)
@@ -2223,9 +2206,7 @@ Complémentaires
 - 5 + 5 = 10 (les deux jumeaux des deux mains !)
 ]
 
-#quote_box[
-#strong[🖐️ À toi de jouer --- Le jeu du cintre et des pinces
-]
+#methode(title: [🖐️ À toi de jouer — Le jeu du cintre et des pinces])[
  Prends un
 cintre en plastique. Accroche-y exactement #strong[10 pinces à linge].
 Ferme les yeux. Demande à un ami de glisser un carton au milieu pour
@@ -2366,7 +2347,7 @@ Le sac mystère pèse #strong[7 kg].
 <exercices-2>
 ==== Niveau  (Je m'entraîne et j'applique)
 <niveau-je-mentraîne-et-japplique-2>
-#strong[Exercice 1.] Les amis de 10. Complète les additions à trou sans
+#strong[Exercice 3.1] Les amis de 10. Complète les additions à trou sans
 compter sur tes doigts :
 
 - $7 + dots.h = 10$
@@ -2375,24 +2356,24 @@ compter sur tes doigts :
 - $9 + dots.h = 10$
 - $5 + dots.h = 10$
 
-#strong[Exercice 2.] La balance est-elle droite ? Dis si ces égalités
+#strong[Exercice 3.2] La balance est-elle droite ? Dis si ces égalités
 sont #strong[Vraies] (la balance est en équilibre) ou #strong[Fausses]
 (la balance penche) : 1. $5 + 3 = 8$ 2. $6 + 4 = 7 + 3$ 3.
 $10 - 2 = 5 + 2$ 4. $4 + 4 = 10 - 2$
 
-#strong[Exercice 3.] La ruse du 9. Calcule mentalement en ajoutant 10
+#strong[Exercice 3.3] La ruse du 9. Calcule mentalement en ajoutant 10
 puis en enlevant 1 :
 
 - $15 + 9 = dots.h$
 - $34 + 9 = dots.h$
 - $62 + 9 = dots.h$
 
-#strong[Exercice 4.] Les poussins de la ferme. Dans la cour de la ferme,
+#strong[Exercice 3.4] Les poussins de la ferme. Dans la cour de la ferme,
 8 poussins jaunes picorent des grains. 5 poussins noirs arrivent en
 courant pour manger avec eux. Combien de poussins y a-t-il maintenant
 dans la cour ?
 
-#strong[Exercice 5.] Le goûter d'anniversaire. Maman a préparé 16 parts
+#strong[Exercice 3.5] Le goûter d'anniversaire. Maman a préparé 16 parts
 de tarte aux pommes. À la fin du goûter, les enfants ont mangé 10 parts.
 Combien de parts de tarte reste-t-il sur le plat ?
 
@@ -2400,7 +2381,7 @@ Combien de parts de tarte reste-t-il sur le plat ?
 
 ==== Niveau  (Je réfléchis et je résous)
 <niveau-je-réfléchis-et-je-résous>
-#strong[Exercice 6.] La bonne opération. Pour chaque phrase, écris si tu
+#strong[Exercice 3.6] La bonne opération. Pour chaque phrase, écris si tu
 dois faire une #strong[addition] ou une #strong[soustraction] : 1. «
 Lucas a 8 billes. Il en gagne 4 à la récréation. Combien a-t-il de
 billes ? » 2. « Clara a 14 feutres. 3 feutres ne marchent plus et elle
@@ -2409,7 +2390,7 @@ Arthur a 12 ans et sa cousine Léa a 7 ans. Combien d'années de
 différence ont-ils ? » 4. « Juliette a 8 images. Il lui en faut 15 pour
 terminer sa collection. Combien d'images lui manque-t-il ? »
 
-#strong[Exercice 7.] Équilibrer la balance. Trouve le nombre qui
+#strong[Exercice 3.7] Équilibrer la balance. Trouve le nombre qui
 remplace le point d'interrogation pour que les plateaux soient
 parfaitement en équilibre :
 
@@ -2418,7 +2399,7 @@ parfaitement en équilibre :
 - $13 - ? = 7$
 - $20 = 12 + ?$
 
-#strong[Exercice 8.] Les amis de 100. Trouve le complément à 100 pour
+#strong[Exercice 3.8] Les amis de 100. Trouve le complément à 100 pour
 chaque dizaine pleine :
 
 - $40 + dots.h = 100$
@@ -2426,12 +2407,12 @@ chaque dizaine pleine :
 - $80 + dots.h = 100$
 - $25 + dots.h = 100$ (Indice : pense d'abord à aller à 30 !)
 
-#strong[Exercice 9.] Le problème des crayons de couleur. Dans sa
+#strong[Exercice 3.9] Le problème des crayons de couleur. Dans sa
 trousse, Jade a 18 crayons de couleur. Son amie Manon en a 11. Combien
 de crayons de plus Jade a-t-elle par rapport à Manon ? Écris le calcul
 et la phrase réponse.
 
-#strong[Exercice 10.] Décomposer pour franchir 10. Calcule en
+#strong[Exercice 3.10] Décomposer pour franchir 10. Calcule en
 décomposant le deuxième nombre pour passer par 10 : #emph[Exemple :
 $9 + 6 = 9 + 1 + 5 = 10 + 5 = 15$] -
 $8 + 7 = 8 + dots.h + dots.h = dots.h$ -
@@ -2442,12 +2423,12 @@ $6 + 6 = 6 + dots.h + dots.h = dots.h$
 
 ==== Niveau  (Petits défis et énigmes)
 <niveau-petits-défis-et-énigmes-2>
-#strong[Exercice 11.] Le tour de magie des 3 nombres. Choisis trois
+#strong[Exercice 3.11] Le tour de magie des 3 nombres. Choisis trois
 cartes : #strong[2], #strong[5] et #strong[7]. Écris deux additions
 différentes et deux soustractions différentes en utilisant uniquement
 ces trois nombres !
 
-#strong[Exercice 12.] La pyramide des additions. Dans une pyramide de
+#strong[Exercice 3.12] La pyramide des additions. Dans une pyramide de
 briques, chaque brique est égale à la somme des deux briques posées
 juste sous elle :
 
@@ -2460,7 +2441,7 @@ juste sous elle :
 + Vérifie le premier étage : $3 + 4 = 7$ et $4 + 4 = 8$.
 + Quel nombre doit-on inscrire dans la brique tout en haut ?
 
-#strong[Exercice 13.] Le mystère de l'écureuil économe. Un écureuil a
+#strong[Exercice 3.13] Le mystère de l'écureuil économe. Un écureuil a
 caché 17 noisettes dans le creux d'un arbre le lundi matin.
 
 - Le mardi, il en mange 5.
@@ -2469,13 +2450,13 @@ caché 17 noisettes dans le creux d'un arbre le lundi matin.
 
 Combien de noisettes reste-t-il dans l'arbre le jeudi soir ?
 
-#strong[Exercice 14.] La balance à trois poids. Sur le plateau de gauche
+#strong[Exercice 3.14] La balance à trois poids. Sur le plateau de gauche
 d'une balance, il y a deux poids de #strong[6 kg] et #strong[9 kg]. Sur
 le plateau de droite, il y a un seul poids de #strong[8 kg] et une boîte
 fermée. Combien pèse la boîte fermée pour que la balance ne penche ni à
 gauche ni à droite ?
 
-#strong[Exercice 15.] Le problème de l'âge d'or. Quand son petit frère
+#strong[Exercice 3.15] Le problème de l'âge d'or. Quand son petit frère
 Noé est né, Sarah avait exactement 5 ans. Aujourd'hui, Noé fête son 8e
 anniversaire. Quel âge a Sarah aujourd'hui ? Écris le calcul qui permet
 de trouver sa réponse.
@@ -2484,64 +2465,64 @@ de trouver sa réponse.
 
 === Solutions
 <solutions-2>
-#strong[Exercice 1.] - $7 + upright(bold(3)) = 10$ -
+#strong[Solution 3.1] - $7 + upright(bold(3)) = 10$ -
 $4 + upright(bold(6)) = 10$ - $2 + upright(bold(8)) = 10$ -
 $9 + upright(bold(1)) = 10$ - $5 + upright(bold(5)) = 10$
 
-#strong[Exercice 2.] 1. $5 + 3 = 8$ : #strong[Vrai] ($8 = 8$). 2.
+#strong[Solution 3.2] 1. $5 + 3 = 8$ : #strong[Vrai] ($8 = 8$). 2.
 $6 + 4 = 7 + 3$ : #strong[Vrai] (les deux côtés valent 10). 3.
 $10 - 2 = 5 + 2$ : #strong[Faux] ($8 eq.not 7$, le plateau gauche est
 plus lourd). 4. $4 + 4 = 10 - 2$ : #strong[Vrai] ($8 = 8$).
 
-#strong[Exercice 3.] -
+#strong[Solution 3.3] -
 $15 + 9 = 15 + 10 - 1 = 25 - 1 = upright(bold(24))$. -
 $34 + 9 = 34 + 10 - 1 = 44 - 1 = upright(bold(43))$. -
 $62 + 9 = 62 + 10 - 1 = 72 - 1 = upright(bold(71))$.
 
-#strong[Exercice 4.] On rassemble les deux groupes de poussins :
+#strong[Solution 3.4] On rassemble les deux groupes de poussins :
 $ 8 + 5 = 13 $ Il y a maintenant #strong[13 poussins] dans la cour de la
 ferme.
 
-#strong[Exercice 5.] On retire les parts mangées : $ 16 - 10 = 6 $ Il
+#strong[Solution 3.5] On retire les parts mangées : $ 16 - 10 = 6 $ Il
 reste #strong[6 parts de tarte] sur le plat.
 
-#strong[Exercice 6.] 1. Lucas gagne des billes : #strong[addition]
+#strong[Solution 3.6] 1. Lucas gagne des billes : #strong[addition]
 ($8 + 4 = 12$). 2. Clara jette des feutres : #strong[soustraction]
 ($14 - 3 = 11$). 3. On cherche un écart d'âge : #strong[soustraction]
 ($12 - 7 = 5$). 4. On cherche ce qui manque pour compléter :
 #strong[soustraction] ($15 - 8 = 7$).
 
-#strong[Exercice 7.] - $8 + upright(bold(7)) = 15$ -
+#strong[Solution 3.7] - $8 + upright(bold(7)) = 15$ -
 $upright(bold(8)) + 6 = 14$ - $13 - upright(bold(6)) = 7$ -
 $20 = 12 + upright(bold(8))$
 
-#strong[Exercice 8.] - $40 + upright(bold(60)) = 100$ -
+#strong[Solution 3.8] - $40 + upright(bold(60)) = 100$ -
 $70 + upright(bold(30)) = 100$ - $80 + upright(bold(20)) = 100$ - Pour
 25 : de 25 à 30 il y a 5, et de 30 à 100 il y a 70. Donc
 $25 + upright(bold(75)) = 100$.
 
-#strong[Exercice 9.] On cherche la différence entre 18 et 11 :
+#strong[Solution 3.9] On cherche la différence entre 18 et 11 :
 $ 18 - 11 = 7 $ Jade a #strong[7 crayons de plus] que Manon.
 
-#strong[Exercice 10.] -
+#strong[Solution 3.10] -
 $8 + 7 = 8 + upright(bold(2)) + upright(bold(5)) = 10 + 5 = upright(bold(15))$.
 \-
 $7 + 5 = 7 + upright(bold(3)) + upright(bold(2)) = 10 + 2 = upright(bold(12))$.
 \-
 $6 + 6 = 6 + upright(bold(4)) + upright(bold(2)) = 10 + 2 = upright(bold(12))$.
 
-#strong[Exercice 11.] Avec 2, 5 et 7 :
+#strong[Solution 3.11] Avec 2, 5 et 7 :
 
 - Additions : $2 + 5 = 7$ et $5 + 2 = 7$.
 - Soustractions : $7 - 2 = 5$ et $7 - 5 = 2$.
 
 C'est la famille de nombres inséparables !
 
-#strong[Exercice 12.] La brique du sommet est la somme des deux briques
+#strong[Solution 3.12] La brique du sommet est la somme des deux briques
 du dessous : $ 7 + 8 = 15 $ On doit inscrire le nombre #strong[15] tout
 en haut de la pyramide.
 
-#strong[Exercice 13.] Suivons les noisettes jour après jour :
+#strong[Solution 3.13] Suivons les noisettes jour après jour :
 
 - Lundi : 17 noisettes.
 - Mardi : $17 - 5 = 12$ noisettes.
@@ -2550,12 +2531,12 @@ en haut de la pyramide.
 
 Il reste #strong[16 noisettes] dans l'arbre le jeudi soir.
 
-#strong[Exercice 14.] - Poids sur le plateau de gauche :
+#strong[Solution 3.14] - Poids sur le plateau de gauche :
 $6 + 9 = 15 upright(" kg")$. - Pour équilibrer, le plateau de droite
 doit peser 15 kg. - On a déjà un poids de 8 kg. - Poids de la boîte :
 $15 - 8 = upright(bold(7 upright(" kg")))$.
 
-#strong[Exercice 15.] Sarah a toujours 5 ans de plus que son petit
+#strong[Solution 3.15] Sarah a toujours 5 ans de plus que son petit
 frère, car le temps s'écoule à la même vitesse pour tous les deux ! Si
 Noé a 8 ans : $ 8 + 5 = 13 $ Sarah a #strong[13 ans] aujourd'hui.
 
@@ -2678,9 +2659,7 @@ Commençons par une addition tranquille : $ 23 + 45 $
 
 Pour poser ce calcul sur du papier à carreaux, voici la règle d'or :
 
-#quote_box[
-#strong[🧭 Règle d'alignement --- Chacun dans sa colonne !
-]
+#methode(title: [🧭 Règle d'alignement — Chacun dans sa colonne !])[
  On écrit les
 nombres l'un au-dessus de l'autre en alignant verticalement :
 
@@ -2970,9 +2949,7 @@ des dizaines, où il y a 8 gros paquets fermés de 10 sacs.
   ]
 ]
 
-#quote_box[
-#strong[💡 Le geste physique --- Cassage de dizaine
-]
+#decouvre(title: [💡 Le geste physique — Cassage de dizaine])[
  Prends 8 boîtes
 d'allumettes pleines de 10 allumettes (80) et 5 allumettes libres (5).
 Tu dois retirer 8 allumettes. Tu ne peux pas en prendre 8 parmi les 5
@@ -3244,16 +3221,16 @@ Poser et calculer $25 + 18 + 34$. #emph[Pas à pas :]
 <exercices-3>
 ==== Niveau  (Je m'entraîne et j'applique)
 <niveau-je-mentraîne-et-japplique-3>
-#strong[Exercice 1.] Pose et calcule ces additions sans retenue : -
+#strong[Exercice 4.1] Pose et calcule ces additions sans retenue : -
 $21 + 35$ - $42 + 16$ - $63 + 24$
 
-#strong[Exercice 2.] Pose et calcule ces additions avec une retenue
+#strong[Exercice 4.2] Pose et calcule ces additions avec une retenue
 voyageuse : - $38 + 25$ - $47 + 36$ - $59 + 14$
 
-#strong[Exercice 3.] Pose et calcule ces soustractions sans retenue : -
+#strong[Exercice 4.3] Pose et calcule ces soustractions sans retenue : -
 $57 - 23$ - $88 - 41$ - $76 - 35$
 
-#strong[Exercice 4.] Trouver la retenue oubliée. Observe ce calcul d'un
+#strong[Exercice 4.4] Trouver la retenue oubliée. Observe ce calcul d'un
 élève distrait :
 
 #align(center)[
@@ -3276,7 +3253,7 @@ $57 - 23$ - $88 - 41$ - $76 - 35$
 
 Quelle erreur cet élève a-t-il commise ? Quel est le bon résultat ?
 
-#strong[Exercice 5.] Le plein d'essence. Le réservoir d'un camion
+#strong[Exercice 4.5] Le plein d'essence. Le réservoir d'un camion
 contenait 24 litres de carburant. Le chauffeur rajoute 38 litres à la
 pompe. Combien de litres y a-t-il dans le réservoir ?
 
@@ -3284,14 +3261,14 @@ pompe. Combien de litres y a-t-il dans le réservoir ?
 
 ==== Niveau  (Je réfléchis et je résous)
 <niveau-je-réfléchis-et-je-résous-1>
-#strong[Exercice 6.] Pose et calcule ces soustractions avec cassage de
+#strong[Exercice 4.6] Pose et calcule ces soustractions avec cassage de
 dizaine : - $53 - 28$ - $61 - 37$ - $84 - 49$
 
-#strong[Exercice 7.] La vérification du détective. Un camarade affirme
+#strong[Exercice 4.7] La vérification du détective. Un camarade affirme
 que $75 - 39 = 46$. Fais l'addition inverse ($46 + 39$) pour vérifier
 s'il a raison ou s'il s'est trompé.
 
-#strong[Exercice 8.] Traverser la centaine ! Pose et calcule ces
+#strong[Exercice 4.8] Traverser la centaine ! Pose et calcule ces
 additions dont le résultat dépasse 100 :
 
 - $65 + 47$
@@ -3299,11 +3276,11 @@ additions dont le résultat dépasse 100 :
 - $89 + 35$ #emph[\(Indice : la colonne des dizaines va elle aussi
   fabriquer une retenue vers la colonne des centaines !)]
 
-#strong[Exercice 9.] Les moutons du grand troupeau. Dans un grand
+#strong[Exercice 4.9] Les moutons du grand troupeau. Dans un grand
 enclos, il y a 92 moutons. Le soir, le berger en fait sortir 35 pour les
 emmener boire à la rivière. Combien de moutons restent dans l'enclos ?
 
-#strong[Exercice 10.] L'addition à trois nombres. Pour décorer la fête
+#strong[Exercice 4.10] L'addition à trois nombres. Pour décorer la fête
 de l'école, les élèves ont gonflé 28 ballons rouges, 34 ballons jaunes
 et 19 ballons bleus. Combien de ballons ont-ils gonflés au total ?
 
@@ -3311,7 +3288,7 @@ et 19 ballons bleus. Combien de ballons ont-ils gonflés au total ?
 
 ==== Niveau  (Petits défis et énigmes)
 <niveau-petits-défis-et-énigmes-3>
-#strong[Exercice 11.] L'opération à trous. Retrouve les chiffres cachés
+#strong[Exercice 4.11] L'opération à trous. Retrouve les chiffres cachés
 sous les étoiles $\(star.op\)$ :
 
 #align(center)[
@@ -3332,7 +3309,7 @@ sous les étoiles $\(star.op\)$ :
   ]
 ]
 
-#strong[Exercice 12.] La soustraction mystère. Retrouve le chiffre caché
+#strong[Exercice 4.12] La soustraction mystère. Retrouve le chiffre caché
 sous le carré vert $\(square.filled.medium\)$ :
 
 #align(center)[
@@ -3354,11 +3331,11 @@ sous le carré vert $\(square.filled.medium\)$ :
   ]
 ]
 
-#strong[Exercice 13.] Le cas difficile du zéro au milieu. Pose et
+#strong[Exercice 4.13] Le cas difficile du zéro au milieu. Pose et
 calcule la soustraction suivante : $ 80 - 36 $ Explique comment tu fais
 pour casser une dizaine alors que le chiffre des unités est un zéro.
 
-#strong[Exercice 14.] Le trajet du bus. Un bus quitte le terminus avec
+#strong[Exercice 4.14] Le trajet du bus. Un bus quitte le terminus avec
 38 passagers à bord.
 
 - Au premier arrêt, 15 passagers montent et 7 descendent.
@@ -3366,7 +3343,7 @@ pour casser une dizaine alors que le chiffre des unités est un zéro.
 
 Combien de passagers restent dans le bus après le deuxième arrêt ?
 
-#strong[Exercice 15.] Le défi du boulier géant. En utilisant les trois
+#strong[Exercice 4.15] Le défi du boulier géant. En utilisant les trois
 chiffres #strong[2], #strong[5] et #strong[8], fabrique deux nombres à
 deux chiffres différents tels que leur somme soit la plus grande
 possible. Calcule ensuite cette somme.
@@ -3375,13 +3352,13 @@ possible. Calcule ensuite cette somme.
 
 === Solutions
 <solutions-3>
-#strong[Exercice 1.] - $21 + 35$ : unités $1 + 5 = 6$, dizaines
+#strong[Solution 4.1] - $21 + 35$ : unités $1 + 5 = 6$, dizaines
 $2 + 3 = 5 arrow.r.double.long upright(bold(56))$. - $42 + 16$ : unités
 $2 + 6 = 8$, dizaines $4 + 1 = 5 arrow.r.double.long upright(bold(58))$.
 \- $63 + 24$ : unités $3 + 4 = 7$, dizaines
 $6 + 2 = 8 arrow.r.double.long upright(bold(87))$.
 
-#strong[Exercice 2.] - $38 + 25$ : unités $8 + 5 = 13$ (je pose 3 et je
+#strong[Solution 4.2] - $38 + 25$ : unités $8 + 5 = 13$ (je pose 3 et je
 retiens 1) \; dizaines
 $1 + 3 + 2 = 6 arrow.r.double.long upright(bold(63))$. - $47 + 36$ :
 unités $7 + 6 = 13$ (pose 3, retiens 1) \; dizaines
@@ -3389,25 +3366,25 @@ $1 + 4 + 3 = 8 arrow.r.double.long upright(bold(83))$. - $59 + 14$ :
 unités $9 + 4 = 13$ (pose 3, retiens 1) \; dizaines
 $1 + 5 + 1 = 7 arrow.r.double.long upright(bold(73))$.
 
-#strong[Exercice 3.] - $57 - 23$ : unités $7 - 3 = 4$, dizaines
+#strong[Solution 4.3] - $57 - 23$ : unités $7 - 3 = 4$, dizaines
 $5 - 2 = 3 arrow.r.double.long upright(bold(34))$. - $88 - 41$ : unités
 $8 - 1 = 7$, dizaines $8 - 4 = 4 arrow.r.double.long upright(bold(47))$.
 \- $76 - 35$ : unités $6 - 5 = 1$, dizaines
 $7 - 3 = 4 arrow.r.double.long upright(bold(41))$.
 
-#strong[Exercice 4.] L'élève a calculé $8 + 5 = 13$, il a bien posé 3
+#strong[Solution 4.4] L'élève a calculé $8 + 5 = 13$, il a bien posé 3
 dans les unités, mais #strong[il a oublié d'ajouter la retenue 1] dans
 la colonne des dizaines ! Il a fait $4 + 2 = 6$ au lieu de
 $1 + 4 + 2 = 7$. Le bon résultat est #strong[73].
 
-#strong[Exercice 5.] On pose $24 + 38$ :
+#strong[Solution 4.5] On pose $24 + 38$ :
 
 - Unités : $4 + 8 = 12$ (je pose 2, retiens 1).
 - Dizaines : $1 + 2 + 3 = 6$.
 
 Il y a #strong[62 litres] dans le réservoir.
 
-#strong[Exercice 6.] - $53 - 28$ : on casse 1 dizaine à 5 (reste 4),
+#strong[Solution 4.6] - $53 - 28$ : on casse 1 dizaine à 5 (reste 4),
 l'unité devient 13. $13 - 8 = 5$ et
 $4 - 2 = 2 arrow.r.double.long upright(bold(25))$. - $61 - 37$ : on
 casse 1 dizaine à 6 (reste 5), l'unité devient 11. $11 - 7 = 4$ et
@@ -3415,14 +3392,14 @@ $5 - 3 = 2 arrow.r.double.long upright(bold(24))$. - $84 - 49$ : on
 casse 1 dizaine à 8 (reste 7), l'unité devient 14. $14 - 9 = 5$ et
 $7 - 4 = 3 arrow.r.double.long upright(bold(35))$.
 
-#strong[Exercice 7.] Calculons $46 + 39$ :
+#strong[Solution 4.7] Calculons $46 + 39$ :
 
 - Unités : $6 + 9 = 15$ (pose 5, retiens 1).
 - Dizaines : $1 + 4 + 3 = 8$. $46 + 39 = 85$, et non pas 75 ! Le
   camarade s'est trompé d'une dizaine. Le vrai résultat de $75 - 39$ est
   #strong[36] (car $36 + 39 = 75$).
 
-#strong[Exercice 8.] - $65 + 47$ : unités $5 + 7 = 12$ (pose 2, retiens
+#strong[Solution 4.8] - $65 + 47$ : unités $5 + 7 = 12$ (pose 2, retiens
 1) \; dizaines $1 + 6 + 4 = 11$ dizaines
 $arrow.r.double.long upright(bold(112))$. - $78 + 56$ : unités
 $8 + 6 = 14$ (pose 4, retiens 1) \; dizaines
@@ -3430,7 +3407,7 @@ $1 + 7 + 5 = 13 arrow.r.double.long upright(bold(134))$. - $89 + 35$ :
 unités $9 + 5 = 14$ (pose 4, retiens 1) \; dizaines
 $1 + 8 + 3 = 12 arrow.r.double.long upright(bold(124))$.
 
-#strong[Exercice 9.] On pose $92 - 35$ :
+#strong[Solution 4.9] On pose $92 - 35$ :
 
 - $2 - 5$ impossible. On casse 1 dizaine à 9 (reste 8), le 2 devient 12.
 - Unités : $12 - 5 = 7$.
@@ -3438,27 +3415,27 @@ $1 + 8 + 3 = 12 arrow.r.double.long upright(bold(124))$.
 
 Il reste #strong[57 moutons] dans l'enclos.
 
-#strong[Exercice 10.] On pose $28 + 34 + 19$ :
+#strong[Solution 4.10] On pose $28 + 34 + 19$ :
 
 - Unités : $8 + 4 + 9 = 21$ (je pose 1 et je retiens #strong[2] !).
 - Dizaines : $2 upright(" (retenue)") + 2 + 3 + 1 = 8$.
 
 Ils ont gonflé #strong[81 ballons] au total.
 
-#strong[Exercice 11.] - Dans les unités : $star.op + 4 = 11$ (car on
+#strong[Solution 4.11] - Dans les unités : $star.op + 4 = 11$ (car on
 voit 1 en bas avec une retenue vers les dizaines). Donc la première
 étoile vaut #strong[7] ($7 + 4 = 11$). - Dans les dizaines :
 $1 upright(" (retenue)") + 3 + star.op = 8 arrow.r.double.long 4 + star.op = 8 arrow.r.double.long star.op = upright(bold(4))$.
 
 L'opération était : $37 + 44 = 81$.
 
-#strong[Exercice 12.] Dans les unités : $4 - square.filled.medium = 7$
+#strong[Solution 4.12] Dans les unités : $4 - square.filled.medium = 7$
 est impossible sans cassage. On casse donc 1 dizaine à 6 (qui devient
 5), et le 4 devient 14. On a alors :
 $14 - square.filled.medium = 7 arrow.r.double.long square.filled.medium = upright(bold(7))$.
 Vérification des dizaines : $5 - 2 = 3$. C'est parfait !
 
-#strong[Exercice 13.] Dans $80 - 36$ :
+#strong[Solution 4.13] Dans $80 - 36$ :
 
 - Dans les unités, on a 0 caillou. On ne peut pas enlever 6 cailloux à
   zéro !
@@ -3470,13 +3447,13 @@ Vérification des dizaines : $5 - 2 = 3$. C'est parfait !
 
 Le résultat est #strong[44].
 
-#strong[Exercice 14.] - Départ : 38 passagers. - Premier arrêt :
+#strong[Solution 4.14] - Départ : 38 passagers. - Premier arrêt :
 $38 + 15 = 53$, puis $53 - 7 = 46$ passagers. - Deuxième arrêt :
 $46 + 12 = 58$, puis $58 - 9 = 49$ passagers.
 
 Il reste #strong[49 passagers] dans le bus.
 
-#strong[Exercice 15.] Pour avoir la plus grande somme possible avec deux
+#strong[Solution 4.15] Pour avoir la plus grande somme possible avec deux
 nombres à deux chiffres, il faut choisir les deux plus grands chiffres
 pour les dizaines : 8 et 5. Le troisième chiffre (2) sera mis dans les
 unités de l'un des nombres, et on peut réutiliser le 8 ou le 5 si
@@ -3640,9 +3617,7 @@ est rigoureusement le même :
 
 $ 4 times 6 = 6 times 4 = 24 $
 
-#quote_box[
-#strong[📐 Propriété --- La Commutativité de la multiplication
-]
+#principe(title: [📐 Propriété — La Commutativité de la multiplication])[
  On peut
 #strong[changer l'ordre des facteurs] sans changer le résultat. Tourner
 un rectangle sur le côté ne change jamais le nombre d'objets qu'il
@@ -3712,9 +3687,7 @@ Pose tes dix doigts bien à plat devant toi sur la table. Tes doigts sont
 numérotés de 1 à 10, de gauche à droite (le pouce gauche est le 1,
 l'auriculaire droit est le 10).
 
-#quote_box[
-#strong[🖐️ Le tour de magie des doigts pour la table de 9
-]
+#methode(title: [🖐️ Le tour de magie des doigts pour la table de 9])[
  Tu veux
 calculer #strong[$9 times 4$] ? 1. Baisse ton 4e doigt (l'annulaire de
 la main gauche). 2. Regarde tes doigts :
@@ -3901,9 +3874,7 @@ Ce calcul se fait en #strong[deux étages] bien rangés :
   ]
 ]
 
-#quote_box[
-#strong[🧭 L'Algorithme Mécanique en 4 Gestes Simples :
-]
+#methode(title: [🧭 L'Algorithme Mécanique en 4 Gestes Simples :])[
  1. Multiplier
 tout le nombre du haut par le chiffre des #strong[unités] du bas
 ($146 times 3 = 438$). 2. À la ligne du dessous, poser immédiatement un
@@ -4124,7 +4095,7 @@ $43 times 10$. #emph[Résolution :]
 <exercices-4>
 ==== Niveau  (Je m'entraîne et j'applique)
 <niveau-je-mentraîne-et-japplique-4>
-#strong[Exercice 1.] De l'addition à la multiplication. Écris chaque
+#strong[Exercice 5.1] De l'addition à la multiplication. Écris chaque
 addition sous la forme d'une multiplication, puis calcule le résultat :
 
 - $5 + 5 + 5 = dots.h times dots.h = dots.h$
@@ -4132,7 +4103,7 @@ addition sous la forme d'une multiplication, puis calcule le résultat :
 - $3 + 3 + 3 + 3 = dots.h times dots.h = dots.h$
 - $10 + 10 + 10 + 10 + 10 = dots.h times dots.h = dots.h$
 
-#strong[Exercice 2.] Les tables en éclair. Réponds le plus vite possible
+#strong[Exercice 5.2] Les tables en éclair. Réponds le plus vite possible
 sans compter sur tes doigts :
 
 - $2 times 7 = dots.h$
@@ -4141,17 +4112,17 @@ sans compter sur tes doigts :
 - $9 times 2 = dots.h$
 - $10 times 8 = dots.h$
 
-#strong[Exercice 3.] Doubles et moitiés. 1. Quel est le double de 6 ? de
+#strong[Exercice 5.3] Doubles et moitiés. 1. Quel est le double de 6 ? de
 9 ? de 15 ? 2. Quelle est la moitié de 10 ? de 16 ? de 40 ?
 
-#strong[Exercice 4.] Les zéros magiques. Calcule mentalement :
+#strong[Exercice 5.4] Les zéros magiques. Calcule mentalement :
 
 - $6 times 10 = dots.h$
 - $9 times 100 = dots.h$
 - $17 times 10 = dots.h$
 - $30 times 10 = dots.h$
 
-#strong[Exercice 5.] La boîte de chocolats. Une boîte de délicieux
+#strong[Exercice 5.5] La boîte de chocolats. Une boîte de délicieux
 chocolats contient 3 rangées de 8 chocolats. Combien y a-t-il de
 chocolats dans cette boîte ?
 
@@ -4159,7 +4130,7 @@ chocolats dans cette boîte ?
 
 ==== Niveau  (Je réfléchis et je calcule)
 <niveau-je-réfléchis-et-je-calcule>
-#strong[Exercice 6.] La ruse de la table de 9. Utilise l'astuce des dix
+#strong[Exercice 5.6] La ruse de la table de 9. Utilise l'astuce des dix
 doigts pour trouver :
 
 - $9 times 3$
@@ -4169,19 +4140,19 @@ doigts pour trouver :
 Vérifie à chaque fois que la somme des deux chiffres du résultat fait
 toujours 9 !
 
-#strong[Exercice 7.] Pose et calcule ces multiplications sans retenue :
+#strong[Exercice 5.7] Pose et calcule ces multiplications sans retenue :
 \- $21 times 4$ - $33 times 2$ - $42 times 2$
 
-#strong[Exercice 8.] Pose et calcule ces multiplications avec retenue :
+#strong[Exercice 5.8] Pose et calcule ces multiplications avec retenue :
 \- $26 times 3$ - $35 times 2$ - $17 times 5$
 
-#strong[Exercice 9.] Le carrelage de la cuisine. Le sol d'une cuisine
+#strong[Exercice 5.9] Le carrelage de la cuisine. Le sol d'une cuisine
 est recouvert d'un carrelage rectangulaire de 7 carreaux de large sur 9
 carreaux de long. 1. Combien de carreaux y a-t-il en tout ? 2. Si le
 carreleur avait posé les carreaux dans l'autre sens (9 de large sur 7 de
 long), combien y aurait-il eu de carreaux ?
 
-#strong[Exercice 10.] Le paquet de biscuits. Un paquet contient 4
+#strong[Exercice 5.10] Le paquet de biscuits. Un paquet contient 4
 sachets de 6 biscuits chacun. 1. Combien de biscuits y a-t-il dans un
 paquet ? 2. Maman achète 3 paquets entiers pour la kermesse. Combien de
 biscuits a-t-elle achetés au total ?
@@ -4190,11 +4161,11 @@ biscuits a-t-elle achetés au total ?
 
 ==== Niveau  (Petits défis et énigmes)
 <niveau-petits-défis-et-énigmes-4>
-#strong[Exercice 11.] Le rectangle mystère. « Je suis un nombre de la
+#strong[Exercice 5.11] Le rectangle mystère. « Je suis un nombre de la
 table de 4. Je suis aussi dans la table de 6. Je suis compris entre 20
 et 30. Qui suis-je ? »
 
-#strong[Exercice 12.] Le produit mystère à trous. Retrouve le chiffre
+#strong[Exercice 5.12] Le produit mystère à trous. Retrouve le chiffre
 caché sous l'étoile :
 
 #align(center)[
@@ -4215,12 +4186,12 @@ caché sous l'étoile :
   ]
 ]
 
-#strong[Exercice 13.] Les pattes dans la ferme. Dans un pré, il y a 4
+#strong[Exercice 5.13] Les pattes dans la ferme. Dans un pré, il y a 4
 poules (2 pattes chacune) et 3 vaches (4 pattes chacune). Combien de
 pattes y a-t-il au total dans le pré ? Écris toute l'opération en une
 seule ligne.
 
-#strong[Exercice 14.] Multiplier sans poser : la distributivité. Pour
+#strong[Exercice 5.14] Multiplier sans poser : la distributivité. Pour
 calculer mentalement $14 times 3$, un champion décompose 14 en $10 + 4$
 :
 
@@ -4233,7 +4204,7 @@ Utilise cette astuce géniale pour calculer mentalement :
 - $13 times 4$
 - $15 times 3$
 
-#strong[Exercice 15.] Le tournoi d'échecs. Un échiquier possède 8
+#strong[Exercice 5.15] Le tournoi d'échecs. Un échiquier possède 8
 rangées de 8 cases carrées alternées blanches et noires. 1. Combien de
 cases l'échiquier compte-t-il au total ? 2. Comme la moitié des cases
 sont noires et l'autre moitié blanches, combien y a-t-il de cases noires
@@ -4243,41 +4214,41 @@ sur l'échiquier ?
 
 === Solutions
 <solutions-4>
-#strong[Exercice 1.] - $5 + 5 + 5 = 3 times 5 = upright(bold(15))$. -
+#strong[Solution 5.1] - $5 + 5 + 5 = 3 times 5 = upright(bold(15))$. -
 $7 + 7 = 2 times 7 = upright(bold(14))$. -
 $3 + 3 + 3 + 3 = 4 times 3 = upright(bold(12))$. -
 $10 + 10 + 10 + 10 + 10 = 5 times 10 = upright(bold(50))$.
 
-#strong[Exercice 2.] - $2 times 7 = upright(bold(14))$ -
+#strong[Solution 5.2] - $2 times 7 = upright(bold(14))$ -
 $5 times 4 = upright(bold(20))$ - $3 times 6 = upright(bold(18))$ -
 $9 times 2 = upright(bold(18))$ - $10 times 8 = upright(bold(80))$
 
-#strong[Exercice 3.] 1. Doubles : $6 times 2 = upright(bold(12))$ \;
+#strong[Solution 5.3] 1. Doubles : $6 times 2 = upright(bold(12))$ \;
 $9 times 2 = upright(bold(18))$ \; $15 times 2 = upright(bold(30))$. 2.
 Moitiés : la moitié de 10 est $upright(bold(5))$ \; la moitié de 16 est
 $upright(bold(8))$ \; la moitié de 40 est $upright(bold(20))$.
 
-#strong[Exercice 4.] - $6 times 10 = upright(bold(60))$ -
+#strong[Solution 5.4] - $6 times 10 = upright(bold(60))$ -
 $9 times 100 = upright(bold(900))$ - $17 times 10 = upright(bold(170))$
 \- $30 times 10 = upright(bold(300))$
 
-#strong[Exercice 5.]
+#strong[Solution 5.5]
 $3 upright(" rangées de ") 8 = 3 times 8 = upright(bold(24 upright(" chocolats")))$.
 
-#strong[Exercice 6.] - $9 times 3 = upright(bold(27))$ (doigt 3 baissé :
+#strong[Solution 5.6] - $9 times 3 = upright(bold(27))$ (doigt 3 baissé :
 2 dizaines et 7 unités \; $2 + 7 = 9$). -
 $9 times 6 = upright(bold(54))$ (doigt 6 baissé : 5 dizaines et 4 unités
 \; $5 + 4 = 9$). - $9 times 8 = upright(bold(72))$ (doigt 8 baissé : 7
 dizaines et 2 unités \; $7 + 2 = 9$).
 
-#strong[Exercice 7.] - $21 times 4$ : unités $4 times 1 = 4$, dizaines
+#strong[Solution 5.7] - $21 times 4$ : unités $4 times 1 = 4$, dizaines
 $4 times 2 = 8 arrow.r.double.long upright(bold(84))$. - $33 times 2$ :
 unités $2 times 3 = 6$, dizaines
 $2 times 3 = 6 arrow.r.double.long upright(bold(66))$. - $42 times 2$ :
 unités $2 times 2 = 4$, dizaines
 $2 times 4 = 8 arrow.r.double.long upright(bold(84))$.
 
-#strong[Exercice 8.] - $26 times 3$ : unités $3 times 6 = 18$ (pose 8,
+#strong[Solution 5.8] - $26 times 3$ : unités $3 times 6 = 18$ (pose 8,
 retiens 1) \; dizaines $3 times 2 = 6$, plus retenue 1 :
 $6 + 1 = 7 arrow.r.double.long upright(bold(78))$. - $35 times 2$ :
 unités $2 times 5 = 10$ (pose 0, retiens 1) \; dizaines
@@ -4285,36 +4256,36 @@ $2 times 3 = 6 + 1 = 7 arrow.r.double.long upright(bold(70))$. -
 $17 times 5$ : unités $5 times 7 = 35$ (pose 5, retiens 3) \; dizaines
 $5 times 1 = 5 + 3 = 8 arrow.r.double.long upright(bold(85))$.
 
-#strong[Exercice 9.] 1.
+#strong[Solution 5.9] 1.
 $7 times 9 = upright(bold(63 upright(" carreaux")))$. 2.
 $9 times 7 = upright(bold(63 upright(" carreaux")))$ également, grâce à
 la commutativité.
 
-#strong[Exercice 10.] 1. Dans un paquet :
+#strong[Solution 5.10] 1. Dans un paquet :
 $4 times 6 = upright(bold(24 upright(" biscuits")))$. 2. Dans 3 paquets
 :
 $3 times 24 = 3 times 20 + 3 times 4 = 60 + 12 = upright(bold(72 upright(" biscuits")))$.
 
-#strong[Exercice 11.] Table de 4 entre 20 et 30 : 24, 28. Table de 6
+#strong[Solution 5.11] Table de 4 entre 20 et 30 : 24, 28. Table de 6
 entre 20 et 30 : 24. Le nombre mystère commun est #strong[24]
 ($4 times 6 = 24$).
 
-#strong[Exercice 12.] Dans les unités, $4 times star.op$ doit se
+#strong[Solution 5.12] Dans les unités, $4 times star.op$ doit se
 terminer par 6. Dans la table de 4, $4 times 4 = 16$ (se termine par 6)
 ou $4 times 9 = 36$. Testons $star.op = 4$ : $4 times 4 = 16$ (retenue
 1). Dizaines : $4 times 2 = 8$, plus la retenue 1 : $8 + 1 = 9$. Ça
 donne bien 96 ! Le chiffre caché est donc $star.op = upright(bold(4))$.
 
-#strong[Exercice 13.] Pattes de poules : $4 times 2 = 8$. Pattes de
+#strong[Solution 5.13] Pattes de poules : $4 times 2 = 8$. Pattes de
 vaches : $3 times 4 = 12$. Total :
 $\(4 times 2\)+\(3 times 4\)= 8 + 12 = upright(bold(20 upright(" pattes")))$.
 
-#strong[Exercice 14.] - Pour $13 times 4$ :
+#strong[Solution 5.14] - Pour $13 times 4$ :
 $\(10 times 4\)+\(3 times 4\)= 40 + 12 = upright(bold(52))$. - Pour
 $15 times 3$ :
 $\(10 times 3\)+\(5 times 3\)= 30 + 15 = upright(bold(45))$.
 
-#strong[Exercice 15.] 1.
+#strong[Solution 5.15] 1.
 $8 upright(" rangées de ") 8 = 8 times 8 = upright(bold(64 upright(" cases")))$.
 \2. La moitié de 64, c'est la moitié de 60 (30) plus la moitié de 4 (2),
 soit #strong[32 cases noires] (et 32 cases blanches).
@@ -4435,12 +4406,7 @@ voulu faire encore mieux : une mesure qui n'appartienne à aucun roi,
 mais à tous les habitants de la Terre. Ils ont inventé #strong[le
 Mètre].
 
-#quote_box[
-#strong[💡 Découverte & Histoire --- Les Mesures Anatomiques
-Historiques
-]
-
-
+#decouvre(title: [💡 Découverte & Histoire — Les Mesures Anatomiques Historiques])[
 - Le pouce : La largeur du pouce d'un adulte (\~ 2 à 3 cm)
 - Le pied : La longueur d'un pied chaussé (\~ 30 cm)
 - Le pas : Un grand pas d'adulte en marchant (\~ 1 mètre)
@@ -4588,9 +4554,7 @@ tournent toujours dans le même sens (le sens des aiguilles d'une montre)
   #strong[minutes]. Elle fait un tour complet en #strong[60 minutes] (1
   heure).
 
-#quote_box[
-#strong[🧭 Méthode --- Lire l'heure pas à pas
-]
+#methode(title: [🧭 Méthode — Lire l'heure pas à pas])[
  1. #strong[L'heure pile
 :] Quand la grande aiguille pointe tout en haut sur le #strong[12], la
 petite aiguille donne l'heure exacte. #emph[Exemple : petite aiguille
@@ -4632,9 +4596,7 @@ monnaie est #strong[l'Euro (€)].
     $20 upright(" €")$, $50 upright(" €")$, $100 upright(" €")$,
     $200 upright(" €")$.
 
-#quote_box[
-#strong[📐 Règle de troc --- Les centimes et l'euro
-]
+#principe(title: [📐 Règle de troc — Les centimes et l'euro])[
  Exactement comme
 pour le centimètre et le mètre :
 $ 1 upright(" Euro ")\(euro\)= 100 upright(" centimes ")\(c\) $ Pour
@@ -4755,12 +4717,12 @@ $2 upright(" €")$ à la boulangère. Combien d'argent doit-elle te rendre
 <exercices-5>
 ==== Niveau  (Je m'entraîne et j'applique)
 <niveau-je-mentraîne-et-japplique-5>
-#strong[Exercice 1.] Choisis la bonne unité ($c m$ ou $m$) : 1. La
+#strong[Exercice 6.1] Choisis la bonne unité ($c m$ ou $m$) : 1. La
 longueur d'une coccinelle : 7 $dots.h$ 2. La hauteur de la porte du
 salon : 2 $dots.h$ 3. La longueur d'un stylo à bille : 15 $dots.h$ 4. La
 longueur de la cour de récréation : 30 $dots.h$
 
-#strong[Exercice 2.] Conversions simples. Complète les pointillés :
+#strong[Exercice 6.2] Conversions simples. Complète les pointillés :
 
 - $2 upright(" m") = dots.h upright(" cm")$
 - $4 upright(" m") = dots.h upright(" cm")$
@@ -4768,18 +4730,18 @@ longueur de la cour de récréation : 30 $dots.h$
 - $1 upright(" kg") = dots.h upright(" g")$
 - $3 upright(" kg") = dots.h upright(" g")$
 
-#strong[Exercice 3.] Choisis la bonne unité de masse ($g$ ou $k g$) : 1.
+#strong[Exercice 6.3] Choisis la bonne unité de masse ($g$ ou $k g$) : 1.
 Un chaton nouveau-né : 150 $dots.h$ 2. Un sac de ciment : 25 $dots.h$ 3.
 Une tablette de chocolat : 100 $dots.h$ 4. Un cartable rempli de livres
 : 3 $dots.h$
 
-#strong[Exercice 4.] Lire l'horloge. Quelle heure est-il dans chaque cas
+#strong[Exercice 6.4] Lire l'horloge. Quelle heure est-il dans chaque cas
 ? 1. La petite aiguille est sur le 8, la grande aiguille est sur le 12.
 \2. La petite aiguille est entre le 2 et le 3, la grande aiguille est
 sur le 6. 3. La petite aiguille est sur le 11, la grande aiguille est
 sur le 12.
 
-#strong[Exercice 5.] Compter la monnaie. Combien d'argent y a-t-il dans
+#strong[Exercice 6.5] Compter la monnaie. Combien d'argent y a-t-il dans
 cette tirelire ?
 
 - Un billet de 10 €
@@ -4791,13 +4753,13 @@ cette tirelire ?
 
 ==== Niveau  (Je réfléchis et je mesure)
 <niveau-je-réfléchis-et-je-mesure>
-#strong[Exercice 6.] Le piège de la règle cassée. Un élève distrait a
+#strong[Exercice 6.6] Le piège de la règle cassée. Un élève distrait a
 une règle cassée dont le bout est arraché : le zéro n'existe plus ! Il
 place sa gomme contre le trait de #strong[3 cm], et la gomme se termine
 exactement au trait de #strong[7 cm]. Quelle est la longueur réelle de
 la gomme ? Écris le calcul.
 
-#strong[Exercice 7.] La potion magique du sorcier. Un chaudron contient
+#strong[Exercice 6.7] La potion magique du sorcier. Un chaudron contient
 déjà $3 upright(" litres")$ d'eau de source. Le sorcier y verse :
 
 - 2 bouteilles de $1 upright(" litre")$ de jus de crapaud,
@@ -4807,19 +4769,19 @@ déjà $3 upright(" litres")$ d'eau de source. Le sorcier y verse :
 Combien de litres de potion magique y a-t-il au total dans le chaudron ?
 #emph[\(Indice : 2 demi-litres font 1 litre entier !)]
 
-#strong[Exercice 8.] Les jours de la semaine. 1. Si nous sommes mardi,
+#strong[Exercice 6.8] Les jours de la semaine. 1. Si nous sommes mardi,
 quel jour serons-nous dans exactement 3 jours ? 2. Quel jour étions-nous
 avant-hier ? 3. Dans une semaine complète, combien y a-t-il de jours
 d'école si tu as classe le lundi, mardi, jeudi et vendredi ?
 
-#strong[Exercice 9.] Le sac trop lourd pour l'avion. Pour monter dans
+#strong[Exercice 6.9] Le sac trop lourd pour l'avion. Pour monter dans
 l'avion de vacances, une valise ne doit pas peser plus de
 $20 upright(" kg")$. La valise de papa pèse $14 upright(" kg")$. Il veut
 y ajouter un gros dictionnaire de $3 upright(" kg")$ et une boîte de
 conserves de $4 upright(" kg")$. La valise pourra-t-elle monter dans
 l'avion ?
 
-#strong[Exercice 10.] Payer l'appoint. Un livre de contes coûte
+#strong[Exercice 6.10] Payer l'appoint. Un livre de contes coûte
 $7 upright(" € ") 50 upright(" c")$. Trouve une façon de payer cette
 somme exacte en utilisant le plus petit nombre possible de pièces et de
 billets.
@@ -4828,31 +4790,31 @@ billets.
 
 ==== Niveau  (Petits défis et énigmes)
 <niveau-petits-défis-et-énigmes-5>
-#strong[Exercice 11.] L'énigme de la bougie qui fond. Une bougie mesure
+#strong[Exercice 6.11] L'énigme de la bougie qui fond. Une bougie mesure
 $24 upright(" cm")$ de haut à 18 heures quand on l'allume. Chaque heure
 qui passe, elle brûle et perd exactement $3 upright(" cm")$ de hauteur.
 \1. Quelle taille fera la bougie à 21 heures ? 2. À quelle heure la
 bougie sera-t-elle complètement éteinte (hauteur 0 cm) ?
 
-#strong[Exercice 12.] Le saut de la grenouille mesuré. Une petite
+#strong[Exercice 6.12] Le saut de la grenouille mesuré. Une petite
 grenouille verte fait des sauts de $15 upright(" cm")$. Elle part du
 trait 0 d'un mètre gradué de $100 upright(" cm")$. Combien de sauts
 doit-elle faire pour dépasser la ligne d'arrivée des
 $100 upright(" cm")$ ? Sur quel centimètre atterrira-t-elle à la fin de
 son dernier saut ?
 
-#strong[Exercice 13.] Les douze coups de minuit. Une vieille horloge
+#strong[Exercice 6.13] Les douze coups de minuit. Une vieille horloge
 sonne un coup à 1 heure, deux coups à 2 heures, trois coups à 3 heures,
 et ainsi de suite jusqu'à 12 coups à midi. Combien de coups au total
 cette horloge sonne-t-elle entre 1 heure du matin et 6 heures du matin
 inclus ?
 
-#strong[Exercice 14.] Le mystère des deux bouteilles. Tu es au bord
+#strong[Exercice 6.14] Le mystère des deux bouteilles. Tu es au bord
 d'une rivière avec deux seaux non gradués : un seau de #strong[3 litres]
 et un seau de #strong[5 litres]. Comment peux-tu faire pour mesurer
 exactement #strong[4 litres] d'eau à ramener au village ?
 
-#strong[Exercice 15.] Le trésor des centimes. Léo a une tirelire pleine
+#strong[Exercice 6.15] Le trésor des centimes. Léo a une tirelire pleine
 de pièces de 20 centimes et de pièces de 50 centimes. Il a exactement 4
 pièces au total, et elles valent ensemble
 $1 upright(" euro ") 60 upright(" centimes")$ ($160 upright(" c")$).
@@ -4863,53 +4825,53 @@ possède-t-il ?
 
 === Solutions
 <solutions-5>
-#strong[Exercice 1.] 1. Longueur d'une coccinelle : 7 #strong[$c m$]. 2.
+#strong[Solution 6.1] 1. Longueur d'une coccinelle : 7 #strong[$c m$]. 2.
 Hauteur de la porte : 2 #strong[$m$]. 3. Longueur d'un stylo : 15
 #strong[$c m$]. 4. Cour de récréation : 30 #strong[$m$].
 
-#strong[Exercice 2.] -
+#strong[Solution 6.2] -
 $2 upright(" m") = upright(bold(200)) upright(" cm")$ -
 $4 upright(" m") = upright(bold(400)) upright(" cm")$ -
 $300 upright(" cm") = upright(bold(3)) upright(" m")$ -
 $1 upright(" kg") = upright(bold(1 thin 000)) upright(" g")$ -
 $3 upright(" kg") = upright(bold(3 thin 000)) upright(" g")$
 
-#strong[Exercice 3.] 1. Un chaton : 150 #strong[$g$]. 2. Sac de ciment :
+#strong[Solution 6.3] 1. Un chaton : 150 #strong[$g$]. 2. Sac de ciment :
 25 #strong[$k g$]. 3. Tablette de chocolat : 100 #strong[$g$]. 4.
 Cartable : 3 #strong[$k g$].
 
-#strong[Exercice 4.] 1. Il est #strong[8 heures pile]
+#strong[Solution 6.4] 1. Il est #strong[8 heures pile]
 ($8 upright(" h ") 00$). 2. Il est #strong[2 heures et demie]
 ($2 upright(" h ") 30$). 3. Il est #strong[11 heures pile]
 ($11 upright(" h ") 00$).
 
-#strong[Exercice 5.] - Billets et euros :
+#strong[Solution 6.5] - Billets et euros :
 $10 + 2 + 2 + 1 = 15 upright(" €")$. - Centimes :
 $3 times 10 = 30 upright(" c")$.
 
 Total : #strong[$15 upright(" € ") 30 upright(" centimes")$].
 
-#strong[Exercice 6.] La gomme s'étend de 3 cm jusqu'à 7 cm. On calcule
+#strong[Solution 6.6] La gomme s'étend de 3 cm jusqu'à 7 cm. On calcule
 l'écart : $ 7 - 3 = 4 upright(" cm") $ La gomme mesure réellement
 #strong[$4 upright(" cm")$].
 
-#strong[Exercice 7.] - Eau : 3 L. - Jus de crapaud : 2 L. - Bave
+#strong[Solution 6.7] - Eau : 3 L. - Jus de crapaud : 2 L. - Bave
 d'escargot : 4 demi-litres = 2 litres entiers.
 
 Total : $3 + 2 + 2 = upright(bold(7 upright(" litres")))$ de potion.
 
-#strong[Exercice 8.] 1. Mardi $+ 3 upright(" jours")$ (mercredi, jeudi,
+#strong[Solution 6.8] 1. Mardi $+ 3 upright(" jours")$ (mercredi, jeudi,
 vendredi) : nous serons #strong[vendredi]. 2. Avant-hier (deux jours
 avant mardi) : nous étions #strong[dimanche]. 3. Il y a #strong[4 jours]
 d'école dans la semaine.
 
-#strong[Exercice 9.] Calculons la masse totale :
+#strong[Solution 6.9] Calculons la masse totale :
 $ 14 + 3 + 4 = 21 upright(" kg") $ Comme
 $21 upright(" kg") > 20 upright(" kg")$, la valise dépasse la limite
 autorisée : #strong[non], elle ne pourra pas monter dans l'avion sans
 payer un supplément ou retirer un objet.
 
-#strong[Exercice 10.] Pour faire $7 upright(" € ") 50 upright(" c")$
+#strong[Solution 6.10] Pour faire $7 upright(" € ") 50 upright(" c")$
 avec le minimum de pièces et billets :
 
 - 1 billet de 5 €
@@ -4918,23 +4880,23 @@ avec le minimum de pièces et billets :
 
 Soit #strong[3 objets en tout] (un billet et deux pièces) !
 
-#strong[Exercice 11.] 1. De 18 h à 21 h, il s'écoule 3 heures. La bougie
+#strong[Solution 6.11] 1. De 18 h à 21 h, il s'écoule 3 heures. La bougie
 perd $3 times 3 = 9 upright(" cm")$. Sa taille sera :
 $24 - 9 = upright(bold(15 upright(" cm")))$. 2. Pour perdre ses 24 cm à
 raison de 3 cm par heure : $24 = 8 times 3$, il faut 8 heures.
 $18 upright(" h") + 8 upright(" h") = 26 upright(" h")$, soit #strong[2
 heures du matin].
 
-#strong[Exercice 12.] Faisons les bonds de 15 en 15 :
+#strong[Solution 6.12] Faisons les bonds de 15 en 15 :
 $15\,30\,45\,60\,75\,90\,105$. Au 6e saut, elle est à 90 cm (pas encore
 arrivée). Au #strong[7e saut], elle franchit les 100 cm et atterrit à
 #strong[$105 upright(" cm")$]. Il lui faut donc 7 sauts.
 
-#strong[Exercice 13.] On additionne tous les coups sonnés :
+#strong[Solution 6.13] On additionne tous les coups sonnés :
 $ 1 + 2 + 3 + 4 + 5 + 6 = 21 upright(" coups") $ Elle aura sonné
 #strong[21 coups] au total.
 
-#strong[Exercice 14.] Voici la ruse des anciens : 1. Remplis le seau de
+#strong[Solution 6.14] Voici la ruse des anciens : 1. Remplis le seau de
 5 litres à ras bord. 2. Verse son eau dans le seau de 3 litres jusqu'à
 ce que celui-ci soit plein : il reste exactement #strong[2 litres] dans
 le seau de 5 L ! 3. Vide le seau de 3 L par terre. 4. Verse les 2 litres
@@ -4943,7 +4905,7 @@ restants dans le seau de 3 L (il reste de la place pour 1 L). 5. Remplis
 jusqu'au bord (tu verses exactement 1 L) : il reste exactement #strong[4
 litres] dans le grand seau ! Tu as réussi !
 
-#strong[Exercice 15.] Si Léo a 2 pièces de 50 c et 2 pièces de 20 c :
+#strong[Solution 6.15] Si Léo a 2 pièces de 50 c et 2 pièces de 20 c :
 $\(2 times 50\)+\(2 times 20\)= 100 + 40 = 140 upright(" c")$ (pas
 assez). Essayons 2 pièces de 20 c et… Testons #strong[2 pièces de 50 c
 ($100 upright(" c")$)] et #strong[3 pièces de 20 c ($60 upright(" c")$)]
@@ -5136,9 +5098,7 @@ bois : #strong[l'équerre]. Mais tu peux fabriquer une équerre
 infaillible en dix secondes avec n'importe quel morceau de papier
 déchiré !
 
-#quote_box[
-#strong[🖐️ Atelier --- Fabrique ton équerre en papier plié
-]
+#methode(title: [🖐️ Atelier — Fabrique ton équerre en papier plié])[
  1. Prends
 une feuille de papier quelconque, même avec un bord déchiré tout tordu.
 \2. Plie-la une première fois en deux, et écrase bien le pli avec ton
@@ -5384,19 +5344,19 @@ qu'il trouve le trésor. #emph[Résolution :]
 <exercices-6>
 ==== Niveau  (Je m'entraîne et j'applique)
 <niveau-je-mentraîne-et-japplique-6>
-#strong[Exercice 1.] Nomme chaque figure plane : 1. J'ai 3 côtés et 3
+#strong[Exercice 7.1] Nomme chaque figure plane : 1. J'ai 3 côtés et 3
 sommets. Qui suis-je ? 2. J'ai 4 côtés de même longueur et 4 angles
 droits. Qui suis-je ? 3. Je n'ai aucun côté droit et je ressemble à une
 roue de bicyclette. Qui suis-je ? 4. J'ai 4 angles droits et 2 grandes
 longueurs égales entre elles ainsi que 2 petites largeurs égales entre
 elles. Qui suis-je ?
 
-#strong[Exercice 2.] Sommet, face ou arête ? Sur un dé à jouer : 1. Que
+#strong[Exercice 7.2] Sommet, face ou arête ? Sur un dé à jouer : 1. Que
 désigne la surface carrée portant le chiffre 5 ? 2. Que désigne le coin
 pointu où se rejoignent trois faces ? 3. Que désigne la ligne droite que
 l'on peut suivre avec son ongle le long du bord ?
 
-#strong[Exercice 3.] Les solides de la maison. Associe chaque objet
+#strong[Exercice 7.3] Les solides de la maison. Associe chaque objet
 quotidien au solide qui lui ressemble le plus :
 
 - Une boîte de conserve $arrow.r$ $dots.h$
@@ -5404,18 +5364,14 @@ quotidien au solide qui lui ressemble le plus :
 - Un paquet de céréales $arrow.r$ $dots.h$
 - Un dé à jouer $arrow.r$ $dots.h$
 
-#strong[Exercice 4.] Le rayon et le diamètre. 1. Un cercle a un rayon de
+#strong[Exercice 7.4] Le rayon et le diamètre. 1. Un cercle a un rayon de
 $5 upright(" cm")$. Quel est son diamètre ? 2. Un cercle a un diamètre
 de $12 upright(" cm")$. Quel est son rayon ?
 
-#strong[Exercice 5.] Repérage de cases. Regarde le quadrillage
+#strong[Exercice 7.5] Repérage de cases. Regarde le quadrillage
 ci-dessous :
 
-#quote_box[
-#strong[🛠️ Application Pratique --- Chasse aux Trésors sur Quadrillage
-]
-
-
+#cas_limite(title: [🛠️ Application Pratique — Chasse aux Trésors sur Quadrillage])[
 - A B C
 - 2 🍎
 - 1 🍌 🍇
@@ -5428,28 +5384,28 @@ le raisin.
 
 ==== Niveau  (Je réfléchis et je construis)
 <niveau-je-réfléchis-et-je-construis>
-#strong[Exercice 6.] La chasse aux angles droits. Prends ton équerre en
+#strong[Exercice 7.6] La chasse aux angles droits. Prends ton équerre en
 papier plié. Pose-la sur les formes suivantes : 1. Combien d'angles
 droits possède un triangle rectangle ? 2. Combien d'angles droits
 possède un cercle ? 3. Combien d'angles droits possède un carré ?
 
-#strong[Exercice 7.] Vrai ou Faux sur les solides ? Réponds par
+#strong[Exercice 7.7] Vrai ou Faux sur les solides ? Réponds par
 #strong[Vrai] ou #strong[Faux] : 1. Une boule a 1 face plate et 1
 sommet. 2. Un cube a plus d'arêtes qu'il n'a de sommets. 3. Un cylindre
 peut rouler sur sa surface courbe et tenir debout sur ses faces rondes.
 \4. Toutes les faces d'un cube sont des carrés.
 
-#strong[Exercice 8.] Les lettres symétriques. Parmi ces lettres
+#strong[Exercice 7.8] Les lettres symétriques. Parmi ces lettres
 majuscules d'imprimerie, lesquelles possèdent un axe de symétrie
 vertical (qu'on peut plier de gauche à droite) ?
 $ upright(bold(A)) #h(2em) upright(bold(B)) #h(2em) upright(bold(M)) #h(2em) upright(bold(T)) #h(2em) upright(bold(F)) $
 
-#strong[Exercice 9.] Le code secret de la souris. Une petite souris part
+#strong[Exercice 7.9] Le code secret de la souris. Une petite souris part
 de la case #strong[A1]. Elle suit ce code de déplacement :
 $ arrow.t quad arrow.t quad arrow.r quad arrow.r quad arrow.b $ Dans
 quelle case arrive la petite souris à la fin de son voyage ?
 
-#strong[Exercice 10.] Le patron du cube mystère. Un dé à jouer a 6 faces
+#strong[Exercice 7.10] Le patron du cube mystère. Un dé à jouer a 6 faces
 carrées. Si tu découpes une boîte en carton pour la mettre à plat,
 combien de carrés attaches-tu ensemble pour former le patron du cube ?
 
@@ -5457,32 +5413,32 @@ combien de carrés attaches-tu ensemble pour former le patron du cube ?
 
 ==== Niveau  (Petits défis et énigmes)
 <niveau-petits-défis-et-énigmes-6>
-#strong[Exercice 11.] L'énigme des triangles dans le carré. Prends une
+#strong[Exercice 7.11] L'énigme des triangles dans le carré. Prends une
 feuille carrée. Trace une ligne droite qui relie deux coins opposés (la
 diagonale) et découpe le long de cette ligne. 1. Combien de morceaux
 obtiens-tu ? 2. Quelle est la forme géométrique précise de chaque
 morceau ?
 
-#strong[Exercice 12.] Le défi des allumettes. Avec 12 allumettes de même
+#strong[Exercice 7.12] Le défi des allumettes. Avec 12 allumettes de même
 longueur posées à plat sur la table : 1. Peux-tu fabriquer un carré en
 utilisant toutes les allumettes ? Combien d'allumettes mettras-tu par
 côté ? 2. Peux-tu fabriquer un rectangle qui n'est pas un carré avec ces
 12 allumettes ? Donne le nombre d'allumettes pour chaque côté.
 
-#strong[Exercice 13.] Les roues de la charrette. Une charrette possède
+#strong[Exercice 7.13] Les roues de la charrette. Une charrette possède
 deux grandes roues arrière de diamètre $80 upright(" cm")$, et deux
 petites roues avant de diamètre $40 upright(" cm")$. 1. Quel est le
 rayon d'une grande roue ? 2. Quel est le rayon d'une petite roue ? 3.
 Quand la charrette avance, quelle roue fait le plus de tours pour
 parcourir la même distance ?
 
-#strong[Exercice 14.] Le trajet de l'abeille butineuse. Sur un
+#strong[Exercice 7.14] Le trajet de l'abeille butineuse. Sur un
 quadrillage de jardin, une abeille part de sa ruche en #strong[B1]. Elle
 doit butiner une rose en #strong[D3], puis une lavande en #strong[B4],
 et enfin revenir à sa ruche en #strong[B1]. Écris le chemin complet en
 flèches pour cette promenade de butinage.
 
-#strong[Exercice 15.] Le solide mystère. « J'ai 5 faces au total : ma
+#strong[Exercice 7.15] Le solide mystère. « J'ai 5 faces au total : ma
 base au sol est un carré bien plat, et mes 4 autres faces qui montent
 vers le ciel sont des triangles qui se rejoignent en une pointe tout en
 haut. Qui suis-je ? » Combien ai-je d'arêtes et de sommets ?
@@ -5491,36 +5447,36 @@ haut. Qui suis-je ? » Combien ai-je d'arêtes et de sommets ?
 
 === Solutions
 <solutions-6>
-#strong[Exercice 1.] 1. Un #strong[triangle]. 2. Un #strong[carré]. 3.
+#strong[Solution 7.1] 1. Un #strong[triangle]. 2. Un #strong[carré]. 3.
 Un #strong[cercle]. 4. Un #strong[rectangle].
 
-#strong[Exercice 2.] 1. La surface carrée est une #strong[face]. 2. Le
+#strong[Solution 7.2] 1. La surface carrée est une #strong[face]. 2. Le
 coin pointu est un #strong[sommet]. 3. Le bord rectiligne est une
 #strong[arête].
 
-#strong[Exercice 3.] - Boîte de conserve $arrow.r$ #strong[Cylindre]. -
+#strong[Solution 7.3] - Boîte de conserve $arrow.r$ #strong[Cylindre]. -
 Balle de tennis $arrow.r$ #strong[Boule (Sphère)]. - Paquet de céréales
 $arrow.r$ #strong[Pavé droit]. - Dé à jouer $arrow.r$ #strong[Cube].
 
-#strong[Exercice 4.] 1. Si le rayon est 5 cm :
+#strong[Solution 7.4] 1. Si le rayon est 5 cm :
 $upright("Diamètre") = 2 times 5 = upright(bold(10 upright(" cm")))$. 2.
 Si le diamètre est 12 cm :
 $upright("Rayon") = 12 div 2 = upright(bold(6 upright(" cm")))$ (la
 moitié).
 
-#strong[Exercice 5.] - La pomme est en #strong[B2]. - La banane est en
+#strong[Solution 7.5] - La pomme est en #strong[B2]. - La banane est en
 #strong[A1]. - Le raisin est en #strong[C1].
 
-#strong[Exercice 6.] 1. Un triangle rectangle possède exactement
+#strong[Solution 7.6] 1. Un triangle rectangle possède exactement
 #strong[1 angle droit]. 2. Un cercle ne possède aucun côté droit, donc
 #strong[0 angle droit]. 3. Un carré possède #strong[4 angles droits].
 
-#strong[Exercice 7.] 1. Faux (la boule n'a ni face plate ni sommet). 2.
+#strong[Solution 7.7] 1. Faux (la boule n'a ni face plate ni sommet). 2.
 Vrai (le cube a 12 arêtes et 8 sommets, et $12 > 8$). 3. Vrai (il roule
 sur sa face courbe et glisse ou tient stable sur ses deux bases rondes).
 \4. Vrai (les 6 faces du cube sont des carrés identiques).
 
-#strong[Exercice 8.] - #strong[A] : oui (axe vertical qui coupe la
+#strong[Solution 7.8] - #strong[A] : oui (axe vertical qui coupe la
 lettre au milieu). - #strong[B] : non (elle a un axe horizontal, pas
 vertical). - #strong[M] : oui (axe vertical au centre). - #strong[T] :
 oui (axe vertical le long de la barre descendante). - #strong[F] : non
@@ -5528,7 +5484,7 @@ oui (axe vertical le long de la barre descendante). - #strong[F] : non
 
 Les lettres sont donc #strong[A], #strong[M] et #strong[T].
 
-#strong[Exercice 9.] Suivons le parcours :
+#strong[Solution 7.9] Suivons le parcours :
 
 - Départ en A1.
 - $arrow.t arrow.t$ : monte en A2 puis en A3.
@@ -5537,15 +5493,15 @@ Les lettres sont donc #strong[A], #strong[M] et #strong[T].
 
 La souris arrive en #strong[C2].
 
-#strong[Exercice 10.] Un cube a 6 faces : pour former son patron déplié,
+#strong[Solution 7.10] Un cube a 6 faces : pour former son patron déplié,
 il faut découper et assembler exactement #strong[6 carrés].
 
-#strong[Exercice 11.] 1. On obtient #strong[2 morceaux]. 2. Chaque
+#strong[Solution 7.11] 1. On obtient #strong[2 morceaux]. 2. Chaque
 morceau est un #strong[triangle rectangle] (il possède un angle droit
 issu du coin du carré et deux côtés de même longueur). On l'appelle un
 triangle rectangle isocèle.
 
-#strong[Exercice 12.] 1. Oui ! Un carré a 4 côtés égaux :
+#strong[Solution 7.12] 1. Oui ! Un carré a 4 côtés égaux :
 $12 div 4 = 3$. On met #strong[3 allumettes par côté]. 2. Oui ! Il faut
 que deux longueurs et deux largeurs fassent 12 en tout
 ($2 times L + 2 times l = 12$, soit $L + l = 6$). On peut choisir :
@@ -5553,19 +5509,19 @@ que deux longueurs et deux largeurs fassent 12 en tout
 chaque largeur] ($4 + 2 + 4 + 2 = 12$). Ou bien 5 allumettes de long et
 1 allumette de large ($5 + 1 + 5 + 1 = 12$).
 
-#strong[Exercice 13.] 1. Rayon de la grande roue : moitié de 80 cm =
+#strong[Solution 7.13] 1. Rayon de la grande roue : moitié de 80 cm =
 #strong[40 cm]. 2. Rayon de la petite roue : moitié de 40 cm =
 #strong[20 cm]. 3. La #strong[petite roue] fait le plus de tours ! Comme
 son tour de roue est plus court, elle doit tourner deux fois plus vite
 pour suivre la grande roue.
 
-#strong[Exercice 14.] - De la ruche (B1) à la rose (D3) : 2 pas à
+#strong[Solution 7.14] - De la ruche (B1) à la rose (D3) : 2 pas à
 droite, 2 pas en haut $arrow.r quad arrow.r quad arrow.t quad arrow.t$.
 \- De la rose (D3) à la lavande (B4) : 2 pas à gauche, 1 pas en haut
 $arrow.l quad arrow.l quad arrow.t$. - De la lavande (B4) à la ruche
 (B1) : 3 pas vers le bas $arrow.b quad arrow.b quad arrow.b$.
 
-#strong[Exercice 15.] Ce solide est une #strong[pyramide] à base carrée
+#strong[Solution 7.15] Ce solide est une #strong[pyramide] à base carrée
 (comme les grandes pyramides d'Égypte).
 
 - Nombre d'arêtes : 4 au sol pour le carré $+ 4$ arêtes qui montent vers
@@ -5605,7 +5561,7 @@ le #strong[Volume II : Les Pierres Rebelles et les Nombres Solitaires] !
   "LE SECRET DU PARTAGE ET LES GRANDEURS DU MONDE",
   "8 - 11 ans / CE2 - CM2",
   "Du partage de la galette aux mesures astronomiques, l'élève apprivoise les fractions, les nombres décimaux, la proportionnalité et la géométrie de l'espace.",
-  ("Chapitre 9 : L'Horloge du Berger et les Roues du Temps", "Chapitre 10 : La Galette Brisée et le Tamis de Mesure", "Chapitre 11 : Le Ruban d'Arpenteur et la Virgule Voyageuse", "Chapitre 12 : La Balance d'Al-Khwarizmi et la Pesée Égale", "Chapitre 13 : Le Métier du Tisserand et la Toile Quadrillée", "Chapitre 14 : Le Grand Fleuve du Nil et les Arpenteurs de Corde", "Chapitre 15 : Le Miroir d'Archimède et le Tour du Disque", "Chapitre 16 : La Machine à Diviser et la Règle d'Or", "Chapitre 17 : L'Ombre de la Pyramide et le Théorème de Thalès", "Chapitre 18 : Le Coffre du Trésor et les Solides de l'Espace"),
+  ("Chapitre 8 : Les Pierres Rebelles et les Nombres Solitaires", "Chapitre 9 : Le Reste du Festin et les Équipes de Jeu", "Chapitre 10 : La Galette Brisée et le Tamis de Mesure", "Chapitre 11 : Les Dixièmes de Simon Stevin", "Chapitre 12 : Le Mètre de la Révolution", "Chapitre 13 : La Recette de la Grand-Mère et la Règle de Trois", "Chapitre 14 : L'Ardoise du Marchand et le Trou de Sable"),
   "En regard : La spirale logarithmique du Nautile (Nautilus pompilius)."
 )
 
@@ -5703,9 +5659,7 @@ sont-ils si souples, et d'autres si têtus ? Pour le comprendre, nous
 allons apprendre deux mots très importants : #strong[multiple] et
 #strong[diviseur].
 
-#quote_box[
-#strong[🖐️ À toi de jouer ---
-]
+#methode(title: [🖐️ À toi de jouer —])[
  Prends 12 objets (boutons, haricots,
 pièces). Fabrique tous les rectangles possibles. Puis enlève un objet et
 recommence avec 11. Ressens dans tes doigts la différence !
@@ -5885,11 +5839,7 @@ dizaines et plus » tombe juste. #strong[Seules les unités peuvent poser
 problème.] C'est pour ça qu'il suffit de regarder le #strong[dernier
 chiffre].
 
-#quote_box[
-#strong[📐 Critères de divisibilité par 2, 5 et 10
-]
-
-
+#principe(title: [📐 Critères de divisibilité par 2, 5 et 10])[
 - Un nombre est divisible par #strong[2] si son chiffre des unités est
   #strong[0, 2, 4, 6 ou 8]. On dit qu'il est #strong[pair]. Sinon il est
   #strong[impair].
@@ -5938,11 +5888,7 @@ En tout, ce qui dépasse, c'est $2 + 3 + 4 = 9$ objets : #strong[la somme
 des chiffres] ! Et 9 se range parfaitement par 9 et par 3. Donc 234 est
 divisible par 9 et par 3. (Vérifie : $234 = 9 times 26$\.)
 
-#quote_box[
-#strong[📐 Critères de divisibilité par 3 et 9
-]
-
-
+#principe(title: [📐 Critères de divisibilité par 3 et 9])[
 - Un nombre est divisible par #strong[3] si la #strong[somme de ses
   chiffres] est un multiple de 3.
 - Un nombre est divisible par #strong[9] si la #strong[somme de ses
@@ -5988,9 +5934,7 @@ divisible par 3. Par 9 ? $39$ n'est pas dans la table de 9
   par 6 (car tous ces nombres sont pairs).
 ]
 
-#quote_box[
-#strong[🖐️ À toi de jouer --- Le jeu du détective
-]
+#methode(title: [🖐️ À toi de jouer — Le jeu du détective])[
  Un joueur annonce un
 grand nombre. L'autre doit dire le plus vite possible par quels nombres
 parmi 2, 3, 5, 9 et 10 il est divisible. Chaque bonne réponse rapporte
@@ -6491,9 +6435,7 @@ diviseur, ou quand il y a un reste final.
 #strong[Résultat :] $473 =\(4 times 118\)+ 1$. Le quotient est 118, le
 reste est 1. La condition $1 < 4$ est bien respectée !
 
-#quote_box[
-#strong[🧭 Méthode --- Les 4 gestes magiques de la potence
-]
+#methode(title: [🧭 Méthode — Les 4 gestes magiques de la potence])[
  Pour chaque
 colonne de la division, on répète toujours les mêmes 4 gestes : 1.
 #strong[D]iviser (combien de fois le diviseur tient-il dans le paquet ?)
@@ -7121,11 +7063,7 @@ et la bière entre les ouvriers bâtisseurs de pyramides.
 Regarde une boîte de 6 chocolats. L'unité entière est la boîte complète
 ($6$ chocolats).
 
-#quote_box[
-#strong[💡 Découverte --- L'Unité Complète comme Fraction $6\/6$
-]
-
-
+#decouvre(title: [💡 Découverte — L'Unité Complète comme Fraction $6\/6$])[
 - o | o | o | o | o | o \] \<-- 1 boîte complète = 6/6
 ]
 
@@ -7142,9 +7080,7 @@ Regarde une boîte de 6 chocolats. L'unité entière est la boîte complète
   numérateur ($11$) est plus grand que le dénominateur ($6$). Tu as
   mangé #strong[plus d'une boîte entière] : $11 / 6 > 1$.
 
-#quote_box[
-#strong[📐 Propriété --- Position par rapport à 1
-]
+#principe(title: [📐 Propriété — Position par rapport à 1])[
  Pour toute fraction
 $a / b$ :
 
@@ -7189,10 +7125,7 @@ qu'avec 7 tiers, on fabrique #strong[2 galettes complètes], et il reste
 
 $ 7 / 3 = 3 / 3 + 3 / 3 + 1 / 3 = 1 + 1 + 1 / 3 = 2 + 1 / 3 $
 
-#quote_box[
-#strong[🧭 Méthode --- Écrire une fraction sous la forme « Entier +
-Fraction \< 1 »
-]
+#methode(title: [🧭 Méthode — Écrire une fraction sous la forme « Entier + Fraction \< 1 »])[
  Pour décomposer une fraction $a / b$ : 1. Effectue la
 division euclidienne de $a$ par $b$ : trouve le quotient $q$ et le reste
 $r$ ($a = b times q + r$). 2. Écris directement : $ a / b = q + r / b $
@@ -7277,9 +7210,7 @@ Toutes ces fractions désignent exactement #strong[la même quantité de
 matière]. On dit que ce sont des #strong[fractions équivalentes] (ou
 fractions égales).
 
-#quote_box[
-#strong[📐 Règle d'or des fractions équivalentes
-]
+#principe(title: [📐 Règle d'or des fractions équivalentes])[
  On ne change pas la
 valeur d'une fraction si l'on #strong[multiplie] (ou si l'on
 #strong[divise]) son numérateur et son dénominateur par un #strong[même
@@ -7328,9 +7259,7 @@ $ 2 / 8 + 3 / 8 = frac(2 + 3, 8) = 5 / 8 $
 - 5/8 ------------\>
 ]
 
-#quote_box[
-#strong[📐 Règle --- Addition et soustraction de même dénominateur
-]
+#principe(title: [📐 Règle — Addition et soustraction de même dénominateur])[
  Pour
 additionner (ou soustraire) deux fractions ayant le #strong[même
 dénominateur] : 1. On #strong[garde le même dénominateur] (on ne touche
@@ -7681,11 +7610,7 @@ Un homme observe ce désordre avec calme. Il s'appelle #strong[Simon
 Stevin] (1548-1620). C'est un ingénieur, mathématicien et
 quartier-maître général de l'armée néerlandaise.
 
-#quote_box[
-#strong[💡 Découverte & Histoire --- Simon Stevin (1548 - 1620)
-]
-
-
+#decouvre(title: [💡 Découverte & Histoire — Simon Stevin (1548 - 1620)])[
 « #emph[Pourquoi compliquer ce qui peut être simple ? Nous comptons par
 dizaines, centaines et milliers. Faisons la même chose SOUS l'unité !] »
 ]
@@ -7836,10 +7761,7 @@ Maintenant, compare :
 
 Comme $20 > 18$, il est évident que : $ upright(bold(3\,2 > 3\,18)) $
 
-#quote_box[
-#strong[🧭 Méthode --- Comparer deux nombres décimaux sans jamais se
-tromper
-]
+#methode(title: [🧭 Méthode — Comparer deux nombres décimaux sans jamais se tromper])[
  1. On compare d'abord la #strong[partie entière] :
 $7\,1 > 5\,99$ car $7 > 5$. (Pas besoin de regarder après la virgule !).
 \2. Si les parties entières sont égales, on compare le #strong[chiffre
@@ -8319,12 +8241,7 @@ On estimait qu'il existait en France plus de #strong[800 noms de mesures
 différents] et près de #strong[250 000 façons différentes de les
 calculer] !
 
-#quote_box[
-#strong[💡 Découverte & Histoire --- L'anarchie des mesures sous
-l'Ancien Régime
-]
-
-
+#decouvre(title: [💡 Découverte & Histoire — L'anarchie des mesures sous l'Ancien Régime])[
 - Avant 1789 :
 - À Paris : 1 pied = 32,5 cm
 - À Bordeaux : 1 pied = 35,7 cm
@@ -8524,11 +8441,7 @@ différence entre #strong[périmètre] et #strong[aire].
 Pour trouver le périmètre d'un polygone quelconque, il suffit
 d'#strong[additionner la longueur de tous ses côtés].
 
-#quote_box[
-#strong[📐 Formules de périmètre usuelles
-]
-
-
+#principe(title: [📐 Formules de périmètre usuelles])[
 - #strong[Polygone quelconque :]
   $cal(P) = upright("somme de tous les côtés")$.
 
@@ -8564,11 +8477,7 @@ Pour compter le nombre total de carreaux, inutile de les compter un par
 un : On a #strong[3 rangées de 5 carreaux] !
 $ upright("Aire") = 5 times 3 = 15 upright(" carreaux de ") 1 upright(" cm")^2 = 15 upright(" cm")^2 $
 
-#quote_box[
-#strong[📐 Formules d'aire usuelles
-]
-
-
+#principe(title: [📐 Formules d'aire usuelles])[
 - #strong[Aire d'un rectangle :]
   $ cal(A) = upright("Longueur") times upright("Largeur") = L times l $
 
@@ -8629,9 +8538,7 @@ ouverture, l'outil de référence de l'écolier et du maçon est
   écarté que l'angle droit (son ouverture est strictement comprise entre
   $90^compose$ et $180^compose$).
 
-#quote_box[
-#strong[🧭 Méthode --- Reconnaître un angle avec ton équerre
-]
+#methode(title: [🧭 Méthode — Reconnaître un angle avec ton équerre])[
  1. Pose le
 coin de l'angle droit de ton équerre exactement sur le sommet de
 l'angle. 2. Aligne l'un des bords de l'équerre sur l'un des côtés de
@@ -9673,9 +9580,7 @@ disparu, le trou a disparu : il ne reste que le niveau zéro du sol.
 
 $ \(+ 1\)+\(- 1\)= 0 $
 
-#quote_box[
-#strong[💡 Une vérité lumineuse --- Le sens du Zéro
-]
+#decouvre(title: [💡 Une vérité lumineuse — Le sens du Zéro])[
  Le zéro n'est pas
 le « rien » absolu. C'est #strong[l'annulation de deux forces opposées]
 : Une quantité positive ($+ 1$) et une quantité négative ($- 1$) ont
@@ -10186,7 +10091,7 @@ ans)] !
   "L'ÉTOILE D'ALEXANDRIE ET L'ESPACE EUCLIDIEN",
   "11 - 13 ans / 6e - 5e",
   "Aux portes du collège, la géométrie déductive s'organise autour des axiomes d'Euclide, des nombres relatifs et des symétries du plan.",
-  ("Chapitre 19 : Le Secret Interdit des Pythagoriciens", "Chapitre 20 : Le Bâton de Thalès et le Trésor des Ombres", "Chapitre 21 : Le Navire dans la Brume et le Tracé Triangulaire", "Chapitre 22 : Le Thermomètre Gelé et la Marche sur l'Axe", "Chapitre 23 : Le Crible d'Ératosthène et l'Armée des Premiers", "Chapitre 24 : Le Jardin d'Islam et les Pavages d'Alhambra", "Chapitre 25 : L'Île au Trésor et le Compas de Relèvement", "Chapitre 26 : Le Rouleau de Papyrus et les Nombres Négatifs", "Chapitre 27 : L'Orgue de Pythagore et la Corde Vibrante", "Chapitre 28 : La Boîte d'Allumettes et le Cube Éclaté"),
+  ("Chapitre 15 : La Crue du Nil et la Corde à Treize Nœuds", "Chapitre 16 : La Roue du Potier et le Secret d'Archimède", "Chapitre 17 : L'Ombre de la Pyramide et le Bâton Planté", "Chapitre 18 : Le Grain de Riz sur l'Échiquier", "Chapitre 19 : Le Secret Interdit des Pythagoriciens", "Chapitre 20 : L'Île au Trésor et les Deux Sentiers", "Chapitre 21 : Le Percepteur et les Cent Morceaux"),
   "En regard : La phyllotaxie et les spirales de Fibonacci du Tournesol (Helianthus annuus)."
 )
 
@@ -10370,11 +10275,7 @@ a aucune ambiguïté, on écrit simplement $hat(B)$ (« l'angle B »).
 Voici l'erreur la plus fréquente chez les apprentis géomètres. Regarde
 ces deux angles :
 
-#quote_box[
-#strong[💡 Observation --- Comparer l'Écartement des Côtés d'un Angle
-]
-
-
+#decouvre(title: [💡 Observation — Comparer l'Écartement des Côtés d'un Angle])[
 - Angle 1 : Angle 2 :
 ]
 
@@ -10384,9 +10285,7 @@ demi-droites : elles sont infinies, on n'en dessine qu'un bout. Ce qui
 compte, c'est #strong[l'écartement], pas la longueur du trait. Les deux
 angles ci-dessus ont exactement la même ouverture.
 
-#quote_box[
-#strong[🖐️ À toi de jouer ---
-]
+#methode(title: [🖐️ À toi de jouer —])[
  Prends deux crayons et attache-les
 ensemble par une extrémité avec un élastique, comme un compas. Ouvre-les
 un peu. Maintenant, remplace-les par deux longues règles en gardant
@@ -10479,10 +10378,7 @@ $180^compose$. Il porte #strong[deux graduations] : l'une croît de
 gauche à droite, l'autre de droite à gauche. C'est là que se cachent la
 plupart des erreurs.
 
-#quote_box[
-#strong[🧭 Méthode --- Mesurer un angle $accent(A B C, ̂)$ au rapporteur
-]
-
+#methode(title: [🧭 Méthode — Mesurer un angle $accent(A B C, ̂)$ au rapporteur])[
 \1. Place le #strong[centre] du rapporteur (la petite croix) exactement
 sur le #strong[sommet] $B$. 2. Fais coïncider la #strong[ligne du zéro]
 avec l'un des côtés, par exemple $\[B A\)$. 3. Suis la graduation
@@ -10500,10 +10396,7 @@ réponse est $180^compose - 130^compose = 50^compose$. Le contrôle « aigu
 ou obtus ? » à l'œil évite cette erreur dans 99 % des cas.
 ]
 
-#quote_box[
-#strong[🧭 Méthode --- Construire un angle de mesure donnée, par exemple
-$accent(x O y, ̂) = 65^compose$
-]
+#methode(title: [🧭 Méthode — Construire un angle de mesure donnée, par exemple $accent(x O y, ̂) = 65^compose$])[
  1. Trace une demi-droite $\[O x\)$. 2.
 Place le centre du rapporteur sur $O$, le zéro sur $\[O x\)$. 3. Sur la
 graduation qui part de ce zéro, repère $65$ et marque un petit point. 4.
@@ -10568,9 +10461,7 @@ Regarde :
   droite : leur somme fait $180^compose$. On dit qu'ils sont
   #strong[supplémentaires].
 
-#quote_box[
-#strong[📐 Vocabulaire ---
-]
+#principe(title: [📐 Vocabulaire —])[
  Deux angles sont #strong[supplémentaires] si
 leur somme vaut $180^compose$, et #strong[complémentaires] si leur somme
 vaut $90^compose$. Deux angles sont #strong[adjacents] s'ils ont le même
@@ -10616,11 +10507,7 @@ chemin de fer.
 Deux propriétés fondamentales relient ces deux notions (tu peux les
 vérifier en dessinant) :
 
-#quote_box[
-#strong[📐 Propriétés ---
-]
-
-
+#principe(title: [📐 Propriétés —])[
 - #strong[P1.] Si deux droites sont perpendiculaires à une même
   troisième droite, alors elles sont parallèles entre elles.
 
@@ -10643,28 +10530,19 @@ Le symbole $arrow.r.double$ se lit « donc » ou « implique » : ce qui est
 
 ==== 4.4 Construire avec les instruments
 <construire-avec-les-instruments>
-#quote_box[
-#strong[🧭 Méthode --- Tracer la perpendiculaire à $\(d\)$ passant par
-un point $A$ (à l'équerre)
-]
+#methode(title: [🧭 Méthode — Tracer la perpendiculaire à $\(d\)$ passant par un point $A$ (à l'équerre)])[
  Pose un côté de l'angle droit de l'équerre
 #strong[le long de $\(d\)$], fais glisser l'équerre le long de $\(d\)$
 jusqu'à ce que l'autre côté de l'angle droit passe par $A$. Trace.
 ]
 
-#quote_box[
-#strong[🧭 Méthode --- Tracer la parallèle à $\(d\)$ passant par $A$
-(règle + équerre)
-]
+#methode(title: [🧭 Méthode — Tracer la parallèle à $\(d\)$ passant par $A$ (règle + équerre)])[
  Trace d'abord la perpendiculaire $\(p\)$ à $\(d\)$
 passant par $A$. Puis trace la perpendiculaire à $\(p\)$ passant par
 $A$. D'après la propriété #strong[P1], elle est parallèle à $\(d\)$.
 ]
 
-#quote_box[
-#strong[🧭 Méthode --- La perpendiculaire au compas seul (méthode des
-bâtisseurs)
-]
+#methode(title: [🧭 Méthode — La perpendiculaire au compas seul (méthode des bâtisseurs)])[
  1. Pointe le compas en $A$ et trace un arc qui coupe
 $\(d\)$ en deux points $M$ et $N$. 2. Avec un écartement plus grand,
 pointe en $M$, puis en $N$, et trace deux arcs qui se croisent en un
@@ -10695,9 +10573,7 @@ $\(d\)$] est la longueur $A H$, où $H$ est le pied de la perpendiculaire
 $A$ à $\(d\)$.
 ]
 
-#quote_box[
-#strong[⚠️ Aux limites ---
-]
+#alerte(title: [⚠️ Aux limites —])[
  Les propriétés P1, P2, P3 sont vraies
 #strong[dans un plan]. Dans l'espace, c'est faux ! Dans ta chambre, la
 ligne entre le mur et le plafond à gauche et la ligne verticale du coin
@@ -10927,9 +10803,7 @@ constante universelle de la géométrie de notre univers. Les
 mathématiciens lui ont donné le nom de la lettre grecque #strong[$pi$]
 (qui se prononce #emph[« pi »]).
 
-#quote_box[
-#strong[📐 La constante $pi$ ---
-]
+#principe(title: [📐 La constante $pi$ —])[
  Pour tout cercle de périmètre $P$ et
 de diamètre $d$ : $ P / d = pi approx 3\,1415926535 dots.h $
 ]
@@ -11065,9 +10939,7 @@ parts, 1 000 000 de parts infiniment fines, les petites pointes ondulées
 deviennent absolument plates et droites : la figure devient un véritable
 rectangle parfait d'aire $pi r^2$.
 
-#quote_box[
-#strong[📐 Théorème --- Aire du disque
-]
+#principe(title: [📐 Théorème — Aire du disque])[
  L'aire $A$ d'un disque de rayon
 $r$ (et de diamètre $d = 2 r$) est égale à :
 $ A = pi times r^2 = pi times r times r $ En fonction du diamètre $d$ :
@@ -11246,68 +11118,68 @@ petit disque intérieur.
 <exercices-13>
 ==== Niveau  (Application directe)
 <niveau-application-directe-6>
-#strong[Exercice 1.] Complète le tableau suivant pour différents cercles
+#strong[Exercice 16.1] Complète le tableau suivant pour différents cercles
 (prendre $pi approx 3\,14$) : | Cercle | Rayon $r$ | Diamètre $d$ |
 Périmètre $P$ | |---|---|---|---| | A | $6 upright(" cm")$ | ? | ? | | B
 | ? | $18 upright(" m")$ | ? | | C | ? | ? | $31\,4 upright(" dm")$ |
 
-#strong[Exercice 2.] Calcule l'aire exacte (avec $pi$) puis arrondie au
+#strong[Exercice 16.2] Calcule l'aire exacte (avec $pi$) puis arrondie au
 dixième : 1. D'un disque de rayon $4 upright(" cm")$. 2. D'un disque de
 diamètre $14 upright(" m")$.
 
-#strong[Exercice 3.] Un jardinier souhaite poser une bordure en bois
+#strong[Exercice 16.3] Un jardinier souhaite poser une bordure en bois
 autour d'un massif de fleurs circulaire de $3 upright(" m")$ de rayon.
 Quelle longueur de bordure doit-il acheter ?
 
-#strong[Exercice 4.] Une assiette a un diamètre de $24 upright(" cm")$.
+#strong[Exercice 16.4] Une assiette a un diamètre de $24 upright(" cm")$.
 Calcule son aire au $upright("cm")^2$ près.
 
-#strong[Exercice 5.] Donne la valeur exacte du périmètre d'un
+#strong[Exercice 16.5] Donne la valeur exacte du périmètre d'un
 demi-cercle de rayon $5 upright(" cm")$, comprenant son diamètre de
 fermeture.
 
 ==== Niveau  (Réflexion et géométrie)
 <niveau-réflexion-et-géométrie-1>
-#strong[Exercice 6.] Une table ronde a un périmètre de
+#strong[Exercice 16.6] Une table ronde a un périmètre de
 $376\,8 upright(" cm")$. 1. Quel est son rayon ? 2. Quelle est son aire
 en $upright("m")^2$ ?
 
-#strong[Exercice 7.] Une chèvre est attachée par une corde de
+#strong[Exercice 16.7] Une chèvre est attachée par une corde de
 $6 upright(" mètres")$ à un piquet planté au milieu d'une vaste prairie
 plate. 1. Quelle est la forme géométrique de la zone d'herbe qu'elle
 peut brouter ? 2. Calcule l'aire exacte de cette zone de pâture.
 
-#strong[Exercice 8.] On double le rayon d'un disque (le rayon passe de
+#strong[Exercice 16.8] On double le rayon d'un disque (le rayon passe de
 $r$ à $2 r$). 1. Par combien son périmètre est-il multiplié ? 2. Par
 combien son aire est-elle multipliée ? Justifie par un calcul littéral.
 
-#strong[Exercice 9.] Un terrain de sport a la forme d'un rectangle de
+#strong[Exercice 16.9] Un terrain de sport a la forme d'un rectangle de
 $100 upright(" m")$ de long sur $60 upright(" m")$ de large, terminé à
 chaque extrémité par un demi-disque de diamètre $60 upright(" m")$. 1.
 Calcule la longueur totale d'un tour de piste extérieur. 2. Calcule
 l'aire totale du terrain.
 
-#strong[Exercice 10.] Une roue de camion a un diamètre extérieur de
+#strong[Exercice 16.10] Une roue de camion a un diamètre extérieur de
 $90 upright(" cm")$. Le camion roule à une vitesse telle que la roue
 tourne à $10 upright(" tours par seconde")$. Quelle distance le camion
 parcourt-il en une minute ? Donne le résultat en mètres, puis en
 kilomètres par heure ($upright("km/h")$).
 
-#strong[Exercice 11.] Un CD audio a un diamètre extérieur de
+#strong[Exercice 16.11] Un CD audio a un diamètre extérieur de
 $12 upright(" cm")$ et un trou central de diamètre
 $1\,5 upright(" cm")$. Quelle est l'aire disponible pour enregistrer les
 données musicales ?
 
 ==== Niveau  (Défis et approfondissements)
 <niveau-défis-et-approfondissements>
-#strong[Exercice 12. Le carré et le cercle inscrits.] Dans une plaque
+#strong[Exercice 16.12 Le carré et le cercle inscrits.] Dans une plaque
 carrée en métal de $20 upright(" cm")$ de côté, un artisan découpe le
 plus grand disque possible. 1. Quel est le diamètre de ce disque ? 2.
 Quelle est l'aire de métal perdue (les quatre coins qui tombent dans les
 chutes) ? 3. Quel pourcentage de la plaque de métal de départ a été
 gaspillé ?
 
-#strong[Exercice 13. Les lunules d'Hippocrate de Chios.] Soit un
+#strong[Exercice 16.13 Les lunules d'Hippocrate de Chios.] Soit un
 triangle $A B C$ rectangle en $A$, avec $A B = 4 upright(" cm")$ et
 $A C = 3 upright(" cm")$. L'hypoténuse $B C$ mesure $5 upright(" cm")$.
 Sur chacun des trois côtés pris comme diamètres, on trace un demi-cercle
@@ -11316,7 +11188,7 @@ l'hypoténuse s'appellent des #emph[lunules]. Montre que la somme des
 aires de ces deux lunules est exactement égale à l'aire du triangle
 rectangle $A B C$ !
 
-#strong[Exercice 14. La corde autour de la Terre.] Imagine que l'on
+#strong[Exercice 16.14 La corde autour de la Terre.] Imagine que l'on
 tende une corde bien serrée tout autour de l'équateur de la Terre (en
 supposant la Terre parfaitement sphérique, de circonférence
 $P_1 = 40 thin 000 upright(" km")$). On ajoute ensuite #strong[1 mètre
@@ -11328,7 +11200,7 @@ sans se baisser ? Un chat ? Un être humain ? #emph[\(Indication :
 calcule la différence d'altitude $h = r_2 - r_1$. Le résultat va te
 stupéfier !)]
 
-#strong[Exercice 15. La méthode d'Archimède pour l'hexagone.] Soit un
+#strong[Exercice 16.15 La méthode d'Archimède pour l'hexagone.] Soit un
 cercle de rayon $R = 1$. 1. Dessine un hexagone régulier inscrit dans ce
 cercle. Combien mesurent ses 6 côtés ? Déduis-en le périmètre de cet
 hexagone, et la minoration élémentaire de $pi$ que cela donne. 2.
@@ -11340,48 +11212,48 @@ est-il ainsi coincé ?
 
 === Solutions
 <solutions-13>
-#strong[Exercice 1.] - Cercle A : $d = 2 times 6 = 12 upright(" cm")$ \;
+#strong[Solution 16.1] - Cercle A : $d = 2 times 6 = 12 upright(" cm")$ \;
 $P = pi times 12 approx 3\,14 times 12 = 37\,68 upright(" cm")$. -
 Cercle B : $r = 18\/2 = 9 upright(" m")$ \;
 $P = pi times 18 approx 3\,14 times 18 = 56\,52 upright(" m")$. - Cercle
 C : $d = P\/pi approx 31\,4\/3\,14 = 10 upright(" dm")$ \;
 $r = 10\/2 = 5 upright(" dm")$.
 
-#strong[Exercice 2.] 1. $r = 4 upright(" cm")$ : Aire exacte
+#strong[Solution 16.2] 1. $r = 4 upright(" cm")$ : Aire exacte
 $A = pi times 4^2 = 16 pi upright(" cm")^2 approx 50\,3 upright(" cm")^2$.
 \2. $d = 14 upright(" m") arrow.r.double.long r = 7 upright(" m")$ :
 Aire exacte
 $A = pi times 7^2 = 49 pi upright(" m")^2 approx 153\,9 upright(" m")^2$.
 
-#strong[Exercice 3.]
+#strong[Solution 16.3]
 $P = 2 pi r = 2 times pi times 3 = 6 pi approx 18\,85 upright(" m")$. Il
 doit acheter environ $18\,9 upright(" m")$ de bordure.
 
-#strong[Exercice 4.]
+#strong[Solution 16.4]
 $d = 24 upright(" cm") arrow.r.double.long r = 12 upright(" cm")$.
 $A = pi times 12^2 = 144 pi approx 452\,39 upright(" cm")^2 approx 452 upright(" cm")^2$.
 
-#strong[Exercice 5.] Le demi-cercle est composé de l'arc courbe de
+#strong[Solution 16.5] Le demi-cercle est composé de l'arc courbe de
 longueur $1 / 2\(2 pi r\)= pi r = 5 pi upright(" cm")$, plus le diamètre
 de base $d = 2 times 5 = 10 upright(" cm")$. Périmètre exact :
 $P =\(5 pi + 10\)upright(" cm") approx 25\,71 upright(" cm")$.
 
-#strong[Exercice 6.] 1.
+#strong[Solution 16.6] 1.
 $P = 2 pi r arrow.r.double.long r = frac(P, 2 pi) approx frac(376\,8, 2 times 3\,14) = frac(376\,8, 6\,28) = 60 upright(" cm")$.
 \2.
 $A = pi r^2 = pi times 60^2 = 3 thin 600 pi approx 11 thin 304 upright(" cm")^2 = 1\,1304 upright(" m")^2$.
 
-#strong[Exercice 7.] 1. La zone accessible est un disque plein de centre
+#strong[Solution 16.7] 1. La zone accessible est un disque plein de centre
 le piquet et de rayon $6 upright(" m")$. 2. Aire exacte :
 $A = pi times 6^2 = 36 pi upright(" m")^2 approx 113\,10 upright(" m")^2$.
 
-#strong[Exercice 8.] 1. Nouveau périmètre :
+#strong[Solution 16.8] 1. Nouveau périmètre :
 $P' = 2 pi\(2 r\)= 2 times\(2 pi r\)= 2 P$. Le périmètre est
 #strong[multiplié par 2]. 2. Nouvelle aire :
 $A' = pi\(2 r\)^2 = pi times 4 r^2 = 4\(pi r^2\)= 4 A$. L'aire est
 #strong[multipliée par 4] ($2^2$) !
 
-#strong[Exercice 9.] 1. Le contour comprend deux longueurs droites de
+#strong[Solution 16.9] 1. Le contour comprend deux longueurs droites de
 $100 upright(" m")$ et deux demi-cercles de diamètre $60 upright(" m")$
 qui forment ensemble un cercle complet de diamètre $60 upright(" m")$ :
 $P_(upright("total")) = 2 times 100 + pi times 60 = 200 + 60 pi approx 200 + 188\,5 = 388\,5 upright(" m")$.
@@ -11391,7 +11263,7 @@ formé par les deux demi-disques de rayon $r = 30 upright(" m")$ :
 $A_(upright("disque")) = pi times 30^2 = 900 pi approx 2 thin 827\,4 upright(" m")^2$.
 $A_(upright("totale")) = 6 thin 000 + 900 pi approx 8 thin 827\,4 upright(" m")^2$.
 
-#strong[Exercice 10.] Périmètre d'un tour :
+#strong[Solution 16.10] Périmètre d'un tour :
 $P = pi times 0\,90 upright(" m") approx 2\,8274 upright(" m")$. En une
 seconde, la roue fait 10 tours, soit une distance de
 $10 times 2\,8274 = 28\,274 upright(" m/s")$. En une minute
@@ -11400,11 +11272,11 @@ $D = 28\,274 times 60 approx 1 thin 696\,46 upright(" m") approx 1\,70 upright("
 Vitesse en $upright("km/h")$ :
 $28\,274 times 3\,6 approx 101\,8 upright(" km/h")$.
 
-#strong[Exercice 11.] Rayon extérieur $R = 6 upright(" cm")$, rayon
+#strong[Solution 16.11] Rayon extérieur $R = 6 upright(" cm")$, rayon
 intérieur $r = 0\,75 upright(" cm")$.
 $A = pi R^2 - pi r^2 = pi\(6^2 - 0\,75^2\)= pi\(36 - 0\,5625\)= 35\,4375 pi approx 111\,33 upright(" cm")^2$.
 
-#strong[Exercice 12.] 1. Le plus grand disque a pour diamètre la largeur
+#strong[Solution 16.12] 1. Le plus grand disque a pour diamètre la largeur
 du carré, soit $d = 20 upright(" cm")$, donc son rayon est
 $r = 10 upright(" cm")$. 2. Aire du carré :
 $A_(upright("carré")) = 20 times 20 = 400 upright(" cm")^2$. Aire du
@@ -11414,7 +11286,7 @@ Aire perdue : $400 - 100 pi approx 85\,84 upright(" cm")^2$. 3. Taux de
 gaspillage : $frac(85\,84, 400) approx 0\,2146 = 21\,46 %$. Plus de 21%
 de la matière est perdue !
 
-#strong[Exercice 13.] Le triangle $A B C$ est rectangle en $A$, son aire
+#strong[Solution 16.13] Le triangle $A B C$ est rectangle en $A$, son aire
 est $frac(3 times 4, 2) = 6 upright(" cm")^2$. Les demi-disques sur les
 côtés de l'angle droit ont pour rayons $r_1 = 2$ et $r_2 = 1\,5$. Leurs
 aires valent $1 / 2 pi\(2^2\)= 2 pi$ et $1 / 2 pi\(1\,5^2\)= 1\,125 pi$.
@@ -11428,7 +11300,7 @@ $upright("Aire lunules") =\(upright("Aire triangle") + 3\,125 pi\)- 3\,125 pi = 
 Une figure courbée dont l'aire est rigoureusement égale à celle d'un
 polygone droit !
 
-#strong[Exercice 14.] Notons $R_T$ le rayon de la Terre et $R_2$ le
+#strong[Solution 16.14] Notons $R_T$ le rayon de la Terre et $R_2$ le
 rayon avec la corde rallongée. Circonférence initiale :
 $P_1 = 2 pi R_T$. Circonférence rallongée :
 $P_2 = 2 pi R_2 = P_1 + 1 upright(" mètre")$. Soustrayons :
@@ -11441,7 +11313,7 @@ corde d'un mètre décolle la corde de $16 upright(" cm")$ partout. Une
 souris, et même un gros chat, peuvent passer dessous sans aucun problème
 !
 
-#strong[Exercice 15.] 1. Un hexagone régulier inscrit se découpe en 6
+#strong[Solution 16.15] 1. Un hexagone régulier inscrit se découpe en 6
 triangles équilatéraux de côté égal au rayon $R = 1$. Chaque côté mesure
 donc $1$. Le périmètre vaut $6 times 1 = 6$. Comme le diamètre vaut $2$,
 le rapport donne $pi > 6 / 2 = 3$. Donc $pi > 3$. 2. Le carré
@@ -11639,9 +11511,7 @@ chapitres où les intuitions trompent le plus facilement l'esprit humain
 Voici la règle d'or qui gouverne toute la géométrie de notre univers à
 trois dimensions :
 
-#quote_box[
-#strong[📐 Théorème fondamental --- Effet du rapport $k$
-]
+#principe(title: [📐 Théorème fondamental — Effet du rapport $k$])[
  Lorsque toutes
 les longueurs d'une figure ou d'un solide sont multipliées par un
 coefficient $k$ ($k > 0$) :
@@ -11717,9 +11587,7 @@ identiques, et leurs côtés sont tous proportionnels deux à deux.
 
 ==== 4.2 L'énoncé du théorème de Thalès
 <lénoncé-du-théorème-de-thalès>
-#quote_box[
-#strong[📐 Théorème de Thalès ---
-]
+#principe(title: [📐 Théorème de Thalès —])[
  Soient $\(d\)$ et $\(d'\)$ deux
 droites sécantes en un point $A$. Soient $B$ et $M$ deux points de
 $\(d\)$, distincts de $A$. Soient $C$ et $N$ deux points de $\(d'\)$,
@@ -11731,10 +11599,7 @@ Chaque fraction compare un côté du « petit » triangle à son côté
 correspondant dans le « grand » triangle :
 $ frac(upright("côté de ") A M N, upright("côté de ") A B C) = upright("constante ") k $
 
-#quote_box[
-#strong[🧭 Méthode --- Comment écrire l'égalité des rapports sans jamais
-se tromper
-]
+#methode(title: [🧭 Méthode — Comment écrire l'égalité des rapports sans jamais se tromper])[
  1. Repère le #strong[sommet commun] (le point où les deux
 sécantes se croisent, ici $A$). 2. Écris les deux premiers rapports en
 partant toujours de ce sommet commun :
@@ -11761,9 +11626,7 @@ absolue si deux poutres ou deux rails sont #strong[parallèles].
 
 C'est le rôle de la #strong[réciproque du théorème de Thalès].
 
-#quote_box[
-#strong[📐 Réciproque du Théorème de Thalès ---
-]
+#principe(title: [📐 Réciproque du Théorème de Thalès —])[
  Soient $\(A B\)$ et
 $\(A C\)$ deux droites sécantes en $A$. Soient $M$ un point de la droite
 $\(A B\)$ et $N$ un point de la droite $\(A C\)$. Si : 1. Les points
@@ -11982,46 +11845,46 @@ effectue un agrandissement de rapport inverse : $ K = 200 $
 <exercices-14>
 ==== Niveau  (Application directe)
 <niveau-application-directe-7>
-#strong[Exercice 1.] On applique un agrandissement de coefficient
+#strong[Exercice 17.1] On applique un agrandissement de coefficient
 $k = 3$ à un triangle dont les côtés mesurent $4 upright(" cm")$,
 $5 upright(" cm")$ et $6 upright(" cm")$. Quelles sont les longueurs des
 côtés du triangle agrandi ?
 
-#strong[Exercice 2.] Un carré a une aire de $25 upright(" cm")^2$. On
+#strong[Exercice 17.2] Un carré a une aire de $25 upright(" cm")^2$. On
 réduit ses côtés d'un rapport $k = 0\,4$. 1. Quelle est la longueur du
 côté du carré initial ? 2. Quelle est la longueur du côté du carré
 réduit ? 3. Quelle est l'aire du carré réduit ? Vérifie que
 $upright("Aire")' = k^2 times upright("Aire")$.
 
-#strong[Exercice 3.] Dans un triangle $A B C$, on a $M in\[A B\]$ et
+#strong[Exercice 17.3] Dans un triangle $A B C$, on a $M in\[A B\]$ et
 $N in\[A C\]$ avec $\(M N\)\/\/\(B C\)$. On donne
 $A M = 2 upright(" cm")$, $A B = 6 upright(" cm")$ et
 $A N = 3 upright(" cm")$. Calcule la longueur $A C$.
 
-#strong[Exercice 4.] Configuration papillon : les droites $\(A B\)$ et
+#strong[Exercice 17.4] Configuration papillon : les droites $\(A B\)$ et
 $\(C D\)$ sont sécantes en $O$, et $\(A C\)\/\/\(B D\)$. On sait que
 $O A = 5 upright(" cm")$, $O B = 15 upright(" cm")$ et
 $A C = 4 upright(" cm")$. Calcule la longueur $B D$.
 
-#strong[Exercice 5.] Sur une droite, on a $A M = 4 upright(" cm")$ et
+#strong[Exercice 17.5] Sur une droite, on a $A M = 4 upright(" cm")$ et
 $A B = 10 upright(" cm")$. Sur une autre droite sécante en $A$, on a
 $A N = 6 upright(" cm")$ et $A C = 15 upright(" cm")$. Les rapports
 $frac(A M, A B)$ et $frac(A N, A C)$ sont-ils égaux ?
 
 ==== Niveau  (Calculs et démonstrations)
 <niveau-calculs-et-démonstrations>
-#strong[Exercice 6. La hauteur du clocher.] Un après-midi, un promeneur
+#strong[Exercice 17.6 La hauteur du clocher.] Un après-midi, un promeneur
 de $1\,80 upright(" m")$ projette une ombre de $2\,40 upright(" m")$ sur
 le parvis d'une église. Au même instant, l'ombre portée du clocher
 mesure $36 upright(" mètres")$. Quelle est la hauteur du clocher ?
 
-#strong[Exercice 7. Attention au segment piège !] Dans un triangle
+#strong[Exercice 17.7 Attention au segment piège !] Dans un triangle
 $A B C$, on donne $A B = 12 upright(" cm")$, $A C = 16 upright(" cm")$.
 Le point $M$ est sur $\[A B\]$ tel que $M B = 3 upright(" cm")$. La
 parallèle à $\(B C\)$ passant par $M$ coupe $\[A C\]$ en $N$. 1. Calcule
 la longueur $A M$. 2. Calcule la longueur $A N$, puis la longueur $N C$.
 
-#strong[Exercice 8. Les deux étagères murales.] Un menuisier fixe deux
+#strong[Exercice 17.8 Les deux étagères murales.] Un menuisier fixe deux
 planches horizontales $\[M N\]$ et $\[B C\]$ entre deux montants
 inclinés se rejoignant au sommet $A$. On mesure :
 $A M = 45 upright(" cm")$, $M B = 30 upright(" cm")$,
@@ -12029,20 +11892,20 @@ $M N = 60 upright(" cm")$. Puisque les planches sont horizontales, elles
 sont parallèles entre elles. Calcule la longueur de la grande planche
 $\[B C\]$.
 
-#strong[Exercice 9. Test de parallélisme.] Soit un triangle $R S T$ avec
+#strong[Exercice 17.9 Test de parallélisme.] Soit un triangle $R S T$ avec
 $R S = 7 upright(" cm")$ et $R T = 9 upright(" cm")$. On place un point
 $P$ sur $\[R S\]$ tel que $R P = 2\,8 upright(" cm")$, et un point $Q$
 sur $\[R T\]$ tel que $R Q = 3\,6 upright(" cm")$. Les droites $\(P Q\)$
 et $\(S T\)$ sont-elles parallèles ? Rédige soigneusement ta réponse.
 
-#strong[Exercice 10. Le contre-exemple de la réciproque.] Soit un
+#strong[Exercice 17.10 Le contre-exemple de la réciproque.] Soit un
 triangle $A B C$ avec $A B = 5 upright(" cm")$,
 $A C = 8 upright(" cm")$. On place $D$ sur $\[A B\]$ tel que
 $A D = 2 upright(" cm")$, et $E$ sur $\[A C\]$ tel que
 $A E = 3 upright(" cm")$. Les droites $\(D E\)$ et $\(B C\)$ sont-elles
 parallèles ? Justifie.
 
-#strong[Exercice 11. Peinture et carrelage : l'effet $k^2$.] Un peintre
+#strong[Exercice 17.11 Peinture et carrelage : l'effet $k^2$.] Un peintre
 en bâtiment met 2 heures et utilise un pot de 5 litres de peinture pour
 peindre un panneau publicitaire carré de $3 upright(" mètres")$ de côté.
 Combien de pots de peinture et combien d'heures de travail lui
@@ -12052,7 +11915,7 @@ vitesse) ?
 
 ==== Niveau  (Défis et modélisation)
 <niveau-défis-et-modélisation>
-#strong[Exercice 12. L'obstacle infranchissable et le pantographe.] Pour
+#strong[Exercice 17.12 L'obstacle infranchissable et le pantographe.] Pour
 mesurer la distance entre deux balises $A$ et $B$ séparées par un étang
 marécageux, un géomètre choisit un point d'observation $S$ d'où il peut
 viser $A$ et $B$. Il mesure sur la terre ferme :
@@ -12065,7 +11928,7 @@ distance sur le pré : $A' B' = 36 upright(" m")$. 1. Démontre que la
 droite $\(A' B'\)$ est parallèle à la droite $\(A B\)$. 2. Détermine la
 distance inaccessible $A B$ à travers l'étang.
 
-#strong[Exercice 13. Le gâteau des trois frères : partage en parts
+#strong[Exercice 17.13 Le gâteau des trois frères : partage en parts
 d'aires égales.] Un pâtissier prépare un grand biscuit triangulaire
 $A B C$ de hauteur $18 upright(" cm")$. Il souhaite le couper en trois
 parts de même aire à l'aide de deux coups de couteau horizontaux
@@ -12077,7 +11940,7 @@ $h_1$ et $h_2$ depuis le sommet $A$ le pâtissier doit-il couper le
 gâteau ? #emph[\(Donne les valeurs exactes puis arrondies au
 millimètre).]
 
-#strong[Exercice 14. Le tronc de pyramide d'Égypte.] On considère une
+#strong[Exercice 17.14 Le tronc de pyramide d'Égypte.] On considère une
 pyramide régulière à base carrée de côté $10 upright(" m")$ et de
 hauteur $12 upright(" m")$. Son volume initial est
 $V = 1 / 3 times upright("Base") times upright("Hauteur") = 1 / 3 times 100 times 12 = 400 upright(" m")^3$.
@@ -12087,7 +11950,7 @@ la petite pyramide supérieure ? 2. Quel est le volume de la petite
 pyramide retirée ? 3. Quel est le volume du « tronc de pyramide »
 restant en bas ? Quelle fraction du volume total représente-t-il ?
 
-#strong[Exercice 15. Thalès dans l'espace : la chambre noire et la
+#strong[Exercice 17.15 Thalès dans l'espace : la chambre noire et la
 photographie.] Le premier appareil photo (la #emph[camera obscura]) est
 une boîte fermée percée d'un minuscule trou $O$ au centre de sa face
 avant. Un arbre de $15 upright(" mètres")$ de haut est situé à
@@ -12103,58 +11966,58 @@ fond de l'appareil ?
 
 === Solutions
 <solutions-14>
-#strong[Exercice 1.] Chaque longueur est multipliée par $3$ :
+#strong[Solution 17.1] Chaque longueur est multipliée par $3$ :
 $4 times 3 = 12 upright(" cm")$ \; $5 times 3 = 15 upright(" cm")$ \;
 $6 times 3 = 18 upright(" cm")$.
 
-#strong[Exercice 2.] 1. Côté initial : $sqrt(25) = 5 upright(" cm")$. 2.
+#strong[Solution 17.2] 1. Côté initial : $sqrt(25) = 5 upright(" cm")$. 2.
 Côté réduit : $5 times 0\,4 = 2 upright(" cm")$. 3. Aire réduite :
 $2 times 2 = 4 upright(" cm")^2$. Vérification :
 $k^2 times upright("Aire initiale") =\(0\,4\)^2 times 25 = 0\,16 times 25 = 4 upright(" cm")^2$.
 Exact !
 
-#strong[Exercice 3.] D'après le théorème de Thalès :
+#strong[Solution 17.3] D'après le théorème de Thalès :
 $frac(A M, A B) = frac(A N, A C) arrow.r.double.long 2 / 6 = frac(3, A C)$.
 Produit en croix : $A C = frac(6 times 3, 2) = 9 upright(" cm")$.
 
-#strong[Exercice 4.] Configuration papillon :
+#strong[Solution 17.4] Configuration papillon :
 $frac(O A, O B) = frac(A C, B D) arrow.r.double.long 5 / 15 = frac(4, B D)$.
 $B D = frac(15 times 4, 5) = 12 upright(" cm")$.
 
-#strong[Exercice 5.] $frac(A M, A B) = 4 / 10 = 0\,4$.
+#strong[Solution 17.5] $frac(A M, A B) = 4 / 10 = 0\,4$.
 $frac(A N, A C) = 6 / 15 = 2 / 5 = 0\,4$. Oui, les deux rapports sont
 rigoureusement égaux.
 
-#strong[Exercice 6.] Parallélisme des rayons du soleil :
+#strong[Solution 17.6] Parallélisme des rayons du soleil :
 $H_(upright("clocher")) / h_(upright("homme")) = L_(upright("clocher")) / l_(upright("homme")) arrow.r.double.long frac(H, 1\,80) = frac(36, 2\,40)$.
 $H = frac(1\,80 times 36, 2\,40) = 1\,80 times 15 = 27 upright(" mètres")$.
 
-#strong[Exercice 7.] 1.
+#strong[Solution 17.7] 1.
 $M in\[A B\]arrow.r.double.long A M = A B - M B = 12 - 3 = 9 upright(" cm")$.
 \2. D'après Thalès :
 $frac(A M, A B) = frac(A N, A C) arrow.r.double.long 9 / 12 = frac(A N, 16)$.
 $A N = frac(9 times 16, 12) = 144 / 12 = 12 upright(" cm")$.
 $N C = A C - A N = 16 - 12 = 4 upright(" cm")$.
 
-#strong[Exercice 8.] Attention :
+#strong[Solution 17.8] Attention :
 $A B = A M + M B = 45 + 30 = 75 upright(" cm")$. Thalès :
 $frac(A M, A B) = frac(M N, B C) arrow.r.double.long 45 / 75 = frac(60, B C)$.
 $B C = frac(75 times 60, 45) = 4500 / 45 = 100 upright(" cm") = 1 upright(" mètre")$.
 
-#strong[Exercice 9.] Calculons séparément :
+#strong[Solution 17.9] Calculons séparément :
 $frac(R P, R S) = frac(2\,8, 7) = 0\,4$.
 $frac(R Q, R T) = frac(3\,6, 9) = 0\,4$. Les points $R\,P\,S$ d'une
 part, et $R\,Q\,T$ d'autre part, sont alignés dans le même ordre. Comme
 $frac(R P, R S) = frac(R Q, R T)$, d'après la réciproque du théorème de
 Thalès, les droites $\(P Q\)$ et $\(S T\)$ sont parallèles.
 
-#strong[Exercice 10.] Calculons : $frac(A D, A B) = 2 / 5 = 0\,40$.
+#strong[Solution 17.10] Calculons : $frac(A D, A B) = 2 / 5 = 0\,40$.
 $frac(A E, A C) = 3 / 8 = 0\,375$. Comme
 $frac(A D, A B) eq.not frac(A E, A C)$, d'après la contraposée du
 théorème de Thalès, les droites $\(D E\)$ et $\(B C\)$ ne sont pas
 parallèles.
 
-#strong[Exercice 11.] Le côté passe de $3 upright(" m")$ à
+#strong[Solution 17.11] Le côté passe de $3 upright(" m")$ à
 $9 upright(" m")$ : rapport des longueurs $k = 9 / 3 = 3$. L'aire à
 peindre est multipliée par $k^2 = 3^2 = 9$ !
 
@@ -12162,14 +12025,14 @@ peindre est multipliée par $k^2 = 3^2 = 9$ !
   pots).
 - Temps : $2 upright(" h") times 9 = 18 upright(" heures")$ de travail.
 
-#strong[Exercice 12.] 1. Les points $A'\,S\,A$ et $B'\,S\,B$ sont
+#strong[Solution 17.12] 1. Les points $A'\,S\,A$ et $B'\,S\,B$ sont
 alignés dans cet ordre. Rapports : $frac(S A', S A) = 40 / 120 = 1 / 3$
 et $frac(S B', S B) = 50 / 150 = 1 / 3$. Puisque les rapports sont
 égaux, d'après la réciproque de Thalès, $\(A' B'\)\/\/\(A B\)$. 2.
 D'après Thalès :
 $frac(A' B', A B) = 1 / 3 arrow.r.double.long A B = 3 times A' B' = 3 times 36 = 108 upright(" mètres")$.
 
-#strong[Exercice 13.] 1. Soit $A$ l'aire du triangle total. Le premier
+#strong[Solution 17.13] 1. Soit $A$ l'aire du triangle total. Le premier
 triangle du haut a pour aire $1 / 3 A$. Le triangle intermédiaire a pour
 aire $2 / 3 A$. Le rapport des aires est $k^2$. Donc le rapport des
 hauteurs est $k = sqrt(upright("rapport des aires"))$. 2. Pour la
@@ -12179,7 +12042,7 @@ Pour la deuxième coupe :
 $k_2 = sqrt(2 / 3) = sqrt(6) / 3 approx 0\,8165$.
 $h_2 = 18 times sqrt(2 / 3) = 6 sqrt(6) approx 14\,70 upright(" cm")$.
 
-#strong[Exercice 14.] 1. La coupe est faite à mi-hauteur
+#strong[Solution 17.14] 1. La coupe est faite à mi-hauteur
 ($6 upright(" m")$ sur $12 upright(" m")$), donc le rapport de réduction
 est $k = 6 / 12 = 1 / 2 = 0\,5$. 2. Le volume de la petite pyramide est
 multiplié par $k^3 = (1 / 2)^3 = 1 / 8$.
@@ -12189,7 +12052,7 @@ $V_(upright("tronc")) = 400 - 50 = 350 upright(" m")^3$. Il représente
 $350 / 400 = 7 / 8$ du volume total (soit 87,5 % du volume dans la
 moitié inférieure) !
 
-#strong[Exercice 15.] 1. Les rayons lumineux passent par le trou $O$ en
+#strong[Solution 17.15] 1. Les rayons lumineux passent par le trou $O$ en
 ligne droite : le rayon venant du sommet de l'arbre arrive en bas de la
 plaque, et le rayon venant du pied de l'arbre arrive en haut. L'image se
 forme donc #strong[renversée tête en bas]. 2. Il s'agit d'une
@@ -12351,9 +12214,7 @@ Parenthèses d'abord ! ») :
   ]
 )
 
-#quote_box[
-#strong[📐 Règle officielle --- Priorités de calcul
-]
+#principe(title: [📐 Règle officielle — Priorités de calcul])[
  1. On effectue en
 priorité les calculs situés #strong[entre les parenthèses], en
 commençant par les parenthèses les plus intérieures. 2. On calcule les
@@ -12444,9 +12305,7 @@ scientifique.
 
 ==== 4.1 Puissances positives de 10 : l'armée des zéros
 <puissances-positives-de-10-larmée-des-zéros>
-#quote_box[
-#strong[📐 Règle --- Puissances positives de 10
-]
+#principe(title: [📐 Règle — Puissances positives de 10])[
  Pour tout entier
 positif $n$ : $ 10^n = 1 underbrace(000 dots.h 0, n upright(" zéros")) $
 Le chiffre de l'exposant indique #strong[exactement le nombre de zéros]
@@ -12501,9 +12360,7 @@ Quand on manipule des puissances de même base, le calcul se transforme
 comme par magie : #strong[une multiplication devient une addition
 d'exposants !]
 
-#quote_box[
-#strong[📐 Formules fondamentales des puissances
-]
+#principe(title: [📐 Formules fondamentales des puissances])[
  Pour tous entiers
 relatifs $m$ et $n$, et nombres $a$ et $b$ non nuls :
 
@@ -12738,63 +12595,63 @@ l'explosion des puissances. ✔
 <exercices-15>
 ==== Niveau  (Application directe)
 <niveau-application-directe-8>
-#strong[Exercice 1.] Calcule la valeur numérique des expressions
+#strong[Exercice 18.1] Calcule la valeur numérique des expressions
 suivantes : 1. $A = 7 + 3 times 4$ 2. $B =\(7 + 3\)times 4$ 3.
 $C = 20 - 4 times 2 + 1$ 4. $D = 30\/5 times 2$
 
-#strong[Exercice 2.] Calcule sans calculatrice : $2^4$ \; $3^3$ \; $5^2$
+#strong[Exercice 18.2] Calcule sans calculatrice : $2^4$ \; $3^3$ \; $5^2$
 \; $10^5$ \; $7^0$ \; $\(- 2\)^3$ \; $\(- 2\)^4$ \; $- 5^2$.
 
-#strong[Exercice 3.] Écris sous forme décimale : $10^3$ \; $10^(- 2)$ \;
+#strong[Exercice 18.3] Écris sous forme décimale : $10^3$ \; $10^(- 2)$ \;
 $10^(- 5)$ \; $4\,2 times 10^3$ \; $7 times 10^(- 4)$.
 
-#strong[Exercice 4.] Écris sous la forme d'une seule puissance de 10 :
+#strong[Exercice 18.4] Écris sous la forme d'une seule puissance de 10 :
 \1. $10^4 times 10^7$ 2. $10^9 / 10^3$ 3. $\(10^5\)^2$ 4.
 $10^(- 3) times 10^(- 5)$ 5. $10^2 / 10^(- 4)$
 
-#strong[Exercice 5.] Parmi les écritures suivantes, lesquelles sont en
+#strong[Exercice 18.5] Parmi les écritures suivantes, lesquelles sont en
 notation scientifique ? Justifie. a) $3\,45 times 10^7$ \; b)
 $0\,4 times 10^(- 3)$ \; c) $12 times 10^5$ \; d) $9\,99 times 10^(- 1)$
 \; e) $1 times 10^0$.
 
 ==== Niveau  (Calculs et règles)
 <niveau-calculs-et-règles>
-#strong[Exercice 6.] Calcule en respectant strictement les priorités :
+#strong[Exercice 18.6] Calcule en respectant strictement les priorités :
 \1. $G = 3 times 2^3 - 4 times\(5 - 2^2\)$ 2.
 $H = frac(5^2 - 3^2, 2^4 - 2 times 4)$
 
-#strong[Exercice 7.] Écris sous la forme $a^n$ (où $a$ est un entier et
+#strong[Exercice 18.7] Écris sous la forme $a^n$ (où $a$ est un entier et
 $n$ un entier relatif) : 1. $2^5 times 2^3 times 2^(- 4)$ 2.
 $frac(3^8, \(3^2\)^3)$ 3. $frac(7^3 times 7^(- 5), 7^(- 4))$ 4.
 $8 times 2^5$ #emph[\(Indication : écris 8 comme une puissance de 2)].
 
-#strong[Exercice 8.] Mets chacun des nombres suivants en notation
+#strong[Exercice 18.8] Mets chacun des nombres suivants en notation
 scientifique : 1. Diamètre du globule rouge :
 $0\,000 thin 007 upright(" m")$. 2. Vitesse de la lumière :
 $300 thin 000 thin 000 upright(" m/s")$. 3. Population mondiale :
 $8 thin 100 thin 000 thin 000 upright(" habitants")$. 4. Masse d'une
 goutte d'eau : $0\,000 thin 05 upright(" kg")$.
 
-#strong[Exercice 9.] Effectue les calculs suivants et donne le résultat
+#strong[Exercice 18.9] Effectue les calculs suivants et donne le résultat
 final en notation scientifique : 1.
 $K =\(3 times 10^4\)times\(5 times 10^7\)$ 2.
 $L = frac(8 times 10^(- 3), 4 times 10^5)$ 3.
 $M = frac(1\,2 times 10^5 times 7 times 10^(- 2), 2\,4 times 10^(- 6))$
 
-#strong[Exercice 10. Les bactéries attaquent !] Une population de
+#strong[Exercice 18.10 Les bactéries attaquent !] Une population de
 bactéries est placée dans une boîte de Pétri chauffée. À midi ($t = 0$),
 il y a $1 thin 000$ bactéries ($10^3$). Cette souche double toutes les
 20 minutes. 1. Combien y a-t-il de bactéries à 13 h 00 ? 2. Combien y
 a-t-il de bactéries à 16 h 00 ? Donne la réponse en notation
 scientifique.
 
-#strong[Exercice 11. Comparer sans calculer.] Range les nombres suivants
+#strong[Exercice 18.11 Comparer sans calculer.] Range les nombres suivants
 par ordre croissant sans poser de calculs posés géants :
 $ A = 4\,5 times 10^6 quad\;quad B = 8\,2 times 10^5 quad\;quad C = 1\,1 times 10^7 quad\;quad D = 9\,9 times 10^5 $
 
 ==== Niveau  (Défis et grands nombres)
 <niveau-défis-et-grands-nombres>
-#strong[Exercice 12. Le Googol et le Googolplex.] En 1920, le
+#strong[Exercice 18.12 Le Googol et le Googolplex.] En 1920, le
 mathématicien américain Edward Kasner demanda à son neveu Milton
 Sirotta, âgé de 9 ans, d'inventer un nom pour un nombre colossal : le
 chiffre 1 suivi de 100 zéros. L'enfant répondit : « Un GOGOL ! » (qui
@@ -12807,7 +12664,7 @@ l'Univers ? Combien de fois plus grand ? 3. Kasner définit ensuite le
 le Googolplex avec des puissances de 10. Pourquoi est-il physiquement
 impossible d'écrire ce nombre sur du papier dans notre univers ?
 
-#strong[Exercice 13. Le voyage interstellaire de la sonde Voyager 1.] La
+#strong[Exercice 18.13 Le voyage interstellaire de la sonde Voyager 1.] La
 sonde spatiale #emph[Voyager 1] file à travers l'espace interstellaire à
 la vitesse vertigineuse de $17 upright(" km/s")$, soit environ
 $6\,12 times 10^4 upright(" km/h")$. Elle se dirige vers l'étoile
@@ -12818,12 +12675,12 @@ séparant la Terre de Proxima du Centaure en notation scientifique. 2.
 Combien d'heures, puis combien d'années faudra-t-il à la sonde pour
 parcourir cette distance ?
 
-#strong[Exercice 14. Simplification d'expression littérale avec
+#strong[Exercice 18.14 Simplification d'expression littérale avec
 puissances.] Pour tous nombres réels non nuls $x$ et $y$, simplifie au
 maximum l'expression suivante :
 $ Z = frac(\(x^2 y^(- 3)\)^4 times\(x^(- 1) y\)^2, x^5 y^(- 8)) $
 
-#strong[Exercice 15. Le piège de la somme des inverses de puissances.]
+#strong[Exercice 18.15 Le piège de la somme des inverses de puissances.]
 Calcule la valeur exacte de la somme :
 $ S = 1 / 2^1 + 1 / 2^2 + 1 / 2^3 + 1 / 2^4 + 1 / 2^5 + 1 / 2^6 $ Que
 remarques-tu par rapport au nombre 1 ? Que vaudrait cette somme si l'on
@@ -12833,48 +12690,48 @@ continuait à l'infini ?
 
 === Solutions
 <solutions-15>
-#strong[Exercice 1.] 1. $A = 7 + 12 = 19$. 2. $B = 10 times 4 = 40$. 3.
+#strong[Solution 18.1] 1. $A = 7 + 12 = 19$. 2. $B = 10 times 4 = 40$. 3.
 $C = 20 - 8 + 1 = 12 + 1 = 13$. 4.
 $D =\(30\/5\)times 2 = 6 times 2 = 12$ (de gauche à droite).
 
-#strong[Exercice 2.] - $2^4 = 16$ \; $3^3 = 27$ \; $5^2 = 25$ \;
+#strong[Solution 18.2] - $2^4 = 16$ \; $3^3 = 27$ \; $5^2 = 25$ \;
 $10^5 = 100 thin 000$ \; $7^0 = 1$. - $\(- 2\)^3 = - 8$ \;
 $\(- 2\)^4 = + 16$ \; $- 5^2 = -\(5 times 5\)= - 25$.
 
-#strong[Exercice 3.] $10^3 = 1 thin 000$ \; $10^(- 2) = 0\,01$ \;
+#strong[Solution 18.3] $10^3 = 1 thin 000$ \; $10^(- 2) = 0\,01$ \;
 $10^(- 5) = 0\,000 thin 01$ \; $4\,2 times 10^3 = 4 thin 200$ \;
 $7 times 10^(- 4) = 0\,000 thin 7$.
 
-#strong[Exercice 4.] 1. $10^4 times 10^7 = 10^(4 + 7) = 10^11$. 2.
+#strong[Solution 18.4] 1. $10^4 times 10^7 = 10^(4 + 7) = 10^11$. 2.
 $10^9 / 10^3 = 10^(9 - 3) = 10^6$. 3.
 $\(10^5\)^2 = 10^(5 times 2) = 10^10$. 4.
 $10^(- 3) times 10^(- 5) = 10^(- 3 +\(- 5\)) = 10^(- 8)$. 5.
 $10^2 / 10^(- 4) = 10^(2 -\(- 4\)) = 10^(2 + 4) = 10^6$.
 
-#strong[Exercice 5.] - a) Oui ($1 lt.eq 3\,45 < 10$). - b) Non
+#strong[Solution 18.5] - a) Oui ($1 lt.eq 3\,45 < 10$). - b) Non
 ($0\,4 < 1$). - c) Non ($12 gt.eq 10$). - d) Oui ($1 lt.eq 9\,99 < 10$).
 \- e) Oui ($1 lt.eq 1 < 10$).
 
-#strong[Exercice 6.] 1.
+#strong[Solution 18.6] 1.
 $G = 3 times 8 - 4 times\(5 - 4\)= 24 - 4 times 1 = 24 - 4 = 20$. 2.
 $H = frac(25 - 9, 16 - 8) = 16 / 8 = 2$.
 
-#strong[Exercice 7.] 1. $2^(5 + 3 - 4) = 2^4$. 2.
+#strong[Solution 18.7] 1. $2^(5 + 3 - 4) = 2^4$. 2.
 $3^8 / 3^6 = 3^(8 - 6) = 3^2$. 3.
 $7^(- 2) / 7^(- 4) = 7^(- 2 -\(- 4\)) = 7^2$. 4. $8 = 2^3$, donc
 $8 times 2^5 = 2^3 times 2^5 = 2^8$.
 
-#strong[Exercice 8.] 1. $7 times 10^(- 6) upright(" m")$. 2.
+#strong[Solution 18.8] 1. $7 times 10^(- 6) upright(" m")$. 2.
 $3 times 10^8 upright(" m/s")$. 3.
 $8\,1 times 10^9 upright(" habitants")$. 4.
 $5 times 10^(- 5) upright(" kg")$.
 
-#strong[Exercice 9.] 1.
+#strong[Solution 18.9] 1.
 $K =\(3 times 5\)times\(10^4 times 10^7\)= 15 times 10^11 = 1\,5 times 10^12$.
 \2. $L = (8 / 4) times 10^(- 3 - 5) = 2 times 10^(- 8)$. 3.
 $M = (frac(1\,2 times 7, 2\,4)) times 10^3 / 10^(- 6) = (frac(8\,4, 2\,4)) times 10^(3 -\(- 6\)) = 3\,5 times 10^9$.
 
-#strong[Exercice 10.] 1. En 1 heure, il y a 3 périodes de 20 minutes. La
+#strong[Solution 18.10] 1. En 1 heure, il y a 3 périodes de 20 minutes. La
 population double 3 fois :
 $N_1 = 1 thin 000 times 2^3 = 1 thin 000 times 8 = 8 thin 000$
 bactéries. 2. À 16 h 00, 4 heures se sont écoulées, soit
@@ -12882,7 +12739,7 @@ $4 times 3 = 12$ périodes de 20 min.
 $N_2 = 10^3 times 2^12 = 10^3 times 4 thin 096 = 4 thin 096 thin 000 = 4\,096 times 10^6$
 bactéries.
 
-#strong[Exercice 11.] On classe d'abord par puissance de 10 :
+#strong[Solution 18.11] On classe d'abord par puissance de 10 :
 
 - Exposant 5 : $B = 8\,2 times 10^5$ et $D = 9\,9 times 10^5$. Comme
   $8\,2 < 9\,9$, $B < D$.
@@ -12891,7 +12748,7 @@ bactéries.
 
 Ordre croissant : $B < D < A < C$.
 
-#strong[Exercice 12.] 1. Un gogol s'écrit $10^100$. 2. $10^100$ est
+#strong[Solution 18.12] 1. Un gogol s'écrit $10^100$. 2. $10^100$ est
 immensément plus grand que $10^80$ :
 $10^100 / 10^80 = 10^(100 - 80) = 10^20$. Un gogol est #strong[cent
 milliards de milliards de fois plus grand] que le nombre total d'atomes
@@ -12901,7 +12758,7 @@ $10^(upright("gogol")) = 10^(10^100)$. Pour l'écrire sous forme décimale
 un zéro sur chaque atome de l'univers ($10^80$ atomes), on manquerait
 d'atomes bien avant d'avoir écrit le milliardième du nombre !
 
-#strong[Exercice 13.] 1.
+#strong[Solution 18.13] 1.
 $D = 4\,24 times\(9\,46 times 10^12\)approx 40\,11 times 10^12 = 4\,011 times 10^13 upright(" km")$.
 \2. Temps en heures :
 $t = frac(4\,011 times 10^13, 6\,12 times 10^4) approx 0\,6554 times 10^9 = 6\,554 times 10^8 upright(" heures")$.
@@ -12912,13 +12769,13 @@ $T = frac(6\,554 times 10^8, 8 thin 766) approx 74 thin 766 upright(" années")$
 ! Il faudra près de 75 000 ans à la sonde pour croiser notre étoile
 voisine.
 
-#strong[Exercice 14.] Développons le numérateur :
+#strong[Solution 18.14] Développons le numérateur :
 $\(x^2 y^(- 3)\)^4 = x^8 y^(- 12)$. $\(x^(- 1) y\)^2 = x^(- 2) y^2$.
 Numérateur $= x^(8 - 2) y^(- 12 + 2) = x^6 y^(- 10)$. Divisons par le
 dénominateur :
 $Z = frac(x^6 y^(- 10), x^5 y^(- 8)) = x^(6 - 5) y^(- 10 -\(- 8\)) = x^1 y^(- 2) = x / y^2$.
 
-#strong[Exercice 15.]
+#strong[Solution 18.15]
 $S = 1 / 2 + 1 / 4 + 1 / 8 + 1 / 16 + 1 / 32 + 1 / 64$. Même
 dénominateur (64) :
 $S = frac(32 + 16 + 8 + 4 + 2 + 1, 64) = 63 / 64 = 0\,984375$. La somme
@@ -13051,9 +12908,7 @@ géométrie : le #strong[triangle rectangle].
   #strong[côtés de l'angle droit].
 ]
 
-#quote_box[
-#strong[💡 D'où vient ce mot bizarre ?
-]
+#decouvre(title: [💡 D'où vient ce mot bizarre ?])[
  Le mot #emph[hypoténuse] vient
 du grec ancien #emph[hupoteinousa], formé de #emph[hupo] (« dessous »)
 et #emph[teinein] (« tendre »). L'hypoténuse est littéralement la corde
@@ -13068,9 +12923,7 @@ d'un arc ou la drisse d'un voilier.
 Le théorème ne parle pas au départ de formules compliquées, mais
 d'#strong[aires de carrés] collés aux flancs du triangle.
 
-#quote_box[
-#strong[📐 Théorème de Pythagore (Énoncé géométrique)
-]
+#principe(title: [📐 Théorème de Pythagore (Énoncé géométrique)])[
  Dans un triangle
 rectangle, l'aire du carré construit sur l'hypoténuse est égale à la
 somme des aires des deux carrés construits sur les deux côtés de l'angle
@@ -13238,11 +13091,7 @@ Puis Hippase eut un éclair de génie tragique : il démontra que
 C'est l'un des sommets absolus de la pensée humaine. Suivons le
 raisonnement pas à pas :
 
-#quote_box[
-#strong[✍️ Démonstration --- Irrationalité de $sqrt(2)$
-]
-
-
+#methode(title: [✍️ Démonstration — Irrationalité de $sqrt(2)$])[
 + #strong[L'hypothèse absurde :] Supposons le contraire de ce que l'on
   veut prouver : imaginons qu'il existe une fraction d'entiers $p / q$
   égale à $sqrt(2)$. On choisit cette fraction #strong[irréductible]
@@ -13459,50 +13308,50 @@ $ d^2 = 7^2 + 15^2 = 49 + 225 = 274 $
 <exercices-16>
 ==== Niveau  (Application directe)
 <niveau-application-directe-9>
-#strong[Exercice 1.] Calcule la longueur de l'hypoténuse dans chaque
+#strong[Exercice 19.1] Calcule la longueur de l'hypoténuse dans chaque
 triangle rectangle : 1. $A B C$ rectangle en $A$ avec
 $A B = 3 upright(" cm")$ et $A C = 4 upright(" cm")$. 2. $R S T$
 rectangle en $S$ avec $S R = 5 upright(" cm")$ et
 $S T = 12 upright(" cm")$. 3. $K L M$ rectangle en $M$ avec
 $M K = 8 upright(" dm")$ et $M L = 15 upright(" dm")$.
 
-#strong[Exercice 2.] Calcule la longueur manquante dans ces triangles
+#strong[Exercice 19.2] Calcule la longueur manquante dans ces triangles
 rectangles : 1. $D E F$ rectangle en $D$ avec $E F = 10 upright(" cm")$
 (hypoténuse) et $D E = 6 upright(" cm")$. Calcule $D F$. 2. $G H I$
 rectangle en $H$ avec $G I = 25 upright(" m")$ et
 $H I = 24 upright(" m")$. Calcule $G H$.
 
-#strong[Exercice 3.] Sans calculatrice, donne la valeur exacte de :
+#strong[Exercice 19.3] Sans calculatrice, donne la valeur exacte de :
 $sqrt(49)$ \; $sqrt(81)$ \; $sqrt(144)$ \; $sqrt(1)$ \; $sqrt(0\,25)$.
 
-#strong[Exercice 4.] Entre quels deux entiers consécutifs se situe
+#strong[Exercice 19.4] Entre quels deux entiers consécutifs se situe
 chacun de ces nombres ? a) $sqrt(10)$ \; b) $sqrt(50)$ \; c) $sqrt(85)$.
 
-#strong[Exercice 5.] Le triangle de côtés $6 upright(" cm")$,
+#strong[Exercice 19.5] Le triangle de côtés $6 upright(" cm")$,
 $8 upright(" cm")$ et $10 upright(" cm")$ est-il rectangle ? Justifie
 par un calcul.
 
 ==== Niveau  (Problèmes et rédaction)
 <niveau-problèmes-et-rédaction>
-#strong[Exercice 6. La traversée de la piscine.] Une piscine municipale
+#strong[Exercice 19.6 La traversée de la piscine.] Une piscine municipale
 a la forme d'un rectangle de $25 upright(" mètres")$ de long sur
 $10 upright(" mètres")$ de large. Un nageur décide de la traverser en
 diagonale d'un coin à l'autre. Quelle distance parcourt-il ? Donne la
 valeur arrondie au centimètre.
 
-#strong[Exercice 7. Le mât du voilier.] Le mât vertical d'un voilier
+#strong[Exercice 19.7 Le mât du voilier.] Le mât vertical d'un voilier
 mesure $12 upright(" mètres")$ de haut. Un câble d'acier (un hauban)
 relie le sommet du mât au pont du bateau, à une distance de
 $5 upright(" mètres")$ du pied du mât. Quelle doit être la longueur du
 câble d'acier ?
 
-#strong[Exercice 8. La porte et le panneau de bois.] Un menuisier doit
+#strong[Exercice 19.8 La porte et le panneau de bois.] Un menuisier doit
 faire passer un grand panneau circulaire en bois de
 $2\,15 upright(" mètres")$ de diamètre à travers une porte rectangulaire
 de $2 upright(" mètres")$ de haut et $0\,90 upright(" mètre")$ de large.
 Le panneau peut-il passer s'il le penche en diagonale ?
 
-#strong[Exercice 9. Test d'orthogonalité pour un charpentier.] Un
+#strong[Exercice 19.9 Test d'orthogonalité pour un charpentier.] Un
 charpentier assemble deux poutres en bois qui doivent être
 rigoureusement perpendiculaires. Il marque un point $A$ à
 $60 upright(" cm")$ de l'angle sur la première poutre, et un point $B$ à
@@ -13510,13 +13359,13 @@ $80 upright(" cm")$ sur la seconde poutre. Il mesure ensuite la distance
 directe $A B$ entre les deux marques et trouve $98 upright(" cm")$. Les
 poutres sont-elles perpendiculaires ? Que doit faire le charpentier ?
 
-#strong[Exercice 10. Losange et diagonales.] Un losange $A B C D$
+#strong[Exercice 19.10 Losange et diagonales.] Un losange $A B C D$
 possède des diagonales de longueurs $A C = 16 upright(" cm")$ et
 $B D = 12 upright(" cm")$. Rappelle une propriété géométrique des
 diagonales d'un losange, puis calcule la longueur de son côté et son
 périmètre.
 
-#strong[Exercice 11. La hauteur d'un triangle équilatéral.] Soit un
+#strong[Exercice 19.11 La hauteur d'un triangle équilatéral.] Soit un
 triangle équilatéral $A B C$ de côté $a = 6 upright(" cm")$. On trace la
 hauteur $\[A H\]$ issue de $A$. 1. Quelle est la longueur du segment
 $\[B H\]$ ? Justifie. 2. Calcule la valeur exacte de la hauteur $A H$
@@ -13524,7 +13373,7 @@ sous la forme $k sqrt(3)$. 3. Calcule l'aire exacte du triangle $A B C$.
 
 ==== Niveau  (Défis et raisonnements)
 <niveau-défis-et-raisonnements>
-#strong[Exercice 12. La spirale de Théodore de Cyrène.] 1. Dessine un
+#strong[Exercice 19.12 La spirale de Théodore de Cyrène.] 1. Dessine un
 triangle rectangle isocèle dont les deux côtés de l'angle droit mesurent
 $1$. Quelle est la longueur de son hypoténuse ? 2. Sur cette hypoténuse,
 construis un second triangle rectangle dont l'autre côté de l'angle
@@ -13533,14 +13382,14 @@ construction pas à pas. Quelles sont les longueurs successives des
 hypoténuses ? 4. Quel nom donne-t-on à cette figure qui permet de tracer
 tous les $sqrt(n)$ avec une règle et un compas ?
 
-#strong[Exercice 13. La diagonale du cube.] Soit un cube d'arête
+#strong[Exercice 19.13 La diagonale du cube.] Soit un cube d'arête
 $c = 4 upright(" cm")$. 1. Calcule la longueur de la diagonale d'une
 face carrée. 2. En appliquant à nouveau le théorème de Pythagore dans un
 triangle rectangle intérieur, calcule la grande diagonale de l'espace
 reliant deux sommets opposés du cube. 3. Donne la formule générale de la
 grande diagonale d'un cube de côté $c$.
 
-#strong[Exercice 14. L'araignée et la mouche sur la boîte.] Une boîte en
+#strong[Exercice 19.14 L'araignée et la mouche sur la boîte.] Une boîte en
 carton a la forme d'un pavé droit de dimensions
 $30 upright(" cm") times 12 upright(" cm") times 12 upright(" cm")$. Une
 araignée se trouve sur une petite face, à $1 upright(" cm")$ du haut et
@@ -13550,7 +13399,7 @@ longueur du plus court chemin que l'araignée peut parcourir en marchant
 sur les parois extérieures pour attraper la mouche ? #emph[\(Indication
 : déplie le carton à plat en fabriquant un patron !)]
 
-#strong[Exercice 15. Démonstration de l'irrationalité de $sqrt(3)$.] En
+#strong[Exercice 19.15 Démonstration de l'irrationalité de $sqrt(3)$.] En
 t'inspirant de la démonstration d'Hippase pour $sqrt(2)$, démontre que
 $sqrt(3)$ ne peut pas s'écrire sous la forme d'une fraction irréductible
 $p / q$. #emph[\(Indication : utilise le fait que si $p^2$ est un
@@ -13560,42 +13409,42 @@ multiple de 3, alors $p$ est un multiple de 3).]
 
 === Solutions
 <solutions-16>
-#strong[Exercice 1.] 1.
+#strong[Solution 19.1] 1.
 $B C = sqrt(3^2 + 4^2) = sqrt(9 + 16) = sqrt(25) = 5 upright(" cm")$. 2.
 $R T = sqrt(5^2 + 12^2) = sqrt(25 + 144) = sqrt(169) = 13 upright(" cm")$.
 \3.
 $K L = sqrt(8^2 + 15^2) = sqrt(64 + 225) = sqrt(289) = 17 upright(" dm")$.
 
-#strong[Exercice 2.] 1.
+#strong[Solution 19.2] 1.
 $D F = sqrt(10^2 - 6^2) = sqrt(100 - 36) = sqrt(64) = 8 upright(" cm")$.
 \2.
 $G H = sqrt(25^2 - 24^2) = sqrt(625 - 576) = sqrt(49) = 7 upright(" m")$.
 
-#strong[Exercice 3.] $sqrt(49) = 7$ \; $sqrt(81) = 9$ \;
+#strong[Solution 19.3] $sqrt(49) = 7$ \; $sqrt(81) = 9$ \;
 $sqrt(144) = 12$ \; $sqrt(1) = 1$ \; $sqrt(0\,25) = 0\,5$ (car
 $0\,5^2 = 0\,25$).
 
-#strong[Exercice 4.] a)
+#strong[Solution 19.4] a)
 $3^2 = 9 < 10 < 16 = 4^2 arrow.r.double.long 3 < sqrt(10) < 4$. b)
 $7^2 = 49 < 50 < 64 = 8^2 arrow.r.double.long 7 < sqrt(50) < 8$. c)
 $9^2 = 81 < 85 < 100 = 10^2 arrow.r.double.long 9 < sqrt(85) < 10$.
 
-#strong[Exercice 5.] Plus grand côté : $10 upright(" cm")$.
+#strong[Solution 19.5] Plus grand côté : $10 upright(" cm")$.
 $10^2 = 100$. $6^2 + 8^2 = 36 + 64 = 100$. Puisque $6^2 + 8^2 = 10^2$,
 d'après la réciproque de Pythagore, le triangle est bien rectangle.
 
-#strong[Exercice 6.]
+#strong[Solution 19.6]
 $d = sqrt(25^2 + 10^2) = sqrt(625 + 100) = sqrt(725) approx 26\,93 upright(" mètres")$.
 
-#strong[Exercice 7.]
+#strong[Solution 19.7]
 $L = sqrt(12^2 + 5^2) = sqrt(144 + 25) = sqrt(169) = 13 upright(" mètres")$.
 
-#strong[Exercice 8.] La diagonale de l'ouverture de la porte est :
+#strong[Solution 19.8] La diagonale de l'ouverture de la porte est :
 $D = sqrt(2^2 + 0\,9^2) = sqrt(4 + 0\,81) = sqrt(4\,81) approx 2\,193 upright(" mètres")$.
 Comme $2\,193 > 2\,15$, le panneau circulaire a un diamètre inférieur à
 la diagonale de la porte : #strong[oui, il peut passer] en le penchant !
 
-#strong[Exercice 9.] Calculons :
+#strong[Solution 19.9] Calculons :
 $60^2 + 80^2 = 3 thin 600 + 6 thin 400 = 10 thin 000$. Pour que l'angle
 soit droit, il faudrait que $A B^2 = 10 thin 000$, soit
 $A B = sqrt(10 thin 000) = 100 upright(" cm")$. Or le charpentier a
@@ -13604,14 +13453,14 @@ poutres ne sont pas perpendiculaires (l'angle est légèrement trop aigu,
 $< 90^compose$). Il doit écarter les poutres jusqu'à ce que la distance
 mesure exactement $100 upright(" cm")$.
 
-#strong[Exercice 10.] Les diagonales d'un losange se coupent
+#strong[Solution 19.10] Les diagonales d'un losange se coupent
 perpendiculairement en leur milieu. Les demi-diagonales mesurent
 $16 / 2 = 8 upright(" cm")$ et $12 / 2 = 6 upright(" cm")$. Elles
 forment un triangle rectangle de côté :
 $c = sqrt(8^2 + 6^2) = sqrt(64 + 36) = sqrt(100) = 10 upright(" cm")$.
 Périmètre du losange : $4 times 10 = 40 upright(" cm")$.
 
-#strong[Exercice 11.] 1. Dans un triangle équilatéral, la hauteur issue
+#strong[Solution 19.11] 1. Dans un triangle équilatéral, la hauteur issue
 d'un sommet est aussi la médiatrice du côté opposé : elle coupe
 $\[B C\]$ en son milieu $H$. Donc $B H = 6 / 2 = 3 upright(" cm")$. 2.
 Le triangle $A B H$ est rectangle en $H$.
@@ -13621,14 +13470,14 @@ $sqrt(27) = sqrt(9 times 3) = 3 sqrt(3) upright(" cm") approx 5\,20 upright(" cm
 \3.
 $upright("Aire") = frac(upright("base") times upright("hauteur"), 2) = frac(6 times 3 sqrt(3), 2) = 9 sqrt(3) upright(" cm")^2 approx 15\,59 upright(" cm")^2$.
 
-#strong[Exercice 12.] 1. $h_1 = sqrt(1^2 + 1^2) = sqrt(2)$. 2.
+#strong[Solution 19.12] 1. $h_1 = sqrt(1^2 + 1^2) = sqrt(2)$. 2.
 $h_2 = sqrt(\(sqrt(2)\)^2 + 1^2) = sqrt(2 + 1) = sqrt(3)$. 3. Par
 récurrence, les hypoténuses successives mesurent
 $sqrt(2)\,sqrt(3)\,sqrt(4) = 2\,sqrt(5)\,sqrt(6)\,dots.h\,sqrt(n)$. 4.
 C'est la #strong[Spirale de Théodore de Cyrène] (ou escargot de
 Pythagore).
 
-#strong[Exercice 13.] 1. Diagonale de face :
+#strong[Solution 19.13] 1. Diagonale de face :
 $d_1 = sqrt(c^2 + c^2) = sqrt(4^2 + 4^2) = sqrt(32) = 4 sqrt(2) upright(" cm")$.
 \2. Le triangle reliant une arête verticale, la diagonale de la face du
 bas et la grande diagonale est rectangle.
@@ -13636,7 +13485,7 @@ $D = sqrt(d_1^2 + c^2) = sqrt(32 + 4^2) = sqrt(32 + 16) = sqrt(48) = sqrt(16 tim
 \3. Formule générale :
 $D = sqrt(c^2 + c^2 + c^2) = sqrt(3 c^2) = c sqrt(3)$.
 
-#strong[Exercice 14.] Déplions la boîte à plat (patron). L'araignée et
+#strong[Solution 19.14] Déplions la boîte à plat (patron). L'araignée et
 la mouche sont reliées par une ligne droite oblique sur le carton
 déplié.
 
@@ -13656,7 +13505,7 @@ $12 + 12 = 24 upright(" cm")$. Distance :
 $sqrt(32^2 + 24^2) = sqrt(1024 + 576) = sqrt(1600) = 40 upright(" cm")$.
 Le chemin le plus court mesure exactement $40 upright(" cm")$ !
 
-#strong[Exercice 15.] Supposons $sqrt(3) = p / q$ sous forme
+#strong[Solution 19.15] Supposons $sqrt(3) = p / q$ sous forme
 irréductible. Alors $3 = p^2 / q^2 arrow.r.double.long p^2 = 3 q^2$.
 Donc $p^2$ est multiple de 3, ce qui implique que $p$ est multiple de 3
 ($p = 3 k$). Alors
@@ -13828,10 +13677,7 @@ Pour tout point $M$, on note : $ M\(x_M thin\;thin y_M\) $
 - $x_M$ est l'#strong[abscisse] de $M$.
 - $y_M$ est l'#strong[ordonnée] de $M$.
 
-#quote_box[
-#strong[🧭 Méthode mnémotechnique --- Pour ne jamais confondre $x$ et
-$y$
-]
+#methode(title: [🧭 Méthode mnémotechnique — Pour ne jamais confondre $x$ et $y$])[
  1. #strong[L'ordre alphabétique :] Dans l'alphabet,
 #strong[A]bscisse vient avant #strong[O]rdonnée, tout comme #strong[$x$]
 vient avant #strong[$y$]. L'abscisse est TOUJOURS écrite en premier ! 2.
@@ -13871,9 +13717,7 @@ $\[A B\]$ ? Il se trouve exactement à mi-chemin horizontalement, et à
 mi-chemin verticalement. C'est simplement #strong[la moyenne
 arithmétique] des coordonnées !
 
-#quote_box[
-#strong[📐 Propriété --- Coordonnées du milieu
-]
+#principe(title: [📐 Propriété — Coordonnées du milieu])[
  Les coordonnées du
 milieu $I$ du segment $\[A B\]$ sont :
 $ x_I = frac(x_A + x_B, 2) quad upright("et") quad y_I = frac(y_A + y_B, 2) $
@@ -13904,10 +13748,7 @@ en $C$ : $ A B^2 = A C^2 + B C^2 =\(x_B - x_A\)^2 +\(y_B - y_A\)^2 $
 En extrayant la racine carrée, on obtient la formule universelle de la
 distance cartésienne :
 
-#quote_box[
-#strong[📐 Théorème --- Distance entre deux points dans un repère
-orthonormé
-]
+#principe(title: [📐 Théorème — Distance entre deux points dans un repère orthonormé])[
  Pour tous points $A\(x_A thin\;thin y_A\)$ et
 $B\(x_B thin\;thin y_B\)$ :
 $ A B = sqrt(\(x_B - x_A\)^2 +\(y_B - y_A\)^2) $
@@ -13992,11 +13833,7 @@ $ \(- 3\)times\(- 4\)= upright(bold(+ 12)) $ Si moins par moins ne
 donnait pas plus, toutes les règles du calcul algébrique s'écrouleraient
 !
 
-#quote_box[
-#strong[📐 La Règle des signes --- Multiplication et Division
-]
-
-
+#principe(title: [📐 La Règle des signes — Multiplication et Division])[
 - Le produit (ou quotient) de deux nombres de #strong[même signe] est
   #strong[POSITIF] :
   $ \(+\)times\(+\)=\(+\)quad upright("et") quad\(-\)times\(-\)=\(+\) $
@@ -14160,66 +13997,66 @@ rectangle isocèle en $A$]. ✔
 <exercices-17>
 ==== Niveau  (Application directe)
 <niveau-application-directe-10>
-#strong[Exercice 1.] Donne les coordonnées des sommets du rectangle
+#strong[Exercice 20.1] Donne les coordonnées des sommets du rectangle
 représenté ci-dessous : $A$ est à 3 carreaux à gauche et 2 en haut \;
 $B$ est à 4 carreaux à droite et 2 en haut \; $C$ est à 4 carreaux à
 droite et 1 en bas \; $D$ est à 3 carreaux à gauche et 1 en bas.
 
-#strong[Exercice 2.] Calcule sans calculatrice : 1.
+#strong[Exercice 20.2] Calcule sans calculatrice : 1.
 $\(- 7\)times\(- 6\)$ 2. $\(- 8\)times\(+ 9\)$ 3. $\(+ 12\)times\(- 5\)$
 \4. $frac(- 72, - 8)$ 5. $frac(- 42, + 7)$
 
-#strong[Exercice 3.] Quel est le signe de chacun des produits suivants ?
+#strong[Exercice 20.3] Quel est le signe de chacun des produits suivants ?
 (Justifie sans calculer la valeur numérique) : 1.
 $\(- 3\)times\(- 5\)times\(+ 2\)times\(- 7\)$ 2.
 $\(- 1\)times\(- 2\)times\(- 3\)times\(- 4\)times\(- 5\)times\(- 6\)$ 3.
 Le produit de 15 nombres négatifs et de 28 nombres positifs.
 
-#strong[Exercice 4.] On donne $A\(2 thin\;thin 4\)$ et
+#strong[Exercice 20.4] On donne $A\(2 thin\;thin 4\)$ et
 $B\(8 thin\;thin 10\)$. Calcule les coordonnées du milieu $I$ de
 $\[A B\]$.
 
-#strong[Exercice 5.] Calcule la distance $A B$ entre
+#strong[Exercice 20.5] Calcule la distance $A B$ entre
 $A\(1 thin\;thin 2\)$ et $B\(4 thin\;thin 6\)$.
 
 ==== Niveau  (Calculs et repérage)
 <niveau-calculs-et-repérage>
-#strong[Exercice 6. Calculs de relatifs combinés.] Calcule en respectant
+#strong[Exercice 20.6 Calculs de relatifs combinés.] Calcule en respectant
 les priorités opératoires : 1.
 $E =\(- 3\)times\(- 4\)+\(- 5\)times\(+ 2\)$ 2.
 $F = 15 -\(- 2\)times\(- 6\)$ 3.
 $G = frac(\(- 4\)times\(- 9\), - 3 - 3)$ 4. $H =\(- 2\)^4 -\(- 3\)^3$
 
-#strong[Exercice 7. Retrouver l'extrémité d'un segment.] Soit
+#strong[Exercice 20.7 Retrouver l'extrémité d'un segment.] Soit
 $A\(- 3 thin\;thin 5\)$ et $I\(1 thin\;thin 2\)$. On sait que $I$ est le
 milieu du segment $\[A B\]$. Quelles sont les coordonnées du point $B$ ?
 
-#strong[Exercice 8. Le parallélogramme par les diagonales.] On donne
+#strong[Exercice 20.8 Le parallélogramme par les diagonales.] On donne
 quatre points : $A\(- 2 thin\;thin 1\)$, $B\(3 thin\;thin 4\)$,
 $C\(5 thin\;thin 1\)$ et $D\(0 thin\;thin - 2\)$. 1. Calcule les
 coordonnées du milieu du segment $\[A C\]$. 2. Calcule les coordonnées
 du milieu du segment $\[B D\]$. 3. Que peux-tu en déduire sur la nature
 du quadrilatère $A B C D$ ?
 
-#strong[Exercice 9. Le cercle circonscrit.] Dans un repère orthonormé,
+#strong[Exercice 20.9 Le cercle circonscrit.] Dans un repère orthonormé,
 on considère les points $E\(- 4 thin\;thin 0\)$ et
 $F\(2 thin\;thin 8\)$. 1. Calcule les coordonnées du centre $O'$ du
 cercle de diamètre $\[E F\]$. 2. Calcule la longueur du diamètre $E F$,
 puis le rayon du cercle. 3. Le point $G\(2 thin\;thin 0\)$ appartient-il
 à ce cercle ?
 
-#strong[Exercice 10. Périmètre d'un triangle.] Soient les points
+#strong[Exercice 20.10 Périmètre d'un triangle.] Soient les points
 $K\(- 1 thin\;thin 2\)$, $L\(3 thin\;thin 5\)$ et
 $M\(3 thin\;thin - 1\)$. 1. Calcule les longueurs exactes $K L$, $L M$
 et $K M$. 2. Le triangle $K L M$ est-il isocèle ? Est-il rectangle ?
 
-#strong[Exercice 11. Carré d'un nombre négatif.] Recopie et complète
+#strong[Exercice 20.11 Carré d'un nombre négatif.] Recopie et complète
 avec le signe $<$ ou $>$ : 1. $\(- 5\)^2 dots.h 0$ 2. $- 5^2 dots.h 0$
 \3. $\(- 2\)^3 dots.h\(- 2\)^2$ 4. $\(- 1\)^100 dots.h\(- 1\)^101$
 
 ==== Niveau  (Défis et géométrie analytique)
 <niveau-défis-et-géométrie-analytique>
-#strong[Exercice 12. La chasse au trésor du pirate.] Sur une carte
+#strong[Exercice 20.12 La chasse au trésor du pirate.] Sur une carte
 quadrillée dont l'origine $O\(0 thin\;thin 0\)$ est le vieux phare de
 l'île, le coffre est enterré au point $T$. Le carnet de bord indique :
 
@@ -14231,13 +14068,13 @@ l'île, le coffre est enterré au point $T$. Le carnet de bord indique :
 + Quelle distance en mètres sépare le vieux phare du trésor $T$ (l'unité
   du repère vaut $10 upright(" mètres")$) ?
 
-#strong[Exercice 13. Le symétrique d'un point.] Soit
+#strong[Exercice 20.13 Le symétrique d'un point.] Soit
 $A\(2 thin\;thin - 3\)$ et $S\(- 1 thin\;thin 1\)$. On appelle $A'$ le
 symétrique du point $A$ par rapport au centre de symétrie $S$. 1. Que
 représente le point $S$ pour le segment $\[A A'\]$ ? 2. Détermine par le
 calcul les coordonnées de $A'$.
 
-#strong[Exercice 14. Démonstration de la règle des signes par une
+#strong[Exercice 20.14 Démonstration de la règle des signes par une
 table.] Construis un tableau à double entrée pour la multiplication avec
 les nombres $- 3\,- 2\,- 1\,0\,1\,2\,3$ sur la première ligne et la
 première colonne. Remplis d'abord la partie positive, puis prolonge
@@ -14245,7 +14082,7 @@ chaque ligne et chaque colonne en observant la régularité des suites
 arithmétiques (sauts constants). Explique pourquoi la case
 $\(- 3\)times\(- 3\)$ ne peut valoir rien d'autre que $+ 9$.
 
-#strong[Exercice 15. Triangle équilatéral dans un repère.] On pose deux
+#strong[Exercice 20.15 Triangle équilatéral dans un repère.] On pose deux
 points $A\(0 thin\;thin 0\)$ et $B\(4 thin\;thin 0\)$ sur l'axe des
 abscisses. 1. Quelles doivent être les coordonnées d'un point $C$
 d'ordonnée positive pour que le triangle $A B C$ soit équilatéral ? 2.
@@ -14256,35 +14093,35 @@ Justifie.
 
 === Solutions
 <solutions-17>
-#strong[Exercice 1.] $A\(- 3 thin\;thin 2\)$ \; $B\(4 thin\;thin 2\)$ \;
+#strong[Solution 20.1] $A\(- 3 thin\;thin 2\)$ \; $B\(4 thin\;thin 2\)$ \;
 $C\(4 thin\;thin - 1\)$ \; $D\(- 3 thin\;thin - 1\)$.
 
-#strong[Exercice 2.] 1. $\(- 7\)times\(- 6\)= + 42$. 2.
+#strong[Solution 20.2] 1. $\(- 7\)times\(- 6\)= + 42$. 2.
 $\(- 8\)times\(+ 9\)= - 72$. 3. $\(+ 12\)times\(- 5\)= - 60$. 4.
 $frac(- 72, - 8) = + 9$. 5. $frac(- 42, + 7) = - 6$.
 
-#strong[Exercice 3.] 1. 3 facteurs négatifs (impair)
+#strong[Solution 20.3] 1. 3 facteurs négatifs (impair)
 $arrow.r.double.long$ résultat #strong[négatif]. 2. 6 facteurs négatifs
 (pair) $arrow.r.double.long$ résultat #strong[positif]. 3. 15 facteurs
 négatifs (impair) $arrow.r.double.long$ résultat #strong[négatif] (le
 nombre de facteurs positifs ne change jamais le signe).
 
-#strong[Exercice 4.] $x_I = frac(2 + 8, 2) = 10 / 2 = 5$ \;
+#strong[Solution 20.4] $x_I = frac(2 + 8, 2) = 10 / 2 = 5$ \;
 $y_I = frac(4 + 10, 2) = 14 / 2 = 7$. Donc $I\(5 thin\;thin 7\)$.
 
-#strong[Exercice 5.]
+#strong[Solution 20.5]
 $A B = sqrt(\(4 - 1\)^2 +\(6 - 2\)^2) = sqrt(3^2 + 4^2) = sqrt(9 + 16) = sqrt(25) = 5$.
 
-#strong[Exercice 6.] 1. $E =\(+ 12\)+\(- 10\)= 2$. 2.
+#strong[Solution 20.6] 1. $E =\(+ 12\)+\(- 10\)= 2$. 2.
 $F = 15 -\(+ 12\)= 15 - 12 = 3$. 3. $G = frac(+ 36, - 6) = - 6$. 4.
 $H =\(+ 16\)-\(- 27\)= 16 + 27 = 43$.
 
-#strong[Exercice 7.]
+#strong[Solution 20.7]
 $x_I = frac(x_A + x_B, 2) arrow.r.double.long 1 = frac(- 3 + x_B, 2) arrow.r.double.long 2 = - 3 + x_B arrow.r.double.long x_B = 5$.
 $y_I = frac(y_A + y_B, 2) arrow.r.double.long 2 = frac(5 + y_B, 2) arrow.r.double.long 4 = 5 + y_B arrow.r.double.long y_B = - 1$.
 Le point cherché est $B\(5 thin\;thin - 1\)$.
 
-#strong[Exercice 8.] 1. Milieu de $\[A C\]$ :
+#strong[Solution 20.8] 1. Milieu de $\[A C\]$ :
 $x = frac(- 2 + 5, 2) = 3 / 2 = 1\,5$ \;
 $y = frac(1 + 1, 2) = 1 arrow.r.double.long\(1\,5 thin\;thin 1\)$. 2.
 Milieu de $\[B D\]$ : $x = frac(3 + 0, 2) = 1\,5$ \;
@@ -14293,7 +14130,7 @@ $y = frac(4 +\(- 2\), 2) = 2 / 2 = 1 arrow.r.double.long\(1\,5 thin\;thin 1\)$.
 quadrilatère dont les diagonales se coupent en leur milieu est un
 #strong[parallélogramme]. Donc $A B C D$ est un parallélogramme.
 
-#strong[Exercice 9.] 1. Centre $O'$ milieu de $\[E F\]$ :
+#strong[Solution 20.9] 1. Centre $O'$ milieu de $\[E F\]$ :
 $x_(O') = frac(- 4 + 2, 2) = - 1$ \;
 $y_(O') = frac(0 + 8, 2) = 4 arrow.r.double.long O'\(- 1 thin\;thin 4\)$.
 \2. Diamètre :
@@ -14303,7 +14140,7 @@ $O' G = sqrt(\(2 -\(- 1\)\)^2 +\(0 - 4\)^2) = sqrt(3^2 +\(- 4\)^2) = sqrt(9 + 16
 Puisque $O' G = R = 5$, le point $G$ est situé à une distance égale au
 rayon : #strong[il appartient bien au cercle].
 
-#strong[Exercice 10.] 1.
+#strong[Solution 20.10] 1.
 $K L = sqrt(\(3 -\(- 1\)\)^2 +\(5 - 2\)^2) = sqrt(4^2 + 3^2) = sqrt(25) = 5$.
 $L M = sqrt(\(3 - 3\)^2 +\(- 1 - 5\)^2) = sqrt(0 +\(- 6\)^2) = sqrt(36) = 6$.
 $K M = sqrt(\(3 -\(- 1\)\)^2 +\(- 1 - 2\)^2) = sqrt(4^2 +\(- 3\)^2) = sqrt(25) = 5$.
@@ -14311,11 +14148,11 @@ $K M = sqrt(\(3 -\(- 1\)\)^2 +\(- 1 - 2\)^2) = sqrt(4^2 +\(- 3\)^2) = sqrt(25) =
 #strong[isocèle en $K$]. Test de Pythagore : $L M^2 = 6^2 = 36$ \;
 $K L^2 + K M^2 = 25 + 25 = 50 eq.not 36$. Il n'est pas rectangle.
 
-#strong[Exercice 11.] 1. $\(- 5\)^2 = 25 > 0$. 2. $- 5^2 = - 25 < 0$. 3.
+#strong[Solution 20.11] 1. $\(- 5\)^2 = 25 > 0$. 2. $- 5^2 = - 25 < 0$. 3.
 $\(- 2\)^3 = - 8 < 4 =\(- 2\)^2$. 4.
 $\(- 1\)^100 = + 1 > - 1 =\(- 1\)^101$.
 
-#strong[Exercice 12.] 1. Déplacement total de $A$ à $B$ : Horizontal :
+#strong[Solution 20.12] 1. Déplacement total de $A$ à $B$ : Horizontal :
 $6 -\(- 6\)= 12$ \; Vertical : $4 -\(- 4\)= 8$. Les trois quarts du
 déplacement : Horizontal :
 $3 / 4 times 12 = 9 arrow.r.double.long x_T = - 6 + 9 = 3$. Vertical :
@@ -14325,19 +14162,19 @@ $O T = sqrt(3^2 + 2^2) = sqrt(9 + 4) = sqrt(13) approx 3\,6055$ unités.
 En mètres :
 $3\,6055 times 10 upright(" m") approx 36\,1 upright(" mètres")$.
 
-#strong[Exercice 13.] 1. $S$ est le milieu du segment $\[A A'\]$. 2.
+#strong[Solution 20.13] 1. $S$ est le milieu du segment $\[A A'\]$. 2.
 $x_S = frac(x_A + x_(A'), 2) arrow.r.double.long - 1 = frac(2 + x_(A'), 2) arrow.r.double.long - 2 = 2 + x_(A') arrow.r.double.long x_(A') = - 4$.
 $y_S = frac(y_A + y_(A'), 2) arrow.r.double.long 1 = frac(- 3 + y_(A'), 2) arrow.r.double.long 2 = - 3 + y_(A') arrow.r.double.long y_(A') = 5$.
 Donc $A'\(- 4 thin\;thin 5\)$.
 
-#strong[Exercice 14.] Sur la ligne de $- 3$ : $\(- 3\)times 3 = - 9$,
+#strong[Solution 20.14] Sur la ligne de $- 3$ : $\(- 3\)times 3 = - 9$,
 $\(- 3\)times 2 = - 6$, $\(- 3\)times 1 = - 3$, $\(- 3\)times 0 = 0$. À
 chaque case en allant vers la gauche, on #strong[ajoute 3] ! Pour
 continuer la régularité arithmétique : $\(- 3\)times\(- 1\)= 0 + 3 = 3$
 $\(- 3\)times\(- 2\)= 3 + 3 = 6$ $\(- 3\)times\(- 3\)= 6 + 3 = 9$. La
 case $\(- 3\)times\(- 3\)$ vaut obligatoirement $+ 9$.
 
-#strong[Exercice 15.] 1. La base $\[A B\]$ a une longueur de 4. Le
+#strong[Solution 20.15] 1. La base $\[A B\]$ a une longueur de 4. Le
 milieu est en $x = 2$. Le sommet $C$ a donc pour abscisse $x_C = 2$. La
 hauteur d'un triangle équilatéral de côté 4 est
 $h = 4 times sqrt(3) / 2 = 2 sqrt(3)$ (d'après Pythagore :
@@ -14427,12 +14264,7 @@ une fortune colossale comparé à moi ! Mes 30 écus représentent une
 boucherie sur mon modeste étal, alors que tes 72 écus ne sont qu'une
 goutte d'eau dans tes coffres dorés ! »]
 
-#quote_box[
-#strong[💡 Découverte & Histoire --- La querelle des marchands
-médiévaux
-]
-
-
+#decouvre(title: [💡 Découverte & Histoire — La querelle des marchands médiévaux])[
 - Geoffroy (Petit marchand) Barthélemy (Grand marchand)
 - 150 écus) (400 écus)
 - Taxe : 30 écus Taxe : 72 écus
@@ -14480,9 +14312,7 @@ cent »].
 - $10 % = 10 / 100 = 1 / 10 = 0\,1$ (le dixième).
 - $100 % = 100 / 100 = 1$ (la totalité, l'ensemble complet).
 
-#quote_box[
-#strong[💡 D'où vient le symbole $%$ ?
-]
+#decouvre(title: [💡 D'où vient le symbole $%$ ?])[
  Au XVe siècle en Italie, les
 marchands écrivaient en abrégé #emph[« per cento »] sous la forme
 #emph[p.~100] ou #emph[p.~c.]. Avec la rapidité de la plume des scribes,
@@ -14536,11 +14366,7 @@ $ upright("Nouveau prix") = 80 - 80 times 30 / 100 = 80 times (1 - 30 / 100) = 8
 Payer avec $30 %$ de réduction, c'est payer #strong[$70 %$ du prix de
 départ] !
 
-#quote_box[
-#strong[📐 Théorème --- Coefficients Multiplicateurs
-]
-
-
+#principe(title: [📐 Théorème — Coefficients Multiplicateurs])[
 - Pour #strong[augmenter] une quantité de $t %$, on la multiplie par :
   $ C = 1 + t / 100 $ #emph[\(Exemple : une hausse de
   $20 % arrow.r.double.long times 1\,20$ \; une hausse de
@@ -14630,9 +14456,7 @@ ordonnée en deux groupes d'effectifs rigoureusement égaux :
 - Au moins $50 %$ des individus ont une valeur supérieure ou égale à la
   médiane.
 
-#quote_box[
-#strong[🧭 Méthode --- Comment déterminer la médiane d'une série
-]
+#methode(title: [🧭 Méthode — Comment déterminer la médiane d'une série])[
  1.
 Range #strong[obligatoirement] les valeurs dans l'ordre croissant (du
 plus petit au plus grand). 2. Calcule la moitié de l'effectif total :
@@ -14871,44 +14695,44 @@ Le litre coûte désormais $1\,815 upright(" €")$. ✔
 <exercices-18>
 ==== Niveau  (Application directe)
 <niveau-application-directe-11>
-#strong[Exercice 1.] Écris chaque pourcentage sous la forme d'une
+#strong[Exercice 21.1] Écris chaque pourcentage sous la forme d'une
 fraction simplifiée puis d'un nombre décimal : $10 %$ \; $20 %$ \;
 $25 %$ \; $50 %$ \; $75 %$ \; $5 %$.
 
-#strong[Exercice 2.] Calcule mentalement : 1. $50 %$ de
+#strong[Exercice 21.2] Calcule mentalement : 1. $50 %$ de
 $84 upright(" €")$ 2. $25 %$ de $120 upright(" kg")$ 3. $10 %$ de
 $350 upright(" m")$ 4. $1 %$ de $2 thin 500 upright(" habitants")$
 
-#strong[Exercice 3.] Donne le coefficient multiplicateur associé à : 1.
+#strong[Exercice 21.3] Donne le coefficient multiplicateur associé à : 1.
 Une hausse de $12 %$ 2. Une baisse de $25 %$ 3. Une augmentation de
 $3\,5 %$ 4. Une remise exceptionnelle de $50 %$
 
-#strong[Exercice 4.] Dans une boîte de 40 chocolats, il y a 14 chocolats
+#strong[Exercice 21.4] Dans une boîte de 40 chocolats, il y a 14 chocolats
 noirs. Quel est le pourcentage de chocolats noirs dans la boîte ?
 
-#strong[Exercice 5.] Calcule la moyenne simple des cinq notes suivantes
+#strong[Exercice 21.5] Calcule la moyenne simple des cinq notes suivantes
 : $11$ \; $14$ \; $09$ \; $17$ \; $14$.
 
 ==== Niveau  (Problèmes et graphiques)
 <niveau-problèmes-et-graphiques>
-#strong[Exercice 6. Le smartphone soldé.] Un téléphone portable coûte
+#strong[Exercice 21.6 Le smartphone soldé.] Un téléphone portable coûte
 $340 upright(" €")$. Pendant les soldes, son prix diminue de $15 %$. 1.
 Quel est le montant de l'économie réalisée en euros ? 2. Quel est le
 nouveau prix du téléphone ?
 
-#strong[Exercice 7. Facture d'électricité.] Sur une facture
+#strong[Exercice 21.7 Facture d'électricité.] Sur une facture
 d'électricité de $150 upright(" €")$ hors taxes, l'État applique une TVA
 de $20 %$. Quel est le montant total toutes taxes comprises (TTC) payé
 par le client ?
 
-#strong[Exercice 8. L'évolution trompeuse.] Le prix d'un billet de train
+#strong[Exercice 21.8 L'évolution trompeuse.] Le prix d'un billet de train
 augmente de $25 %$. Quelques mois plus tard, la compagnie ferroviaire
 annonce une promotion de « $25 %$ de réduction immédiate ». Un voyageur
 pense que le billet est revenu à son prix de départ. A-t-il raison ?
 Justifie par un calcul précis en prenant un billet qui coûtait
 $100 upright(" €")$ au début.
 
-#strong[Exercice 9. Déterminer la médiane (cas pair et impair).]
+#strong[Exercice 21.9 Déterminer la médiane (cas pair et impair).]
 Détermine la médiane et l'étendue de chacune des deux séries de
 températures relevées à midi :
 
@@ -14920,7 +14744,7 @@ températures relevées à midi :
   $11^compose upright("C")$ \; $20^compose upright("C")$ \;
   $14^compose upright("C")$ \; $18^compose upright("C")$.
 
-#strong[Exercice 10. Le diagramme circulaire des animaux de compagnie.]
+#strong[Exercice 21.10 Le diagramme circulaire des animaux de compagnie.]
 Une enquête menée auprès de 180 foyers d'un quartier donne les résultats
 suivants :
 
@@ -14933,7 +14757,7 @@ suivants :
 + Calcule l'angle en degrés correspondant à chaque catégorie pour
   construire un diagramme circulaire.
 
-#strong[Exercice 11. Moyenne coefficientée au collège.] Un élève a
+#strong[Exercice 21.11 Moyenne coefficientée au collège.] Un élève a
 obtenu les notes suivantes en mathématiques ce trimestre :
 
 - Deux interrogations courtes (coefficient 1) : $12$ et $15$.
@@ -14943,7 +14767,7 @@ Quelle est sa moyenne trimestrielle ?
 
 ==== Niveau  (Défis et esprit critique)
 <niveau-défis-et-esprit-critique>
-#strong[Exercice 12. Le mystère du salaire moyen de l'usine.] Une petite
+#strong[Exercice 21.12 Le mystère du salaire moyen de l'usine.] Une petite
 usine emploie 20 personnes réparties ainsi :
 
 - 1 directeur général payé $10 thin 000 upright(" €")$ par mois.
@@ -14956,19 +14780,19 @@ usine emploie 20 personnes réparties ainsi :
   n'utiliseront-ils pas le même indicateur lors des négociations
   salariales ? Explique le pouvoir de manipulation de la moyenne.
 
-#strong[Exercice 13. Retrouver le prix initial (la marche arrière).]
+#strong[Exercice 21.13 Retrouver le prix initial (la marche arrière).]
 Après une réduction de $20 %$ pendant les soldes, un manteau d'hiver
 coûte $120 upright(" €")$. Quel était son prix initial avant la remise ?
 #emph[\(Attention piège : ne calcule surtout pas $120 + 20 %$ de 120 !
 Utilise le coefficient multiplicateur).]
 
-#strong[Exercice 14. Évolutions successives et taux global.] Le prix
+#strong[Exercice 21.14 Évolutions successives et taux global.] Le prix
 d'une console de jeux augmente de $5 %$ en 2024, puis de $8 %$ en 2025.
 \1. Quel est le taux global d'augmentation sur les deux ans réunis ? 2.
 Si le prix baisse ensuite de $12 %$ en 2026, la console est-elle
 finalement plus chère ou moins chère qu'au début de l'année 2024 ?
 
-#strong[Exercice 15. Le paradoxe de Simpson.] Dans un hôpital, deux
+#strong[Exercice 21.15 Le paradoxe de Simpson.] Dans un hôpital, deux
 chirurgiens (Dr Martin et Dr Dupont) réalisent deux types d'opérations :
 des opérations bénignes (simples) et des opérations à haut risque
 (difficiles).
@@ -14993,37 +14817,37 @@ des opérations bénignes (simples) et des opérations à haut risque
 
 === Solutions
 <solutions-18>
-#strong[Exercice 1.] - $10 % = 1 / 10 = 0\,10$ - $20 % = 1 / 5 = 0\,20$
+#strong[Solution 21.1] - $10 % = 1 / 10 = 0\,10$ - $20 % = 1 / 5 = 0\,20$
 \- $25 % = 1 / 4 = 0\,25$ - $50 % = 1 / 2 = 0\,50$ -
 $75 % = 3 / 4 = 0\,75$ - $5 % = 1 / 20 = 0\,05$
 
-#strong[Exercice 2.] 1. $84\/2 = 42 upright(" €")$. 2.
+#strong[Solution 21.2] 1. $84\/2 = 42 upright(" €")$. 2.
 $120\/4 = 30 upright(" kg")$. 3. $350\/10 = 35 upright(" m")$. 4.
 $2 thin 500\/100 = 25 upright(" habitants")$.
 
-#strong[Exercice 3.] 1. $1 + 0\,12 = 1\,12$. 2. $1 - 0\,25 = 0\,75$. 3.
+#strong[Solution 21.3] 1. $1 + 0\,12 = 1\,12$. 2. $1 - 0\,25 = 0\,75$. 3.
 $1 + 0\,035 = 1\,035$. 4. $1 - 0\,50 = 0\,50$.
 
-#strong[Exercice 4.] Taux
+#strong[Solution 21.4] Taux
 $= 14 / 40 times 100 = 7 / 20 times 100 = 35 %$.
 
-#strong[Exercice 5.] Somme $= 11 + 14 + 9 + 17 + 14 = 65$. Moyenne
+#strong[Solution 21.5] Somme $= 11 + 14 + 9 + 17 + 14 = 65$. Moyenne
 $= 65 / 5 = 13\/20$.
 
-#strong[Exercice 6.] 1. Économie : $340 times 0\,15 = 51 upright(" €")$.
+#strong[Solution 21.6] 1. Économie : $340 times 0\,15 = 51 upright(" €")$.
 \2. Nouveau prix : $340 - 51 = 289 upright(" €")$ (ou
 $340 times 0\,85 = 289 upright(" €")$).
 
-#strong[Exercice 7.] Montant TTC
+#strong[Solution 21.7] Montant TTC
 $= 150 times\(1 + 0\,20\)= 150 times 1\,20 = 180 upright(" €")$.
 
-#strong[Exercice 8.] Prix initial : $100 upright(" €")$. Après hausse de
+#strong[Solution 21.8] Prix initial : $100 upright(" €")$. Après hausse de
 $25 %$ : $100 times 1\,25 = 125 upright(" €")$. Après baisse de $25 %$ :
 $125 times\(1 - 0\,25\)= 125 times 0\,75 = 93\,75 upright(" €")$. Le
 voyageur a tort : le billet coûte $93\,75 upright(" €")$, soit
 $6\,25 upright(" €")$ de moins que le prix de départ !
 
-#strong[Exercice 9.] - #strong[Semaine A (7 valeurs) :] Ordre croissant
+#strong[Solution 21.9] - #strong[Semaine A (7 valeurs) :] Ordre croissant
 : $12\,14\,15\,upright(bold(17))\,18\,19\,21$. Médiane
 $= upright(bold(17^compose upright("C")))$ (la 4e valeur). Étendue
 $= 21 - 12 = 9^compose upright("C")$.
@@ -15033,7 +14857,7 @@ $= 21 - 12 = 9^compose upright("C")$.
   $= frac(14 + 16, 2) = upright(bold(15^compose upright("C")))$. Étendue
   $= 20 - 11 = 9^compose upright("C")$.
 
-#strong[Exercice 10.] Effectif total $N = 180$. 1. Fréquences :
+#strong[Solution 21.10] Effectif total $N = 180$. 1. Fréquences :
 
 - Chiens : $72 / 180 = 40 %$.
 
@@ -15056,11 +14880,11 @@ $= 21 - 12 = 9^compose upright("C")$.
   - Aucun : $0\,10 times 360^compose = 36^compose$.
 ]
 
-#strong[Exercice 11.] Somme des coefficients : $1 + 1 + 3 + 3 = 8$.
+#strong[Solution 21.11] Somme des coefficients : $1 + 1 + 3 + 3 = 8$.
 Moyenne
 $= frac(1 times 12 + 1 times 15 + 3 times 14 + 3 times 10, 8) = frac(12 + 15 + 42 + 30, 8) = 99 / 8 = 12\,375\/20$.
 
-#strong[Exercice 12.] 1. Somme des salaires :
+#strong[Solution 21.12] 1. Somme des salaires :
 $1 times 10 thin 000 + 3 times 4 thin 000 + 16 times 1 thin 500 = 10 thin 000 + 12 thin 000 + 24 thin 000 = 46 thin 000 upright(" €")$.
 Salaire moyen :
 $frac(46 thin 000, 20) = upright(bold(2 thin 300 upright(" €")))$. 2.
@@ -15074,13 +14898,13 @@ $80 %$ d'entre eux ne gagnent que $1 thin 500 upright(" €")$ ! Les
 syndicats s'appuieront sur la médiane pour dénoncer que la moitié au
 moins des employés est au salaire de base.
 
-#strong[Exercice 13.] Soit $P_0$ le prix initial. Une baisse de $20 %$
+#strong[Solution 21.13] Soit $P_0$ le prix initial. Une baisse de $20 %$
 correspond à la multiplication par $1 - 0\,20 = 0\,80$.
 $P_0 times 0\,80 = 120 arrow.r.double.long P_0 = frac(120, 0\,80) = frac(1 thin 200, 8) = 150 upright(" €")$.
 Le prix initial était de $150 upright(" €")$ ! (Vérification :
 $150 - 20 % upright(" de ") 150 = 150 - 30 = 120 upright(" €")$).
 
-#strong[Exercice 14.] 1.
+#strong[Solution 21.14] 1.
 $C_(upright("global")) =\(1 + 0\,05\)times\(1 + 0\,08\)= 1\,05 times 1\,08 = 1\,134$.
 Hausse globale : $1\,134 - 1 = 0\,134 = upright(bold(+ 13\,4 %))$ (et
 non $13 %$). 2. Avec la baisse de $12 %$ ($C_3 = 0\,88$) :
@@ -15088,7 +14912,7 @@ $C_(upright("final")) = 1\,134 times 0\,88 = 0\,99792$. Puisque
 $0\,99792 < 1$, la console est finalement #strong[légèrement moins
 chère] qu'au départ (baisse finale de $0\,208 %$).
 
-#strong[Exercice 15.] 1. Opérations difficiles : Dr Martin a $50 %$, Dr
+#strong[Solution 21.15] 1. Opérations difficiles : Dr Martin a $50 %$, Dr
 Dupont a $45 %$. C'est #strong[Dr Martin] qui a le meilleur taux. 2.
 Taux globaux :
 
@@ -15142,7 +14966,7 @@ avec des lettres comme $x$, et où la balance de justice devient une
   "L'ALCHIMIE DES SYMBOLES ET LE FEU ALGÉBRIQUE",
   "13 - 15 ans / 4e - 3e",
   "L'émergence des équations littérales, des puissances, des fonctions affines et des statistiques prépare l'entrée au lycée.",
-  ("Chapitre 29 : L'Héritage d'Al-Khwarizmi et le Trésor Caché", "Chapitre 30 : La Toile de Descartes et les Coordonnées", "Chapitre 31 : Le Moulin à Vent et les Puissances de Dix", "Chapitre 32 : Le Voilier dans la Tempête et la Flèche Libre", "Chapitre 33 : La Ligne de Mire et la Pente de la Colline", "Chapitre 34 : Le Métier Jacquard et la Boîte à Fabriquer", "Chapitre 35 : La Fontaine de Galilée et la Parabole", "Chapitre 36 : Les Marches de l'Escalier et le Prêt de l'Usurier", "Chapitre 37 : La Grande Roue et le Cercle qui s'Enroule", "Chapitre 38 : L'Arbre des Possibles et l'Urne de Bayes", "Chapitre 39 : Le Radar de Contrôle et le Nuage de Points"),
+  ("Chapitre 22 : Le Sac Mystère sur la Balance d'Al-Khwarizmi", "Chapitre 23 : Le Carré Complété et les Identités Remarquables", "Chapitre 24 : Les Deux Marchands et les Inégalités", "Chapitre 25 : La Machine à Doubler et la Droite du Tarif", "Chapitre 26 : Le Pliage de Papier et le Miroir Magique", "Chapitre 27 : Le Découpage des Terres et la Boîte du Potier", "Chapitre 28 : Ératosthène et le Tour de la Terre", "Chapitre 29 : Le Partage d'Euclide", "Chapitre 30 : La Roulette du Destin et la Survie du Chasseur"),
   "En regard : L'invariance d'échelle et la géométrie fractale du Chou Romanesco (Brassica oleracea)."
 )
 
@@ -15350,10 +15174,7 @@ peut être plus égale que deux droites parallèles ».
 simple, mais il exige une précaution : #strong[remettre les signes
 $times$] et #strong[mettre les nombres négatifs entre parenthèses].
 
-#quote_box[
-#strong[✏️ Exemple résolu 1 --- Calculer une expression pour plusieurs
-valeurs.
-]
+#methode(title: [✏️ Exemple résolu 1 — Calculer une expression pour plusieurs valeurs.])[
  Soit $A = 3 x^2 - 5 x + 2$. Calculer $A$ pour $x = 4$, puis
 pour $x = - 2$.
 
@@ -15423,9 +15244,7 @@ Pourquoi a-t-on le droit d'écrire $5 x + 2 x = 7 x$ ? Parce que
 $5 x + 2 x$, c'est « 5 sacs plus 2 sacs », donc 7 sacs. Nous le
 prouverons dans un instant avec la distributivité.
 
-#quote_box[
-#strong[✏️ Exemple résolu 2 --- Réduire.
-]
+#methode(title: [✏️ Exemple résolu 2 — Réduire.])[
  a) $B = 5 x + 3 - 2 x + 7$. On
 regroupe : $\(5 x - 2 x\)+\(3 + 7\)= 3 x + 10$.
 
@@ -15477,12 +15296,7 @@ $3\(a + b\)= 3 a + 3 b$.
 Dessine un rectangle de hauteur $k$ et de longueur $a + b$, coupé en
 deux.
 
-#quote_box[
-#strong[📐 Règle Fondamentale --- Aperçu Géométrique de la
-Distributivité Simple
-]
-
-
+#principe(title: [📐 Règle Fondamentale — Aperçu Géométrique de la Distributivité Simple])[
 - a b
 - k aire k×a aire k×b
 - a + b
@@ -15492,9 +15306,7 @@ L'aire du grand rectangle est $k times\(a + b\)$. Mais c'est aussi la
 somme des aires des deux petits : $k times a + k times b$. #strong[Une
 même surface, deux façons de la calculer] : elles sont donc égales.
 
-#quote_box[
-#strong[📐 Propriété --- Distributivité simple.
-]
+#principe(title: [📐 Propriété — Distributivité simple.])[
  Pour tous nombres $k$,
 $a$, $b$ :
 $ k\(a + b\)= k a + k b #h(2em) upright("et") #h(2em) k\(a - b\)= k a - k b . $
@@ -15511,9 +15323,7 @@ postes distribue une lettre dans chaque boîte.
 Et voici la preuve promise de $5 x + 2 x = 7 x$ : c'est la
 distributivité lue à l'envers, $5 x + 2 x =\(5 + 2\)x = 7 x$.
 
-#quote_box[
-#strong[✏️ Exemple résolu 3 --- Développer et réduire.
-]
+#methode(title: [✏️ Exemple résolu 3 — Développer et réduire.])[
  a)
 $3\(2 x - 5\)= 3 times 2 x - 3 times 5 = 6 x - 15$.
 
@@ -15533,11 +15343,7 @@ $3\(2 x - 5\)= 3 times 2 x - 3 times 5 = 6 x - 15$.
 Une parenthèse précédée de $-$ cache en réalité un facteur $- 1$ :
 $-\(a + b\)=\(- 1\)times\(a + b\)= - a - b$. Conséquence :
 
-#quote_box[
-#strong[📐 Règle --- Supprimer des parenthèses.
-]
-
-
+#principe(title: [📐 Règle — Supprimer des parenthèses.])[
 - Précédée de $+$ : on enlève les parenthèses #strong[sans rien
   changer]. $thick 7 +\(3 x - 2\)= 7 + 3 x - 2$.
 - Précédée de $-$ : on enlève les parenthèses #strong[en changeant le
@@ -15556,9 +15362,7 @@ $7 - 0 - 2 = 5$. Le test démasque l'erreur en deux secondes.
 
 ==== 4.4 Factoriser : le chemin du retour
 <factoriser-le-chemin-du-retour>
-#quote_box[
-#strong[✏️ Exemple résolu 4 --- Factoriser par un facteur commun.
-]
+#methode(title: [✏️ Exemple résolu 4 — Factoriser par un facteur commun.])[
  a)
 $6 x + 9$ : $6 x = 3 times 2 x$ et $9 = 3 times 3$. Facteur commun $3$ :
 $6 x + 9 = 3\(2 x + 3\)$.
@@ -15702,9 +15506,7 @@ $ a c + a d + b c + b d . $
 Puisque les deux calculs mesurent la même surface, ils sont
 rigoureusement égaux.
 
-#quote_box[
-#strong[📐 Propriété fondamentale --- La double distributivité.
-]
+#principe(title: [📐 Propriété fondamentale — La double distributivité.])[
  Pour
 tous nombres relatifs $a\,b\,c\,d$ :
 $ \(a + b\)\(c + d\)= a c + a d + b c + b d . $ Chaque terme de la
@@ -15761,9 +15563,7 @@ $ \(a + b\)^2 = a^2 + a b + a b + b^2 = a^2 + 2 a b + b^2 . $
 
 Le terme $2 a b$ s'appelle le #strong[double produit].
 
-#quote_box[
-#strong[📐 Première identité remarquable --- Carré d'une somme.
-]
+#principe(title: [📐 Première identité remarquable — Carré d'une somme.])[
  Pour
 tous nombres relatifs $a$ et $b$ : $ \(a + b\)^2 = a^2 + 2 a b + b^2 . $
 #emph[En français :] « Le carré d'une somme est égal au carré du
@@ -15800,10 +15600,7 @@ Algébriquement, on retrouve ce résultat en appliquant la double
 distributivité à $\(a - b\)\(a - b\)$ :
 $ \(a - b\)\(a - b\)= a times a - a times b - b times a +\(- b\)times\(- b\)= a^2 - 2 a b + b^2 . $
 
-#quote_box[
-#strong[📐 Deuxième identité remarquable --- Carré d'une différence.
-]
-
+#principe(title: [📐 Deuxième identité remarquable — Carré d'une différence.])[
 Pour tous nombres relatifs $a$ et $b$ :
 $ \(a - b\)^2 = a^2 - 2 a b + b^2 . $ #emph[En français :] « Le carré
 d'une différence est égal au carré du premier, moins le double produit,
@@ -15844,10 +15641,7 @@ $ \(a + b\)\(a - b\)= a times a - a times b + b times a - b times b = a^2 - a b 
 Les deux termes du milieu s'annulent car $- a b + b a = 0$. Il reste :
 $ \(a + b\)\(a - b\)= a^2 - b^2 . $
 
-#quote_box[
-#strong[📐 Troisième identité remarquable --- Produit d'une somme par
-une différence.
-]
+#principe(title: [📐 Troisième identité remarquable — Produit d'une somme par une différence.])[
  Pour tous nombres relatifs $a$ et $b$ :
 $ \(a + b\)\(a - b\)= a^2 - b^2 . $ On l'appelle souvent la
 #strong[différence de deux carrés].
@@ -16001,9 +15795,7 @@ Si tu choisis $A = 4$, pour que le produit fasse $0$, $B$ doit
 zéro (par exemple $2 times 3 = 6$ ou $\(- 5\)times 0\,1 = - 0\,5$), leur
 produit ne pourra #strong[jamais] donner zéro !
 
-#quote_box[
-#strong[📐 Théorème --- Propriété du produit nul.
-]
+#principe(title: [📐 Théorème — Propriété du produit nul.])[
  Un produit de
 facteurs est nul #strong[si et seulement si] l'un au moins de ses
 facteurs est nul :
@@ -16016,9 +15808,7 @@ de degré 2 en #strong[deux petites équations toutes simples de degré 1]
 
 ==== 5.2 Méthode de rédaction pas à pas
 <méthode-de-rédaction-pas-à-pas>
-#quote_box[
-#strong[🧭 Méthode --- Résoudre une équation produit nul.
-]
+#methode(title: [🧭 Méthode — Résoudre une équation produit nul.])[
  Résolvons
 l'équation $\(3 x - 12\)\(2 x + 8\)= 0$.
 
@@ -16676,9 +16466,7 @@ déséquilibre : une grandeur est plus grande ou plus petite qu'une autre.
   , kind: table
   )
 
-#quote_box[
-#strong[💡 L'astuce visuelle de la pointe ---
-]
+#decouvre(title: [💡 L'astuce visuelle de la pointe —])[
  Le symbole s'ouvre
 toujours en grand vers le plus gros nombre et pointe son extrémité fine
 vers le plus petit :
@@ -16710,9 +16498,7 @@ sur le plateau de droite, le plateau de droite reste plus lourd. Le sens
 du déséquilibre ne change pas d'un millimètre. De même, si tu retires 3
 kg des deux côtés, la balance conserve son inclinaison.
 
-#quote_box[
-#strong[📐 Règle fondamentale 1 --- Addition et soustraction.
-]
+#principe(title: [📐 Règle fondamentale 1 — Addition et soustraction.])[
  On ne
 change pas le sens d'une inégalité si l'on #strong[ajoute] ou si l'on
 #strong[soustrait] un même nombre aux deux membres :
@@ -16732,10 +16518,7 @@ du plateau droit, le plateau lourd devient trois fois plus lourd, et le
 plateau léger trois fois plus léger. Le sens du déséquilibre reste
 rigoureusement le même.
 
-#quote_box[
-#strong[📐 Règle fondamentale 2 --- Multiplication et division par un
-nombre POSITIF ($c > 0$).
-]
+#principe(title: [📐 Règle fondamentale 2 — Multiplication et division par un nombre POSITIF ($c > 0$).])[
  On ne change pas le sens d'une inégalité si
 l'on #strong[multiplie] ou si l'on #strong[divise] ses deux membres par
 un même nombre #strong[strictement positif] :
@@ -16770,10 +16553,7 @@ $- 5^compose upright("C")$. Sur la droite graduée, $- 2$ est situé
   ]
 )
 
-#quote_box[
-#strong[📐 Règle fondamentale 3 --- Multiplication et division par un
-nombre NÉGATIF ($c < 0$).
-]
+#principe(title: [📐 Règle fondamentale 3 — Multiplication et division par un nombre NÉGATIF ($c < 0$).])[
  #strong[Quand on multiplie ou que l'on divise
 les deux membres d'une inégalité par un nombre STRICTEMENT NÉGATIF, ON
 DOIT OBLIGATOIREMENT INVERSER LE SENS DE L'INÉGALITÉ !]
@@ -16847,9 +16627,7 @@ Comment indiquer si le nombre frontière fait partie ou non des solutions
 - #strong[Le crochet tourne le DOS à la zone des solutions :] le nombre
   frontière est #strong[exclu] ($<$ ou $>$). Exemple pour $x > 15$ :
 
-#quote_box[
-#strong[🧭 Méthode --- Noter les solutions sous forme d'intervalle.
-]
+#methode(title: [🧭 Méthode — Noter les solutions sous forme d'intervalle.])[
  Au
 collège et au lycée, on note l'ensemble des solutions $S$ avec des
 crochets :
@@ -17032,12 +16810,7 @@ de feutre. Chaque colonne représentait une équation et chaque ligne une
 céréale différente (le millet supérieur, le millet moyen, le millet
 inférieur).
 
-#quote_box[
-#strong[💡 Découverte & Histoire --- Le Chapitre VIII des Neuf Chapitres
-chinois
-]
-
-
+#decouvre(title: [💡 Découverte & Histoire — Le Chapitre VIII des Neuf Chapitres chinois])[
 - 3 gerbes de millet supérieur \] + \[ 2 gerbes de millet moyen \] + \[
   1 gerbe de millet bas \] = 39 mesures
 - 2 gerbes de millet supérieur \] + \[ 3 gerbes de millet moyen \] + \[
@@ -17761,9 +17534,7 @@ Pourquoi ? Parce que si tu n'achètes rien ($x = 0$), tu ne paies rien
   ]
 )
 
-#quote_box[
-#strong[📐 Théorème graphique ---
-]
+#principe(title: [📐 Théorème graphique —])[
  La représentation graphique d'une
 fonction linéaire $f\(x\)= a x$ est #strong[une droite qui passe par
 l'origine du repère $O\(0\,0\)$]. Réciproquement, toute droite non
@@ -19416,10 +19187,7 @@ le triangle en occupe exactement la moitié.
   ]
 )
 
-#quote_box[
-#strong[📐 Formule --- Aire du triangle
-]
-
+#principe(title: [📐 Formule — Aire du triangle])[
 $ cal(A)_(upright("triangle")) = frac(upright("base") times upright("hauteur"), 2) = frac(b times h, 2) $
 ]
 
@@ -19442,9 +19210,7 @@ angle de plus de 90°), la hauteur relative à certaines bases tombe
 base. La formule reste vraie, mais la preuve change !
 ]
 
-#quote_box[
-#strong[✍️ Démonstration ---
-]
+#methode(title: [✍️ Démonstration —])[
  Le pied $H$ est sur le prolongement de
 $\[A B\]$, au-delà de $B$. Le grand triangle rectangle $A H C$ contient
 notre triangle $A B C$ #strong[plus] le petit triangle rectangle
@@ -19476,10 +19242,7 @@ triangle qui dépasse d'un côté et recolle-le dans le creux de l'autre
 côté : #strong[le rectangle réapparaît], avec la même base et la même
 hauteur.
 
-#quote_box[
-#strong[📐 Formule --- Aire du parallélogramme
-]
-
+#principe(title: [📐 Formule — Aire du parallélogramme])[
 $ cal(A)_(upright("parallélogramme")) = b times h $ où $h$ est la
 distance entre les deux côtés parallèles de longueur $b$ (mesurée
 #strong[perpendiculairement]).
@@ -19505,10 +19268,7 @@ Prends deux trapèzes jumeaux. Retourne l'un la tête en bas et colle-le
 contre l'autre : tu obtiens un #strong[parallélogramme] dont la base
 vaut $B + b$ et la hauteur $h$.
 
-#quote_box[
-#strong[📐 Formule --- Aire du trapèze
-]
-
+#principe(title: [📐 Formule — Aire du trapèze])[
 $ cal(A)_(upright("trapèze")) = frac(\(B + b\)times h, 2) $
 ]
 
@@ -19549,10 +19309,7 @@ $frac(2 pi R, 2) = pi R$.
 Plus les parts sont fines, plus les ondulations s'aplatissent : à la
 limite, c'est un vrai rectangle.
 
-#quote_box[
-#strong[📐 Formule --- Aire du disque de rayon $R$
-]
-
+#principe(title: [📐 Formule — Aire du disque de rayon $R$])[
 $ cal(A)_(upright("disque")) = pi R times R = pi R^2 $ On lit « pi R
 deux » ou « pi R au carré ». Attention : c'est $pi times\(R times R\)$,
 le carré ne porte que sur $R$.
@@ -19865,9 +19622,7 @@ Puisque le numérateur est plus petit que le dénominateur (et que ce sont
 des longueurs positives) :
 $ upright("adjacent") / upright("hypoténuse") < 1 #h(2em) upright("et") #h(2em) upright("opposé") / upright("hypoténuse") < 1 $
 
-#quote_box[
-#strong[📐 Propriété --- Bornes du cosinus et du sinus.
-]
+#principe(title: [📐 Propriété — Bornes du cosinus et du sinus.])[
  Pour tout angle
 aigu $x$ d'un triangle rectangle ($0^compose < x < 90^compose$) :
 $ 0 < cos\(x\)< 1 #h(2em) upright("et") #h(2em) 0 < sin\(x\)< 1 $
@@ -19897,9 +19652,7 @@ Calculons maintenant :
 $ cos^2\(x\)+ sin^2\(x\)= (a / c)^2 + (b / c)^2 = a^2 / c^2 + b^2 / c^2 = frac(a^2 + b^2, c^2) $
 Or $a^2 + b^2 = c^2$, donc : $ frac(a^2 + b^2, c^2) = c^2 / c^2 = 1 $
 
-#quote_box[
-#strong[📐 Théorème fondamental de la trigonométrie ---
-]
+#principe(title: [📐 Théorème fondamental de la trigonométrie —])[
  Pour tout angle
 $x$ : $ cos^2\(x\)+ sin^2\(x\)= 1 $ #emph[\(Remarque sur la notation :
 $cos^2\(x\)$ signifie bien $\(cos\(x\)\)^2$, c'est-à-dire le cosinus
@@ -19909,10 +19662,7 @@ multiplié par lui-même).]
 De plus, en divisant le sinus par le cosinus :
 $ frac(sin\(x\), cos\(x\)) = upright("opposé") / upright("hypoténuse") / upright("adjacent") / upright("hypoténuse") = upright("opposé") / upright("adjacent") = tan\(x\) $
 
-#quote_box[
-#strong[📐 Propriété du quotient ---
-]
-
+#principe(title: [📐 Propriété du quotient —])[
 $ tan\(x\)= frac(sin\(x\), cos\(x\)) $
 ]
 
@@ -20178,25 +19928,25 @@ C'est exactement le célèbre triangle rectangle égyptien de côtés 3, 4 et
 <exercices-23>
 ==== Niveau  : Application directe
 <niveau-application-directe-16>
-#strong[Exercice 1.] Dans un triangle $D E F$ rectangle en $D$, nomme :
+#strong[Exercice 28.1] Dans un triangle $D E F$ rectangle en $D$, nomme :
 \1. L'hypoténuse. 2. Le côté adjacent à l'angle $hat(E)$. 3. Le côté
 opposé à l'angle $hat(E)$. 4. Écris les rapports $cos\(hat(E)\)$,
 $sin\(hat(E)\)$ et $tan\(hat(E)\)$ avec les lettres des sommets.
 
-#strong[Exercice 2.] À l'aide de ta calculatrice en mode Degrés, donne
+#strong[Exercice 28.2] À l'aide de ta calculatrice en mode Degrés, donne
 une valeur arrondie au millième de : a) $cos\(25^compose\)$ b)
 $sin\(70^compose\)$ c) $tan\(12^compose\)$ d) $tan\(85^compose\)$
 
-#strong[Exercice 3.] Trouve la mesure de l'angle aigu $x$ arrondie au
+#strong[Exercice 28.3] Trouve la mesure de l'angle aigu $x$ arrondie au
 dixième de degré près sachant que : a) $cos\(x\)= 0\,72$ b)
 $sin\(x\)= 0\,35$ c) $tan\(x\)= 1\,8$ d) $cos\(x\)= sqrt(2) / 2$
 
-#strong[Exercice 4.] Soit un triangle $A B C$ rectangle en $B$ tel que
+#strong[Exercice 28.4] Soit un triangle $A B C$ rectangle en $B$ tel que
 $A B = 6 upright(" cm")$ et $A C = 10 upright(" cm")$. Calcule la valeur
 exacte de $cos\(hat(A)\)$, puis déduis-en la mesure de l'angle $hat(A)$
 arrondie au degré.
 
-#strong[Exercice 5.] Dans un triangle $M N O$ rectangle en $N$, on sait
+#strong[Exercice 28.5] Dans un triangle $M N O$ rectangle en $N$, on sait
 que $M O = 12 upright(" cm")$ et $hat(M) = 30^compose$. Calcule la
 longueur exacte de $\[N O\]$.
 
@@ -20204,20 +19954,20 @@ longueur exacte de $\[N O\]$.
 
 ==== Niveau  : Réflexion et situations concrètes
 <niveau-réflexion-et-situations-concrètes>
-#strong[Exercice 6 (La rampe d'accès).] Une norme impose que les rampes
+#strong[Exercice 28.6 (La rampe d'accès).] Une norme impose que les rampes
 d'accès pour fauteuils roulants ne fassent pas un angle supérieur à
 $5^compose$ avec l'horizontale. Une rampe a une longueur de 4 mètres et
 permet d'atteindre un perron situé à 40 cm de hauteur. Cette rampe
 est-elle conforme à la réglementation ? Justifie par un calcul.
 
-#strong[Exercice 7 (L'arbre abattu par la foudre).] Lors d'une tempête,
+#strong[Exercice 28.7 (L'arbre abattu par la foudre).] Lors d'une tempête,
 un arbre vertical de 15 mètres de haut a été brisé en deux par la
 foudre. Le haut de l'arbre s'est couché sans se détacher du tronc
 restant : sa cime touche le sol en formant un angle de $28^compose$ avec
 le sol horizontal. À quelle hauteur le tronc s'est-il brisé ? (Arrondir
 au centimètre près).
 
-#strong[Exercice 8 (La traversée du fleuve).] Un géomètre se tient sur
+#strong[Exercice 28.8 (La traversée du fleuve).] Un géomètre se tient sur
 la berge d'un fleuve au point $A$, exactement en face d'un arbre
 remarquable $C$ situé sur la berge opposée (le segment $\[A C\]$ est
 perpendiculaire aux deux berges parallèles). Il marche de 50 mètres le
@@ -20226,13 +19976,13 @@ $B$, il vise l'arbre $C$ et mesure au théodolite un angle
 $accent(A B C, ̂) = 38^compose$. Quelle est la largeur du fleuve,
 arrondie au mètre près ?
 
-#strong[Exercice 9 (Le losange et ses diagonales).] Un losange $A B C D$
+#strong[Exercice 28.9 (Le losange et ses diagonales).] Un losange $A B C D$
 a des côtés de longueur 8 cm. L'un de ses angles intérieurs mesure
 $50^compose$. Rappelle les propriétés des diagonales d'un losange, puis
 calcule la longueur exacte de chacune des deux diagonales (arrondie au
 millimètre près).
 
-#strong[Exercice 10 (L'avion en phase de descente).] Un avion de ligne
+#strong[Exercice 28.10 (L'avion en phase de descente).] Un avion de ligne
 vole à une altitude de 9 000 mètres à une vitesse constante de 720 km/h.
 Il entame sa descente vers la piste d'atterrissage selon un angle
 constant de $3^compose$ par rapport à l'horizontale. 1. Quelle distance
@@ -20240,7 +19990,7 @@ en vol (le long de sa trajectoire inclinée) doit-il parcourir pour
 toucher le sol ? 2. Combien de temps dure cette descente, en minutes et
 secondes ?
 
-#strong[Exercice 11 (Relations trigonométriques).] Un angle aigu $alpha$
+#strong[Exercice 28.11 (Relations trigonométriques).] Un angle aigu $alpha$
 vérifie $sin\(alpha\)= 5 / 13$. 1. Sans calculer la mesure de l'angle
 $alpha$, utilise la relation fondamentale pour déterminer la valeur
 exacte de $cos\(alpha\)$ sous forme de fraction irréductible. 2.
@@ -20251,7 +20001,7 @@ résultats à l'aide de la calculatrice.
 
 ==== Niveau  : Défis et problèmes d'approfondissement
 <niveau-défis-et-problèmes-dapprofondissement>
-#strong[Exercice 12 (La mesure de la tour inaccessible).] Pour mesurer
+#strong[Exercice 28.12 (La mesure de la tour inaccessible).] Pour mesurer
 la hauteur d'une tour médiévale entourée de douves infranchissables, un
 arpenteur se place au point $A$ et mesure un angle de visée de
 $32^compose$ vers le sommet de la tour. Il recule ensuite de 25 mètres
@@ -20263,13 +20013,13 @@ point $A$. 1. Exprime $x$ en fonction de $h$ et de $tan\(32^compose\)$.
 déduisant une équation d'inconnue $h$, calcule la hauteur de la tour au
 décimètre près.
 
-#strong[Exercice 13 (La mesure du gnomon d'Ératosthène).] À Alexandrie,
+#strong[Exercice 28.13 (La mesure du gnomon d'Ératosthène).] À Alexandrie,
 Ératosthène a planté un gnomon de 1 mètre de hauteur. L'ombre mesurée au
 sol mesurait environ 12,6 cm. 1. Calcule l'angle formé par les rayons du
 soleil avec le bâton vertical. 2. Retrouve-t-on bien la valeur
 historique de $7\,2^compose$ ?
 
-#strong[Exercice 14 (Formule de l'aire d'un triangle quelconque).] Soit
+#strong[Exercice 28.14 (Formule de l'aire d'un triangle quelconque).] Soit
 un triangle quelconque $A B C$ où l'on connaît deux côtés $A B = c$,
 $A C = b$, et l'angle aigu $hat(A)$ formé par ces deux côtés. Soit $H$
 le pied de la hauteur issue de $C$. 1. Dans le triangle $A C H$
@@ -20279,7 +20029,7 @@ $ upright("Aire")\(A B C\)= 1 / 2 b c sin\(hat(A)\) $ 3. Calcule l'aire
 d'un triangle dont deux côtés mesurent 7 cm et 10 cm, formant un angle
 de $40^compose$.
 
-#strong[Exercice 15 (Le triangle rectangle isocèle et les valeurs
+#strong[Exercice 28.15 (Le triangle rectangle isocèle et les valeurs
 remarquables).] Considère un carré $A B C D$ de côté 1. On trace la
 diagonale $\[A C\]$. 1. Quelle est la nature exacte du triangle $A B C$
 ? Quelle est la mesure de ses angles aigus ? 2. Calcule la longueur
@@ -20293,19 +20043,19 @@ $sin\(45^compose\)$ et $tan\(45^compose\)$.
 <solutions-23>
 ==== Solutions des exercices 
 <solutions-des-exercices>
-- #strong[Exercice 1 :] 1. Hypoténuse : $\[E F\]$. 2. Côté adjacent à
+- #strong[Solution 28.1 :] 1. Hypoténuse : $\[E F\]$. 2. Côté adjacent à
   $hat(E)$ : $\[D E\]$. 3. Côté opposé à $hat(E)$ : $\[D F\]$. 4.
   $cos\(hat(E)\)= frac(D E, E F)$, $sin\(hat(E)\)= frac(D F, E F)$,
   $tan\(hat(E)\)= frac(D F, D E)$.
-- #strong[Exercice 2 :] a) $approx 0\,906$ \; b) $approx 0\,940$ \; c)
+- #strong[Solution 28.2 :] a) $approx 0\,906$ \; b) $approx 0\,940$ \; c)
   $approx 0\,213$ \; d) $approx 11\,430$.
-- #strong[Exercice 3 :] a) $x = arccos\(0\,72\)approx 43\,9^compose$ \;
+- #strong[Solution 28.3 :] a) $x = arccos\(0\,72\)approx 43\,9^compose$ \;
   b) $x = arcsin\(0\,35\)approx 20\,5^compose$ \; c)
   $x = arctan\(1\,8\)approx 60\,9^compose$ \; d) $x = 45^compose$ car
   $cos\(45^compose\)= sqrt(2) / 2$.
-- #strong[Exercice 4 :] $cos\(hat(A)\)= frac(A B, A C) = 6 / 10 = 0\,6$.
+- #strong[Solution 28.4 :] $cos\(hat(A)\)= frac(A B, A C) = 6 / 10 = 0\,6$.
   À la calculatrice, $hat(A) = arccos\(0\,6\)approx 53^compose$.
-- #strong[Exercice 5 :] Dans $M N O$ rectangle en $N$,
+- #strong[Solution 28.5 :] Dans $M N O$ rectangle en $N$,
   $sin\(hat(M)\)= frac(N O, M O) arrow.r.double.long sin\(30^compose\)= frac(N O, 12)$.
   Comme $sin\(30^compose\)= 0\,5$,
   $N O = 12 times 0\,5 = 6 upright(" cm")$.
@@ -20314,7 +20064,7 @@ $sin\(45^compose\)$ et $tan\(45^compose\)$.
 
 ==== Solutions détaillées des exercices 
 <solutions-détaillées-des-exercices>
-- #strong[Exercice 6 (La rampe d'accès) :] Soit $alpha$ l'angle de la
+- #strong[Solution 28.6 (La rampe d'accès) :] Soit $alpha$ l'angle de la
   rampe avec l'horizontale. La rampe forme l'hypoténuse
   ($4 upright(" m") = 400 upright(" cm")$) et la hauteur du perron forme
   le côté opposé ($40 upright(" cm")$). Dans ce triangle rectangle :
@@ -20323,7 +20073,7 @@ $sin\(45^compose\)$ et $tan\(45^compose\)$.
   Puisque $5\,74^compose > 5^compose$, la pente est trop raide :
   #strong[la rampe n'est pas conforme] à la réglementation.
 
-- #strong[Exercice 7 (L'arbre abattu) :] Soit $h$ la hauteur du tronc
+- #strong[Solution 28.7 (L'arbre abattu) :] Soit $h$ la hauteur du tronc
   encore debout (côté opposé à l'angle de $28^compose$). La partie
   brisée couchée forme l'hypoténuse de longueur $L$. La hauteur totale
   initiale de l'arbre est $h + L = 15$, d'où $L = 15 - h$. Dans le
@@ -20337,7 +20087,7 @@ $sin\(45^compose\)$ et $tan\(45^compose\)$.
   Le tronc s'est brisé à environ #strong[4,79 mètres] de hauteur (et la
   cime mesure $15 - 4\,79 = 10\,21$ m).
 
-- #strong[Exercice 8 (La traversée du fleuve) :] Le triangle $A B C$ est
+- #strong[Solution 28.8 (La traversée du fleuve) :] Le triangle $A B C$ est
   rectangle en $A$. L'arbre est en $C$, l'observateur initial en $A$ et
   il a marché jusqu'en $B$ ($A B = 50 upright(" m")$). Par rapport à
   l'angle $hat(B) = 38^compose$, $\[A C\]$ est le côté opposé (la
@@ -20348,7 +20098,7 @@ $sin\(45^compose\)$ et $tan\(45^compose\)$.
   $A C approx 50 times 0\,781286 approx 39\,06 upright(" m")$. Le fleuve
   a une largeur d'environ #strong[39 mètres].
 
-- #strong[Exercice 9 (Le losange) :] Rappel : les diagonales d'un
+- #strong[Solution 28.9 (Le losange) :] Rappel : les diagonales d'un
   losange se coupent en leur milieu en formant un angle droit, et elles
   sont les bissectrices des angles intérieurs. Soit $O$ le centre du
   losange. Le triangle $A O B$ est rectangle en $O$. L'hypoténuse est le
@@ -20365,7 +20115,7 @@ $sin\(45^compose\)$ et $tan\(45^compose\)$.
     La petite diagonale mesure donc
     $B D = 2 times O B approx upright(bold(6\,8 upright(" cm")))$.
 
-- #strong[Exercice 10 (L'avion en descente) :]
+- #strong[Solution 28.10 (L'avion en descente) :]
 
   + Le triangle rectangle formé par l'altitude verticale
     ($9 thin 000 upright(" m")$), la distance au sol et la trajectoire
@@ -20380,7 +20130,7 @@ $sin\(45^compose\)$ et $tan\(45^compose\)$.
     Comme $859\,8 div 60 approx 14\,33$ min, cela donne #strong[14
     minutes et 20 secondes].
 
-- #strong[Exercice 11 (Relations fondamentales) :]
+- #strong[Solution 28.11 (Relations fondamentales) :]
 
   + $cos^2\(alpha\)= 1 - sin^2\(alpha\)= 1 - (5 / 13)^2 = 1 - 25 / 169 = 144 / 169$.
     Comme $alpha$ est aigu,
@@ -20394,7 +20144,7 @@ $sin\(45^compose\)$ et $tan\(45^compose\)$.
 
 ==== Solutions détaillées des exercices 
 <solutions-détaillées-des-exercices-1>
-- #strong[Exercice 12 (La tour inaccessible) :]
+- #strong[Solution 28.12 (La tour inaccessible) :]
   + Dans le triangle rectangle formé par la tour et le point $A$ :
     $tan\(32^compose\)= h / x arrow.r.double.long x = frac(h, tan\(32^compose\))$.
   + Dans le triangle rectangle formé par la tour et le point $B$ :
@@ -20407,14 +20157,14 @@ $sin\(45^compose\)$ et $tan\(45^compose\)$.
     La différence vaut $2\,2460 - 1\,6003 = 0\,6457$. D'où :
     $ h = frac(25, 0\,6457) approx upright(bold(38\,7 upright(" mètres"))) . $
     La tour mesure environ #strong[38,7 mètres].
-- #strong[Exercice 13 (Le gnomon d'Ératosthène) :]
+- #strong[Solution 28.13 (Le gnomon d'Ératosthène) :]
   + Le bâton a une hauteur de $1 upright(" m") = 100 upright(" cm")$
     (côté adjacent) et l'ombre au sol mesure $12\,6 upright(" cm")$
     (côté opposé). $ tan\(alpha\)= frac(12\,6, 100) = 0\,126 $ À la
     calculatrice : $alpha = arctan\(0\,126\)approx 7\,18^compose$.
   + En arrondissant au dixième, on trouve bien #strong[$7\,2^compose$],
     exactement la valeur mesurée par Ératosthène !
-- #strong[Exercice 14 (L'aire d'un triangle quelconque) :]
+- #strong[Solution 28.14 (L'aire d'un triangle quelconque) :]
   + Dans le triangle $A C H$ rectangle en $H$, par rapport à l'angle
     aigu $hat(A)$ :
     $sin\(hat(A)\)= frac(C H, A C) = frac(C H, b) arrow.r.double.long C H = b sin\(hat(A)\)$.
@@ -20424,7 +20174,7 @@ $sin\(45^compose\)$ et $tan\(45^compose\)$.
     $ upright("Aire") = 1 / 2 b c sin\(hat(A)\). $
   + Pour $b = 7$, $c = 10$, $hat(A) = 40^compose$ :
     $ upright("Aire") = 1 / 2 times 7 times 10 times sin\(40^compose\)= 35 times sin\(40^compose\)approx 35 times 0\,64279 approx upright(bold(22\,5 upright(" cm")^2)) . $
-- #strong[Exercice 15 (Le demi-carré et 45°) :]
+- #strong[Solution 28.15 (Le demi-carré et 45°) :]
   + Le triangle $A B C$ a deux côtés de même longueur ($A B = B C = 1$)
     et un angle droit en $B$ : c'est un #strong[triangle rectangle
     isocèle]. Ses deux angles aigus sont égaux et valent
@@ -20653,9 +20403,7 @@ Voici le théorème le plus important de toute l'arithmétique. Il est si
 capital qu'on l'appelle le #strong[théorème fondamental de
 l'arithmétique].
 
-#quote_box[
-#strong[📐 Théorème fondamental de l'arithmétique ---
-]
+#principe(title: [📐 Théorème fondamental de l'arithmétique —])[
  Tout nombre
 entier supérieur ou égal à 2 peut s'écrire comme un #strong[produit de
 nombres premiers]. Cette décomposition est #strong[unique], à l'ordre
@@ -20776,9 +20524,7 @@ $30 - 15 = 15 arrow.r.double.long upright("on garde ") 15 upright(" et ") 15$
 Les deux nombres égaux obtenus sont 15, donc
 $upright("PGCD")\(75\;45\)= upright(bold(15))$.
 
-#quote_box[
-#strong[⚠️ La limite des soustractions :
-]
+#alerte(title: [⚠️ La limite des soustractions :])[
  Imagine que tu doives calculer
 $upright("PGCD")\(1 thin 000 thin 000\;2\)$. Tu vas devoir soustraire 2
 cinq cent mille fois ! C'est une perte de temps absurde. Heureusement,
@@ -20792,9 +20538,7 @@ seul coup le plus de paquets de $b$ possibles ? C'est exactement le
 principe de la #strong[division euclidienne] :
 $ a = b times q + r quad\(0 lt.eq r < b\) $
 
-#quote_box[
-#strong[📐 Théorème d'Euclide ---
-]
+#principe(title: [📐 Théorème d'Euclide —])[
  Si la division euclidienne de $a$ par
 $b$ donne un reste $r$, alors :
 $ upright("PGCD")\(a\;b\)= upright("PGCD")\(b\;r\) $
@@ -20853,9 +20597,7 @@ $upright("PGCD")\(a\;b\)= 1$. On ne peut plus la simplifier.
 Grâce au PGCD, on peut rendre n'importe quelle fraction irréductible
 #strong[en une seule étape] :
 
-#quote_box[
-#strong[🧭 Méthode --- Simplification maximale.
-]
+#methode(title: [🧭 Méthode — Simplification maximale.])[
  Pour rendre la fraction
 $a / b$ irréductible, il suffit de diviser le numérateur et le
 dénominateur par leur #strong[PGCD] :
@@ -21064,60 +20806,60 @@ Le calcul devient immédiat et d'une simplicité enfantine !
 <exercices-24>
 ==== Niveau  : Application directe
 <niveau-application-directe-17>
-#strong[Exercice 1.] Parmi les nombres suivants, repère ceux qui sont
+#strong[Exercice 29.1] Parmi les nombres suivants, repère ceux qui sont
 des nombres premiers :
 $ 1 quad\;quad 2 quad\;quad 9 quad\;quad 13 quad\;quad 15 quad\;quad 21 quad\;quad 29 quad\;quad 31 quad\;quad 51 quad\;quad 91 $
 Pour ceux qui ne le sont pas, justifie en donnant un diviseur autre que
 1 et eux-mêmes.
 
-#strong[Exercice 2.] En utilisant les critères de divisibilité, indique
+#strong[Exercice 29.2] En utilisant les critères de divisibilité, indique
 si le nombre $3 thin 420$ est divisible par 2, 3, 4, 5, 9 et 10.
 Justifie pour chaque critère.
 
-#strong[Exercice 3.] Décompose en produit de facteurs premiers les
+#strong[Exercice 29.3] Décompose en produit de facteurs premiers les
 nombres entiers suivants (en écrivant le résultat avec des puissances si
 nécessaire) : a) $84$ b) $126$ c) $200$ d) $525$
 
-#strong[Exercice 4.] À partir des décompositions
+#strong[Exercice 29.4] À partir des décompositions
 $84 = 2^2 times 3 times 7$ et $126 = 2 times 3^2 times 7$ : 1. Quels
 sont les facteurs premiers communs à 84 et 126 ? 2. Calcule
 $upright("PGCD")\(84\;126\)$. 3. Rends la fraction $84 / 126$
 irréductible.
 
-#strong[Exercice 5.] Utilise l'algorithme des soustractions successives
+#strong[Exercice 29.5] Utilise l'algorithme des soustractions successives
 pour déterminer $upright("PGCD")\(65\;39\)$.
 
 #divider()
 
 ==== Niveau  : Réflexion et situations concrètes
 <niveau-réflexion-et-situations-concrètes-1>
-#strong[Exercice 6 (Algorithme d'Euclide).] 1. À l'aide de l'algorithme
+#strong[Exercice 29.6 (Algorithme d'Euclide).] 1. À l'aide de l'algorithme
 d'Euclide, calcule $upright("PGCD")\(756\;441\)$ en présentant
 clairement chaque division euclidienne. 2. Les nombres 756 et 441
 sont-ils premiers entre eux ? Pourquoi ? 3. Rends la fraction
 $441 / 756$ irréductible en une seule étape.
 
-#strong[Exercice 7 (Le carrelage de la terrasse).] Un maçon doit poser
+#strong[Exercice 29.7 (Le carrelage de la terrasse).] Un maçon doit poser
 du carrelage sur une terrasse rectangulaire mesurant 5,40 m de long sur
 3,00 m de large. Il veut utiliser des dalles carrées identiques les plus
 grandes possibles, sans aucune découpe. 1. Convertis les dimensions de
 la terrasse en centimètres. 2. Quelle doit être la longueur du côté
 d'une dalle ? 3. Combien de dalles le maçon devra-t-il poser en tout ?
 
-#strong[Exercice 8 (Le fleuriste équitable).] Un fleuriste reçoit une
+#strong[Exercice 29.8 (Le fleuriste équitable).] Un fleuriste reçoit une
 livraison de 168 roses rouges et de 216 œillets blancs. Il souhaite
 composer des bouquets tous identiques contenant chacun le même nombre de
 roses et le même nombre d'œillets, en utilisant toutes les fleurs. 1.
 Quel est le nombre maximal de bouquets qu'il peut réaliser ? 2. Combien
 de roses et combien d'œillets chaque bouquet comportera-t-il ?
 
-#strong[Exercice 9 (Le piège du faux nombre premier).] Un élève affirme
+#strong[Exercice 29.9 (Le piège du faux nombre premier).] Un élève affirme
 : #emph[« Tous les nombres impairs supérieurs à 1 sont des nombres
 premiers, sauf s'ils se terminent par 5 ! »] Montre que son affirmation
 est fausse en donnant au moins trois contre-exemples bien choisis parmi
 les nombres inférieurs à 100.
 
-#strong[Exercice 10 (La course sur circuit et les multiples).] Deux
+#strong[Exercice 29.10 (La course sur circuit et les multiples).] Deux
 pilotes de karting s'élancent en même temps sur une piste circulaire
 depuis la ligne de départ.
 
@@ -21129,7 +20871,7 @@ depuis la ligne de départ.
   la ligne de départ ensemble pour la première fois ?
 + Combien de tours chacun aura-t-il alors parcourus ?
 
-#strong[Exercice 11 (Calculs avec fractions irréductibles).] On donne
+#strong[Exercice 29.11 (Calculs avec fractions irréductibles).] On donne
 l'expression suivante : $ B = 588 / 882 - 1 / 6 $ 1. Calcule
 $upright("PGCD")\(882\;588\)$ par l'algorithme d'Euclide. 2. Déduis-en
 la forme irréductible de la fraction $588 / 882$. 3. Calcule alors
@@ -21140,7 +20882,7 @@ irréductible.
 
 ==== Niveau  : Défis et approfondissements
 <niveau-défis-et-approfondissements-1>
-#strong[Exercice 12 (Les clôtures et les piquets du fermier).] Un
+#strong[Exercice 29.12 (Les clôtures et les piquets du fermier).] Un
 agriculteur possède un champ triangulaire dont les trois côtés mesurent
 120 mètres, 144 mètres et 168 mètres. Il souhaite planter des piquets de
 clôture tout autour de son champ, à intervalles réguliers et constants,
@@ -21150,7 +20892,7 @@ possible]. 1. Quelle doit être la distance entre deux piquets
 consécutifs ? 2. Combien de piquets devra-t-il planter au total le long
 de la clôture ?
 
-#strong[Exercice 13 (La preuve du roi Euclide : l'infinité des nombres
+#strong[Exercice 29.13 (La preuve du roi Euclide : l'infinité des nombres
 premiers).] Euclide a démontré que l'ensemble des nombres premiers est
 infini par un raisonnement par l'absurde remarquable. Supposons qu'il
 n'y ait qu'un nombre fini de nombres premiers : notons-les tous
@@ -21163,7 +20905,7 @@ $p_1\,p_2\,dots.h\,p_n$, quel est le reste de la division euclidienne ?
 premiers ? 3. Conclus : pourquoi est-ce contradictoire, et pourquoi les
 nombres premiers sont-ils obligatoirement en nombre infini ?
 
-#strong[Exercice 14 (Le secret des engrenages).] Une roue dentée $A$ de
+#strong[Exercice 29.14 (Le secret des engrenages).] Une roue dentée $A$ de
 54 dents entraîne une roue dentée $B$ de 42 dents. Deux dents
 particulières, une sur chaque roue, sont en contact au point de départ.
 \1. Calcule $upright("PGCD")\(54\;42\)$. 2. Après combien de dents
@@ -21171,7 +20913,7 @@ engrenées ces deux mêmes dents se retrouveront-elles en contact pour la
 première fois ? 3. Combien de tours complets chaque roue aura-t-elle
 alors accomplis ?
 
-#strong[Exercice 15 (Le pavage de cubes dans un parallélépipède 3D).] Un
+#strong[Exercice 29.15 (Le pavage de cubes dans un parallélépipède 3D).] Un
 sculpteur dispose d'un bloc de marbre rectangulaire plein de 90 cm de
 longueur, 75 cm de largeur et 60 cm de hauteur. Il veut découper ce bloc
 en petits cubes identiques, les plus grands possibles, sans perdre aucun
@@ -21186,7 +20928,7 @@ cubes le sculpteur obtiendra-t-il au total ?
 <solutions-24>
 ==== Solutions des exercices 
 <solutions-des-exercices-1>
-- #strong[Exercice 1 :]
+- #strong[Solution 29.1 :]
   - Nombres premiers : #strong[2, 13, 29, 31].
 
   - Non premiers :
@@ -21202,7 +20944,7 @@ cubes le sculpteur obtiendra-t-il au total ?
     - 51 est divisible par 3 ($5 + 1 = 6$ \; $51 = 3 times 17$).
 
     - 91 est divisible par 7 ($91 = 7 times 13$).
-- #strong[Exercice 2 :] Pour 3 420 :
+- #strong[Solution 29.2 :] Pour 3 420 :
   - Par 2 : oui, il se termine par 0 (pair).
 
   - Par 3 : oui, $3 + 4 + 2 + 0 = 9$, multiple de 3.
@@ -21214,7 +20956,7 @@ cubes le sculpteur obtiendra-t-il au total ?
   - Par 9 : oui, $3 + 4 + 2 + 0 = 9$, multiple de 9.
 
   - Par 10 : oui, se termine par 0.
-- #strong[Exercice 3 :]
+- #strong[Solution 29.3 :]
   #block[
   #set enum(numbering: "a)", start: 1)
   + $84 = 2^2 times 3 times 7$.
@@ -21222,11 +20964,11 @@ cubes le sculpteur obtiendra-t-il au total ?
   + $200 = 2^3 times 5^2$.
   + $525 = 3 times 5^2 times 7$.
   ]
-- #strong[Exercice 4 :]
+- #strong[Solution 29.4 :]
   + Facteurs premiers communs : 2, 3 et 7.
   + $upright("PGCD")\(84\;126\)= 2^1 times 3^1 times 7^1 = upright(bold(42))$.
   + $84 / 126 = frac(84 div 42, 126 div 42) = upright(bold(2 / 3))$.
-- #strong[Exercice 5 :] Soustractions successives :
+- #strong[Solution 29.5 :] Soustractions successives :
   $65 - 39 = 26 arrow.r.double.long 39 - 26 = 13 arrow.r.double.long 26 - 13 = 13 arrow.r.double.long 13 - 13 = 0$.
   Donc $upright("PGCD")\(65\;39\)= upright(bold(13))$.
 
@@ -21234,7 +20976,7 @@ cubes le sculpteur obtiendra-t-il au total ?
 
 ==== Solutions détaillées des exercices 
 <solutions-détaillées-des-exercices-2>
-- #strong[Exercice 6 (Algorithme d'Euclide) :]
+- #strong[Solution 29.6 (Algorithme d'Euclide) :]
 
   + Divisions successives :
 
@@ -21252,7 +20994,7 @@ cubes le sculpteur obtiendra-t-il au total ?
   + Fraction irréductible :
     $441 / 756 = frac(441 div 63, 756 div 63) = upright(bold(7 / 12))$.
 
-- #strong[Exercice 7 (Le carrelage de la terrasse) :]
+- #strong[Solution 29.7 (Le carrelage de la terrasse) :]
 
   + Dimensions : $L = 5\,40 upright(" m") = 540 upright(" cm")$,
     $ell = 3\,00 upright(" m") = 300 upright(" cm")$.
@@ -21276,7 +21018,7 @@ cubes le sculpteur obtiendra-t-il au total ?
 
     - Total : $9 times 5 = upright(bold(45 upright(" dalles")))$.
 
-- #strong[Exercice 8 (Le fleuriste) :]
+- #strong[Solution 29.8 (Le fleuriste) :]
 
   + Le nombre maximal de bouquets est $upright("PGCD")\(216\;168\)$.
 
@@ -21293,7 +21035,7 @@ cubes le sculpteur obtiendra-t-il au total ?
     - Œillets :
       $216 div 24 = upright(bold(9 upright(" œillets blancs")))$.
 
-- #strong[Exercice 9 (Le faux nombre premier) :] Trois contre-exemples
+- #strong[Solution 29.9 (Le faux nombre premier) :] Trois contre-exemples
   parmi les nombres impairs ne se terminant pas par 5 :
 
   - $9$ ($9 = 3 times 3$, impair, non premier) \;
@@ -21304,7 +21046,7 @@ cubes le sculpteur obtiendra-t-il au total ?
 
   - $91$ ($91 = 7 times 13$, piège très célèbre !).
 
-- #strong[Exercice 10 (La course sur circuit) :]
+- #strong[Solution 29.10 (La course sur circuit) :]
 
   + $36 = 2^2 times 3^2$ et $48 = 2^4 times 3$.
 
@@ -21320,7 +21062,7 @@ cubes le sculpteur obtiendra-t-il au total ?
     - Pilote 1 : $144 div 36 = upright(bold(4 upright(" tours")))$.
     - Pilote 2 : $144 div 48 = upright(bold(3 upright(" tours")))$.
 
-- #strong[Exercice 11 (Calcul avec fraction irréductible) :]
+- #strong[Solution 29.11 (Calcul avec fraction irréductible) :]
 
   + Algorithme d'Euclide pour 882 et 588 :
 
@@ -21337,7 +21079,7 @@ cubes le sculpteur obtiendra-t-il au total ?
 
 ==== Solutions détaillées des exercices 
 <solutions-détaillées-des-exercices-3>
-- #strong[Exercice 12 (Les piquets de clôture) :]
+- #strong[Solution 29.12 (Les piquets de clôture) :]
   + Pour que l'espacement $d$ soit constant et qu'il y ait un piquet à
     chaque sommet, $d$ doit diviser les trois côtés 120, 144 et 168.
     Pour avoir le moins de piquets possible, $d$ doit être le plus grand
@@ -21353,7 +21095,7 @@ cubes le sculpteur obtiendra-t-il au total ?
     $120 + 144 + 168 = 432 upright(" mètres")$. Puisque la clôture est
     un circuit fermé, le nombre total de piquets est :
     $ 432 / 24 = upright(bold(18 upright(" piquets"))) . $
-- #strong[Exercice 13 (La preuve d'Euclide) :]
+- #strong[Solution 29.13 (La preuve d'Euclide) :]
   + Par définition, $N =\(p_1 times p_2 times dots.h times p_n\)+ 1$. Le
     produit est un multiple exact de n'importe quel $p_k$. Donc la
     division de $N$ par $p_k$ donne un quotient entier et un reste égal
@@ -21366,7 +21108,7 @@ cubes le sculpteur obtiendra-t-il au total ?
     contredit l'hypothèse de départ que la liste contenait #emph[tous]
     les nombres premiers. L'hypothèse était donc fausse : il existe
     obligatoirement une #strong[infinité de nombres premiers].
-- #strong[Exercice 14 (Les engrenages) :]
+- #strong[Solution 29.14 (Les engrenages) :]
   + Euclide :
     $54 = 42 times 1 + 12 arrow.r.double.long 42 = 12 times 3 + 6 arrow.r.double.long 12 = 6 times 2 + 0$.
     Donc $upright("PGCD")\(54\;42\)= upright(bold(6))$.
@@ -21381,7 +21123,7 @@ cubes le sculpteur obtiendra-t-il au total ?
       $378 div 54 = upright(bold(7 upright(" tours complets")))$.
     - Roue B :
       $378 div 42 = upright(bold(9 upright(" tours complets")))$.
-- #strong[Exercice 15 (Cubes 3D) :]
+- #strong[Solution 29.15 (Cubes 3D) :]
   + Décompositions :
 
     - $90 = 2 times 3^2 times 5$
@@ -21565,9 +21307,7 @@ Prenons le lancer d'un dé cubique ordinaire :
   $A$ »), est l'événement qui est réalisé #strong[exactement quand $A$
   n'est pas réalisé].
 
-#quote_box[
-#strong[📐 Propriété capitale de l'événement contraire ---
-]
+#principe(title: [📐 Propriété capitale de l'événement contraire —])[
  Pour tout
 événement $A$ :
 $ P\(macron(A)\)= 1 - P\(A\)#h(2em) upright("ou encore") #h(2em) P\(A\)+ P\(macron(A)\)= 1 $
@@ -21596,9 +21336,7 @@ expressions clés :
 
 ==== 3.2 La formule reine
 <la-formule-reine>
-#quote_box[
-#strong[📐 Règle de Laplace --- Probabilité sous équiprobabilité.
-]
+#principe(title: [📐 Règle de Laplace — Probabilité sous équiprobabilité.])[
  Dans
 une situation d'équiprobabilité, la probabilité d'un événement $E$ est
 égale au quotient du nombre d'issues favorables par le nombre total
@@ -21690,9 +21428,7 @@ Regarde la grande diagonale des #strong[7] :
 L'arbre est le couteau suisse des probabilités. Chaque embranchement
 représente une épreuve.
 
-#quote_box[
-#strong[📐 Les trois lois sacrées de l'arbre de probabilités ---
-]
+#principe(title: [📐 Les trois lois sacrées de l'arbre de probabilités —])[
  1.
 #strong[La somme des probabilités] portées sur les branches issues d'un
 même nœud est #strong[toujours égale à 1]. 2. #strong[Le long d'un
@@ -21760,10 +21496,7 @@ Mais que se passe-t-il si tu lances la pièce 100 fois, 1 000 fois, 100
 000 fois ? Calculons la #strong[fréquence observée] :
 $ f = frac(upright("Nombre de Piles observés"), upright("Nombre total de lancers ") N) $
 
-#quote_box[
-#strong[📐 Phénomène de stabilisation des fréquences (Loi des grands
-nombres) ---
-]
+#principe(title: [📐 Phénomène de stabilisation des fréquences (Loi des grands nombres) —])[
  Lorsque l'on répète une expérience aléatoire un
 #strong[très grand nombre de fois], la fréquence observée d'un événement
 se rapproche et se stabilise autour de sa #strong[probabilité
@@ -21987,14 +21720,14 @@ forain).
 <exercices-25>
 ==== Niveau  : Application directe
 <niveau-application-directe-18>
-#strong[Exercice 1.] Une urne opaque contient 4 boules rouges, 3 boules
+#strong[Exercice 30.1] Une urne opaque contient 4 boules rouges, 3 boules
 vertes et 5 boules bleues, indiscernables au toucher. On tire une boule
 au hasard. 1. Combien y a-t-il d'issues possibles ? Sont-elles
 équiprobables ? 2. Calcule la probabilité de tirer une boule rouge sous
 forme de fraction irréductible. 3. Calcule la probabilité de tirer une
 boule qui n'est pas verte.
 
-#strong[Exercice 2.] On lance un dé cubique équilibré à 6 faces
+#strong[Exercice 30.2] On lance un dé cubique équilibré à 6 faces
 numérotées de 1 à 6. Calcule la probabilité des événements suivants :
 
 - $A$ : « Obtenir un nombre impair ».
@@ -22002,19 +21735,19 @@ numérotées de 1 à 6. Calcule la probabilité des événements suivants :
 - $C$ : « Obtenir un nombre strictement supérieur à 4 ».
 - $D$ : « Obtenir un nombre premier ».
 
-#strong[Exercice 3.] On fait tourner une roue de loterie partagée en 8
+#strong[Exercice 30.3] On fait tourner une roue de loterie partagée en 8
 secteurs égaux : 3 secteurs sont peints en bleu, 4 en jaune et 1 en
 rouge. 1. Quelle est la probabilité de tomber sur le rouge ? 2. Quelle
 est la probabilité de ne pas tomber sur le bleu ? 3. Exprime ces
 probabilités en pourcentage.
 
-#strong[Exercice 4.] On lance une pièce équilibrée deux fois de suite.
+#strong[Exercice 30.4] On lance une pièce équilibrée deux fois de suite.
 \1. Dresse l'arbre des possibles avec les probabilités sur chaque
 branche. 2. Quelle est la probabilité d'obtenir deux fois Face ? 3.
 Quelle est la probabilité d'obtenir exactement une fois Pile et une fois
 Face ?
 
-#strong[Exercice 5.] Dans un collège, $55 thin %$ des élèves sont
+#strong[Exercice 30.5] Dans un collège, $55 thin %$ des élèves sont
 demi-pensionnaires et les autres sont externes. On choisit un élève au
 hasard. Quelle est la probabilité que cet élève soit externe ?
 
@@ -22022,14 +21755,14 @@ hasard. Quelle est la probabilité que cet élève soit externe ?
 
 ==== Niveau  : Réflexion et situations combinées
 <niveau-réflexion-et-situations-combinées>
-#strong[Exercice 6 (Le lancer de deux dés et le produit).] On lance deux
+#strong[Exercice 30.6 (Le lancer de deux dés et le produit).] On lance deux
 dés équilibrés à 6 faces et on #strong[multiplie] les deux chiffres
 obtenus. 1. À l'aide d'un tableau à double entrée de taille $6 times 6$,
 détermine toutes les issues possibles du produit. 2. Quelle est la
 probabilité que le produit soit égal à 12 ? 3. Quelle est la probabilité
 que le produit soit un nombre pair ?
 
-#strong[Exercice 7 (Chaussettes dans le tiroir dans le noir).] Dans un
+#strong[Exercice 30.7 (Chaussettes dans le tiroir dans le noir).] Dans un
 tiroir se trouvent en vrac 6 chaussettes noires et 4 chaussettes bleues,
 totalement indiscernables au toucher. Le matin, avant le lever du jour,
 Lucas tire au hasard et successivement deux chaussettes #strong[sans les
@@ -22038,14 +21771,14 @@ aléatoire. 2. Quelle est la probabilité que Lucas tire deux chaussettes
 noires ? 3. Quelle est la probabilité que Lucas tire deux chaussettes de
 la même couleur (pour être bien assorti) ?
 
-#strong[Exercice 8 (Le mot « PROBABILITÉ »).] On écrit chacune des 11
+#strong[Exercice 30.8 (Le mot « PROBABILITÉ »).] On écrit chacune des 11
 lettres du mot « P R O B A B I L I T É » sur un carton identique, et on
 place les 11 cartons dans un sac. On tire un carton au hasard. 1. Quelle
 est la probabilité de tirer la lettre « B » ? 2. Quelle est la
 probabilité de tirer une voyelle (O, A, I, É) ? 3. Quelle est la
 probabilité de tirer une consonne ?
 
-#strong[Exercice 9 (Contrôle qualité en usine).] Une usine fabrique des
+#strong[Exercice 30.9 (Contrôle qualité en usine).] Une usine fabrique des
 composants électroniques. Sur une chaîne de production, $3 thin %$ des
 composants présentent un défaut de soudure et sont défectueux. Un
 technicien prélève au hasard deux composants successifs (on assimile ce
@@ -22055,7 +21788,7 @@ défectueux ? 2. Quelle est la probabilité qu'aucun des deux composants
 ne soit défectueux ? 3. Quelle est la probabilité qu'au moins l'un des
 deux composants présente un défaut ?
 
-#strong[Exercice 10 (Le piège du joueur de casino).] Un joueur est à la
+#strong[Exercice 30.10 (Le piège du joueur de casino).] Un joueur est à la
 table de roulette. La bille s'est arrêtée sur une case Noire lors des 6
 derniers tours consécutifs. Le joueur s'écrie : #emph[« Le Rouge n'est
 pas sorti depuis 6 tours, il a maintenant une chance énorme de sortir,
@@ -22064,7 +21797,7 @@ joueur ? 2. Quelle est la probabilité réelle que la bille tombe sur le
 Rouge au 7e tour (sur une roulette européenne avec 18 cases rouges, 18
 cases noires et 1 case verte zéro) ?
 
-#strong[Exercice 11 (La cible de tir à l'arc).] Une cible carrée de 40
+#strong[Exercice 30.11 (La cible de tir à l'arc).] Une cible carrée de 40
 cm de côté contient en son centre un disque rouge de 10 cm de rayon. Un
 archer débutant tire une flèche qui atteint à coup sûr la cible, mais en
 un point totalement aléatoire (probabilité proportionnelle à l'aire). 1.
@@ -22076,7 +21809,7 @@ plante dans le disque rouge ? (Arrondir au centième).
 
 ==== Niveau  : Défis et approfondissements
 <niveau-défis-et-approfondissements-2>
-#strong[Exercice 12 (Le problème historique du Chevalier de Méré).] Le
+#strong[Exercice 30.12 (Le problème historique du Chevalier de Méré).] Le
 Chevalier de Méré avait remarqué au XVIIe siècle qu'il gagnait souvent
 en pariant sur l'apparition d'au moins un 6 en lançant 4 fois de suite
 un dé à 6 faces. 1. Quelle est la probabilité de NE PAS obtenir de 6
@@ -22085,7 +21818,7 @@ lors d'un lancer de dé ? 2. Quelle est la probabilité de n'obtenir aucun
 moins un 6 en 4 lancers. Le Chevalier avait-il raison de parier sur cet
 événement ?
 
-#strong[Exercice 13 (La simulation informatique des grands nombres).] Un
+#strong[Exercice 30.13 (La simulation informatique des grands nombres).] Un
 programme Python simule 10 000 lancers d'un dé cubique équilibré. Voici
 le script utilisé :
 
@@ -22111,7 +21844,7 @@ print("Fréquence de 6 :", frequence)
 + Pourquoi la valeur affichée ne sera-t-elle généralement pas exactement
   égale à $1\/6$ ? Quel nom donne-t-on à ce phénomène ?
 
-#strong[Exercice 14 (Le paradoxe des anniversaires dans la classe).]
+#strong[Exercice 30.14 (Le paradoxe des anniversaires dans la classe).]
 Dans une classe de 3e de 25 élèves, le professeur affirme : #emph[« Il y
 a plus d'une chance sur deux que deux élèves de cette classe soient nés
 le même jour de l'année ! »] (On suppose l'année non bissextile de 365
@@ -22126,7 +21859,7 @@ donne environ $0\,43$. Calcule alors la probabilité qu'au moins deux
 élèves fêtent leur anniversaire le même jour. Le professeur avait-il
 raison ?
 
-#strong[Exercice 15 (Le problème des partis revisité : Pascal et
+#strong[Exercice 30.15 (Le problème des partis revisité : Pascal et
 Fermat).] Deux joueurs $A$ et $B$ misent chacun 50 pistoles dans une
 cagnotte (total : 100 pistoles). Le premier qui gagne 3 manches remporte
 tout. Le score actuel est de 2 à 0 en faveur du joueur $A$. La partie
@@ -22143,13 +21876,13 @@ pistoles doivent-elles être équitablement réparties entre $A$ et $B$ ?
 <solutions-25>
 ==== Solutions des exercices 
 <solutions-des-exercices-2>
-- #strong[Exercice 1 :]
+- #strong[Solution 30.1 :]
   + Nombre total d'issues : $4 + 3 + 5 = 12$ boules. Comme elles sont
     indiscernables au toucher, elles sont équiprobables.
   + $P\(upright("Rouge")\)= 4 / 12 = upright(bold(1 / 3))$.
   + Il y a $4 + 5 = 9$ boules non vertes, ou
     $1 - 3 / 12 = 9 / 12 = upright(bold(3 / 4))$.
-- #strong[Exercice 2 :]
+- #strong[Solution 30.2 :]
   - $P\(A\)= 3 / 6 = upright(bold(1 / 2))$ (issues : 1, 3, 5).
 
   - $P\(B\)= 2 / 6 = upright(bold(1 / 3))$ (issues : 3, 6).
@@ -22158,24 +21891,24 @@ pistoles doivent-elles être équitablement réparties entre $A$ et $B$ ?
 
   - $P\(D\)= 3 / 6 = upright(bold(1 / 2))$ (issues premières : 2, 3, 5
     \; attention : 1 n'est pas premier !).
-- #strong[Exercice 3 :]
+- #strong[Solution 30.3 :]
   + $P\(upright("Rouge")\)= 1 / 8 = upright(bold(0\,125)) = upright(bold(12\,5 thin %))$.
   + $P\(upright("Non bleu")\)= 1 - 3 / 8 = 5 / 8 = upright(bold(0\,625)) = upright(bold(62\,5 thin %))$.
-- #strong[Exercice 4 :]
+- #strong[Solution 30.4 :]
   + L'arbre a 4 branches terminales :
     $\(P\;P\)\,\(P\;F\)\,\(F\;P\)\,\(F\;F\)$, chacune avec probabilité
     $1 / 2 times 1 / 2 = 1 / 4$.
   + $P\(F\;F\)= upright(bold(1 / 4)) = 0\,25$.
   + Chemins favorables : $\(P\;F\)$ et
     $\(F\;P\)arrow.r.double.long 1 / 4 + 1 / 4 = upright(bold(1 / 2)) = 0\,5$.
-- #strong[Exercice 5 :]
+- #strong[Solution 30.5 :]
   $P\(upright("Externe")\)= 1 - 0\,55 = upright(bold(0\,45)) = upright(bold(45 thin %))$.
 
 #divider()
 
 ==== Solutions détaillées des exercices 
 <solutions-détaillées-des-exercices-4>
-- #strong[Exercice 6 (Produit de deux dés) :]
+- #strong[Solution 30.6 (Produit de deux dés) :]
   + Tableau des produits ($6 times 6 = 36$ cases) :
 
     - Ligne 1 : 1, 2, 3, 4, 5, 6
@@ -22198,7 +21931,7 @@ pistoles doivent-elles être équitablement réparties entre $A$ et $B$ ?
     choix $times$ 3 choix = 9 cases). Toutes les autres cases sont
     paires : $36 - 9 = 27$ cases paires.
     $ P\(upright("Produit pair")\)= 27 / 36 = upright(bold(3 / 4)) = upright(bold(0\,75)) . $
-- #strong[Exercice 7 (Chaussettes sans remise) :] Total de départ :
+- #strong[Solution 30.7 (Chaussettes sans remise) :] Total de départ :
   $6 + 4 = 10$ chaussettes.
   + Arbre :
 
@@ -22214,14 +21947,14 @@ pistoles doivent-elles être équitablement réparties entre $A$ et $B$ ?
   + Même couleur : deux noires ou deux bleues.
     $P\(B\;B\)= 4 / 10 times 3 / 9 = 12 / 90$.
     $ P\(upright("Même couleur")\)= 30 / 90 + 12 / 90 = 42 / 90 = upright(bold(7 / 15)) approx upright(bold(0\,467)) quad\(46\,7 thin %\). $
-- #strong[Exercice 8 (Le mot PROBABILITÉ) :] Le mot compte 11 lettres :
+- #strong[Solution 30.8 (Le mot PROBABILITÉ) :] Le mot compte 11 lettres :
   P (1), R (1), O (1), B (2), A (1), I (2), L (1), T (1), É (1).
   + $P\(upright("B")\)= upright(bold(2 / 11))$.
   + Voyelles : O, A, I, I, É $arrow.r.double.long 5$ voyelles.
     $P\(upright("Voyelle")\)= upright(bold(5 / 11))$.
   + Consonnes : événement contraire
     $arrow.r.double.long 1 - 5 / 11 = upright(bold(6 / 11))$.
-- #strong[Exercice 9 (Contrôle qualité) :] Soit $D$ l'événement « pièce
+- #strong[Solution 30.9 (Contrôle qualité) :] Soit $D$ l'événement « pièce
   défectueuse », $P\(D\)= 0\,03$, et $P\(macron(D)\)= 0\,97$.
   + Deux défectueux :
     $P\(D\;D\)= 0\,03 times 0\,03 = upright(bold(0\,0009))$ (soit
@@ -22230,7 +21963,7 @@ pistoles doivent-elles être équitablement réparties entre $A$ et $B$ ?
     $P\(macron(D)\;macron(D)\)= 0\,97 times 0\,97 = upright(bold(0\,9409)) approx upright(bold(94\,1 thin %))$.
   + Au moins un défectueux : contraire d'aucun défectueux :
     $ P = 1 - 0\,9409 = upright(bold(0\,0591)) approx upright(bold(5\,91 thin %)) . $
-- #strong[Exercice 10 (Le piège du joueur) :]
+- #strong[Solution 30.10 (Le piège du joueur) :]
   + Le raisonnement du joueur est une #strong[illusion classique]
     (appelée « sophisme du joueur »). La roulette n'a pas de mémoire :
     chaque tour est totalement indépendant des tours précédents. Les
@@ -22239,7 +21972,7 @@ pistoles doivent-elles être équitablement réparties entre $A$ et $B$ ?
     zéro vert) :
     $ P\(upright("Rouge")\)= 18 / 37 approx upright(bold(0\,4865)) quad\(48\,65 thin %\). $
     La probabilité est rigoureusement la même qu'au premier tour !
-- #strong[Exercice 11 (La cible de tir à l'arc) :]
+- #strong[Solution 30.11 (La cible de tir à l'arc) :]
   + Aire de la cible carrée :
     $cal(A)_(upright("carré")) = 40 times 40 = upright(bold(1 thin 600 upright(" cm")^2))$.
   + Aire du disque rouge :
@@ -22251,7 +21984,7 @@ pistoles doivent-elles être équitablement réparties entre $A$ et $B$ ?
 
 ==== Solutions détaillées des exercices 
 <solutions-détaillées-des-exercices-5>
-- #strong[Exercice 12 (Le Chevalier de Méré) :]
+- #strong[Solution 30.12 (Le Chevalier de Méré) :]
   + Probabilité de ne pas faire 6 : $P\(upright("non 6")\)= 5 / 6$.
   + Lors de 4 lancers indépendants, probabilité de n'obtenir aucun 6 :
     $ P\(upright("aucun 6")\)= (5 / 6)^4 = frac(625, 1 thin 296) approx 0\,4823 . $
@@ -22260,7 +21993,7 @@ pistoles doivent-elles être équitablement réparties entre $A$ et $B$ ?
     Puisque $51\,8 thin % > 50 thin %$, la probabilité est strictement
     supérieure à la moitié : le Chevalier de Méré avait raison, sur le
     long terme il était gagnant !
-- #strong[Exercice 13 (Simulation Python) :]
+- #strong[Solution 30.13 (Simulation Python) :]
   + La probabilité théorique est
     $p = 1 / 6 approx upright(bold(0\,167))$.
   + Le programme affichera une valeur très proche de $0\,167$ (par
@@ -22268,7 +22001,7 @@ pistoles doivent-elles être équitablement réparties entre $A$ et $B$ ?
   + En raison de la #strong[fluctuation d'échantillonnage], le hasard
     produit de légères variations autour de la valeur moyenne théorique.
     Ce n'est qu'à l'infini que l'égalité serait parfaite.
-- #strong[Exercice 14 (Le paradoxe des anniversaires) :]
+- #strong[Solution 30.14 (Le paradoxe des anniversaires) :]
   + Pour que le 2e élève ait une date différente du 1er : $364 / 365$.
   + Pour le 3e élève : $363 / 365$.
   + La probabilité que tous les 25 élèves aient des dates différentes
@@ -22278,7 +22011,7 @@ pistoles doivent-elles être équitablement réparties entre $A$ et $B$ ?
     $ P\(upright("au moins deux identiques")\)= 1 - 0\,43 = upright(bold(0\,57)) quad\(upright(bold(57 thin %))\). $
     Comme $57 thin % > 50 thin %$, le professeur avait totalement raison
     : il y a plus d'une chance sur deux !
-- #strong[Exercice 15 (Pascal et Fermat à 2 contre 0) :]
+- #strong[Solution 30.15 (Pascal et Fermat à 2 contre 0) :]
   + Le joueur A n'a besoin que d'une seule victoire (il mène 2-0). Le
     joueur B doit enchaîner 3 victoires d'affilée pour gagner 3-2. Il
     suffit au maximum de #strong[3 manches supplémentaires].
@@ -22340,7 +22073,7 @@ vont prendre des flèches, s'envoler dans le ciel et devenir des
   "LE MOUVEMENT, L'ANGLE ET LE SPECTRE DE LA FORME",
   "15 - 17 ans / 2nde - 1ère",
   "L'analyse infinitésimale commence : dérivation, étude des variations, trigonométrie circulaire, suites et vecteurs dans l'espace.",
-  ("Chapitre 40 : La Balle Rebondissante et la Courbe du Saut", "Chapitre 41 : La Flèche de Zénon et la Vitesse Instantanée", "Chapitre 42 : Le Skieur sur la Pente et la Tangente", "Chapitre 43 : Le Bateau sur le Courant et le Produit Scalaire", "Chapitre 44 : Le Phare dans la Nuit et le Rayon Tournant", "Chapitre 45 : L'Épidémie dans la Ville et la Croissance Exponentielle", "Chapitre 46 : La Spirale d'Archimède et les Nombres d'Euler", "Chapitre 47 : L'Arbre Généalogique et la Loi Binomiale", "Chapitre 48 : L'Échiquier de Sissa et la Somme Géométrique", "Chapitre 49 : Le Prisme de Newton et la Décomposition Vectorielle"),
+  ("Chapitre 31 : Le Tribunal de la Logique", "Chapitre 32 : Le Voilier dans la Tempête et la Flèche Libre", "Chapitre 33 : La Ligne de Mire", "Chapitre 34 : Le Métier Jacquard et la Boîte à Fabriquer", "Chapitre 35 : La Fontaine de Galilée et la Parabole", "Chapitre 36 : Les Marches de l'Escalier et le Prêt de l'Usurier", "Chapitre 37 : La Grande Roue et le Cercle qui s'Enroule", "Chapitre 38 : Tirer la Corde et l'Ombre Efficace", "Chapitre 39 : Le Skieur et la Planche sous la Semelle", "Chapitre 40 : La Colonie de Bactéries", "Chapitre 41 : Le Sondeur et l'Écart-Type", "Chapitre 42 : Le Médecin, le Test et l'Arbre des Possibles"),
   "En regard : Les tensions vectorielles et la chaînette de la Toile d'Araignée (Araneus diadematus)."
 )
 
@@ -22571,12 +22304,7 @@ calculatrice affiche $0\,333333333$, ce qui #emph[ressemble] à un
 décimal. Mais l'écran est trop petit pour être honnête. Voici le premier
 procès du chapitre.
 
-#quote_box[
-#strong[✍️ Démonstration (exigible) --- $1 / 3$ n'est pas un nombre
-décimal.
-]
-
-
+#methode(title: [✍️ Démonstration (exigible) — $1 / 3$ n'est pas un nombre décimal.])[
 Raisonnons #strong[par l'absurde] : supposons que $1 / 3$ soit décimal.
 Il existerait alors un entier $a$ et un entier naturel $n$ tels que
 $ 1 / 3 = a / 10^n . $ En multipliant les deux membres par
@@ -22622,12 +22350,7 @@ preuve avec la rigueur exigée au lycée. Nous avons d'abord besoin d'un
 petit lemme (un #emph[lemme] est un résultat intermédiaire, une marche
 d'escalier vers le théorème).
 
-#quote_box[
-#strong[✍️ Démonstration (exigible) --- Le carré d'un nombre impair est
-impair.
-]
-
-
+#methode(title: [✍️ Démonstration (exigible) — Le carré d'un nombre impair est impair.])[
 Soit $n$ un entier impair. Par définition, il existe un entier $k$ tel
 que $n = 2 k + 1$. Alors
 $ n^2 =\(2 k + 1\)^2 = 4 k^2 + 4 k + 1 = 2\(2 k^2 + 2 k\)+ 1 . $ Comme
@@ -22638,9 +22361,7 @@ $n^2 = 2 k' + 1$ : $n^2$ est impair. $square.filled.medium$
 De même, le carré d'un nombre pair $n = 2 k$ est
 $n^2 = 4 k^2 = 2\(2 k^2\)$, pair.
 
-#quote_box[
-#strong[📐 Conséquence (par contraposée) ---
-]
+#principe(title: [📐 Conséquence (par contraposée) —])[
  Si $n^2$ est pair, alors
 $n$ est pair.
 
@@ -22649,11 +22370,7 @@ impair d'après le lemme. Nous reviendrons en détail sur ce type de
 raisonnement (la contraposée) au paragraphe 6.
 ]
 
-#quote_box[
-#strong[✍️ Démonstration (exigible) --- $sqrt(2)$ est irrationnel.
-]
-
-
+#methode(title: [✍️ Démonstration (exigible) — $sqrt(2)$ est irrationnel.])[
 Raisonnons par l'absurde. Supposons que $sqrt(2)$ soit rationnel. On
 peut alors l'écrire sous forme d'une #strong[fraction irréductible] :
 $ sqrt(2) = p / q\,quad p in bb(N)\,med q in bb(N)^(*)\,med p upright(" et ") q upright(" sans diviseur commun autre que 1.") $
@@ -23046,12 +22763,7 @@ d'Ouest en #strong[Est] à la vitesse de #strong[$4 upright(" km/h")$].
 
 Regarde la scène depuis la berge :
 
-#quote_box[
-#strong[💡 Modélisation Concrète --- La Dérive du Voilier et l'Addition
-des Vitesses
-]
-
-
+#decouvre(title: [💡 Modélisation Concrète — La Dérive du Voilier et l'Addition des Vitesses])[
 - C (Point d'atterrissage réel)
 - Trajectoire /
 - réelle / Courant des rames (Nord : 3 km/h)
@@ -23191,12 +22903,7 @@ ont la même direction, le même sens et la même longueur. On dit qu'elles
 sont des #strong[représentants] d'un seul et même vecteur $arrow(u)$.
 ]
 
-#quote_box[
-#strong[📐 Règle Fondamentale --- Multiplication d'un Vecteur par un
-Scalaire
-]
-
-
+#principe(title: [📐 Règle Fondamentale — Multiplication d'un Vecteur par un Scalaire])[
 - Oiseau 1 Oiseau 2 Oiseau 3
 - A C E
 - o o o
@@ -23210,9 +22917,7 @@ Scalaire
 Quand peut-on affirmer que deux flèches $accent(A B, ⃗)$ et
 $accent(C D, ⃗)$ représentent le même vecteur ?
 
-#quote_box[
-#strong[📐 Théorème fondamental --- Égalité vectorielle.
-]
+#principe(title: [📐 Théorème fondamental — Égalité vectorielle.])[
  Soient quatre
 points du plan $A$, $B$, $C$, $D$.
 $ accent(A B, ⃗) = accent(C D, ⃗) arrow.l.r.double upright("le quadrilatère ") A B D C upright(" est un parallélogramme (éventuellement aplati)") . $
@@ -23254,9 +22959,7 @@ royal porté par des cavaliers d'estafette :
 Quel est le bilan global pour la lettre royale ? Elle est partie de $A$
 et elle se trouve en $C$.
 
-#quote_box[
-#strong[📐 Théorème (Relation de Chasles, 1837) ---
-]
+#principe(title: [📐 Théorème (Relation de Chasles, 1837) —])[
  Pour tous points
 $A$, $B$, $C$ du plan :
 $ accent(A B, ⃗) + accent(B C, ⃗) = accent(A C, ⃗) . $
@@ -23335,18 +23038,11 @@ $arrow(u) eq.not arrow(0)$ :
   $parallel k arrow(u) parallel =\|k\|times parallel arrow(u) parallel$.
 ]
 
-#quote_box[
-#strong[📐 Règle Fondamentale --- Multiplication d'un Vecteur par un
-Scalaire
-]
-
-
+#principe(title: [📐 Règle Fondamentale — Multiplication d'un Vecteur par un Scalaire])[
 - 2u -u 0 u 2u 3u
 ]
 
-#quote_box[
-#strong[📐 Propriétés algébriques ---
-]
+#principe(title: [📐 Propriétés algébriques —])[
  Pour tous vecteurs
 $arrow(u)\,arrow(v)$ et tous réels $k\,k'$ :
 
@@ -23370,9 +23066,7 @@ demi-longueur) \; 2. $accent(I A, ⃗) + accent(I B, ⃗) = arrow(0)$ ($I$ est
 le centre d'équilibre entre $A$ et $B$) \; 3. Pour tout point $M$ du
 plan : $accent(M A, ⃗) + accent(M B, ⃗) = 2 accent(M I, ⃗)$.
 
-#quote_box[
-#strong[✍️ Démonstration --- Identité du milieu.
-]
+#methode(title: [✍️ Démonstration — Identité du milieu.])[
  D'après Chasles :
 $accent(M A, ⃗) = accent(M I, ⃗) + accent(I A, ⃗)$ et
 $accent(M B, ⃗) = accent(M I, ⃗) + accent(I B, ⃗)$. En sommant terme à
@@ -23396,9 +23090,7 @@ $arrow(j)$ sont perpendiculaires et que
 $parallel arrow(i) parallel = parallel arrow(j) parallel = 1$, on dit
 que le repère est #strong[orthonormé].
 
-#quote_box[
-#strong[📐 Théorème et Définition --- Coordonnées d'un vecteur.
-]
+#principe(title: [📐 Théorème et Définition — Coordonnées d'un vecteur.])[
  Pour
 tout vecteur $arrow(u)$ du plan, il existe un #strong[unique] couple de
 réels $\(x thin\;y\)$ tel que : $ arrow(u) = x arrow(i) + y arrow(j) . $
@@ -23411,9 +23103,7 @@ On écrit $arrow(u) vec(x, y)$ ou $arrow(u)\(x thin\;y\)$. $x$ est
 Soient deux points $A\(x_A thin\;y_A\)$ et $B\(x_B thin\;y_B\)$, et deux
 vecteurs $arrow(u) vec(x, y)$ et $arrow(v) vec(x', y')$.
 
-#quote_box[
-#strong[📐 Formules clés à maîtriser absolument ---
-]
+#principe(title: [📐 Formules clés à maîtriser absolument —])[
  1. #strong[Vecteur
 reliant deux points (« Arrivée moins Départ ») :]
 $ accent(A B, ⃗) vec(x_B - x_A, y_B - y_A) $ 2. #strong[Somme de vecteurs
@@ -23427,9 +23117,7 @@ deux points :
 $ A B = parallel accent(A B, ⃗) parallel = sqrt(\(x_B - x_A\)^2 +\(y_B - y_A\)^2) . $
 ]
 
-#quote_box[
-#strong[✍️ Démonstration --- Coordonnées de $accent(A B, ⃗)$.
-]
+#methode(title: [✍️ Démonstration — Coordonnées de $accent(A B, ⃗)$.])[
  Par
 définition des coordonnées des points,
 $accent(O A, ⃗) = x_A arrow(i) + y_A arrow(j)$ et
@@ -23482,11 +23170,7 @@ $ det\(arrow(u)\,arrow(v)\)= mat(delim: "|", x, x'; y, y') = x y' - y x' . $
 $ arrow(u) upright(" et ") arrow(v) upright(" sont colinéaires") arrow.l.r.double det\(arrow(u)\,arrow(v)\)= 0 arrow.l.r.double x y' - y x' = 0 . $
 ]
 
-#quote_box[
-#strong[✍️ Démonstration --- Condition de colinéarité.
-]
-
-
+#methode(title: [✍️ Démonstration — Condition de colinéarité.])[
 - #strong[Sens direct ($arrow.r.double.long$) :] Supposons $arrow(u)$ et
   $arrow(v)$ colinéaires. Si $arrow(v) = arrow(0)$, alors $x' = y' = 0$,
   donc $x y' - y x' = x\(0\)- y\(0\)= 0$. Si $arrow(v) eq.not arrow(0)$,
@@ -23507,9 +23191,7 @@ $ arrow(u) upright(" et ") arrow(v) upright(" sont colinéaires") arrow.l.r.doub
   colinéaires. $square.filled.medium$
 ]
 
-#quote_box[
-#strong[💡 Interprétation géométrique : l'aire du parallélogramme.
-]
+#decouvre(title: [💡 Interprétation géométrique : l'aire du parallélogramme.])[
  La
 valeur absolue du déterminant $\|det\(arrow(u)\,arrow(v)\)\|$ est
 exactement égale à l'#strong[aire du parallélogramme] formé par les deux
@@ -24107,9 +23789,7 @@ droites !
 <léquation-cartésienne-dune-droite>
 ==== 3.1 La forme générale $a x + b y + c = 0$
 <la-forme-générale-ax-by-c-0>
-#quote_box[
-#strong[📐 Théorème fondamental --- Équation cartésienne.
-]
+#principe(title: [📐 Théorème fondamental — Équation cartésienne.])[
  1. Toute
 droite $cal(D)$ du plan admet une équation de la forme :
 $ a x + b y + c = 0 $ où $a\,b\,c$ sont des réels avec
@@ -24120,10 +23800,7 @@ droite. 3. Le vecteur $arrow(u) vec(- b, a)$ est un #strong[vecteur
 directeur] de cette droite.
 ]
 
-#quote_box[
-#strong[✍️ Démonstration (exigible) --- De la colinéarité à l'équation
-cartésienne.
-]
+#methode(title: [✍️ Démonstration (exigible) — De la colinéarité à l'équation cartésienne.])[
  Soit $cal(D)$ la droite passant par $A\(x_A thin\;y_A\)$
 et de vecteur directeur $arrow(u) vec(u_1, u_2)$ non nul. Soit un point
 quelconque $M\(x thin\;y\)$ du plan. Le vecteur $accent(A M, ⃗)$ a pour
@@ -24192,9 +23869,7 @@ directeur est vertical, par exemple $arrow(j) vec(0, 1)$.
 
 ==== 4.2 Le sens géométrique du coefficient directeur $m$
 <le-sens-géométrique-du-coefficient-directeur-m>
-#quote_box[
-#strong[📐 Propriété fondamentale --- Calcul de la pente.
-]
+#principe(title: [📐 Propriété fondamentale — Calcul de la pente.])[
  Soient deux
 points distincts $A\(x_A thin\;y_A\)$ et $B\(x_B thin\;y_B\)$ d'une
 droite non verticale ($x_A eq.not x_B$). Le coefficient directeur $m$
@@ -24873,11 +24548,7 @@ nombre $x$ introduit au départ. 4. #strong[L'image :] c'est le résultat
 $f\(x\)$ obtenu à l'arrivée.
 ]
 
-#quote_box[
-#strong[⚠️ Règle d'or absolue --- Unicité de l'image.
-]
-
-
+#alerte(title: [⚠️ Règle d'or absolue — Unicité de l'image.])[
 - Un nombre $x$ a #strong[au maximum une seule image] par une fonction
   $f$. Si tu enfournes la même farine dans le même four, il ne peut pas
   sortir deux pains différents en même temps !
@@ -25841,9 +25512,7 @@ Bagdad) : il s'agit de reconstituer géométriquement un carré parfait
 pour que la variable $x$ n'apparaisse plus qu'#strong[une seule fois]
 dans toute l'expression !
 
-#quote_box[
-#strong[📐 Théorème fondamental --- La forme canonique.
-]
+#principe(title: [📐 Théorème fondamental — La forme canonique.])[
  Tout trinôme
 $f\(x\)= a x^2 + b x + c$ ($a eq.not 0$) peut s'écrire de manière unique
 sous la #strong[forme canonique] :
@@ -25852,10 +25521,7 @@ avec :
 $ alpha = - frac(b, 2 a) quad upright("et") quad beta = f\(alpha\)= - frac(b^2 - 4 a c, 4 a) . $
 ]
 
-#quote_box[
-#strong[✍️ Démonstration (exigible) --- Mise sous forme canonique.
-]
-
+#methode(title: [✍️ Démonstration (exigible) — Mise sous forme canonique.])[
 Partons de la forme développée : $ f\(x\)= a x^2 + b x + c . $ 1.
 Factorisons le coefficient $a eq.not 0$ dans les deux premiers termes :
 $ f\(x\)= a [x^2 + b / a x] + c . $ 2. Regardons l'expression entre
@@ -25903,11 +25569,7 @@ Deux cas se présentent selon le signe de $a$ :
   croissante sur $\]- oo thin\;alpha\]$ et strictement décroissante sur
   $\[alpha thin\;+ oo\[$.
 
-#quote_box[
-#strong[📐 Propriétés fondamentales de la parabole ---
-]
-
-
+#principe(title: [📐 Propriétés fondamentales de la parabole —])[
 - Le #strong[sommet] de la parabole est le point $S\(alpha thin\;beta\)$
   avec $alpha = - frac(b, 2 a)$ et $beta = f\(alpha\)$.
 - La droite verticale d'équation $x = alpha$ est l'#strong[axe de
@@ -25947,12 +25609,7 @@ Il discrimine les cas possibles.
 
 ==== 4.2 Les trois cas fondamentaux
 <les-trois-cas-fondamentaux>
-#quote_box[
-#strong[📐 Théorème fondamental --- Résolution de
-$a x^2 + b x + c = 0$.
-]
-
-
+#principe(title: [📐 Théorème fondamental — Résolution de $a x^2 + b x + c = 0$.])[
 + #strong[Si $Delta < 0$ :] Le membre de droite $frac(Delta, 4 a^2)$ est
   strictement négatif. Or un carré réel ne peut jamais être négatif.
   L'équation n'a #strong[aucune solution réelle] ($S = diameter$). La
@@ -25985,11 +25642,7 @@ $a x^2 + b x + c = 0$.
 Connaissant les racines d'un trinôme, on peut l'écrire sous forme d'un
 produit de facteurs du premier degré :
 
-#quote_box[
-#strong[📐 Théorème --- Forme factorisée.
-]
-
-
+#principe(title: [📐 Théorème — Forme factorisée.])[
 - Si $Delta > 0$ : $f\(x\)= a\(x - x_1\)\(x - x_2\)$.
 
 - Si $Delta = 0$ : $f\(x\)= a\(x - x_0\)^2$.
@@ -26011,11 +25664,7 @@ $x^2 - 3 x + 2$).
 
 ==== 5.2 Le signe du trinôme
 <le-signe-du-trinôme>
-#quote_box[
-#strong[📐 Règle d'or --- Signe de $a x^2 + b x + c$.
-]
-
-
+#principe(title: [📐 Règle d'or — Signe de $a x^2 + b x + c$.])[
 + #strong[Si $Delta < 0$ :] Le trinôme ne s'annule jamais. Il est
   #strong[toujours du signe de $a$] sur tout $bb(R)$.
 
@@ -26065,18 +25714,14 @@ Viète], découvre des liens fascinants reliant directement les
 coefficients d'un polynôme à ses racines, sans passer par le calcul de
 $Delta$.
 
-#quote_box[
-#strong[📐 Théorème (Formules de Viète) ---
-]
+#principe(title: [📐 Théorème (Formules de Viète) —])[
  Si le trinôme
 $a x^2 + b x + c$ admet deux racines réelles $x_1$ et $x_2$
 (éventuellement confondues), alors :
 $ #box(stroke: black, inset: 3pt, [$ S = x_1 + x_2 = - b / a $]) quad upright("et") quad #box(stroke: black, inset: 3pt, [$ P = x_1 times x_2 = c / a $]) . $
 ]
 
-#quote_box[
-#strong[✍️ Démonstration ---
-]
+#methode(title: [✍️ Démonstration —])[
  Développons la forme factorisée
 $a\(x - x_1\)\(x - x_2\)$ :
 $ a\(x - x_1\)\(x - x_2\)= a [x^2 - \( x_1 + x_2 \) x + x_1 x_2] = a x^2 - a\(x_1 + x_2\)x + a\(x_1 x_2\). $
@@ -26770,9 +26415,7 @@ nombre $r$ :
 
 En continuant ainsi jusqu'au rang $n$ :
 
-#quote_box[
-#strong[📐 Théorème --- Formule explicite du terme général.
-]
+#principe(title: [📐 Théorème — Formule explicite du terme général.])[
  Si
 $\(u_n\)$ est une suite arithmétique de premier terme $u_0$ et de raison
 $r$, alors pour tout $n in bb(N)$ :
@@ -26819,10 +26462,7 @@ Cet enfant s'appelait #strong[Carl Friedrich Gauss].
   ]
 ]
 
-#quote_box[
-#strong[✍️ Démonstration (exigible) --- Somme des $n$ premiers entiers.
-]
-
+#methode(title: [✍️ Démonstration (exigible) — Somme des $n$ premiers entiers.])[
 Pour tout entier naturel $n gt.eq 1$ :
 $ #box(stroke: black, inset: 3pt, [$ 1 + 2 + 3 + dots.h + n = frac(n\(n + 1\), 2) $]) $
 
@@ -26842,9 +26482,7 @@ $S_100 = frac(100 times 101, 2) = 50 times 101 = 5 thin 050$.
 
 ==== 3.3 Somme des termes consécutifs d'une suite arithmétique
 <somme-des-termes-consécutifs-dune-suite-arithmétique>
-#quote_box[
-#strong[📐 Théorème général --- Somme arithmétique.
-]
+#principe(title: [📐 Théorème général — Somme arithmétique.])[
  Pour toute suite
 arithmétique :
 $ #box(stroke: black, inset: 3pt, [$ S = sum_(k = p)^n u_k = u_p + u_(p + 1) + dots.h + u_n =\(upright("nombre de termes")\)times frac(upright("premier terme") + upright("dernier terme"), 2) $]) $
@@ -26874,9 +26512,7 @@ nombre $q$ :
 - $u_2 = q times u_1 = q times\(q u_0\)= u_0 times q^2$
 - $u_3 = q times u_2 = u_0 times q^3$
 
-#quote_box[
-#strong[📐 Théorème --- Formule explicite du terme général.
-]
+#principe(title: [📐 Théorème — Formule explicite du terme général.])[
  Si
 $\(u_n\)$ est une suite géométrique de premier terme $u_0$ et de raison
 $q$, alors pour tout $n in bb(N)$ :
@@ -26910,10 +26546,7 @@ roi ne pouvait pas honorer sa promesse.
 
 ==== 4.3 Somme des puissances consécutives d'un nombre $q$
 <somme-des-puissances-consécutives-dun-nombre-q>
-#quote_box[
-#strong[✍️ Démonstration (exigible) --- Somme des puissances de $q$.
-]
-
+#methode(title: [✍️ Démonstration (exigible) — Somme des puissances de $q$.])[
 Pour tout réel $q eq.not 1$ et tout entier $n gt.eq 0$ :
 $ #box(stroke: black, inset: 3pt, [$ 1 + q + q^2 + q^3 + dots.h + q^n = frac(1 - q^(n + 1), 1 - q) $]) $
 
@@ -26931,9 +26564,7 @@ $q eq.not 1$, on peut diviser par $1 - q$ :
 $ S_n = frac(1 - q^(n + 1), 1 - q) . quad square.filled.medium $
 ]
 
-#quote_box[
-#strong[📐 Théorème général --- Somme géométrique.
-]
+#principe(title: [📐 Théorème général — Somme géométrique.])[
  Pour toute suite
 géométrique de raison $q eq.not 1$ :
 $ #box(stroke: black, inset: 3pt, [$ S =\(upright("premier terme")\)times frac(1 - q^(upright("nombre de termes")), 1 - q) $]) $
@@ -27584,9 +27215,7 @@ d'un pli de tunique !
 <le-radian-mesurer-un-angle-avec-le-rayon>
 ==== 2.1 L'expérience de la ficelle
 <lexpérience-de-la-ficelle>
-#quote_box[
-#strong[🖐️ À toi de jouer ---
-]
+#methode(title: [🖐️ À toi de jouer —])[
  Prends une boîte de conserve ronde, une
 ficelle et un feutre. Coupe un morceau de ficelle exactement de la
 longueur du #strong[rayon] de la boîte. Pose une extrémité sur le bord,
@@ -27678,9 +27307,7 @@ Puisque le radian est défini par « arc = rayon pour 1 rad », la longueur
 d'arc est proportionnelle à l'angle : $1$ rad ↔ $R$, donc $theta$ rad ↔
 $R theta$.
 
-#quote_box[
-#strong[📐 Propriété --- Longueur d'arc, aire de secteur
-]
+#principe(title: [📐 Propriété — Longueur d'arc, aire de secteur])[
  Dans un cercle
 de rayon $R$, un angle au centre de $theta$ #strong[radians] intercepte
 :
@@ -27821,9 +27448,7 @@ aux mêmes endroits. Les réels $pi / 3$, $pi / 3 + 2 pi = frac(7 pi, 3)$,
 $pi / 3 + 4 pi = frac(13 pi, 3)$, $pi / 3 - 2 pi = - frac(5 pi, 3)$… ont
 tous #strong[la même image].
 
-#quote_box[
-#strong[📐 Propriété --- Réels de même image
-]
+#principe(title: [📐 Propriété — Réels de même image])[
  Deux réels $x$ et $y$ ont
 la même image sur le cercle si et seulement si leur différence est un
 multiple entier de $2 pi$ :
@@ -27855,10 +27480,7 @@ l'intérieur en $pi$ qu'il est #strong[inclus]. On exclut $- pi$ car il a
 la même image que $pi$ : sans cela, le point $I'$ aurait deux mesures
 principales.)
 
-#quote_box[
-#strong[🧭 Méthode --- Trouver la mesure principale de $frac(p pi, q)$
-]
-
+#methode(title: [🧭 Méthode — Trouver la mesure principale de $frac(p pi, q)$])[
 \1. Écrire $p / q$ et chercher le multiple #strong[pair] le plus proche
 : on veut $frac(p pi, q) = alpha + 2 k pi$ avec $- pi < alpha lt.eq pi$.
 \2. Concrètement : diviser $p$ par $2 q$ pour savoir combien de tours
@@ -27913,9 +27535,7 @@ image).
 En partageant le cercle en $4$, $8$, $12$ parts égales, on place les
 images des multiples de $pi / 2$, $pi / 4$, $pi / 6$ et $pi / 3$ :
 
-#quote_box[
-#strong[🧭 Méthode --- Placer $frac(k pi, n)$ rapidement
-]
+#methode(title: [🧭 Méthode — Placer $frac(k pi, n)$ rapidement])[
  Compte en «
 parts de $pi / n$ » : le demi-tour supérieur ($0$ à $pi$) en contient
 $n$. Pour $frac(5 pi, 6)$, on avance de $5$ parts sur $6$ dans le
@@ -27990,18 +27610,14 @@ presque revenu en bas, comme prévu (7,96 tours).
 
 ==== 4.3 Premières propriétés
 <premières-propriétés>
-#quote_box[
-#strong[📐 Propriétés fondamentales
-]
+#principe(title: [📐 Propriétés fondamentales])[
  --- Pour tout réel $x$ et tout
 entier $k$ : 1. $- 1 lt.eq cos x lt.eq 1$ et $- 1 lt.eq sin x lt.eq 1$
 \; 2. $cos\(x + 2 k pi\)= cos x$ et $sin\(x + 2 k pi\)= sin x$ \; 3.
 $#box(stroke: black, inset: 3pt, [$ cos^2 x + sin^2 x = 1 $])$.
 ]
 
-#quote_box[
-#strong[✍️ Démonstration
-]
+#methode(title: [✍️ Démonstration])[
  1. $M$ est sur le cercle de centre $O$ et de
 rayon $1$, donc ses coordonnées sont comprises entre $- 1$ et $1$. 2.
 $x$ et $x + 2 k pi$ ont la même image (§3.3), donc les mêmes
@@ -28015,17 +27631,13 @@ $square.filled.medium$
 <cohérence-avec-le-collège>
 Le nouveau cosinus contredit-il l'ancien ? Non.
 
-#quote_box[
-#strong[📐 Propriété --- Lien avec le triangle rectangle
-]
+#principe(title: [📐 Propriété — Lien avec le triangle rectangle])[
  Si
 $0 < x < pi / 2$, alors $cos x$ et $sin x$ coïncident avec le cosinus et
 le sinus de l'angle aigu de mesure $x$ dans un triangle rectangle.
 ]
 
-#quote_box[
-#strong[✍️ Démonstration
-]
+#methode(title: [✍️ Démonstration])[
  Soit $M\(x\)$ avec $0 < x < pi / 2$ : $M$ est
 dans le quart de cercle supérieur droit. Soit $H$ le projeté orthogonal
 de $M$ sur l'axe des abscisses. Le triangle $O H M$ est rectangle en
@@ -28254,9 +27866,7 @@ $arrow(u) dot.op arrow(v) = 0$.
 Au lieu de calculer un cosinus, il est souvent bien plus rapide de faire
 tomber la perpendiculaire.
 
-#quote_box[
-#strong[📐 Propriété --- Définition par projection orthogonale
-]
+#principe(title: [📐 Propriété — Définition par projection orthogonale])[
  Soient
 $arrow(u) = accent(O A, ⃗)$ et $arrow(v) = accent(O B, ⃗)$ deux vecteurs
 non nuls. Soit $H$ le projeté orthogonal du point $B$ sur la droite
@@ -28272,9 +27882,7 @@ En mesures algébriques orientées par l'axe $\(O A\)$ :
   (angle obtus) : $arrow(u) dot.op arrow(v) = - O A times O H$.
 ]
 
-#quote_box[
-#strong[✍️ Démonstration
-]
+#methode(title: [✍️ Démonstration])[
  Dans le triangle $O H B$ rectangle en $H$ :
 
 - Si l'angle $accent(A O B, ̂)$ est aigu,
@@ -28338,9 +27946,7 @@ $\(O\;arrow(i)\,arrow(j)\)$, les vecteurs de base vérifient :
 C'est ici que la magie de l'algèbre simplifie tous les calculs
 géométriques :
 
-#quote_box[
-#strong[📐 Théorème --- Formule analytique du produit scalaire
-]
+#principe(title: [📐 Théorème — Formule analytique du produit scalaire])[
  Dans un
 repère #strong[orthonormé] $\(O\;arrow(i)\,arrow(j)\)$, si
 $arrow(u) vec(x, y)$ et $arrow(v) vec(x', y')$, alors :
@@ -28348,9 +27954,7 @@ $arrow(u) vec(x, y)$ et $arrow(v) vec(x', y')$, alors :
 $ #box(stroke: black, inset: 3pt, [$ arrow(u) dot.op arrow(v) = x x' + y y' $]) $
 ]
 
-#quote_box[
-#strong[✍️ Démonstration
-]
+#methode(title: [✍️ Démonstration])[
  Par bilinéarité du produit scalaire
 (développons comme un produit usuel) :
 $ arrow(u) dot.op arrow(v) & =\(x arrow(i) + y arrow(j)\)dot.op\(x' arrow(i) + y' arrow(j)\)\
@@ -28386,9 +27990,7 @@ $ parallel arrow(u) + arrow(v) parallel^2 =\(arrow(u) + arrow(v)\)^2 = arrow(u)^
 En isolant le produit scalaire $arrow(u) dot.op arrow(v)$, on obtient la
 célèbre formule de polarisation :
 
-#quote_box[
-#strong[📐 Théorème --- Formes de polarisation
-]
+#principe(title: [📐 Théorème — Formes de polarisation])[
  Pour tous vecteurs
 $arrow(u)$ et $arrow(v)$ :
 
@@ -28413,9 +28015,7 @@ triangle et le produit scalaire !
 <orthogonalité-vecteur-normal-et-équation-de-droite>
 ==== 6.1 Le critère d'orthogonalité
 <le-critère-dorthogonalité>
-#quote_box[
-#strong[📐 Théorème fondamental de l'orthogonalité
-]
+#principe(title: [📐 Théorème fondamental de l'orthogonalité])[
  Deux vecteurs
 $arrow(u)$ et $arrow(v)$ sont orthogonaux si et seulement si :
 
@@ -28450,11 +28050,7 @@ $ accent(A M, ⃗) dot.op arrow(n) = 0 arrow.l.r.double a\(x - x_A\)+ b\(y - y_A
 
 En posant $c = - a x_A - b y_A$, on retrouve l'équation cartésienne !
 
-#quote_box[
-#strong[📐 Théorème --- Équation cartésienne et vecteur normal
-]
-
-
+#principe(title: [📐 Théorème — Équation cartésienne et vecteur normal])[
 - Dans un repère orthonormé, toute droite ayant pour vecteur normal
   $arrow(n) vec(a, b)$ admet une équation cartésienne de la forme :
 
@@ -28474,9 +28070,7 @@ $ a x + b y + c = 0 quad\(upright("avec ")\(a\;b\)eq.not\(0\;0\)\). $
 Dans un triangle quelconque $A B C$, si l'angle $hat(A)$ n'est pas
 droit, que devient le théorème de Pythagore ?
 
-#quote_box[
-#strong[📐 Théorème d'Al-Kashi (ou de Pythagore généralisé)
-]
+#principe(title: [📐 Théorème d'Al-Kashi (ou de Pythagore généralisé)])[
  Soit un
 triangle $A B C$. En notant $a = B C$, $b = A C$, $c = A B$ et
 $hat(A) = accent(B A C, ̂)$ :
@@ -28487,9 +28081,7 @@ De même pour les autres sommets :
 $ b^2 = a^2 + c^2 - 2 a c cos hat(B)\,#h(2em) c^2 = a^2 + b^2 - 2 a b cos hat(C) . $
 ]
 
-#quote_box[
-#strong[✍️ Démonstration géométrique par le produit scalaire
-]
+#methode(title: [✍️ Démonstration géométrique par le produit scalaire])[
  Écrivons
 la relation de Chasles pour le vecteur $accent(B C, ⃗)$ :
 $accent(B C, ⃗) = accent(B A, ⃗) + accent(A C, ⃗) = accent(A C, ⃗) - accent(A B, ⃗)$.
@@ -28528,18 +28120,14 @@ Considérons un triangle $A B C$ et désignons par $I$ le #strong[milieu]
 du segment $\[B C\]$. Comment relier la longueur de la médiane $A I$ aux
 longueurs des trois côtés ?
 
-#quote_box[
-#strong[📐 Théorème de la médiane
-]
+#principe(title: [📐 Théorème de la médiane])[
  Dans tout triangle $A B C$, si $I$
 est le milieu du segment $\[B C\]$, alors :
 
 $ A B^2 + A C^2 = 2 A I^2 + 1 / 2 B C^2 . $
 ]
 
-#quote_box[
-#strong[✍️ Démonstration
-]
+#methode(title: [✍️ Démonstration])[
  Exprimons les vecteurs $accent(A B, ⃗)$ et
 $accent(A C, ⃗)$ en passant par le milieu $I$ :
 $accent(A B, ⃗) = accent(A I, ⃗) + accent(I B, ⃗)$ et
@@ -28586,10 +28174,8 @@ $ accent(M A, ⃗) dot.op accent(M B, ⃗) = 0 . $
 produit scalaire est encore nul, donc la relation reste vraie en tout
 point du cercle).
 
-#quote_box[
-#strong[📐 Théorème --- Équation d'un cercle de diamètre $\[A B\
-]
-$] Le
+#principe(title: [📐 Théorème — Équation d'un cercle de diamètre [A B]])[
+Le
 cercle de diamètre $\[A B\]$, avec $A\(x_A\;y_A\)$ et $B\(x_B\;y_B\)$,
 est l'ensemble des points $M\(x\;y\)$ vérifiant :
 
@@ -29168,12 +28754,7 @@ point sans la traverser localement est la #strong[tangente] à la courbe.
 Et la pente sous tes pieds, c'est tout simplement #strong[le coefficient
 directeur de ton ski] !
 
-#quote_box[
-#strong[💡 Métaphore Intuitive --- Le Skieur et la Pente Instantanée de
-la Montagne
-]
-
-
+#decouvre(title: [💡 Métaphore Intuitive — Le Skieur et la Pente Instantanée de la Montagne])[
 - Courbe de la montagne
 - Le ski rigide (la Tangente !)
 - Δy / | Élévation verticale
@@ -29268,9 +28849,7 @@ découle immédiatement de la formule des droites vue en Seconde :
 
 $ y - y_A = m\(x - x_A\)arrow.l.r.double y - f\(a\)= f'\(a\)\(x - a\). $
 
-#quote_box[
-#strong[📐 Théorème --- Équation de la tangente
-]
+#principe(title: [📐 Théorème — Équation de la tangente])[
  Si $f$ est dérivable en
 $a$, la courbe représentative $cal(C)_f$ admet au point $A\(a\;f\(a\)\)$
 une tangente d'équation :
@@ -29307,10 +28886,7 @@ $ frac(\(a + h\)- a, h) = h / h = 1 arrow.r_(h arrow.r 0)^() 1 . $ Donc
 <la-fonction-carré-pourquoi-x2-2x>
 C'est ici qu'intervient la sublime démonstration du jardinier :
 
-#quote_box[
-#strong[✍️ Démonstration géométrique --- Le parterre de fleurs qui
-grandit
-]
+#methode(title: [✍️ Démonstration géométrique — Le parterre de fleurs qui grandit])[
  Soit un parterre carré de fleurs de côté $x$. Sa surface est
 $S\(x\)= x^2$. Au printemps, le jardinier élargit le parterre d'une
 mince bande de terre de largeur $h$ vers l'Est et d'une bande de largeur
@@ -29388,10 +28964,7 @@ C'est le piège le plus célèbre de l'histoire des mathématiques. Même
 Leibniz est tombé dedans dans sa première ébauche en 1673, avant de se
 corriger en dessinant un rectangle !
 
-#quote_box[
-#strong[✍️ Démonstration géométrique --- Le rectangle dont les deux
-côtés s'allongent
-]
+#methode(title: [✍️ Démonstration géométrique — Le rectangle dont les deux côtés s'allongent])[
  Soit un champ rectangulaire de côtés $u\(x\)$ et
 $v\(x\)$. Son aire est $A\(x\)= u\(x\)times v\(x\)$. Lorsque la variable
 $x$ avance d'une quantité $h$, la largeur devient $u + Delta u$ et la
@@ -29447,10 +29020,7 @@ transforme une question globale difficile (« la fonction monte-t-elle ou
 descend-elle ? ») en une question locale simple (« quel est le signe
 d'un nombre ? »).
 
-#quote_box[
-#strong[📐 Théorème fondamental --- Variations et signe de la dérivée
-]
-
+#principe(title: [📐 Théorème fondamental — Variations et signe de la dérivée])[
 Soit $f$ une fonction dérivable sur un intervalle $I$.
 
 - Si pour tout $x in I$, $f'\(x\)> 0$, alors la fonction $f$ est
@@ -29476,20 +29046,13 @@ profond d'une vallée ? Au sommet d'une colline, la pente cesse de monter
 et s'apprête à descendre : pendant un instant infinitésimal, le ski
 redevient parfaitement horizontal !
 
-#quote_box[
-#strong[📐 Règle Fondamentale --- Tangente Horizontale et Extrema Locaux
-($f'\(x_0\)= 0$)
-]
-
-
+#principe(title: [📐 Règle Fondamentale — Tangente Horizontale et Extrema Locaux ($f'\(x_0\)= 0$)])[
 - Tangente horizontale (f'(x₀) = 0)
 - f' \> 0 f' \< 0
 - Montée) (Descente)
 ]
 
-#quote_box[
-#strong[📐 Théorème --- Condition d'extremum local
-]
+#principe(title: [📐 Théorème — Condition d'extremum local])[
  Soit $f$ une
 fonction dérivable sur un intervalle ouvert contenant $x_0$. Si $f$
 admet un extremum local (maximum ou minimum) en $x_0$, alors :
@@ -30320,10 +29883,7 @@ Les décimales se stabilisent vers un nombre mystérieux :
 
 === 3. Théorème d'existence et démonstration d'unicité
 <théorème-dexistence-et-démonstration-dunicité>
-#quote_box[
-#strong[📐 Théorème fondamental (admis pour l'existence, démontré pour
-l'unicité)
-]
+#principe(title: [📐 Théorème fondamental (admis pour l'existence, démontré pour l'unicité)])[
  Il existe une #strong[unique] fonction $f$ dérivable sur
 $bb(R)$ telle que :
 
@@ -30340,9 +29900,7 @@ la fonction ne peut jamais s'évanouir à zéro.
 
 ==== 3.1 Lemme : la fonction ne s'annule jamais
 <lemme-la-fonction-ne-sannule-jamais>
-#quote_box[
-#strong[✍️ Démonstration --- Non-annulation de $f$
-]
+#methode(title: [✍️ Démonstration — Non-annulation de $f$])[
  Soit $f$ une
 fonction dérivable sur $bb(R)$ vérifiant $f' = f$ et $f\(0\)= 1$.
 Considérons la fonction auxiliaire $g$ définie sur $bb(R)$ par :
@@ -30366,10 +29924,7 @@ $square.filled.medium$
 
 ==== 3.2 Preuve de l'unicité
 <preuve-de-lunicité>
-#quote_box[
-#strong[✍️ Démonstration --- Unicité de la fonction exponentielle
-]
-
+#methode(title: [✍️ Démonstration — Unicité de la fonction exponentielle])[
 Supposons qu'il existe deux fonctions $f_1$ et $f_2$ vérifiant toutes
 deux les conditions : $f'_1 = f_1$ avec $f_1\(0\)= 1$, et $f'_2 = f_2$
 avec $f_2\(0\)= 1$. Puisque $f_1$ ne s'annule jamais sur $bb(R)$ d'après
@@ -30394,18 +29949,14 @@ fonction vérifiant ce problème ! $square.filled.medium$
 C'est la propriété reine qui fait de l'exponentielle la fonction la plus
 puissante des sciences :
 
-#quote_box[
-#strong[📐 Théorème fondamental --- Relation fonctionnelle
-]
+#principe(title: [📐 Théorème fondamental — Relation fonctionnelle])[
  Pour tous
 réels $x$ et $y$ :
 
 $ #box(stroke: black, inset: 3pt, [$ exp\(x + y\)= exp\(x\)times exp\(y\) $]) $
 ]
 
-#quote_box[
-#strong[✍️ Démonstration exigible au Bac
-]
+#methode(title: [✍️ Démonstration exigible au Bac])[
  Fixons un nombre réel $y$
 quelconque, et considérons la fonction d'une seule variable $x$ définie
 par : $ h\(x\)= frac(exp\(x + y\), exp\(x\)) . $ (Le quotient est
@@ -30427,18 +29978,14 @@ $ frac(exp\(x + y\), exp\(x\)) = exp\(y\)arrow.l.r.double exp\(x + y\)= exp\(x\)
 De cette formule découlent instantanément toutes les règles familières
 des puissances :
 
-#quote_box[
-#strong[📐 Propriétés algébriques
-]
+#principe(title: [📐 Propriétés algébriques])[
  --- Pour tous réels $x\,y$ et tout
 entier relatif $n$ : 1. $exp\(- x\)= frac(1, exp\(x\))$ 2.
 $exp\(x - y\)= frac(exp\(x\), exp\(y\))$ 3.
 $exp\(n dot.op x\)= #scale(x: 120%, y: 120%)[\(] exp\(x\)#scale(x: 120%, y: 120%)[\)]^n$
 ]
 
-#quote_box[
-#strong[✍️ Démonstrations rapides
-]
+#methode(title: [✍️ Démonstrations rapides])[
  1. D'après le lemme :
 $exp\(x\)times exp\(- x\)= exp\(x - x\)= exp\(0\)= 1 arrow.r.double.long exp\(- x\)= frac(1, exp\(x\))$.
 \2.
@@ -30467,9 +30014,7 @@ $ e = exp\(1\)approx 2\,718281828459 dots.h $
 Alors, pour tout entier $n$, $exp\(n\)=\(exp\(1\)\)^n = e^n$. Euler
 généralise cette écriture à tous les nombres réels $x$ :
 
-#quote_box[
-#strong[📐 Notation d'Euler
-]
+#principe(title: [📐 Notation d'Euler])[
  Pour tout nombre réel $x$, on note :
 
 $ #box(stroke: black, inset: 3pt, [$ exp\(x\)= e^x $]) $
@@ -30490,9 +30035,7 @@ $e^x = e^(x\/2 + x\/2) = (e^(x\/2))^2$. Or un carré est toujours positif
 ou nul. Comme il ne peut pas valoir 0, il est #strong[strictement
 positif] !
 
-#quote_box[
-#strong[📐 Théorème --- Stricte positivité
-]
+#principe(title: [📐 Théorème — Stricte positivité])[
  Pour tout nombre réel $x$ :
 
 $ #box(stroke: black, inset: 3pt, [$ e^x > 0 $]) $
@@ -30508,9 +30051,7 @@ La dérivée de la fonction exponentielle est elle-même :
 $ \(e^x\)' = e^x . $ Comme $e^x > 0$ pour tout $x in bb(R)$, #strong[la
 dérivée est strictement positive sur tout $bb(R)$].
 
-#quote_box[
-#strong[📐 Théorème --- Stricte croissance
-]
+#principe(title: [📐 Théorème — Stricte croissance])[
  La fonction exponentielle
 est #strong[strictement croissante] sur $bb(R)$. Par conséquent :
 
@@ -30528,9 +30069,7 @@ est #strong[strictement croissante] sur $bb(R)$. Par conséquent :
   $ e^x = e^(- X) = 1 / e^X arrow.r_(X arrow.r + oo)^() 0^(+) . $
   $ lim_(x arrow.r - oo) e^x = 0 . $
 
-#quote_box[
-#strong[📐 Propriété géométrique --- Asymptote horizontale
-]
+#principe(title: [📐 Propriété géométrique — Asymptote horizontale])[
  La droite
 d'équation $y = 0$ (l'axe des abscisses) est une #strong[asymptote
 horizontale] à la courbe de l'exponentielle en $- oo$.
@@ -30570,9 +30109,7 @@ Dans les applications concrètes (radioactivité, épidémies,
 électronique), l'exposant n'est presque jamais un simple $x$, mais une
 fonction du temps : $e^(- 3 t)$, $e^(- x^2\/2)$, etc.
 
-#quote_box[
-#strong[📐 Théorème --- Dérivée de $e^u$
-]
+#principe(title: [📐 Théorème — Dérivée de $e^u$])[
  Si $u$ est une fonction
 dérivable sur un intervalle $I$, alors la fonction $f\(x\)= e^(u\(x\))$
 est dérivable sur $I$, et :
@@ -31293,18 +30830,14 @@ Faisons la somme de ces écarts : $\(- 4\)+ 0 +\(+ 4\)= upright(bold(0))$
 ! Les écarts positifs ont été exactement annulés par les écarts négatifs
 !
 
-#quote_box[
-#strong[📐 Théorème --- La somme des écarts est toujours nulle
-]
+#principe(title: [📐 Théorème — La somme des écarts est toujours nulle])[
  Pour
 toute série statistique :
 
 $ sum_(i = 1)^p n_i\(x_i - macron(x)\)= 0 $
 ]
 
-#quote_box[
-#strong[✍️ Démonstration
-]
+#methode(title: [✍️ Démonstration])[
  Développons la somme :
 $ sum_(i = 1)^p n_i\(x_i - macron(x)\)= sum_(i = 1)^p n_i x_i - sum_(i = 1)^p n_i macron(x) = sum_(i = 1)^p n_i x_i - macron(x) sum_(i = 1)^p n_i = N macron(x) - macron(x) times N = 0 . quad square.filled.medium $
 ]
@@ -31370,9 +30903,7 @@ XVIIᵉ siècle, le mathématicien allemand #strong[Samuel König] et le
 physicien hollandais #strong[Christiaan Huygens], ont démontré une
 formule alternative éblouissante :
 
-#quote_box[
-#strong[📐 Théorème --- Formule de König-Huygens
-]
+#principe(title: [📐 Théorème — Formule de König-Huygens])[
  La variance est égale
 à #strong[la moyenne des carrés moins le carré de la moyenne] :
 
@@ -31382,9 +30913,7 @@ où $overline(x^2) = 1 / N sum_(i = 1)^p n_i x_i^2$ désigne la moyenne
 des carrés des valeurs.
 ]
 
-#quote_box[
-#strong[✍️ Démonstration
-]
+#methode(title: [✍️ Démonstration])[
  Développons le carré dans l'expression de la
 variance :
 $ V = 1 / N sum_(i = 1)^p n_i #scale(x: 120%, y: 120%)[\(] x_i^2 - 2 x_i macron(x) + macron(x)^2 #scale(x: 120%, y: 120%)[\)] . $
@@ -31396,9 +30925,7 @@ $1 / N sum n_i x_i = macron(x)$, et $sum n_i = N$. L'expression devient
 $ V = overline(x^2) - 2 macron(x)\(macron(x)\)+ macron(x)^2 / N\(N\)= overline(x^2) - 2\(macron(x)\)^2 +\(macron(x)\)^2 = overline(x^2) -\(macron(x)\)^2 . quad square.filled.medium $
 ]
 
-#quote_box[
-#strong[💡 Propriété de transformation affine ---
-]
+#decouvre(title: [💡 Propriété de transformation affine —])[
  Si l'on pose
 $y_i = a x_i + b$, alors :
 $ V\(a X + b\)= a^2 V\(X\)quad upright("et") quad #box(stroke: black, inset: 3pt, [$ sigma\(a X + b\)=\|a\|dot.op sigma\(X\) $]) $
@@ -31478,12 +31005,7 @@ etude_fluctuation()
 
 Résultat d'une exécution :
 
-#quote_box[
-#strong[📐 Règle Fondamentale --- Intervalle de Fluctuation Asymptotique
-à 95 %
-]
-
-
+#principe(title: [📐 Règle Fondamentale — Intervalle de Fluctuation Asymptotique à 95 %])[
 - Intervalle théorique à 95 % : \[0.3040 \; 0.4960\]
 - Proportion d'échantillons tombés dans l'intervalle : 95.3 %
 ]
@@ -32128,9 +31650,7 @@ divisée par la taille de $A$.
 <la-règle-du-produit-principe-multiplicatif>
 En multipliant par $P\(A\)$, on obtient la formule fondamentale :
 
-#quote_box[
-#strong[📐 Théorème --- Règle du produit
-]
+#principe(title: [📐 Théorème — Règle du produit])[
  Pour tous événements $A$ et
 $B$ avec $P\(A\)> 0$ :
 
@@ -32146,9 +31666,7 @@ $ #box(stroke: black, inset: 3pt, [$ P\(A inter B\)= P\(A\)times P_A\(B\) $]) $
 Un arbre pondéré est un outil visuel d'une puissance redoutable pour
 organiser chronologiquement les épreuves aléatoires successives.
 
-#quote_box[
-#strong[📐 Règles de l'arbre pondéré
-]
+#principe(title: [📐 Règles de l'arbre pondéré])[
  1. #strong[Règle des nœuds :] La
 somme des probabilités portées par les branches issues d'un même nœud
 est #strong[toujours égale à 1].
@@ -32181,9 +31699,7 @@ Le cas le plus fréquent est la partition élémentaire formée par un
 événement et son contraire : ${ A\;overline(A) }$.
 ]
 
-#quote_box[
-#strong[📐 Théorème --- Formule des probabilités totales
-]
+#principe(title: [📐 Théorème — Formule des probabilités totales])[
  Si
 $A_1\,A_2\,dots.h\,A_n$ forment une partition de l'univers, alors pour
 tout événement $B$ :
@@ -32205,9 +31721,7 @@ bouleverser la philosophie des sciences. Il se pose la question inverse
 quelle est la probabilité que telle cause en soit à l'origine (le
 patient est malade) ? »]
 
-#quote_box[
-#strong[📐 Théorème --- Formule de Bayes
-]
+#principe(title: [📐 Théorème — Formule de Bayes])[
  Soit ${ A\;overline(A) }$ une
 partition de l'univers et $B$ un événement de probabilité non nulle.
 
@@ -32356,10 +31870,7 @@ risque et la dispersion des gains :
 
 ==== 7.4 Propriétés fondamentales de linéarité
 <propriétés-fondamentales-de-linéarité>
-#quote_box[
-#strong[📐 Théorème --- Transformation affine d'une variable aléatoire
-]
-
+#principe(title: [📐 Théorème — Transformation affine d'une variable aléatoire])[
 Pour tous réels $a$ et $b$ :
 
 + $#box(stroke: black, inset: 3pt, [$ E\(a X + b\)= a E\(X\)+ b $])$
@@ -32368,10 +31879,7 @@ Pour tous réels $a$ et $b$ :
 + $#box(stroke: black, inset: 3pt, [$ sigma\(a X + b\)=\|a\|sigma\(X\) $])$
 ]
 
-#quote_box[
-#strong[✍️ Démonstration de la linéarité
-]
-
+#methode(title: [✍️ Démonstration de la linéarité])[
 $ E\(a X + b\)= sum_(i = 1)^k\(a x_i + b\)p_i = sum_(i = 1)^k a x_i p_i + sum_(i = 1)^k b p_i = a sum_(i = 1)^k x_i p_i + b sum_(i = 1)^k p_i . $
 Or $sum x_i p_i = E\(X\)$ et $sum p_i = 1$. Donc
 $E\(a X + b\)= a E\(X\)+ b times 1 = a E\(X\)+ b . quad square.filled.medium$
@@ -32903,7 +32411,7 @@ Flux et de la Vitesse], qui t'attend dès le prochain chapitre !
   "L'INFINI APPRIVOISÉ ET L'ÉDIFICE MODERNE",
   "17 - 18 ans / Terminale & Maths Expertes",
   "L'apogée de l'enseignement secondaire : calcul intégral, équations différentielles, nombres complexes, matrices, graphes et lois continues.",
-  ("Chapitre 50 : La Digue Hollandaise et l'Intégrale de Riemann", "Chapitre 51 : Le Pendule Amorti et l'Équation Différentielle", "Chapitre 52 : Le Rêve de Cardan et le Nombre Imaginaire $i$", "Chapitre 53 : Le Réseau Ferroviaire et les Matrices de Transition", "Chapitre 54 : Les Mille Lancers de la Pièce et la Cloche de Gauss", "Chapitre 55 : Le Paradoxe de Banach-Tarski et l'Infini Actuel", "Chapitre 56 : La Chaîne de Markov et la Marche Aléatoire", "Chapitre 57 : Le Chiffrement RSA et la Clé Secrète de Fermat", "Chapitre 58 : La Voie du Nombre : Synthèse Finale et Horizon Moderne"),
+  ("Chapitre 43 : L'Escalier sans Fin et les Dominos", "Chapitre 44 : Le Coureur qui ne Touche jamais la Ligne", "Chapitre 45 : L'Horizon des Courbes", "Chapitre 46 : Le Fil sans Coupure", "Chapitre 47 : Le Jardin qui Grandit et la Chaîne d'Engrenages", "Chapitre 48 : Le Logarithme de Napier et les Tables des Navigateurs", "Chapitre 49 : La Balançoire et les Fonctions qui Ondulent", "Chapitre 50 : Le Tonneau Rempli de Tranches d'Eau", "Chapitre 51 : La Tasse de Thé qui Refroidit", "Chapitre 52 : La Cathédrale dans l'Espace", "Chapitre 53 : Le Cadenas à Code et les Façons de Choisir", "Chapitre 54 : Les Mille Lancers de la Pièce", "Chapitre 55 : Le Tourbillon à Angle Droit", "Chapitre 56 : Les Messages Secrets et l'Horloge des Restes", "Chapitre 57 : Le Métier Jacquard Revisité : Matrices et Graphes", "Chapitre 58 : La Fin du Voyage"),
   "En regard : La morphogenèse de Turing et les automates cellulaires du Cône Textile (Conus textile)."
 )
 
@@ -33161,11 +32669,7 @@ est vraie. On démontre une implication, pas une vérité.
 
 === 3. La méthode : rédiger une récurrence
 <la-méthode-rédiger-une-récurrence>
-#quote_box[
-#strong[🧭 Méthode --- Rédaction type au baccalauréat.
-]
-
-
+#methode(title: [🧭 Méthode — Rédaction type au baccalauréat.])[
 #emph[Pour tout entier naturel $n gt.eq n_0$, on note $cal(P)\(n\)$ la
 propriété : « … ».]
 
@@ -33329,9 +32833,7 @@ L'astuce consiste à #strong[traduire l'hypothèse en égalité]
 
 ==== Exemple résolu 6 --- L'inégalité de Bernoulli (démonstration exigible)
 <exemple-résolu-6-linégalité-de-bernoulli-démonstration-exigible>
-#quote_box[
-#strong[📐 Propriété --- Inégalité de Bernoulli.
-]
+#principe(title: [📐 Propriété — Inégalité de Bernoulli.])[
  Pour tout réel
 $a > - 1$ (en particulier pour tout $a > 0$) et pour tout entier naturel
 $n$ : $ \(1 + a\)^n gt.eq 1 + n a . $
@@ -33344,9 +32846,7 @@ multiplié par $1 + n a$. Bernoulli affirme que #strong[les intérêts
 composés rapportent toujours au moins autant que les intérêts simples] :
 normal, on gagne aussi des intérêts sur les intérêts.
 
-#quote_box[
-#strong[✍️ Démonstration.
-]
+#methode(title: [✍️ Démonstration.])[
  Soit $a > - 1$ fixé. Pour $n in bb(N)$, soit
 $cal(P)\(n\)$ : « $\(1 + a\)^n gt.eq 1 + n a$ ».
 
@@ -33724,9 +33224,7 @@ vers l'infini ».
 
 ==== 2.4 Unicité de la limite
 <unicité-de-la-limite>
-#quote_box[
-#strong[📐 Propriété fondamentale --- Unicité.
-]
+#principe(title: [📐 Propriété fondamentale — Unicité.])[
  Lorsqu'une suite
 $\(u_n\)$ admet une limite (finie ou infinie), #strong[cette limite est
 unique]. Une suite ne peut pas converger vers deux nombres distincts en
@@ -33829,9 +33327,7 @@ doute »]. La technique reine pour les polynômes et fractions est de
 <les-théorèmes-fondamentaux>
 ==== 5.1 Théorèmes de comparaison
 <théorèmes-de-comparaison>
-#quote_box[
-#strong[📐 Théorème de comparaison (vers l'infini).
-]
+#principe(title: [📐 Théorème de comparaison (vers l'infini).])[
  Soient $\(u_n\)$ et
 $\(v_n\)$ deux suites telles qu'à partir d'un certain rang :
 $ u_n gt.eq v_n . $ 1. Si $lim_(n arrow.r + oo) v_n = + oo$, alors
@@ -33846,9 +33342,7 @@ inévitablement propulsé vers le ciel avec lui.
 
 ==== 5.2 Le Théorème d'Encadrement (dit « des Gendarmes »)
 <le-théorème-dencadrement-dit-des-gendarmes>
-#quote_box[
-#strong[📐 Théorème --- Théorème d'encadrement des gendarmes.
-]
+#principe(title: [📐 Théorème — Théorème d'encadrement des gendarmes.])[
  Soient
 $\(u_n\)$, $\(v_n\)$ et $\(w_n\)$ trois suites réelles. S'il existe un
 rang $N$ à partir duquel : $ v_n lt.eq u_n lt.eq w_n $ et si
@@ -33862,9 +33356,7 @@ tous les deux vers le même commissariat $L$ en tenant le suspect ($u_n$)
 encadré entre eux, le suspect n'a d'autre choix que d'entrer lui aussi
 dans le commissariat $L$.
 
-#quote_box[
-#strong[✍️ Démonstration du théorème des gendarmes.
-]
+#methode(title: [✍️ Démonstration du théorème des gendarmes.])[
  Soit $I$ un
 intervalle ouvert quelconque contenant $L$. Par définition d'un
 intervalle ouvert, il existe un réel $epsilon > 0$ tel que
@@ -33888,9 +33380,7 @@ $square.filled.medium$
 C'est l'un des théorèmes les plus profonds de l'analyse : il permet de
 savoir qu'une suite converge #strong[sans même calculer sa limite].
 
-#quote_box[
-#strong[📐 Théorème de convergence monotone.
-]
+#principe(title: [📐 Théorème de convergence monotone.])[
  1. Toute suite
 #strong[croissante et majorée] converge vers une limite réelle $L$. 2.
 Toute suite #strong[décroissante et minorée] converge vers une limite
@@ -33928,11 +33418,7 @@ La suite géométrique fondamentale est définie par $u_n = q^n$ où $q$ est
 un nombre réel fixé appelé la raison. Son comportement dépend de la
 position de $q$ par rapport à $- 1$ et $1$.
 
-#quote_box[
-#strong[📐 Théorème --- Limite de $q^n$.
-]
-
-
+#principe(title: [📐 Théorème — Limite de $q^n$.])[
 - Si $q > 1$ : $lim_(n arrow.r + oo) q^n = + oo$.
 
 - Si $q = 1$ : la suite est constante égale à $1$, donc
@@ -33950,9 +33436,7 @@ Cette démonstration repose directement sur l'#strong[inégalité de
 Bernoulli] établie au chapitre 43 : pour tout réel $a > 0$ et tout
 entier $n in bb(N)$, $\(1 + a\)^n gt.eq 1 + n a$.
 
-#quote_box[
-#strong[✍️ Démonstration (exigible).
-]
+#methode(title: [✍️ Démonstration (exigible).])[
  Soit $q$ un réel strictement
 supérieur à $1$. Posons $a = q - 1$. Comme $q > 1$, on a $a > 0$. On
 peut donc écrire : $q = 1 + a$. D'après l'inégalité de Bernoulli :
@@ -34004,10 +33488,7 @@ print(f"Le moteur passe sous 30°C au bout de {minutes} minutes.")
 # Affichera : 20 minutes (car T_19 ≈ 30.8 °C et T_20 ≈ 29.7 °C)
 ```
 
-#quote_box[
-#strong[🧭 Méthode --- Structure standard d'un algorithme de seuil au
-Bac :
-]
+#methode(title: [🧭 Méthode — Structure standard d'un algorithme de seuil au Bac :])[
  1. Initialiser le compteur de rang : `n = 0`. 2. Initialiser la
 valeur de la suite : `u = u_0`. 3. Condition de la boucle `while` :
 mettre la condition #strong[contraire] de ce que l'on cherche (on
@@ -34210,36 +33691,36 @@ Donc $cal(P)\(n + 1\)$ est vraie.
 <exercices-36>
 ==== Niveau  (Applications directes)
 <niveau-applications-directes-1>
-#strong[Exercice 44.1.] Déterminer la limite de chacune des suites
+#strong[Exercice 44.1] Déterminer la limite de chacune des suites
 suivantes quand $n arrow.r + oo$ : 1. $u_n = 4 - 7 / n + 3 / n^2$ 2.
 $v_n = - 3 n^3 + 500$ 3. $w_n = 5 times 0\,4^n$ 4.
 $t_n = 2 times 1\,05^n$
 
-#strong[Exercice 44.2.] Pour chacune des suites géométriques suivantes,
+#strong[Exercice 44.2] Pour chacune des suites géométriques suivantes,
 préciser si elle converge et, le cas échéant, donner sa limite : 1.
 $a_n = (- 3 / 4)^n$ 2. $b_n = (7 / 5)^n$ 3. $c_n =\(- 1\,2\)^n$ 4.
 $d_n = 4^n / 3^n$
 
-#strong[Exercice 44.3.] Calculer la limite des suites rationnelles
+#strong[Exercice 44.3] Calculer la limite des suites rationnelles
 suivantes : 1. $u_n = frac(3 n + 1, 5 n - 2)$ 2.
 $v_n = frac(7 n^2 - 4, 2 n^3 + n)$ 3. $w_n = frac(n^4 - 1, 100 n^3 + 5)$
 
-#strong[Exercice 44.4.] Soit $u_n = 5 + 1 / n$. Trouver un rang $N$ à
+#strong[Exercice 44.4] Soit $u_n = 5 + 1 / n$. Trouver un rang $N$ à
 partir duquel $u_n in\]4\,999 thin\;thin 5\,001\[$.
 
-#strong[Exercice 44.5.] Démontrer que pour tout $n gt.eq 1$,
+#strong[Exercice 44.5] Démontrer que pour tout $n gt.eq 1$,
 $frac(- 1, n) lt.eq frac(sin\(n\), n) lt.eq 1 / n$. En déduire
 $lim_(n arrow.r + oo) frac(sin\(n\), n)$.
 
-#strong[Exercice 44.6.] Une suite $\(u_n\)$ vérifie pour tout
+#strong[Exercice 44.6] Une suite $\(u_n\)$ vérifie pour tout
 $n in bb(N)$ : $u_n gt.eq 3 n^2 - 10 n$. Déterminer sa limite en $+ oo$.
 
-#strong[Exercice 44.7.] Une population d'oiseaux compte initialement 500
+#strong[Exercice 44.7] Une population d'oiseaux compte initialement 500
 individus et décroît de 5 % par an. 1. Exprimer la population $P_n$ au
 bout de $n$ années. 2. Quelle est la limite de $P_n$ quand
 $n arrow.r + oo$ ?
 
-#strong[Exercice 44.8.] Écrire en Python une fonction
+#strong[Exercice 44.8] Écrire en Python une fonction
 `seuil_geometrique(q, A)` qui prend en entrée une raison $q > 1$ et un
 seuil $A > 0$, et renvoie le premier rang $n$ tel que $q^n > A$.
 
@@ -34790,10 +34271,7 @@ fonction inverse $f\(x\)= 1 / x$ au voisinage de zéro :
   $- 0\,1$ \; $- 0\,001$. Le quotient $1 / x$ vaut $- 10$ \; $- 1000$ :
   $ lim_(x arrow.r 0^(-)) 1 / x = - oo . $
 
-#quote_box[
-#strong[📐 Théorème fondamental --- Existence de la limite globale en un
-point.
-]
+#principe(title: [📐 Théorème fondamental — Existence de la limite globale en un point.])[
  Une fonction $f$ admet une limite $L$ en $x_0$ si et seulement
 si elle admet une limite à gauche et une limite à droite en $x_0$, et
 que ces deux limites sont #strong[égales] :
@@ -34859,10 +34337,7 @@ Pour savoir si la courbe $cal(C)_f$ se situe #strong[au-dessus] ou
 #strong[en dessous] de son asymptote (horizontale $y = L$ ou oblique
 $y = a x + b$), on applique la méthode universelle suivante :
 
-#quote_box[
-#strong[🧭 Méthode --- Position relative d'une courbe et d'une asymptote
-:
-]
+#methode(title: [🧭 Méthode — Position relative d'une courbe et d'une asymptote :])[
  1. On calcule la différence :
 $d\(x\)= f\(x\)- y_(upright("asymptote"))$. 2. On étudie rigoureusement
 le #strong[signe] de $d\(x\)$ :
@@ -34940,9 +34415,7 @@ Quand la fonction exponentielle affronte un polynôme ou une puissance de
 $x$ en l'infini, l'explosion de $e^x$ surpasse infiniment toute
 croissance polynomiale.
 
-#quote_box[
-#strong[📐 Théorème --- Croissances comparées de l'exponentielle.
-]
+#principe(title: [📐 Théorème — Croissances comparées de l'exponentielle.])[
  Pour
 tout entier naturel $n gt.eq 1$ : 1.
 $lim_(x arrow.r + oo) e^x / x = + oo$ $quad$ et plus généralement $quad$
@@ -34956,9 +34429,7 @@ $lim_(x arrow.r - oo) x^n thin e^x = 0$
 
 ==== Démonstration exigible au baccalauréat : $lim_(x arrow.r + oo) e^x / x = + oo$
 <démonstration-exigible-au-baccalauréat-lim_x-to-infty-fracexx-infty>
-#quote_box[
-#strong[✍️ Démonstration (exigible).
-]
+#methode(title: [✍️ Démonstration (exigible).])[
  L'objectif est d'obtenir une
 minoration de $e^x$ par un polynôme de degré 2 pour que le quotient
 $e^x / x$ soit minoré par un terme de degré 1 qui tend vers $+ oo$.
@@ -35003,9 +34474,7 @@ Une fonction composée est une cascade : la sortie de la première machine
 $f$ devient l'entrée de la seconde machine $g$. On note cette opération
 $\(g compose f\)\(x\)= g\(f\(x\)\)$.
 
-#quote_box[
-#strong[📐 Théorème --- Limite d'une fonction composée.
-]
+#principe(title: [📐 Théorème — Limite d'une fonction composée.])[
  Soient
 $a\,b\,c$ désignant soit des nombres réels, soit $+ oo$, soit $- oo$. Si
 :
@@ -35013,9 +34482,7 @@ $ lim_(x arrow.r a) f\(x\)= b quad upright("et") quad lim_(y arrow.r b) g\(y\)= 
 alors : $ lim_(x arrow.r a) g\(f\(x\)\)= c . $
 ]
 
-#quote_box[
-#strong[🧭 Méthode --- Rédiger une limite de composée au Bac :
-]
+#methode(title: [🧭 Méthode — Rédiger une limite de composée au Bac :])[
  Ne
 calcule jamais tout d'un coup. Sépare clairement en deux étapes en
 posant un changement de variable muet : 1. #emph[Étape intérieure :] on
@@ -35280,45 +34747,45 @@ La limite cherchée est donc égale à $3$.
 <exercices-37>
 ==== Niveau  (Applications directes)
 <niveau-applications-directes-2>
-#strong[Exercice 45.1.] Déterminer par lecture immédiate ou opérations
+#strong[Exercice 45.1] Déterminer par lecture immédiate ou opérations
 élémentaires les limites suivantes : 1.
 $lim_(x arrow.r + oo)\(3 x^3 - 5 x + 1\)$ 2.
 $lim_(x arrow.r - oo)\(- 2 x^4 + x^2\)$ 3.
 $lim_(x arrow.r + oo) (4 - 2 / x + 5 / x^3)$ 4.
 $lim_(x arrow.r 0^(+)) (3 / x - 2)$
 
-#strong[Exercice 45.2.] Déterminer les asymptotes éventuelles
+#strong[Exercice 45.2] Déterminer les asymptotes éventuelles
 (verticales et horizontales) aux courbes des fonctions suivantes : 1.
 $f\(x\)= frac(2 x + 7, x - 3)$ sur $bb(R)\\{ 3 }$ 2.
 $g\(x\)= frac(1, x^2 - 4)$ sur $bb(R)\\{ - 2\;2 }$ 3.
 $h\(x\)= 5 + e^(- x)$ sur $\[0 thin\;thin + oo\[$
 
-#strong[Exercice 45.3.] Calculer la limite à gauche et la limite à
+#strong[Exercice 45.3] Calculer la limite à gauche et la limite à
 droite de $f\(x\)= frac(x + 1, x - 4)$ en $x_0 = 4$. La fonction
 admet-elle une limite globale en 4 ?
 
-#strong[Exercice 45.4.] Lever l'indétermination pour les fonctions
+#strong[Exercice 45.4] Lever l'indétermination pour les fonctions
 rationnelles suivantes : 1.
 $lim_(x arrow.r + oo) frac(4 x^2 - 3 x + 1, 2 x^2 + 5 x)$ 2.
 $lim_(x arrow.r - oo) frac(x^3 + 2, 5 x^4 - x)$ 3.
 $lim_(x arrow.r + oo) frac(x^5 - 1, x^2 + 100)$
 
-#strong[Exercice 45.5.] Utiliser les croissances comparées de
+#strong[Exercice 45.5] Utiliser les croissances comparées de
 l'exponentielle pour déterminer : 1.
 $lim_(x arrow.r + oo)\(e^x - 3 x^4\)$ 2.
 $lim_(x arrow.r + oo) frac(e^x + 2, x^3 + 1)$ 3.
 $lim_(x arrow.r - oo)\(x^2 + 1\)e^x$
 
-#strong[Exercice 45.6.] Soit $f\(x\)= sqrt(2 x + 3)$. Déterminer
+#strong[Exercice 45.6] Soit $f\(x\)= sqrt(2 x + 3)$. Déterminer
 $lim_(x arrow.r 3) frac(f\(x\)- f\(3\), x - 3)$ en reconnaissant un taux
 d'accroissement.
 
-#strong[Exercice 45.7.] Soit $f\(x\)= 2 x - 1 + frac(3, x^2 + 1)$.
+#strong[Exercice 45.7] Soit $f\(x\)= 2 x - 1 + frac(3, x^2 + 1)$.
 Démontrer que la droite $y = 2 x - 1$ est asymptote oblique à $cal(C)_f$
 en $+ oo$ et déterminer la position relative de $cal(C)_f$ par rapport à
 cette droite.
 
-#strong[Exercice 45.8.] Déterminer par composition :
+#strong[Exercice 45.8] Déterminer par composition :
 $lim_(x arrow.r + oo) exp (- 1 / x^2)$ et
 $lim_(x arrow.r 0^(+)) exp (- 1 / x)$.
 
@@ -35806,18 +35273,14 @@ fonctions continues.
 
 ==== 2.4 Le lien capital : Dérivabilité et Continuité
 <le-lien-capital-dérivabilité-et-continuité>
-#quote_box[
-#strong[📐 Théorème fondamental --- Dérivable implique continue.
-]
+#principe(title: [📐 Théorème fondamental — Dérivable implique continue.])[
  Si une
 fonction $f$ est dérivable en un point $x_0$, alors elle est
 #strong[nécessairement continue] en $x_0$. Si $f$ est dérivable sur un
 intervalle $I$, alors elle est continue sur $I$.
 ]
 
-#quote_box[
-#strong[✍️ Démonstration (exigible).
-]
+#methode(title: [✍️ Démonstration (exigible).])[
  Supposons $f$ dérivable en $x_0$.
 Cela signifie que le taux d'accroissement admet une limite finie notée
 $f'\(x_0\)$ :
@@ -35860,9 +35323,7 @@ Le mathématicien tchèque Bernard Bolzano (1817) puis le Français
 Augustin-Louis Cauchy (1821) ont donné la première preuve rigoureuse de
 ce principe géométrique limpide :
 
-#quote_box[
-#strong[📐 Théorème des Valeurs Intermédiaires (TVI).
-]
+#principe(title: [📐 Théorème des Valeurs Intermédiaires (TVI).])[
  Soit $f$ une
 fonction #strong[continue] sur un intervalle fermé $\[a thin\;thin b\]$.
 Pour tout réel $k$ compris entre $f\(a\)$ et $f\(b\)$, il existe
@@ -35880,9 +35341,7 @@ $y = k$ sans jamais la toucher !
 <le-cas-particulier-du-zéro-théorème-de-bolzano>
 C'est la forme la plus courante dans les applications pratiques :
 
-#quote_box[
-#strong[📐 Corollaire --- Changement de signe.
-]
+#principe(title: [📐 Corollaire — Changement de signe.])[
  Soit $f$ une fonction
 continue sur $\[a thin\;thin b\]$. Si $f\(a\)$ et $f\(b\)$ sont de
 #strong[signes contraires] (c'est-à-dire $f\(a\)times f\(b\)lt.eq 0$),
@@ -35905,10 +35364,7 @@ demi-tours. On exige donc que la fonction soit #strong[strictement
 monotone] (toujours strictement croissante ou toujours strictement
 décroissante).
 
-#quote_box[
-#strong[📐 Théorème --- Corollaire du TVI (Théorème de la bijection).
-]
-
+#principe(title: [📐 Théorème — Corollaire du TVI (Théorème de la bijection).])[
 Soit $f$ une fonction définie sur un intervalle $I =\[a thin\;thin b\]$.
 Si : 1. $f$ est #strong[continue] sur $\[a thin\;thin b\]$ \; 2. $f$ est
 #strong[strictement monotone] (strictement croissante ou strictement
@@ -35931,10 +35387,7 @@ $k in ]lim_(x arrow.r a^(+)) f \( x \) thin \; thin lim_(x arrow.r b^(-)) f \( x
 l'équation $f\(x\)= k$ admet une unique solution dans
 $\]a thin\;thin b\[$.
 
-#quote_box[
-#strong[🧭 Méthode --- La rédaction canonique parfaite au Baccalauréat
-:
-]
+#methode(title: [🧭 Méthode — La rédaction canonique parfaite au Baccalauréat :])[
  Pour justifier que l'équation $f\(x\)= k$ admet une unique solution
 $alpha$ sur un intervalle $I$ : 1. #strong[Continuité :] Mentionner que
 $f$ est continue sur $I$ (par exemple comme somme, produit ou quotient
@@ -36037,9 +35490,7 @@ $u_(n + 1) = f\(u_n\)$ ?
 
 C'est ici que la continuité révèle toute sa puissance !
 
-#quote_box[
-#strong[📐 Théorème du Point Fixe.
-]
+#principe(title: [📐 Théorème du Point Fixe.])[
  Soit $\(u_n\)$ une suite définie par
 $u_0$ et par la relation $u_(n + 1) = f\(u_n\)$ pour tout $n in bb(N)$.
 Si : 1. La suite $\(u_n\)$ #strong[converge] vers un nombre réel $L$ \;
@@ -36049,9 +35500,7 @@ Alors la limite $L$ est solution de l'équation : $ f\(L\)= L . $ Un tel
 nombre $L$ est appelé un #strong[point fixe] de la fonction $f$.
 ]
 
-#quote_box[
-#strong[✍️ Démonstration.
-]
+#methode(title: [✍️ Démonstration.])[
  Puisque $lim_(n arrow.r + oo) u_n = L$, la
 suite décalée $\(u_(n + 1)\)$ converge évidemment vers la même limite :
 $lim_(n arrow.r + oo) u_(n + 1) = L$. D'autre part, comme $f$ est
@@ -36391,18 +35840,18 @@ $alpha in\[1 thin\;thin 2\]$.
 <exercices-38>
 ==== Niveau  (Applications directes)
 <niveau-applications-directes-3>
-#strong[Exercice 46.1.] Parmi les fonctions suivantes, déterminer celles
+#strong[Exercice 46.1] Parmi les fonctions suivantes, déterminer celles
 qui sont continues sur leur ensemble de définition : 1.
 $f\(x\)= 3 x^4 - 2 x + 7$ sur $bb(R)$ 2. $g\(x\)= frac(1, x - 5)$ sur
 $bb(R)\\{ 5 }$ 3. $h\(x\)= sqrt(x - 3)$ sur $\[3 thin\;thin + oo\[$ 4.
 $k\(x\)= E\(x\)$ (partie entière) sur $bb(R)$
 
-#strong[Exercice 46.2.] Soit la fonction $f$ définie sur
+#strong[Exercice 46.2] Soit la fonction $f$ définie sur
 $\[- 2 thin\;thin 5\]$ par $f\(x\)= x^2 - 4 x + 1$. 1. Calculer
 $f\(- 2\)$ et $f\(5\)$. 2. Justifier que l'équation $f\(x\)= 0$ admet au
 moins une solution sur $\[- 2 thin\;thin 5\]$.
 
-#strong[Exercice 46.3.] On donne le tableau de variations d'une fonction
+#strong[Exercice 46.3] On donne le tableau de variations d'une fonction
 $g$ continue sur $\[- 5 thin\;thin 4\]$ : - $g$ est strictement
 croissante de $- 3$ à $7$ sur $\[- 5 thin\;thin - 1\]$. - $g$ est
 strictement décroissante de $7$ à $1$ sur $\[- 1 thin\;thin 4\]$.
@@ -36410,24 +35859,24 @@ strictement décroissante de $7$ à $1$ sur $\[- 1 thin\;thin 4\]$.
 Déterminer le nombre de solutions de l'équation $g\(x\)= 4$ sur
 $\[- 5 thin\;thin 4\]$.
 
-#strong[Exercice 46.4.] Justifier la continuité de la fonction
+#strong[Exercice 46.4] Justifier la continuité de la fonction
 $f\(x\)= frac(e^x, x^2 + 1)$ sur $bb(R)$.
 
-#strong[Exercice 46.5.] Soit $f\(x\)= x^3 + 3 x - 1$. 1. Montrer que $f$
+#strong[Exercice 46.5] Soit $f\(x\)= x^3 + 3 x - 1$. 1. Montrer que $f$
 est strictement croissante sur $bb(R)$. 2. Calculer $f\(0\)$ et
 $f\(1\)$. 3. En déduire qu'il existe un unique réel
 $alpha in\[0 thin\;thin 1\]$ tel que $f\(alpha\)= 0$.
 
-#strong[Exercice 46.6.] Soit la suite récurrente définie par $u_0 = 3$
+#strong[Exercice 46.6] Soit la suite récurrente définie par $u_0 = 3$
 et $u_(n + 1) = 1 / 2 u_n + 1$. On admet qu'elle converge vers $L$.
 Déterminer $L$ par le théorème du point fixe.
 
-#strong[Exercice 46.7.] Soit la fonction définie par morceaux :
+#strong[Exercice 46.7] Soit la fonction définie par morceaux :
 $ f\(x\)= cases(delim: "{", 2 x + k & upright("si ") x lt.eq 1, x^2 + 3 & upright("si ") x > 1) $
 Pour quelle valeur de la constante $k$ la fonction $f$ est-elle continue
 en $x = 1$ ?
 
-#strong[Exercice 46.8.] Écrire en Python une fonction `f(x)` valant
+#strong[Exercice 46.8] Écrire en Python une fonction `f(x)` valant
 $x^2 - 2$, puis utiliser la dichotomie pour approcher $sqrt(2)$ à
 $10^(- 3)$ près sur $\[1 thin\;thin 2\]$.
 
@@ -36984,9 +36433,7 @@ s'adoucit ? C'est le rôle de la #strong[dérivée seconde].
 
 ==== 2.2 Le Théorème Fondamental
 <le-théorème-fondamental>
-#quote_box[
-#strong[📐 Théorème --- Dérivée d'une fonction composée.
-]
+#principe(title: [📐 Théorème — Dérivée d'une fonction composée.])[
  Soit $u$ une
 fonction dérivable sur un intervalle $I$, et soit $g$ une fonction
 dérivable sur un intervalle $J$ contenant $u\(I\)$. Alors la fonction
@@ -36998,9 +36445,7 @@ $ \(g compose u\)'\(x\)= u'\(x\)times g' #scale(x: 120%, y: 120%)[\(] u\(x\)#sca
 #emph[À voix haute :] « La dérivée de $g\(u\)$ est égale à $u'$
 multiplié par $g'$ pris en $u$ ».
 
-#quote_box[
-#strong[✍️ Idée de la démonstration.
-]
+#methode(title: [✍️ Idée de la démonstration.])[
  Soit $x_0 in I$. On forme le taux
 d'accroissement de la fonction composée entre $x$ et $x_0$ :
 $ frac(g\(u\(x\)\)- g\(u\(x_0\)\), x - x_0) . $ Si
@@ -37036,9 +36481,7 @@ remplace $g$ par les trois grandes fonctions du cours :
 Prenons $g\(y\)= e^y$. On sait que $g'\(y\)= e^y$. En appliquant la
 formule générale $\(g compose u\)' = u' dot.op g'\(u\)$ :
 
-#quote_box[
-#strong[📐 Propriété --- Dérivée de l'exponentielle composée.
-]
+#principe(title: [📐 Propriété — Dérivée de l'exponentielle composée.])[
  Soit $u$
 une fonction dérivable sur un intervalle $I$. La fonction
 $f : x mapsto e^(u\(x\))$ est dérivable sur $I$, et pour tout $x in I$ :
@@ -37054,9 +36497,7 @@ directement : $f'\(x\)=\(- 6 x + 5\)e^(- 3 x^2 + 5 x)$.
 Prenons $g\(y\)= sqrt(y)$ définie pour $y > 0$. Sa dérivée est
 $g'\(y\)= frac(1, 2 sqrt(y))$.
 
-#quote_box[
-#strong[📐 Propriété --- Dérivée de la racine carrée composée.
-]
+#principe(title: [📐 Propriété — Dérivée de la racine carrée composée.])[
  Soit $u$
 une fonction dérivable et #strong[strictement positive] sur un
 intervalle $I$. La fonction $f : x mapsto sqrt(u\(x\))$ est dérivable
@@ -37079,9 +36520,7 @@ verticale en $x_0$, et le dénominateur $2 sqrt(u\(x\))$ s'annulerait !
 Prenons $g\(y\)= y^n$ avec $n in bb(Z)^(*)$. Sa dérivée est
 $g'\(y\)= n y^(n - 1)$.
 
-#quote_box[
-#strong[📐 Propriété --- Dérivée d'une puissance composée.
-]
+#principe(title: [📐 Propriété — Dérivée d'une puissance composée.])[
  Soit $u$ une
 fonction dérivable sur un intervalle $I$. Pour tout entier relatif
 $n gt.eq 1$ (ou $n < 0$ sur les intervalles où $u\(x\)eq.not 0$) :
@@ -37167,10 +36606,7 @@ Pour une fonction deux fois dérivable, le programme officiel établit une
 triple équivalence magistrale reliant la géométrie des cordes, le tracé
 des tangentes et le calcul différentiel :
 
-#quote_box[
-#strong[📐 Théorème fondamental --- Caractérisations de la convexité.
-]
-
+#principe(title: [📐 Théorème fondamental — Caractérisations de la convexité.])[
 Soit $f$ une fonction deux fois dérivable sur un intervalle $I$. Les
 propositions suivantes sont #strong[strictement équivalentes] : 1. $f$
 est #strong[convexe] sur $I$ \; 2. La fonction dérivée $f'$ est
@@ -37182,9 +36618,7 @@ tangentes].
 
 Et de façon symétrique pour la concavité :
 
-#quote_box[
-#strong[📐 Théorème --- Caractérisations de la concavité.
-]
+#principe(title: [📐 Théorème — Caractérisations de la concavité.])[
  Soit $f$ deux
 fois dérivable sur un intervalle $I$. Les propositions suivantes sont
 équivalentes : 1. $f$ est #strong[concave] sur $I$ \; 2. La fonction
@@ -37214,10 +36648,7 @@ La tangente en 0 a pour équation : $y = 1 dot.op\(x - 0\)+ 1 = x + 1$.
 Puisque la courbe est au-dessus de sa tangente, on obtient l'inégalité
 fondamentale du lycée :
 
-#quote_box[
-#strong[📐 Inégalité de convexité remarquable --- L'exponentielle
-au-dessus de sa tangente :
-]
+#principe(title: [📐 Inégalité de convexité remarquable — L'exponentielle au-dessus de sa tangente :])[
  Pour tout réel $x in bb(R)$ :
 $ upright(bold(e^x gt.eq x + 1)) . $ Avec égalité si et seulement si
 $x = 0$.
@@ -37255,10 +36686,7 @@ de la courbe $cal(C)_f$ où la courbe #strong[traverse sa tangente].
 
 ==== 6.2 Caractérisation par la dérivée seconde
 <caractérisation-par-la-dérivée-seconde>
-#quote_box[
-#strong[📐 Théorème fondamental --- Condition nécessaire et suffisante
-d'inflexion.
-]
+#principe(title: [📐 Théorème fondamental — Condition nécessaire et suffisante d'inflexion.])[
  Soit $f$ une fonction deux fois dérivable sur un
 intervalle $I$. Le point
 $A #scale(x: 120%, y: 120%)[\(] x_0 thin\;thin f\(x_0\)#scale(x: 120%, y: 120%)[\)]$
@@ -37573,36 +37001,36 @@ $C''\(q\)= 0 arrow.l.r.double 6 q - 12 = 0 arrow.l.r.double q = 2$.
 <exercices-39>
 ==== Niveau  (Applications directes)
 <niveau-applications-directes-4>
-#strong[Exercice 47.1.] Déterminer la fonction dérivée de chacune des
+#strong[Exercice 47.1] Déterminer la fonction dérivée de chacune des
 fonctions suivantes : 1. $f\(x\)= e^(4 x - 1)$ 2. $g\(x\)= e^(- x^3)$ 3.
 $h\(x\)= sqrt(5 x + 2)$ sur $\]- 2 / 5 thin\;thin + oo\[$ 4.
 $k\(x\)=\(3 x - 7\)^5$
 
-#strong[Exercice 47.2.] Calculer la dérivée seconde $f''\(x\)$ des
+#strong[Exercice 47.2] Calculer la dérivée seconde $f''\(x\)$ des
 fonctions suivantes : 1. $f\(x\)= 2 x^4 - 5 x^3 + x - 8$ 2.
 $g\(x\)= e^(2 x)$ 3. $h\(x\)= 1 / x$ sur $\]0 thin\;thin + oo\[$
 
-#strong[Exercice 47.3.] On donne la fonction
+#strong[Exercice 47.3] On donne la fonction
 $f\(x\)= x^3 - 6 x^2 + 2 x - 1$. 1. Calculer $f''\(x\)$. 2. Déterminer
 les intervalles où $f$ est convexe, et ceux où elle est concave. 3.
 Préciser le point d'inflexion de sa courbe.
 
-#strong[Exercice 47.4.] La courbe d'une fonction deux fois dérivable $f$
+#strong[Exercice 47.4] La courbe d'une fonction deux fois dérivable $f$
 admet une tangente en $x_0 = 3$ d'équation $y = 4 x - 1$. Sachant que
 $f''\(x\)gt.eq 0$ pour tout $x in bb(R)$, comparer sans calcul
 $f\(3\,1\)$ et $11\,4$.
 
-#strong[Exercice 47.5.] Déterminer la dérivée de $f\(x\)= sqrt(e^x + 1)$
+#strong[Exercice 47.5] Déterminer la dérivée de $f\(x\)= sqrt(e^x + 1)$
 sur $bb(R)$.
 
-#strong[Exercice 47.6.] Soit $f\(x\)= x e^(- x)$. Calculer $f'\(x\)$ et
+#strong[Exercice 47.6] Soit $f\(x\)= x e^(- x)$. Calculer $f'\(x\)$ et
 $f''\(x\)$.
 
-#strong[Exercice 47.7.] Une fonction $f$ vérifie
+#strong[Exercice 47.7] Une fonction $f$ vérifie
 $f''\(x\)=\(x - 3\)^2\(x + 1\)$. Quelles sont les abscisses des points
 d'inflexion de la courbe de $f$ ? (Attention au piège !).
 
-#strong[Exercice 47.8.] Déterminer les variations de $f'\(x\)$ pour
+#strong[Exercice 47.8] Déterminer les variations de $f'\(x\)$ pour
 $f\(x\)= x^3 / 3 - x^2 + 5 x$.
 
 #divider()
@@ -38349,9 +37777,7 @@ $B = ln\(e^(- 3)\)$, $C = e^(- ln 2)$, $D = ln (sqrt(e))$.
 <les-propriétés-algébriques-le-rêve-de-napier-réalisé>
 ==== 3.1 La propriété fondamentale
 <la-propriété-fondamentale>
-#quote_box[
-#strong[📐 Propriété fondamentale ---
-]
+#principe(title: [📐 Propriété fondamentale —])[
  Pour tous réels $a > 0$ et
 $b > 0$ : $ ln\(a b\)= ln a + ln b . $
 ]
@@ -38360,9 +37786,7 @@ $b > 0$ : $ ln\(a b\)= ln a + ln b . $
 produits en sommes]. C'est exactement la ligne du haut de Stifel, mais
 sans trous : tous les réels positifs y figurent.
 
-#quote_box[
-#strong[✍️ Démonstration (exigible) ---
-]
+#methode(title: [✍️ Démonstration (exigible) —])[
  Soient $a > 0$ et $b > 0$.
 Alors $a b > 0$ et $ln\(a b\)$ existe. D'une part, $e^(ln\(a b\)) = a b$
 par définition. D'autre part, d'après la propriété $e^(x + y) = e^x e^y$
@@ -38380,18 +37804,14 @@ miroir $y = x$.
 
 ==== 3.2 Les conséquences
 <les-conséquences>
-#quote_box[
-#strong[📐 Propriétés ---
-]
+#principe(title: [📐 Propriétés —])[
  Pour tous réels $a > 0$, $b > 0$ et tout
 entier relatif $n$ : 1. $ln (1 / a) = - ln a$ 2.
 $ln (a / b) = ln a - ln b$ 3. $ln\(a^n\)= n ln a$ 4.
 $ln (sqrt(a)) = 1 / 2 ln a$
 ]
 
-#quote_box[
-#strong[✍️ Démonstrations ---
-]
+#methode(title: [✍️ Démonstrations —])[
  1. $a times 1 / a = 1$, donc
 $ln a + ln (1 / a) = ln 1 = 0$, d'où $ln (1 / a) = - ln a$. 2.
 $ln (a / b) = ln (a times 1 / b) = ln a + ln (1 / b) = ln a - ln b$. 3.
@@ -38512,16 +37932,12 @@ sur $\]0 thin\;+ oo\[$.
 <étude-complète-de-la-fonction-logarithme-népérien>
 ==== 4.1 Dérivabilité et calcul de la dérivée
 <dérivabilité-et-calcul-de-la-dérivée>
-#quote_box[
-#strong[📐 Théorème ---
-]
+#principe(title: [📐 Théorème —])[
  La fonction $ln$ est dérivable sur
 $\]0 thin\;+ oo\[$, et pour tout réel $x > 0$ : $ ln'\(x\)= 1 / x . $
 ]
 
-#quote_box[
-#strong[✍️ Démonstration (exigible au baccalauréat) ---
-]
+#methode(title: [✍️ Démonstration (exigible au baccalauréat) —])[
  On sait que
 pour tout réel $x > 0$, on a la relation : $ e^(ln x) = x . $ La
 fonction $ln$ est dérivable sur $\]0 thin\;+ oo\[$ (car elle est la
@@ -38535,10 +37951,7 @@ $ \(ln\)'\(x\)times x = 1 arrow.l.r.double ln'\(x\)= 1 / x . $
 $square.filled.medium$
 ]
 
-#quote_box[
-#strong[💡 Démonstration alternative par le taux d'accroissement ---
-]
-
+#decouvre(title: [💡 Démonstration alternative par le taux d'accroissement —])[
 Soit $x > 0$ fixé et soit $h eq.not 0$ tel que $x + h > 0$. Le taux
 d'accroissement de $ln$ en $x$ s'écrit :
 $ tau\(h\)= frac(ln\(x + h\)- ln x, h) = 1 / h ln (1 + h / x) . $ Posons
@@ -38559,9 +37972,7 @@ Lorsque l'argument du logarithme est lui-même une fonction dérivable
 $u$, la formule de dérivation des fonctions composées
 $\(f compose u\)' = u' times\(f' compose u\)$ donne immédiatement :
 
-#quote_box[
-#strong[📐 Règle de dérivation en chaîne ---
-]
+#principe(title: [📐 Règle de dérivation en chaîne —])[
  Soit $u$ une fonction
 dérivable et #strong[strictement positive] sur un intervalle $I$. Alors
 la fonction $f = ln compose u$, définie par $f\(x\)= ln\(u\(x\)\)$, est
@@ -38571,9 +37982,7 @@ $x mapsto ln\|u\(x\)\|$ est dérivable sur $I$ et :
 $ \(ln\|u\|\)' = u' / u . $
 ]
 
-#quote_box[
-#strong[✍️ Justification pour $ln\|u\|$ quand $u\(x\)< 0$ ---
-]
+#methode(title: [✍️ Justification pour $ln\|u\|$ quand $u\(x\)< 0$ —])[
  Si
 $u\(x\)< 0$, alors $\|u\(x\)\|= - u\(x\)> 0$. On a donc
 $ln\|u\(x\)\|= ln\(- u\(x\)\)$. En dérivant :
@@ -38582,9 +37991,7 @@ Le résultat est donc identique quel que soit le signe de $u$ !
 $square.filled.medium$
 ]
 
-#quote_box[
-#strong[🧭 Méthode --- Dériver une expression avec $ln\(u\)$ :
-]
+#methode(title: [🧭 Méthode — Dériver une expression avec $ln\(u\)$ :])[
  1.
 Vérifier sur quel intervalle l'argument $u\(x\)$ est strictement
 positif. 2. Calculer la dérivée $u'\(x\)$. 3. Écrire le quotient
@@ -38597,9 +38004,7 @@ Pour tout $x in thick\]0 thin\;+ oo\[$, on a $x > 0$, donc
 $ln'\(x\)= 1 / x > 0$. La dérivée est #strong[strictement positive] sur
 l'ensemble de son domaine de définition.
 
-#quote_box[
-#strong[Propriété ---
-]
+#principe(title: [📐 Propriété —])[
  La fonction $ln$ est #strong[strictement
 croissante] sur $\]0 thin\;+ oo\[$. Pour tous réels
 $a\,b in thick\]0 thin\;+ oo\[$ :
@@ -38632,9 +38037,7 @@ Comme $ln 1 = 0$, la stricte croissance donne directement le
 
 ==== 4.4 Limites aux bornes du domaine
 <limites-aux-bornes-du-domaine>
-#quote_box[
-#strong[📐 Théorème des limites ---
-]
+#principe(title: [📐 Théorème des limites —])[
  1.
 $lim_(x arrow.r + oo) ln x = + oo$ 2.
 $lim_(x arrow.r 0^(+)) ln x = - oo$
@@ -38644,9 +38047,7 @@ La droite d'équation $x = 0$ (l'axe des ordonnées) est donc
 $ln$.
 ]
 
-#quote_box[
-#strong[✍️ Démonstrations (exigibles) ---
-]
+#methode(title: [✍️ Démonstrations (exigibles) —])[
  1. #strong[Limite en $+ oo$
 :] Pour tout entier naturel $n$, on a $ln\(2^n\)= n ln 2$. Comme
 $2 > 1$, $ln 2 > 0$. Par conséquent,
@@ -38700,9 +38101,7 @@ Calculons la dérivée seconde de la fonction logarithme :
 $ \(ln\)''\(x\)= (1 / x)' = - 1 / x^2 . $ Pour tout
 $x in thick\]0 thin\;+ oo\[$, $x^2 > 0$, donc $\(ln\)''\(x\)< 0$.
 
-#quote_box[
-#strong[Propriété fondamentale de concavité ---
-]
+#principe(title: [📐 Propriété fondamentale de concavité —])[
  La fonction $ln$ est
 #strong[strictement concave] sur $\]0 thin\;+ oo\[$. Par conséquent : 1.
 La courbe de $ln$ est située #strong[entièrement en dessous de toutes
@@ -38731,9 +38130,7 @@ de grains de sable sur toute la Terre !
 Cette lenteur extrême donne lieu aux célèbres #strong[théorèmes de
 croissances comparées].
 
-#quote_box[
-#strong[📐 Théorème des croissances comparées (exigible) ---
-]
+#principe(title: [📐 Théorème des croissances comparées (exigible) —])[
  Pour tout
 entier naturel $n gt.eq 1$ : 1.
 $lim_(x arrow.r + oo) frac(ln x, x^n) = 0$ 2.
@@ -38741,10 +38138,7 @@ $lim_(x arrow.r 0^(+)) x^n ln x = 0$ 3.
 $lim_(h arrow.r 0) frac(ln\(1 + h\), h) = 1 quad upright("ou de façon équivalente") quad lim_(x arrow.r 1) frac(ln x, x - 1) = 1$.
 ]
 
-#quote_box[
-#strong[✍️ Démonstration de $lim_(x arrow.r + oo) frac(ln x, x) = 0$
-(exigible) ---
-]
+#methode(title: [✍️ Démonstration de $lim_(x arrow.r + oo) frac(ln x, x) = 0$ (exigible) —])[
  Rappelons la limite de croissances comparées de
 l'exponentielle (établie au chapitre 45) :
 $ lim_(t arrow.r + oo) e^t / t = + oo . $ Posons le changement de
@@ -38755,10 +38149,7 @@ $ lim_(x arrow.r + oo) frac(ln x, x) = lim_(t arrow.r + oo) 1 / e^t / t = frac(1
 $square.filled.medium$
 ]
 
-#quote_box[
-#strong[✍️ Démonstration de $lim_(x arrow.r 0^(+)) x ln x = 0$
-(exigible) ---
-]
+#methode(title: [✍️ Démonstration de $lim_(x arrow.r 0^(+)) x ln x = 0$ (exigible) —])[
  Posons le changement de variable $X = 1 / x$. Quand
 $x arrow.r 0^(+)$, $X arrow.r + oo$. Alors :
 $ x ln x = 1 / X ln (1 / X) = frac(- ln X, X) = - frac(ln X, X) . $
@@ -38767,10 +38158,7 @@ On en conclut par composition : $ lim_(x arrow.r 0^(+)) x ln x = 0 . $
 $square.filled.medium$
 ]
 
-#quote_box[
-#strong[✍️ Démonstration pour
-$lim_(h arrow.r 0) frac(ln\(1 + h\), h) = 1$ ---
-]
+#methode(title: [✍️ Démonstration pour $lim_(h arrow.r 0) frac(ln\(1 + h\), h) = 1$ —])[
  C'est exactement le
 taux d'accroissement de la fonction $ln$ en $x_0 = 1$ :
 $ lim_(h arrow.r 0) frac(ln\(1 + h\)- ln 1, h) = ln'\(1\)= 1 / 1 = 1 . $
@@ -38783,10 +38171,7 @@ $square.filled.medium$
 <méthodes-équations-inéquations-et-seuils-géométriques>
 ==== 5.1 Résolution d'équations avec $ln$
 <résolution-déquations-avec-ln>
-#quote_box[
-#strong[🧭 Méthode --- Protocole de résolution d'une équation
-logarithmique :
-]
+#methode(title: [🧭 Méthode — Protocole de résolution d'une équation logarithmique :])[
  1. #strong[Ensemble de validité :] Déterminer le
 domaine $D$ des réels $x$ tels que tous les arguments des logarithmes
 soient #strong[strictement positifs]. 2. #strong[Regroupement :]
@@ -38900,9 +38285,7 @@ C'est l'une des applications les plus systématiques au baccalauréat :
 déterminer à partir de quel rang $n$ une suite dépasse ou passe sous un
 certain seuil.
 
-#quote_box[
-#strong[🧭 Méthode --- Résolution de $q^n < S$ ou $q^n > S$ :
-]
+#methode(title: [🧭 Méthode — Résolution de $q^n < S$ ou $q^n > S$ :])[
  1. Isoler
 la puissance $q^n$ dans l'inégalité. 2. Appliquer la fonction $ln$ aux
 deux membres (valable car $q > 0$ et $S > 0$). 3. Utiliser la règle
@@ -38938,10 +38321,7 @@ est #strong[$n = 9$]. Au bout de 9 ans, la machine vaudra moins de
 $5 thin 000$ €.
 ]
 
-#quote_box[
-#strong[💻 Algorithme Python associé --- Recherche de seuil :
-]
-
+#methode(title: [💻 Algorithme Python associé — Recherche de seuil :])[
 ]
 
 #quote_box[
@@ -38993,9 +38373,7 @@ concentration standard. Réciproquement :
 $\[H_3 O^(+)\]= 10^(- upright("pH")) thin upright("mol") dot.op upright("L")^(- 1)$.
 ]
 
-#quote_box[
-#strong[Conséquence directe :
-]
+#principe(title: [📐 Conséquence directe :])[
  Quand le pH diminue d'une seule unité
 (par exemple de 7 à 6), la concentration en ions $\[H_3 O^(+)\]$ est
 #strong[multipliée par 10]. Si le pH passe de 7 à 4, elle est multipliée
@@ -39012,10 +38390,7 @@ décollage d'une fusée
 $10^14$. Le #strong[niveau d'intensité acoustique] $L$, exprimé en
 #strong[décibels (dB)], est défini par :
 
-#quote_box[
-#strong[📐 Niveau sonore en décibels ---
-]
-
+#principe(title: [📐 Niveau sonore en décibels —])[
 $ L = 10 log_10 (I / I_0) = 10 frac(ln\(I\/I_0\), ln 10) . $
 ]
 
@@ -39873,9 +39248,7 @@ $ M\(x\)= #scale(x: 120%, y: 120%)[\(] cos x thin\;thin sin x #scale(x: 120%, y:
   , kind: table
   )
 
-#quote_box[
-#strong[💡 Astuce mnémotechnique pour la ligne du sinus :
-]
+#decouvre(title: [💡 Astuce mnémotechnique pour la ligne du sinus :])[
  Remarque la
 suite des racines : $sin 0 = sqrt(0) / 2 = 0$,
 $sin pi / 6 = sqrt(1) / 2 = 1 / 2$, $sin pi / 4 = sqrt(2) / 2$,
@@ -39890,9 +39263,7 @@ Faire un tour complet supplémentaire sur le cercle revient à ajouter
 $2 pi$ à la longueur enroulée : le point $M$ revient exactement au même
 endroit.
 
-#quote_box[
-#strong[📐 Périodicité ---
-]
+#principe(title: [📐 Périodicité —])[
  Les fonctions cosinus et sinus sont
 #strong[périodiques de période $2 pi$] (ou $2 pi$-périodiques). Pour
 tout réel $x$ et tout entier relatif $k in bb(Z)$ :
@@ -39905,11 +39276,7 @@ Examinons maintenant les symétries géométriques sur le cercle :
   #strong[l'axe des abscisses $\(O x\)$]. Ils ont donc la même abscisse
   et des ordonnées opposées.
 
-#quote_box[
-#strong[📐 Parité ---
-]
-
-
+#principe(title: [📐 Parité —])[
 - La fonction cosinus est #strong[paire] : $cos\(- x\)= cos x$. Sa
   courbe représentative dans un repère orthogonal est symétrique par
   rapport à #strong[l'axe des ordonnées $\(O y\)$].
@@ -39957,9 +39324,7 @@ simplement le #strong[sinus du complémentaire]
 Ces formules permettent d'exprimer les fonctions d'une somme en fonction
 des composantes :
 
-#quote_box[
-#strong[📐 Formules d'addition ---
-]
+#principe(title: [📐 Formules d'addition —])[
  Pour tous réels $a$ et $b$ :
 $ cos\(a + b\)= cos a cos b - sin a sin b $
 $ cos\(a - b\)= cos a cos b + sin a sin b $
@@ -39967,9 +39332,7 @@ $ sin\(a + b\)= sin a cos b + cos a sin b $
 $ sin\(a - b\)= sin a cos b - cos a sin b $
 ]
 
-#quote_box[
-#strong[📐 Formules de duplication ---
-]
+#principe(title: [📐 Formules de duplication —])[
  En posant $a = b = x$ :
 $ sin\(2 x\)= 2 sin x cos x $
 $ cos\(2 x\)= cos^2 x - sin^2 x = 2 cos^2 x - 1 = 1 - 2 sin^2 x $
@@ -40002,17 +39365,13 @@ $ tau\(x\)= frac(sin x - sin 0, x - 0) = frac(sin x, x) . $ Quand $x$
 tend vers 0, nous faisons face à une forme indéterminée « $0 / 0$ ».
 Levons cette indétermination par un argument géométrique éclatant.
 
-#quote_box[
-#strong[📐 Lemme fondamental (encadrement trigonométrique) ---
-]
+#principe(title: [📐 Lemme fondamental (encadrement trigonométrique) —])[
  Pour
 tout réel $x in ]0 thin \; pi / 2[$ :
 $ sin x lt.eq x lt.eq tan x quad (upright("où ") tan x = frac(sin x, cos x)) . $
 ]
 
-#quote_box[
-#strong[✍️ Démonstration géométrique (exigible) ---
-]
+#methode(title: [✍️ Démonstration géométrique (exigible) —])[
  Considérons sur le
 cercle trigonométrique de centre $O$ et de rayon 1 :
 
@@ -40051,16 +39410,11 @@ $square.filled.medium$
   ]
 )
 
-#quote_box[
-#strong[📐 Théorème --- Limite remarquable en 0 :
-]
-
+#principe(title: [📐 Théorème — Limite remarquable en 0 :])[
 $ lim_(x arrow.r 0) frac(sin x, x) = 1 . $
 ]
 
-#quote_box[
-#strong[✍️ Démonstration ---
-]
+#methode(title: [✍️ Démonstration —])[
  Pour tout $x in ]0 thin \; pi / 2[$,
 on a $sin x > 0$. Divisons l'encadrement
 $sin x lt.eq x lt.eq frac(sin x, cos x)$ par $sin x$ :
@@ -40074,11 +39428,7 @@ D'après le #strong[théorème des gendarmes] :
 $ lim_(x arrow.r 0) frac(sin x, x) = 1 . $ $square.filled.medium$
 ]
 
-#quote_box[
-#strong[Corollaire fondamental --- Limite de $frac(1 - cos x, x^2)$ en 0
-:
-]
-
+#principe(title: [📐 Corollaire fondamental — Limite de $frac(1 - cos x, x^2)$ en 0 :])[
 $ lim_(x arrow.r 0) frac(1 - cos x, x^2) = 1 / 2 quad upright("et par conséquent") quad lim_(x arrow.r 0) frac(cos x - 1, x) = 0 . $
 
 #emph[Démonstration :] Utilisons la formule de duplication
@@ -40095,17 +39445,13 @@ $square.filled.medium$
 
 ==== 3.2 Le calcul des dérivées de sinus et cosinus
 <le-calcul-des-dérivées-de-sinus-et-cosinus>
-#quote_box[
-#strong[📐 Théorème (Démonstrations exigibles au baccalauréat) ---
-]
+#principe(title: [📐 Théorème (Démonstrations exigibles au baccalauréat) —])[
  Les
 fonctions $sin$ et $cos$ sont dérivables sur $bb(R)$, et pour tout réel
 $x$ : $ sin'\(x\)= cos x quad upright("et") quad cos'\(x\)= - sin x . $
 ]
 
-#quote_box[
-#strong[✍️ Démonstration pour $sin'\(x\)$ ---
-]
+#methode(title: [✍️ Démonstration pour $sin'\(x\)$ —])[
  Soit $x in bb(R)$ fixé et
 soit $h eq.not 0$. Formons le taux d'accroissement de la fonction sinus
 entre $x$ et $x + h$ : $ tau\(h\)= frac(sin\(x + h\)- sin x, h) . $
@@ -40123,9 +39469,7 @@ La fonction sinus est donc dérivable en tout réel $x$, et
 $sin'\(x\)= cos x$. $square.filled.medium$
 ]
 
-#quote_box[
-#strong[✍️ Démonstration pour $cos'\(x\)$ ---
-]
+#methode(title: [✍️ Démonstration pour $cos'\(x\)$ —])[
  On utilise la formule
 d'addition pour le cosinus :
 $ frac(cos\(x + h\)- cos x, h) = frac(cos x cos h - sin x sin h - cos x, h) = cos x (frac(cos h - 1, h)) - sin x (frac(sin h, h)) . $
@@ -40167,9 +39511,7 @@ exactement $90^compose$ en avant.
 D'après le théorème de dérivation des composées
 $\(f compose u\)' = u' times\(f' compose u\)$ :
 
-#quote_box[
-#strong[📐 Formules de composition ---
-]
+#principe(title: [📐 Formules de composition —])[
  Soit $u$ une fonction dérivable
 sur un intervalle $I$ : 1.
 $#scale(x: 120%, y: 120%)[\(] sin\(u\(x\)\)#scale(x: 120%, y: 120%)[\)]' = u'\(x\)cos\(u\(x\)\)$
@@ -40205,9 +39547,7 @@ Calculons la dérivée seconde de la fonction $f\(t\)= cos\(omega t\)$ :
 
 En passant tout du même côté : $ f''\(t\)+ omega^2 f\(t\)= 0 . $
 
-#quote_box[
-#strong[💡 Découverte magistrale ---
-]
+#decouvre(title: [💡 Découverte magistrale —])[
  Les fonctions sinusoïdales sont
 les #strong[uniques solutions] de l'équation différentielle du second
 ordre : $ y'' + omega^2 y = 0 . $ C'est l'équation maîtresse de toute la
@@ -40312,18 +39652,14 @@ angles utilisée par tous les physiciens !
 <résolution-déquations-et-inéquations-trigonométriques>
 ==== 5.1 Les équations fondamentales
 <les-équations-fondamentales>
-#quote_box[
-#strong[🧭 Méthode --- Résolution de $cos x = cos alpha$ :
-]
+#methode(title: [🧭 Méthode — Résolution de $cos x = cos alpha$ :])[
  Deux points
 du cercle trigonométrique ont la même abscisse si et seulement si leurs
 angles sont égaux ou opposés, à un nombre entier de tours près :
 $ cos x = cos alpha arrow.l.r.double x = alpha + 2 k pi quad upright("ou") quad x = - alpha + 2 k pi quad\(k in bb(Z)\). $
 ]
 
-#quote_box[
-#strong[🧭 Méthode --- Résolution de $sin x = sin alpha$ :
-]
+#methode(title: [🧭 Méthode — Résolution de $sin x = sin alpha$ :])[
  Deux points
 du cercle trigonométrique ont la même ordonnée si et seulement si leurs
 angles sont égaux ou supplémentaires ($pi - alpha$), à un nombre entier
@@ -40461,10 +39797,7 @@ des musiciens correspond à 440 vibrations complètes par seconde
 du son $c approx 340 upright(" m") dot.op upright("s")^(- 1)$) est :
 $ lambda = c / f = 340 / 440 approx 0\,77 upright(" m") . $
 
-#quote_box[
-#strong[💻 Simulation Python --- Échantillonnage d'une sinusoïde :
-]
-
+#methode(title: [💻 Simulation Python — Échantillonnage d'une sinusoïde :])[
 ]
 
 #quote_box[
@@ -41306,9 +40639,7 @@ $ A'\(x\)= f\(x\). $
 
 ==== 3.2 Démonstration rigoureuse du Théorème Fondamental
 <démonstration-rigoureuse-du-théorème-fondamental>
-#quote_box[
-#strong[📐 Théorème Fondamental de l'Analyse (exigible) ---
-]
+#principe(title: [📐 Théorème Fondamental de l'Analyse (exigible) —])[
  Soit $f$
 une fonction continue sur un intervalle $I$ et soit $a in I$. La
 fonction $A$ définie sur $I$ par :
@@ -41316,9 +40647,7 @@ $ A\(x\)= integral_a^x f\(t\)thin d t $ est dérivable sur $I$, et pour
 tout $x in I$ : $ A'\(x\)= f\(x\). $
 ]
 
-#quote_box[
-#strong[✍️ Démonstration ---
-]
+#methode(title: [✍️ Démonstration —])[
  Soit $x in I$ et soit $h > 0$ tel que
 $x + h in I$. D'après la relation de Chasles pour l'intégrale :
 $ A\(x + h\)- A\(x\)= integral_a^(x + h) f\(t\)thin d t - integral_a^x f\(t\)thin d t = integral_x^(x + h) f\(t\)thin d t . $
@@ -41357,9 +40686,7 @@ fonction $F$ dérivable sur $I$ telle que :
 $ upright("Pour tout ") x in I : quad F'\(x\)= f\(x\). $
 ]
 
-#quote_box[
-#strong[Propriété fondamentale des primitives ---
-]
+#principe(title: [📐 Propriété fondamentale des primitives —])[
  Si $F$ est une
 primitive de $f$ sur un intervalle $I$, alors : 1. Pour toute constante
 réelle $C$, la fonction $x mapsto F\(x\)+ C$ est aussi une primitive de
@@ -41376,18 +40703,14 @@ primitive de $f$ prenant la valeur $y_0$ en $x_0$.
 Grâce au théorème fondamental, le calcul d'une intégrale ne demande
 aucun rectangle :
 
-#quote_box[
-#strong[📐 Théorème (Calcul de l'intégrale par une primitive) ---
-]
+#principe(title: [📐 Théorème (Calcul de l'intégrale par une primitive) —])[
  Soit
 $f$ une fonction continue sur $\[a thin\;b\]$, et soit $F$ une primitive
 quelconque de $f$ sur $\[a thin\;b\]$. Alors :
 $ integral_a^b f\(t\)thin d t =\[F\(t\)\]_a^b = F\(b\)- F\(a\). $
 ]
 
-#quote_box[
-#strong[✍️ Démonstration ---
-]
+#methode(title: [✍️ Démonstration —])[
  Posons
 $A\(x\)= integral_a^x f\(t\)thin d t$. D'après le théorème fondamental,
 $A$ est une primitive de $f$ sur $\[a thin\;b\]$. Comme $F$ est une
@@ -41499,9 +40822,7 @@ l'intervalle considéré.
 
 ==== 5.1 Linéarité
 <linéarité>
-#quote_box[
-#strong[📐 Propriété de linéarité ---
-]
+#principe(title: [📐 Propriété de linéarité —])[
  Pour tous réels $alpha\,beta$ et
 fonctions continues $f\,g$ :
 $ integral_a^b #scale(x: 120%, y: 120%)[\(] alpha f\(t\)+ beta g\(t\)#scale(x: 120%, y: 120%)[\)] thin d t = alpha integral_a^b f\(t\)thin d t + beta integral_a^b g\(t\)thin d t . $
@@ -41509,9 +40830,7 @@ $ integral_a^b #scale(x: 120%, y: 120%)[\(] alpha f\(t\)+ beta g\(t\)#scale(x: 1
 
 ==== 5.2 Relation de Chasles
 <relation-de-chasles>
-#quote_box[
-#strong[📐 Relation de Chasles ---
-]
+#principe(title: [📐 Relation de Chasles —])[
  Pour tous réels $a\,b\,c$ d'un
 intervalle où $f$ est continue :
 $ integral_a^c f\(t\)thin d t + integral_c^b f\(t\)thin d t = integral_a^b f\(t\)thin d t . $
@@ -41525,9 +40844,7 @@ En particulier :
 
 ==== 5.3 Positivité et conservation de l'ordre
 <positivité-et-conservation-de-lordre>
-#quote_box[
-#strong[📐 Positivité ---
-]
+#principe(title: [📐 Positivité —])[
  Soient $a lt.eq b$ deux réels.
 
 - Si pour tout $t in\[a thin\;b\]$, $f\(t\)gt.eq 0$, alors
@@ -41594,18 +40911,14 @@ intégrale de la dérivée d'un produit.
 
 ==== 6.1 Théorème et démonstration
 <théorème-et-démonstration>
-#quote_box[
-#strong[📐 Théorème d'Intégration par Parties (exigible) ---
-]
+#principe(title: [📐 Théorème d'Intégration par Parties (exigible) —])[
  Soient $u$
 et $v$ deux fonctions dérivables sur $\[a thin\;b\]$, telles que leurs
 dérivées $u'$ et $v'$ soient continues sur $\[a thin\;b\]$. Alors :
 $ integral_a^b u'\(t\)v\(t\)thin d t = #scale(x: 180%, y: 180%)[\[] u\(t\)v\(t\)#scale(x: 180%, y: 180%)[\]]_a^b - integral_a^b u\(t\)v'\(t\)thin d t . $
 ]
 
-#quote_box[
-#strong[✍️ Démonstration ---
-]
+#methode(title: [✍️ Démonstration —])[
  D'après la formule de dérivation d'un
 produit, pour tout $t in\[a thin\;b\]$ :
 $ \(u v\)'\(t\)= u'\(t\)v\(t\)+ u\(t\)v'\(t\). $ En isolant le terme
@@ -41628,10 +40941,7 @@ cela, on choisit en général pour #strong[$v\(t\)$] la fonction qui
 #strong[se simplifie par dérivation] (les polynômes perdent un degré en
 étant dérivés !).
 
-#quote_box[
-#strong[🧭 La règle heuristique ALPES pour le choix de $v\(x\)$ (celle
-que l'on dérive) :
-]
+#methode(title: [🧭 La règle heuristique ALPES pour le choix de $v\(x\)$ (celle que l'on dérive) :])[
  On choisit comme fonction $v\(x\)$ la première
 fonction rencontrée dans l'ordre de cette liste : 1. #strong[A] :
 Fonctions circulaires réciproques (Arcsin, Arccos, Arctan) 2. #strong[L]
@@ -41676,10 +40986,7 @@ $ln x = 1 times ln x$ ! Posons :
 Alors :
 $ integral ln x thin d x = x ln x - integral x times 1 / x thin d x = x ln x - integral 1 thin d x = x ln x - x + C . $
 
-#quote_box[
-#strong[Formule mémorable --- Une primitive de $ln x$ est :
-]
-
+#principe(title: [📐 Formule mémorable — Une primitive de $ln x$ est :])[
 $ F\(x\)= x ln x - x . $ Vérification immédiate par dérivation :
 $\(x ln x - x\)' = 1 times ln x + x times 1 / x - 1 = ln x + 1 - 1 = ln x$.
 Imparable ! ✔
@@ -42295,18 +41602,14 @@ d'autres ? La réponse est non.
 
 ==== 2.2 Théorème fondamental et démonstration
 <théorème-fondamental-et-démonstration>
-#quote_box[
-#strong[📐 Théorème (exigible au baccalauréat) ---
-]
+#principe(title: [📐 Théorème (exigible au baccalauréat) —])[
  Soit $a in bb(R)$.
 Les solutions sur $bb(R)$ de l'équation différentielle $y' = a y$ sont
 les fonctions de la forme : $ y\(t\)= C e^(a t) $ où $C$ est une
 constante réelle arbitraire.
 ]
 
-#quote_box[
-#strong[✍️ Démonstration rigoureuse ---
-]
+#methode(title: [✍️ Démonstration rigoureuse —])[
  La démonstration se fait en
 deux étapes : existence puis unicité de la forme. 1.
 #strong[Vérification :] Soit $C in bb(R)$. Posons $f\(t\)= C e^(a t)$.
@@ -42353,19 +41656,14 @@ Pour fixer la valeur de $C$ et déterminer l'unique trajectoire physique
 suivie par le système, il faut connaître #strong[l'état initial] à un
 instant $t_0$.
 
-#quote_box[
-#strong[📐 Théorème d'existence et d'unicité (Problème de Cauchy) ---
-]
-
+#principe(title: [📐 Théorème d'existence et d'unicité (Problème de Cauchy) —])[
 Pour tous réels $t_0$ et $y_0$, l'équation différentielle $y' = a y$
 admet #strong[une unique solution] $f$ vérifiant la condition initiale :
 $ f\(t_0\)= y_0 . $ Cette solution est donnée pour tout $t in bb(R)$ par
 : $ f\(t\)= y_0 thin e^(a\(t - t_0\)) . $
 ]
 
-#quote_box[
-#strong[✍️ Justification ---
-]
+#methode(title: [✍️ Justification —])[
  Les solutions sont de la forme
 $f\(t\)= C e^(a t)$. La condition initiale s'écrit :
 $ f\(t_0\)= y_0 arrow.l.r.double C e^(a t_0) = y_0 arrow.l.r.double C = y_0 e^(- a t_0) . $
@@ -42422,9 +41720,7 @@ ou le régime permanent du système.
 
 ==== 3.2 Théorème de structure des solutions
 <théorème-de-structure-des-solutions>
-#quote_box[
-#strong[📐 Théorème (Résolution générale de $y' = a y + b$) ---
-]
+#principe(title: [📐 Théorème (Résolution générale de $y' = a y + b$) —])[
  Soient
 $a eq.not 0$ et $b$ deux nombres réels. Les solutions sur $bb(R)$ de
 l'équation différentielle $y' = a y + b$ sont les fonctions :
@@ -42432,9 +41728,7 @@ $ y\(t\)= C e^(a t) - b / a $ où $C$ est une constante réelle
 arbitraire.
 ]
 
-#quote_box[
-#strong[✍️ Démonstration (exigible) ---
-]
+#methode(title: [✍️ Démonstration (exigible) —])[
  Notons $\(E\): y' = a y + b$ et
 $\(E_0\): y' = a y$ l'équation homogène associée. Posons
 $y_p\(t\)= - b / a$. On sait que $y'_p = 0 = a y_p + b$, donc $y_p$ est
@@ -42458,10 +41752,7 @@ $ \(f - y_p\)\(t\)= C e^(a t) arrow.l.r.double f\(t\)= C e^(a t) + y_p\(t\)arrow
 $square.filled.medium$
 ]
 
-#quote_box[
-#strong[🧭 Le principe fondamental de superposition :
-]
-
+#methode(title: [🧭 Le principe fondamental de superposition :])[
 $ upright("Solution Générale de ")\(E\)= underbrace(C e^(a t), upright("Solution générale de l’homogène")) + underbrace((- b / a), upright("Solution particulière constante")) $
 ]
 
@@ -42518,9 +41809,7 @@ $ u'_C\(t\)= - 1 / tau u_C\(t\)+ E / tau . $ Avec la condition initiale
 d'un condensateur initialement déchargé ($u_C\(0\)= 0$), la solution est
 : $ u_C\(t\)= E (1 - e^(- t\/tau)) . $
 
-#quote_box[
-#strong[Propriété remarquable de la constante de temps $tau$ :
-]
+#principe(title: [📐 Propriété remarquable de la constante de temps $tau$ :])[
  À
 $t = tau$, la tension vaut
 $u_C\(tau\)= E\(1 - e^(- 1)\)approx E\(1 - 0\,368\)= 0\,632 E$. Le
@@ -43158,12 +42447,7 @@ segment $\[A B\]$ est la grande diagonale intérieure :
   second coup de Pythagore donne :
   $ A B^2 = A C^2 + B C^2 =\(x_B - x_A\)^2 +\(y_B - y_A\)^2 +\(z_B - z_A\)^2 . $
 
-#quote_box[
-#strong[📐 Théorème --- Norme d'un vecteur et distance entre deux points
-:
-]
-
-
+#principe(title: [📐 Théorème — Norme d'un vecteur et distance entre deux points :])[
 - La norme d'un vecteur $arrow(u)\(x thin\;y thin\;z\)$ dans un repère
   orthonormé est :
   $ parallel arrow(u) parallel = sqrt(x^2 + y^2 + z^2) . $
@@ -43288,10 +42572,7 @@ $arrow(u)\(x thin\;y thin\;z\)$ et $arrow(v)\(x' thin\;y' thin\;z'\)$ :
 $ arrow(u) dot.op arrow(v) = x x' + y y' + z z' . $
 ]
 
-#quote_box[
-#strong[Critère d'orthogonalité :
-]
-
+#principe(title: [📐 Critère d'orthogonalité :])[
 $ arrow(u) perp arrow(v) arrow.l.r.double arrow(u) dot.op arrow(v) = 0 arrow.l.r.double x x' + y y' + z z' = 0 . $
 ]
 
@@ -43360,11 +42641,7 @@ $ a\(x - x_A\)+ b\(y - y_A\)+ c\(z - z_A\)= 0 arrow.l.r.double a x + b y + c z -
 En posant la constante $d = -\(a x_A + b y_A + c z_A\)$, on obtient la
 forme fondamentale :
 
-#quote_box[
-#strong[📐 Théorème (Équation cartésienne d'un plan) ---
-]
-
-
+#principe(title: [📐 Théorème (Équation cartésienne d'un plan) —])[
 - Tout plan $cal(P)$ de l'espace admet une équation cartésienne de la
   forme : $ a x + b y + c z + d = 0 $ où
   $\(a thin\;b thin\;c\)eq.not\(0 thin\;0 thin\;0\)$.
@@ -43429,9 +42706,7 @@ $C\(0 thin\;0 thin\;3\)$.
 <orthogonalité-projeté-orthogonal-et-distance>
 ==== 6.1 Orthogonalité d'une droite et d'un plan
 <orthogonalité-dune-droite-et-dun-plan>
-#quote_box[
-#strong[Propriété ---
-]
+#principe(title: [📐 Propriété —])[
  Une droite $cal(D)$ de vecteur directeur
 $arrow(u)$ est #strong[orthogonale] à un plan $cal(P)$ de vecteur normal
 $arrow(n)$ si et seulement si les vecteurs $arrow(u)$ et $arrow(n)$ sont
@@ -43447,10 +42722,7 @@ soit orthogonale au plan $cal(P)$. La distance $M H$ est alors la
 #strong[plus courte distance] entre le point $M$ et n'importe quel point
 du plan.
 
-#quote_box[
-#strong[🧭 Méthode --- Calculer les coordonnées du projeté orthogonal
-$H$ :
-]
+#methode(title: [🧭 Méthode — Calculer les coordonnées du projeté orthogonal $H$ :])[
  1. Déterminer un vecteur normal $arrow(n)\(a thin\;b thin\;c\)$
 au plan $cal(P)$. 2. Écrire la représentation paramétrique de la droite
 $cal(D)$ passant par $M\(x_M thin\;y_M thin\;z_M\)$ et dirigée par
@@ -43493,9 +42765,7 @@ est :
 $ d\(M\,cal(P)\)= parallel accent(M H, ⃗) parallel = lr(|1 / 3|) parallel arrow(n) parallel = 1 / 3 sqrt(2^2 +\(- 1\)^2 + 2^2) = 1 / 3 sqrt(4 + 1 + 4) = 1 / 3 sqrt(9) = 3 / 3 = upright(bold(1)) . $
 ]
 
-#quote_box[
-#strong[💡 Formule générale de la distance d'un point à un plan :
-]
+#decouvre(title: [💡 Formule générale de la distance d'un point à un plan :])[
  Pour
 tout point $M\(x_0 thin\;y_0 thin\;z_0\)$ et tout plan
 $cal(P) : a x + b y + c z + d = 0$ :
@@ -44117,9 +43387,7 @@ la valeur absolue (qui mesure une taille ou une distance).
 
 ==== 2.2 Le principe additif : partitions et disjonction
 <le-principe-additif-partitions-et-disjonction>
-#quote_box[
-#strong[📐 Propriété fondamentale --- Principe additif
-]
+#principe(title: [📐 Propriété fondamentale — Principe additif])[
  Soient $A$ et
 $B$ deux sous-ensembles finis d'un ensemble $E$. Si $A$ et $B$ sont
 #strong[disjoints] (c'est-à-dire sans aucun élément commun :
@@ -44139,9 +43407,7 @@ alors : $ \|E\|=\|A_1\|+\|A_2\|+ dots.h +\|A_m\|= sum_(i = 1)^m\|A_i\| $
 Et si les deux ensembles se chevauchent ? C'est la célèbre formule du
 crible (ou formule de Poincaré pour 2 ensembles) :
 
-#quote_box[
-#strong[📐 Théorème --- Formule des deux ensembles
-]
+#principe(title: [📐 Théorème — Formule des deux ensembles])[
  Pour tous ensembles
 finis $A$ et $B$ : $ \|A union B\|=\|A\|+\|B\|-\|A inter B\| $
 ]
@@ -44151,9 +43417,7 @@ finis $A$ et $B$ : $ \|A union B\|=\|A\|+\|B\|-\|A inter B\| $
 fois. Il faut donc retrancher une fois $\|A inter B\|$ pour rétablir le
 compte exact.
 
-#quote_box[
-#strong[🧭 Méthode --- Le principe du complémentaire
-]
+#methode(title: [🧭 Méthode — Le principe du complémentaire])[
  Si $A$ est une
 partie d'un ensemble fini $E$, son complémentaire $overline(A)$ (ou
 $E\\A$) vérifie :
@@ -44174,9 +43438,7 @@ couples $\(a\,b\)$ où $a in A$ et $b in B$ :
 $ A times B = {\(a\,b\)divides a in A\,b in B } $
 ]
 
-#quote_box[
-#strong[📐 Théorème --- Principe multiplicatif
-]
+#principe(title: [📐 Théorème — Principe multiplicatif])[
  Si $A$ et $B$ sont deux
 ensembles finis, alors : $ \|A times B\|=\|A\|times\|B\| $ De façon
 générale, pour $k$ ensembles finis $A_1\,A_2\,dots.h\,A_k$ :
@@ -44198,9 +43460,7 @@ On tire $k$ objets parmi $n$, #strong[l'un après l'autre], en remettant
 l'objet tiré dans le sac à chaque étape (ou en réutilisant le même
 symbole, comme sur une molette).
 
-#quote_box[
-#strong[📐 Théorème --- Nombre de $k$-uplets
-]
+#principe(title: [📐 Théorème — Nombre de $k$-uplets])[
  Soit $E$ un ensemble à $n$
 éléments. Un #strong[$k$-uplet] (ou liste de longueur $k$) d'éléments de
 $E$ est un élément du produit cartésien
@@ -44321,10 +43581,7 @@ $C_n^k$).]
 
 ==== 4.2 La formule magique
 <la-formule-magique>
-#quote_box[
-#strong[✍️ Démonstration exigible --- Formule de $binom(n, k)$
-]
-
+#methode(title: [✍️ Démonstration exigible — Formule de $binom(n, k)$])[
 Calculons le nombre d'arrangements $A_n^k$ de deux façons différentes :
 \1. D'une part, on sait que le nombre d'arrangements est
 $A_n^k = frac(n !, \(n - k\)!)$. 2. D'autre part, pour fabriquer un
@@ -44355,11 +43612,7 @@ On retrouve exactement notre calcul intuitif du vestiaire !
 
 + #strong[Symétrie des choix :] $ binom(n, k) = binom(n, n - k) $
 
-#quote_box[
-#strong[✍️ Démonstration --- Symétrie
-]
-
-
+#methode(title: [✍️ Démonstration — Symétrie])[
 - #strong[Par le calcul :]
   $ binom(n, n - k) = frac(n !, \(n - k\)!\(n -\(n - k\)\)!) = frac(n !, \(n - k\)! k !) = binom(n, k) $
 
@@ -44372,18 +43625,13 @@ On retrouve exactement notre calcul intuitif du vestiaire !
 
 ==== 4.4 La relation de Pascal
 <la-relation-de-pascal>
-#quote_box[
-#strong[📐 Théorème --- Formule de Pascal
-]
+#principe(title: [📐 Théorème — Formule de Pascal])[
  Pour tous entiers $n gt.eq 1$
 et $1 lt.eq k lt.eq n$ :
 $ binom(n, k) = binom(n - 1, k - 1) + binom(n - 1, k) $
 ]
 
-#quote_box[
-#strong[✍️ Démonstration combinatoire exigible --- La méthode du témoin
-]
-
+#methode(title: [✍️ Démonstration combinatoire exigible — La méthode du témoin])[
 Soit $E$ un ensemble à $n$ éléments. Isolons un élément particulier de
 $E$, appelons-le #strong[Alice]. Nous voulons choisir un sous-ensemble
 de $k$ éléments parmi ces $n$ personnes. Il y a $binom(n, k)$ façons au
@@ -44462,9 +43710,7 @@ Regarde les coefficients :
 
 Ce sont très exactement les lignes du triangle de Pascal !
 
-#quote_box[
-#strong[📐 Théorème fondamental --- Formule du Binôme de Newton
-]
+#principe(title: [📐 Théorème fondamental — Formule du Binôme de Newton])[
  Pour
 tous réels ou complexes $a$ et $b$, et pour tout entier naturel
 $n in bb(N)$ : $ \(a + b\)^n = sum_(k = 0)^n binom(n, k) a^(n - k) b^k $
@@ -44472,10 +43718,7 @@ En développant :
 $ \(a + b\)^n = binom(n, 0) a^n + binom(n, 1) a^(n - 1) b + binom(n, 2) a^(n - 2) b^2 + dots.h + binom(n, n) b^n $
 ]
 
-#quote_box[
-#strong[✍️ Démonstration combinatoire --- Pourquoi cette formule est
-limpide
-]
+#methode(title: [✍️ Démonstration combinatoire — Pourquoi cette formule est limpide])[
  Développons le produit de $n$ parenthèses identiques :
 $ \(a + b\)^n = underbrace(\(a + b\)\(a + b\)dots.h\(a + b\), n upright(" facteurs")) $
 Lors de la grande distributivité, pour former chaque terme du résultat,
@@ -44752,66 +43995,66 @@ Le terme constant vaut #strong[672].
 <exercices-45>
 ==== Niveau  (Applications directes)
 <niveau-applications-directes-10>
-#strong[Exercice 1.] Calculer à la main : $5 !$, $frac(8 !, 6 !)$,
+#strong[Exercice 53.1] Calculer à la main : $5 !$, $frac(8 !, 6 !)$,
 $binom(7, 2)$, $binom(9, 9)$, et $binom(10, 7)$.
 
-#strong[Exercice 2.] Un mot de passe informatique doit comporter 8
+#strong[Exercice 53.2] Un mot de passe informatique doit comporter 8
 caractères choisis parmi les 26 lettres minuscules de l'alphabet. 1.
 Combien de mots de passe peut-on former si la répétition est autorisée ?
 \2. Combien si toutes les lettres doivent être différentes ?
 
-#strong[Exercice 3.] Une course réunit 12 chevaux au départ. Combien y
+#strong[Exercice 53.3] Une course réunit 12 chevaux au départ. Combien y
 a-t-il de tiercés possibles : 1. Dans l'ordre exact ? 2. Dans le
 désordre (les trois chevaux qui montent sur le podium sans précision de
 rang) ?
 
-#strong[Exercice 4.] Démontrer par le calcul que
+#strong[Exercice 53.4] Démontrer par le calcul que
 $binom(n, 2) = frac(n\(n - 1\), 2)$. Que représente cette quantité si
 $n$ personnes se serrent toutes la main une fois ?
 
-#strong[Exercice 5.] Développer à l'aide de la formule du binôme : 1.
+#strong[Exercice 53.5] Développer à l'aide de la formule du binôme : 1.
 $\(x + 2\)^4$ 2. $\(2 x - 1\)^3$
 
-#strong[Exercice 6.] Combien d'anagrammes peut-on former avec les
+#strong[Exercice 53.6] Combien d'anagrammes peut-on former avec les
 lettres du mot #strong[MATHS] ? Et avec le mot #strong[LIVRE] ?
 
-#strong[Exercice 7.] Une urne contient 6 boules rouges, 4 vertes et 2
+#strong[Exercice 53.7] Une urne contient 6 boules rouges, 4 vertes et 2
 jaunes. On tire simultanément 3 boules. Combien y a-t-il de tirages
 possibles au total ?
 
 ==== Niveau  (Réflexion et méthodes classiques)
 <niveau-réflexion-et-méthodes-classiques>
-#strong[Exercice 8.] On lance 5 dés équilibrés à 6 faces (comme au
+#strong[Exercice 53.8] On lance 5 dés équilibrés à 6 faces (comme au
 Yahtzee). 1. Combien de lancers différents peut-on obtenir au total ? 2.
 Combien de lancers ne comportent aucun 6 ? 3. En déduire le nombre de
 lancers contenant au moins un 6.
 
-#strong[Exercice 9.] Combien de nombres entiers compris entre 1000 et
+#strong[Exercice 53.9] Combien de nombres entiers compris entre 1000 et
 9999 (inclus) : 1. Ont tous leurs chiffres distincts ? 2. Sont des
 nombres pairs ayant tous leurs chiffres distincts ?
 
-#strong[Exercice 10.] Un club d'échecs compte 14 membres : 8 adultes et
+#strong[Exercice 53.10] Un club d'échecs compte 14 membres : 8 adultes et
 6 jeunes. On doit désigner une équipe de 5 joueurs. 1. De combien de
 façons peut-on composer cette équipe ? 2. Combien d'équipes contiennent
 exactement 3 adultes et 2 jeunes ? 3. Combien d'équipes contiennent au
 moins un adulte et au moins un jeune ?
 
-#strong[Exercice 11.] Anagrammes avec doublons : Combien d'anagrammes
+#strong[Exercice 53.11] Anagrammes avec doublons : Combien d'anagrammes
 distinctes possède le mot #strong[ANANAS] ?
 
-#strong[Exercice 12.] Un polygone convexe possède $n$ sommets
+#strong[Exercice 53.12] Un polygone convexe possède $n$ sommets
 ($n gt.eq 4$). Combien de diagonales possède ce polygone ?
 #emph[\(Indication : une diagonale est un segment reliant deux sommets
 non consécutifs).]
 
-#strong[Exercice 13.] Déterminer le coefficient de $x^5$ dans le
+#strong[Exercice 53.13] Déterminer le coefficient de $x^5$ dans le
 développement de $\(3 x - 2\)^8$.
 
-#strong[Exercice 14.] Démontrer que pour tout entier $n gt.eq 1$ :
+#strong[Exercice 53.14] Démontrer que pour tout entier $n gt.eq 1$ :
 $ sum_(k = 0)^n\(- 1\)^k binom(n, k) = binom(n, 0) - binom(n, 1) + binom(n, 2) - dots.h +\(- 1\)^n binom(n, n) = 0 $
 #emph[\(Indication : appliquer le binôme de Newton à $\(1 - 1\)^n$).]
 
-#strong[Exercice 15.] Le problème des anniversaires. Dans une classe de
+#strong[Exercice 53.15] Le problème des anniversaires. Dans une classe de
 30 élèves, on suppose que chaque élève est né un jour parmi les 365
 jours de l'année (on ignore les années bissextiles), de façon
 indépendante. 1. Combien y a-t-il de répartitions d'anniversaires
@@ -44822,43 +44065,43 @@ anniversaire le même jour.
 
 ==== Niveau  (Approfondissements et défis)
 <niveau-approfondissements-et-défis>
-#strong[Exercice 16.] La formule du comité et du président : 1.
+#strong[Exercice 53.16] La formule du comité et du président : 1.
 Démontrer algébriquement que pour tous entiers $1 lt.eq k lt.eq n$ :
 $ k binom(n, k) = n binom(n - 1, k - 1) $ 2. Donner une interprétation
 combinatoire élégante de cette formule en considérant le choix d'un
 comité de $k$ personnes parmi $n$ avec la désignation d'un président au
 sein du comité.
 
-#strong[Exercice 17.] Calculer la somme :
+#strong[Exercice 53.17] Calculer la somme :
 $ S = sum_(k = 1)^n k binom(n, k) = 1 binom(n, 1) + 2 binom(n, 2) + 3 binom(n, 3) + dots.h + n binom(n, n) $
 #emph[\(Indication : utiliser le résultat de l'exercice 16 ou dériver la
 fonction $f\(x\)=\(1 + x\)^n$).]
 
-#strong[Exercice 18.] Le principe des bâtons et des étoiles (Stars and
+#strong[Exercice 53.18] Le principe des bâtons et des étoiles (Stars and
 Bars). On veut distribuer 10 bonbons identiques à 3 enfants (Alice, Bob
 et Chloé). 1. Combien de distributions possibles y a-t-il si chaque
 enfant peut recevoir 0, 1 ou plusieurs bonbons ? 2. Combien de
 distributions si chaque enfant doit obligatoirement recevoir au moins un
 bonbon ?
 
-#strong[Exercice 19.] Formule de Vandermonde. En développant de deux
+#strong[Exercice 53.19] Formule de Vandermonde. En développant de deux
 façons l'égalité polynomiale
 $\(1 + x\)^(m + n) =\(1 + x\)^m\(1 + x\)^n$, démontrer la relation :
 $ sum_(k = 0)^p binom(m, k) binom(n, p - k) = binom(m + n, p) $ Donner
 également une justification combinatoire de cette formule.
 
-#strong[Exercice 20.] Somme des carrés des coefficients binomiaux. En
+#strong[Exercice 53.20] Somme des carrés des coefficients binomiaux. En
 utilisant la formule de Vandermonde (exercice 19) avec $m = n$ et
 $p = n$, démontrer que : $ sum_(k = 0)^n binom(n, k)^2 = binom(2 n, n) $
 
-#strong[Exercice 21.] Les dérangements (problème des chapeaux). $n$
+#strong[Exercice 53.21] Les dérangements (problème des chapeaux). $n$
 personnes déposent leur manteau au vestiaire. À la sortie, le vestiaire
 distribue au hasard un manteau à chacun. Un dérangement est une
 permutation où personne ne récupère son propre manteau. Montrer par le
 principe d'inclusion-exclusion que le nombre de dérangements $D_n$ vaut
 : $ D_n = n ! sum_(k = 0)^n frac(\(- 1\)^k, k !) $
 
-#strong[Exercice 22.] Les chemins de Dyck et les nombres de Catalan. On
+#strong[Exercice 53.22] Les chemins de Dyck et les nombres de Catalan. On
 considère des chemins sur une grille menant de $\(0\,0\)$ à $\(n\,n\)$
 formés de déplacements $\(+ 1\,0\)$ et $\(0\,+ 1\)$, sans jamais
 franchir la diagonale $y = x$ (c'est-à-dire restant toujours dans le
@@ -44870,42 +44113,42 @@ $ C_n = frac(1, n + 1) binom(2 n, n) $
 
 === Solutions
 <solutions-45>
-#strong[Solution 1.] - $5 ! = 5 times 4 times 3 times 2 times 1 = 120$.
+#strong[Solution 53.1] - $5 ! = 5 times 4 times 3 times 2 times 1 = 120$.
 \- $frac(8 !, 6 !) = 8 times 7 = 56$. -
 $binom(7, 2) = frac(7 times 6, 2 times 1) = 21$. - $binom(9, 9) = 1$. -
 $binom(10, 7) = binom(10, 3) = frac(10 times 9 times 8, 3 times 2 times 1) = 120$.
 
-#strong[Solution 2.] 1. $26^8 = 208 thin 827 thin 064 thin 576$. 2.
+#strong[Solution 53.2] 1. $26^8 = 208 thin 827 thin 064 thin 576$. 2.
 $A_26^8 = 26 times 25 times 24 times 23 times 22 times 21 times 20 times 19 = 62 thin 990 thin 928 thin 000$.
 
-#strong[Solution 3.] 1. Tiercé dans l'ordre :
+#strong[Solution 53.3] 1. Tiercé dans l'ordre :
 $A_12^3 = 12 times 11 times 10 = 1 thin 320$. 2. Tiercé dans le désordre
 : $binom(12, 3) = frac(1 thin 320, 6) = 220$.
 
-#strong[Solution 4.]
+#strong[Solution 53.4]
 $binom(n, 2) = frac(n !, 2 !\(n - 2\)!) = frac(n\(n - 1\)\(n - 2\)!, 2\(n - 2\)!) = frac(n\(n - 1\), 2)$.
 Une poignée de main implique 2 personnes distinctes sans notion d'ordre.
 Entre $n$ personnes, il y a donc $binom(n, 2) = frac(n\(n - 1\), 2)$
 poignées de main échangées.
 
-#strong[Solution 5.] 1.
+#strong[Solution 53.5] 1.
 $\(x + 2\)^4 = binom(4, 0) x^4 + binom(4, 1) x^3\(2\)+ binom(4, 2) x^2\(2^2\)+ binom(4, 3) x\(2^3\)+ binom(4, 4)\(2^4\)= x^4 + 8 x^3 + 24 x^2 + 32 x + 16$.
 \2.
 $\(2 x - 1\)^3 =\(2 x\)^3 - 3\(2 x\)^2\(1\)+ 3\(2 x\)\(1^2\)- 1^3 = 8 x^3 - 12 x^2 + 6 x - 1$.
 
-#strong[Solution 6.] - MATHS : 5 lettres distinctes, donc $5 ! = 120$
+#strong[Solution 53.6] - MATHS : 5 lettres distinctes, donc $5 ! = 120$
 anagrammes. - LIVRE : 5 lettres distinctes, donc $5 ! = 120$ anagrammes.
 
-#strong[Solution 7.] Total des boules : $6 + 4 + 2 = 12$. Tirage
+#strong[Solution 53.7] Total des boules : $6 + 4 + 2 = 12$. Tirage
 simultané de 3 boules :
 $binom(12, 3) = frac(12 times 11 times 10, 6) = 220$ tirages.
 
-#strong[Solution 8.] 1. $6^5 = 7 thin 776$ lancers. 2. Pour chaque dé, 5
+#strong[Solution 53.8] 1. $6^5 = 7 thin 776$ lancers. 2. Pour chaque dé, 5
 valeurs possibles excluant le 6 : $5^5 = 3 thin 125$ lancers. 3. Par
 passage au complémentaire : $7 thin 776 - 3 thin 125 = 4 thin 651$
 lancers comportent au moins un 6.
 
-#strong[Solution 9.] Un nombre à 4 chiffres s'écrit $c_1 c_2 c_3 c_4$
+#strong[Solution 53.9] Un nombre à 4 chiffres s'écrit $c_1 c_2 c_3 c_4$
 avec $c_1 in { 1 . .9 }$ (9 choix) et $c_2\,c_3\,c_4 in { 0 . .9 }$. 1.
 Chiffres distincts :
 
@@ -44932,7 +44175,7 @@ Chiffres distincts :
     $504 + 1 thin 792 = 2 thin 296$ nombres pairs.
 ]
 
-#strong[Solution 10.] 1. Équipes sans contrainte :
+#strong[Solution 53.10] 1. Équipes sans contrainte :
 $binom(14, 5) = frac(14 times 13 times 12 times 11 times 10, 120) = 2 thin 002$.
 \2. 3 adultes et 2 jeunes :
 $binom(8, 3) times binom(6, 2) = 56 times 15 = 840$. 3. Contraire :
@@ -44940,34 +44183,34 @@ $binom(8, 3) times binom(6, 2) = 56 times 15 = 840$. 3. Contraire :
 ($binom(6, 5) = 6$). Total mixtes : $2 thin 002 -\(56 + 6\)= 1 thin 940$
 équipes.
 
-#strong[Solution 11.] Le mot ANANAS a 6 lettres avec 3 A, 2 N et 1 S.
+#strong[Solution 53.11] Le mot ANANAS a 6 lettres avec 3 A, 2 N et 1 S.
 Nombre d'anagrammes =
 $frac(6 !, 3 ! times 2 ! times 1 !) = frac(720, 6 times 2) = 60$.
 
-#strong[Solution 12.] Il y a $binom(n, 2)$ segments reliant deux sommets
+#strong[Solution 53.12] Il y a $binom(n, 2)$ segments reliant deux sommets
 quelconques. Parmi ces segments, $n$ sont les côtés du polygone. Le
 nombre de diagonales est donc :
 $ binom(n, 2) - n = frac(n\(n - 1\), 2) - n = frac(n^2 - 3 n, 2) = frac(n\(n - 3\), 2) . $
 
-#strong[Solution 13.] Dans
+#strong[Solution 53.13] Dans
 $\(3 x - 2\)^8 = sum_(k = 0)^8 binom(8, k)\(3 x\)^k\(- 2\)^(8 - k)$, le
 terme en $x^5$ correspond à $k = 5$ :
 $binom(8, 5)\(3 x\)^5\(- 2\)^3 = 56 times 243 x^5 times\(- 8\)= - 108 thin 864 x^5$.
 Le coefficient est #strong[$- 108 thin 864$].
 
-#strong[Solution 14.] D'après le binôme de Newton,
+#strong[Solution 53.14] D'après le binôme de Newton,
 $\(1 + x\)^n = sum_(k = 0)^n binom(n, k) x^k$. Pour $x = - 1$ et
 $n gt.eq 1$ :
 $ \(1 +\(- 1\)\)^n = 0^n = 0 = sum_(k = 0)^n binom(n, k)\(- 1\)^k $
 
-#strong[Solution 15.] 1. Pour chaque élève, 365 dates possibles :
+#strong[Solution 53.15] 1. Pour chaque élève, 365 dates possibles :
 $365^30$. 2. Si toutes les dates sont distinctes : arrangement
 $A_365^30 = 365 times 364 times dots.h times 336$. 3. Probabilité que
 deux élèves au moins partagent leur anniversaire :
 $ P = 1 - A_365^30 / 365^30 approx 1 - 0\,2937 = 0\,7063 quad\(approx 70\,6 thin % !\) $
 Dès 23 personnes, cette probabilité dépasse déjà 50 % !
 
-#strong[Solution 16.] 1. Algébriquement :
+#strong[Solution 53.16] 1. Algébriquement :
 $ k binom(n, k) = k frac(n !, k !\(n - k\)!) = frac(n !, \(k - 1\)!\(n - k\)!) = n frac(\(n - 1\)!, \(k - 1\)!\(\(n - 1\)-\(k - 1\)\)!) = n binom(n - 1, k - 1) . $
 \2. Interprétation : On veut former un comité de $k$ personnes parmi $n$
 avec un président.
@@ -44981,11 +44224,11 @@ avec un président.
   $n binom(n - 1, k - 1)$. Les deux méthodes dénombrant la même
   situation, l'égalité est démontrée.
 
-#strong[Solution 17.] En utilisant la relation précédente
+#strong[Solution 53.17] En utilisant la relation précédente
 $k binom(n, k) = n binom(n - 1, k - 1)$ :
 $ S = sum_(k = 1)^n n binom(n - 1, k - 1) = n sum_(j = 0)^(n - 1) binom(n - 1, j) = n dot.op 2^(n - 1) . $
 
-#strong[Solution 18.] 1. Distribuer 10 bonbons à 3 enfants équivaut à
+#strong[Solution 53.18] 1. Distribuer 10 bonbons à 3 enfants équivaut à
 placer 10 étoiles et 2 séparateurs (bâtons) parmi $10 + 2 = 12$
 emplacements : Nombre de façons =
 $binom(10 + 3 - 1, 3 - 1) = binom(12, 2) = 66$. 2. Si chaque enfant doit
@@ -44993,7 +44236,7 @@ recevoir au moins un bonbon, on donne d'abord 1 bonbon à chacun (reste 7
 bonbons). On distribue les 7 bonbons restants entre les 3 enfants sans
 contrainte : $binom(7 + 3 - 1, 2) = binom(9, 2) = 36$.
 
-#strong[Solution 19.] Dans le produit
+#strong[Solution 53.19] Dans le produit
 $\(1 + x\)^m\(1 + x\)^n =\(1 + x\)^(m + n)$, le coefficient de $x^p$ à
 droite est $binom(m + n, p)$. À gauche, un terme en $x^p$ provient du
 produit d'un terme $binom(m, k) x^k$ du premier facteur par un terme
@@ -45004,12 +44247,12 @@ combinatoire :] Pour choisir $p$ personnes dans un groupe de $m$ hommes
 et $n$ femmes, on peut choisir $k$ hommes et $p - k$ femmes, pour tout
 $k in { 0\,dots.h\,p }$.
 
-#strong[Solution 20.] Dans la formule de Vandermonde avec $m = n$ et
+#strong[Solution 53.20] Dans la formule de Vandermonde avec $m = n$ et
 $p = n$ : $ sum_(k = 0)^n binom(n, k) binom(n, n - k) = binom(2 n, n) $
 Or par symétrie, $binom(n, n - k) = binom(n, k)$. Donc :
 $ sum_(k = 0)^n binom(n, k)^2 = binom(2 n, n) . $
 
-#strong[Solution 21.] Soit $A_i$ l'ensemble des permutations laissant la
+#strong[Solution 53.21] Soit $A_i$ l'ensemble des permutations laissant la
 $i$-ème personne avec son propre manteau. On cherche
 $D_n = n ! -\|union.big_(i = 1)^n A_i\|$. Par le principe
 d'inclusion-exclusion :
@@ -45022,7 +44265,7 @@ $D_n = n ! - sum_(k = 1)^n\(- 1\)^(k - 1) frac(n !, k !) = n ! sum_(k = 0)^n fra
 #emph[\(Remarque : quand $n arrow.r oo$,
 $D_n\/n ! arrow.r e^(- 1) approx 36\,8 thin %$).]
 
-#strong[Solution 22.] Le nombre total de chemins de $\(0\,0\)$ à
+#strong[Solution 53.22] Le nombre total de chemins de $\(0\,0\)$ à
 $\(n\,n\)$ est $binom(2 n, n)$. Un chemin qui traverse la droite $y = x$
 touche au moins une fois la droite $y = x + 1$. Considérons le premier
 point de contact $P$ avec cette droite. En effectuant une symétrie
@@ -45217,9 +44460,7 @@ de succès] obtenus au bout des $n$ épreuves.
     l'emplacement des 2 succès parmi les 3 épreuves, c'est-à-dire
     $binom(3, 2) = 3$ !
 
-#quote_box[
-#strong[📐 Théorème fondamental --- Loi binomiale
-]
+#principe(title: [📐 Théorème fondamental — Loi binomiale])[
  Soit $X$ la variable
 aléatoire égale au nombre de succès dans un schéma de Bernoulli de $n$
 épreuves indépendantes de paramètre $p$. On dit que $X$ suit la
@@ -45260,10 +44501,7 @@ constante réelle, $V\(a X\)= a^2 V\(X\)$).]
 
 ==== 3.2 Démonstration de l'espérance de la loi binomiale
 <démonstration-de-lespérance-de-la-loi-binomiale>
-#quote_box[
-#strong[✍️ Démonstration exigible --- Espérance de la loi binomiale
-]
-
+#methode(title: [✍️ Démonstration exigible — Espérance de la loi binomiale])[
 Soit $X tilde.op cal(B)\(n\,p\)$. On décompose $X$ sous la forme
 $X = sum_(i = 1)^n X_i$, où les $X_i$ sont $n$ variables de Bernoulli
 identiques de paramètre $p$. Pour chaque $i in { 1\,dots.h\,n }$, on a
@@ -45280,10 +44518,7 @@ tu t'attends en moyenne à gagner $60 times 1 / 6 = 10$ fois.
 
 ==== 3.3 Démonstration de la variance et de l'écart-type
 <démonstration-de-la-variance-et-de-lécart-type>
-#quote_box[
-#strong[✍️ Démonstration exigible --- Variance de la loi binomiale
-]
-
+#methode(title: [✍️ Démonstration exigible — Variance de la loi binomiale])[
 Puisque les épreuves sont mutuellement indépendantes dans un schéma de
 Bernoulli, les variables aléatoires $X_1\,X_2\,dots.h\,X_n$ sont
 indépendantes. Par additivité de la variance pour des variables
@@ -45319,18 +44554,14 @@ beaucoup de sa moyenne ?
 Le mathématicien russe #strong[Andreï Markov] (1856--1922) a établi une
 borne universelle pour les variables positives.
 
-#quote_box[
-#strong[📐 Théorème --- Inégalité de Markov
-]
+#principe(title: [📐 Théorème — Inégalité de Markov])[
  Soit $Y$ une variable
 aléatoire prenant des valeurs positives ou nulles ($Y gt.eq 0$). Pour
 tout réel strictement positif $a > 0$ :
 $ P\(Y gt.eq a\)lt.eq frac(E\(Y\), a) $
 ]
 
-#quote_box[
-#strong[✍️ Démonstration au programme --- Inégalité de Markov
-]
+#methode(title: [✍️ Démonstration au programme — Inégalité de Markov])[
  Soit $Y$
 une variable aléatoire discrète prenant les valeurs positives
 $y_1\,y_2\,dots.h\,y_m gt.eq 0$. L'espérance s'écrit :
@@ -45362,18 +44593,13 @@ collègue russe #strong[Pafnouti Tchebychev] (1867) ont eu l'idée géniale
 d'appliquer l'inégalité de Markov au carré de l'écart à la moyenne :
 $Y =\(X - E\(X\)\)^2$.
 
-#quote_box[
-#strong[📐 Théorème fondamental --- Inégalité de Bienaymé-Tchebychev
-]
-
+#principe(title: [📐 Théorème fondamental — Inégalité de Bienaymé-Tchebychev])[
 Soit $X$ une variable aléatoire admettant une espérance $E\(X\)$ et une
 variance $V\(X\)$. Pour tout réel $epsilon > 0$ (epsilon) :
 $ P\(\|X - E\(X\)\|gt.eq epsilon\)lt.eq frac(V\(X\), epsilon^2) $
 ]
 
-#quote_box[
-#strong[✍️ Démonstration exigible --- Bienaymé-Tchebychev
-]
+#methode(title: [✍️ Démonstration exigible — Bienaymé-Tchebychev])[
  Soit
 $epsilon > 0$. Remarquons l'équivalence fondamentale entre les
 événements :
@@ -45428,9 +44654,7 @@ moyenne s'écrase vers zéro] !
 
 ==== 5.2 L'inégalité de concentration
 <linégalité-de-concentration>
-#quote_box[
-#strong[📐 Théorème --- Inégalité de concentration
-]
+#principe(title: [📐 Théorème — Inégalité de concentration])[
  Pour tout réel
 $epsilon > 0$ :
 $ P\(\|M_n - mu\|gt.eq epsilon\)lt.eq frac(V\(X_1\), n epsilon^2) $
@@ -45444,10 +44668,7 @@ obtient la formule.
 
 ==== 5.3 Démonstration de la Loi Faible des Grands Nombres
 <démonstration-de-la-loi-faible-des-grands-nombres>
-#quote_box[
-#strong[✍️ Démonstration exigible --- Loi faible des grands nombres
-]
-
+#methode(title: [✍️ Démonstration exigible — Loi faible des grands nombres])[
 Soit $epsilon > 0$, fixé aussi petit que l'on veut (par exemple
 $epsilon = 0\,001$). L'inégalité de concentration nous garantit que :
 $ 0 lt.eq P\(\|M_n - mu\|gt.eq epsilon\)lt.eq frac(V\(X_1\), n epsilon^2) $
@@ -45790,52 +45011,52 @@ $E\(S\)= n p = 120 times 0\,03 = 3\,6$.
 <exercices-46>
 ==== Niveau  (Applications directes)
 <niveau-applications-directes-11>
-#strong[Exercice 1.] Soit $X tilde.op cal(B)\(6\;0\,3\)$. 1. Calculer
+#strong[Exercice 54.1] Soit $X tilde.op cal(B)\(6\;0\,3\)$. 1. Calculer
 $E\(X\)$ et $V\(X\)$. 2. Calculer la probabilité exacte $P\(X = 2\)$. 3.
 Exprimer $P\(X gt.eq 1\)$ et calculer sa valeur arrondie à $10^(- 4)$.
 
-#strong[Exercice 2.] On lance 8 fois de suite une pièce équilibrée. Soit
+#strong[Exercice 54.2] On lance 8 fois de suite une pièce équilibrée. Soit
 $X$ le nombre de faces « Pile » obtenues. 1. Quelle est la loi suivie
 par $X$ ? 2. Calculer $P\(X = 4\)$.
 
-#strong[Exercice 3.] Un archer tire 5 flèches sur une cible. À chaque
+#strong[Exercice 54.3] Un archer tire 5 flèches sur une cible. À chaque
 tir, la probabilité d'atteindre le centre est $p = 0\,7$. On suppose les
 tirs indépendants. Calculer la probabilité que l'archer atteigne le
 centre : 1. Exactement 5 fois. 2. Au moins une fois.
 
-#strong[Exercice 4.] Une variable aléatoire positive $Y gt.eq 0$ vérifie
+#strong[Exercice 54.4] Une variable aléatoire positive $Y gt.eq 0$ vérifie
 $E\(Y\)= 12$. À l'aide de l'inégalité de Markov, majorer la probabilité
 $P\(Y gt.eq 60\)$.
 
-#strong[Exercice 5.] Une variable aléatoire $X$ a pour espérance
+#strong[Exercice 54.5] Une variable aléatoire $X$ a pour espérance
 $E\(X\)= 50$ et pour variance $V\(X\)= 8$. À l'aide de l'inégalité de
 Bienaymé-Tchebychev, majorer la probabilité $P\(\|X - 50\|gt.eq 6\)$.
 
-#strong[Exercice 6.] Vrai ou Faux ? Justifier. 1. Si on lance 100 fois
+#strong[Exercice 54.6] Vrai ou Faux ? Justifier. 1. Si on lance 100 fois
 une pièce, la probabilité d'avoir exactement 50 Piles est égale à 0,5.
 \2. Si $X tilde.op cal(B)\(10\;0\,4\)$, alors
 $P\(X lt.eq 9\)= 1 -\(0\,4\)^10$. 3. Pour toute variable aléatoire,
 $P\(\|X - E\(X\)\|gt.eq 3 sigma\)lt.eq 1 / 9$.
 
-#strong[Exercice 7.] Une urne contient 3 boules blanches et 7 boules
+#strong[Exercice 54.7] Une urne contient 3 boules blanches et 7 boules
 noires. On effectue 4 tirages successifs #strong[avec remise]. Soit $X$
 le nombre de boules blanches obtenues. Donner la loi de $X$, son
 espérance et la probabilité d'avoir exactement 1 boule blanche.
 
 ==== Niveau  (Réflexion et calculs de baccalauréat)
 <niveau-réflexion-et-calculs-de-baccalauréat>
-#strong[Exercice 8.] Un traitement médical guérit une maladie dans
+#strong[Exercice 54.8] Un traitement médical guérit une maladie dans
 $80 thin %$ des cas. On applique ce traitement à un groupe de 20 malades
 indépendants. Soit $X$ le nombre de guérisons. 1. Calculer la
 probabilité qu'exactement 16 malades guérissent. 2. Calculer la
 probabilité qu'au moins 18 malades guérissent.
 
-#strong[Exercice 9.] On lance $n$ fois un dé équilibré à 6 faces. On
+#strong[Exercice 54.9] On lance $n$ fois un dé équilibré à 6 faces. On
 note $A$ l'événement : « obtenir au moins un 6 ». Combien de fois au
 minimum faut-il lancer le dé pour que la probabilité d'obtenir au moins
 un 6 soit supérieure ou égale à 0,99 ?
 
-#strong[Exercice 10.] Inégalité de concentration pour un sondage. On
+#strong[Exercice 54.10] Inégalité de concentration pour un sondage. On
 interroge $n$ personnes choisies au hasard pour connaître la proportion
 $p$ d'électeurs favorables à un projet. On note $F_n$ la fréquence
 observée dans l'échantillon. 1. Rappeler pourquoi
@@ -45845,51 +45066,51 @@ d'échantillon $n$ permet de garantir que la fréquence observée ne
 s'écarte pas de plus de 0,05 de la vraie proportion avec un risque
 inférieur à 1 % ?
 
-#strong[Exercice 11.] Mode de la loi binomiale. Soit
+#strong[Exercice 54.11] Mode de la loi binomiale. Soit
 $X tilde.op cal(B)\(n\,p\)$. 1. Montrer que le rapport
 $frac(P\(X = k + 1\), P\(X = k\))$ vaut
 $frac(n - k, k + 1) frac(p, 1 - p)$. 2. En déduire pour quelle(s)
 valeur(s) de $k$ la probabilité $P\(X = k\)$ est maximale.
 
-#strong[Exercice 12.] Un serveur informatique traite 1 000 requêtes par
+#strong[Exercice 54.12] Un serveur informatique traite 1 000 requêtes par
 minute. La durée de traitement de chaque requête est une variable
 aléatoire indépendante d'espérance $mu = 40 upright(" ms")$ et
 d'écart-type $sigma = 15 upright(" ms")$. Majorer la probabilité que la
 durée moyenne des 1 000 requêtes s'écarte de 40 ms de plus de 2 ms.
 
-#strong[Exercice 13.] Deux variables $X_1 tilde.op cal(B)\(n_1\,p\)$ et
+#strong[Exercice 54.13] Deux variables $X_1 tilde.op cal(B)\(n_1\,p\)$ et
 $X_2 tilde.op cal(B)\(n_2\,p\)$ sont indépendantes. Démontrer
 algébriquement, en utilisant la formule de Vandermonde du Chapitre 53,
 que $X_1 + X_2 tilde.op cal(B)\(n_1 + n_2\,p\)$.
 
-#strong[Exercice 14.] Loi géométrique tronquée (temps du premier
+#strong[Exercice 54.14] Loi géométrique tronquée (temps du premier
 succès). On répète de manière indépendante une épreuve de Bernoulli de
 paramètre $p$. Soit $T$ le rang du premier succès. 1. Pour tout entier
 $k gt.eq 1$, déterminer $P\(T = k\)$. 2. Calculer $P\(T > k\)$ de
 manière directe et combinatoire. 3. Vérifier que
 $sum_(k = 1)^(+ oo) P\(T = k\)= 1$.
 
-#strong[Exercice 15.] Fluctuation de l'écart absolu. Soit
+#strong[Exercice 54.15] Fluctuation de l'écart absolu. Soit
 $X tilde.op cal(B)\(n\;0\,5\)$. Démontrer que
 $P\(\|X - 0\,5 n\|gt.eq a sqrt(n)\)lt.eq frac(1, 4 a^2)$. En déduire
 l'ordre de grandeur des fluctuations autour de la moyenne.
 
 ==== Niveau  (Approfondissements et concours)
 <niveau-approfondissements-et-concours>
-#strong[Exercice 16.] Démonstration directe de l'espérance sans
+#strong[Exercice 54.16] Démonstration directe de l'espérance sans
 décomposition. Retrouver la formule $E\(X\)= n p$ pour
 $X tilde.op cal(B)\(n\,p\)$ par le calcul direct de la somme :
 $ E\(X\)= sum_(k = 0)^n k binom(n, k) p^k\(1 - p\)^(n - k) $
 #emph[\(Indication : utiliser la formule du comité
 $k binom(n, k) = n binom(n - 1, k - 1)$ vue au Chapitre 53).]
 
-#strong[Exercice 17.] Démonstration directe de la variance par calcul de
+#strong[Exercice 54.17] Démonstration directe de la variance par calcul de
 somme. 1. Calculer de même la quantité
 $E\(X\(X - 1\)\)= sum_(k = 0)^n k\(k - 1\)binom(n, k) p^k\(1 - p\)^(n - k)$.
 \2. En déduire la valeur de $E\(X^2\)$, puis retrouver
 $V\(X\)= n p\(1 - p\)$.
 
-#strong[Exercice 18.] Règle de succession de Laplace. On a tiré $n$
+#strong[Exercice 54.18] Règle de succession de Laplace. On a tiré $n$
 boules d'une urne avec remise, et obtenu $k$ succès. Quelle est la
 probabilité que le prochain tirage soit un succès si la composition
 initiale de l'urne était totalement inconnue ? Montrer que l'estimation
@@ -45897,14 +45118,14 @@ bayésienne uniforme mène à la formule de Laplace :
 $ P\(S_(n + 1)\)= frac(k + 1, n + 2) $ Comparer avec l'estimation naïve
 $k / n$ pour $k = 0$ et $k = n$.
 
-#strong[Exercice 19.] Inégalité de Cantelli (Bienaymé-Tchebychev
+#strong[Exercice 54.19] Inégalité de Cantelli (Bienaymé-Tchebychev
 unilatérale). Soit $X$ une variable aléatoire d'espérance 0 et de
 variance $sigma^2$. Démontrer que pour tout réel $a > 0$ :
 $ P\(X gt.eq a\)lt.eq frac(sigma^2, sigma^2 + a^2) $ #emph[\(Indication
 : pour tout $t > 0$, considérer la variable $\(X + t\)^2$ et optimiser
 le choix de $t$).]
 
-#strong[Exercice 20.] L'aiguille de Buffon et Monte-Carlo. Un plan est
+#strong[Exercice 54.20] L'aiguille de Buffon et Monte-Carlo. Un plan est
 strié de lignes parallèles distantes d'une largeur $D$. On y jette au
 hasard une aiguille de longueur $L lt.eq D$. 1. Sachant que la
 probabilité d'intersection est $p = frac(2 L, pi D)$, expliquer comment
@@ -45913,7 +45134,7 @@ réalise $n$ lancers indépendants, déterminer à l'aide de l'inégalité de
 concentration le nombre de lancers nécessaires pour obtenir une
 précision de 0,01 sur $pi$ avec un niveau de confiance garanti.
 
-#strong[Exercice 21.] Paradoxe du vote et théorème du jury de Condorcet.
+#strong[Exercice 54.21] Paradoxe du vote et théorème du jury de Condorcet.
 Un jury de $n$ jurés indépendants ($n$ impair, $n = 2 m + 1$) doit
 trancher par vote majoritaire entre coupable et non coupable. Chaque
 juré a une probabilité individuelle $p > 0\,5$ de prendre la bonne
@@ -45922,7 +45143,7 @@ prenne la bonne décision. 2. Démontrer que $P_n > p$ et que
 $lim_(n arrow.r + oo) P_n = 1$. Interpréter ce résultat pour la
 démocratie et les jurys d'assises.
 
-#strong[Exercice 22.] Convergence presque sûre et loi forte des grands
+#strong[Exercice 54.22] Convergence presque sûre et loi forte des grands
 nombres (Aperçu). Expliquer la différence conceptuelle entre la loi
 faible des grands nombres (qui affirme la convergence en probabilité
 $lim P\(\|M_n - mu\|gt.eq epsilon\)= 0$) et la loi forte d'Émile Borel
@@ -45933,27 +45154,27 @@ vers $mu$ avec probabilité 1).
 
 === Solutions
 <solutions-46>
-#strong[Solution 1.] 1. $E\(X\)= n p = 6 times 0\,3 = 1\,8$.
+#strong[Solution 54.1] 1. $E\(X\)= n p = 6 times 0\,3 = 1\,8$.
 $V\(X\)= n p\(1 - p\)= 6 times 0\,3 times 0\,7 = 1\,26$. 2.
 $P\(X = 2\)= binom(6, 2)\(0\,3\)^2\(0\,7\)^4 = 15 times 0\,09 times 0\,2401 = 0\,3241$.
 \3.
 $P\(X gt.eq 1\)= 1 - P\(X = 0\)= 1 - binom(6, 0)\(0\,3\)^0\(0\,7\)^6 = 1 -\(0\,7\)^6 = 1 - 0\,117649 = 0\,8824$.
 
-#strong[Solution 2.] 1. Répétition de 8 épreuves de Bernoulli
+#strong[Solution 54.2] 1. Répétition de 8 épreuves de Bernoulli
 indépendantes avec $p = 0\,5$. Donc $X tilde.op cal(B)\(8\;0\,5\)$. 2.
 $P\(X = 4\)= binom(8, 4)\(0\,5\)^4\(0\,5\)^4 = 70 times\(0\,5\)^8 = 70 / 256 = 35 / 128 approx 0\,2734$.
 
-#strong[Solution 3.] $X tilde.op cal(B)\(5\;0\,7\)$. 1.
+#strong[Solution 54.3] $X tilde.op cal(B)\(5\;0\,7\)$. 1.
 $P\(X = 5\)=\(0\,7\)^5 = 0\,16807$. 2.
 $P\(X gt.eq 1\)= 1 - P\(X = 0\)= 1 -\(0\,3\)^5 = 1 - 0\,00243 = 0\,99757$.
 
-#strong[Solution 4.] Par l'inégalité de Markov :
+#strong[Solution 54.4] Par l'inégalité de Markov :
 $P\(Y gt.eq 60\)lt.eq frac(E\(Y\), 60) = 12 / 60 = 1 / 5 = 0\,20$.
 
-#strong[Solution 5.] Par l'inégalité de Bienaymé-Tchebychev :
+#strong[Solution 54.5] Par l'inégalité de Bienaymé-Tchebychev :
 $P\(\|X - 50\|gt.eq 6\)lt.eq frac(V\(X\), 6^2) = 8 / 36 = 2 / 9 approx 0\,222$.
 
-#strong[Solution 6.] 1. #strong[Faux.] Pour $n = 100$ et $p = 0\,5$,
+#strong[Solution 54.6] 1. #strong[Faux.] Pour $n = 100$ et $p = 0\,5$,
 $P\(X = 50\)= binom(100, 50)\(0\,5\)^100 approx 0\,0796$ (environ 8 %).
 La valeur moyenne est 50, mais la probabilité d'y tomber pile est
 dispersée sur les valeurs voisines. 2. #strong[Faux.]
@@ -45962,12 +45183,12 @@ Donc l'affirmation est #strong[Vraie] ! 3. #strong[Vrai.] Pour
 $epsilon = 3 sigma$,
 $P\(\|X - E\(X\)\|gt.eq 3 sigma\)lt.eq frac(sigma^2, \(3 sigma\)^2) = 1 / 9$.
 
-#strong[Solution 7.] Tirage avec remise : $p = 3 / 10 = 0\,3$. $n = 4$
+#strong[Solution 54.7] Tirage avec remise : $p = 3 / 10 = 0\,3$. $n = 4$
 épreuves indépendantes. $X tilde.op cal(B)\(4\;0\,3\)$.
 $E\(X\)= 4 times 0\,3 = 1\,2$.
 $P\(X = 1\)= binom(4, 1)\(0\,3\)^1\(0\,7\)^3 = 4 times 0\,3 times 0\,343 = 0\,4116$.
 
-#strong[Solution 8.] $X tilde.op cal(B)\(20\;0\,8\)$. 1.
+#strong[Solution 54.8] $X tilde.op cal(B)\(20\;0\,8\)$. 1.
 $P\(X = 16\)= binom(20, 16)\(0\,8\)^16\(0\,2\)^4 = 4 thin 845 times\(0\,8\)^16 times\(0\,2\)^4 approx 0\,2182$.
 \2. $P\(X gt.eq 18\)= P\(X = 18\)+ P\(X = 19\)+ P\(X = 20\)$.
 
@@ -45978,7 +45199,7 @@ $P\(X = 16\)= binom(20, 16)\(0\,8\)^16\(0\,2\)^4 = 4 thin 845 times\(0\,8\)^16 t
 - $P\(X = 20\)=\(0\,8\)^20 approx 0\,0115$ Total :
   $P\(X gt.eq 18\)approx 0\,1369 + 0\,0576 + 0\,0115 = 0\,2060 quad\(approx 20\,6 thin %\)$.
 
-#strong[Solution 9.] La probabilité de n'obtenir aucun 6 en $n$ lancers
+#strong[Solution 54.9] La probabilité de n'obtenir aucun 6 en $n$ lancers
 est $\(5\/6\)^n$. On veut
 $P\(A\)= 1 -\(5\/6\)^n gt.eq 0\,99 arrow.l.r.double\(5\/6\)^n lt.eq 0\,01$.
 En appliquant le logarithme népérien ($ln\(5\/6\)< 0$, l'inégalité
@@ -45986,7 +45207,7 @@ change de sens) :
 $n ln\(5\/6\)lt.eq ln\(0\,01\)arrow.l.r.double n gt.eq frac(ln\(0\,01\), ln\(5\/6\)) approx frac(- 4\,60517, - 0\,18232) approx 25\,26$.
 Il faut au minimum #strong[26 lancers].
 
-#strong[Solution 10.] 1. Pour la fonction $f\(p\)= p\(1 - p\)= p - p^2$,
+#strong[Solution 54.10] 1. Pour la fonction $f\(p\)= p\(1 - p\)= p - p^2$,
 sa dérivée $f'\(p\)= 1 - 2 p$ s'annule en $p = 0\,5$, où elle atteint
 son maximum $f\(0\,5\)= 0\,25 = 1 / 4$. 2. Par l'inégalité de
 concentration avec $epsilon = 0\,05$ :
@@ -45995,7 +45216,7 @@ $P\(\|F_n - p\|gt.eq 0\,05\)lt.eq frac(V\(X_1\), n\(0\,05\)^2) lt.eq frac(0\,25,
 $100 / n lt.eq 0\,01 arrow.l.r.double n gt.eq frac(100, 0\,01) = 10 thin 000$.
 Un échantillon de 10 000 personnes garantit ce résultat.
 
-#strong[Solution 11.] 1.
+#strong[Solution 54.11] 1.
 $frac(P\(X = k + 1\), P\(X = k\)) = frac(frac(n !, \(k + 1\)!\(n - k - 1\)!) p^(k + 1)\(1 - p\)^(n - k - 1), frac(n !, k !\(n - k\)!) p^k\(1 - p\)^(n - k)) = frac(n - k, k + 1) frac(p, 1 - p)$.
 \2. Le rapport est $gt.eq 1$ tant que
 $\(n - k\)p gt.eq\(k + 1\)\(1 - p\)arrow.l.r.double n p - k p gt.eq k - k p + 1 - p arrow.l.r.double n p + p - 1 gt.eq k arrow.l.r.double k lt.eq\(n + 1\)p - 1$.
@@ -46003,14 +45224,14 @@ La suite des probabilités est donc d'abord croissante, puis
 décroissante. Le mode (maximum) est atteint pour l'entier
 $k = floor.l\(n + 1\)p floor.r$.
 
-#strong[Solution 12.] Pour $n = 1000$ requêtes, la durée moyenne $M_n$ a
+#strong[Solution 54.12] Pour $n = 1000$ requêtes, la durée moyenne $M_n$ a
 pour espérance $mu = 40$ et pour variance
 $V\(M_n\)= sigma^2 / n = 15^2 / 1000 = 225 / 1000 = 0\,225$. Par
 Bienaymé-Tchebychev avec $epsilon = 2$ :
 $P\(\|M_n - 40\|gt.eq 2\)lt.eq frac(V\(M_n\), 2^2) = frac(0\,225, 4) = 0\,05625$
 (moins de $5\,6 thin %$).
 
-#strong[Solution 13.] Pour tout $k in { 0\,dots.h\,n_1 + n_2 }$,
+#strong[Solution 54.13] Pour tout $k in { 0\,dots.h\,n_1 + n_2 }$,
 l'événement $\(X_1 + X_2 = k\)$ est l'union disjointe des événements
 $\(X_1 = j upright(" et ") X_2 = k - j\)$ pour $j in { 0\,dots.h\,k }$.
 Par indépendance :
@@ -46019,25 +45240,25 @@ D'après la formule de Vandermonde, la somme vaut $binom(n_1 + n_2, k)$.
 On reconnaît immédiatement la formule d'une loi
 $cal(B)\(n_1 + n_2\,p\)$.
 
-#strong[Solution 14.] 1. $T = k$ signifie $k - 1$ échecs consécutifs
+#strong[Solution 54.14] 1. $T = k$ signifie $k - 1$ échecs consécutifs
 suivis d'un succès : $P\(T = k\)=\(1 - p\)^(k - 1) p$. 2. $T > k$
 signifie que les $k$ premières épreuves ont toutes été des échecs :
 $P\(T > k\)=\(1 - p\)^k$. 3.
 $sum_(k = 1)^(+ oo) p\(1 - p\)^(k - 1) = p sum_(j = 0)^(+ oo)\(1 - p\)^j = p frac(1, 1 -\(1 - p\)) = p / p = 1$.
 
-#strong[Solution 15.] Pour $X tilde.op cal(B)\(n\;0\,5\)$,
+#strong[Solution 54.15] Pour $X tilde.op cal(B)\(n\;0\,5\)$,
 $E\(X\)= 0\,5 n$ et $V\(X\)= 0\,25 n$. Appliquons Bienaymé-Tchebychev
 avec $epsilon = a sqrt(n)$ :
 $P\(\|X - 0\,5 n\|gt.eq a sqrt(n)\)lt.eq frac(V\(X\), \(a sqrt(n)\)^2) = frac(0\,25 n, a^2 n) = frac(1, 4 a^2)$.
 L'écart typique entre le nombre de succès et sa moyenne est donc de
 l'ordre de grandeur de $sqrt(n)$.
 
-#strong[Solution 16.]
+#strong[Solution 54.16]
 $E\(X\)= sum_(k = 1)^n k binom(n, k) p^k\(1 - p\)^(n - k)$. Or
 $k binom(n, k) = n binom(n - 1, k - 1)$.
 $ E\(X\)= sum_(k = 1)^n n binom(n - 1, k - 1) p dot.op p^(k - 1)\(1 - p\)^(\(n - 1\)-\(k - 1\)) = n p sum_(j = 0)^(n - 1) binom(n - 1, j) p^j\(1 - p\)^(n - 1 - j) = n p\(p +\(1 - p\)\)^(n - 1) = n p . $
 
-#strong[Solution 17.] 1.
+#strong[Solution 54.17] 1.
 $k\(k - 1\)binom(n, k) = k\(k - 1\)frac(n !, k !\(n - k\)!) = frac(n !, \(k - 2\)!\(n - k\)!) = n\(n - 1\)binom(n - 2, k - 2)$.
 En sommant pour $k gt.eq 2$ :
 $E\(X\(X - 1\)\)= n\(n - 1\)p^2 sum_(j = 0)^(n - 2) binom(n - 2, j) p^j\(1 - p\)^(n - 2 - j) = n\(n - 1\)p^2$.
@@ -46045,7 +45266,7 @@ $E\(X\(X - 1\)\)= n\(n - 1\)p^2 sum_(j = 0)^(n - 2) binom(n - 2, j) p^j\(1 - p\)
 $E\(X^2\)= E\(X\(X - 1\)\)+ E\(X\)= n\(n - 1\)p^2 + n p = n^2 p^2 - n p^2 + n p$.
 $V\(X\)= E\(X^2\)-\(E\(X\)\)^2 =\(n^2 p^2 - n p^2 + n p\)-\(n p\)^2 = n p\(1 - p\)$.
 
-#strong[Solution 18.] Sous une loi a priori uniforme sur le paramètre
+#strong[Solution 54.18] Sous une loi a priori uniforme sur le paramètre
 inconnu $p in\[0\,1\]$, la probabilité conditionnelle s'écrit à l'aide
 de la fonction Bêta :
 $P\(S_(n + 1) divides k upright(" succès sur ") n\)= frac(integral_0^1 p dot.op p^k\(1 - p\)^(n - k) d p, integral_0^1 p^k\(1 - p\)^(n - k) d p) = frac(B\(k + 2\,n - k + 1\), B\(k + 1\,n - k + 1\)) = frac(k + 1, n + 2)$.
@@ -46053,7 +45274,7 @@ Pour $k = 0$ (aucun succès sur 10 essais), l'estimation naïve donne 0,
 alors que Laplace donne $1 / 12 approx 8\,3 thin %$, évitant l'arrogance
 d'affirmer l'impossibilité d'un événement jamais encore observé.
 
-#strong[Solution 19.] Pour tout $t > 0$, l'événement $X gt.eq a$
+#strong[Solution 54.19] Pour tout $t > 0$, l'événement $X gt.eq a$
 équivaut à $X + t gt.eq a + t$, ce qui implique
 $\(X + t\)^2 gt.eq\(a + t\)^2$. Par Markov sur $\(X + t\)^2 gt.eq 0$ :
 $P\(X gt.eq a\)lt.eq frac(E\(\(X + t\)^2\), \(a + t\)^2) = frac(E\(X^2\)+ 2 t E\(X\)+ t^2, \(a + t\)^2) = frac(sigma^2 + t^2, \(a + t\)^2)$.
@@ -46061,7 +45282,7 @@ En minimisant cette fonction par rapport à $t > 0$, la dérivée s'annule
 pour $t = sigma^2 / a$. En substituant cette valeur optimale, on obtient
 exactement $P\(X gt.eq a\)lt.eq frac(sigma^2, sigma^2 + a^2)$.
 
-#strong[Solution 20.] 1. Si on lance $n$ aiguilles et qu'on compte $X$
+#strong[Solution 54.20] 1. Si on lance $n$ aiguilles et qu'on compte $X$
 intersections, la fréquence $F_n = X / n$ converge vers
 $p = frac(2 L, pi D)$. Une estimation de $pi$ est donc
 $hat(pi)_n = frac(2 L, D dot.op F_n)$. 2. Par l'inégalité de
@@ -46070,7 +45291,7 @@ fréquence par $frac(1, 4 n)$. Pour obtenir une précision donnée sur $p$,
 on résout $frac(1, 4 n epsilon^2) lt.eq alpha$, ce qui donne un nombre
 fini de lancers $n$ garantissant le résultat.
 
-#strong[Solution 21.] 1. La majorité est atteinte dès que
+#strong[Solution 54.21] 1. La majorité est atteinte dès que
 $k gt.eq m + 1 = frac(n + 1, 2)$. Donc
 $P_n = sum_(k = m + 1)^n binom(n, k) p^k\(1 - p\)^(n - k)$. 2. D'après
 la loi des grands nombres, lorsque $n arrow.r + oo$, la fréquence de
@@ -46080,7 +45301,7 @@ mathématique de la délibération collective : un grand groupe d'individus
 faillibles mais moyennement éclairés ($p > 0\,5$) prend une décision
 quasi parfaite à la majorité.
 
-#strong[Solution 22.] La loi faible indique que pour une taille
+#strong[Solution 54.22] La loi faible indique que pour une taille
 d'échantillon $n$ fixée arbitrairement grande, la probabilité d'un écart
 ponctuel est infime. La loi forte garantit un résultat infiniment plus
 puissant : avec une probabilité égale à 1, la suite infinie entière des
@@ -46289,9 +45510,7 @@ piège classique : la partie imaginaire est le réel $b$, et non pas $i b$
 ($bb(R) subset bb(C)$). - Si $a = 0$, $z = i b$ est appelé un
 #strong[imaginaire pur] (ensemble noté $i bb(R)$).
 
-#quote_box[
-#strong[📐 Théorème --- Unicité de la forme algébrique
-]
+#principe(title: [📐 Théorème — Unicité de la forme algébrique])[
  Soient deux
 nombres complexes $z = a + i b$ et $z' = a' + i b'$
 ($a\,b\,a'\,b' in bb(R)$). $ z = z' arrow.l.r.double {a = a'\
@@ -46313,9 +45532,7 @@ $ macron(z) = a - i b $
 Géométriquement, le point image de $macron(z)$ est le symétrique du
 point image de $z$ par rapport à l'axe réel horizontal.
 
-#quote_box[
-#strong[📐 Propriétés fondamentales du conjugué
-]
+#principe(title: [📐 Propriétés fondamentales du conjugué])[
  Pour tous complexes
 $z\,z'$ et tout entier relatif $n$ : 1.
 $overline(z + z') = macron(z) + macron(z)'$ 2.
@@ -46351,9 +45568,7 @@ orthonormé $\(O\;arrow(u)\,arrow(v)\)$, d'après le théorème de
 Pythagore, $\|z\|$ est exactement la #strong[distance $O M$] de
 l'origine au point $M$ !
 
-#quote_box[
-#strong[📐 Propriétés du module
-]
+#principe(title: [📐 Propriétés du module])[
  1. $\|z\|gt.eq 0$, et
 $\|z\|= 0 arrow.l.r.double z = 0$. 2. $\|- z\|=\|macron(z)\|=\|z\|$. 3.
 $\|z times z'\|=\|z\|times\|z'\|$. 4.
@@ -46446,9 +45661,7 @@ majestueusement : $ upright(bold(e^(i pi) + 1 = 0)) $ Cette seule
 La notation exponentielle transforme la trigonométrie en simple calcul
 de puissances :
 
-#quote_box[
-#strong[📐 Théorème --- Règles de calcul exponentiel
-]
+#principe(title: [📐 Théorème — Règles de calcul exponentiel])[
  Pour tous réels
 $theta\,theta'$ : 1. Produit :
 $e^(i theta) times e^(i theta') = e^(i\(theta + theta'\))$
@@ -46461,9 +45674,7 @@ Conjugué : $overline(e^(i theta)) = e^(- i theta)$ 4. Inverse :
 $1 / e^(i theta) = e^(- i theta)$
 ]
 
-#quote_box[
-#strong[📐 Théorème --- Formule de Moivre
-]
+#principe(title: [📐 Théorème — Formule de Moivre])[
  Pour tout réel $theta$ et
 tout entier relatif $n in bb(Z)$ :
 $ \(e^(i theta)\)^n = e^(i n theta) arrow.l.r.double\(cos theta + i sin theta\)^n = cos\(n theta\)+ i sin\(n theta\) $
@@ -46483,11 +45694,7 @@ $ cos theta = frac(e^(i theta) + e^(- i theta), 2) #h(2em) upright("et") #h(2em)
 Considérons l'équation $a z^2 + b z + c = 0$, où $a\,b\,c in bb(R)$ avec
 $a eq.not 0$. On calcule le discriminant habituel $Delta = b^2 - 4 a c$.
 
-#quote_box[
-#strong[📐 Théorème --- Résolution sur $bb(R)$ et $bb(C)$
-]
-
-
+#principe(title: [📐 Théorème — Résolution sur $bb(R)$ et $bb(C)$])[
 - Si $Delta > 0$ : deux solutions réelles distinctes :
   $ z_1 = frac(- b - sqrt(Delta), 2 a) quad upright("et") quad z_2 = frac(- b + sqrt(Delta), 2 a) $
 
@@ -46518,10 +45725,7 @@ $frac(- B plus.minus delta, 2 A)$, il faut déterminer un nombre complexe
 $delta = x + i y$ tel que : $ delta^2 = Z $ Un tel $delta$ est appelé
 une #strong[racine carrée complexe] de $Z$.
 
-#quote_box[
-#strong[🧭 Méthode --- Détermination des racines carrées de $X + i Y$
-]
-
+#methode(title: [🧭 Méthode — Détermination des racines carrées de $X + i Y$])[
 Posons $delta = x + i y$ avec $x\,y in bb(R)$. On écrit le système à
 trois équations : 1. Égalité des carrés :
 $delta^2 =\(x^2 - y^2\)+ 2 i x y = X + i Y$
@@ -46558,9 +45762,7 @@ des modules et des arguments :
 - $n theta equiv 0 med\(mod med 2 pi\) arrow.r.double.long n theta = 2 k pi arrow.r.double.long theta = frac(2 k pi, n)$
   pour $k in bb(Z)$.
 
-#quote_box[
-#strong[📐 Théorème --- Groupe des racines $n$-ièmes de l'unité
-]
+#principe(title: [📐 Théorème — Groupe des racines $n$-ièmes de l'unité])[
  Il
 existe exactement $n$ racines complexes distinctes de l'équation
 $z^n = 1$, notées $bb(U)_n$ :
@@ -46577,9 +45779,7 @@ $ bb(U)_n = { 1\,omega\,omega^2\,dots.h\,omega^(n - 1) } $
   ]
 )
 
-#quote_box[
-#strong[📐 Propriétés géométriques remarquables
-]
+#principe(title: [📐 Propriétés géométriques remarquables])[
  1. #strong[Polygone
 régulier :] Les images des racines $n$-ièmes de l'unité forment les
 sommets d'un #strong[polygone régulier à $n$ côtés] inscrit dans le
@@ -46610,9 +45810,7 @@ Dans le plan muni d'un repère orthonormé $\(O\;arrow(u)\,arrow(v)\)$ :
 - La #strong[distance] $A B$ est le module :
   $ A B = parallel accent(A B, ⃗) parallel =\|z_B - z_A\| $
 
-#quote_box[
-#strong[📐 Théorème --- Angle orienté de deux vecteurs
-]
+#principe(title: [📐 Théorème — Angle orienté de deux vecteurs])[
  Soient quatre
 points $A\,B\,C\,D$ avec $A eq.not B$ et $C eq.not D$. L'angle orienté
 $\(accent(A B, ⃗)\,accent(C D, ⃗)\)$ a pour mesure :
@@ -46861,59 +46059,59 @@ d'angle $pi / 2$] (quart de tour direct).
 <exercices-47>
 ==== Niveau  (Applications directes)
 <niveau-applications-directes-12>
-#strong[Exercice 1.] Mettre sous forme algébrique $a + i b$ : 1.
+#strong[Exercice 55.1] Mettre sous forme algébrique $a + i b$ : 1.
 $z_1 =\(2 + 3 i\)\(4 - i\)$ 2. $z_2 =\(3 - 2 i\)^2$ 3.
 $z_3 = frac(1, 2 + i)$ 4. $z_4 = frac(3 + 5 i, 1 - 2 i)$
 
-#strong[Exercice 2.] Déterminer le module et l'argument principal de :
+#strong[Exercice 55.2] Déterminer le module et l'argument principal de :
 $z_A = - 3$, $z_B = 2 i$, $z_C = 1 + i$, $z_D = - sqrt(3) + i$.
 
-#strong[Exercice 3.] Résoudre dans $bb(C)$ les équations : 1.
+#strong[Exercice 55.3] Résoudre dans $bb(C)$ les équations : 1.
 $z^2 + 9 = 0$ 2. $z^2 - 2 z + 5 = 0$ 3. $2 z^2 + 2 z + 1 = 0$
 
-#strong[Exercice 4.] Calculer $i^n$ pour
+#strong[Exercice 55.4] Calculer $i^n$ pour
 $n in { 2024\,2025\,2026\,2027 }$.
 
-#strong[Exercice 5.] Linéariser $cos^2\(x\)$ et $sin^2\(x\)$ en
+#strong[Exercice 55.5] Linéariser $cos^2\(x\)$ et $sin^2\(x\)$ en
 utilisant les formules d'Euler.
 
-#strong[Exercice 6.] Donner l'affixe du vecteur $accent(A B, ⃗)$ et la
+#strong[Exercice 55.6] Donner l'affixe du vecteur $accent(A B, ⃗)$ et la
 distance $A B$ pour $A\(3 - 2 i\)$ et $B\(- 1 + i\)$.
 
-#strong[Exercice 7.] Identifier la transformation géométrique associée à
+#strong[Exercice 55.7] Identifier la transformation géométrique associée à
 : 1. $z' = z + 4 - 3 i$ 2. $z' = - z$ 3. $z' = i z$
 
 ==== Niveau  (Réflexion et géométrie experte)
 <niveau-réflexion-et-géométrie-experte>
-#strong[Exercice 8.] Résoudre dans $bb(C)$ l'équation
+#strong[Exercice 55.8] Résoudre dans $bb(C)$ l'équation
 $2 z + 3 macron(z) = 5 + 2 i$.
 
-#strong[Exercice 9.] Déterminer l'ensemble des points $M$ d'affixe $z$
+#strong[Exercice 55.9] Déterminer l'ensemble des points $M$ d'affixe $z$
 tels que : 1. $\|z - 3 + 2 i\|= 5$ 2. $\|z - 2\|=\|z + 4 i\|$ 3.
 $frac(z - 1, z + 1) in i bb(R)$
 
-#strong[Exercice 10.] Racines carrées de nombres complexes : Calculer
+#strong[Exercice 55.10] Racines carrées de nombres complexes : Calculer
 les racines carrées de $Z_1 = - 7 + 24 i$ et $Z_2 = 8 - 6 i$.
 
-#strong[Exercice 11.] Résoudre dans $bb(C)$ l'équation :
+#strong[Exercice 55.11] Résoudre dans $bb(C)$ l'équation :
 $ z^2 -\(5 - i\)z +\(8 - i\)= 0 $
 
-#strong[Exercice 12.] Formule de Moivre et trigonométrie : 1. En
+#strong[Exercice 55.12] Formule de Moivre et trigonométrie : 1. En
 développant $\(cos x + i sin x\)^3$ de deux manières différentes,
 exprimer $cos\(3 x\)$ en fonction de $cos\(x\)$, et $sin\(3 x\)$ en
 fonction de $sin\(x\)$. 2. Linéariser l'expression $cos^3\(x\)$.
 
-#strong[Exercice 13.] Le nombre $j$ (racine cubique de l'unité). On pose
+#strong[Exercice 55.13] Le nombre $j$ (racine cubique de l'unité). On pose
 $j = e^(i frac(2 pi, 3)) = - 1 / 2 + i sqrt(3) / 2$. 1. Vérifier que
 $j^2 = macron(j) = e^(i frac(4 pi, 3))$ et que $j^3 = 1$. 2. Démontrer
 que $1 + j + j^2 = 0$. 3. Calculer $\(1 + j\)^2025$.
 
-#strong[Exercice 14.] Triangle équilatéral. Montrer que trois points
+#strong[Exercice 55.14] Triangle équilatéral. Montrer que trois points
 $A\,B\,C$ d'affixes $a\,b\,c$ forment un triangle équilatéral direct si
 et seulement si :
 $ a + b j + c j^2 = 0 quad upright("où ") j = e^(i frac(2 pi, 3)) $
 
-#strong[Exercice 15.] Alignement et cocyclicité (birapport). On définit
+#strong[Exercice 55.15] Alignement et cocyclicité (birapport). On définit
 le birapport de quatre points $A\,B\,C\,D$ distincts par :
 $ \[a\,b\,c\,d\]= frac(\(c - a\)\(d - b\), \(c - b\)\(d - a\)) $ Montrer
 que les points $A\,B\,C\,D$ sont cocycliques (sur un même cercle) ou
@@ -46921,37 +46119,37 @@ alignés si et seulement si leur birapport est un nombre réel.
 
 ==== Niveau  (Approfondissements et olympiades)
 <niveau-approfondissements-et-olympiades>
-#strong[Exercice 16.] Théorème de Napoléon. Sur les côtés d'un triangle
+#strong[Exercice 55.16] Théorème de Napoléon. Sur les côtés d'un triangle
 quelconque $A B C$ orienté dans le sens direct, on construit
 extérieurement trois triangles équilatéraux de centres de gravité
 $P\,Q\,R$. Démontrer, en utilisant les affixes complexes et le nombre
 $j$, que le triangle $P Q R$ formé par les trois centres est
 #strong[toujours un triangle équilatéral] !
 
-#strong[Exercice 17.] Équation du troisième degré et méthode de Cardan.
+#strong[Exercice 55.17] Équation du troisième degré et méthode de Cardan.
 Soit l'équation $z^3 - 6 z - 9 = 0$. En posant $z = u + v$ avec
 $3 u v = 6$, déterminer $u^3$ et $v^3$ comme solutions d'une équation du
 second degré, puis en déduire la solution réelle et les deux solutions
 complexes.
 
-#strong[Exercice 18.] Polynômes trigonométriques et somme de Dirichlet.
+#strong[Exercice 55.18] Polynômes trigonométriques et somme de Dirichlet.
 Pour $x equiv.not 0 med\(mod med 2 pi\)$, calculer la somme :
 $ D_n\(x\)= 1 + 2 sum_(k = 1)^n cos\(k x\)= 1 + 2 cos\(x\)+ 2 cos\(2 x\)+ dots.h + 2 cos\(n x\) $
 Montrer que $D_n\(x\)= frac(sin (\( n + 1 / 2 \) x), sin\(x / 2\))$.
 
-#strong[Exercice 19.] Racines $n$-ièmes et factorisation de polynômes.
+#strong[Exercice 55.19] Racines $n$-ièmes et factorisation de polynômes.
 \1. Factoriser le polynôme $X^n - 1$ dans $bb(C)\[X\]$ à l'aide des
 racines de l'unité. 2. En évaluant cette factorisation en un point
 judicieux, démontrer la célèbre formule :
 $ product_(k = 1)^(n - 1) sin (frac(k pi, n)) = n / 2^(n - 1) $
 
-#strong[Exercice 20.] Théorème fondamental de l'algèbre
+#strong[Exercice 55.20] Théorème fondamental de l'algèbre
 (d'Alembert-Gauss, esquisse). Expliquer pourquoi tout polynôme à
 coefficients complexes non constant admet au moins une racine dans
 $bb(C)$, et pourquoi cela implique que $bb(C)$ est un corps «
 algébriquement clos » (contrairement à $bb(R)$).
 
-#strong[Exercice 21.] Droite et cercle d'Euler. Soit un triangle $A B C$
+#strong[Exercice 55.21] Droite et cercle d'Euler. Soit un triangle $A B C$
 inscrit dans un cercle de centre $O$ choisi pour origine
 ($\|a\|=\|b\|=\|c\|= R$). 1. Montrer que le point $H$ d'affixe
 $h = a + b + c$ est l'orthocentre du triangle. 2. Montrer que le centre
@@ -46959,7 +46157,7 @@ de gravité $G$ a pour affixe $g = frac(a + b + c, 3)$. 3. En déduire que
 $O\,G\,H$ sont alignés (droite d'Euler) et que
 $accent(O H, ⃗) = 3 accent(O G, ⃗)$.
 
-#strong[Exercice 22.] Transformation de Moebius. On considère la
+#strong[Exercice 55.22] Transformation de Moebius. On considère la
 transformation homographique $f\(z\)= frac(a z + b, c z + d)$ avec
 $a d - b c eq.not 0$. Montrer qu'une telle transformation transforme
 tout cercle ou droite en un cercle ou une droite.
@@ -46968,47 +46166,47 @@ tout cercle ou droite en un cercle ou une droite.
 
 === Solutions
 <solutions-47>
-#strong[Solution 1.] 1.
+#strong[Solution 55.1] 1.
 $z_1 = 8 - 2 i + 12 i - 3 i^2 = 8 + 10 i + 3 = 11 + 10 i$. 2.
 $z_2 = 9 - 12 i + 4 i^2 = 5 - 12 i$. 3.
 $z_3 = frac(2 - i, 2^2 + 1^2) = 2 / 5 - 1 / 5 i$. 4.
 $z_4 = frac(\(3 + 5 i\)\(1 + 2 i\), 1^2 +\(- 2\)^2) = frac(3 + 6 i + 5 i - 10, 5) = frac(- 7 + 11 i, 5) = - 7 / 5 + 11 / 5 i$.
 
-#strong[Solution 2.] - $z_A = - 3$ : $\|z_A\|= 3$, $arg\(z_A\)= pi$. -
+#strong[Solution 55.2] - $z_A = - 3$ : $\|z_A\|= 3$, $arg\(z_A\)= pi$. -
 $z_B = 2 i$ : $\|z_B\|= 2$, $arg\(z_B\)= pi / 2$. - $z_C = 1 + i$ :
 $\|z_C\|= sqrt(2)$, $arg\(z_C\)= pi / 4$. - $z_D = - sqrt(3) + i$ :
 $\|z_D\|= sqrt(3 + 1) = 2$,
 $cos theta = - sqrt(3) / 2\,sin theta = 1 / 2 arrow.r.double.long arg\(z_D\)= frac(5 pi, 6)$.
 
-#strong[Solution 3.] 1.
+#strong[Solution 55.3] 1.
 $z^2 = - 9 =\(3 i\)^2 arrow.l.r.double z in { - 3 i\,3 i }$. 2.
 $Delta = 4 - 20 = - 16 =\(4 i\)^2 arrow.r.double.long z = frac(2 plus.minus 4 i, 2) = 1 plus.minus 2 i$.
 \3.
 $Delta = 4 - 8 = - 4 =\(2 i\)^2 arrow.r.double.long z = frac(- 2 plus.minus 2 i, 4) = - 1 / 2 plus.minus 1 / 2 i$.
 
-#strong[Solution 4.] Comme $i^4 = 1$ :
+#strong[Solution 55.4] Comme $i^4 = 1$ :
 
 - $2024 = 4 times 506 arrow.r.double.long i^2024 = 1$.
 - $i^2025 = i$, $i^2026 = - 1$, $i^2027 = - i$.
 
-#strong[Solution 5.]
+#strong[Solution 55.5]
 $cos^2\(x\)= (frac(e^(i x) + e^(- i x), 2))^2 = frac(e^(2 i x) + 2 + e^(- 2 i x), 4) = frac(cos\(2 x\)+ 1, 2)$.
 $sin^2\(x\)= (frac(e^(i x) - e^(- i x), 2 i))^2 = frac(e^(2 i x) - 2 + e^(- 2 i x), - 4) = frac(1 - cos\(2 x\), 2)$.
 
-#strong[Solution 6.]
+#strong[Solution 55.6]
 $z_(accent(A B, ⃗)) = z_B - z_A =\(- 1 + i\)-\(3 - 2 i\)= - 4 + 3 i$.
 $A B =\|- 4 + 3 i\|= sqrt(\(- 4\)^2 + 3^2) = sqrt(16 + 9) = 5$.
 
-#strong[Solution 7.] 1. Translation de vecteur $arrow(u)\(4 - 3 i\)$. 2.
+#strong[Solution 55.7] 1. Translation de vecteur $arrow(u)\(4 - 3 i\)$. 2.
 Symétrie centrale par rapport à l'origine $O$ (rotation d'angle $pi$).
 \3. Rotation de centre $O$ et d'angle $pi / 2$.
 
-#strong[Solution 8.] Posons $z = x + i y$. Alors $macron(z) = x - i y$.
+#strong[Solution 55.8] Posons $z = x + i y$. Alors $macron(z) = x - i y$.
 $2\(x + i y\)+ 3\(x - i y\)= 5 x - i y$. On identifie avec $5 + 2 i$ :
 $5 x = 5 arrow.r.double.long x = 1$, et
 $- y = 2 arrow.r.double.long y = - 2$. D'où $z = 1 - 2 i$.
 
-#strong[Solution 9.] 1. Soit $A\(3 - 2 i\)$ : $A M = 5$. C'est le cercle
+#strong[Solution 55.9] 1. Soit $A\(3 - 2 i\)$ : $A M = 5$. C'est le cercle
 de centre $A\(3\,- 2\)$ et de rayon 5. 2. Soient $A\(2\)$ et
 $B\(- 4 i\)$ : $A M = B M$. C'est la médiatrice du segment $\[A B\]$. 3.
 L'argument de $frac(z - 1, z + 1)$ vaut
@@ -47016,7 +46214,7 @@ $plus.minus pi / 2 med\(mod med pi\)$, ce qui équivaut à
 $\(accent(M B, ⃗)\,accent(M A, ⃗)\)= pi / 2$. C'est le cercle de diamètre
 $\[A B\]$ (où $A\(1\)$ et $B\(- 1\)$), privé des points $A$ et $B$.
 
-#strong[Solution 10.] - Pour $Z_1 = - 7 + 24 i$ : module
+#strong[Solution 55.10] - Pour $Z_1 = - 7 + 24 i$ : module
 $sqrt(49 + 576) = 25$. $x^2 - y^2 = - 7$,
 $x^2 + y^2 = 25 arrow.r.double.long 2 x^2 = 18 arrow.r.double.long x = plus.minus 3$
 et $y = plus.minus 4$. Comme $2 x y > 0$, les racines sont
@@ -47027,7 +46225,7 @@ $plus.minus\(3 + 4 i\)$.
   $2 y^2 = 2 arrow.r.double.long y = plus.minus 1$. Comme
   $2 x y = - 6 < 0$, les racines sont $plus.minus\(3 - i\)$.
 
-#strong[Solution 11.]
+#strong[Solution 55.11]
 $Delta =\(5 - i\)^2 - 4\(8 - i\)=\(24 - 10 i\)-\(32 - 4 i\)= - 8 - 6 i$.
 Racines carrées de $- 8 - 6 i$ : module $sqrt(64 + 36) = 10$.
 $2 x^2 = 10 - 8 = 2 arrow.r.double.long x = plus.minus 1$,
@@ -47035,33 +46233,33 @@ $2 y^2 = 18 arrow.r.double.long y = plus.minus 3$. Avec $x y < 0$,
 $delta = 1 - 3 i$. $z_1 = frac(\(5 - i\)+\(1 - 3 i\), 2) = 3 - 2 i$, et
 $z_2 = frac(\(5 - i\)-\(1 - 3 i\), 2) = 2 + i$.
 
-#strong[Solution 12.] 1.
+#strong[Solution 55.12] 1.
 $\(cos x + i sin x\)^3 = cos^3 x + 3 i cos^2 x sin x - 3 cos x sin^2 x - i sin^3 x$.
 Par Moivre, cela vaut $cos\(3 x\)+ i sin\(3 x\)$. Identification :
 $cos\(3 x\)= cos^3 x - 3 cos x\(1 - cos^2 x\)= 4 cos^3 x - 3 cos x$.
 $sin\(3 x\)= 3\(1 - sin^2 x\)sin x - sin^3 x = 3 sin x - 4 sin^3 x$. 2.
 $cos^3 x = frac(cos\(3 x\)+ 3 cos x, 4)$.
 
-#strong[Solution 13.] 1.
+#strong[Solution 55.13] 1.
 $j^2 = e^(i frac(4 pi, 3)) = e^(- i frac(2 pi, 3)) = macron(j)$, et
 $j^3 = e^(i 2 pi) = 1$. 2. $1 + j + j^2 = frac(1 - j^3, 1 - j) = 0$. 3.
 $1 + j = - j^2$. Donc
 $\(1 + j\)^2025 =\(- j^2\)^2025 = - j^4050 = -\(j^3\)^1350 = - 1$.
 
-#strong[Solution 14.] Le triangle $A B C$ est équilatéral direct si et
+#strong[Solution 55.14] Le triangle $A B C$ est équilatéral direct si et
 seulement si $C$ est l'image de $B$ par la rotation de centre $A$ et
 d'angle $pi\/3$, ce qui équivaut après réécriture algébrique vectorielle
 à $\(c - a\)= - j^2\(b - a\)$, d'où $a\(1 + j^2\)+ b j^2 + c = 0$. Comme
 $1 + j^2 = - j$, en multipliant par $j^2$, on obtient
 $a + b j + c j^2 = 0$.
 
-#strong[Solution 15.] L'argument du birapport est
+#strong[Solution 55.15] L'argument du birapport est
 $arg (frac(c - a, c - b)) - arg (frac(d - a, d - b)) =\(accent(B C, ⃗)\,accent(A C, ⃗)\)-\(accent(B D, ⃗)\,accent(A D, ⃗)\)$.
 Ce birapport est réel si et seulement si cet angle vaut 0 modulo $pi$,
 ce qui est la condition exacte du théorème de l'angle inscrit pour que
 $A\,B\,C\,D$ soient cocycliques ou alignés.
 
-#strong[Solution 16.] Soient $P\,Q\,R$ les centres de gravité des
+#strong[Solution 55.16] Soient $P\,Q\,R$ les centres de gravité des
 triangles construits sur $\[B\,C\]\,\[C\,A\]\,\[A\,B\]$. Les sommets
 extérieurs vérifient des relations de rotation d'angle $pi\/3$. En
 exprimant les affixes $p\,q\,r$ en fonction de $a\,b\,c$ et de $j$, on
@@ -47069,7 +46267,7 @@ calcule la quantité $p + q j + r j^2$ et l'on constate qu'elle s'annule
 identiquement grâce à la relation $1 + j + j^2 = 0$. D'après l'exercice
 14, $P Q R$ est équilatéral.
 
-#strong[Solution 17.] En posant $z = u + v$,
+#strong[Solution 55.17] En posant $z = u + v$,
 $\(u + v\)^3 - 6\(u + v\)- 9 = u^3 + v^3 + 3 u v\(u + v\)- 6\(u + v\)- 9 = 0$.
 En imposant
 $3 u v = 6 arrow.r.double.long u v = 2 arrow.r.double.long u^3 v^3 = 8$,
@@ -47082,12 +46280,12 @@ $z^3 - 6 z - 9 =\(z - 3\)\(z^2 + 3 z + 3\)$, le discriminant du second
 facteur est $Delta = 9 - 12 = - 3$, donnant les deux racines complexes :
 $z_(1\,2) = frac(- 3 plus.minus i sqrt(3), 2)$.
 
-#strong[Solution 18.]
+#strong[Solution 55.18]
 $D_n\(x\)= sum_(k = - n)^n e^(i k x) = e^(- i n x) sum_(j = 0)^(2 n) e^(i j x) = e^(- i n x) frac(1 - e^(i\(2 n + 1\)x), 1 - e^(i x))$.
 En factorisant par l'angle moitié au numérateur et au dénominateur :
 $D_n\(x\)= e^(- i n x) frac(e^(i frac(2 n + 1, 2) x)\(- 2 i sin\(frac(2 n + 1, 2) x\)\), e^(i x / 2)\(- 2 i sin\(x / 2\)\)) = frac(sin (\( n + 1 / 2 \) x), sin\(x / 2\))$.
 
-#strong[Solution 19.] 1. Les racines de $X^n - 1$ sont les
+#strong[Solution 55.19] 1. Les racines de $X^n - 1$ sont les
 $e^(i frac(2 k pi, n))$. Donc
 $X^n - 1 = product_(k = 0)^(n - 1)\(X - e^(i frac(2 k pi, n))\)=\(X - 1\)product_(k = 1)^(n - 1)\(X - e^(i frac(2 k pi, n))\)$.
 \2. En divisant par $X - 1$ :
@@ -47098,14 +46296,14 @@ Le produit des modules donne
 $n = 2^(n - 1) product_(k = 1)^(n - 1) sin (frac(k pi, n))$, d'où le
 résultat.
 
-#strong[Solution 20.] Le corps $bb(C)$ est dit algébriquement clos car
+#strong[Solution 55.20] Le corps $bb(C)$ est dit algébriquement clos car
 tout polynôme non constant de degré $n$ y admet exactement $n$ racines
 (comptées avec multiplicité). Ce résultat, pressenti par d'Alembert et
 prouvé rigoureusement par Gauss en 1799, démontre la clôture parfaite
 des nombres complexes : nul besoin d'inventer des « super-complexes »
 pour résoudre les équations de degrés supérieurs !
 
-#strong[Solution 21.] 1. Pour vérifier que $H$ est l'orthocentre,
+#strong[Solution 55.21] 1. Pour vérifier que $H$ est l'orthocentre,
 calculons $accent(A H, ⃗) dot.op accent(B C, ⃗)$. L'affixe de
 $accent(A H, ⃗)$ est $h - a = b + c$, et celle de $accent(B C, ⃗)$ est
 $c - b$. Le quotient
@@ -47118,7 +46316,7 @@ $g = frac(a + b + c, 3)$. 3. On a $h = 3 g$, ce qui signifie
 vectoriellement $accent(O H, ⃗) = 3 accent(O G, ⃗)$. Les points $O\,G\,H$
 sont donc toujours alignés sur la droite d'Euler.
 
-#strong[Solution 22.] Les transformations de Moebius s'obtiennent par
+#strong[Solution 55.22] Les transformations de Moebius s'obtiennent par
 composition de translations, de similitudes et de l'inversion
 $z mapsto 1 / z$. L'inversion échangeant les droites et les cercles (vus
 comme des cercles généralisés de la sphère de Riemann), la famille des
@@ -47239,9 +46437,7 @@ $- 3 divides 15$ car $15 =\(- 5\)times\(- 3\)$. - $5 divides 0$ car
 $0 = 0 times 5$ (tout entier non nul divise 0). - 0 ne divise aucun
 nombre non nul, car $0 times k = 0 eq.not b$.
 
-#quote_box[
-#strong[📐 Propriétés fondamentales de la divisibilité
-]
+#principe(title: [📐 Propriétés fondamentales de la divisibilité])[
  1.
 #strong[Réflexivité :] Pour tout $a in bb(Z)$, $a divides a$. 2.
 #strong[Transitivité :] Si $a divides b$ et $b divides c$, alors
@@ -47257,10 +46453,7 @@ $\(u k_1 + v k_2\)in bb(Z)$, $a$ divise bien $u b + v c$.
 
 ==== 2.2 Le théorème de la division euclidienne
 <le-théorème-de-la-division-euclidienne>
-#quote_box[
-#strong[📐 Théorème fondamental --- Division euclidienne dans $bb(Z)$
-]
-
+#principe(title: [📐 Théorème fondamental — Division euclidienne dans $bb(Z)$])[
 Soient $a in bb(Z)$ et $b in bb(Z)^(*)$ (avec $b > 0$). Il existe un
 #strong[unique] couple d'entiers relatifs $\(q\,r\)in bb(Z) times bb(N)$
 tel que : $ a = b q + r quad upright("avec") quad 0 lt.eq r < b $
@@ -47318,10 +46511,7 @@ ${ 0\,1\,2\,dots.h\,n - 1 }$.
 
 ==== 3.2 La compatibilité magique avec les opérations
 <la-compatibilité-magique-avec-les-opérations>
-#quote_box[
-#strong[📐 Théorème fondamental --- Propriétés opératoires des
-congruences
-]
+#principe(title: [📐 Théorème fondamental — Propriétés opératoires des congruences])[
  Si $a equiv b med\(mod med n\)$ et
 $c equiv d med\(mod med n\)$, alors : 1. #strong[Addition :]
 $a + c equiv b + d med\(mod med n\)$ 2. #strong[Soustraction :]
@@ -47385,9 +46575,7 @@ $ 126 times\(- 3\)+ 48 times 8 = 6 $
 
 ==== 4.3 Le Théorème de Bézout
 <le-théorème-de-bézout>
-#quote_box[
-#strong[📐 Théorème fondamental de Bézout (1767)
-]
+#principe(title: [📐 Théorème fondamental de Bézout (1767)])[
  Deux entiers relatifs
 non nuls $a$ et $b$ sont #strong[premiers entre eux]
 ($upright("PGCD")\(a\,b\)= 1$) si et seulement s'il existe deux entiers
@@ -47406,9 +46594,7 @@ Une #strong[équation diophantienne] (en l'honneur de Diophante
 d'Alexandrie) est une équation dont on cherche les solutions $\(x\,y\)$
 uniquement dans l'ensemble des entiers relatifs $bb(Z)^2$.
 
-#quote_box[
-#strong[🧭 Méthode --- Résolution de $a x + b y = c$
-]
+#methode(title: [🧭 Méthode — Résolution de $a x + b y = c$])[
  1.
 #strong[Condition d'existence :] Poser $d = upright("PGCD")\(a\,b\)$.
 L'équation admet des solutions entières si et seulement si #strong[$d$
@@ -47429,9 +46615,7 @@ $k in bb(Z)$.
 
 === 5. Le Théorème de Gauss
 <le-théorème-de-gauss>
-#quote_box[
-#strong[📐 Théorème fondamental de Gauss
-]
+#principe(title: [📐 Théorème fondamental de Gauss])[
  Soient $a\,b\,c in bb(Z)$. Si
 #strong[$a$ divise le produit $b c$] et si
 #strong[$upright("PGCD")\(a\,b\)= 1$], alors :
@@ -47439,9 +46623,7 @@ $k in bb(Z)$.
 $ upright(bold(a upright(" divise ") c)) $
 ]
 
-#quote_box[
-#strong[✍️ Démonstration exigible --- Théorème de Gauss
-]
+#methode(title: [✍️ Démonstration exigible — Théorème de Gauss])[
  Supposons que
 $a divides b c$ et que $upright("PGCD")\(a\,b\)= 1$. Puisque $a$ et $b$
 sont premiers entre eux, d'après le théorème de Bézout, il existe deux
@@ -47470,9 +46652,7 @@ $p$ divise nécessairement au moins l'un des facteurs $x_i$.
 <le-petit-théorème-de-fermat-et-lexponentiation-rapide>
 ==== 6.1 Le Petit Théorème de Fermat (1640)
 <le-petit-théorème-de-fermat-1640>
-#quote_box[
-#strong[📐 Théorème --- Petit Théorème de Fermat
-]
+#principe(title: [📐 Théorème — Petit Théorème de Fermat])[
  Soit $p$ un nombre
 premier. 1. Pour tout entier relatif $a$ non divisible par $p$
 ($upright("PGCD")\(a\,p\)= 1$) :
@@ -47481,9 +46661,7 @@ entier relatif $a in bb(Z)$ (sans aucune restriction) :
 $ upright(bold(a^p equiv a med\(mod med p\))) $
 ]
 
-#quote_box[
-#strong[✍️ Démonstration classique par les restes
-]
+#methode(title: [✍️ Démonstration classique par les restes])[
  Soit $p$ premier et
 $a$ un entier non divisible par $p$. Considérons les $p - 1$ multiples
 successifs : $a\,2 a\,3 a\,dots.h\,\(p - 1\)a$. Montrons que leurs
@@ -47559,10 +46737,7 @@ Voici le joyau absolu de la sécurité informatique moderne :
   ]
 )
 
-#quote_box[
-#strong[✍️ Démonstration mathématique --- Pourquoi le RSA déchiffre
-toujours exactement
-]
+#methode(title: [✍️ Démonstration mathématique — Pourquoi le RSA déchiffre toujours exactement])[
  Par construction, $d$ est l'inverse de $e$ modulo
 $phi\(n\)=\(p - 1\)\(q - 1\)$. Il existe donc un entier $k in bb(Z)$ tel
 que : $ e dot.op d = 1 + k\(p - 1\)\(q - 1\) $ Bob calcule
@@ -47832,105 +47007,105 @@ divise la somme de ses chiffres décimaux.
 <exercices-48>
 ==== Niveau  (Applications directes)
 <niveau-applications-directes-13>
-#strong[Exercice 1.] Effectuer la division euclidienne dans $bb(Z)$ : 1.
+#strong[Exercice 56.1] Effectuer la division euclidienne dans $bb(Z)$ : 1.
 De $157$ par $11$. 2. De $- 75$ par $8$. 3. De $- 140$ par $12$.
 
-#strong[Exercice 2.] Vrai ou Faux ? Justifier. 1. Si
+#strong[Exercice 56.2] Vrai ou Faux ? Justifier. 1. Si
 $a equiv 3 med\(mod med 5\)$, alors $a^2 equiv 4 med\(mod med 5\)$. 2.
 Si $a equiv 2 med\(mod med 6\)$, alors $a$ est un nombre pair. 3. Si
 $3 x equiv 3 y med\(mod med 7\)$, alors $x equiv y med\(mod med 7\)$.
 
-#strong[Exercice 3.] Calculer le $upright("PGCD")\(323\,187\)$ par
+#strong[Exercice 56.3] Calculer le $upright("PGCD")\(323\,187\)$ par
 l'algorithme d'Euclide. Les nombres sont-ils premiers entre eux ?
 
-#strong[Exercice 4.] Trouver un couple d'entiers relatifs $\(u\,v\)$
+#strong[Exercice 56.4] Trouver un couple d'entiers relatifs $\(u\,v\)$
 solution de l'identité de Bézout : $ 17 u + 11 v = 1 $
 
-#strong[Exercice 5.] Calculer le reste de la division euclidienne de
+#strong[Exercice 56.5] Calculer le reste de la division euclidienne de
 $2^100$ par 7.
 
-#strong[Exercice 6.] Une pendule à 12 heures indique 8 heures. Quelle
+#strong[Exercice 56.6] Une pendule à 12 heures indique 8 heures. Quelle
 heure indiquera-t-elle dans 1 500 heures ?
 
-#strong[Exercice 7.] Résoudre dans $bb(Z)$ l'équation
+#strong[Exercice 56.7] Résoudre dans $bb(Z)$ l'équation
 $3 x equiv 1 med\(mod med 10\)$.
 
 ==== Niveau  (Réflexion et équations de baccalauréat)
 <niveau-réflexion-et-équations-de-baccalauréat>
-#strong[Exercice 8.] Résoudre dans $bb(Z)^2$ l'équation diophantienne :
+#strong[Exercice 56.8] Résoudre dans $bb(Z)^2$ l'équation diophantienne :
 $ 13 x - 7 y = 1 $ En déduire toutes les solutions vérifiant
 $0 lt.eq x lt.eq 50$.
 
-#strong[Exercice 9.] Chiffrement affine. On utilise le chiffrement
+#strong[Exercice 56.9] Chiffrement affine. On utilise le chiffrement
 $y equiv 5 x + 7 med\(mod med 26\)$. 1. Vérifier que ce codage est
 réversible. 2. Coder le mot #strong[BAC]. 3. Trouver la fonction de
 déchiffrement et décoder la lettre #strong[R] (rang 17).
 
-#strong[Exercice 10.] Déterminer le chiffre des unités de $7^2025$ dans
+#strong[Exercice 56.10] Déterminer le chiffre des unités de $7^2025$ dans
 son écriture décimale classique. #emph[\(Indication : chercher le reste
 modulo 10).]
 
-#strong[Exercice 11.] Démontrer que pour tout entier naturel $n$,
+#strong[Exercice 56.11] Démontrer que pour tout entier naturel $n$,
 l'entier $A_n = 3^(2 n + 1) + 2^(n + 2)$ est divisible par 7.
 
-#strong[Exercice 12.] Soit $n in bb(N)$. Démontrer que la fraction
+#strong[Exercice 56.12] Soit $n in bb(N)$. Démontrer que la fraction
 $frac(2 n + 1, 3 n + 1)$ est irréductible pour tout entier $n$.
 
-#strong[Exercice 13.] Les voleurs de noix de coco. Trois naufragés
+#strong[Exercice 56.13] Les voleurs de noix de coco. Trois naufragés
 ramassent un tas de noix de coco. Pendant la nuit, le premier se
 réveille, partage le tas en 3 parts égales, constate qu'il reste 1 noix
 qu'il donne à un singe, et cache sa part. Le deuxième et le troisième
 font successivement de même. Traduire ce problème par un système de
 congruences et trouver le nombre minimal de noix initiales.
 
-#strong[Exercice 14.] Théorème des restes chinois (Cas particulier).
+#strong[Exercice 56.14] Théorème des restes chinois (Cas particulier).
 Résoudre dans $bb(Z)$ le système de congruences :
 $ {x equiv 2 med\(mod med 5\)\
 x equiv 3 med\(mod med 7\) $
 
-#strong[Exercice 15.] Nombres de Mersenne et Fermat. Soit $p$ un nombre
+#strong[Exercice 56.15] Nombres de Mersenne et Fermat. Soit $p$ un nombre
 premier impair. On considère le nombre de Mersenne $M_p = 2^p - 1$. Soit
 $q$ un diviseur premier de $M_p$. Démontrer que
 $q equiv 1 med\(mod med 2 p\)$.
 
 ==== Niveau  (Approfondissements et concours)
 <niveau-approfondissements-et-concours-1>
-#strong[Exercice 16.] Démonstration du Théorème de Wilson. Démontrer
+#strong[Exercice 56.16] Démonstration du Théorème de Wilson. Démontrer
 qu'un entier $p gt.eq 2$ est premier si et seulement si :
 $ \(p - 1\)! equiv - 1 med\(mod med p\) $ #emph[\(Indication : regrouper
 chaque élément de ${ 2\,dots.h\,p - 2 }$ avec son inverse modulaire
 distinct).]
 
-#strong[Exercice 17.] L'indicatrice d'Euler $phi\(n\)$. 1. Pour $p$
+#strong[Exercice 56.17] L'indicatrice d'Euler $phi\(n\)$. 1. Pour $p$
 premier, justifier que $phi\(p\)= p - 1$ et
 $phi\(p^k\)= p^k - p^(k - 1)$. 2. Démontrer le théorème d'Euler
 généralisant Fermat : si $upright("PGCD")\(a\,n\)= 1$, alors
 $a^(phi\(n\)) equiv 1 med\(mod med n\)$.
 
-#strong[Exercice 18.] Le test de primalité de Miller-Rabin. Expliquer le
+#strong[Exercice 56.18] Le test de primalité de Miller-Rabin. Expliquer le
 principe du test probabiliste de Miller-Rabin fondé sur le théorème de
 Fermat et les racines carrées de 1 modulo $p$. Pourquoi permet-il de
 tester des nombres de 500 chiffres en une fraction de seconde ?
 
-#strong[Exercice 19.] Attaque de Wiener sur le chiffrement RSA. Montrer
+#strong[Exercice 56.19] Attaque de Wiener sur le chiffrement RSA. Montrer
 que si l'exposant secret $d$ est choisi trop petit
 ($d < 1 / 3 n^(1\/4)$), la clé privée peut être retrouvée rapidement à
 partir de la clé publique $\(n\,e\)$ en utilisant le développement en
 fractions continues de $e / n$.
 
-#strong[Exercice 20.] L'ordre d'un élément dans $bb(Z)\/p bb(Z)$. Soit
+#strong[Exercice 56.20] L'ordre d'un élément dans $bb(Z)\/p bb(Z)$. Soit
 $p$ un nombre premier et $a$ un entier non divisible par $p$. On appelle
 ordre de $a$ modulo $p$ le plus petit entier non nul $k$ tel que
 $a^k equiv 1 med\(mod med p\)$. Démontrer que $k$ divise obligatoirement
 $p - 1$.
 
-#strong[Exercice 21.] Résidus quadratiques et symbole de Legendre. Soit
+#strong[Exercice 56.21] Résidus quadratiques et symbole de Legendre. Soit
 $p$ un nombre premier impair. Un entier $a$ non multiple de $p$ est un
 carré modulo $p$ s'il existe $x$ tel que $x^2 equiv a med\(mod med p\)$.
 Démontrer le critère d'Euler :
 $ a^(frac(p - 1, 2)) equiv cases(delim: "{", + 1 med\(mod med p\) & upright("si ") a upright(" est un carré"), - 1 med\(mod med p\) & upright("si ") a upright(" n’est pas un carré")) $
 
-#strong[Exercice 22.] Le problème du logarithme discret et l'échange de
+#strong[Exercice 56.22] Le problème du logarithme discret et l'échange de
 clés de Diffie-Hellman. Expliquer le protocole d'échange de clés de
 Diffie-Hellman fondé sur la fonction puissance $g^a med\(mod med p\)$.
 Pourquoi est-il simple de calculer $g^a med\(mod med p\)$ mais presque
@@ -47940,43 +47115,43 @@ impossible de retrouver $a$ connaissant $g^a$ ?
 
 === Solutions
 <solutions-48>
-#strong[Solution 1.] 1. $157 = 11 times 14 + 3$ ($q = 14\,r = 3$). 2.
+#strong[Solution 56.1] 1. $157 = 11 times 14 + 3$ ($q = 14\,r = 3$). 2.
 $- 75 = 8 times\(- 10\)+ 5$ ($q = - 10\,r = 5$). 3.
 $- 140 = 12 times\(- 12\)+ 4$ ($q = - 12\,r = 4$).
 
-#strong[Solution 2.] 1. #strong[Vrai.]
+#strong[Solution 56.2] 1. #strong[Vrai.]
 $a equiv 3 med\(mod med 5\) arrow.r.double.long a^2 equiv 3^2 = 9 equiv 4 med\(mod med 5\)$.
 \2. #strong[Vrai.] $a = 6 k + 2 = 2\(3 k + 1\)$, qui est divisible par
 \2. 3. #strong[Vrai.] Comme $upright("PGCD")\(3\,7\)= 1$, on peut
 diviser par 3 par le théorème de Gauss.
 
-#strong[Solution 3.] $323 = 187 times 1 + 136$.
+#strong[Solution 56.3] $323 = 187 times 1 + 136$.
 $187 = 136 times 1 + 51$. $136 = 51 times 2 + 34$.
 $51 = 34 times 1 + 17$. $34 = 17 times 2 + 0$.
 $upright("PGCD")\(323\,187\)= 17 eq.not 1$. Ils ne sont pas premiers
 entre eux.
 
-#strong[Solution 4.]
+#strong[Solution 56.4]
 $17 = 11 times 1 + 6 arrow.r.double.long 6 = 17 - 11$.
 $11 = 6 times 1 + 5 arrow.r.double.long 5 = 11 - 6 = 11 -\(17 - 11\)= 2 times 11 - 17$.
 $6 = 5 times 1 + 1 arrow.r.double.long 1 = 6 - 5 =\(17 - 11\)-\(2 times 11 - 17\)= 2 times 17 - 3 times 11$.
 Un couple solution est $\(u\,v\)=\(2\,- 3\)$.
 
-#strong[Solution 5.] Modulo 7, $2^3 = 8 equiv 1 med\(mod med 7\)$.
+#strong[Solution 56.5] Modulo 7, $2^3 = 8 equiv 1 med\(mod med 7\)$.
 Division de 100 par 3 : $100 = 3 times 33 + 1$.
 $2^100 =\(2^3\)^33 times 2^1 equiv 1^33 times 2 = 2 med\(mod med 7\)$.
 Le reste est 2.
 
-#strong[Solution 6.] On cherche $8 + 1500 med\(mod med 12\)$.
+#strong[Solution 56.6] On cherche $8 + 1500 med\(mod med 12\)$.
 $1500 = 12 times 125 + 0 equiv 0 med\(mod med 12\)$. La pendule
 indiquera donc de nouveau #strong[8 heures] pile.
 
-#strong[Solution 7.] On cherche l'inverse de 3 modulo 10. Comme
+#strong[Solution 56.7] On cherche l'inverse de 3 modulo 10. Comme
 $3 times 7 = 21 equiv 1 med\(mod med 10\)$, l'inverse est 7.
 $3 x equiv 1 arrow.r.double.long 7 times 3 x equiv 7 times 1 arrow.r.double.long x equiv 7 med\(mod med 10\)$.
 $S = { 10 k + 7 divides k in bb(Z) }$.
 
-#strong[Solution 8.]
+#strong[Solution 56.8]
 $13\(1\)- 7\(2\)= 13 - 14 = - 1 arrow.r.double.long 13\(- 1\)- 7\(- 2\)= 1$.
 Solution particulière : $\(- 1\,- 2\)$. $13\(x + 1\)= 7\(y + 2\)$. Comme
 $upright("PGCD")\(13\,7\)= 1$, par Gauss :
@@ -47985,7 +47160,7 @@ $0 lt.eq x lt.eq 50$ :
 $0 lt.eq 7 k - 1 lt.eq 50 arrow.r.double.long 1 lt.eq 7 k lt.eq 51 arrow.r.double.long k in { 1\,2\,3\,4\,5\,6\,7 }$.
 7 couples solutions.
 
-#strong[Solution 9.] 1. $upright("PGCD")\(5\,26\)= 1$ car
+#strong[Solution 56.9] 1. $upright("PGCD")\(5\,26\)= 1$ car
 $26 = 2 times 13$, donc le codage est bijectif. 2. B(1) :
 $5\(1\)+ 7 = 12 arrow.r$ M. A(0) : $5\(0\)+ 7 = 7 arrow.r$ H. C(2) :
 $5\(2\)+ 7 = 17 arrow.r$ R. BAC devient #strong[MHR]. 3. Inverse de 5
@@ -47995,41 +47170,41 @@ $5^(- 1) equiv 21$. $x equiv 21\(y - 7\)med\(mod med 26\)$. Pour R
 $x equiv 21\(17 - 7\)= 210 = 26 times 8 + 2 equiv 2 med\(mod med 26\)$.
 Le rang 2 correspond à #strong[C].
 
-#strong[Solution 10.] Cherchons $7^2025 med\(mod med 10\)$.
+#strong[Solution 56.10] Cherchons $7^2025 med\(mod med 10\)$.
 $7^1 equiv 7$, $7^2 = 49 equiv 9 equiv - 1$,
 $7^4 equiv 1 med\(mod med 10\)$. $2025 = 4 times 506 + 1$.
 $7^2025 =\(7^4\)^506 times 7^1 equiv 1 times 7 = 7 med\(mod med 10\)$.
 Le chiffre des unités est #strong[7].
 
-#strong[Solution 11.]
+#strong[Solution 56.11]
 $3^(2 n + 1) = 3 times\(3^2\)^n = 3 times 9^n equiv 3 times 2^n med\(mod med 7\)$
 (car $9 equiv 2$).
 $2^(n + 2) = 2^2 times 2^n = 4 times 2^n med\(mod med 7\)$. Somme :
 $A_n equiv 3 times 2^n + 4 times 2^n = 7 times 2^n equiv 0 med\(mod med 7\)$.
 Donc $7 divides A_n$.
 
-#strong[Solution 12.] Soit $d$ un diviseur commun du numérateur et du
+#strong[Solution 56.12] Soit $d$ un diviseur commun du numérateur et du
 dénominateur. $d divides\(2 n + 1\)$ et $d divides\(3 n + 1\)$. Alors
 $d$ divise la combinaison linéaire
 $3\(2 n + 1\)- 2\(3 n + 1\)= 6 n + 3 - 6 n - 2 = 1$. Comme
 $d divides 1$, on a $d = 1$. Les deux entiers sont toujours premiers
 entre eux, la fraction est irréductible.
 
-#strong[Solution 13.] Soit $N$ le nombre de noix. Chaque étape retire 1
+#strong[Solution 56.13] Soit $N$ le nombre de noix. Chaque étape retire 1
 noix et prend un tiers, laissant $2\/3\(N - 1\)$. Après 3 étapes, les
 divisions successives mènent à la congruence
 $8 N equiv 17 med\(mod med 27\) arrow.r.double.long N equiv 25 med\(mod med 27\)$.
 Le plus petit nombre positif non nul possible est $N = 25$ (ou 79 si le
 partage final du matin est non nul).
 
-#strong[Solution 14.] $x = 5 k + 2$. En injectant dans la seconde :
+#strong[Solution 56.14] $x = 5 k + 2$. En injectant dans la seconde :
 $5 k + 2 equiv 3 med\(mod med 7\) arrow.l.r.double 5 k equiv 1 med\(mod med 7\)$.
 L'inverse de 5 modulo 7 est 3 ($5 times 3 = 15 equiv 1$). Donc
 $k equiv 3 med\(mod med 7\) arrow.r.double.long k = 7 m + 3$. D'où
 $x = 5\(7 m + 3\)+ 2 = 35 m + 17$. Les solutions sont
 $x equiv 17 med\(mod med 35\)$.
 
-#strong[Solution 15.] Si $q divides\(2^p - 1\)$, alors
+#strong[Solution 56.15] Si $q divides\(2^p - 1\)$, alors
 $2^p equiv 1 med\(mod med q\)$. L'ordre de 2 modulo $q$ divise le nombre
 premier $p$, donc l'ordre vaut $p$. D'après Fermat,
 $2^(q - 1) equiv 1 med\(mod med q\)$, donc l'ordre $p$ divise $q - 1$,
@@ -48038,7 +47213,7 @@ $q - 1 = k p arrow.r.double.long q equiv 1 med\(mod med p\)$. Comme $q$
 est impair ($M_p$ étant impair), $q - 1$ est pair, donc $k$ est pair
 ($k = 2 m$). D'où $q = 2 m p + 1 equiv 1 med\(mod med 2 p\)$.
 
-#strong[Solution 16.] Si $p$ est premier, chaque élément
+#strong[Solution 56.16] Si $p$ est premier, chaque élément
 $x in { 2\,dots.h\,p - 2 }$ possède un unique inverse modulaire distinct
 de lui-même (car $x^2 equiv 1 arrow.r.double.long x = plus.minus 1$).
 Tous ces termes se neutralisent deux à deux dans le produit
@@ -48047,7 +47222,7 @@ $1 times\(p - 1\)equiv - 1 med\(mod med p\)$. La réciproque découle du
 fait que si $p$ est composé, un diviseur strict $d < p$ diviserait
 $\(p - 1\)!$ et ne pourrait diviser $\(p - 1\)! + 1$.
 
-#strong[Solution 17.] 1. Pour $p^k$, les entiers non premiers avec $p^k$
+#strong[Solution 56.17] 1. Pour $p^k$, les entiers non premiers avec $p^k$
 sont les multiples de $p$, soit $p^(k - 1)$ entiers. Donc
 $phi\(p^k\)= p^k - p^(k - 1)$. 2. En considérant les entiers premiers
 avec $n$ et en multipliant par $a$, le produit des éléments se conserve
@@ -48055,20 +47230,20 @@ par bijectivité de la multiplication dans le groupe des inversibles
 $\(bb(Z)\/n bb(Z)\)^times$, ce qui donne
 $a^(phi\(n\)) equiv 1 med\(mod med n\)$.
 
-#strong[Solution 18.] Si $n$ est premier, pour $n - 1 = 2^s d$, la suite
+#strong[Solution 56.18] Si $n$ est premier, pour $n - 1 = 2^s d$, la suite
 des élévations au carré à partir de $a^d$ doit terminer par 1, et la
 dernière valeur différente de 1 doit être $- 1$. Si une autre valeur
 apparaît, $n$ est certainement composé. Ce test polynomial rapide est la
 clé de voûte de la génération des grands nombres premiers pour la
 cryptographie.
 
-#strong[Solution 19.] Si $e d - k phi\(n\)= 1$, alors
+#strong[Solution 56.19] Si $e d - k phi\(n\)= 1$, alors
 $lr(|e / n - k / d|) lt.eq frac(1, 2 d^2)$. D'après le théorème de
 Legendre sur les fractions continues, $k / d$ est nécessairement l'une
 des réduites de l'approximation de $e / n$, ce qui permet à un attaquant
 de calculer $d$ en un temps quasi instantané.
 
-#strong[Solution 20.] Soit $k$ l'ordre de $a$. Effectuons la division
+#strong[Solution 56.20] Soit $k$ l'ordre de $a$. Effectuons la division
 euclidienne de $p - 1$ par $k$ : $p - 1 = k q + r$ avec $0 lt.eq r < k$.
 Alors
 $a^(p - 1) =\(a^k\)^q times a^r equiv 1^q times a^r equiv a^r med\(mod med p\)$.
@@ -48077,7 +47252,7 @@ $a^r equiv 1 med\(mod med p\)$. Comme $k$ est le plus petit entier
 strictement positif vérifiant cette propriété et que $r < k$, on a
 obligatoirement $r = 0$. Donc $k$ divise $p - 1$.
 
-#strong[Solution 21.] D'après Fermat,
+#strong[Solution 56.21] D'après Fermat,
 $\(a^(frac(p - 1, 2))\)^2 = a^(p - 1) equiv 1 med\(mod med p\)$. Donc
 $a^(frac(p - 1, 2))$ est solution de $X^2 equiv 1 med\(mod med p\)$,
 d'où $a^(frac(p - 1, 2)) equiv plus.minus 1 med\(mod med p\)$. Si
@@ -48085,7 +47260,7 @@ $a = x^2$, alors $a^(frac(p - 1, 2)) = x^(p - 1) equiv 1$. Le polynôme
 $X^(frac(p - 1, 2)) - 1$ de degré $frac(p - 1, 2)$ ayant au plus
 $frac(p - 1, 2)$ racines, les carrés en sont les seules racines.
 
-#strong[Solution 22.] Alice choisit $a$ secret, envoie
+#strong[Solution 56.22] Alice choisit $a$ secret, envoie
 $A = g^a med\(mod med p\)$. Bob choisit $b$ secret, envoie
 $B = g^b med\(mod med p\)$. La clé commune est
 $K = B^a = A^b = g^(a b) med\(mod med p\)$. Un espion qui intercepte
@@ -48279,9 +47454,7 @@ $\(A + B\)^2 = A^2 + 2 A B + B^2$ sont #strong[fausses] pour les
 matrices (on a $\(A + B\)^2 = A^2 + A B + B A + B^2$).
 ]
 
-#quote_box[
-#strong[⚠️ Deuxième piège --- Diviseurs de zéro
-]
+#alerte(title: [⚠️ Deuxième piège — Diviseurs de zéro])[
  Pour des réels,
 $a b = 0 arrow.r.double.long a = 0 upright(" ou ") b = 0$. #strong[C'est
 faux pour les matrices !] Prenons $A = mat(delim: "(", 0, 1; 0, 0)$ :
@@ -48321,9 +47494,7 @@ multiplier à gauche ou à droite).]
 
 ==== 3.2 Inversion des matrices de taille $2 times 2$
 <inversion-des-matrices-de-taille-2-times-2>
-#quote_box[
-#strong[📐 Théorème --- Inverse d'une matrice $2 times 2$
-]
+#principe(title: [📐 Théorème — Inverse d'une matrice $2 times 2$])[
  Soit
 $A = mat(delim: "(", a, b; c, d) in cal(M)_2\(bb(R)\)$. On appelle
 #strong[déterminant] de $A$ le nombre réel : $ det\(A\)= a d - b c $ 1.
@@ -48394,10 +47565,7 @@ est symétrique : $m_(i\,j) = m_(j\,i)$).]
 
 ==== 4.3 Le théorème fondamental des chemins de longueur $k$
 <le-théorème-fondamental-des-chemins-de-longueur-k>
-#quote_box[
-#strong[📐 Théorème fondamental --- Puissances de la matrice
-d'adjacence
-]
+#principe(title: [📐 Théorème fondamental — Puissances de la matrice d'adjacence])[
  Soit $M$ la matrice d'adjacence d'un graphe à $n$ sommets.
 Pour tout entier naturel $k gt.eq 1$, le coefficient situé à la $i$-ième
 ligne et la $j$-ième colonne de la matrice #strong[$M^k$] est égal au
@@ -48405,9 +47573,7 @@ ligne et la $j$-ième colonne de la matrice #strong[$M^k$] est égal au
 sommet $j$].
 ]
 
-#quote_box[
-#strong[✍️ Démonstration exigible par récurrence
-]
+#methode(title: [✍️ Démonstration exigible par récurrence])[
  Notons
 $c_(i\,j)^(\(k\))$ le coefficient $\(i\,j\)$ de la matrice $M^k$, et
 $N_(i\,j)^(\(k\))$ le nombre de chemins de longueur $k$ allant de $i$ à
@@ -48469,9 +47635,7 @@ $ sum_(j = 1)^k t_(i\,j) = 1 quad\(upright("car la somme des probabilités issue
 On note $P_n$ la #strong[matrice ligne] des probabilités à l'étape $n$ :
 $ P_n = mat(delim: "(", p_n^(\(1\)), p_n^(\(2\)), dots.h, p_n^(\(k\))) quad upright("avec ") sum_(i = 1)^k p_n^(\(i\)) = 1 $
 
-#quote_box[
-#strong[📐 Théorème --- Formule de récurrence matricielle
-]
+#principe(title: [📐 Théorème — Formule de récurrence matricielle])[
  D'après la
 formule des probabilités totales :
 $ upright(bold(P_(n + 1) = P_n times T)) $ Par récurrence immédiate,
@@ -48790,49 +47954,49 @@ $ u_n = 2 / 3 (- 1 / 2)^n arrow.r.double.long a_n = 1 / 3 + 2 / 3 (- 1 / 2)^n $
 <exercices-49>
 ==== Niveau  (Applications directes)
 <niveau-applications-directes-14>
-#strong[Exercice 1.] Soient $A = mat(delim: "(", 2, - 1; 3, 4)$ et
+#strong[Exercice 57.1] Soient $A = mat(delim: "(", 2, - 1; 3, 4)$ et
 $B = mat(delim: "(", 0, 5; 1, - 2)$. Calculer $2 A - 3 B$, $A times B$,
 et $B times A$.
 
-#strong[Exercice 2.] Calculer le déterminant et l'inverse (si elle
+#strong[Exercice 57.2] Calculer le déterminant et l'inverse (si elle
 existe) des matrices suivantes : $M_1 = mat(delim: "(", 5, 2; 2, 1)$,
 $M_2 = mat(delim: "(", 3, - 6; - 2, 4)$,
 $M_3 = mat(delim: "(", cos theta, - sin theta; sin theta, cos theta)$.
 
-#strong[Exercice 3.] Résoudre sous forme matricielle le système :
+#strong[Exercice 57.3] Résoudre sous forme matricielle le système :
 $ {4 x + 3 y = 25\
 2 x + 5 y = 23 $
 
-#strong[Exercice 4.] On considère un graphe non orienté à 4 sommets
+#strong[Exercice 57.4] On considère un graphe non orienté à 4 sommets
 ${ A\,B\,C\,D }$ dont les arêtes sont
 $\[A\,B\]\,\[A\,C\]\,\[B\,C\]\,\[C\,D\]$. 1. Dessiner le graphe. 2.
 Écrire sa matrice d'adjacence $M$. 3. Quel est le degré du sommet $C$ ?
 
-#strong[Exercice 5.] Une matrice de transition est donnée par
+#strong[Exercice 57.5] Une matrice de transition est donnée par
 $T = mat(delim: "(", 0\,9, 0\,1; 0\,3, 0\,7)$. Si
 $P_0 = mat(delim: "(", 0\,6, 0\,4)$, calculer $P_1$ et $P_2$.
 
-#strong[Exercice 6.] Déterminer l'état stable
+#strong[Exercice 57.6] Déterminer l'état stable
 $P = mat(delim: "(", x, y)$ associé à la matrice de transition
 $T = mat(delim: "(", 0\,9, 0\,1; 0\,3, 0\,7)$ de l'exercice 5.
 
-#strong[Exercice 7.] Calculer $A^2$ et $A^3$ pour
+#strong[Exercice 57.7] Calculer $A^2$ et $A^3$ pour
 $A = mat(delim: "(", 1, 1; 0, 1)$. Conjecturer $A^n$.
 
 ==== Niveau  (Réflexion et graphes probabilistes)
 <niveau-réflexion-et-graphes-probabilistes>
-#strong[Exercice 8.] Puissances d'une matrice nilpotente. Soit la
+#strong[Exercice 57.8] Puissances d'une matrice nilpotente. Soit la
 matrice $N = mat(delim: "(", 0, 2, 1; 0, 0, 3; 0, 0, 0)$. 1. Calculer
 $N^2$ et $N^3$. 2. En déduire $N^k$ pour tout $k gt.eq 3$. 3. Soit
 $A = I_3 + N$. En utilisant la formule du binôme de Newton (justifier
 son emploi), calculer $A^n$ pour tout entier $n gt.eq 2$.
 
-#strong[Exercice 9.] Graphe et connexité. Soit un graphe d'ordre 4 de
+#strong[Exercice 57.9] Graphe et connexité. Soit un graphe d'ordre 4 de
 matrice d'adjacence $M$. On calcule $S = M + M^2 + M^3$. Démontrer que
 le graphe est connexe si et seulement si tous les coefficients non
 diagonaux de la matrice $S$ sont strictement positifs.
 
-#strong[Exercice 10.] Le modèle proie-prédateur matriciel (Modèle de
+#strong[Exercice 57.10] Le modèle proie-prédateur matriciel (Modèle de
 Leslie). Une population d'oiseaux est divisée en deux classes d'âge :
 les juvéniles $J_n$ et les adultes $A_n$. Chaque année :
 
@@ -48845,13 +48009,13 @@ les juvéniles $J_n$ et les adultes $A_n$. Chaque année :
 + Si la population initiale est de 100 juvéniles et 50 adultes, calculer
   la population à $n = 1$ et $n = 2$.
 
-#strong[Exercice 11.] Équation matricielle $A^2 - 4 A + 3 I = 0$. Soit
+#strong[Exercice 57.11] Équation matricielle $A^2 - 4 A + 3 I = 0$. Soit
 une matrice carrée $A$ vérifiant la relation $A^2 - 4 A + 3 I = 0$. 1.
 Démontrer que $A$ est inversible et exprimer $A^(- 1)$ en fonction de
 $A$ et de $I$. 2. Montrer que pour tout $n in bb(N)$, il existe deux
 réels $a_n$ et $b_n$ tels que $A^n = a_n A + b_n I$.
 
-#strong[Exercice 12.] Chaîne de Markov à 3 états : la propagation d'une
+#strong[Exercice 57.12] Chaîne de Markov à 3 états : la propagation d'une
 rumeur. Dans un village, un individu apprend une information. À chaque
 étape, il peut la transmettre à son voisin. Les états sont : $E_1$
 (Ignorant), $E_2$ (Croyant), $E_3$ (Sceptique/Immunisé). Matrice de
@@ -48860,19 +48024,19 @@ $ T = mat(delim: "(", 0\,5, 0\,4, 0\,1; 0, 0\,6, 0\,4; 0, 0, 1) $ 1.
 Quel est le statut de l'état $E_3$ (état absorbant) ? 2. Calculer $T^2$
 et $T^3$. 3. Que devient la population à long terme ?
 
-#strong[Exercice 13.] Matrice stochastique et valeur propre 1. Soit $T$
+#strong[Exercice 57.13] Matrice stochastique et valeur propre 1. Soit $T$
 une matrice stochastique carrée d'ordre $n$ (somme des coefficients de
 chaque ligne égale à 1). Soit $U$ le vecteur colonne dont toutes les
 coordonnées valent 1. 1. Calculer le produit matriciel $T times U$. 2.
 Que peut-on en déduire sur le système $\(T - I_n\)X = 0$ ? 3. Pourquoi
 cela prouve-t-il qu'il existe toujours au moins un état stable non nul ?
 
-#strong[Exercice 14.] Inverse d'une matrice $3 times 3$ par la méthode
+#strong[Exercice 57.14] Inverse d'une matrice $3 times 3$ par la méthode
 de Gauss-Jordan. Inverser la matrice
 $A = mat(delim: "(", 1, 0, 2; 2, - 1, 3; 4, 1, 8)$ en résolvant le
 système $A X = Y$.
 
-#strong[Exercice 15.] Nombre d'arbres couvrants (Théorème de Kirchhoff,
+#strong[Exercice 57.15] Nombre d'arbres couvrants (Théorème de Kirchhoff,
 aperçu). Pour un graphe simple, on définit la matrice Laplacienne
 $L = D - M$, où $D$ est la matrice diagonale des degrés et $M$ la
 matrice d'adjacence. Calculer $L$ pour un triangle $K_3$ et calculer
@@ -48881,14 +48045,14 @@ possibles.
 
 ==== Niveau  (Approfondissements et concours)
 <niveau-approfondissements-et-concours-2>
-#strong[Exercice 16.] Théorème de Cayley-Hamilton en dimension 2. Soit
+#strong[Exercice 57.16] Théorème de Cayley-Hamilton en dimension 2. Soit
 $A = mat(delim: "(", a, b; c, d)$. On pose sa trace
 $upright("Tr")\(A\)= a + d$ et son déterminant $det\(A\)= a d - b c$.
 Démontrer par le calcul direct l'identité fondamentale de
 Cayley-Hamilton :
 $ A^2 - upright("Tr")\(A\)dot.op A + det\(A\)dot.op I_2 = 0_2 $
 
-#strong[Exercice 17.] Suites récurrentes d'ordre 2 et puissances de
+#strong[Exercice 57.17] Suites récurrentes d'ordre 2 et puissances de
 matrices (Fibonacci). Soit la suite de Fibonacci définie par $F_0 = 0$,
 $F_1 = 1$ et $F_(n + 2) = F_(n + 1) + F_n$. 1. Déterminer une matrice
 carrée $A in cal(M)_2\(bb(R)\)$ telle que
@@ -48899,7 +48063,7 @@ calculant $det\(A^n\)$ de deux manières différentes, démontrer la
 célèbre #strong[identité de Cassini] :
 $ F_(n + 1) F_(n - 1) - F_n^2 =\(- 1\)^n $
 
-#strong[Exercice 18.] Convergence de la matrice de transition et
+#strong[Exercice 57.18] Convergence de la matrice de transition et
 projecteur spectral. Soit $T = mat(delim: "(", 1 - a, a; b, 1 - b)$ avec
 $a\,b in\]0\,1\[$. 1. Montrer que $T$ admet pour valeurs propres
 $lambda_1 = 1$ et $lambda_2 = 1 - a - b$. 2. Démontrer que
@@ -48907,26 +48071,26 @@ $T^n = frac(1, a + b) mat(delim: "(", b, a; b, a) + frac(\(1 - a - b\)^n, a + b)
 \3. En déduire la limite $lim_(n arrow.r + oo) T^n$ et retrouver l'état
 stable quelle que soit la distribution initiale.
 
-#strong[Exercice 19.] Théorème de Perron-Frobenius (Énoncé et sens
+#strong[Exercice 57.19] Théorème de Perron-Frobenius (Énoncé et sens
 géométrique). Pour une matrice à coefficients strictement positifs,
 expliquer la signification du théorème de Perron-Frobenius : existence
 d'une plus grande valeur propre réelle positive dominante et unicité du
 vecteur propre associé positif (l'état stable).
 
-#strong[Exercice 20.] L'algorithme PageRank avec facteur d'amortissement
+#strong[Exercice 57.20] L'algorithme PageRank avec facteur d'amortissement
 (Damping Factor). Écrire la matrice Google d'un mini-web à 3 pages où la
 page 1 pointe vers 2 et 3, la page 2 pointe vers 3, et la page 3 pointe
 vers 1. Intégrer le facteur de téléportation $alpha = 0\,85$ et calculer
 le classement PageRank des 3 pages.
 
-#strong[Exercice 21.] Matrices de Hadamard et codes correcteurs
+#strong[Exercice 57.21] Matrices de Hadamard et codes correcteurs
 d'erreurs. Une matrice de Hadamard $H_n$ est une matrice carrée de
 taille $n$ dont les coefficients sont dans ${ - 1\,+ 1 }$ et telle que
 $H_n H_n^T = n I_n$. Construire $H_2$ et $H_4$ par le produit de
 Kronecker et expliquer leur rôle dans la transmission des signaux des
 sondes spatiales Mariner et Voyager.
 
-#strong[Exercice 22.] Graphes eulériens et hamiltoniens. Démontrer le
+#strong[Exercice 57.22] Graphes eulériens et hamiltoniens. Démontrer le
 théorème d'Euler : un graphe connexe admet un cycle eulérien (un
 parcours fermé passant par chaque arête une fois et une seule) si et
 seulement si tous ses sommets sont de degré pair.
@@ -48935,12 +48099,12 @@ seulement si tous ses sommets sont de degré pair.
 
 === Solutions
 <solutions-49>
-#strong[Solution 1.]
+#strong[Solution 57.1]
 $2 A - 3 B = mat(delim: "(", 4, - 2; 6, 8) - mat(delim: "(", 0, 15; 3, - 6) = mat(delim: "(", 4, - 17; 3, 14)$.
 $A times B = mat(delim: "(", 2\(0\)- 1\(1\), 2\(5\)- 1\(- 2\); 3\(0\)+ 4\(1\), 3\(5\)+ 4\(- 2\)) = mat(delim: "(", - 1, 12; 4, 7)$.
 $B times A = mat(delim: "(", 0\(2\)+ 5\(3\), 0\(- 1\)+ 5\(4\); 1\(2\)- 2\(3\), 1\(- 1\)- 2\(4\)) = mat(delim: "(", 15, 20; - 4, - 9)$.
 
-#strong[Solution 2.] -
+#strong[Solution 57.2] -
 $det\(M_1\)= 5\(1\)- 2\(2\)= 1 eq.not 0 arrow.r.double.long M_1^(- 1) = 1 / 1 mat(delim: "(", 1, - 2; - 2, 5) = mat(delim: "(", 1, - 2; - 2, 5)$.
 \- $det\(M_2\)= 3\(4\)-\(- 6\)\(- 2\)= 12 - 12 = 0$. $M_2$ n'est pas
 inversible. -
@@ -48948,41 +48112,41 @@ $det\(M_3\)= cos^2 theta -\(- sin^2 theta\)= cos^2 theta + sin^2 theta = 1 eq.no
 $M_3^(- 1) = mat(delim: "(", cos theta, sin theta; - sin theta, cos theta) = M_3\(- theta\)$
 (la rotation inverse !).
 
-#strong[Solution 3.] $A = mat(delim: "(", 4, 3; 2, 5)$,
+#strong[Solution 57.3] $A = mat(delim: "(", 4, 3; 2, 5)$,
 $det\(A\)= 20 - 6 = 14 eq.not 0$.
 $A^(- 1) = 1 / 14 mat(delim: "(", 5, - 3; - 2, 4)$.
 $X = A^(- 1) B = 1 / 14 mat(delim: "(", 5, - 3; - 2, 4) vec(25, 23) = 1 / 14 vec(125 - 69, - 50 + 92) = 1 / 14 vec(56, 42) = vec(4, 3)$.
 Solution : $x = 4$ et $y = 3$.
 
-#strong[Solution 4.] 1. Graphe en diamant avec une arête pendant vers
+#strong[Solution 57.4] 1. Graphe en diamant avec une arête pendant vers
 $D$. 2. Ordre des sommets A, B, C, D :
 $ M = mat(delim: "(", 0, 1, 1, 0; 1, 0, 1, 0; 1, 1, 0, 1; 0, 0, 1, 0) $
 \3. Le degré de $C$ est la somme de la ligne 3 : $1 + 1 + 0 + 1 = 3$.
 
-#strong[Solution 5.]
+#strong[Solution 57.5]
 $P_1 = P_0 T = mat(delim: "(", 0\,6, 0\,4) mat(delim: "(", 0\,9, 0\,1; 0\,3, 0\,7) = mat(delim: "(", 0\,54 + 0\,12, 0\,06 + 0\,28) = mat(delim: "(", 0\,66, 0\,34)$.
 $P_2 = P_1 T = mat(delim: "(", 0\,66, 0\,34) mat(delim: "(", 0\,9, 0\,1; 0\,3, 0\,7) = mat(delim: "(", 0\,594 + 0\,102, 0\,066 + 0\,238) = mat(delim: "(", 0\,696, 0\,304)$.
 
-#strong[Solution 6.]
+#strong[Solution 57.6]
 $P = P T arrow.l.r.double mat(delim: "(", x, y) mat(delim: "(", 0\,9, 0\,1; 0\,3, 0\,7) = mat(delim: "(", x, y)$
 avec $x + y = 1$.
 $0\,9 x + 0\,3 y = x arrow.l.r.double 0\,3 y = 0\,1 x arrow.l.r.double x = 3 y$.
 $3 y + y = 1 arrow.l.r.double 4 y = 1 arrow.l.r.double y = 0\,25$ et
 $x = 0\,75$. État stable : $P = mat(delim: "(", 0\,75, 0\,25)$.
 
-#strong[Solution 7.]
+#strong[Solution 57.7]
 $A^2 = mat(delim: "(", 1, 1; 0, 1) mat(delim: "(", 1, 1; 0, 1) = mat(delim: "(", 1, 2; 0, 1)$.
 $A^3 = A^2 A = mat(delim: "(", 1, 3; 0, 1)$. Par récurrence immédiate :
 $A^n = mat(delim: "(", 1, n; 0, 1)$.
 
-#strong[Solution 8.] 1.
+#strong[Solution 57.8] 1.
 $N^2 = mat(delim: "(", 0, 0, 6; 0, 0, 0; 0, 0, 0)$, $N^3 = 0_3$. 2. Pour
 $k gt.eq 3$, $N^k = 0_3$. 3. Comme $I_3$ et $N$ commutent
 ($I_3 N = N I_3 = N$), la formule du binôme s'applique :
 $A^n =\(I_3 + N\)^n = sum_(k = 0)^n binom(n, k) I_3^(n - k) N^k = binom(n, 0) I_3 + binom(n, 1) N + binom(n, 2) N^2 + 0 = I_3 + n N + frac(n\(n - 1\), 2) N^2$.
 $A^n = mat(delim: "(", 1, 2 n, n + 3 n\(n - 1\); 0, 1, 3 n; 0, 0, 1) = mat(delim: "(", 1, 2 n, 3 n^2 - 2 n; 0, 1, 3 n; 0, 0, 1)$.
 
-#strong[Solution 9.] Dans un graphe à 4 sommets, si deux sommets
+#strong[Solution 57.9] Dans un graphe à 4 sommets, si deux sommets
 distincts $i$ et $j$ sont connectés, ils peuvent l'être par un chemin de
 longueur 1, 2 ou au maximum 3 (sans boucle). Le coefficient $\(i\,j\)$
 de $S = M + M^2 + M^3$ est la somme des chemins de longueur 1, 2 et 3
@@ -48991,13 +48155,13 @@ $\(i\,j\)$ avec $i eq.not j$ si et seulement si tout sommet peut
 rejoindre n'importe quel autre, ce qui est la définition même de la
 connexité.
 
-#strong[Solution 10.] 1. ${J_(n + 1) = 2 A_n\
+#strong[Solution 57.10] 1. ${J_(n + 1) = 2 A_n\
 A_(n + 1) = 0\,3 J_n + 0\,5 A_n arrow.l.r.double vec(J_(n + 1), A_(n + 1)) = mat(delim: "(", 0, 2; 0\,3, 0\,5) vec(J_n, A_n)$.
 \2. Pour $n = 0$, $X_0 = vec(100, 50)$.
 $X_1 = mat(delim: "(", 0, 2; 0\,3, 0\,5) vec(100, 50) = vec(100, 55)$.
 $X_2 = mat(delim: "(", 0, 2; 0\,3, 0\,5) vec(100, 55) = vec(110, 57\,5)$.
 
-#strong[Solution 11.] 1.
+#strong[Solution 57.11] 1.
 $A^2 - 4 A = - 3 I arrow.l.r.double A\(A - 4 I\)= - 3 I arrow.l.r.double A times [- 1 / 3 \( A - 4 I \)] = I$.
 Donc $A$ est inversible et $A^(- 1) = - 1 / 3 A + 4 / 3 I$. 2. Par
 division euclidienne du polynôme $X^n$ par
@@ -49005,7 +48169,7 @@ $X^2 - 4 X + 3 =\(X - 1\)\(X - 3\)$ :
 $X^n =\(X^2 - 4 X + 3\)Q\(X\)+ a_n X + b_n$. En évaluant en $A$,
 $A^n = a_n A + b_n I$.
 
-#strong[Solution 12.] 1. La ligne 3 est $\(0 med 0 med 1\)$ : une fois
+#strong[Solution 57.12] 1. La ligne 3 est $\(0 med 0 med 1\)$ : une fois
 dans l'état $E_3$ (sceptique), la probabilité d'y rester est 1. C'est un
 état absorbant définitif. 2. Par calcul de puissances, les deux
 premières lignes ont des termes vers $E_3$ qui croissent à chaque étape.
@@ -49014,7 +48178,7 @@ $lim_(n arrow.r + oo) T^n = mat(delim: "(", 0, 0, 1; 0, 0, 1; 0, 0, 1)$.
 Toute la population finit inexorablement dans l'état sceptique/immunisé
 $E_3$.
 
-#strong[Solution 13.] 1. Le coefficient $i$ de $T times U$ est la somme
+#strong[Solution 57.13] 1. Le coefficient $i$ de $T times U$ est la somme
 des termes de la ligne $i$ de $T$, qui vaut 1 par définition d'une
 matrice stochastique. Donc $T times U = U = 1 dot.op U$. 2. Cela
 signifie $\(T - I_n\)U = 0$. Le système admet une solution non nulle
@@ -49023,14 +48187,14 @@ $det\(T^T - I_n\)= det\(T - I_n\)= 0$, il existe aussi un vecteur ligne
 non nul $P$ tel que $P\(T - I_n\)= 0 arrow.l.r.double P T = P$. En
 normalisant pour que $sum p_i = 1$, on obtient un état stable.
 
-#strong[Solution 14.] Résolution de
+#strong[Solution 57.14] Résolution de
 $mat(delim: "(", 1, 0, 2; 2, - 1, 3; 4, 1, 8) vec(x, y, z) = vec(a, b, c)$.
 Par élimination : $L_2 arrow.l L_2 - 2 L_1$ et
 $L_3 arrow.l L_3 - 4 L_1$, on trouve
 $z = a + b - 1 / 2\(c - 4 a - dots.h\)$. On obtient
 $A^(- 1) = mat(delim: "(", - 11, 2, 2; - 4, 0, 1; 6, - 1, - 1)$.
 
-#strong[Solution 15.] Pour le triangle $K_3$, chaque sommet est de degré
+#strong[Solution 57.15] Pour le triangle $K_3$, chaque sommet est de degré
 2 : $D = 2 I_3$.
 $L = mat(delim: "(", 2, - 1, - 1; - 1, 2, - 1; - 1, - 1, 2)$. Le
 cofacteur obtenu en rayant la 1ʳᵉ ligne et la 1ʳᵉ colonne est
@@ -49038,14 +48202,14 @@ $det mat(delim: "(", 2, - 1; - 1, 2) = 4 - 1 = 3$. D'après le théorème
 de Kirchhoff, il y a exactement 3 arbres couvrants (les 3 façons de
 retirer une arête pour obtenir un arbre), ce qui concorde parfaitement.
 
-#strong[Solution 16.] $upright("Tr")\(A\)= a + d$ et
+#strong[Solution 57.16] $upright("Tr")\(A\)= a + d$ et
 $det\(A\)= a d - b c$.
 $A^2 = mat(delim: "(", a^2 + b c, a b + b d; c a + d c, c b + d^2)$.
 $\(a + d\)A = mat(delim: "(", a^2 + a d, a b + b d; c a + c d, a d + d^2)$.
 $A^2 -\(a + d\)A = mat(delim: "(", b c - a d, 0; 0, b c - a d) = -\(a d - b c\)I_2 = - det\(A\)I_2$.
 D'où $A^2 - upright("Tr")\(A\)A + det\(A\)I_2 = 0_2$.
 
-#strong[Solution 17.] 1. Comme
+#strong[Solution 57.17] 1. Comme
 $F_(n + 1) = 1 dot.op F_n + 1 dot.op F_(n - 1)$ et
 $F_n = 1 dot.op F_n + 0 dot.op F_(n - 1)$, la matrice est
 $A = mat(delim: "(", 1, 1; 1, 0)$. 2. Pour $n = 1$ :
@@ -49056,7 +48220,7 @@ $det\(A^n\)=\(det A\)^n =\(- 1\)^n$. D'autre part,
 $det\(A^n\)= F_(n + 1) F_(n - 1) - F_n^2$. L'égalité donne l'identité de
 Cassini.
 
-#strong[Solution 18.] 1. Polynôme caractéristique
+#strong[Solution 57.18] 1. Polynôme caractéristique
 $det\(T - lambda I\)=\(lambda - 1\)\(lambda -\(1 - a - b\)\)$. Les
 racines sont 1 et $1 - a - b$. 2. En diagonalisant $T = P D P^(- 1)$
 avec $D = mat(delim: "(", 1, 0; 0, 1 - a - b)$, le calcul de
@@ -49067,28 +48231,28 @@ $P_0 =\(x med 1 - x\)$,
 $P_0 lim T^n = mat(delim: "(", frac(b, a + b), frac(a, a + b))$, qui est
 l'état stable universel.
 
-#strong[Solution 19.] Le théorème garantit que pour toute matrice à
+#strong[Solution 57.19] Le théorème garantit que pour toute matrice à
 coefficients strictement positifs, la valeur propre de plus grand module
 est réelle, strictement positive, simple, et son vecteur propre peut
 être choisi à coordonnées strictement positives. Cela signifie qu'aucun
 phénomène chaotique oscillant ne peut empêcher la convergence : le
 système atteint toujours un équilibre global stable et prévisible.
 
-#strong[Solution 20.] Matrice brute de liens :
+#strong[Solution 57.20] Matrice brute de liens :
 $H = mat(delim: "(", 0, 1\/2, 1\/2; 0, 0, 1; 1, 0, 0)$. Matrice de
 Google : $G = 0\,85 H + 0\,15 times 1 / 3 J$, où $J$ est la matrice
 remplie de 1. La résolution de $P = P G$ donne l'importance relative de
 chaque page, la page 3 étant la plus citée et obtenant le rang le plus
 élevé.
 
-#strong[Solution 21.] $H_2 = mat(delim: "(", 1, 1; 1, - 1)$.
+#strong[Solution 57.21] $H_2 = mat(delim: "(", 1, 1; 1, - 1)$.
 $H_4 = mat(delim: "(", H_2, H_2; H_2, - H_2) = mat(delim: "(", 1, 1, 1, 1; 1, - 1, 1, - 1; 1, 1, - 1, - 1; 1, - 1, - 1, 1)$.
 Ces matrices orthogonales permettent d'émettre des codes à distance
 maximale : même si le signal spatial subit de fortes interférences, le
 récepteur terrestre retrouve le message par simple corrélation
 matricielle.
 
-#strong[Solution 22.] À chaque passage dans un sommet, un cycle emprunte
+#strong[Solution 57.22] À chaque passage dans un sommet, un cycle emprunte
 une arête entrante et une arête sortante, consommant 2 arêtes
 incidentes. Chaque sommet doit donc comporter un nombre pair d'arêtes.
 La réciproque s'obtient par l'algorithme de Fleury ou la décomposition
@@ -49170,12 +48334,7 @@ variables aléatoires par Bienaymé-Tchebychev.
 
 Regarde la pyramide que ton esprit a gravie marche après marche :
 
-#quote_box[
-#strong[📐 Règle Fondamentale --- Synthèse de l'Édifice Mathématique et
-Cap sur le Supérieur
-]
-
-
+#principe(title: [📐 Règle Fondamentale — Synthèse de l'Édifice Mathématique et Cap sur le Supérieur])[
 - VOLUME VI : L'ÂGE DU FLUX ET DE LA VITESSE (17-18 ans / Terminale &
   Spécialité)
 - Récurrence, Limites de suites & fonctions, Continuité & TVI,
@@ -49283,12 +48442,7 @@ s'effondrent. Les mathématiques ne sont pas un archipel d'îles isolées :
 elles sont un #strong[continent unique traversé par de gigantesques
 ponts].
 
-#quote_box[
-#strong[📐 Règle Fondamentale --- Synthèse de l'Édifice Mathématique et
-Cap sur le Supérieur
-]
-
-
+#principe(title: [📐 Règle Fondamentale — Synthèse de l'Édifice Mathématique et Cap sur le Supérieur])[
 - LES MATHÉMATIQUES
 - PONT 1 : ALGÈBRE \] \[ PONT 2 : DISCRET \] \[ PONT 3 : LOCAL \]
 - ET ET ET
@@ -49395,12 +48549,7 @@ camp de base]. Voici les cinq grands continents que tu exploreras dès
 l'an prochain dans l'enseignement supérieur (Classes Préparatoires aux
 Grandes Écoles, Universités de Sciences, Écoles d'Ingénieurs) :
 
-#quote_box[
-#strong[📐 Règle Fondamentale --- Synthèse de l'Édifice Mathématique et
-Cap sur le Supérieur
-]
-
-
+#principe(title: [📐 Règle Fondamentale — Synthèse de l'Édifice Mathématique et Cap sur le Supérieur])[
 - L'ENSEIGNEMENT SUPÉRIEUR
 - ALGÈBRE LINÉAIRE \] \[ TOPOLOGIE \] \[ ANALYSE COMPLEXE \]
 - Espaces vectoriels de Ouverts, fermés, Dériver des fonctions
@@ -49522,37 +48671,37 @@ ouvrent directement sur les méthodes du supérieur.
 
 ==== Niveau  (Maîtrise des fondamentaux)
 <niveau-maîtrise-des-fondamentaux>
-#strong[Exercice 1.] Soit la fonction $f\(x\)= x^2 e^(- x)$ définie sur
+#strong[Exercice 58.1] Soit la fonction $f\(x\)= x^2 e^(- x)$ définie sur
 $bb(R)$. Calculer sa dérivée $f'\(x\)$, dresser son tableau de
 variations complet avec limites, et déterminer les coordonnées de son
 maximum absolu.
 
-#strong[Exercice 2.] Calculer l'intégrale
+#strong[Exercice 58.2] Calculer l'intégrale
 $I = integral_0^1 frac(2 x, x^2 + 1) d x$.
 
-#strong[Exercice 3.] Résoudre dans $bb(C)$ l'équation
+#strong[Exercice 58.3] Résoudre dans $bb(C)$ l'équation
 $z^2 - 2 sqrt(3) z + 4 = 0$ et écrire les solutions sous forme
 exponentielle.
 
-#strong[Exercice 4.] Calculer la somme des entiers de 1 à $n$ :
+#strong[Exercice 58.4] Calculer la somme des entiers de 1 à $n$ :
 $S_n = 1 + 2 + dots.h + n$, puis la somme de leurs cubes
 $C_n = 1^3 + 2^3 + dots.h + n^3$. Démontrer par récurrence que
 $C_n =\(S_n\)^2$.
 
-#strong[Exercice 5.] On tire au hasard 5 cartes dans un jeu de 32
+#strong[Exercice 58.5] On tire au hasard 5 cartes dans un jeu de 32
 cartes. Quelle est la probabilité d'obtenir exactement un As ?
 
-#strong[Exercice 6.] Déterminer l'inverse de la matrice
+#strong[Exercice 58.6] Déterminer l'inverse de la matrice
 $A = mat(delim: "(", 7, 3; 2, 1)$ et résoudre le système
 ${7 x + 3 y = 17\
 2 x + y = 5$.
 
-#strong[Exercice 7.] Calculer le reste de la division de $5^2026$ par 11
+#strong[Exercice 58.7] Calculer le reste de la division de $5^2026$ par 11
 en utilisant le Petit Théorème de Fermat.
 
 ==== Niveau  (Problèmes de synthèse baccalauréat et concours)
 <niveau-problèmes-de-synthèse-baccalauréat-et-concours>
-#strong[Exercice 8. La constante d'Euler-Mascheroni $gamma$.] Soit
+#strong[Exercice 58.8 La constante d'Euler-Mascheroni $gamma$.] Soit
 $H_n = sum_(k = 1)^n 1 / k = 1 + 1 / 2 + dots.h + 1 / n$ la série
 harmonique. 1. En comparant $1 / k$ avec $integral_k^(k + 1) 1 / t d t$
 et $integral_(k - 1)^k 1 / t d t$, démontrer que :
@@ -49562,7 +48711,7 @@ que la suite $\(u_n\)$ est décroissante et minorée par 0. En déduire
 qu'elle converge vers une constante finie $gamma approx 0\,5772$ (la
 constante d'Euler).
 
-#strong[Exercice 9. Intégrales de Wallis et formule de Stirling.] On
+#strong[Exercice 58.9 Intégrales de Wallis et formule de Stirling.] On
 pose pour tout $n in bb(N)$ : $W_n = integral_0^(pi / 2) sin^n\(t\)d t$.
 \1. Calculer $W_0$ et $W_1$. 2. Par une intégration par parties, établir
 la relation de récurrence :
@@ -49572,56 +48721,56 @@ $lim_(n arrow.r + oo) W_(n + 1) / W_n = 1$. 4. En déduire la formule du
 produit infini de John Wallis :
 $ lim_(n arrow.r + oo) 1 / n (frac(2 times 4 times 6 times dots.h times 2 n, 1 times 3 times 5 times dots.h times\(2 n - 1\)))^2 = pi $
 
-#strong[Exercice 10. La formule sommatoire de Poisson et séries de
+#strong[Exercice 58.10 La formule sommatoire de Poisson et séries de
 Fourier (Aperçu).] Calculer l'intégrale $integral_0^pi x cos\(n x\)d x$
 pour $n in bb(N)^(*)$ par intégration par parties.
 
-#strong[Exercice 11. Résolution de l'équation différentielle
+#strong[Exercice 58.11 Résolution de l'équation différentielle
 logistique.] Soit l'équation différentielle de Verhulst modélisant une
 population saturée : $ y' = a y\(1 - y / K\)quad\(a > 0\,K > 0\) $ En
 posant le changement de variable $z = 1 / y$, résoudre cette équation et
 tracer l'allure de la courbe sigmoïde obtenue.
 
-#strong[Exercice 12. Les nombres de Mersenne et la perfection
+#strong[Exercice 58.12 Les nombres de Mersenne et la perfection
 d'Euclide.] Un entier $N$ est dit parfait s'il est égal à la somme de
 ses diviseurs stricts (par exemple $6 = 1 + 2 + 3$). Démontrer le
 théorème d'Euclide : si $2^p - 1$ est un nombre premier, alors l'entier
 $N = 2^(p - 1)\(2^p - 1\)$ est un nombre parfait pair.
 
-#strong[Exercice 13. Le paradoxe de Saint-Pétersbourg.] Un casino
+#strong[Exercice 58.13 Le paradoxe de Saint-Pétersbourg.] Un casino
 propose un jeu : on lance une pièce équilibrée jusqu'à l'apparition du
 premier Pile. Si Pile sort au $k$-ième lancer, le joueur gagne $2^k$
 euros. 1. Calculer l'espérance de gain mathématique théorique de ce jeu.
 \2. Combien serais-tu prêt à payer pour faire une partie ? Discuter le
 paradoxe.
 
-#strong[Exercice 14. Déterminant de Vandermonde.] Calculer le
+#strong[Exercice 58.14 Déterminant de Vandermonde.] Calculer le
 déterminant d'ordre 3 :
 $ V\(a\,b\,c\)= det mat(delim: "(", 1, a, a^2; 1, b, b^2; 1, c, c^2) $
 Montrer qu'il vaut $\(b - a\)\(c - a\)\(c - b\)$. Pourquoi ce
 déterminant garantit-il l'unicité du polynôme d'interpolation passant
 par 3 points distincts ?
 
-#strong[Exercice 15. Le théorème de d'Alembert-Gauss par l'absurde.]
+#strong[Exercice 58.15 Le théorème de d'Alembert-Gauss par l'absurde.]
 Expliquer pourquoi la fonction module d'un polynôme $P\(z\)$ doit
 nécessairement atteindre sa borne inférieure sur le plan complexe et
 pourquoi cette borne ne peut être strictement positive.
 
 ==== Niveau  (Grands défis préparatoires au supérieur)
 <niveau-grands-défis-préparatoires-au-supérieur>
-#strong[Exercice 16. La somme de Bâle
+#strong[Exercice 58.16 La somme de Bâle
 $sum_(n = 1)^(+ oo) 1 / n^2 = pi^2 / 6$.] Considérons le polynôme
 $P_m\(X\)= sum_(k = 0)^m binom(2 m + 1, 2 k + 1)\(- 1\)^k X^(m - k)$. En
 utilisant les racines de la fonction cotangente, établir la célèbre
 relation d'Euler démontrant que :
 $ sum_(n = 1)^(+ oo) 1 / n^2 = 1 + 1 / 4 + 1 / 9 + 1 / 16 + dots.h = pi^2 / 6 $
 
-#strong[Exercice 17. Le Théorème Spectral et décomposition en valeurs
+#strong[Exercice 58.17 Le Théorème Spectral et décomposition en valeurs
 propres.] Démontrer que toute matrice symétrique réelle $2 times 2$
 admet deux valeurs propres réelles et peut être diagonalisée dans une
 base orthonormée de vecteurs propres.
 
-#strong[Exercice 18. L'inégalité de Cauchy-Schwarz.] Pour tous réels
+#strong[Exercice 58.18 L'inégalité de Cauchy-Schwarz.] Pour tous réels
 $x_1\,dots.h\,x_n$ et $y_1\,dots.h\,y_n$, démontrer en étudiant le signe
 du trinôme du second degré $P\(t\)= sum_(i = 1)^n\(x_i t + y_i\)^2$ que
 :
@@ -49629,7 +48778,7 @@ $ (sum_(i = 1)^n x_i y_i)^2 lt.eq (sum_(i = 1)^n x_i^2) (sum_(i = 1)^n y_i^2) $
 En déduire l'inégalité intégrale de Cauchy-Schwarz :
 $(integral_a^b f \( t \) g \( t \) d t)^2 lt.eq (integral_a^b f \( t \)^2 d t) (integral_a^b g \( t \)^2 d t)$.
 
-#strong[Exercice 19. Le Théorème du Point Fixe de Banach (Théorème des
+#strong[Exercice 58.19 Le Théorème du Point Fixe de Banach (Théorème des
 contractions).] Soit $f :\[a\;b\]arrow.r\[a\;b\]$ une fonction
 $k$-contractante (il existe $k in\]0\;1\[$ tel que
 $\|f\(x\)- f\(y\)\|lt.eq k\|x - y\|$ pour tous $x\,y$). Démontrer que
@@ -49638,7 +48787,7 @@ tout $u_0 in\[a\;b\]$, la suite récurrente $u_(n + 1) = f\(u_n\)$
 converge vers $alpha$ avec une vitesse géométrique majorée par
 $\|u_n - alpha\|lt.eq frac(k^n, 1 - k)\|u_1 - u_0\|$.
 
-#strong[Exercice 20. Théorème Central Limite (Aperçu conceptuel).]
+#strong[Exercice 58.20 Théorème Central Limite (Aperçu conceptuel).]
 Expliquer pourquoi la somme d'un grand nombre de variables aléatoires
 indépendantes d'effets petits et cumulés tend toujours vers une loi
 normale gaussienne, et pourquoi cette cloche universelle apparaît aussi
@@ -49646,14 +48795,14 @@ bien dans la taille des êtres vivants, les erreurs de mesure
 astronomiques, le bruit thermique d'une résistance électrique et les
 fluctuations boursières.
 
-#strong[Exercice 21. La formule d'Euler pour les polyèdres convexes :
+#strong[Exercice 58.21 La formule d'Euler pour les polyèdres convexes :
 $S - A + F = 2$.] Vérifier cette formule pour les 5 solides de Platon
 (Tétraèdre, Cube, Octaèdre, Dodécaèdre, Icosaèdre). Esquisser la preuve
 par projection planaire et contraction d'arêtes. Pourquoi ce nombre 2
 est-il le premier invariant topologique (la caractéristique d'Euler de
 la sphère) ?
 
-#strong[Exercice 22. Le problème ouvert de Syracuse (Collatz).] Soit la
+#strong[Exercice 58.22 Le problème ouvert de Syracuse (Collatz).] Soit la
 suite définie par $u_(n + 1) = u_n / 2$ si $u_n$ est pair, et
 $u_(n + 1) = 3 u_n + 1$ si $u_n$ est impair. 1. Tester la suite pour
 $u_0 = 7$. 2. Pourquoi cette conjecture d'une simplicité enfantine
@@ -49664,7 +48813,7 @@ puissants depuis 1937 ? Méditer sur les limites de notre savoir.
 
 === Solutions Détaillées
 <solutions-détaillées>
-#strong[Solution 1.]
+#strong[Solution 58.1]
 $f'\(x\)= 2 x e^(- x) + x^2\(- e^(- x)\)= x\(2 - x\)e^(- x)$. Puisque
 $e^(- x) > 0$, le signe de $f'\(x\)$ est celui de $x\(2 - x\)$ : négatif
 sur $\]- oo\;0\[$, positif sur $\]0\;2\[$, négatif sur $\]2\;+ oo\[$.
@@ -49672,16 +48821,16 @@ Limites : en $- oo$, $lim x^2 e^(- x) = + oo$. En $+ oo$, par croissance
 comparée, $lim x^2 e^(- x) = 0$. Le maximum absolu est atteint en
 $x = 2$, avec $f\(2\)= 4 e^(- 2) = 4 / e^2 approx 0\,5413$.
 
-#strong[Solution 2.] On reconnaît la forme $frac(u'\(x\), u\(x\))$ avec
+#strong[Solution 58.2] On reconnaît la forme $frac(u'\(x\), u\(x\))$ avec
 $u\(x\)= x^2 + 1 > 0$ et $u'\(x\)= 2 x$.
 $I =\[ln\(x^2 + 1\)\]_0^1 = ln\(1^2 + 1\)- ln\(0^2 + 1\)= ln\(2\)- ln\(1\)= ln 2$.
 
-#strong[Solution 3.]
+#strong[Solution 58.3]
 $Delta =\(- 2 sqrt(3)\)^2 - 4\(1\)\(4\)= 12 - 16 = - 4 =\(2 i\)^2$.
 $z_1 = frac(2 sqrt(3) - 2 i, 2) = sqrt(3) - i = 2 (sqrt(3) / 2 - 1 / 2 i) = 2 e^(- i pi / 6)$.
 $z_2 = frac(2 sqrt(3) + 2 i, 2) = sqrt(3) + i = 2 e^(i pi / 6)$.
 
-#strong[Solution 4.] On sait que $S_n = frac(n\(n + 1\), 2)$. On veut
+#strong[Solution 58.4] On sait que $S_n = frac(n\(n + 1\), 2)$. On veut
 prouver
 $cal(P)\(n\): C_n = (frac(n\(n + 1\), 2))^2 = frac(n^2\(n + 1\)^2, 4)$.
 
@@ -49690,7 +48839,7 @@ $cal(P)\(n\): C_n = (frac(n\(n + 1\), 2))^2 = frac(n^2\(n + 1\)^2, 4)$.
   $C_(n + 1) = C_n +\(n + 1\)^3 = frac(n^2\(n + 1\)^2, 4) +\(n + 1\)^3 =\(n + 1\)^2 [n^2 / 4 + n + 1] =\(n + 1\)^2 [frac(n^2 + 4 n + 4, 4)] = frac(\(n + 1\)^2\(n + 2\)^2, 4)$.
   $cal(P)\(n + 1\)$ est vraie.
 
-#strong[Solution 5.] Nombre total de mains :
+#strong[Solution 58.5] Nombre total de mains :
 $binom(32, 5) = 201 thin 376$. Pour avoir exactement 1 As : on choisit 1
 As parmi 4 ($binom(4, 1) = 4$) et 4 cartes parmi les 28 cartes qui ne
 sont pas des As ($binom(28, 4) = 20 thin 475$). Total favorables :
@@ -49698,20 +48847,20 @@ $4 times 20 thin 475 = 81 thin 900$. Probabilité :
 $P = frac(81 thin 900, 201 thin 376) approx 0\,4067$ (environ
 $40\,7 thin %$).
 
-#strong[Solution 6.] $det\(A\)= 7\(1\)- 3\(2\)= 1 eq.not 0$.
+#strong[Solution 58.6] $det\(A\)= 7\(1\)- 3\(2\)= 1 eq.not 0$.
 $A^(- 1) = 1 / 1 mat(delim: "(", 1, - 3; - 2, 7) = mat(delim: "(", 1, - 3; - 2, 7)$.
 Le système s'écrit $A vec(x, y) = vec(17, 5)$.
 $vec(x, y) = mat(delim: "(", 1, - 3; - 2, 7) vec(17, 5) = vec(17 - 15, - 34 + 35) = vec(2, 1)$.
 D'où $x = 2\,y = 1$.
 
-#strong[Solution 7.] 11 est premier, $upright("PGCD")\(5\,11\)= 1$. Par
+#strong[Solution 58.7] 11 est premier, $upright("PGCD")\(5\,11\)= 1$. Par
 Fermat, $5^10 equiv 1 med\(mod med 11\)$. $2026 = 10 times 202 + 6$.
 $5^2026 =\(5^10\)^202 times 5^6 equiv 1 times 5^6 med\(mod med 11\)$.
 $5^2 = 25 equiv 3 med\(mod med 11\)$.
 $5^6 =\(5^2\)^3 equiv 3^3 = 27 = 11 times 2 + 5 equiv 5 med\(mod med 11\)$.
 Le reste est #strong[5].
 
-#strong[Solution 8.] 1. Pour $t in\[k\;k + 1\]$,
+#strong[Solution 58.8] 1. Pour $t in\[k\;k + 1\]$,
 $frac(1, k + 1) lt.eq 1 / t lt.eq 1 / k$. Par intégration sur
 $\[k\;k + 1\]$ de longueur 1 :
 $frac(1, k + 1) lt.eq integral_k^(k + 1) 1 / t d t lt.eq 1 / k$. En
@@ -49722,7 +48871,7 @@ $u_(n + 1) - u_n = frac(1, n + 1) - ln\(n + 1\)+ ln\(n\)= frac(1, n + 1) - integ
 d'après l'inégalité précédente. La suite est décroissante et minorée par
 0, donc elle converge vers un réel $gamma in\[0\;1\]$.
 
-#strong[Solution 9.] 1. $W_0 = integral_0^(pi\/2) 1 d t = pi / 2$.
+#strong[Solution 58.9] 1. $W_0 = integral_0^(pi\/2) 1 d t = pi / 2$.
 $W_1 = integral_0^(pi\/2) sin t d t =\[- cos t\]_0^(pi\/2) = 1$. 2.
 $W_n = integral_0^(pi\/2) sin^(n - 1)\(t\)sin\(t\)d t$. Par IPP avec
 $u = sin^(n - 1) t$ et $v' = sin t$ :
@@ -49737,14 +48886,14 @@ Par encadrement, $lim W_(n + 1) / W_n = 1$. 4. En explicitant $W_(2 n)$
 et $W_(2 n + 1)$ par cascade de récurrence, le quotient mène au produit
 infini de Wallis égal à $pi$.
 
-#strong[Solution 10.] Par IPP :
+#strong[Solution 58.10] Par IPP :
 $u\(x\)= x arrow.r.double.long u'\(x\)= 1$, et
 $v'\(x\)= cos\(n x\)arrow.r.double.long v\(x\)= frac(sin\(n x\), n)$.
 $integral_0^pi x cos\(n x\)d x = [x frac(sin\(n x\), n)]_0^pi - integral_0^pi frac(sin\(n x\), n) d x = 0 - [- frac(cos\(n x\), n^2)]_0^pi = frac(cos\(n pi\)- cos\(0\), n^2) = frac(\(- 1\)^n - 1, n^2)$.
 Cette intégrale vaut $- 2 / n^2$ si $n$ est impair, et 0 si $n$ est
 pair.
 
-#strong[Solution 11.] $y' = a y - a / K y^2$. En divisant par $y^2$ :
+#strong[Solution 58.11] $y' = a y - a / K y^2$. En divisant par $y^2$ :
 $y' / y^2 = a / y - a / K$. Comme $z = 1 / y$, $z' = - y' / y^2$.
 L'équation devient
 $- z' = a z - a / K arrow.l.r.double z' + a z = a / K$. C'est une
@@ -49754,7 +48903,7 @@ $z\(t\)= 1 / K + C e^(- a t)$, d'où
 $y\(t\)= frac(K, 1 + C K e^(- a t))$. C'est la fonction logistique
 sigmoïde universelle de croissance saturée.
 
-#strong[Solution 12.] Soit $N = 2^(p - 1) M_p$ avec $M_p = 2^p - 1$
+#strong[Solution 58.12] Soit $N = 2^(p - 1) M_p$ avec $M_p = 2^p - 1$
 premier. Puisque $M_p$ est premier et impair, les diviseurs de $N$ sont
 de la forme $2^k$ (pour $0 lt.eq k lt.eq p - 1$) et $2^k M_p$ (pour
 $0 lt.eq k lt.eq p - 1$). La somme de tous les diviseurs de $N$ est :
@@ -49762,7 +48911,7 @@ $sigma\(N\)= (sum_(k = 0)^(p - 1) 2^k)\(1 + M_p\)=\(2^p - 1\)\(1 + 2^p - 1\)=\(2
 La somme de tous les diviseurs valant $2 N$, la somme des diviseurs
 stricts vaut $2 N - N = N$. Le nombre est parfait.
 
-#strong[Solution 13.] 1. La variable aléatoire $X$ prend la valeur $2^k$
+#strong[Solution 58.13] 1. La variable aléatoire $X$ prend la valeur $2^k$
 avec la probabilité $\(1\/2\)^k$.
 $E\(X\)= sum_(k = 1)^(+ oo) 2^k (1 / 2)^k = sum_(k = 1)^(+ oo) 1 = 1 + 1 + 1 + dots.h = + oo$.
 \2. L'espérance est infinie, pourtant personne ne paierait 1 000 euros
@@ -49771,7 +48920,7 @@ $1 / 16 approx 6 thin %$. Ce paradoxe a conduit Daniel Bernoulli (1738)
 à inventer la notion d'#strong[utilité marginale] logarithmique de
 l'argent.
 
-#strong[Solution 14.] En effectuant les opérations sur les colonnes
+#strong[Solution 58.14] En effectuant les opérations sur les colonnes
 $C_3 arrow.l C_3 - a C_2$ et $C_2 arrow.l C_2 - a C_1$, la première
 ligne devient $\(1 med 0 med 0\)$, ce qui permet de factoriser
 immédiatement $\(b - a\)$ et $\(c - a\)$, laissant $\(c - b\)$. Si les
@@ -49780,7 +48929,7 @@ qui prouve que la matrice du système des coefficients du polynôme
 $P\(x\)= alpha x^2 + beta x + gamma$ est inversible : il existe une
 parabole unique passant par 3 points non alignés verticalement.
 
-#strong[Solution 15.] Si $P\(z\)$ n'a pas de racine, $\|P\(z\)\|> 0$
+#strong[Solution 58.15] Si $P\(z\)$ n'a pas de racine, $\|P\(z\)\|> 0$
 partout. Comme $\|P\(z\)\|arrow.r + oo$ quand $\|z\|arrow.r + oo$, le
 minimum global $m > 0$ est atteint en un point $z_0$. Mais en écrivant
 le développement local $P\(z_0 + h\)= P\(z_0\)+ c h^k + dots.h$, en
@@ -49789,7 +48938,7 @@ on trouve un point où le module est strictement inférieur à $m$,
 contredisant le fait que $m$ soit un minimum (lemme de d'Alembert). Donc
 $m = 0$, et $P$ admet une racine.
 
-#strong[Solution 16.] En exprimant $sin\(\(2 m + 1\)x\)$ à l'aide de la
+#strong[Solution 58.16] En exprimant $sin\(\(2 m + 1\)x\)$ à l'aide de la
 formule de Moivre et en factorisant par $sin^(2 m + 1)\(x\)$, les
 racines du polynôme sont les $cot^2 (frac(k pi, 2 m + 1))$ pour
 $k = 1\,dots.h\,m$. La somme des racines est donnée par les relations
@@ -49799,7 +48948,7 @@ utilisant l'encadrement $cot^2 theta < 1 / theta^2 < 1 + cot^2 theta$ et
 en faisant tendre $m arrow.r + oo$, le théorème des gendarmes livre
 majestueusement la valeur $pi^2 / 6$.
 
-#strong[Solution 17.] Soit $A = mat(delim: "(", a, b; b, c)$. Son
+#strong[Solution 58.17] Soit $A = mat(delim: "(", a, b; b, c)$. Son
 discriminant caractéristique est
 $Delta =\(a + c\)^2 - 4\(a c - b^2\)=\(a - c\)^2 + 4 b^2$. Puisque
 $\(a - c\)^2 gt.eq 0$ et $4 b^2 gt.eq 0$, $Delta$ est toujours positif
@@ -49807,7 +48956,7 @@ ou nul ! Les valeurs propres sont toujours réelles. Si $b eq.not 0$,
 $Delta > 0$ et les deux valeurs propres sont distinctes, avec des
 vecteurs propres orthogonaux ($arrow(v)_1 dot.op arrow(v)_2 = 0$).
 
-#strong[Solution 18.] Pour tout réel $t$,
+#strong[Solution 58.18] Pour tout réel $t$,
 $P\(t\)= sum_(i = 1)^n\(x_i t + y_i\)^2 gt.eq 0$ comme somme de carrés.
 En développant :
 $P\(t\)= (sum x_i^2) t^2 + 2 (sum x_i y_i) t + (sum y_i^2) gt.eq 0$. Ce
@@ -49817,7 +48966,7 @@ Son discriminant réduit $Delta'$ est donc obligatoirement négatif ou nul
 l'inégalité de Cauchy-Schwarz. L'extension continue aux intégrales
 découle du passage à la limite des sommes de Riemann.
 
-#strong[Solution 19.] Par récurrence,
+#strong[Solution 58.19] Par récurrence,
 $\|u_(n + 1) - u_n\|lt.eq k^n\|u_1 - u_0\|$. Pour $p gt.eq 1$,
 $\|u_(n + p) - u_n\|lt.eq sum_(j = n)^(n + p - 1)\|u_(j + 1) - u_j\|lt.eq\|u_1 - u_0\|sum_(j = n)^(+ oo) k^j = frac(k^n, 1 - k)\|u_1 - u_0\|$.
 La suite est de Cauchy dans un intervalle fermé complet, donc elle
@@ -49825,7 +48974,7 @@ converge vers un unique point fixe $alpha$. Ce théorème fonde la méthode
 de résolution numérique des équations différentielles et des équations
 intégrales.
 
-#strong[Solution 20.] D'après le Théorème Central Limite (TCL), si
+#strong[Solution 58.20] D'après le Théorème Central Limite (TCL), si
 $X_1\,X_2\,dots.h\,X_n$ sont des variables indépendantes de même loi
 d'espérance $mu$ et de variance $sigma^2$, alors la variable centrée
 réduite $frac(sum X_i - n mu, sigma sqrt(n))$ converge en loi vers la
@@ -49833,7 +48982,7 @@ loi normale standard $cal(N)\(0\,1\)$. La courbe en cloche est
 l'attracteur universel de tout phénomène macroscopique résultant d'une
 multitude d'infimes chocs microscopiques indépendants.
 
-#strong[Solution 21.] Pour le tétraèdre :
+#strong[Solution 58.21] Pour le tétraèdre :
 $S = 4\,A = 6\,F = 4 arrow.r.double.long 4 - 6 + 4 = 2$. Pour le cube :
 $S = 8\,A = 12\,F = 6 arrow.r.double.long 8 - 12 + 6 = 2$. Pour
 l'octaèdre : $S = 6\,A = 12\,F = 8 arrow.r.double.long 2$. Pour le
@@ -49843,7 +48992,7 @@ quantité $chi = S - A + F$ est invariante par déformation homéomorphe de
 la surface : pour un tore (bouée), elle vaut 0. C'est l'acte de
 naissance de la topologie algébrique avec Henri Poincaré.
 
-#strong[Solution 22.] Pour $u_0 = 7$ :
+#strong[Solution 58.22] Pour $u_0 = 7$ :
 $7 arrow.r 22 arrow.r 11 arrow.r 34 arrow.r 17 arrow.r 52 arrow.r 26 arrow.r 13 arrow.r 40 arrow.r 20 arrow.r 10 arrow.r 5 arrow.r 16 arrow.r 8 arrow.r 4 arrow.r 2 arrow.r 1$
 (boucle $1 arrow.r 4 arrow.r 2 arrow.r 1$). Cette conjecture, testée par
 ordinateur jusqu'à des nombres colossaux ($> 10^20$), résiste à toute
@@ -50274,7 +49423,7 @@ Conformément aux principes de diffusion libre sous licence *Creative Commons (C
     )[
       #align(left)[
         #text(size: 10pt, style: "italic", fill: rgb("#fef08a"))[
-          « Et si le dégoût des mathématiques ne venait pas d'un manque d'intelligence, mais de l'amnésie des yeux et des mains ? »
+          « Et si la force et la beauté des mathématiques naissaient simplement de l'éveil des yeux et du geste des mains ? »
         ]
       ]
     ]
