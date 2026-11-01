@@ -1,6 +1,6 @@
 # Consignes de conversion des figures ASCII → SVG (LA VOIE DU NOMBRE)
 
-Racine : `c:\Silvere\Encours\Developpement\Articles\livre_mathematiques\`
+Racine : `c:\Silvere\Produits\Articles\avecIA\lavoiedunombre\`
 Sources : `v2\Volume_<N>\Chapitre_*.md` (Markdown + LaTeX `$...$`).
 Le livre est compilé par Pandoc (md → Typst) puis Typst. Le fichier `.typ` final est à la racine, donc
 les chemins d'image dans le Markdown doivent être relatifs à la racine : `figures/vol_<N>/...`.

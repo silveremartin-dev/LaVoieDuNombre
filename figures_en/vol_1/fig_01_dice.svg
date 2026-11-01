@@ -1,0 +1,48 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 660 120" width="100%" height="120">
+  <rect width="660" height="120" fill="#f8fafc" rx="8" stroke="#cbd5e1" stroke-width="1"/>
+  <!-- Dé 1 -->
+  <g transform="translate(20, 20)">
+    <rect width="80" height="80" rx="10" fill="#ffffff" stroke="#0f172a" stroke-width="2"/>
+    <circle cx="40" cy="40" r="6" fill="#1d4ed8"/>
+  </g>
+  <!-- Dé 2 -->
+  <g transform="translate(125, 20)">
+    <rect width="80" height="80" rx="10" fill="#ffffff" stroke="#0f172a" stroke-width="2"/>
+    <circle cx="25" cy="25" r="6" fill="#1d4ed8"/>
+    <circle cx="55" cy="55" r="6" fill="#1d4ed8"/>
+  </g>
+  <!-- Dé 3 -->
+  <g transform="translate(230, 20)">
+    <rect width="80" height="80" rx="10" fill="#ffffff" stroke="#0f172a" stroke-width="2"/>
+    <circle cx="22" cy="22" r="6" fill="#1d4ed8"/>
+    <circle cx="40" cy="40" r="6" fill="#1d4ed8"/>
+    <circle cx="58" cy="58" r="6" fill="#1d4ed8"/>
+  </g>
+  <!-- Dé 4 -->
+  <g transform="translate(335, 20)">
+    <rect width="80" height="80" rx="10" fill="#ffffff" stroke="#0f172a" stroke-width="2"/>
+    <circle cx="24" cy="24" r="6" fill="#1d4ed8"/>
+    <circle cx="56" cy="24" r="6" fill="#1d4ed8"/>
+    <circle cx="24" cy="56" r="6" fill="#1d4ed8"/>
+    <circle cx="56" cy="56" r="6" fill="#1d4ed8"/>
+  </g>
+  <!-- Dé 5 -->
+  <g transform="translate(440, 20)">
+    <rect width="80" height="80" rx="10" fill="#ffffff" stroke="#0f172a" stroke-width="2"/>
+    <circle cx="24" cy="24" r="6" fill="#1d4ed8"/>
+    <circle cx="56" cy="24" r="6" fill="#1d4ed8"/>
+    <circle cx="40" cy="40" r="6" fill="#b91c1c"/>
+    <circle cx="24" cy="56" r="6" fill="#1d4ed8"/>
+    <circle cx="56" cy="56" r="6" fill="#1d4ed8"/>
+  </g>
+  <!-- Dé 6 -->
+  <g transform="translate(545, 20)">
+    <rect width="80" height="80" rx="10" fill="#ffffff" stroke="#0f172a" stroke-width="2"/>
+    <circle cx="24" cy="20" r="6" fill="#1d4ed8"/>
+    <circle cx="56" cy="20" r="6" fill="#1d4ed8"/>
+    <circle cx="24" cy="40" r="6" fill="#1d4ed8"/>
+    <circle cx="56" cy="40" r="6" fill="#1d4ed8"/>
+    <circle cx="24" cy="60" r="6" fill="#1d4ed8"/>
+    <circle cx="56" cy="60" r="6" fill="#1d4ed8"/>
+  </g>
+</svg>

@@ -390,7 +390,7 @@
       clip: true,
       inset: 0pt,
       width: 88%,
-      image("figures/cover_art.jpg", width: 100%, height: 12.8cm, fit: "cover")
+      image("figures_en/cover_art.jpg", width: 100%, height: 12.8cm, fit: "cover")
     )
     
     #v(0.6cm)
@@ -579,7 +579,7 @@
 #metadata("debut-texte") <debut-texte>
 
 
-#frontispice-volume("figures/nature/vol_1_abeilles_hexagone.jpg")
+#frontispice-volume("figures_en/nature/vol_1_abeilles_hexagone.jpg")
 
 #ouverture-volume(
   "I",
@@ -602,10 +602,9 @@
 #emph[“Before learning to count with words and numerals, humans began by
 looking at the world with their eyes and touching the earth with their
 fingers. A pebble for a beast, a notch for a day: thus was born the
-greatest adventure of the human mind.”
+greatest adventure of the human mind.”]
 ]
 
-]
 
 #divider()
 
@@ -677,26 +676,14 @@ How many were there? This time, it is impossible to tell! You hesitate:
 every single button and count slowly: #emph[“1, 2, 3, 4, 5, 6, 7, and
 8.”]
 
-#align(center)[
-  #block(
-    fill: rgb("#f8fafc"),
-    stroke: 1pt + rgb("#cbd5e1"),
-    inset: (x: 16pt, y: 10pt),
-    radius: 6pt,
-    breakable: false,
-  )[
-    #set text(font: "Liberation Mono", size: 9.5pt, fill: rgb("#0f172a"))
-    ```text
-What your eye perceives instantly:      What makes your eye hesitate:
-Three!)                               (How many??)
-    ```
+#figure(image("figures_en/vol_1/fig_01_subitizing.svg", alt: "The subitizing phenomenon: immediate perception vs cognitive saturation"),
+  caption: [
+    The subitizing phenomenon: immediate perception vs cognitive
+    saturation
   ]
-]
+)
 
-#principe(title: [Définition Fondamentale])[
-#strong[📐 Definition --- Subitizing
-]
- #strong[Subitizing] (from the
+#principe(title: [Definition — Subitizing])[#strong[Subitizing] (from the
 Latin #emph[subitus], meaning “sudden, immediate”) is our brain's
 capacity to perceive #strong[at a single glance], without counting one
 by one, the exact quantity of objects in a small collection. In humans,
@@ -705,10 +692,8 @@ Starting from #strong[5], our eyes become confused if the objects are
 scattered randomly.
 ]
 
-#decouvre(title: [Découverte & Histoire])[
-#strong[💡 Did You Know? --- Dice and Domino Patterns
-]
- Why do standard
+
+#decouvre(title: [Did You Know? — Dice and Domino Patterns])[Why do standard
 playing dice always arrange their dots in the same pattern? Look at the
 5 on a die: four corner dots and one in the center. Thanks to this
 cross-shaped pattern, your eye immediately spots two at the top, two at
@@ -717,33 +702,19 @@ these structured geometric arrangements to help their eyes recognize
 quantities larger than 3 without wasting time counting one by one.
 ]
 
+
 #quote_box[
-#align(center)[
-  #block(
-    fill: rgb("#f8fafc"),
-    stroke: 1pt + rgb("#cbd5e1"),
-    inset: (x: 16pt, y: 10pt),
-    radius: 6pt,
-    breakable: false,
-  )[
-    #set text(font: "Liberation Mono", size: 9.5pt, fill: rgb("#0f172a"))
-    ```text
-Face 1:       Face 2:       Face 3:       Face 4:       Face 5:       Face 6:
-o
-]
-       [ o   ]       [ o o ]       [ o o ]       [ o o ]
-o  ]      [     ]       [  o  ]       [     ]       [  o  ]       [ o o ]
-o ]       [   o ]       [ o o ]       [ o o ]       [ o o ]
-    ```
+#figure(image("figures_en/vol_1/fig_01_dice.svg", alt: "The six faces of the die: instant spatial recognition"),
+  caption: [
+    The six faces of the die: instant spatial recognition
   ]
+)
 ]
-]
+
 
 #quote_box[
 #strong[🔍 True Story --- The Lightning-Fast Glance of Ayumu the
-Chimpanzee
-]
- At Kyoto University in Japan, researcher Tetsuro Matsuzawa
+Chimpanzee] At Kyoto University in Japan, researcher Tetsuro Matsuzawa
 studied a young chimpanzee named #strong[Ayumu]. On a touchscreen
 monitor, the digits 1 through 9 appear scattered randomly, then
 disappear under blank white squares in less than two-tenths of a second!
@@ -754,6 +725,7 @@ extraordinary ability? Because in the canopy, spotting in a split second
 the exact number of ripe fruits on a branch or the number of predators
 hidden among leaves is a matter of life or death.
 ]
+
 
 Yet if humans do not possess this superpower for large numbers, how did
 we manage to survive and build civilizations? We invented a trick far
@@ -782,23 +754,11 @@ he knows something monumental: #strong[there are in his bag exactly as
 many pebbles as there are living animals on the hill!] Every pebble is
 the secret twin of a sheep.
 
-#align(center)[
-  #block(
-    fill: rgb("#f8fafc"),
-    stroke: 1pt + rgb("#cbd5e1"),
-    inset: (x: 16pt, y: 10pt),
-    radius: 6pt,
-    breakable: false,
-  )[
-    #set text(font: "Liberation Mono", size: 9.5pt, fill: rgb("#0f172a"))
-    ```text
-Sheep 1   -------->   Pebble 1
-Sheep 2   -------->   Pebble 2
-Sheep 3   -------->   Pebble 3
-One beast ======>     One pebble
-    ```
+#figure(image("figures_en/vol_1/fig_01_correspondance.svg", alt: "Term-to-term correspondence: direct comparison of two collections"),
+  caption: [
+    Term-to-term correspondence: direct comparison of two collections
   ]
-]
+)
 
 At dusk, the sheep return. The shepherd stands at the cave entrance:
 
@@ -817,10 +777,7 @@ Look at what can happen:
   joyous surprise: a ewe gave birth to a lamb out on the meadow! There
   are #strong[more] sheep than pebbles.
 
-#principe(title: [Définition Fondamentale])[
-#strong[📐 Definition --- One-to-One Correspondence
-]
- Establishing a
+#principe(title: [Definition — One-to-One Correspondence])[Establishing a
 #strong[one-to-one correspondence] (also called bijection or
 item-by-item pairing) means pairing every object of one group with one
 and only one object of another group, leaving none out and repeating
@@ -828,15 +785,13 @@ none. This is the foundational principle of all mathematical
 calculation.
 ]
 
-#decouvre(title: [Découverte & Histoire])[
-#strong[💡 Did You Know? --- Where Does the Word “Calculate” Come From?
-]
 
-In Latin, a small smooth pebble gathered from a stream bed was called a
+#decouvre(title: [Did You Know? — Where Does the Word “Calculate” Come From?])[In Latin, a small smooth pebble gathered from a stream bed was called a
 #strong[calculus]. It is from that very pebble slipped into the
 prehistoric shepherd's pocket that our modern word comes: #strong[to
 calculate]!
 ]
+
 
 #divider()
 
@@ -845,13 +800,6 @@ calculate]!
 Before using written numerals, mathematicians use three fundamental
 phrases to compare two collections of objects:
 
-#figure(image("figures/vol_1/fig_01_correspondance.svg", alt: "Correspondance terme à terme : comparaison directe de deux collections"),
-  caption: [
-    Correspondance terme à terme : comparaison directe de deux
-    collections
-  ]
-)
-
 - #strong[As many as]: Every circle has found a partner square, and none
   are left over. Both groups contain the same quantity.
 - #strong[More than]: The group of squares has leftover items. There are
@@ -859,28 +807,14 @@ phrases to compare two collections of objects:
 - #strong[Fewer than]: The group of circles ran out first. There are
   #strong[fewer circles than squares].
 
-#alerte(title: [Attention au Piège !])[
-#strong[⚠️ Watch Out! --- The Illusion of Occupied Space
-]
- Look at these
+#alerte(title: [Watch Out! — The Illusion of Occupied Space])[Look at these
 two rows of buttons:
 ]
 
-#quote_box[
-#align(center)[
-  #block(
-    fill: rgb("#f8fafc"),
-    stroke: 1pt + rgb("#cbd5e1"),
-    inset: (x: 16pt, y: 10pt),
-    radius: 6pt,
-    breakable: false,
-  )[
-    #set text(font: "Liberation Mono", size: 9.5pt, fill: rgb("#0f172a"))
-    ```text
-Row 1:
-Row 2:
-    ```
-  ]
+
+#exemple_resolu(title: [Solved Example — Visual Comparison in Parallel Rows])[#quote_box[
+- Row 1:
+- Row 2:
 ]
 ]
 
@@ -889,12 +823,11 @@ Row 2:
 The first row looks longer because the circles are spread wide apart!
 But if you connect each circle to a square with your finger, you
 discover that there are 4 circles and 6 squares: there are therefore
-#strong[more
-]
- squares than circles, even though the circles occupy more
+#strong[more] squares than circles, even though the circles occupy more
 space on the table. #strong[In mathematics, it is not space that
 counts---it is quantity!]
 ]
+
 
 #divider()
 
@@ -907,22 +840,21 @@ Our ancestors therefore devised a much lighter tool: #strong[the tally
 stick]. Each time an animal passes, one strikes a sharp flint against a
 polished bone or flat piece of wood: #emph[Scritch!]
 
-#figure(image("figures/vol_1/fig_01_os_ishango.svg", alt: "L’os d’Ishango : les premières encoches de dénombrement par paquets"),
+#figure(image("figures_en/vol_1/fig_01_os_ishango.svg", alt: "The Ishango bone: early tally notches grouped in bundles"),
   caption: [
-    L'os d'Ishango : les premières encoches de dénombrement par paquets
+    The Ishango bone: early tally notches grouped in bundles
   ]
 )
 
 #quote_box[
-#strong[🔍 True Story --- The Ishango Tally Bone
-]
- On the shores of Lake
+#strong[🔍 True Story --- The Ishango Tally Bone] On the shores of Lake
 Edward, between Congo and Uganda in Africa, archaeologists unearthed a
 fossilized baboon fibula over #strong[20,000 years old]: the
 #strong[Ishango bone]. It bears notches arranged into clearly deliberate
 groupings. It is one of humanity's oldest surviving testimonies of
 mathematical thought.
 ]
+
 
 #figure(image("figures/histoire/ch_01_ishango.jpg", alt: "The fossilized Ishango bone (~20,000 BCE, Congo): humanity’s earliest counting notches and numerical groupings"),
   caption: [
@@ -942,17 +874,13 @@ numbers in the universe:
 
 $ upright(bold(0))\,quad upright(bold(1))\,quad upright(bold(2))\,quad upright(bold(3))\,quad upright(bold(4))\,quad upright(bold(5))\,quad upright(bold(6))\,quad upright(bold(7))\,quad upright(bold(8))\,quad upright(bold(9)) $
 
-#principe(title: [Définition Fondamentale])[
-#strong[📐 Definition --- Digit vs.~Number
-]
-
-
-- A #strong[digit] is an individual written character, like a letter of
+#principe(title: [Definition — Digit vs.~Number])[- A #strong[digit] is an individual written character, like a letter of
   the alphabet. There are only 10: 0, 1, 2, 3, 4, 5, 6, 7, 8, 9.
 - A #strong[number] expresses a quantity or measure, like a word built
   from letters. #emph[For example: using the digits 2 and 5, we write
   the number 25.]
 ]
+
 
 ==== How to Properly Draw the Ten Digits
 <how-to-properly-draw-the-ten-digits>
@@ -992,10 +920,7 @@ starting from the correct position:
 
 === 7. Five Solved Examples and Practical Workshops
 <five-solved-examples-and-practical-workshops>
-#quote_box[
-#strong[Solved Example 1 --- The Squirrels' Harvest
-]
- #emph[Problem:]
+#exemple_resolu(title: [Solved Example 1 — The Squirrels' Harvest])[#emph[Problem:]
 Three little squirrels gather hazelnuts. Hazelnut the squirrel found 3,
 Bushy found 5, and Chestnut found 3. Who has as many as whom?
 #emph[Step-by-step resolution:] 1. Let us compare Hazelnut (3 nuts) and
@@ -1016,11 +941,8 @@ Chestnut (3 nuts). Let us perform item-by-item pairing:
 ]
 ]
 
-#quote_box[
-#strong[Solved Example 2 --- Setting the Table Without Counting
-]
 
-#emph[Practical Workshop:] You must set the dinner table for 4 people.
+#methode(title: [Solved Example 2 — Setting the Table Without Counting])[#emph[Practical Workshop:] You must set the dinner table for 4 people.
 You have a box of forks. #emph[The shepherd's method:] You do not count
 the forks in the box. You walk to each plate set around the table:
 
@@ -1035,11 +957,8 @@ the forks in the box. You walk to each plate set around the table:
   forks on the table as plates, without ever having needed to count!
 ]
 
-#quote_box[
-#strong[Solved Example 3 --- Comparing Two Spread-Out Collections
-]
 
-#emph[Problem:] On a sheet of paper, 5 small red stars are clustered
+#exemple_resolu(title: [Solved Example 3 — Comparing Two Spread-Out Collections])[#emph[Problem:] On a sheet of paper, 5 small red stars are clustered
 tightly together, while 4 large blue hearts are spaced widely apart. Are
 there more stars or more hearts? #emph[Method:] Connect each heart to a
 star with a pencil line:
@@ -1056,10 +975,8 @@ star with a pencil line:
   across the page.
 ]
 
-#quote_box[
-#strong[Solved Example 4 --- The Clothes Hanger Balance
-]
- #emph[Practical
+
+#methode(title: [Solved Example 4 — The Clothes Hanger Balance])[#emph[Practical
 Workshop:] Take a plastic clothes hanger. Clip 3 red clothespins on the
 left arm and 3 blue clothespins on the right arm. #emph[Observation:] If
 you balance the hanger by its hook on your index finger, it stays
@@ -1069,11 +986,8 @@ pin to the left, the left side dips down: there are #strong[more pins on
 the left than on the right].
 ]
 
-#quote_box[
-#strong[Solved Example 5 --- Spotting the Empty Set with Zero
-]
 
-#emph[Problem:] In one nest, there are 3 chicks. In a second nest, there
+#exemple_resolu(title: [Solved Example 5 — Spotting the Empty Set with Zero])[#emph[Problem:] In one nest, there are 3 chicks. In a second nest, there
 is 1 chick. In a third abandoned nest, there are no chicks at all. What
 digit do you write for each nest? #emph[Resolution:]
 
@@ -1085,6 +999,7 @@ digit do you write for each nest? #emph[Resolution:]
   null quantity, we write the digit #strong[0]. #emph[Conclusion:] Zero
   signifies that there is #strong[nothing], the container is empty!
 ]
+
 
 #divider()
 
@@ -1327,10 +1242,9 @@ Ten]!
 #quote_box[
 #emph[“If we had had six fingers on each hand like creatures in fairy
 tales, the entire world would count in a completely different way. Human
-mathematics was born at the tips of our ten fingers.”
+mathematics was born at the tips of our ten fingers.”]
 ]
 
-]
 
 #divider()
 
@@ -1369,9 +1283,9 @@ on your belt, and threatens to tear in two!
 You then try replacing the pebbles with notches carved onto a wooden
 tally stick, like ancestral hunters:
 
-#figure(image("figures/vol_1/fig_02_baton_45_traits.svg", alt: "Le bâton d’entailles : saturation cognitive des 45 traits continus"),
+#figure(image("figures_en/vol_1/fig_02_baton_45_traits.svg", alt: "The tally stick: cognitive saturation of 45 continuous strokes"),
   caption: [
-    Le bâton d'entailles : saturation cognitive des 45 traits continus
+    The tally stick: cognitive saturation of 45 continuous strokes
   ]
 )
 
@@ -1395,9 +1309,9 @@ Hold up both hands open before your eyes. Look at your fingers:
 - On your right hand: 5 fingers.
 - Together: $5 + 5 = 10$ fingers!
 
-#figure(image("figures/vol_1/fig_02_deux_mains_dix.svg", alt: "Les deux mains ouvertes : 5 + 5 = 10, fondement de la base décimale"),
+#figure(image("figures_en/vol_1/fig_02_deux_mains_dix.svg", alt: "Two open hands: 5 + 5 = 10, foundation of the decimal base"),
   caption: [
-    Les deux mains ouvertes : 5 + 5 = 10, fondement de la base décimale
+    Two open hands: 5 + 5 = 10, foundation of the decimal base
   ]
 )
 
@@ -1418,22 +1332,11 @@ This cork stopper is no ordinary pebble. It possesses a superpower: on
 its own, it whispers: #emph[“I am worth ten small pebbles. I am worth
 ten sheep!”]
 
-#align(center)[
-  #block(
-    fill: rgb("#f8fafc"),
-    stroke: 1pt + rgb("#cbd5e1"),
-    inset: (x: 16pt, y: 10pt),
-    radius: 6pt,
-    breakable: false,
-  )[
-    #set text(font: "Liberation Mono", size: 9.5pt, fill: rgb("#0f172a"))
-    ```text
-10 small pebbles = 10 units / ones)
-Magic trade!)
-🥫 ]         (1 cork stopper = 1 ten)
-    ```
+#figure(image("figures_en/vol_1/fig_02_echange_dizaine.svg", alt: "Regular bundling: 10 loose units become 1 bundled ten"),
+  caption: [
+    Regular bundling: 10 loose units become 1 bundled ten
   ]
-]
+)
 
 The shepherd can now continue with free hands:
 
@@ -1453,27 +1356,21 @@ have in his pocket?
 In total: 9 small, featherlight items instead of 45 heavy stones that
 were bruising his hips!
 
-#principe(title: [Définition Fondamentale])[
-#strong[📐 Definition --- Unit (One) and Ten
-]
-
-
-- A #strong[unit] (or #strong[one]) is an isolated, individual item (1
+#principe(title: [Definition — Unit (One) and Ten])[- A #strong[unit] (or #strong[one]) is an isolated, individual item (1
   pebble, 1 marble, 1 finger).
 - A #strong[ten] is a closed bundle of #strong[10 units] grouped
   together ($1 upright(" ten") = 10 upright(" ones")$).
 ]
 
-#decouvre(title: [Découverte & Histoire])[
-#strong[💡 Did You Know? --- The 10-Egg Carton
-]
- In your kitchen, look at
+
+#decouvre(title: [Did You Know? — The 10-Egg Carton])[In your kitchen, look at
 a standard cardboard egg carton. It contains two rows of 5 compartments,
 exactly 10 spaces. One full, closed carton is #strong[1 ten of eggs]. If
 you have 3 full cartons and 4 loose eggs on the counter, you know
 instantly that you have 34 eggs, without having to count them one by
 one!
 ]
+
 
 #divider()
 
@@ -1489,15 +1386,14 @@ They therefore counted in bundles of #strong[20]: this is known as a
 #strong[vigesimal system] (from the Latin #emph[vicesimus], twentieth).
 
 #quote_box[
-#strong[🔍 True Story --- Why Does French Say “Quatre-vingts”?
-]
- Ancient
+#strong[🔍 True Story --- Why Does French Say “Quatre-vingts”?] Ancient
 Celts and Gauls also counted in bundles of twenty! That is why in
 France, instead of a single word for eighty, people still say:
 $ upright("“quatre-vingts”") = 4 upright(" twenties") = 20 + 20 + 20 + 20 = 80 $
 And for 90, they say “quatre-vingt-dix” ($4 times 20 + 10$). Languages
 preserve living traces of those barefoot ancient hunter-gatherers!
 ]
+
 
 #divider()
 
@@ -1519,23 +1415,11 @@ $ 10 upright(" hundreds") = 1 thin 000 upright(" sheep!") $ You exchange
 them for #strong[1 large painted river stone]: this is #strong[one
 thousand].
 
-#align(center)[
-  #block(
-    fill: rgb("#f8fafc"),
-    stroke: 1pt + rgb("#cbd5e1"),
-    inset: (x: 16pt, y: 10pt),
-    radius: 6pt,
-    breakable: false,
-  )[
-    #set text(font: "Liberation Mono", size: 9.5pt, fill: rgb("#0f172a"))
-    ```text
-1 gray pebble      = 1 unit (one)
-1 cork stopper     = 1 ten       = 10 units
-1 golden pinecone  = 1 hundred   = 10 tens      = 100 units
-1 painted stone    = 1 thousand  = 10 hundreds  = 1 000 units
-    ```
+#figure(image("figures_en/vol_1/fig_02_pyramide_dizaines.svg", alt: "The decimal pyramid: units, tens, hundreds, thousands"),
+  caption: [
+    The decimal pyramid: units, tens, hundreds, thousands
   ]
-]
+)
 
 Every time you accumulate 10 items of one level, you bundle them into a
 single item of the next level! This is the core of our #strong[decimal
@@ -1571,29 +1455,13 @@ Are they the same? Absolutely not!
 
   - In total: $40 + 1 = 41$.
 
-#align(center)[
-  #block(
-    fill: rgb("#f8fafc"),
-    stroke: 1pt + rgb("#cbd5e1"),
-    inset: (x: 16pt, y: 10pt),
-    radius: 6pt,
-    breakable: false,
-  )[
-    #set text(font: "Liberation Mono", size: 9.5pt, fill: rgb("#0f172a"))
-    ```text
-Place-Value Chart:
-Tens       Units
-bundles)   (singles)
-1           4        = 10 + 4 = 14
-4           1        = 40 + 1 = 41
-    ```
+#figure(image("figures_en/vol_1/fig_02_tableau_maisons.svg", alt: "The place-value house chart: hundreds, tens, and units"),
+  caption: [
+    The place-value house chart: hundreds, tens, and units
   ]
-]
+)
 
-#quote_box[
-#strong[📐 Golden Rule --- Place Value
-]
- In mathematics, the true value
+#principe(title: [Golden Rule — Place Value])[In mathematics, the true value
 of a digit depends entirely upon the #strong[place] (the column) it
 occupies within the number:
 
@@ -1605,6 +1473,7 @@ occupies within the number:
 
 - Further still: the #strong[thousands] column ($t h$).
 ]
+
 
 #divider()
 
@@ -1626,27 +1495,13 @@ station a sentry in the empty tens column: #strong[the digit zero (0)].
 
 $ 405 = 4 upright(" hundreds, ") 0 upright(" tens, and ") 5 upright(" ones") $
 
-#align(center)[
-  #block(
-    fill: rgb("#f8fafc"),
-    stroke: 1pt + rgb("#cbd5e1"),
-    inset: (x: 16pt, y: 10pt),
-    radius: 6pt,
-    breakable: false,
-  )[
-    #set text(font: "Liberation Mono", size: 9.5pt, fill: rgb("#0f172a"))
-    ```text
-Hundreds     Tens       Units
-4          0          5       ---> 405
-Zero prevents the 4 and 5 from collapsing together!
-    ```
-  ]
+#principe(title: [Fundamental Rule — The Role of Zero as a Place Keeper])[- Hundreds Tens Units
+- 4 0 5 ---\> 405
+- Zero prevents the 4 and 5 from collapsing together!
 ]
 
-#decouvre(title: [Découverte & Histoire])[
-#strong[💡 Did You Know? --- The Invention of Zero
-]
- Zero is one of the
+
+#decouvre(title: [Did You Know? — The Invention of Zero])[Zero is one of the
 greatest conceptual breakthroughs in human history! It was perfected by
 mathematicians in #strong[India] around 1,500 years ago. Its Sanskrit
 name was #emph[shunya], meaning “void” or “empty.” It traveled into the
@@ -1654,14 +1509,13 @@ Arabic world as #emph[sifr] (which gave rise to both our English word
 “cipher” and the French word “chiffre”).
 ]
 
-#alerte(title: [Attention au Piège !])[
-#strong[⚠️ Watch Out! --- The Missing Middle Zero
-]
- Two hundred three is
+
+#alerte(title: [Watch Out! — The Missing Middle Zero])[Two hundred three is
 never written 23! $23 = 2 upright(" tens and ") 3 upright(" units")$.
 Two hundred three is written $203$: there are 0 tens in the middle.
 Never let an empty column collapse without its sentry zero!
 ]
+
 
 #divider()
 
@@ -1671,9 +1525,9 @@ To organize numbers like beads along a string, we draw a straight
 graduated axis: #strong[the number line]. It originates at 0 on the left
 and extends toward the right, growing step by step:
 
-#figure(image("figures/vol_1/fig_02_droite_100.svg", alt: "La droite numérique orientée de 0 à 100"),
+#figure(image("figures_en/vol_1/fig_02_droite_100.svg", alt: "The directed number line from 0 to 100"),
   caption: [
-    La droite numérique orientée de 0 à 100
+    The directed number line from 0 to 100
   ]
 )
 
@@ -1690,34 +1544,27 @@ convenient mathematical symbols:
 - #strong[The sign $>$] is read “#strong[is greater than]\.”
   #emph[Example:] $9 > 4$ (9 is greater than 4).
 
-#methode(title: [Méthode Pas à Pas])[
-#strong[🧭 Method --- The Hungry Alligator
-]
- Imagine that the symbols $<$
+#methode(title: [Method — The Hungry Alligator])[Imagine that the symbols $<$
 and $>$ are the #strong[wide-open jaws of a hungry alligator]. The
 alligator always snaps toward the larger feast (the greater number)! The
 narrow point points toward the smaller number.
 ]
 
-#quote_box[
-#figure(image("figures/vol_1/fig_02_crocodile_comparaison.svg", alt: "Le crocodile de comparaison : la gueule s’ouvre vers la plus grande quantité"),
-  caption: [
-    Le crocodile de comparaison : la gueule s'ouvre vers la plus grande
-    quantité
-]
 
+#quote_box[
+#figure(image("figures_en/vol_1/fig_02_crocodile_comparaison.svg", alt: "The comparison crocodile: jaws open toward the greater quantity"),
+  caption: [
+    The comparison crocodile: jaws open toward the greater quantity
+  ]
 )
 ]
+
 
 #divider()
 
 === 8. Five Step-by-Step Solved Examples
 <five-step-by-step-solved-examples>
-#quote_box[
-#strong[Solved Example 1 --- Decomposing a Number into Tens and Ones
-]
-
-#emph[Problem:] Decompose the number #strong[63] using 10-egg cartons
+#exemple_resolu(title: [Solved Example 1 — Decomposing a Number into Tens and Ones])[#emph[Problem:] Decompose the number #strong[63] using 10-egg cartons
 and loose eggs. #emph[Step-by-step resolution:] 1. In 63, the left digit
 is 6: it represents #strong[6 tens].
 $6 upright(" tens") = 6 upright(" cartons of 10") = 60 upright(" eggs")$.
@@ -1727,10 +1574,8 @@ express this in expanded form: $ 63 = 60 + 3 =\(6 times 10\)+ 3 $
 side.
 ]
 
-#quote_box[
-#strong[Solved Example 2 --- Comparing 37 and 52
-]
- #emph[Problem:] Which
+
+#exemple_resolu(title: [Solved Example 2 — Comparing 37 and 52])[#emph[Problem:] Which
 number is greater between 37 and 52? Express the comparison with the
 correct sign. #emph[Method:] 1. Always inspect the #strong[tens digit]
 first (the larger bundles):
@@ -1747,11 +1592,9 @@ first (the larger bundles):
 ]
 ]
 
-#quote_box[
-#strong[Solved Example 3 --- Comparing Numbers with Equal Tens: 74 and
-79
-]
- #emph[Problem:] Compare 74 and 79. #emph[Method:] 1. Inspect the
+
+#exemple_resolu(title: [Solved Example 3 — Comparing Numbers with Equal Tens: 74 and
+79])[#emph[Problem:] Compare 74 and 79. #emph[Method:] 1. Inspect the
 tens digits: 7 tens in 74, and 7 tens in 79. It is a tie! 2. Since the
 tens are identical, we break the tie using the #strong[ones digit]:
 
@@ -1764,11 +1607,8 @@ tens are identical, we break the tie using the #strong[ones digit]:
 ]
 ]
 
-#quote_box[
-#strong[Solved Example 4 --- Rounding Bounds to the Nearest Ten
-]
 
-#emph[Problem:] Bound the number #strong[47] between the multiple of ten
+#exemple_resolu(title: [Solved Example 4 — Rounding Bounds to the Nearest Ten])[#emph[Problem:] Bound the number #strong[47] between the multiple of ten
 immediately preceding it and the one immediately following it.
 #emph[Method:] 1. 47 has 4 tens and 7 ones. 2. The full ten immediately
 preceding 47 is #strong[40] ($4 upright(" tens")$). 3. The full ten
@@ -1777,16 +1617,14 @@ immediately following 47 is the next multiple: #strong[50]
 $ 40 < 47 < 50 $
 ]
 
-#quote_box[
-#strong[Solved Example 5 --- Discovering the Mystery Number
-]
 
-#emph[Problem:] “I am a number between 60 and 70. My units digit is
+#exemple_resolu(title: [Solved Example 5 — Discovering the Mystery Number])[#emph[Problem:] “I am a number between 60 and 70. My units digit is
 double of 3. Who am I?” #emph[Method:] 1. The number lies between 60 and
 70: its tens digit must be #strong[6]. 2. Its units digit is double of
 3: $3 + 3 = 6$. The units digit is therefore #strong[6]. 3. Combining 6
 tens and 6 units yields: #strong[66].
 ]
+
 
 #divider()
 
@@ -2000,10 +1838,9 @@ Justice]!
 #emph[“Nothing resembles justice more closely than a straight wooden
 beam suspended from its exact midpoint, whose two arms refuse to tilt in
 either direction. It is from this physical balance of hands that our
-most precious mathematical symbols were born.”
+most precious mathematical symbols were born.”]
 ]
 
-]
 
 #divider()
 
@@ -2042,21 +1879,11 @@ thump, thump!]
 How many fruits are resting at the bottom of the pot? Your eyes and
 fingers register it immediately: #strong[seven fruits]!
 
-#align(center)[
-  #block(
-    fill: rgb("#f8fafc"),
-    stroke: 1pt + rgb("#cbd5e1"),
-    inset: (x: 16pt, y: 10pt),
-    radius: 6pt,
-    breakable: false,
-  )[
-    #set text(font: "Liberation Mono", size: 9.5pt, fill: rgb("#0f172a"))
-    ```text
-Your basket          Your sister's apron       The communal pot
-4 apples)              (3 pears)                  (7 fruits)
-    ```
+#figure(image("figures_en/vol_1/fig_03_marmite_addition.svg", alt: "The addition pot: pooling two quantities together"),
+  caption: [
+    The addition pot: pooling two quantities together
   ]
-]
+)
 
 This magnificent physical action, where two hands unite two separate
 piles into a single shared vessel, is #strong[Addition]. To record this
@@ -2065,10 +1892,7 @@ perpendicular cross: #strong[the plus sign $+$].
 
 $ 4 + 3 = 7 $
 
-#decouvre(title: [Découverte & Histoire])[
-#strong[💡 Did You Know? --- Where Does the $+$ Sign Come From?
-]
- In
+#decouvre(title: [Did You Know? — Where Does the $+$ Sign Come From?])[In
 medieval times, merchants scribbled the Latin word #emph[et] (meaning
 “and also”). Writing at high speed with quill pens, they slurred the
 strokes: the loop of the #emph[e] and the crossbar of the #emph[t]
@@ -2076,6 +1900,7 @@ merged into a simple upright cross: #strong[$+$]! The Latin root
 #emph[ad-dere] means “to give in addition,” which produced our modern
 word #strong[addition].
 ]
+
 
 #divider()
 
@@ -2096,15 +1921,13 @@ in the pot is strictly identical:
 
 $ 4 + 3 = 3 + 4 $
 
-#principe(title: [Définition Fondamentale])[
-#strong[📐 Property --- Commutativity of Addition
-]
- In an addition, one
+#principe(title: [Property — Commutativity of Addition])[In an addition, one
 can #strong[reverse the order of the numbers] without altering the final
 sum. We say that addition is #strong[commutative]. #emph[Practical tip:]
 To mentally calculate $2 + 19$, it is much easier to flip the
 calculation in your mind and compute $19 + 2 = 21$!
 ]
+
 
 #divider()
 
@@ -2127,21 +1950,11 @@ At dawn, you stretch your arms and look up at the smoking bough:
 - The fox carried off 2.
 - How many fish remain for breakfast?
 
-#align(center)[
-  #block(
-    fill: rgb("#f8fafc"),
-    stroke: 1pt + rgb("#cbd5e1"),
-    inset: (x: 16pt, y: 10pt),
-    radius: 6pt,
-    breakable: false,
-  )[
-    #set text(font: "Liberation Mono", size: 9.5pt, fill: rgb("#0f172a"))
-    ```text
-The 7 original fish:      The thieving fox:      What remains on the bough:
-7)                        (-2)                          (5)
-    ```
+#figure(image("figures_en/vol_1/fig_03_poissons_renard.svg", alt: "Concrete subtraction: 7 fish minus 2 snatched away"),
+  caption: [
+    Concrete subtraction: 7 fish minus 2 snatched away
   ]
-]
+)
 
 There are #strong[5] remaining!
 
@@ -2151,15 +1964,12 @@ draw a flat horizontal stroke: #strong[the minus sign $-$].
 
 $ 7 - 2 = 5 $
 
-#principe(title: [Définition Fondamentale])[
-#strong[📐 Definition --- Subtraction and the Inverse Operation
-]
-
-Subtraction determines what remains after a portion is taken away, or
+#principe(title: [Definition — Subtraction and the Inverse Operation])[Subtraction determines what remains after a portion is taken away, or
 what is needed to complete a whole. Subtraction is #strong[the inverse
 operation of addition]: it undoes what addition constructed.
 $ 7 - 2 = 5 #h(2em) upright("because") #h(2em) 5 + 2 = 7 $
 ]
+
 
 #divider()
 
@@ -2176,9 +1986,9 @@ To establish truth, the village elder does not shout. He brings out
 #strong[the Balance Scale of Justice]: a sturdy wooden beam suspended by
 a cord at its exact center, carrying two suspended pans on either side.
 
-#figure(image("figures/vol_1/fig_03_balance_justice.svg", alt: "La balance de justice : état d’équilibre parfait"),
+#figure(image("figures_en/vol_1/fig_03_balance_justice.svg", alt: "The balance of justice: state of perfect equilibrium"),
   caption: [
-    La balance de justice : état d'équilibre parfait
+    The balance of justice: state of perfect equilibrium
   ]
 )
 
@@ -2189,10 +1999,7 @@ at the exact same height!
 
 The elder declares: #emph[“It is an equality!”]
 
-#quote_box[
-#strong[📐 Golden Rule --- The Equal Sign $=$ is a Balance Scale
-]
- The
+#principe(title: [Golden Rule — The Equal Sign $=$ is a Balance Scale])[The
 sign #strong[$=$] (equals) does #strong[NOT] mean: “press the button to
 produce the answer.” The sign #strong[$=$] means: #strong[“WHAT IS ON
 THE LEFT WEIGHS EXACTLY THE SAME AS WHAT IS ON THE RIGHT.”] Both sides
@@ -2202,10 +2009,9 @@ One is fully entitled to write: $ 5 = 5 $ $ 4 + 1 = 5 $ $ 5 = 2 + 3 $
 $ 3 + 4 = 5 + 2 #h(2em) upright("(because both sides equal 7!)") $
 ]
 
+
 #quote_box[
-#strong[🔍 True Story --- Robert Recorde's Twin Parallel Lines
-]
- In the
+#strong[🔍 True Story --- Robert Recorde's Twin Parallel Lines] In the
 year 1557, Welsh physician and mathematician #strong[Robert Recorde]
 grew tired of repeatedly writing out #emph[“is equal to”] in his books.
 He chose to draw two parallel horizontal line segments: #strong[$=$].
@@ -2213,16 +2019,15 @@ Why twin parallel lines? He wrote: #emph[“No two things can be more
 equal than a pair of parallel lines of the same length!”]
 ]
 
-#alerte(title: [Attention au Piège !])[
-#strong[⚠️ Watch Out! --- The Run-On Equality Fallacy
-]
- Writing
+
+#alerte(title: [Watch Out! — The Run-On Equality Fallacy])[Writing
 $3 + 4 = 7 + 2 = 9$ is #strong[completely false]! Why? Because the first
 expression evaluates to 7, while the next evaluates to 9. The balance
 scale collapses: $7$ is not equal to $9$! Each state of equilibrium must
 be written independently:
 $ 3 + 4 = 7 #h(2em) upright("and then") #h(2em) 7 + 2 = 9 $
 ]
+
 
 #divider()
 
@@ -2235,13 +2040,8 @@ allows you to calculate mentally with extraordinary speed!
 These are known as #strong[the friends of 10] (or #strong[number bonds
 to 10]):
 
-#decouvre(title: [Découverte & Histoire])[
-#strong[💡 Découverte & Histoire --- Les Amis de 10 et les Paires
-Complémentaires
-]
-
-
-- 0 + 10 = 10 (and 10 + 0 = 10)
+#decouvre(title: [Discovery & History — Friends of 10 and Complementary
+Pairs])[- 0 + 10 = 10 (and 10 + 0 = 10)
 - 1 + 9 = 10 (and 9 + 1 = 10)
 - 2 + 8 = 10 (and 8 + 2 = 10)
 - 3 + 7 = 10 (and 7 + 3 = 10)
@@ -2249,16 +2049,15 @@ Complémentaires
 - 5 + 5 = 10 (the twin hands!)
 ]
 
-#quote_box[
-#strong[🖐️ Your Turn --- The Hanger and Clothespin Workshop
-]
- Take a
+
+#methode(title: [Your Turn — The Hanger and Clothespin Workshop])[Take a
 plastic clothes hanger. Clip exactly #strong[10 clothespins] onto it.
 Close your eyes. Have a partner slide an index card in between them: for
 example, leaving 4 pins visible on the left. Without peeking under the
 card, state how many pins are hidden on the right! It is the partner of
 4 to make 10: there must be #strong[6]!
 ]
+
 
 ==== Number Bonds to 100!
 <number-bonds-to-100>
@@ -2299,11 +2098,8 @@ Here are three mental shortcuts used by math practitioners:
 In life and mathematics, problems are not bare equations: they are
 narratives. Here is how to select the right operation:
 
-#quote_box[
-#strong[Solved Example 1 --- Combining Collections (“How many in
-total?”)
-]
- #emph[Problem:] Leo has 6 blue marbles in his right pocket and
+#exemple_resolu(title: [Solved Example 1 — Combining Collections (“How many in
+total?”)])[#emph[Problem:] Leo has 6 blue marbles in his right pocket and
 7 red marbles in his left pocket. How many marbles does he have in
 total? #emph[Diagnostic Question:] Are we combining two separate
 collections into one? Yes! Combining = #strong[addition].
@@ -2311,11 +2107,8 @@ collections into one? Yes! Combining = #strong[addition].
 #emph[Sentence Answer:] Leo has #strong[13 marbles] in total.
 ]
 
-#quote_box[
-#strong[Solved Example 2 --- Separation / Loss (“How many remain?”)
-]
 
-#emph[Problem:] A box contained 12 biscuits. Children ate 4 of them for
+#exemple_resolu(title: [Solved Example 2 — Separation / Loss (“How many remain?”)])[#emph[Problem:] A box contained 12 biscuits. Children ate 4 of them for
 a snack. How many biscuits remain in the box? #emph[Diagnostic
 Question:] Did items disappear or get removed? Yes! Removal =
 #strong[subtraction]. #emph[Calculation:]
@@ -2323,11 +2116,8 @@ $ 12 - 4 = 12 - 2 - 2 = 10 - 2 = 8 $ #emph[Sentence Answer:] There are
 #strong[8 biscuits] remaining in the box.
 ]
 
-#quote_box[
-#strong[Solved Example 3 --- Comparison (“How many more than…?”)
-]
 
-#emph[Problem:] Sophie picked 15 daisies. Her brother Hugo picked 9. How
+#exemple_resolu(title: [Solved Example 3 — Comparison (“How many more than…?”)])[#emph[Problem:] Sophie picked 15 daisies. Her brother Hugo picked 9. How
 many more flowers did Sophie pick than her brother? #emph[Classic Trap!]
 Many students see the word “more” and add! That is an error! We are not
 pooling their flowers together; we seek #strong[the gap], the difference
@@ -2336,11 +2126,8 @@ between the two quantities. To find a difference, we use
 Answer:] Sophie has #strong[6 more daisies] than her brother.
 ]
 
-#quote_box[
-#strong[Solved Example 4 --- Missing Part (“How many more needed?”)
-]
 
-#emph[Problem:] A sticker album has 20 pages. Tom has already completed
+#exemple_resolu(title: [Solved Example 4 — Missing Part (“How many more needed?”)])[#emph[Problem:] A sticker album has 20 pages. Tom has already completed
 14 pages. How many pages does he still need to complete his album?
 #emph[Diagnostic Question:] How much is needed to bridge from 14 to 20?
 This is a missing-addend equation: $14 + dots.h = 20$. Finding the
@@ -2348,10 +2135,8 @@ difference: $ 20 - 14 = 6 $ #emph[Sentence Answer:] Tom needs #strong[6
 more pages] to finish his album.
 ]
 
-#quote_box[
-#strong[Solved Example 5 --- The Mystery Scale
-]
- #emph[Problem:] On a
+
+#exemple_resolu(title: [Solved Example 5 — The Mystery Scale])[#emph[Problem:] On a
 balanced scale, the left pan holds a 10 kg weight. The right pan holds a
 3 kg melon and a sealed mystery box. What is the mass of the mystery
 box? #emph[Equilibrium equation:]
@@ -2360,6 +2145,7 @@ $ 10 = 3 + upright("Box") $ This is the bond of 3 to make 10!
 $ upright("Box") = 10 - 3 = 7 upright(" kg") $ #emph[Sentence Answer:]
 The mystery box has a mass of #strong[7 kg].
 ]
+
 
 #divider()
 
@@ -2461,9 +2247,9 @@ two distinct subtractions!
 pyramid, each brick equals the sum of the two bricks directly beneath
 it:
 
-#figure(image("figures/vol_1/fig_03_pyramide_addition.svg", alt: "La pyramide additive : somme des briques sous-jacentes"),
+#figure(image("figures_en/vol_1/fig_03_pyramide_addition.svg", alt: "The addition pyramid: sum of underlying bricks"),
   caption: [
-    La pyramide additive : somme des briques sous-jacentes
+    The addition pyramid: sum of underlying bricks
   ]
 )
 
@@ -2599,10 +2385,9 @@ Carry]!
 #emph[“When numbers grow too large to hold in the palm of your hand, we
 build them a house with stories and columns. And when a room overflows,
 a guest climbs the secret staircase to knock at the neighboring door:
-this is the journey of the carry.”
+this is the journey of the carry.”]
 ]
 
-]
 
 #divider()
 
@@ -2650,23 +2435,11 @@ ingenious device: #strong[the counting abacus].
 Let us construct the earliest precursor to the computer! You only need a
 shoe box and a cardboard partition dividing it into two compartments:
 
-#align(center)[
-  #block(
-    fill: rgb("#f8fafc"),
-    stroke: 1pt + rgb("#cbd5e1"),
-    inset: (x: 16pt, y: 10pt),
-    radius: 6pt,
-    breakable: false,
-  )[
-    #set text(font: "Liberation Mono", size: 9.5pt, fill: rgb("#0f172a"))
-    ```text
-THE COUNTING BOX
-TENS              ONES
-t )             ( o )
-cork stoppers]  [pebbles/beads]
-    ```
+#figure(image("figures_en/vol_1/fig_04_abaque_boite.svg", alt: "The merchant’s abacus: units and tens compartments"),
+  caption: [
+    The merchant's abacus: units and tens compartments
   ]
-]
+)
 
 Recall the foundational rule discovered in Chapter 2:
 
@@ -2691,10 +2464,7 @@ Let us begin with a gentle addition: $ 23 + 45 $
 To set up this calculation on grid paper, follow the golden rule of
 alignment:
 
-#quote_box[
-#strong[🧭 Alignment Rule --- Everyone in Their Column!
-]
- Write the
+#principe(title: [Alignment Rule — Everyone in Their Column!])[Write the
 numbers one directly above the other, aligning vertically:
 
 - #strong[Ones under ones] (the right-hand column).
@@ -2707,6 +2477,7 @@ numbers one directly above the other, aligning vertically:
 - #strong[ALWAYS begin by adding the ones column first] (from right to
   left)!
 ]
+
 
 #align(center)[
   #block(
@@ -2844,35 +2615,30 @@ column:
   ]
 ]
 
-#principe(title: [Définition Fondamentale])[
-#strong[📐 Definition --- The Carry (Regrouping)
-]
- In a vertical
+#principe(title: [Definition — The Carry (Regrouping)])[In a vertical
 algorithm, a #strong[carry] is a ten (or hundred) produced by an
 overflow of the preceding column, which travels to join the top of the
 next larger place-value column.
 ]
 
-#alerte(title: [Attention au Piège !])[
-#strong[⚠️ Watch Out! --- Forgetting the Carry
-]
- The most frequent
+
+#alerte(title: [Watch Out! — Forgetting the Carry])[The most frequent
 student mistake is forgetting to add the carry when summing tens! To
 guarantee success: 1. Record the carry immediately the moment you write
 down the ones digit. 2. Form the habit of starting the tens addition
 #strong[with the carry]: “1 + 4 = 5, and 5 + 3 = 8.”
 ]
 
+
 #quote_box[
-#strong[🔍 True Story --- Blaise Pascal's Calculator (1642)
-]
- To assist
+#strong[🔍 True Story --- Blaise Pascal's Calculator (1642)] To assist
 his father, a royal tax collector who spent long nights adding endless
 ledgers of figures, 19-year-old French scientist Blaise Pascal invented
 the first mechanical calculator: #strong[the Pascaline]. Inside, an
 ingenious sautoir gear mechanism automatically carried over a 1 to the
 neighboring wheel whenever a dial turned past 9!
 ]
+
 
 #figure(image("figures/histoire/ch_04_pascaline.jpg", alt: "Blaise Pascal’s arithmetic machine (Pascaline, 1642): the first mechanical automatic decimal carry mechanism"),
   caption: [
@@ -2978,15 +2744,14 @@ column, which holds 8 sealed bundles of 10 sacks.
 ]
 
 #quote_box[
-#strong[💡 Physical Action --- Unpacking a Ten
-]
- Take 8 matchboxes filled
+#strong[💡 Physical Action --- Unpacking a Ten] Take 8 matchboxes filled
 with 10 matches each (80) and 5 loose matches (5). You must remove 8
 matches. You cannot draw 8 from the 5 loose ones. You take #strong[one
 closed matchbox], open it, and dump its 10 matches onto the table with
 the 5 loose ones: you now have 15 loose matches and 7 closed boxes. You
 can remove 8 matches with complete ease!
 ]
+
 
 #divider()
 
@@ -3005,17 +2770,19 @@ inverse operation proof]!
 #align(center)[
   #block(
     fill: rgb("#f8fafc"),
-    stroke: 1pt + rgb("#cbd5e1"),
-    inset: (x: 16pt, y: 10pt),
+    stroke: 1.2pt + rgb("#cbd5e1"),
+    inset: (x: 18pt, y: 6pt),
     radius: 6pt,
     breakable: false,
   )[
-    #set text(font: "Liberation Mono", size: 9.5pt, fill: rgb("#0f172a"))
+    #set text(font: "Liberation Mono", size: 10.5pt, weight: "bold", fill: rgb("#0f172a"))
     ```text
 Executed subtraction:      Verification addition:
-8 5                         4 7
-3 8                       + 3 8
-4 7                         8 5   <--- Exactly 85 recovered: verified!
+    8 5                         4 7
+
+  - 3 8                       + 3 8
+  -----                       -----
+    4 7                         8 5   <--- Exactly 85 recovered: verified!
     ```
   ]
 ]
@@ -3027,12 +2794,9 @@ track down the slip before anyone else spots it!
 
 === 7. Five Step-by-Step Solved Examples
 <five-step-by-step-solved-examples-1>
-#quote_box[
-#strong[Solved Example 1 --- Vertical Addition Without Carrying
+#exemple_resolu(title: [Solved Example 1 — Vertical Addition Without Carrying])[#emph[Problem:] Calculate $34 + 52$. #emph[Steps:]
 ]
 
-#emph[Problem:] Calculate $34 + 52$. #emph[Steps:]
-]
 
 #quote_box[
 #align(center)[
@@ -3058,17 +2822,13 @@ track down the slip before anyone else spots it!
 
 #quote_box[
 - Ones: $4 + 2 = 6$.
-- Tens: $3 + 5 = 8$. #emph[Answer:
-]
- $34 + 52 = 86$.
+- Tens: $3 + 5 = 8$. #emph[Answer:] $34 + 52 = 86$.
 ]
 
-#quote_box[
-#strong[Solved Example 2 --- Vertical Addition with a Carry
+
+#exemple_resolu(title: [Solved Example 2 — Vertical Addition with a Carry])[#emph[Problem:] Calculate $56 + 27$. #emph[Steps:]
 ]
 
-#emph[Problem:] Calculate $56 + 27$. #emph[Steps:]
-]
 
 #quote_box[
 #align(center)[
@@ -3095,18 +2855,15 @@ track down the slip before anyone else spots it!
 
 #quote_box[
 - Ones: $6 + 7 = 13$. Write 3 in ones; carry 1 to tens.
-- Tens: $1 upright(" (carry)") + 5 + 2 = 8$. #emph[Answer:
-]
-
+- Tens: $1 upright(" (carry)") + 5 + 2 = 8$. #emph[Answer:]
   $56 + 27 = 83$.
 ]
 
-#quote_box[
-#strong[Solved Example 3 --- Three-Story Addition
-]
- #emph[Problem:]
+
+#exemple_resolu(title: [Solved Example 3 — Three-Story Addition])[#emph[Problem:]
 Calculate $25 + 18 + 34$. #emph[Steps:]
 ]
+
 
 #quote_box[
 #align(center)[
@@ -3134,18 +2891,14 @@ Calculate $25 + 18 + 34$. #emph[Steps:]
 
 #quote_box[
 - Ones: $5 + 8 = 13$, and $13 + 4 = 17$. Write 7, carry 1.
-- Tens: $1 upright(" (carry)") + 2 + 1 + 3 = 7$. #emph[Answer:
-]
-
+- Tens: $1 upright(" (carry)") + 2 + 1 + 3 = 7$. #emph[Answer:]
   $25 + 18 + 34 = 77$.
 ]
 
-#quote_box[
-#strong[Solved Example 4 --- Vertical Subtraction Without Borrowing
+
+#exemple_resolu(title: [Solved Example 4 — Vertical Subtraction Without Borrowing])[#emph[Problem:] Calculate $69 - 25$. #emph[Steps:]
 ]
 
-#emph[Problem:] Calculate $69 - 25$. #emph[Steps:]
-]
 
 #quote_box[
 #align(center)[
@@ -3172,16 +2925,11 @@ Calculate $25 + 18 + 34$. #emph[Steps:]
 
 #quote_box[
 - Ones: $9 - 5 = 4$.
-- Tens: $6 - 2 = 4$. #emph[Answer:
-]
- $69 - 25 = 44$.
+- Tens: $6 - 2 = 4$. #emph[Answer:] $69 - 25 = 44$.
 ]
 
-#quote_box[
-#strong[Solved Example 5 --- Vertical Subtraction with Decomposing
-]
 
-#emph[Problem:] Calculate $72 - 36$. #emph[Steps:]
+#exemple_resolu(title: [Solved Example 5 — Vertical Subtraction with Decomposing])[#emph[Problem:] Calculate $72 - 36$. #emph[Steps:]
 
 - Ones: $2 - 6$ is impossible!
 
@@ -3189,6 +2937,7 @@ Calculate $25 + 18 + 34$. #emph[Steps:]
 
 - Transfer 10 ones to 2: it becomes 12.
 ]
+
 
 #quote_box[
 #align(center)[
@@ -3214,12 +2963,10 @@ Calculate $25 + 18 + 34$. #emph[Steps:]
 ]
 
 
-#quote_box[
-- Ones: $12 - 6 = 6$.
-- Tens: $6 - 3 = 3$. #emph[Check by addition:
+#principe(title: [Fundamental Principle & Definition])[- Ones: $12 - 6 = 6$.
+- Tens: $6 - 3 = 3$. #emph[Check by addition:] $36 + 36 = 72$. Flawless!
 ]
- $36 + 36 = 72$. Flawless!
-]
+
 
 #divider()
 
@@ -3454,10 +3201,9 @@ See you in #strong[Chapter 5: The Brick Wall and Magic Rectangles]!
 #quote_box[
 #emph[“Why count ten times what the eye can see in a single block?
 Arranging objects in regular rows gives our mind the superpower of
-multiplying space and time.”
+multiplying space and time.”]
 ]
 
-]
 
 #divider()
 
@@ -3497,23 +3243,11 @@ You run toward the site. The bricks have been neatly aligned on the
 ground: There are #strong[4 long rows], and in each row, there are
 #strong[6 bricks].
 
-#align(center)[
-  #block(
-    fill: rgb("#f8fafc"),
-    stroke: 1pt + rgb("#cbd5e1"),
-    inset: (x: 16pt, y: 10pt),
-    radius: 6pt,
-    breakable: false,
-  )[
-    #set text(font: "Liberation Mono", size: 9.5pt, fill: rgb("#0f172a"))
-    ```text
-Row 1:  [] [] [] [] [] []   (6 bricks)
-Row 2:  [] [] [] [] [] []   (6 bricks)
-Row 3:  [] [] [] [] [] []   (6 bricks)
-Row 4:  [] [] [] [] [] []   (6 bricks)
-    ```
+#figure(image("figures_en/vol_1/fig_05_mur_briques_4x6.svg", alt: "The brick wall: 4 rows of 6 make 24"),
+  caption: [
+    The brick wall: 4 rows of 6 make 24
   ]
-]
+)
 
 If you start pointing your finger at every brick one by one: #emph[“1,
 2, 3, 4, 5, 6, 7…”] By the twelfth brick, the first flashes of lightning
@@ -3546,16 +3280,14 @@ This little $times$ sign marks the crossing of two directions: the
 horizontal line meets the vertical column to weave a grid. #strong[To
 multiply is to forge a rectangular surface in a flash!]
 
-#principe(title: [Définition Fondamentale])[
-#strong[📐 Definition --- Multiplication
-]
- #strong[Multiplication] is an
+#principe(title: [Definition — Multiplication])[#strong[Multiplication] is an
 operation that replaces repeated addition of the same number. The symbol
 $times$ is read “#strong[times]” or “#strong[multiplied by]”.
 $ 4 times 6 = underbrace(6 + 6 + 6 + 6, 4 upright(" times the number ") 6) = 24 $
 The numbers being multiplied are called #strong[factors], and the result
 is called the #strong[product].
 ]
+
 
 #divider()
 
@@ -3568,21 +3300,11 @@ flat before you horizontally: you see #strong[4 rows of 6 squares]
 Now, take the bar and rotate it by a quarter turn on the table (a right
 angle of $90^compose$).
 
-#align(center)[
-  #block(
-    fill: rgb("#f8fafc"),
-    stroke: 1pt + rgb("#cbd5e1"),
-    inset: (x: 16pt, y: 10pt),
-    radius: 6pt,
-    breakable: false,
-  )[
-    #set text(font: "Liberation Mono", size: 9.5pt, fill: rgb("#0f172a"))
-    ```text
-Flat chocolate bar:                  Bar rotated by 90°:
-4 rows of 6                                 6 rows of 4
-    ```
+#figure(image("figures_en/vol_1/fig_05_commutativite_rotation.svg", alt: "Commutativity by rotation: 4 × 6 = 6 × 4"),
+  caption: [
+    Commutativity by rotation: 4 × 6 = 6 × 4
   ]
-]
+)
 
 What do you see now? You see #strong[6 rows of 4 squares] ($6 times 4$).
 
@@ -3592,10 +3314,7 @@ strictly the same:
 
 $ 4 times 6 = 6 times 4 = 24 $
 
-#principe(title: [Définition Fondamentale])[
-#strong[📐 Property --- Commutativity of Multiplication
-]
- We can
+#principe(title: [Property — Commutativity of Multiplication])[We can
 #strong[change the order of the factors] without changing the result.
 Turning a rectangle on its side never changes the number of objects it
 contains! #emph[A wonderful consequence:] When learning your
@@ -3604,6 +3323,7 @@ you know that $3 times 8 = 24$, you already automatically know that
 $8 times 3 = 24$.
 ]
 
+
 #divider()
 
 === 4. Doubles and Halves
@@ -3611,22 +3331,11 @@ $8 times 3 = 24$.
 Before exploring all the tables, there are two words you hear every day:
 #strong[double] and #strong[half].
 
-#align(center)[
-  #block(
-    fill: rgb("#f8fafc"),
-    stroke: 1pt + rgb("#cbd5e1"),
-    inset: (x: 16pt, y: 10pt),
-    radius: 6pt,
-    breakable: false,
-  )[
-    #set text(font: "Liberation Mono", size: 9.5pt, fill: rgb("#0f172a"))
-    ```text
-Starting amount:           (3)
-The DOUBLE (× 2):           +       =  6  (twice as much!)
-The HALF (÷ 2):        Split 6 into two equal parts: 3 and 3.
-    ```
+#figure(image("figures_en/vol_1/fig_05_double_moitie.svg", alt: "Double and half: bilateral multiplicative symmetry"),
+  caption: [
+    Double and half: bilateral multiplicative symmetry
   ]
-]
+)
 
 - #strong[The double] is taking an amount #strong[twice] ($n times 2$ or
   $n + n$).
@@ -3672,9 +3381,7 @@ numbered from 1 to 10 from left to right (left thumb is 1, right little
 finger is 10).
 
 #quote_box[
-#strong[🖐️ The Finger Magic Trick for the 9-Times Table
-]
- Want to
+#strong[🖐️ The Finger Magic Trick for the 9-Times Table] Want to
 calculate #strong[$9 times 4$]? 1. Fold down your 4th finger (the ring
 finger of your left hand). 2. Look at your fingers:
 
@@ -3691,6 +3398,13 @@ finger of your left hand). 2. Look at your fingers:
 ]
 ]
 
+
+#figure(image("figures_en/vol_1/fig_05_doigts_table_9.svg", alt: "The finger trick for the 9 times table"),
+  caption: [
+    The finger trick for the 9 times table
+  ]
+)
+
 #divider()
 
 === 6. Multiplying by 10, 100, and 1,000
@@ -3698,23 +3412,20 @@ finger of your left hand). 2. Look at your fingers:
 What happens when we multiply a number by 10 or 100? Recall our
 place-value chart:
 
+
 #align(center)[
-  #block(
-    fill: rgb("#f8fafc"),
-    stroke: 1pt + rgb("#cbd5e1"),
-    inset: (x: 16pt, y: 10pt),
-    radius: 6pt,
-    breakable: false,
-  )[
-    #set text(font: "Liberation Mono", size: 9.5pt, fill: rgb("#0f172a"))
-    ```text
-Hundreds     Tens       Units
-4       = 4
-4          0       = 4 × 10 = 40
-4          0          0       = 4 × 100 = 400
-    ```
-  ]
+  #table(
+    columns: (1fr, 1fr, 1fr, 1.8fr),
+    align: center,
+    stroke: 0.5pt + rgb("#cbd5e1"),
+    fill: (x, y) => if y == 0 { rgb("#eff6ff") } else { rgb("#ffffff") },
+    [*Centaines*], [*Dizaines*], [*Unités*], [*Valeur décimale*],
+    [], [], [4], [$4$],
+    [], [4], [0], [$4 times 10 = 40$],
+    [4], [0], [0], [$4 times 100 = 400$]
+  )
 ]
+
 
 - Multiplying by #strong[10]: each unit becomes a ten. The number shifts
   #strong[one place to the left], and we append a #strong[0] on the
@@ -3808,15 +3519,13 @@ Let us set up the calculation in columns, just as with addition:
   ]
 ]
 
-#alerte(title: [Attention au Piège !])[
-#strong[⚠️ Watch Out for the Trap! --- Multiply first, add the carry
-after!
-]
- In the tens column, #strong[never] perform addition before
+#alerte(title: [Watch Out for the Trap! — Multiply first, add the carry
+after!])[In the tens column, #strong[never] perform addition before
 multiplication! If you do $\(1 + 2\)times 3 = 3 times 3 = 9$, that is
 false! The sacred rule: #strong[multiply first ($3 times 2 = 6$), and
 add the carry after ($6 + 1 = 7$)].
 ]
+
 
 #divider()
 
@@ -3828,7 +3537,7 @@ $146 times 23$.
 
 This calculation is done in #strong[two distinct tiers]:
 
-#figure(image("figures/vol_1/fig_05_multiplication_posee_ret.svg", alt: "La multiplication posée à deux étages avec retenue"),
+#figure(image("figures_en/vol_1/fig_05_multiplication_posee_ret.svg", alt: "La multiplication posée à deux étages avec retenue"),
   caption: [
     La multiplication posée à deux étages avec retenue
   ]
@@ -3855,10 +3564,7 @@ This calculation is done in #strong[two distinct tiers]:
   ]
 ]
 
-#quote_box[
-#strong[🧭 The Mechanical Algorithm in 4 Simple Gestures:
-]
- 1. Multiply
+#methode(title: [The Mechanical Algorithm in 4 Simple Gestures:])[1. Multiply
 the whole top number by the #strong[units] digit of the bottom number
 ($146 times 3 = 438$). 2. On the line below, place a #strong[red zero]
 in the units column immediately (because we are now multiplying by
@@ -3866,6 +3572,7 @@ tens!). 3. Multiply the whole top number by the #strong[tens] digit of
 the bottom number ($146 times 2 = 292$). 4. Draw a line and #strong[add
 the two tiers].
 ]
+
 
 #divider()
 
@@ -3935,11 +3642,8 @@ one:]
 
 === 8. Five Step-by-Step Worked Examples
 <five-step-by-step-worked-examples>
-#exemple_resolu(title: [Exemple Résolu Pas à Pas])[
-#strong[Worked Example 1 --- Translating a Situation into
-Multiplication
-]
- #emph[Problem:] A florist prepares 5 bouquets. In each
+#exemple_resolu(title: [Worked Example 1 — Translating a Situation into
+Multiplication])[#emph[Problem:] A florist prepares 5 bouquets. In each
 bouquet, she puts 6 roses. How many roses does she use in total?
 #emph[Method:] This is repeated addition: $6 + 6 + 6 + 6 + 6$. We write
 the multiplication: $5 times 6$. From the 5-times table (or 6-times
@@ -3947,10 +3651,8 @@ table): $5 times 6 = 30$. #emph[Answer:] The florist uses #strong[30
 roses].
 ]
 
-#exemple_resolu(title: [Exemple Résolu Pas à Pas])[
-#strong[Worked Example 2 --- Finding Doubles and Halves
-]
- #emph[Problem:]
+
+#exemple_resolu(title: [Worked Example 2 — Finding Doubles and Halves])[#emph[Problem:]
 Leo has 14 marbles. His older brother has twice as many (double), and
 his little sister has half as many. How many marbles do the brother and
 sister have? #emph[Solution:]
@@ -3961,11 +3663,8 @@ sister have? #emph[Solution:]
   sister has #strong[7 marbles].
 ]
 
-#exemple_resolu(title: [Exemple Résolu Pas à Pas])[
-#strong[Worked Example 3 --- Multiplying by 10 and 100 Mentally
-]
 
-#emph[Problem:] Calculate mentally: $8 times 10$, $8 times 100$, and
+#exemple_resolu(title: [Worked Example 3 — Multiplying by 10 and 100 Mentally])[#emph[Problem:] Calculate mentally: $8 times 10$, $8 times 100$, and
 $43 times 10$. #emph[Solution:]
 
 - $8 times 10 = upright(bold(80))$ (one zero appended).
@@ -3976,12 +3675,10 @@ $43 times 10$. #emph[Solution:]
   0).
 ]
 
-#exemple_resolu(title: [Exemple Résolu Pas à Pas])[
-#strong[Worked Example 4 --- Column Multiplication without Regrouping
+
+#exemple_resolu(title: [Worked Example 4 — Column Multiplication without Regrouping])[#emph[Problem:] Set up and compute $32 times 3$. #emph[Step by step:]
 ]
 
-#emph[Problem:] Set up and compute $32 times 3$. #emph[Step by step:]
-]
 
 #quote_box[
 #align(center)[
@@ -4007,21 +3704,18 @@ $43 times 10$. #emph[Solution:]
 
 #quote_box[
 - Units: $3 times 2 = 6$.
-- Tens: $3 times 3 = 9$. #emph[Result:
-]
- $32 times 3 = 96$.
+- Tens: $3 times 3 = 9$. #emph[Result:] $32 times 3 = 96$.
 ]
 
-#exemple_resolu(title: [Exemple Résolu Pas à Pas])[
-#strong[Worked Example 5 --- Column Multiplication with Regrouping
-(Carry)
-]
- #emph[Problem:] Set up and compute $18 times 4$. #emph[Step by
+
+#exemple_resolu(title: [Worked Example 5 — Column Multiplication with Regrouping
+(Carry)])[#emph[Problem:] Set up and compute $18 times 4$. #emph[Step by
 step:]
 
 - Units: $4 times 8 = 32$. Write down 2 and carry 3.
 - Tens: $4 times 1 = 4$, plus carry 3: $4 + 3 = 7$.
 ]
+
 
 #quote_box[
 #align(center)[
@@ -4047,10 +3741,9 @@ step:]
 
 
 #quote_box[
-#emph[Result:
+#emph[Result:] $18 times 4 = 72$.
 ]
- $18 times 4 = 72$.
-]
+
 
 #divider()
 
@@ -4297,10 +3990,9 @@ Join us in #strong[Chapter 6: The Pharaoh's Cubit and the Hourglass]!
 hand: their fingers, their feet, and their arms. But as long as a
 measurement changes with the size of the person measuring, houses
 collapse and merchants quarrel. A universal standard that no one can
-counterfeit had to be invented.”
+counterfeit had to be invented.”]
 ]
 
-]
 
 #divider()
 
@@ -4341,21 +4033,11 @@ Two stonecutters set to work in the quarry:
 What is a #strong[cubit] to them? It is the distance from the tip of the
 elbow to the tip of the middle finger (the longest finger of the hand)!
 
-#align(center)[
-  #block(
-    fill: rgb("#f8fafc"),
-    stroke: 1pt + rgb("#cbd5e1"),
-    inset: (x: 16pt, y: 10pt),
-    radius: 6pt,
-    breakable: false,
-  )[
-    #set text(font: "Liberation Mono", size: 9.5pt, fill: rgb("#0f172a"))
-    ```text
-Tip of the elbow                                Tip of the middle finger
-1 CUBIT
-    ```
+#figure(image("figures_en/vol_1/fig_06_coudee_royale.svg", alt: "The pharaonic royal cubit: anatomical standard of measure"),
+  caption: [
+    The pharaonic royal cubit: anatomical standard of measure
   ]
-]
+)
 
 Each mason measures three cubits using his own arm, carves his limestone
 block from the white bedrock, and hauls it to the construction site.
@@ -4387,29 +4069,13 @@ Centuries later, during the French Revolution, scientists sought
 something even grander: a standard belonging to no single monarch, but
 to all inhabitants of the Earth. They created #strong[the Meter].
 
-#align(center)[
-  #block(
-    fill: rgb("#f8fafc"),
-    stroke: 1pt + rgb("#cbd5e1"),
-    inset: (x: 16pt, y: 10pt),
-    radius: 6pt,
-    breakable: false,
-  )[
-    #set text(font: "Liberation Mono", size: 9.5pt, fill: rgb("#0f172a"))
-    ```text
-The inch:        The width of an adult's thumb (~ 2 to 3 cm)
-The foot:        The length of a shod foot     (~ 30 cm)
-The pace:        A long adult walking stride   (~ 1 meter)
-    ```
-  ]
-]
-
-#principe(title: [Définition Fondamentale])[
-#strong[📐 Definition --- The Meter and the Centimeter
+#decouvre(title: [Discovery & History — Historical Anatomical Measurements])[- The inch: The width of an adult's thumb (\~ 2 to 3 cm)
+- The foot: The length of a shod foot (\~ 30 cm)
+- The pace: A long adult walking stride (\~ 1 meter)
 ]
 
 
-- #strong[The meter ($m$)] is the official base unit of length. It is
+#principe(title: [Definition — The Meter and the Centimeter])[- #strong[The meter ($m$)] is the official base unit of length. It is
   roughly the width of a bedroom doorway, or the length of a long adult
   walking stride.
 
@@ -4421,15 +4087,12 @@ The pace:        A long adult walking stride   (~ 1 meter)
   $ 1 upright(" meter ")\(m\)= 100 upright(" centimeters ")\(c m\) $
 ]
 
+
 ==== How to Measure with Your Ruler Without Falling into the Trap
 <how-to-measure-with-your-ruler-without-falling-into-the-trap>
 Pick up your plastic school ruler.
 
-#alerte(title: [Attention au Piège !])[
-#strong[⚠️ Watch Out for the Trap! --- The plastic edge is not zero!
-]
-
-Many students press the plastic end of their ruler against the start of
+#alerte(title: [Watch Out for the Trap! — The plastic edge is not zero!])[Many students press the plastic end of their ruler against the start of
 the object. That is an error! On most rulers, there is a small blank
 margin before the first graduation line. #strong[To measure accurately,
 you must align the ZERO ($0$) mark directly with the very start of your
@@ -4437,24 +4100,12 @@ object.] Then, you observe which number lands exactly at the end of the
 object.
 ]
 
-#align(center)[
-  #block(
-    fill: rgb("#f8fafc"),
-    stroke: 1pt + rgb("#cbd5e1"),
-    inset: (x: 16pt, y: 10pt),
-    radius: 6pt,
-    breakable: false,
-  )[
-    #set text(font: "Liberation Mono", size: 9.5pt, fill: rgb("#0f172a"))
-    ```text
-Object:       []
-Ruler:        |....|....|....|....|....|....|....|
-0    1    2    3    4    5    6    7
-^                             ^
-Align the 0!                  Read: 6 cm!
-    ```
+
+#figure(image("figures_en/vol_1/fig_06_regle_graduee.svg", alt: "Ruler measurement: alignment at zero and direct reading"),
+  caption: [
+    Ruler measurement: alignment at zero and direct reading
   ]
-]
+)
 
 #divider()
 
@@ -4468,18 +4119,13 @@ pan, we place the object to be weighed (for instance, a ripe melon). On
 the other pan, we place calibrated metal #strong[weights] until the
 pointer rests perfectly vertical in the center.
 
-#figure(image("figures/vol_1/fig_06_pesee_melon_1kg.svg", alt: "Pesée du melon : équilibre de masse de 1 kilogramme"),
+#figure(image("figures_en/vol_1/fig_06_pesee_melon_1kg.svg", alt: "Weighing the melon: mass balance of 1 kilogram"),
   caption: [
-    Pesée du melon : équilibre de masse de 1 kilogramme
+    Weighing the melon: mass balance of 1 kilogram
   ]
 )
 
-#principe(title: [Définition Fondamentale])[
-#strong[📐 Definition --- The Kilogram and the Gram
-]
-
-
-- For heavy objects, we use the #strong[kilogram ($k g$)]. A bag of
+#principe(title: [Definition — The Kilogram and the Gram])[- For heavy objects, we use the #strong[kilogram ($k g$)]. A bag of
   flour or a carton of milk weighs approximately $1 upright(" kg")$.
 
 - For very light objects, we divide a kilogram into 1,000 tiny parts:
@@ -4492,6 +4138,7 @@ pointer rests perfectly vertical in the center.
   Half a kilogram is $500 upright(" g")$.
 ]
 
+
 #divider()
 
 === 4. Capacities: The Liter
@@ -4500,10 +4147,7 @@ How much water fills your bathtub? How much orange juice is in your cup?
 The volume of liquid that a container can hold is called its
 #strong[capacity] or capacity volume.
 
-#principe(title: [Définition Fondamentale])[
-#strong[📐 Definition --- The Liter ($L$)
-]
- The standard unit of liquid
+#principe(title: [Definition — The Liter ($L$)])[The standard unit of liquid
 measurement is the #strong[liter ($L$)].
 
 - A standard bottle of mineral water often holds $1 upright(" liter")$
@@ -4518,6 +4162,7 @@ measurement is the #strong[liter ($L$)].
 
 - A filled bathtub holds around $150 upright(" liters")$.
 ]
+
 
 #divider()
 
@@ -4542,9 +4187,9 @@ through the four seasons (spring, summer, autumn, winter).
 On a clock face, there are 12 numbers and two hands turning in clockwise
 rotation:
 
-#figure(image("figures/vol_1/fig_06_cadran_horloge.svg", alt: "Le cadran circulaire : 12 heures et 60 minutes"),
+#figure(image("figures_en/vol_1/fig_06_cadran_horloge.svg", alt: "The circular dial: 12 hours and 60 minutes"),
   caption: [
-    Le cadran circulaire : 12 heures et 60 minutes
+    The circular dial: 12 hours and 60 minutes
   ]
 )
 
@@ -4554,10 +4199,7 @@ rotation:
 - #strong[The long hand (tall and fast)]: This is the #strong[minute
   hand]. It completes a full lap in #strong[60 minutes] (1 hour).
 
-#methode(title: [Méthode Pas à Pas])[
-#strong[🧭 Method --- Reading the Clock Step by Step
-]
- 1. #strong[On the
+#methode(title: [Method — Reading the Clock Step by Step])[1. #strong[On the
 hour:] When the long hand points straight up at #strong[12], the short
 hand indicates the exact hour. #emph[Example: short hand on 4, long hand
 on 12 $arrow.r$ it is 4 o'clock ($4 upright(":") 00$).] 2. #strong[Half
@@ -4572,6 +4214,7 @@ pointing left at #strong[9] $arrow.r$ quarter to ($4 upright(":") 45$).
 $ 1 upright(" hour ")\(h\)= 60 upright(" minutes ")\(m i n\) $
 $ 1 upright(" minute ")\(m i n\)= 60 upright(" seconds ")\(s\) $
 ]
+
 
 #divider()
 
@@ -4596,23 +4239,18 @@ dollar (\$), pound, or yen is used.
     $50 upright(" €")$, $100 upright(" €")$, $200 upright(" €")$.
 
 #quote_box[
-#strong[📐 Currency Standard --- Cents and the Euro
-]
- Just like
+#strong[📐 Currency Standard --- Cents and the Euro] Just like
 centimeters and meters:
 $ 1 upright(" Euro ")\(euro\)= 100 upright(" cents ")\(c\) $ To make one
 euro, you need one hundred cents!
 ]
 
+
 #divider()
 
 === 7. Five Step-by-Step Worked Examples
 <five-step-by-step-worked-examples-1>
-#exemple_resolu(title: [Exemple Résolu Pas à Pas])[
-#strong[Worked Example 1 --- Measuring a Paintbrush with a Ruler
-]
-
-#emph[Problem:] A paintbrush is laid beside a ruler. The handle begins
+#principe(title: [Worked Example 1 — Measuring a Paintbrush with a Ruler])[#emph[Problem:] A paintbrush is laid beside a ruler. The handle begins
 at the $0$ graduation line. The bristle tip touches mark $14$. How long
 is the brush? #emph[Solution:] Since the start aligns with 0, read the
 length directly from the end: the brush measures
@@ -4620,11 +4258,9 @@ length directly from the end: the brush measures
 at mark 14, it would measure $14 - 2 = 12 upright(" cm")$\.)]
 ]
 
-#exemple_resolu(title: [Exemple Résolu Pas à Pas])[
-#strong[Worked Example 2 --- Comparing Lengths in Meters and
-Centimeters
-]
- #emph[Problem:] A blue ribbon measures
+
+#exemple_resolu(title: [Worked Example 2 — Comparing Lengths in Meters and
+Centimeters])[#emph[Problem:] A blue ribbon measures
 $1 upright(" m ") 25 upright(" cm")$. A red ribbon measures
 $140 upright(" cm")$. Which ribbon is longer? #emph[Method:] Convert to
 the same unit (centimeters):
@@ -4635,11 +4271,8 @@ the same unit (centimeters):
   ribbon] is longer.
 ]
 
-#exemple_resolu(title: [Exemple Résolu Pas à Pas])[
-#strong[Worked Example 3 --- Balancing a Basket on a Roberval Scale
-]
 
-#emph[Problem:] A bag of apples is placed on the left pan of a balance
+#exemple_resolu(title: [Worked Example 3 — Balancing a Basket on a Roberval Scale])[#emph[Problem:] A bag of apples is placed on the left pan of a balance
 scale. On the right pan, we place a $1 upright(" kg")$ weight, a
 $500 upright(" g")$ weight, and two $100 upright(" g")$ weights. The
 scale balances perfectly. What is the mass of the bag of apples?
@@ -4653,21 +4286,16 @@ scale balances perfectly. What is the mass of the bag of apples?
   #strong[$1 upright(" kg ") 700 upright(" g")$].
 ]
 
-#exemple_resolu(title: [Exemple Résolu Pas à Pas])[
-#strong[Worked Example 4 --- Duration of a Cartoon
-]
- #emph[Problem:] A
+
+#exemple_resolu(title: [Worked Example 4 — Duration of a Cartoon])[#emph[Problem:] A
 cartoon starts at $14 upright(":") 15$ and ends at $15 upright(":") 15$.
 How long did it last? #emph[Solution:] The minutes match
 ($15 upright(" min")$). Look at the hours: from 14:00 to 15:00, exactly
 #strong[$1 upright(" hour")$] (60 minutes) elapsed.
 ]
 
-#exemple_resolu(title: [Exemple Résolu Pas à Pas])[
-#strong[Worked Example 5 --- Making Change at the Bakery
-]
 
-#emph[Problem:] A loaf of bread costs
+#exemple_resolu(title: [Worked Example 5 — Making Change at the Bakery])[#emph[Problem:] A loaf of bread costs
 $1 upright(" € ") 20 upright(" c")$. You hand the baker a
 $2 upright(" €")$ coin. How much change will you receive? #emph[Method:]
 Convert to cents:
@@ -4681,6 +4309,7 @@ Convert to cents:
   #strong[$80 upright(" cents")$] in change (e.g.~a 50c, 20c, and 10c
   coin).
 ]
+
 
 #divider()
 
@@ -4920,10 +4549,9 @@ Shapes of the World and the Gardener's String]!
 #emph[“Look around you: the Earth does not speak solely in numbers, it
 speaks in shapes. Tree trunks are cylinders, honeycombs are hexagons,
 and river-polished stones are spheres. To trace a straight figure in the
-sand is to begin drawing the world.”
+sand is to begin drawing the world.”]
 ]
 
-]
 
 #divider()
 
@@ -4980,22 +4608,11 @@ When a plane figure is bounded solely by straight line segments
 (straight sides drawn with a ruler), it is called a #strong[polygon]
 (from the Greek #emph[polus], many, and #emph[gônia], angle or corner).
 
-#align(center)[
-  #block(
-    fill: rgb("#f8fafc"),
-    stroke: 1pt + rgb("#cbd5e1"),
-    inset: (x: 16pt, y: 10pt),
-    radius: 6pt,
-    breakable: false,
-  )[
-    #set text(font: "Liberation Mono", size: 9.5pt, fill: rgb("#0f172a"))
-    ```text
-THE SQUARE               THE RECTANGLE                THE TRIANGLE
-4 equal sides             Opposite sides equal             3 sides
-4 right angles            4 right angles                   3 vertices
-    ```
+#figure(image("figures_en/vol_1/fig_07_formes_fondamentales.svg", alt: "The three fundamental shapes of planar geometry"),
+  caption: [
+    The three fundamental shapes of planar geometry
   ]
-]
+)
 
 ==== 1. The Square
 <the-square>
@@ -5027,26 +4644,11 @@ line.
 
 How did the gardener trace the queen's great round pool?
 
-#align(center)[
-  #block(
-    fill: rgb("#f8fafc"),
-    stroke: 1pt + rgb("#cbd5e1"),
-    inset: (x: 16pt, y: 10pt),
-    radius: 6pt,
-    breakable: false,
-  )[
-    #set text(font: "Liberation Mono", size: 9.5pt, fill: rgb("#0f172a"))
-    ```text
-Taut string
-Central  Marking
-peg                          peg
-O)                        (Chalk)
-•✎
-Full circular turn /
-••
-    ```
+#figure(image("figures_en/vol_1/fig_07_ficelle_jardinier.svg", alt: "The gardener’s string: drawing a perfect circle"),
+  caption: [
+    The gardener's string: drawing a perfect circle
   ]
-]
+)
 
 + He drives a sturdy #strong[wooden peg straight into the ground at the
   center] of the future pool (this is the #strong[center] of the
@@ -5061,12 +4663,7 @@ Full circular turn /
 
 When he completes the loop, he has traced a #strong[flawless circle]!
 
-#principe(title: [Définition Fondamentale])[
-#strong[📐 Definition --- Circle, Radius, and Diameter
-]
-
-
-- A #strong[circle] is the collection of all points located #strong[at
+#principe(title: [Definition — Circle, Radius, and Diameter])[- A #strong[circle] is the collection of all points located #strong[at
   the exact same distance] from a central point called the
   #strong[center].
 
@@ -5078,6 +4675,7 @@ When he completes the loop, he has traced a #strong[flawless circle]!
   twice the radius ($2 times upright("radius")$).
 ]
 
+
 #divider()
 
 === 4. The Right-Angle Gauge: Crafting Your Magic Set Square
@@ -5087,10 +4685,7 @@ corners, carpenters use a triangular tool made of wood or metal: a
 #strong[set square]. Yet you can craft an infallible set square in ten
 seconds using any scrap of torn paper!
 
-#methode(title: [Méthode Pas à Pas])[
-#strong[🖐️ Workshop --- Make Your Own Folded-Paper Set Square
-]
- 1. Take
+#methode(title: [Workshop — Make Your Own Folded-Paper Set Square])[1. Take
 any scrap piece of paper, even one with a jagged, crooked edge. 2. Fold
 it in half once, pressing firmly along the fold with your thumbnail. You
 now have a perfectly straight edge. 3. Now, fold the paper in half a
@@ -5101,22 +4696,12 @@ Place this magical corner against the corner of your notebook, your
 desk, or a door frame: it fits to the millimeter!
 ]
 
-#align(center)[
-  #block(
-    fill: rgb("#f8fafc"),
-    stroke: 1pt + rgb("#cbd5e1"),
-    inset: (x: 16pt, y: 10pt),
-    radius: 6pt,
-    breakable: false,
-  )[
-    #set text(font: "Liberation Mono", size: 9.5pt, fill: rgb("#0f172a"))
-    ```text
-1. Crooked scrap       2. First straight fold    3. Fold crease onto crease!
-Right
-angle!
-    ```
+
+#figure(image("figures_en/vol_1/fig_07_pliage_angle_droit.svg", alt: "Folding a set square: the 90° right angle"),
+  caption: [
+    Folding a set square: the 90° right angle
   ]
-]
+)
 
 #divider()
 
@@ -5126,20 +4711,11 @@ On paper, figures are flat. But in the physical world, objects possess
 thickness and depth: they take up volume in space. We call them
 #strong[solids].
 
-#align(center)[
-  #block(
-    fill: rgb("#f8fafc"),
-    stroke: 1pt + rgb("#cbd5e1"),
-    inset: (x: 16pt, y: 10pt),
-    radius: 6pt,
-    breakable: false,
-  )[
-    #set text(font: "Liberation Mono", size: 9.5pt, fill: rgb("#0f172a"))
-    ```text
-THE CUBE              RECTANGULAR PRISM              CYLINDER
-    ```
+#figure(image("figures_en/vol_1/fig_07_solides_fondamentaux.svg", alt: "Fundamental geometric solids: cube, rectangular prism, and cylinder"),
+  caption: [
+    Fundamental geometric solids: cube, rectangular prism, and cylinder
   ]
-]
+)
 
 Let us learn the vocabulary of master builders:
 
@@ -5179,36 +4755,22 @@ Take a sheet of white paper. Place a drop of blue ink or watercolor in
 the center. Fold the sheet in half along a straight line immediately,
 press firmly with the palm of your hand, and unfold:
 
-#align(center)[
-  #block(
-    fill: rgb("#f8fafc"),
-    stroke: 1pt + rgb("#cbd5e1"),
-    inset: (x: 16pt, y: 10pt),
-    radius: 6pt,
-    breakable: false,
-  )[
-    #set text(font: "Liberation Mono", size: 9.5pt, fill: rgb("#0f172a"))
-    ```text
-Fold line (Axis of Symmetry)
-o )        ( o )
-Left        Right
-wing        wing
-    ```
+#figure(image("figures_en/vol_1/fig_07_papillon_symetrie.svg", alt: "The butterfly and bilateral axial symmetry"),
+  caption: [
+    The butterfly and bilateral axial symmetry
   ]
-]
+)
 
 You behold a magnificent #strong[butterfly]! The right wing is the
 identical reflection of the left wing. If you refold the sheet, the two
 wings will overlap #strong[exactly], stroke for stroke, point for point.
 
-#principe(title: [Définition Fondamentale])[
-#strong[📐 Definition --- Axis of Symmetry
-]
- An #strong[axis of symmetry]
+#principe(title: [Definition — Axis of Symmetry])[An #strong[axis of symmetry]
 is a straight line that divides a figure into two halves that match up
 perfectly when folded. It mirrors what you would see if a flat mirror
 were placed upright along that line!
 ]
+
 
 Countless things in nature display an axis of symmetry: your own face, a
 tree leaf, a ladybug, or a snowflake.
@@ -5220,9 +4782,9 @@ tree leaf, a ladybug, or a snowflake.
 To dispatch an apprentice to plant seeds at an exact spot in the garden,
 the master divided the ground into regular squares: #strong[a grid].
 
-#figure(image("figures/vol_1/fig_07_grille_reperage.svg", alt: "Repérage sur quadrillage cartésien discret"),
+#figure(image("figures_en/vol_1/fig_07_grille_reperage.svg", alt: "Plotting coordinates on a discrete Cartesian grid"),
   caption: [
-    Repérage sur quadrillage cartésien discret
+    Plotting coordinates on a discrete Cartesian grid
   ]
 )
 
@@ -5248,11 +4810,7 @@ right to land on C2, then one step up to reach C3!)
 
 === 8. Five Step-by-Step Worked Examples
 <five-step-by-step-worked-examples-2>
-#exemple_resolu(title: [Exemple Résolu Pas à Pas])[
-#strong[Worked Example 1 --- Distinguishing a Square from Rectangles
-]
-
-#emph[Problem:] Consider three shapes, each with 4 right angles:
+#exemple_resolu(title: [Worked Example 1 — Distinguishing a Square from Rectangles])[#emph[Problem:] Consider three shapes, each with 4 right angles:
 
 - Figure A: width 5 cm, length 8 cm.
 
@@ -5264,11 +4822,8 @@ right to land on C2, then one step up to reach C3!)
   Figures A and C are non-square rectangles.
 ]
 
-#exemple_resolu(title: [Exemple Résolu Pas à Pas])[
-#strong[Worked Example 2 --- Calculating Diameter from Radius
-]
 
-#emph[Problem:] The gardener staked a 4-meter taut cord from the central
+#exemple_resolu(title: [Worked Example 2 — Calculating Diameter from Radius])[#emph[Problem:] The gardener staked a 4-meter taut cord from the central
 peg to outline his pool. What is the total diameter of the pool?
 #emph[Solution:] The radius is $4 upright(" m")$. The diameter spans
 straight through the center from edge to edge, equal to twice the
@@ -5276,11 +4831,8 @@ radius:
 $ upright("Diameter") = 4 upright(" m") + 4 upright(" m") = 2 times 4 upright(" m") = upright(bold(8 upright(" meters"))) $
 ]
 
-#exemple_resolu(title: [Exemple Résolu Pas à Pas])[
-#strong[Worked Example 3 --- Counting Features of a Solid
-]
 
-#emph[Problem:] Look at a closed cardboard tissue box (a rectangular
+#exemple_resolu(title: [Worked Example 3 — Counting Features of a Solid])[#emph[Problem:] Look at a closed cardboard tissue box (a rectangular
 prism). How many stickers would you need to put one sticker on every
 vertex? #emph[Solution:] Vertices are the sharp corners. There are 4
 vertices on the top face and 4 on the bottom face:
@@ -5288,11 +4840,8 @@ $ 4 + 4 = upright(bold(8 upright(" vertices"))) $ You would need
 #strong[8 stickers].
 ]
 
-#exemple_resolu(title: [Exemple Résolu Pas à Pas])[
-#strong[Worked Example 4 --- Finding Axes of Symmetry of a Rectangle
-]
 
-#emph[Problem:] How many axes of symmetry does an oblong (non-square)
+#exemple_resolu(title: [Worked Example 4 — Finding Axes of Symmetry of a Rectangle])[#emph[Problem:] How many axes of symmetry does an oblong (non-square)
 rectangle possess? #emph[Practical Method:] Take a sheet of A4 printer
 paper. 1. Fold it in half horizontally: the two halves align. That is
 the first axis! 2. Fold it in half vertically: the two halves align.
@@ -5303,10 +4852,8 @@ axis of symmetry. #emph[Conclusion:] A non-square rectangle has
 #strong[2 axes of symmetry].
 ]
 
-#exemple_resolu(title: [Exemple Résolu Pas à Pas])[
-#strong[Worked Example 5 --- Moving on a Grid
-]
- #emph[Problem:] A
+
+#exemple_resolu(title: [Worked Example 5 — Moving on a Grid])[#emph[Problem:] A
 treasure is located at square #strong[D4]. A pirate starts at
 #strong[A1]. Write the shortest directional code to find the treasure.
 #emph[Solution:]
@@ -5317,6 +4864,7 @@ treasure is located at square #strong[D4]. A pirate starts at
   $arrow.t arrow.t arrow.t$. #emph[Complete Program:]
   $arrow.r quad arrow.r quad arrow.r quad arrow.t quad arrow.t quad arrow.t$.
 ]
+
 
 #divider()
 
@@ -5376,15 +4924,11 @@ $12 upright(" cm")$. What is its radius?
 
 #strong[Exercise 5.] Locating Grid Squares. Examine the grid below:
 
-#quote_box[
-#strong[🛠️ Application Pratique --- Chasse aux Trésors sur Quadrillage
-]
-
-
-- A B C
+#exemple_resolu(title: [Practical Application — Grid Treasure Hunt])[- A B C
 - 2 🍎
 - 1 🍌 🍇
 ]
+
 
 Give the coordinate (Letter, Number) of each fruit: apple, banana,
 grapes.
@@ -5549,7 +5093,7 @@ Prepare to enter #strong[the Age of the Market and Partitions] with
 
 #divider()
 
-#frontispice-volume("figures/nature/vol_2_nautile_spirale.jpg")
+#frontispice-volume("figures_en/nature/vol_2_nautile_spirale.jpg")
 
 #ouverture-volume(
   "II",
@@ -5572,10 +5116,9 @@ Prepare to enter #strong[the Age of the Market and Partitions] with
 #emph[“There are numbers that willingly accept being folded, organized
 into battalions, and sliced into rectangles. And there are rebel
 numbers, wild and untamed, that refuse to bend and stand like solitary
-stones in the desert. These wild stones are the atoms of all numbers.”
+stones in the desert. These wild stones are the atoms of all numbers.”]
 ]
 
-]
 
 #divider()
 
@@ -5614,9 +5157,9 @@ The 12 soldiers obey with a smile:
 - and to pass through the city's narrow gate, a single #strong[file of
   12]: $1 times 12 = 12$.
 
-#figure(image("figures/vol_2/fig_08_formations_rectangles.svg", alt: "Organisation rectangulaire des soldats : 2 × 6 et 3 × 4"),
+#figure(image("figures_en/vol_2/fig_08_formations_rectangles.svg", alt: "Rectangular formation of soldiers: 2 × 6 and 3 × 4"),
   caption: [
-    Organisation rectangulaire des soldats : 2 × 6 et 3 × 4
+    Rectangular formation of soldiers: 2 × 6 and 3 × 4
   ]
 )
 
@@ -5635,21 +5178,11 @@ leave immediately to deliver an urgent message to the king. Only
 - In rows of 4: $4 + 4 = 8$, leaving #strong[3] soldiers stranded.
 - In rows of 5: $5 + 5 = 10$, leaving #strong[1] soldier sticking out.
 
-#align(center)[
-  #block(
-    fill: rgb("#f8fafc"),
-    stroke: 1pt + rgb("#cbd5e1"),
-    inset: (x: 16pt, y: 10pt),
-    radius: 6pt,
-    breakable: false,
-  )[
-    #set text(font: "Liberation Mono", size: 9.5pt, fill: rgb("#0f172a"))
-    ```text
-o o o o o
-o o o o o  o   <--- the soldier sticking out!
-    ```
+#figure(image("figures_en/vol_2/fig_08_parite_soldat.svg", alt: "Parity: paired even numbers vs solitary odd soldier"),
+  caption: [
+    Parity: paired even numbers vs solitary odd soldier
   ]
-]
+)
 
 The captain sweats under his bronze helmet. No matter how hard he tries:
 #strong[with 11 soldiers, no solid rectangle is possible], except for
@@ -5662,12 +5195,11 @@ mystery, we must learn two crucial words: #strong[multiple] and
 #strong[divisor].
 
 #quote_box[
-#strong[🖐️ Your Turn ---
-]
- Take 12 small objects (buttons, beans, or
+#strong[🖐️ Your Turn ---] Take 12 small objects (buttons, beans, or
 coins). Form every possible rectangle. Then remove one object and try
 again with 11. Feel the difference with your own fingers!
 ]
+
 
 #divider()
 
@@ -5676,46 +5208,30 @@ again with 11. Feel the difference with your own fingers!
 Imagine a frog hopping along a long number line. It starts at 0 and
 always makes jumps of #strong[3 steps].
 
-#align(center)[
-  #block(
-    fill: rgb("#f8fafc"),
-    stroke: 1pt + rgb("#cbd5e1"),
-    inset: (x: 16pt, y: 10pt),
-    radius: 6pt,
-    breakable: false,
-  )[
-    #set text(font: "Liberation Mono", size: 9.5pt, fill: rgb("#0f172a"))
-    ```text
-0     3     6     9     12    15    18    21
-^        ^        ^        ^        ^        ^        ^        ^
-start   1 jump   2 jumps  3 jumps  4 jumps  ...
-    ```
+#figure(image("figures_en/vol_2/fig_08_grenouille_sauts.svg", alt: "Regular jumps of 3 by 3 of the frog"),
+  caption: [
+    Regular jumps of 3 by 3 of the frog
   ]
-]
+)
 
 The points where its feet land are: $0\,3\,6\,9\,12\,15\,18\,21\,dots.h$
 These are exactly the products of the #strong[times-3 table]:
 $3 times 0$, $3 times 1$, $3 times 2$, $3 times 3$, and so on.
 
-#principe(title: [Définition Fondamentale])[
-#strong[📐 Definition --- Multiple
-]
- A number is a #strong[multiple of 3]
+#principe(title: [Definition — Multiple])[A number is a #strong[multiple of 3]
 if it belongs to the 3-times table, which means it can be written as
 $3 times\(upright("a whole number")\)$. More generally, a number is a
 #strong[multiple of $b$] if it can be written as
 $b times\(upright("a whole number")\)$.
 ]
 
+
 The three small dots “$dots.h$” written at the end of a list read as
 “#strong[and so on]”. They mean: the list continues in exactly the same
 way, #strong[never stopping]. For the frog can keep jumping as long as
 it likes: there are #strong[infinitely many] multiples of 3!
 
-#exemple_resolu(title: [Exemple Résolu Pas à Pas])[
-#strong[Worked Example 1 --- Is it a multiple?
-]
- #emph[Question:] Is 42 a
+#exemple_resolu(title: [Worked Example 1 — Is it a multiple?])[#emph[Question:] Is 42 a
 multiple of 6? What about 45? #emph[Looking into the 6-times table:]
 $6 times 7 = 42$. Yes, 42 is a multiple of 6. #emph[For 45:]
 $6 times 7 = 42$ and $6 times 8 = 48$. 45 falls #strong[between] the
@@ -5723,16 +5239,15 @@ two; it is not in the table. 45 is #strong[not] a multiple of 6. (The
 frog jumping by 6 leaps right over 45 without landing on it.)
 ]
 
-#exemple_resolu(title: [Exemple Résolu Pas à Pas])[
-#strong[Worked Example 2 --- Common Multiples
-]
- #emph[Question:] Which
+
+#exemple_resolu(title: [Worked Example 2 — Common Multiples])[#emph[Question:] Which
 numbers up to 40 are multiples of both 4 and 6? Multiples of 4: 0, 4, 8,
 #strong[12], 16, 20, #strong[24], 28, 32, #strong[36], 40. Multiples of
 6: 0, 6, #strong[12], 18, #strong[24], 30, #strong[36]. The numbers
 present in both lists: #strong[0, 12, 24, 36]. Two frogs, one jumping by
 4s and the other by 6s, meet on these exact stepping stones!
 ]
+
 
 #divider()
 
@@ -5742,15 +5257,13 @@ Let us return to our soldiers. With 12 soldiers, we could form rows of
 1, 2, 3, 4, 6, and 12 (since $4 times 3$ and $6 times 2$ also work by
 simply turning the rectangle). With 11, only rows of 1 and 11 worked.
 
-#principe(title: [Définition Fondamentale])[
-#strong[📐 Definition --- Divisor
-]
- A number $b$ is a #strong[divisor] of
+#principe(title: [Definition — Divisor])[A number $b$ is a #strong[divisor] of
 $a$ if we can arrange $a$ objects into rows of $b$ #strong[without a
 single object left over]. In other words: $a$ is in the times table of
 $b$. We also say: “#strong[$a$ is divisible by $b$]” or “#strong[$b$
 divides $a$]”.
 ]
+
 
 Notice how these two concepts go hand in hand, like two faces of the
 same coin:
@@ -5761,14 +5274,12 @@ $ 12 = 3 times 4 quad arrow.r.double quad {12 upright(" is a multiple of ") 3\
 The heavy arrow “$arrow.r.double$” reads as “#strong[therefore]” or
 “#strong[implies that]”.
 
-#decouvre(title: [Découverte & Histoire])[
-#strong[💡 Did You Know?
-]
- Later, in middle and high school,
+#decouvre(title: [Did You Know?])[Later, in middle and high school,
 mathematicians will write “$3 divides 12$” (a small vertical bar) to say
 “3 divides 12”. Do not confuse this with a fraction bar, which is
 horizontal or slanted!
 ]
+
 
 ==== The Pair Method for Finding ALL Divisors
 <the-pair-method-for-finding-all-divisors>
@@ -5776,12 +5287,7 @@ Every rectangle reveals #strong[two] divisors at once: its width and its
 length. To make sure nothing is forgotten, we look for pairs
 systematically, starting with 1.
 
-#exemple_resolu(title: [Exemple Résolu Pas à Pas])[
-#strong[Worked Example 3 --- All Divisors of 24
-]
-
-
-- $1 times 24 = 24 arrow.r.double.long$ divisors 1 and 24
+#exemple_resolu(title: [Worked Example 3 — All Divisors of 24])[- $1 times 24 = 24 arrow.r.double.long$ divisors 1 and 24
 
 - $2 times 12 = 24 arrow.r.double.long$ divisors 2 and 12
 
@@ -5798,23 +5304,16 @@ The divisors of 24 are: #strong[1, 2, 3, 4, 6, 8, 12, 24]. There are 8
 of them, forming 4 distinct rectangles.
 ]
 
-#exemple_resolu(title: [Exemple Résolu Pas à Pas])[
-#strong[Worked Example 4 --- Divisors of 36 (A Square Number)
-]
 
-$1 times 36$, $2 times 18$, $3 times 12$, $4 times 9$, $6 times 6$.
+#exemple_resolu(title: [Worked Example 4 — Divisors of 36 (A Square Number)])[$1 times 36$, $2 times 18$, $3 times 12$, $4 times 9$, $6 times 6$.
 Divisors: #strong[1, 2, 3, 4, 6, 9, 12, 18, 36]. There are 9 divisors:
 an #strong[odd] number of divisors! Why? Because the rectangle
 $6 times 6$ is a #strong[square]: the 6 serves as both width and length,
 so it is counted only once.
 ]
 
-#quote_box[
-#strong[⚠️ Pitfall Warning --- Peculiar Cases
-]
 
-
-- #strong[1 is a divisor of every whole number]: we can always form a
+#alerte(title: [Pitfall Warning — Peculiar Cases])[- #strong[1 is a divisor of every whole number]: we can always form a
   single file ($1 times 12$, $1 times 11$, etc.).
 
 - #strong[Every number is a divisor of itself] and a multiple of itself:
@@ -5831,6 +5330,7 @@ so it is counted only once.
   #strong[multiple] of 3”. The #strong[smaller] divides, the
   #strong[larger] is a multiple.
 ]
+
 
 #divider()
 
@@ -5852,12 +5352,7 @@ hundreds, and thousands columns divides evenly without remainder.
 #strong[Only the single units digit can cause a leftover.] That is why
 you only need to inspect the #strong[last digit].
 
-#quote_box[
-#strong[📐 Divisibility Rules for 2, 5, and 10
-]
-
-
-- A number is divisible by #strong[2] if its units digit is #strong[0,
+#principe(title: [Divisibility Rules for 2, 5, and 10])[- A number is divisible by #strong[2] if its units digit is #strong[0,
   2, 4, 6, or 8]. We say it is #strong[even]. Otherwise, it is
   #strong[odd].
 
@@ -5867,12 +5362,8 @@ you only need to inspect the #strong[last digit].
 - A number is divisible by #strong[10] if its units digit is #strong[0].
 ]
 
-#exemple_resolu(title: [Exemple Résolu Pas à Pas])[
-#strong[Worked Example 5 --- The Last Digit Speaks
-]
 
-
-- 3,476: ends in 6 $arrow.r.double.long$ divisible by 2; not by 5; not
+#exemple_resolu(title: [Worked Example 5 — The Last Digit Speaks])[- 3,476: ends in 6 $arrow.r.double.long$ divisible by 2; not by 5; not
   by 10.
 
 - 985: ends in 5 $arrow.r.double.long$ divisible by 5; odd, so not by 2;
@@ -5881,6 +5372,7 @@ you only need to inspect the #strong[last digit].
 - 7,230: ends in 0 $arrow.r.double.long$ divisible by 2, by 5,
   #strong[and] by 10.
 ]
+
 
 ==== The Magic Rules of Summing the Digits: 3 and 9
 <the-magic-rules-of-summing-the-digits-3-and-9>
@@ -5907,43 +5399,30 @@ In total, the leftover stray pieces equal $2 + 3 + 4 = 9$ units:
 Therefore, 234 is divisible by both 9 and 3. (Check:
 $234 = 9 times 26$\.)
 
-#quote_box[
-#strong[📐 Divisibility Rules for 3 and 9
-]
-
-
-- A number is divisible by #strong[3] if the #strong[sum of its digits]
+#principe(title: [Divisibility Rules for 3 and 9])[- A number is divisible by #strong[3] if the #strong[sum of its digits]
   is a multiple of 3.
 - A number is divisible by #strong[9] if the #strong[sum of its digits]
   is a multiple of 9.
 ]
 
-#exemple_resolu(title: [Exemple Résolu Pas à Pas])[
-#strong[Worked Example 6 --- The Merchant's Dates
-]
- 3,471:
+
+#exemple_resolu(title: [Worked Example 6 — The Merchant's Dates])[3,471:
 $3 + 4 + 7 + 1 = 15$. 15 is in the 3-times table ($3 times 5$), so
 #strong[3,471 is divisible by 3]: the merchant can pack his bags without
 any leftovers! ($3 thin 471 = 3 times 1 thin 157$\.) However, 15 is not
 in the 9-times table: 3,471 is #strong[not] divisible by 9.
 ]
 
-#exemple_resolu(title: [Exemple Résolu Pas à Pas])[
-#strong[Worked Example 7 --- When the Sum Is Still Large
-]
- 98,769:
+
+#exemple_resolu(title: [Worked Example 7 — When the Sum Is Still Large])[98,769:
 $9 + 8 + 7 + 6 + 9 = 39$. Is 39 a multiple of 3? Repeat the trick:
 $3 + 9 = 12$, and $12 = 3 times 4$. Yes! Therefore 98,769 is divisible
 by 3. By 9? 39 is not in the 9-times table ($9 times 4 = 36$,
 $9 times 5 = 45$): no.
 ]
 
-#quote_box[
-#strong[⚠️ Pitfall Warning
-]
 
-
-- For 3 and 9, #strong[never look only at the last digit]: 23 ends in 3
+#alerte(title: [Pitfall Warning])[- For 3 and 9, #strong[never look only at the last digit]: 23 ends in 3
   but is not divisible by 3 ($2 + 3 = 5$). 27 ends in 7 and is divisible
   by 3 ($2 + 7 = 9$).
 
@@ -5958,14 +5437,14 @@ $9 times 5 = 45$): no.
   (because all these divisors are even).
 ]
 
+
 #quote_box[
-#strong[🖐️ Your Turn --- The Detective Game
-]
- One player calls out a
+#strong[🖐️ Your Turn --- The Detective Game] One player calls out a
 large number. The other player must announce as fast as possible which
 numbers among 2, 3, 5, 9, and 10 divide it evenly. Each correct answer
 scores one point; a mistake loses a point.
 ]
+
 
 #divider()
 
@@ -5974,15 +5453,13 @@ scores one point; a mistake loses a point.
 Let us return to our stubborn troop of soldiers. The number 11 has only
 #strong[two] divisors: 1 and 11. It cannot form any true rectangle.
 
-#principe(title: [Définition Fondamentale])[
-#strong[📐 Definition --- Prime Number
-]
- A #strong[prime number] is a
+#principe(title: [Definition — Prime Number])[A #strong[prime number] is a
 whole number greater than or equal to 2 that has #strong[exactly two
 distinct divisors]: 1 and itself. A whole number (greater than 1) that
 has more than two divisors is called #strong[composite]: it can be
 composed into a rectangle.
 ]
+
 
 The word “prime” comes from the Latin #emph[primus]: “first, original,
 that which comes before all else”. These are numbers that exist
@@ -6012,12 +5489,7 @@ Let us inspect the first few whole numbers:
   , kind: table
   )
 
-#quote_box[
-#strong[⚠️ Pitfall Warning --- The Special Cases of 1 and 2
-]
-
-
-- #strong[1 is not prime.] It has only #strong[one] divisor (itself),
+#alerte(title: [Pitfall Warning — The Special Cases of 1 and 2])[- #strong[1 is not prime.] It has only #strong[one] divisor (itself),
   whereas the definition strictly demands exactly two. Mathematicians
   deliberately excluded 1: otherwise, the fundamental law “every number
   breaks down in a unique way into prime numbers” would collapse (one
@@ -6035,14 +5507,15 @@ Let us inspect the first few whole numbers:
   impostors!
 ]
 
+
 ==== Breaking a Number Down to Its Atoms: The Factor Tree
 <breaking-a-number-down-to-its-atoms-the-factor-tree>
 Take any composite number, for example #strong[60]. Break it into two
 factors, then break down each factor as long as possible:
 
-#figure(image("figures/vol_2/fig_08_decomposition_premiers.svg", alt: "Arbre de décomposition en facteurs premiers"),
+#figure(image("figures_en/vol_2/fig_08_decomposition_premiers.svg", alt: "Prime factorization tree"),
   caption: [
-    Arbre de décomposition en facteurs premiers
+    Prime factorization tree
   ]
 )
 
@@ -6052,10 +5525,7 @@ The numbers multiplied together are called #strong[factors]. Here, all
 factors are prime numbers: we say we have #strong[factored 60 into a
 product of prime factors].
 
-#exemple_resolu(title: [Exemple Résolu Pas à Pas])[
-#strong[Worked Example 8 --- Another Path for 60
-]
- What if we had started
+#exemple_resolu(title: [Worked Example 8 — Another Path for 60])[What if we had started
 with $60 = 4 times 15$? $4 = 2 times 2$ and $15 = 3 times 5$. We still
 obtain $60 = 2 times 2 times 3 times 5$! No matter which path you take,
 #strong[you always arrive at the exact same prime atoms] (only the order
@@ -6063,6 +5533,7 @@ of factors might change). This is a profound law of arithmetic, already
 known to the ancient Greek mathematician #strong[Euclid], which you will
 prove formally in high school.
 ]
+
 
 This is why prime numbers are called #strong[the atoms of numbers]: just
 as all physical objects are built of atoms, #strong[every whole number
@@ -6080,10 +5551,9 @@ greater than 1 is uniquely built of prime numbers multiplied together].
 #emph[“To share is to distribute justice turn by turn. But when objects
 cannot be broken into pieces, what do we do with what remains in the
 center of the table? It is within the remainder that the whole truth of
-division lies hidden.”
+division lies hidden.”]
 ]
 
-]
 
 #divider()
 
@@ -6121,21 +5591,11 @@ must feed our children. But take heed: every family must receive exactly
 the same share. Not one bone more, not one scale less! Otherwise,
 jealousy will tear our village apart.”]
 
-#align(center)[
-  #block(
-    fill: rgb("#f8fafc"),
-    stroke: 1pt + rgb("#cbd5e1"),
-    inset: (x: 16pt, y: 10pt),
-    radius: 6pt,
-    breakable: false,
-  )[
-    #set text(font: "Liberation Mono", size: 9.5pt, fill: rgb("#0f172a"))
-    ```text
-On the stone table: 14 fish
-4 families are waiting: [Family A]  [Family B]  [Family C]  [Family D]
-    ```
+#figure(image("figures_en/vol_2/fig_09_sens_division.svg", alt: "The two meanings of division: fair sharing and grouping"),
+  caption: [
+    The two meanings of division: fair sharing and grouping
   ]
-]
+)
 
 You are tasked with carrying out the division. How can you proceed so
 that no injustice is done?
@@ -6144,26 +5604,6 @@ You do not plunge into complicated formulas. You place your hands on the
 fish and perform a universal gesture---the same one children use when
 dealing cards in a game: #strong[you distribute one fish at a time,
 round after round].
-
-#align(center)[
-  #block(
-    fill: rgb("#f8fafc"),
-    stroke: 1pt + rgb("#cbd5e1"),
-    inset: (x: 16pt, y: 10pt),
-    radius: 6pt,
-    breakable: false,
-  )[
-    #set text(font: "Liberation Mono", size: 9.5pt, fill: rgb("#0f172a"))
-    ```text
-Round 1:   Family A [><>]   Family B [><>]   Family C [><>]   Family D [><>]
-4 fish distributed, 10 remain on the table)
-Round 2:   Family A [><>]   Family B [><>]   Family C [><>]   Family D [><>]
-8 fish distributed in total, 6 remain on the table)
-Round 3:   Family A [><>]   Family B [><>]   Family C [><>]   Family D [><>]
-12 fish distributed in total, 2 fish remain on the table!)
-    ```
-  ]
-]
 
 Look at the table after the third round:
 
@@ -6191,28 +5631,13 @@ Alexandria more than 2,300 years ago.
 Let us give precise names to the four quantities that played a part in
 this distribution:
 
-#align(center)[
-  #block(
-    fill: rgb("#f8fafc"),
-    stroke: 1pt + rgb("#cbd5e1"),
-    inset: (x: 16pt, y: 10pt),
-    radius: 6pt,
-    breakable: false,
-  )[
-    #set text(font: "Liberation Mono", size: 9.5pt, fill: rgb("#0f172a"))
-    ```text
-14          =       (4        ×        3)       +        2
-↑                   ↑                 ↑                 ↑
-The Dividend        The Divisor       The Quotient      The Remainder
-total bounty)     (number of shares) (share per party)  (what is left)
-    ```
+#figure(image("figures_en/vol_2/fig_09_potence_division.svg", alt: "Anatomy of the Euclidean long division bracket"),
+  caption: [
+    Anatomy of the Euclidean long division bracket
   ]
-]
+)
 
-#principe(title: [Définition Fondamentale])[
-#strong[📐 Definition --- The Four Roles of Euclidean Division
-]
- When we
+#principe(title: [Definition — The Four Roles of Euclidean Division])[When we
 share an integer $a$ into $b$ equal parts: 1. The #strong[dividend]
 ($a$) is the total quantity of items to be shared. 2. The
 #strong[divisor] ($b$) is the number of equal shares to form (it can
@@ -6220,6 +5645,7 @@ never be 0!). 3. The #strong[quotient] ($q$) is the fair share received
 by each recipient. 4. The #strong[remainder] ($r$) is what is left
 unshared at the end.
 ]
+
 
 These four numbers are bound together by an essential equation that
 every mathematician keeps in mind:
@@ -6242,10 +5668,7 @@ on the table, there were easily enough fish to give one more to each of
 the 4 families ($6 gt.eq 4$). The distributor simply stopped too early
 out of laziness!
 
-#quote_box[
-#strong[⚠️ Pitfall Warning --- The Inviolable Golden Rule
-]
- In any
+#alerte(title: [Pitfall Warning — The Inviolable Golden Rule])[In any
 Euclidean division, #strong[the remainder must ALWAYS be strictly less
 than the divisor]: $ r < b $ And naturally, the remainder cannot be
 negative: $0 lt.eq r < b$.
@@ -6255,14 +5678,12 @@ or 3]. The moment your remainder is equal to or greater than 4, your
 quotient is too small: you can still distribute more!
 ]
 
+
 When the remainder is #strong[0], we say that #strong[the division has
 no remainder] (it divides evenly). The dividend is then an exact
 multiple of the divisor (as we explored in Chapter 8).
 
-#exemple_resolu(title: [Exemple Résolu Pas à Pas])[
-#strong[Worked Example 1 --- Identifying the Four Actors
-]
- In the
+#exemple_resolu(title: [Worked Example 1 — Identifying the Four Actors])[In the
 division of 37 by 5:
 
 - In the 5-times table, find the largest multiple less than or equal to
@@ -6282,6 +5703,7 @@ division of 37 by 5:
   satisfied!
 ]
 
+
 #divider()
 
 === 3. Two Meanings for One Operation: Sharing or Grouping?
@@ -6289,25 +5711,6 @@ division of 37 by 5:
 Division actually answers two very distinct types of real-world
 questions. Learning to tell them apart is essential for solving word
 problems clearly.
-
-#align(center)[
-  #block(
-    fill: rgb("#f8fafc"),
-    stroke: 1pt + rgb("#cbd5e1"),
-    inset: (x: 16pt, y: 10pt),
-    radius: 6pt,
-    breakable: false,
-  )[
-    #set text(font: "Liberation Mono", size: 9.5pt, fill: rgb("#0f172a"))
-    ```text
-MEANING 1: EQUAL SHARING (How many per person?)
-We know the number of shares; we look for the share size.
-DIVISION
-MEANING 2: GROUPING / CAPACITY (How many groups?)
-We know the size of each group; we look for the number of groups.
-    ```
-  ]
-]
 
 ==== Meaning 1: Fair Sharing (Dealing Cards)
 <meaning-1-fair-sharing-dealing-cards>
@@ -6327,10 +5730,7 @@ We know the size of each group; we look for the number of groups.
   boxes of 4 eggs. How many full boxes can he seal? He can seal 8 full
   boxes, leaving 3 eggs left over.
 
-#exemple_resolu(title: [Exemple Résolu Pas à Pas])[
-#strong[Worked Example 2 --- Sharing or Grouping?
-]
- #emph[Situation A:] A
+#exemple_resolu(title: [Worked Example 2 — Sharing or Grouping?])[#emph[Situation A:] A
 teacher has 28 notebooks for 7 students. How many notebooks does each
 student receive? #strong[Answer:] This is #strong[sharing] (we seek each
 student's share). $28 = 7 times 4 + 0$. Each student receives 4
@@ -6342,29 +5742,13 @@ This is #strong[grouping] (we package by groups of 6).
 $28 = 6 times 4 + 4$. She makes 4 complete bouquets, and 4 roses remain.
 ]
 
+
 #divider()
 
 === 4. Step-by-Step Long Division: Calm and Methodical
 <step-by-step-long-division-calm-and-methodical>
 When numbers grow large, we can no longer distribute pebbles or fish one
 by one. We need a reliable mechanical method: #strong[long division].
-
-#align(center)[
-  #block(
-    fill: rgb("#f8fafc"),
-    stroke: 1pt + rgb("#cbd5e1"),
-    inset: (x: 16pt, y: 10pt),
-    radius: 6pt,
-    breakable: false,
-  )[
-    #set text(font: "Liberation Mono", size: 9.5pt, fill: rgb("#0f172a"))
-    ```text
-Dividend     Divisor
-Quotient
-Remainder
-    ```
-  ]
-]
 
 Why this layout? Because it enables us to divide the number
 #strong[chunk by chunk], starting from the left (the highest
@@ -6532,10 +5916,7 @@ stage.
 #strong[Result:] $473 =\(4 times 118\)+ 1$. The quotient is 118, and the
 remainder is 1. The condition $1 < 4$ is fully respected!
 
-#methode(title: [Méthode Pas à Pas])[
-#strong[🧭 Method --- The 4 Magic Moves of Long Division
-]
- For each
+#methode(title: [Method — The 4 Magic Moves of Long Division])[For each
 column in division, we repeat the same four moves: 1. #strong[D]ivide
 (how many times does the divisor fit?) 2. #strong[M]ultiply (calculate
 what was just distributed: $q times b$) 3. #strong[S]ubtract (find the
@@ -6546,6 +5927,7 @@ Remember the magic acronym: #strong[D - M - S - B] (#emph[Divide,
 Multiply, Subtract, Bring down])!
 ]
 
+
 #divider()
 
 === 5. Checking Your Division: The Foolproof Verification
@@ -6554,10 +5936,7 @@ In mathematics, you never finish a calculation without verifying your
 work. To check a Euclidean division, we perform the inverse operation:
 #strong[we retrace our steps using multiplication].
 
-#exemple_resolu(title: [Exemple Résolu Pas à Pas])[
-#strong[Worked Example 3 --- Verifying $473 = 4 times 118 + 1$
-]
- 1.
+#exemple_resolu(title: [Worked Example 3 — Verifying $473 = 4 times 118 + 1$])[1.
 Multiply the quotient by the divisor:
 $ 118 times 4 =\(100 times 4\)+\(10 times 4\)+\(8 times 4\)= 400 + 40 + 32 = 472 $
 \2. Add the remainder: $ 472 + 1 = 473 $ 3. Do we get back the original
@@ -6565,10 +5944,8 @@ dividend? #strong[Yes, exactly 473!] The calculation is certified
 error-free.
 ]
 
-#quote_box[
-#strong[⚠️ Pitfall Warning --- The Trap of Zero in the Quotient
-]
- This is
+
+#alerte(title: [Pitfall Warning — The Trap of Zero in the Quotient])[This is
 the most common mistake made by fourth-grade students! Let us divide
 $615 div 3$:
 
@@ -6584,14 +5961,12 @@ $615 div 3$:
   that digit is zero!]
 ]
 
+
 #divider()
 
 === 6. Additional Worked Examples
 <additional-worked-examples>
-#exemple_resolu(title: [Exemple Résolu Pas à Pas])[
-#strong[Worked Example 4 --- Bags of Marbles
-]
- A child has 146 marbles.
+#exemple_resolu(title: [Worked Example 4 — Bags of Marbles])[A child has 146 marbles.
 He wants to pack them into bags of 6 marbles each. #emph[Question:] How
 many full bags will he get, and how many marbles will remain?
 
@@ -6607,10 +5982,8 @@ many full bags will he get, and how many marbles will remain?
   fills #strong[24 full bags] and has #strong[2 marbles left over].
 ]
 
-#exemple_resolu(title: [Exemple Résolu Pas à Pas])[
-#strong[Worked Example 5 --- Minibuses for Field Trips
-]
- 83 people are
+
+#exemple_resolu(title: [Worked Example 5 — Minibuses for Field Trips])[83 people are
 going on a field trip. Each minibus can carry at most 9 passengers.
 #emph[Question:] What is the minimum number of minibuses required to
 transport everyone?
@@ -6629,6 +6002,7 @@ transport everyone?
   meaning of a problem: sometimes the answer is the quotient, and
   sometimes it is quotient + 1!]
 ]
+
 
 #divider()
 
@@ -6971,10 +6345,9 @@ the Measuring Sieve]!
 #emph[“Until now, our numbers counted whole, solid objects: pebbles,
 sheep, gold coins. But the real world is made of bread that is broken,
 cloth that is cut, and time that flows in fractions of hours. To measure
-the fractured world, the human mind had to invent the fraction.”
+the fractured world, the human mind had to invent the fraction.”]
 ]
 
-]
 
 #divider()
 
@@ -7007,9 +6380,9 @@ steaming and crispy.
 Around the table, #strong[four children] have bellies rumbling with
 anticipation. There is only one single galette for four hungry diners.
 
-#figure(image("figures/vol_2/fig_10_galette_quarts.svg", alt: "Le partage de la galette : les fractions de disque"),
+#figure(image("figures_en/vol_2/fig_10_galette_quarts.svg", alt: "Sharing the flatbread: fractions of a disk"),
   caption: [
-    Le partage de la galette : les fractions de disque
+    Sharing the flatbread: fractions of a disk
   ]
 )
 
@@ -7024,22 +6397,6 @@ slices cleanly from edge to edge. Behold: #strong[two identical
 half-galettes]. 2. #emph[Second perpendicular cut:] the blade cuts
 across at a right angle. The galette is now divided into #strong[four
 strictly equal quarters].
-
-#align(center)[
-  #block(
-    fill: rgb("#f8fafc"),
-    stroke: 1pt + rgb("#cbd5e1"),
-    inset: (x: 16pt, y: 10pt),
-    radius: 6pt,
-    breakable: false,
-  )[
-    #set text(font: "Liberation Mono", size: 9.5pt, fill: rgb("#0f172a"))
-    ```text
-Slice 1                   Slice 2
-Slice 3                   Slice 4
-    ```
-  ]
-]
 
 Each child holds out a hand and receives their share. How much did each
 child receive? They did not receive 0 galettes. Nor did they receive 1
@@ -7063,29 +6420,13 @@ act of breaking into pieces”. You have just stepped into the world of
 A fraction is not an ordinary number resting on a line. It is an
 alliance between two integers playing two very distinct roles:
 
-#align(center)[
-  #block(
-    fill: rgb("#f8fafc"),
-    stroke: 1pt + rgb("#cbd5e1"),
-    inset: (x: 16pt, y: 10pt),
-    radius: 6pt,
-    breakable: false,
-  )[
-    #set text(font: "Liberation Mono", size: 9.5pt, fill: rgb("#0f172a"))
-    ```text
-The NUMERATOR (from Latin numerare = to count)
-3       It COUNTS how many parts are taken.
-4       The FRACTION BAR (the knife-cut of sharing)
-The DENOMINATOR (from Latin denominare = to name)
-It NAMES the family of parts (into how many parts the unit is cut).
-    ```
+#figure(image("figures_en/vol_2/fig_10_numerateur_denominateur.svg", alt: "Anatomy of a fraction: role of numerator and denominator"),
+  caption: [
+    Anatomy of a fraction: role of numerator and denominator
   ]
-]
+)
 
-#principe(title: [Définition Fondamentale])[
-#strong[📐 Definition --- Numerator and Denominator
-]
- In a fraction
+#principe(title: [Definition — Numerator and Denominator])[In a fraction
 written as $a / b$ (with $b eq.not 0$):
 
 - The #strong[denominator] ($b$, at the bottom) indicates how many
@@ -7094,6 +6435,7 @@ written as $a / b$ (with $b eq.not 0$):
 - The #strong[numerator] ($a$, at the top) indicates the number of parts
   chosen, eaten, or shaded. It is the “harvest”.
 ]
+
 
 ==== How to Read a Fraction Aloud?
 <how-to-read-a-fraction-aloud>
@@ -7124,20 +6466,15 @@ Think about the physical act of sharing:
 
 $ 1 / 3 > 1 / 8 $
 
-#quote_box[
-#strong[⚠️ Pitfall Warning --- The Denominator Rule
-]
- For fractions
+#alerte(title: [Pitfall Warning — The Denominator Rule])[For fractions
 sharing the #strong[same numerator] (for instance 1 on top): #strong[The
 larger the denominator, the smaller the individual piece!]
 $ 1 / 2 > 1 / 3 > 1 / 4 > 1 / 5 > 1 / 10 > 1 / 100 $
 ]
 
-#quote_box[
-#strong[🔍 True History --- The Scribes of Ancient Egypt (The Rhind
-Papyrus)
-]
- More than 3,500 years ago, the pharaohs' scribes almost
+
+#decouvre(title: [True History — The Scribes of Ancient Egypt (The Rhind
+Papyrus)])[More than 3,500 years ago, the pharaohs' scribes almost
 exclusively recorded fractions with a #strong[1] in the numerator
 ($1 / 2\,1 / 3\,1 / 4\,1 / 10$). To express a quantity like $3 / 4$,
 they decomposed it into a sum of unit fractions: $1 / 2 + 1 / 4$. The
@@ -7145,6 +6482,7 @@ famous #strong[Rhind Papyrus] (preserved in the British Museum) contains
 dozens of division tables designed to fairly allocate bread and beer
 among the workers building the pyramids.
 ]
+
 
 #figure(image("figures/histoire/ch_10_papyrus_rhind.jpg", alt: "The Rhind Mathematical Papyrus (~1550 BC, Ancient Egypt): scribes’ unit fraction decomposition tables"),
   caption: [
@@ -7160,13 +6498,9 @@ among the workers building the pyramids.
 Look at a box of 6 chocolates. The whole unit is the complete box ($6$
 chocolates).
 
-#decouvre(title: [Découverte & Histoire])[
-#strong[💡 Découverte --- L'Unité Complète comme Fraction $6\/6$
+#decouvre(title: [Discovery — The Complete Unit as a Fraction $6\/6$])[- o | o | o | o | o | o \] \<-- 1 full box = 6/6
 ]
 
-
-- o | o | o | o | o | o \] \<-- 1 full box = 6/6
-]
 
 + #strong[If you eat 4 chocolates:] you have eaten $4 / 6$ of the box.
   The numerator ($4$) is smaller than the denominator ($6$). You have
@@ -7181,10 +6515,7 @@ chocolates).
   larger than the denominator ($6$). You have eaten #strong[more than
   one whole box]: $11 / 6 > 1$.
 
-#principe(title: [Définition Fondamentale])[
-#strong[📐 Property --- Position Relative to 1
-]
- For any fraction
+#principe(title: [Property — Position Relative to 1])[For any fraction
 $a / b$:
 
 - If the numerator is strictly less than the denominator ($a < b$), then
@@ -7197,10 +6528,8 @@ $a / b$:
   then $a / b > 1$.
 ]
 
-#exemple_resolu(title: [Exemple Résolu Pas à Pas])[
-#strong[Worked Example 1 --- Comparing to 1
-]
- Let us compare the
+
+#exemple_resolu(title: [Worked Example 1 — Comparing to 1])[Let us compare the
 following fractions to 1: $3 / 8$, $7 / 7$, $9 / 4$, $5 / 6$.
 
 - For $3 / 8$: $3 < 8$, so $3 / 8 < 1$.
@@ -7211,6 +6540,7 @@ following fractions to 1: $3 / 8$, $7 / 7$, $9 / 4$, $5 / 6$.
 
 - For $5 / 6$: $5 < 6$, so $5 / 6 < 1$.
 ]
+
 
 #divider()
 
@@ -7228,26 +6558,22 @@ third remaining]!
 
 $ 7 / 3 = 3 / 3 + 3 / 3 + 1 / 3 = 1 + 1 + 1 / 3 = 2 + 1 / 3 $
 
-#methode(title: [Méthode Pas à Pas])[
-#strong[🧭 Method --- Writing a Fraction as “Whole Number + Fraction \<
-1”
-]
- To decompose an improper fraction $a / b$: 1. Carry out the
+#methode(title: [Method — Writing a Fraction as “Whole Number + Fraction \<
+1”])[To decompose an improper fraction $a / b$: 1. Carry out the
 Euclidean division of $a$ by $b$: find quotient $q$ and remainder $r$
 ($a = b times q + r$). 2. Write directly: $ a / b = q + r / b $ Since
 $r < b$, the fraction $r / b$ is guaranteed to be strictly less than 1!
 ]
 
-#exemple_resolu(title: [Exemple Résolu Pas à Pas])[
-#strong[Worked Example 2 --- Decomposing an Improper Fraction
-]
- Decompose
+
+#exemple_resolu(title: [Worked Example 2 — Decomposing an Improper Fraction])[Decompose
 $23 / 5$.
 
 - Division of 23 by 5: $23 =\(5 times 4\)+ 3$ (quotient 4, remainder 3).
 - We therefore have: $23 / 5 = 4 + 3 / 5$. This shows that $23 / 5$ lies
   strictly between 4 and 5: $4 < 23 / 5 < 5$.
 ]
+
 
 #divider()
 
@@ -7262,9 +6588,9 @@ forward according to the numerator.
 Let us draw a line where each unit is partitioned into #strong[4 equal
 parts] (quarters):
 
-#figure(image("figures/vol_2/fig_10_droite_graduee_quarts.svg", alt: "La droite numérique graduée en quarts"),
+#figure(image("figures_en/vol_2/fig_10_droite_graduee_quarts.svg", alt: "The number line graduated in fourths"),
   caption: [
-    La droite numérique graduée en quarts
+    The number line graduated in fourths
   ]
 )
 
@@ -7273,16 +6599,13 @@ parts] (quarters):
 - Point C is located 6 quarters from the start: it represents
   $6 / 4 = 1 + 2 / 4$.
 
-#exemple_resolu(title: [Exemple Résolu Pas à Pas])[
-#strong[Worked Example 3 --- Reading and Placing on the Line
-]
-
-#emph[Question:] On a number line where each unit is divided into 5
+#exemple_resolu(title: [Worked Example 3 — Reading and Placing on the Line])[#emph[Question:] On a number line where each unit is divided into 5
 equal parts (fifths), where does $8 / 5$ lie? #emph[Answer:] Start at 0
 and move forward 8 tick marks of size $1 / 5$. Since
 $8 / 5 = 1 + 3 / 5$, the point is located between 1 and 2, exactly 3
 ticks past 1.
 ]
+
 
 #divider()
 
@@ -7296,23 +6619,11 @@ in half once more. Unfold it. What do you notice? The whole strip is now
 divided into #strong[4 equal sections]. And the blue part now contains
 #strong[2 sections out of 4]!
 
-#align(center)[
-  #block(
-    fill: rgb("#f8fafc"),
-    stroke: 1pt + rgb("#cbd5e1"),
-    inset: (x: 16pt, y: 10pt),
-    radius: 6pt,
-    breakable: false,
-  )[
-    #set text(font: "Liberation Mono", size: 9.5pt, fill: rgb("#0f172a"))
-    ```text
-Strip folded in 2:              Strip folded in 4:
-Blue          White       Blue  Blue White White
-1/2 )       ( 1/2 )     (1/4) (1/4)
-1 part out of 2                 2 parts out of 4!
-    ```
+#figure(image("figures_en/vol_2/fig_10_bandes_pliees.svg", alt: "Equivalent fractions by strip division: 1/2 = 2/4"),
+  caption: [
+    Equivalent fractions by strip division: 1/2 = 2/4
   ]
-]
+)
 
 Did the amount of blue ink increase? No! Is the strip any longer? No!
 Only the fineness of the division changed. You multiplied the total
@@ -7327,22 +6638,15 @@ $ 2 / 4 = frac(2 times 2, 4 times 2) = 4 / 8 $
 All these fractions describe the exact #strong[same quantity of matter].
 We call them #strong[equivalent fractions] (or equal fractions).
 
-#quote_box[
-#strong[📐 The Golden Rule of Equivalent Fractions
-]
- You do not alter the
+#principe(title: [The Golden Rule of Equivalent Fractions])[You do not alter the
 value of a fraction if you #strong[multiply] (or #strong[divide]) both
 its numerator and denominator by the #strong[same non-zero whole
 number]:
 $ a / b = frac(a times k, b times k) #h(2em) upright("and") #h(2em) a / b = frac(a div k, b div k) $
 ]
 
-#exemple_resolu(title: [Exemple Résolu Pas à Pas])[
-#strong[Worked Example 4 --- Generating Equivalent Fractions
-]
 
-
-- Find a fraction equal to $3 / 5$ with a denominator of 20: To go from
+#exemple_resolu(title: [Worked Example 4 — Generating Equivalent Fractions])[- Find a fraction equal to $3 / 5$ with a denominator of 20: To go from
   5 to 20, we multiply by 4 ($5 times 4 = 20$). We must also multiply
   the top by 4: $3 times 4 = 12$.
   $ 3 / 5 = frac(3 times 4, 5 times 4) = 12 / 20 $
@@ -7350,6 +6654,7 @@ $ a / b = frac(a times k, b times k) #h(2em) upright("and") #h(2em) a / b = frac
 - Simplify $6 / 8$: 6 and 8 are both divisible by 2:
   $ 6 / 8 = frac(6 div 2, 8 div 2) = 3 / 4 $
 ]
+
 
 #divider()
 
@@ -7367,29 +6672,14 @@ size “eighth”. Therefore, they ate $5 / 8$ of the cake!
 
 $ 2 / 8 + 3 / 8 = frac(2 + 3, 8) = 5 / 8 $
 
-#align(center)[
-  #block(
-    fill: rgb("#f8fafc"),
-    stroke: 1pt + rgb("#cbd5e1"),
-    inset: (x: 16pt, y: 10pt),
-    radius: 6pt,
-    breakable: false,
-  )[
-    #set text(font: "Liberation Mono", size: 9.5pt, fill: rgb("#0f172a"))
-    ```text
-Cake cut into 8 slices:
-Leo | Leo | Sarah | Sarah | Sarah |     |     |     ]
-2/8 ---> <------- 3/8 ------->
-5/8 ------------>
-    ```
-  ]
+#exemple_resolu(title: [Solved Example — Dividing the Cake into Eighths])[- Cake cut into 8 slices:
+- Leo | Leo | Sarah | Sarah | Sarah | | | \]
+- 2/8 ---\> \<------- 3/8 -------\>
+- 5/8 ------------\>
 ]
 
-#principe(title: [Définition Fondamentale])[
-#strong[📐 Rule --- Addition and Subtraction with the Same Denominator
-]
 
-To add (or subtract) two fractions that have the #strong[same
+#principe(title: [Rule — Addition and Subtraction with the Same Denominator])[To add (or subtract) two fractions that have the #strong[same
 denominator]: 1. #strong[Keep the same denominator] (do not touch the
 bottom!). 2. #strong[Add (or subtract) the numerators] (compute only on
 the top).
@@ -7397,10 +6687,8 @@ the top).
 $ a / c + b / c = frac(a + b, c) #h(2em) upright("and") #h(2em) a / c - b / c = frac(a - b, c) $
 ]
 
-#quote_box[
-#strong[⚠️ Pitfall Warning --- The Forbidden Mistake
-]
- Never add
+
+#alerte(title: [Pitfall Warning — The Forbidden Mistake])[Never add
 denominators together!
 $ 1 / 4 + 2 / 4 eq.not frac(1 + 2, 4 + 4) = 3 / 8 quad upright("TOTALLY FALSE!") $
 If you combine 1 quarter of a pie and 2 quarters of a pie, you get 3
@@ -7408,18 +6696,15 @@ quarters of a pie ($3 / 4$), not 3 eighths! The size of the slice does
 not shrink when you place several on the same plate.
 ]
 
-#exemple_resolu(title: [Exemple Résolu Pas à Pas])[
-#strong[Worked Example 5 --- Simple Calculations
-]
 
-
-- $A = 3 / 7 + 2 / 7 = frac(3 + 2, 7) = 5 / 7$
+#exemple_resolu(title: [Worked Example 5 — Simple Calculations])[- $A = 3 / 7 + 2 / 7 = frac(3 + 2, 7) = 5 / 7$
 
 - $B = 9 / 10 - 4 / 10 = frac(9 - 4, 10) = 5 / 10 = 1 / 2$
 
 - $C = 1 - 3 / 5$: Rewrite the integer 1 as a fraction with denominator
   5: $1 = 5 / 5$. $ C = 5 / 5 - 3 / 5 = frac(5 - 3, 5) = 2 / 5 $
 ]
+
 
 #divider()
 
@@ -7679,12 +6964,11 @@ decimal point] (or comma). Prepare to discover decimal numbers in
 #emph[“Everyone admires the perfection of our number system that counts
 by tens, hundreds, and thousands. Why stop at the unit as if standing
 before an insurmountable wall? By crossing this threshold into tenths
-and hundredths, all measurements become as simple as whole numbers.”
-]
-
+and hundredths, all measurements become as simple as whole numbers.”]
 --- Adapted from Simon Stevin, #emph[The Decimal] (#emph[De Thiende],
 1585).
 ]
+
 
 #divider()
 
@@ -7732,15 +7016,11 @@ One man observes this chaos with calm clarity. His name is #strong[Simon
 Stevin] (1548--1620). He is an engineer, mathematician, and
 quartermaster general of the Dutch army.
 
-#decouvre(title: [Découverte & Histoire])[
-#strong[💡 Discovery & History --- Simon Stevin (1548--1620)
-]
-
-
-#emph[“Why make complicated what can be simple? We count by tens,
+#decouvre(title: [Discovery & History — Simon Stevin (1548—1620)])[#emph[“Why make complicated what can be simple? We count by tens,
 hundreds, and thousands. Let us do the exact same thing BELOW the
 unit!”]
 ]
+
 
 Stevin asks an illuminating question: #emph[“When we write 111, the
 first 1 represents 100, the second represents 10, and the third
@@ -7760,20 +7040,11 @@ Decimal]. This marks the official birth of #strong[decimal numbers].
 To understand the journey below the number 1, imagine a long measuring
 strip of length 1 meter.
 
-#align(center)[
-  #block(
-    fill: rgb("#f8fafc"),
-    stroke: 1pt + rgb("#cbd5e1"),
-    inset: (x: 16pt, y: 10pt),
-    radius: 6pt,
-    breakable: false,
-  )[
-    #set text(font: "Liberation Mono", size: 9.5pt, fill: rgb("#0f172a"))
-    ```text
-0                                                             1 meter
-    ```
+#figure(image("figures_en/vol_2/fig_11_glissement_virgule.svg", alt: "Operational shifting of the decimal point"),
+  caption: [
+    Operational shifting of the decimal point
   ]
-]
+)
 
 + #strong[The Tenths:] Divide this meter into #strong[10 equal
   sections]. Each piece is a decimal fraction:
@@ -7794,13 +7065,11 @@ strip of length 1 meter.
   #strong[thousandth]:
   $ frac(1, 1 thin 000) upright(" of a meter (one thousandth of a meter, or ") 1 upright(" millimeter)") $
 
-#principe(title: [Définition Fondamentale])[
-#strong[📐 Definition --- Decimal Fraction
-]
- A #strong[decimal fraction]
+#principe(title: [Definition — Decimal Fraction])[A #strong[decimal fraction]
 is any fraction whose denominator is
 $10\,100\,1 thin 000\,10 thin 000 dots.h$ (a power of 10).
 ]
+
 
 #divider()
 
@@ -7826,28 +7095,7 @@ every time? Look at our grand place-value chart extended to the right:
 Look at this number: #strong[$3.47$]. It consists of two distinct
 territories:
 
-#align(center)[
-  #block(
-    fill: rgb("#f8fafc"),
-    stroke: 1pt + rgb("#cbd5e1"),
-    inset: (x: 16pt, y: 10pt),
-    radius: 6pt,
-    breakable: false,
-  )[
-    #set text(font: "Liberation Mono", size: 9.5pt, fill: rgb("#0f172a"))
-    ```text
-3    .    4 7
-Whole part   Decimal part
-3 whole units)   (4 tenths and 7 hundredths)
-    ```
-  ]
-]
-
-#principe(title: [Définition Fondamentale])[
-#strong[📐 Definition --- Decimal Number, Whole Part, and Decimal Part
-]
-
-A #strong[decimal number] is a number that can be expressed with a
+#principe(title: [Definition — Decimal Number, Whole Part, and Decimal Part])[A #strong[decimal number] is a number that can be expressed with a
 finite number of digits after the decimal point.
 
 - The #strong[whole-number part] is located to the left of the decimal
@@ -7860,6 +7108,7 @@ finite number of digits after the decimal point.
   single units column ends.
 ]
 
+
 ==== How to Read $3.47$ Aloud?
 <how-to-read-3.47-aloud>
 - In casual speech: people often say “three point four seven”.
@@ -7868,10 +7117,7 @@ finite number of digits after the decimal point.
 
 $ 3.47 = 3 + 4 / 10 + 7 / 100 = 3 + 47 / 100 = 347 / 100 $
 
-#decouvre(title: [Découverte & Histoire])[
-#strong[💡 Did You Know?
-]
- Simon Stevin did not yet use our modern
+#decouvre(title: [Did You Know?])[Simon Stevin did not yet use our modern
 decimal point! He drew tiny circled numbers above the digits:
 \$3\\text{ \\textcircled{0} } 4\\text{ \\textcircled{1} } 7\\text{ \\textcircled{2} }\$
 to designate whole units, tenths, and hundredths. It was the Scottish
@@ -7880,6 +7126,7 @@ popularized the decimal point and comma in 1617. Today, English-speaking
 countries use a dot ($3.47$), while France and many European nations use
 a decimal comma ($3\,47$). The mathematical meaning is identical!
 ]
+
 
 #divider()
 
@@ -7911,26 +7158,7 @@ Now compare:
 
 Since $20 > 18$, it is crystal clear that: $ upright(bold(3.2 > 3.18)) $
 
-#align(center)[
-  #block(
-    fill: rgb("#f8fafc"),
-    stroke: 1pt + rgb("#cbd5e1"),
-    inset: (x: 16pt, y: 10pt),
-    radius: 6pt,
-    breakable: false,
-  )[
-    #set text(font: "Liberation Mono", size: 9.5pt, fill: rgb("#0f172a"))
-    ```text
-3.20:  [ Cake 1 ] [ Cake 2 ] [ Cake 3 ]  +  [ 20 hundredths ]  <-- LARGER!
-3.18:  [ Cake 1 ] [ Cake 2 ] [ Cake 3 ]  +  [ 18 hundredths ]
-    ```
-  ]
-]
-
-#methode(title: [Méthode Pas à Pas])[
-#strong[🧭 Method --- Comparing Two Decimal Numbers Without Error
-]
- 1.
+#methode(title: [Method — Comparing Two Decimal Numbers Without Error])[1.
 First compare the #strong[whole-number part]: $7.1 > 5.99$ because
 $7 > 5$. (No need to even look past the decimal point!). 2. If the whole
 parts are equal, compare the #strong[tenths digit]: In
@@ -7941,12 +7169,8 @@ the tenths are equal, compare the #strong[hundredths], and so on.
 so both have the same number of decimal places!
 ]
 
-#quote_box[
-#strong[⚠️ Pitfall Warning --- Meaningful vs.~Superfluous Zeros
-]
 
-
-- #strong[Superfluous zeros:] You can freely add or remove zeros at the
+#alerte(title: [Pitfall Warning — Meaningful vs.~Superfluous Zeros])[- #strong[Superfluous zeros:] You can freely add or remove zeros at the
   very end of the decimal part without changing the number's value:
   $ 4.5 = 4.50 = 4.500 $
 
@@ -7955,6 +7179,7 @@ so both have the same number of decimal places!
   $4.05$ is 4 units and 5 hundredths. $4.5$ is 4 units and 5 tenths (50
   hundredths)! That is 10 times more crumb!
 ]
+
 
 #divider()
 
@@ -7966,22 +7191,6 @@ infinitely rich!
 
 Look at a ruler between 3 and 4:
 
-#align(center)[
-  #block(
-    fill: rgb("#f8fafc"),
-    stroke: 1pt + rgb("#cbd5e1"),
-    inset: (x: 16pt, y: 10pt),
-    radius: 6pt,
-    breakable: false,
-  )[
-    #set text(font: "Liberation Mono", size: 9.5pt, fill: rgb("#0f172a"))
-    ```text
-3           3.2         3.4         3.6         3.8          4
-3.1         3.3         3.5         3.7         3.9
-    ```
-  ]
-]
-
 Between 3 and 4, we have interpolated 9 numbers at the tenths level:
 $3.1\,3.2\,3.3 dots.h$
 
@@ -7991,21 +7200,14 @@ $ 3.11 quad\;quad 3.12 quad\;quad 3.15 quad\;quad 3.19 $ And between
 $3.14$ and $3.15$? We can write $3.140$ and $3.150$, and insert
 thousandths like $3.145$!
 
-#decouvre(title: [Découverte & Histoire])[
-#strong[💡 Did You Know?
-]
- Between any two decimal numbers, no matter how
+#decouvre(title: [Did You Know?])[Between any two decimal numbers, no matter how
 close they seem, you can ALWAYS find another decimal number (in fact,
 infinitely many!). There is never an empty gap that cannot be filled by
 zooming in further.
 ]
 
-#exemple_resolu(title: [Exemple Résolu Pas à Pas])[
-#strong[Worked Example 1 --- Bounding and Interpolation
-]
 
-
-- #emph[Bound 4.72 between consecutive whole numbers:] $4 < 4.72 < 5$.
+#exemple_resolu(title: [Worked Example 1 — Bounding and Interpolation])[- #emph[Bound 4.72 between consecutive whole numbers:] $4 < 4.72 < 5$.
 
 - #emph[Bound 4.72 to the nearest tenth:] $4.7 < 4.72 < 4.8$ (since
   $4.70 < 4.72 < 4.80$).
@@ -8013,6 +7215,7 @@ zooming in further.
 - #emph[Insert a decimal between 6.3 and 6.4:] Think of $6.30$ and
   $6.40$. We can choose $6.35$ (or $6.31$ or $6.38$).
 ]
+
 
 #divider()
 
@@ -8092,16 +7295,14 @@ button is off by a single hole, the entire shirt sits crooked!
   ]
 ]
 
-#quote_box[
-#strong[⚠️ Pitfall Warning --- The Mandatory Zero in Subtraction
-]
- In
+#alerte(title: [Pitfall Warning — The Mandatory Zero in Subtraction])[In
 $35.2 - 7.64$, you cannot simply say “nothing minus 4 is 4”! That is a
 grave error. You must write $35.2 upright(bold(0))$. Then calculate: 0
 hundredths minus 4 hundredths cannot be done directly
 $arrow.r.double.long$ regroup 1 tenth into 10 hundredths, and
 $10 - 4 = 6$!
 ]
+
 
 #divider()
 
@@ -8113,29 +7314,7 @@ becomes a tenth! Every digit jumps one place-value column to the left.
 On paper, this creates the visual appearance that #strong[the decimal
 point shifts to the right].
 
-#align(center)[
-  #block(
-    fill: rgb("#f8fafc"),
-    stroke: 1pt + rgb("#cbd5e1"),
-    inset: (x: 16pt, y: 10pt),
-    radius: 6pt,
-    breakable: false,
-  )[
-    #set text(font: "Liberation Mono", size: 9.5pt, fill: rgb("#0f172a"))
-    ```text
-× 10    > Decimal point shifts 1 place to the right:    3.45 × 10 = 34.5
-× 100   > Decimal point shifts 2 places to the right:   3.45 × 100 = 345
-× 1 000 > Decimal point shifts 3 places to the right:   3.45 × 1 000 = 3 450
-    ```
-  ]
-]
-
-#exemple_resolu(title: [Exemple Résolu Pas à Pas])[
-#strong[Worked Example 2 --- Mental Fluency
-]
-
-
-- $0.6 times 10 = 6$
+#exemple_resolu(title: [Worked Example 2 — Mental Fluency])[- $0.6 times 10 = 6$
 
 - $2.38 times 100 = 238$
 
@@ -8144,6 +7323,7 @@ point shifts to the right].
 
 - $0.005 times 1 thin 000 = 5$
 ]
+
 
 #divider()
 
@@ -8384,11 +7564,10 @@ find the area of a pasture without ever stumbling? Join us in
 #quote_box[
 #emph[“Nothing greater or more sublime has ever come from the hands of
 human beings than this metric system, which gives one and the same
-standard to all nations and for all time.”
-]
- --- Decree of the National
+standard to all nations and for all time.”] --- Decree of the National
 Convention (1795).
 ]
+
 
 #divider()
 
@@ -8430,24 +7609,14 @@ Historians estimate that France possessed over #strong[800 different
 names for measures] and nearly #strong[250,000 different ways of
 calculating them]!
 
-#align(center)[
-  #block(
-    fill: rgb("#f8fafc"),
-    stroke: 1pt + rgb("#cbd5e1"),
-    inset: (x: 16pt, y: 10pt),
-    radius: 6pt,
-    breakable: false,
-  )[
-    #set text(font: "Liberation Mono", size: 9.5pt, fill: rgb("#0f172a"))
-    ```text
-Before 1789:
-In Paris: 1 foot = 32.5 cm
-In Bordeaux: 1 foot = 35.7 cm
-In Strasbourg: 1 foot = 28.9 cm
-Honest trade between cities was practically impossible!
-    ```
-  ]
+#decouvre(title: [Discovery & History — The Chaos of Weights and Measures
+under the Ancien Régime])[- Before 1789:
+- In Paris: 1 foot = 32.5 cm
+- In Bordeaux: 1 foot = 35.7 cm
+- In Strasbourg: 1 foot = 28.9 cm
+- Honest trade between cities was practically impossible!
 ]
+
 
 Dishonest merchants took advantage of this confusion to cheat customers;
 peasants were ruined by feudal lords who secretly enlarged grain bushels
@@ -8467,11 +7636,8 @@ king's foot or an emperor's arm: kings die, and human limbs vary from
 person to person. They sought a standard belonging to all humankind,
 drawn from nature itself: #strong[planet Earth]!
 
-#quote_box[
-#strong[🔍 True History --- The Epic Journey of Delambre and Méchain
-(1792--1798)
-]
- In 1792, in the midst of revolutionary turmoil and the
+#decouvre(title: [True History — The Epic Journey of Delambre and Méchain
+(1792—1798)])[In 1792, in the midst of revolutionary turmoil and the
 threat of war, two French astronomers set out to measure the Earth:
 
 - #strong[Jean-Baptiste Delambre] traveled south from Dunkirk.
@@ -8489,24 +7655,12 @@ standard of length for humanity: #strong[the Meter] (from the Greek
 #emph[metron], meaning “measure”).
 ]
 
-#align(center)[
-  #block(
-    fill: rgb("#f8fafc"),
-    stroke: 1pt + rgb("#cbd5e1"),
-    inset: (x: 16pt, y: 10pt),
-    radius: 6pt,
-    breakable: false,
-  )[
-    #set text(font: "Liberation Mono", size: 9.5pt, fill: rgb("#0f172a"))
-    ```text
-NORTH POLE
-D  |  <-- Dunkirk
-B  |  <-- Barcelona
-EQUATOR
-Distance North Pole to Equator divided by 10,000,000 = EXACTLY 1 METER!
-    ```
+
+#figure(image("figures_en/vol_2/fig_12_meridien_metre.svg", alt: "Measurement of Earth’s meridian and the universal meter standard"),
+  caption: [
+    Measurement of Earth's meridian and the universal meter standard
   ]
-]
+)
 
 The motto of this new universal standard was engraved upon the first
 official commemorative medals: #strong[“For all times, for all
@@ -8540,24 +7694,11 @@ To name the units, they devised a brilliant linguistic convention:
   - #strong[Milli-] (from Latin #emph[millesimus]) = $div 1 thin 000$
     ($frac(1, 1 thin 000)$)
 
-#align(center)[
-  #block(
-    fill: rgb("#f8fafc"),
-    stroke: 1pt + rgb("#cbd5e1"),
-    inset: (x: 16pt, y: 10pt),
-    radius: 6pt,
-    breakable: false,
-  )[
-    #set text(font: "Liberation Mono", size: 9.5pt, fill: rgb("#0f172a"))
-    ```text
-GREEK PREFIXES (× 10, × 100, × 1 000)
-kilo-    hecto-    deca-
-BASE UNIT (m, g, L)
-LATIN PREFIXES (÷ 10, ÷ 100, ÷ 1 000)
-deci-    centi-    milli-
-    ```
+#figure(image("figures_en/vol_2/fig_12_prefixes_metriques.svg", alt: "The universal metric system: multiple and submultiple prefixes"),
+  caption: [
+    The universal metric system: multiple and submultiple prefixes
   ]
-]
+)
 
 This exact same chart structure works #strong[identically] for lengths,
 masses, and capacities!
@@ -8611,10 +7752,7 @@ usually refer to cubic meters).]
   , kind: table
   )
 
-#quote_box[
-#strong[⚠️ Pitfall Warning --- The Conversion Table Rules
-]
- 1. Place only
+#alerte(title: [Pitfall Warning — The Conversion Table Rules])[1. Place only
 #strong[one digit per column] in the conversion chart. 2. The
 #strong[units digit] of the starting number must always sit in the
 column of the given unit! 3. #emph[Example:] To enter
@@ -8623,12 +7761,8 @@ in $d a m$, and 8 in $d m$. To read this in centimeters: append zeros
 out to the $c m$ column $arrow.r 3 thin 480 upright(" cm")$.
 ]
 
-#exemple_resolu(title: [Exemple Résolu Pas à Pas])[
-#strong[Worked Example 1 --- Direct Conversions
-]
 
-
-- Convert $2.5 upright(" km")$ to meters:
+#exemple_resolu(title: [Worked Example 1 — Direct Conversions])[- Convert $2.5 upright(" km")$ to meters:
   $2.5 upright(" km") = 2 thin 500 upright(" m")$.
 
 - Convert $750 upright(" mL")$ to liters:
@@ -8638,6 +7772,7 @@ out to the $c m$ column $arrow.r 3 thin 480 upright(" cm")$.
   $1 upright(" t") = 1 thin 000 upright(" kg") arrow.r.double.long 3.4 upright(" t") = 3 thin 400 upright(" kg")$.
 ]
 
+
 #divider()
 
 === 4. Length vs.~Area: The String and the Tile (1D vs.~2D)
@@ -8645,27 +7780,11 @@ out to the $c m$ column $arrow.r 3 thin 480 upright(" cm")$.
 Here is one of the most common confusions in all of geometry: the
 difference between #strong[perimeter] and #strong[area].
 
-#align(center)[
-  #block(
-    fill: rgb("#f8fafc"),
-    stroke: 1pt + rgb("#cbd5e1"),
-    inset: (x: 16pt, y: 10pt),
-    radius: 6pt,
-    breakable: false,
-  )[
-    #set text(font: "Liberation Mono", size: 9.5pt, fill: rgb("#0f172a"))
-    ```text
-PERIMETER = 1 DIMENSION (1D)           AREA = 2 DIMENSIONS (2D)
-The fence running around the edge.     The grass covering the pasture.
-Measured in meters (m) or cm.          Measured in square meters (m²) or cm².
-██████████████████████
-██████████████████████
-The boundary                         The covered
-interior
-██████████████████████
-    ```
+#figure(image("figures_en/vol_2/fig_12_perimetre_vs_aire.svg", alt: "1D Linear perimeter vs 2D surface area"),
+  caption: [
+    1D Linear perimeter vs 2D surface area
   ]
-]
+)
 
 - #strong[Perimeter:] the total distance around the outside edge of a
   shape. Imagine an ant walking all the way around a field, or unrolling
@@ -8684,9 +7803,7 @@ To find the perimeter of any polygon, simply #strong[add together the
 lengths of all its sides].
 
 #quote_box[
-#strong[📐 Common Perimeter Formulas
-]
-
+#strong[📐 Common Perimeter Formulas]
 
 - #strong[Any polygon:] $cal(P) = upright("sum of all outer sides")$.
 
@@ -8696,17 +7813,14 @@ lengths of all its sides].
 - #strong[Square with side length $s$:] $ cal(P) = 4 times s $
 ]
 
-#exemple_resolu(title: [Exemple Résolu Pas à Pas])[
-#strong[Worked Example 2 --- Perimeter Calculations
-]
 
-
-- A rectangle measures $8 upright(" cm")$ long and $5 upright(" cm")$
+#exemple_resolu(title: [Worked Example 2 — Perimeter Calculations])[- A rectangle measures $8 upright(" cm")$ long and $5 upright(" cm")$
   wide. $cal(P) = 2 times\(8 + 5\)= 2 times 13 = 26 upright(" cm")$.
 
 - A square has side length $6 upright(" m")$.
   $cal(P) = 4 times 6 = 24 upright(" m")$.
 ]
+
 
 #divider()
 
@@ -8714,53 +7828,15 @@ lengths of all its sides].
 <measuring-area-from-grids-to-square-centimeters-textcm2>
 To measure surface area, we pave the surface with standard square tiles.
 
-#align(center)[
-  #block(
-    fill: rgb("#f8fafc"),
-    stroke: 1pt + rgb("#cbd5e1"),
-    inset: (x: 16pt, y: 10pt),
-    radius: 6pt,
-    breakable: false,
-  )[
-    #set text(font: "Liberation Mono", size: 9.5pt, fill: rgb("#0f172a"))
-    ```text
-1 unit tile = 1 cm on each side
-Its area is exactly 1 square centimeter, written 1 cm².
-1 cm
-1  1 cm      Area = 1 cm²
-    ```
-  ]
-]
-
 Consider a rectangle $5 upright(" cm")$ long and $3 upright(" cm")$
 wide. Cover it completely with $1 upright(" cm")^2$ tiles:
-
-#align(center)[
-  #block(
-    fill: rgb("#f8fafc"),
-    stroke: 1pt + rgb("#cbd5e1"),
-    inset: (x: 16pt, y: 10pt),
-    radius: 6pt,
-    breakable: false,
-  )[
-    #set text(font: "Liberation Mono", size: 9.5pt, fill: rgb("#0f172a"))
-    ```text
-1 cm  2 cm  3 cm  4 cm  5 cm
-1    2    3    4    5    1st row of 5 tiles
-6    7    8    9   10    2nd row of 5 tiles
-11   12   13   14   15    3rd row of 5 tiles
-    ```
-  ]
-]
 
 To count the total number of square tiles, there is no need to count
 them one by one: We have #strong[3 rows of 5 tiles each]!
 $ upright("Area") = 5 times 3 = 15 upright(" tiles of ") 1 upright(" cm")^2 = 15 upright(" cm")^2 $
 
 #quote_box[
-#strong[📐 Common Area Formulas
-]
-
+#strong[📐 Common Area Formulas]
 
 - #strong[Area of a rectangle:]
   $ cal(A) = upright("Length") times upright("Width") = L times w $
@@ -8769,10 +7845,8 @@ $ upright("Area") = 5 times 3 = 15 upright(" tiles of ") 1 upright(" cm")^2 = 15
   $ cal(A) = upright("side") times upright("side") = s times s $
 ]
 
-#exemple_resolu(title: [Exemple Résolu Pas à Pas])[
-#strong[Worked Example 3 --- Never Confuse Perimeter and Area!
-]
- Consider
+
+#exemple_resolu(title: [Worked Example 3 — Never Confuse Perimeter and Area!])[Consider
 a square with side length $s = 4 upright(" cm")$.
 
 - Its perimeter: $cal(P) = 4 times 4 = 16 upright(" cm")$. (Length of
@@ -8789,6 +7863,7 @@ a square with side length $s = 4 upright(" cm")$.
 - $cal(A) = 5 times 5 = 25 upright(" cm")^2$. Here, $25 eq.not 20$!
 ]
 
+
 #divider()
 
 === 7. Angles: Acute, Right, or Obtuse with a Set Square
@@ -8798,21 +7873,19 @@ opening called an #strong[angle]. To inspect this opening, the
 fundamental reference tool of students and carpenters is the #strong[set
 square] (or drafting triangle).
 
+
 #align(center)[
-  #block(
-    fill: rgb("#f8fafc"),
-    stroke: 1pt + rgb("#cbd5e1"),
-    inset: (x: 16pt, y: 10pt),
-    radius: 6pt,
-    breakable: false,
-  )[
-    #set text(font: "Liberation Mono", size: 9.5pt, fill: rgb("#0f172a"))
-    ```text
-ACUTE ANGLE                RIGHT ANGLE                 OBTUSE ANGLE
-Sharper than set square)  (Matches set square: 90°)   (Wider than set square)
-    ```
-  ]
+  #table(
+    columns: (1fr, 1fr, 1fr),
+    align: center + horizon,
+    stroke: 0.5pt + rgb("#cbd5e1"),
+    fill: (x, y) => if y == 0 { rgb("#eff6ff") } else { rgb("#ffffff") },
+    [*Acute Angle*], [*Right Angle*], [*Obtuse Angle*],
+    [More closed than square], [Fits square exactly], [More open than square],
+    [Aperture $< 90 degree$], [Aperture $= 90 degree$], [Aperture $> 90 degree$]
+  )
 ]
+
 
 + #strong[Right angle ($90^compose$):] the angle of a perfect sheet of
   paper, the corner of a square room, or the corner of a set square. Its
@@ -8822,10 +7895,7 @@ Sharper than set square)  (Matches set square: 90°)   (Wider than set square)
 + #strong[Obtuse angle:] an open, wide angle broader than a right angle
   (opening strictly between $90^compose$ and $180^compose$).
 
-#methode(title: [Méthode Pas à Pas])[
-#strong[🧭 Method --- Checking Angles with a Set Square
-]
- 1. Place the
+#methode(title: [Method — Checking Angles with a Set Square])[1. Place the
 vertex of the set square's right angle directly onto the angle's vertex.
 \2. Align one straight edge of the set square along one arm of the
 angle. 3. Observe the other arm:
@@ -8839,6 +7909,7 @@ angle. 3. Observe the other arm:
 - If it spreads outward beyond the set square: the angle is
   #strong[obtuse] (greater than $90^compose$).
 ]
+
 
 #divider()
 
@@ -9101,10 +8172,9 @@ the Rule of Three]!
 #emph[“If two loaves of bread cost six coins, how much will five loaves
 cost? As soon as the world advances at a steady, rhythmic pace, a single
 measurement is enough to unveil all the others. That is the secret art
-of proportionality.”
+of proportionality.”]
 ]
 
-]
 
 #divider()
 
@@ -9136,9 +8206,9 @@ grandmother pulls out her treasured recipe notebook, stained with cocoa
 and dog-eared from years of love. She turns to her legendary pear
 chocolate fudge cake:
 
-#figure(image("figures/vol_2/fig_13_regle_trois.svg", alt: "Le tableau de proportionnalité et la règle de trois"),
+#figure(image("figures_en/vol_2/fig_13_regle_trois.svg", alt: "The proportionality table and the rule of three"),
   caption: [
-    Le tableau de proportionnalité et la règle de trois
+    The proportionality table and the rule of three
   ]
 )
 
@@ -9174,10 +8244,7 @@ tools in everyday mathematics: #strong[proportionality].
 In nature and daily life, many quantities are linked together. But they
 are not all linked in the same way!
 
-#principe(title: [Définition Fondamentale])[
-#strong[📐 Definition --- Two Proportional Quantities
-]
- Two quantities
+#principe(title: [Definition — Two Proportional Quantities])[Two quantities
 are #strong[proportional] when the values of one are obtained by
 #strong[always multiplying the values of the other by the exact same
 constant number]. This implies that:
@@ -9191,6 +8258,7 @@ constant number]. This implies that:
 - If one quantity becomes #strong[2 times smaller] (halved), the other
   becomes #strong[2 times smaller].
 ]
+
 
 ==== The Pitfall: Not Everything in Life Is Proportional!
 <the-pitfall-not-everything-in-life-is-proportional>
@@ -9226,21 +8294,18 @@ Let us put three everyday situations to the #strong[“doubling test”]:
 To solve problems cleanly without getting tangled up, we arrange our
 numbers into a two-row table:
 
+
 #align(center)[
-  #block(
-    fill: rgb("#f8fafc"),
-    stroke: 1pt + rgb("#cbd5e1"),
-    inset: (x: 16pt, y: 10pt),
-    radius: 6pt,
-    breakable: false,
-  )[
-    #set text(font: "Liberation Mono", size: 9.5pt, fill: rgb("#0f172a"))
-    ```text
-Quantity 1 (e.g., number of notebooks)    2    4    6   10
-Quantity 2 (e.g., cost in dollars)        5   10   15   25
-    ```
-  ]
+  #table(
+    columns: (2.5fr, 1fr, 1fr, 1fr, 1fr),
+    align: (left, center, center, center, center),
+    stroke: 0.5pt + rgb("#cbd5e1"),
+    fill: (x, y) => if y == 0 { rgb("#f1f5f9") } else { rgb("#ffffff") },
+    [Grandeur 1 (nombre de cahiers)], [2], [4], [6], [10],
+    [Grandeur 2 (prix en euros)], [5 €], [10 €], [15 €], [25 €]
+  )
 ]
+
 
 There are #strong[three reliable methods] for filling in missing entries
 in this table. Always pick the one that makes the numbers simplest to
@@ -9253,23 +8318,18 @@ In a proportionality table, you are allowed to:
 - Multiply or divide an entire column by any number.
 - Add (or subtract) two columns together!
 
+
 #align(center)[
-  #block(
-    fill: rgb("#f8fafc"),
-    stroke: 1pt + rgb("#cbd5e1"),
-    inset: (x: 16pt, y: 10pt),
-    radius: 6pt,
-    breakable: false,
-  )[
-    #set text(font: "Liberation Mono", size: 9.5pt, fill: rgb("#0f172a"))
-    ```text
-× 2                  +
-Notebooks    2      4     6     10  (4 + 6 = 10)
-Cost ($)     5     10    15     25  (10 + 15 = 25)
-× 2                  +
-    ```
-  ]
+  #table(
+    columns: (2.5fr, 1fr, 1fr, 1fr, 1fr),
+    align: (left, center, center, center, center),
+    stroke: 0.5pt + rgb("#cbd5e1"),
+    fill: (x, y) => if y == 0 { rgb("#f1f5f9") } else { rgb("#ffffff") },
+    [Grandeur 1 (nombre de cahiers)], [2], [4], [6], [10],
+    [Grandeur 2 (prix en euros)], [5 €], [10 €], [15 €], [25 €]
+  )
 ]
+
 
 ==== Method 2: Finding the Unit Rate (How Much for 1?)
 <method-2-finding-the-unit-rate-how-much-for-1>
@@ -9277,10 +8337,7 @@ This is the common-sense method favored by generations of shoppers:
 #emph[“First find the value for #strong[1 single item], then multiply by
 the desired number of items!”]
 
-#exemple_resolu(title: [Exemple Résolu Pas à Pas])[
-#strong[Worked Example 1 --- The Unit Rate Method
-]
- #emph[Problem:] 3
+#methode(title: [Worked Example 1 — The Unit Rate Method])[#emph[Problem:] 3
 identical pens cost $\$4.50$. How much do 7 of these pens cost?
 
 - #strong[Step 1: Find the price of 1 pen.] $\$4.50 div 3 =\$1.50$. (One
@@ -9290,27 +8347,24 @@ identical pens cost $\$4.50$. How much do 7 of these pens cost?
   $7 times\$1.50 =\$10.50$. 7 pens cost #strong[$\$10.50$].
 ]
 
+
 ==== Method 3: The Constant of Proportionality (The Vertical Bridge)
 <method-3-the-constant-of-proportionality-the-vertical-bridge>
 This is the multiplier that takes you directly from the top row to the
 bottom row in one step.
 
+
 #align(center)[
-  #block(
-    fill: rgb("#f8fafc"),
-    stroke: 1pt + rgb("#cbd5e1"),
-    inset: (x: 16pt, y: 10pt),
-    radius: 6pt,
-    breakable: false,
-  )[
-    #set text(font: "Liberation Mono", size: 9.5pt, fill: rgb("#0f172a"))
-    ```text
-Number of cakes          3      5      8
-× 4  (Constant)
-Number of strawberries  12     20     32
-    ```
-  ]
+  #table(
+    columns: (2.5fr, 1fr, 1fr, 1fr, 1.2fr),
+    align: (left, center, center, center, center),
+    stroke: 0.5pt + rgb("#cbd5e1"),
+    fill: (x, y) => if y == 0 { rgb("#f1f5f9") } else { rgb("#ffffff") },
+    [Nombre de gâteaux], [3], [5], [8], [× 4],
+    [Nombre de fraises], [12], [20], [32], [(Coefficient)]
+  )
 ]
+
 
 To find this multiplier, divide any number in the second row by its
 corresponding partner in the first row:
@@ -9378,10 +8432,7 @@ Let us build the table:
 - In $15 upright(" min")$ (a quarter of an hour):
   $80 div 4 = 20 upright(" km")$.
 
-#exemple_resolu(title: [Exemple Résolu Pas à Pas])[
-#strong[Worked Example 2 --- Road Trip
-]
- A car drives at an average speed
+#exemple_resolu(title: [Worked Example 2 — Road Trip])[A car drives at an average speed
 of $90 upright(" km/h")$. What distance does it cover in
 $2 upright(" h ") 30 upright(" min")$?
 
@@ -9391,6 +8442,7 @@ $2 upright(" h ") 30 upright(" min")$?
 
 - Total distance: $180 + 45 = upright(bold(225 upright(" km")))$.
 ]
+
 
 ==== 2. Geographic Maps and Architectural Models: Scales
 <geographic-maps-and-architectural-models-scales>
@@ -9414,16 +8466,14 @@ $100 upright(" m") = 10 thin 000 upright(" cm")$).
   , kind: table
   )
 
-#exemple_resolu(title: [Exemple Résolu Pas à Pas])[
-#strong[Worked Example 3 --- Forest Hike
-]
- On a hiking trail map where
+#exemple_resolu(title: [Worked Example 3 — Forest Hike])[On a hiking trail map where
 $1 upright(" cm")$ represents $250 upright(" m")$, two mountain villages
 are linked by a trail measuring $8 upright(" cm")$ on the map. What is
 the actual distance between the two villages?
 
 - $8 times 250 upright(" m") = 2 thin 000 upright(" m") = upright(bold(2 upright(" km")))$.
 ]
+
 
 #divider()
 
@@ -9739,10 +8789,9 @@ deeper than nothingness? Step through the looking-glass into
 holds nothing, and counting halts there. But to the merchant balancing
 ledger books, to the mason digging deep foundations, or to the traveler
 caught in a winter blizzard, zero is merely a threshold. Beneath the
-surface begins the mirror-world of debts and depths.”
+surface begins the mirror-world of debts and depths.”]
 ]
 
-]
 
 #divider()
 
@@ -9783,22 +8832,11 @@ silver coins] in his pouch. He is short by 3 coins. With downcast eyes,
 he packs away his two coins and prepares to head back out into the
 freezing wind.
 
-#align(center)[
-  #block(
-    fill: rgb("#f8fafc"),
-    stroke: 1pt + rgb("#cbd5e1"),
-    inset: (x: 16pt, y: 10pt),
-    radius: 6pt,
-    breakable: false,
-  )[
-    #set text(font: "Liberation Mono", size: 9.5pt, fill: rgb("#0f172a"))
-    ```text
-Price of the blanket:        5 silver coins
-Fisherman's pouch:           2 silver coins
-What is missing:             3 silver coins!
-    ```
+#figure(image("figures_en/vol_2/fig_14_axe_relatifs.svg", alt: "The signed number line of positive and negative integers"),
+  caption: [
+    The signed number line of positive and negative integers
   ]
-]
+)
 
 Seeing the fisherman's honest character, the merchant places a
 comforting hand on his shoulder: #emph[“Take the blanket today so you do
@@ -9838,21 +8876,6 @@ Look at the beach: the wind has smoothed the sand. The ground is level
 and flat. This is our starting baseline, our reference level:
 #strong[Level Zero ($0$)].
 
-#align(center)[
-  #block(
-    fill: rgb("#f8fafc"),
-    stroke: 1pt + rgb("#cbd5e1"),
-    inset: (x: 16pt, y: 10pt),
-    radius: 6pt,
-    breakable: false,
-  )[
-    #set text(font: "Liberation Mono", size: 9.5pt, fill: rgb("#0f172a"))
-    ```text
-Level 0 (Flat Ground)
-    ```
-  ]
-]
-
 Take a small shovel: 1. Plunge the blade into the sand and lift out one
 shovelful. 2. Deposit this shovelful right next to the hole.
 
@@ -9864,23 +8887,6 @@ Look closely at what your single action created in the landscape:
   #strong[Pit] sinking below the surface: an absence of sand, a debt of
   matter, written #strong[$- 1$].
 
-#align(center)[
-  #block(
-    fill: rgb("#f8fafc"),
-    stroke: 1pt + rgb("#cbd5e1"),
-    inset: (x: 16pt, y: 10pt),
-    radius: 6pt,
-    breakable: false,
-  )[
-    #set text(font: "Liberation Mono", size: 9.5pt, fill: rgb("#0f172a"))
-    ```text
-1: The Heap above ground)
-Level 0 (Flat Ground)
-1: The Pit below ground)
-    ```
-  ]
-]
-
 Now, what happens if you kick the heap $+ 1$ back into the pit $- 1$?
 The sand falls back into the cavity. The pit is filled completely. The
 beach becomes perfectly flat once more! The heap has vanished, the pit
@@ -9889,14 +8895,13 @@ has vanished: only the zero level of the ground remains.
 $ \(+ 1\)+\(- 1\)= 0 $
 
 #quote_box[
-#strong[💡 An Illuminating Truth --- The Meaning of Zero
-]
- Zero is not an
+#strong[💡 An Illuminating Truth --- The Meaning of Zero] Zero is not an
 absolute void. It is #strong[the mutual cancellation of two equal and
 opposite forces]: A positive quantity ($+ 1$) and a negative quantity
 ($- 1$) possess the exact same magnitude. When they meet, they balance
 out and yield zero.
 ]
+
 
 #divider()
 
@@ -9914,12 +8919,6 @@ temperature at which liquid water turns to solid ice.
   ($+ 5^compose upright("C")\,+ 20^compose upright("C")$).
 - Below zero: water freezes, frost forms, snow falls
   ($- 2^compose upright("C")\,- 10^compose upright("C")$).
-
-#figure(image("figures/vol_2/fig_14_axe_relatifs.svg", alt: "L’axe gradué des entiers relatifs positifs et négatifs"),
-  caption: [
-    L'axe gradué des entiers relatifs positifs et négatifs
-  ]
-)
 
 ==== 2. Elevators and Underground Parking
 <elevators-and-underground-parking>
@@ -9946,27 +8945,7 @@ Until now, your number line began at zero and stretched exclusively to
 the right, like a beam of sunlight. Now, the line extends
 #strong[infinitely in both directions], like an endless two-way highway!
 
-#align(center)[
-  #block(
-    fill: rgb("#f8fafc"),
-    stroke: 1pt + rgb("#cbd5e1"),
-    inset: (x: 16pt, y: 10pt),
-    radius: 6pt,
-    breakable: false,
-  )[
-    #set text(font: "Liberation Mono", size: 9.5pt, fill: rgb("#0f172a"))
-    ```text
-NEGATIVES (to the left)            ORIGIN          POSITIVES (to the right) ===>
-0 ]
-5      -4      -3      -2      -1       0        +1      +2      +3      +4      +5
-    ```
-  ]
-]
-
-#principe(title: [Définition Fondamentale])[
-#strong[📐 Definition --- Directed (Signed) Numbers / Integers
-]
- The
+#principe(title: [Definition — Directed (Signed) Numbers / Integers])[The
 complete collection formed by positive numbers, zero, and negative
 numbers is known as the set of #strong[signed numbers] (or directed
 numbers; for whole values, #strong[integers]).
@@ -9979,6 +8958,7 @@ numbers; for whole values, #strong[integers]).
 - The number #strong[0] is the unique number that is simultaneously
   positive and negative: it is the origin and center of symmetry.
 ]
+
 
 Two numbers located at the exact same distance from zero on opposite
 sides are called #strong[opposite numbers]:
@@ -10012,46 +8992,23 @@ Think of the debt ledger:
 On the number line, the rule is universal and never changes: #strong[The
 smaller number is always the one positioned further to the left!]
 
-#align(center)[
-  #block(
-    fill: rgb("#f8fafc"),
-    stroke: 1pt + rgb("#cbd5e1"),
-    inset: (x: 16pt, y: 10pt),
-    radius: 6pt,
-    breakable: false,
-  )[
-    #set text(font: "Liberation Mono", size: 9.5pt, fill: rgb("#0f172a"))
-    ```text
-5 is further to the left than -2
-0 ]
-5      -4      -3      -2      -1       0
-Smaller                 Larger
-colder)                (milder)
-    ```
-  ]
-]
-
 $ upright(bold(- 5 < - 2)) $
 
-#quote_box[
-#strong[⚠️ Pitfall Warning --- Rule for Comparing Negative Numbers
-]
- For
+#alerte(title: [Pitfall Warning — Rule for Comparing Negative Numbers])[For
 any two negative numbers: #strong[The larger number is the one closest
 to zero!] $ - 1 > - 10 #h(2em) - 3 > - 8 #h(2em) - 0.5 > - 2 $ Every
 negative number is strictly less than 0 and less than every positive
 number: $ - 100 < + 1 $
 ]
 
-#exemple_resolu(title: [Exemple Résolu Pas à Pas])[
-#strong[Worked Example 1 --- Ordering Temperatures
-]
- Here are the morning
+
+#exemple_resolu(title: [Worked Example 1 — Ordering Temperatures])[Here are the morning
 temperatures recorded in five mountain villages:
 $+ 2^compose upright("C") quad\;quad - 4^compose upright("C") quad\;quad 0^compose upright("C") quad\;quad - 8^compose upright("C") quad\;quad - 1^compose upright("C")$
 Let us arrange them from coldest to mildest (ascending order):
 $ - 8^compose upright("C") < - 4^compose upright("C") < - 1^compose upright("C") < 0^compose upright("C") < + 2^compose upright("C") $
 ]
+
 
 #divider()
 
@@ -10081,15 +9038,13 @@ What if you have a hole 6 scoops deep ($- 6$) and only 2 scoops of sand
 ($+ 2$)? You pour in your 2 scoops: the hole is partly filled, but 4
 scoops are still missing! $ \(- 6\)+\(+ 2\)= - 4 $
 
-#exemple_resolu(title: [Exemple Résolu Pas à Pas])[
-#strong[Worked Example 2 --- Elevator Movements
-]
- An elevator is on the
+#exemple_resolu(title: [Worked Example 2 — Elevator Movements])[An elevator is on the
 2nd basement level ($- 2$). 1. It rides up 4 floors:
 $\(- 2\)+ 4 = upright(bold(+ 2))$ (it arrives on the 2nd floor). 2. From
 the 2nd floor ($+ 2$), it travels down 5 floors:
 $2 - 5 = upright(bold(- 3))$ (it arrives on the 3rd basement level).
 ]
+
 
 #divider()
 
@@ -10108,15 +9063,13 @@ To find the gap, count the intervals on the thermometer:
 - Total temperature difference:
   $3 + 5 = upright(bold(8^compose upright("C")))$!
 
-#exemple_resolu(title: [Exemple Résolu Pas à Pas])[
-#strong[Worked Example 3 --- Elevation Difference
-]
- A seaside harbor sits
+#exemple_resolu(title: [Worked Example 3 — Elevation Difference])[A seaside harbor sits
 at $+ 10 upright(" m")$ elevation, and an underwater sea cave sits at
 $- 45 upright(" m")$. What is the vertical distance between the harbor
 pier and the cave floor? Distance =
 $10 upright(" m (above water)") + 45 upright(" m (underwater)") = upright(bold(55 upright(" meters")))$.
 ]
+
 
 #divider()
 
@@ -10425,7 +9378,7 @@ III: The Age of Surveyors and Master Builders (Ages 10--13 / Grades
 
 #divider()
 
-#frontispice-volume("figures/nature/vol_3_tournesol_fibonacci.jpg")
+#frontispice-volume("figures_en/nature/vol_3_tournesol_fibonacci.jpg")
 
 #ouverture-volume(
   "III",
@@ -10448,10 +9401,9 @@ III: The Age of Surveyors and Master Builders (Ages 10--13 / Grades
 #emph[“When the floodwaters have washed everything away and mud covers
 the earth, man can no longer trust his eyes. He needs a taut cord
 between his fingers, and the geometry of the rope to make the right
-angle rise again.”
+angle rise again.”]
 ]
 
-]
 
 #divider()
 
@@ -10520,16 +9472,14 @@ ground, without a metal drafting square, without a telescope, and
 without a protractor? Before answering this question, we must understand
 what an angle truly is.
 
-#decouvre(title: [Découverte & Histoire])[
-#strong[💡 Did You Know?
-]
- The word #strong[geometry] originates from the
+#decouvre(title: [Did You Know?])[The word #strong[geometry] originates from the
 ancient Greek #emph[gê] (“the earth”) and #emph[metron] (“measure”).
 Geometry was born, quite literally, as “the measurement of the earth.”
 The Greek historian Herodotus recorded that geometry was invented in
 Egypt out of the urgent practical necessity of re-measuring agricultural
 parcels after each Nile inundation.
 ]
+
 
 #divider()
 
@@ -10579,32 +9529,19 @@ geometry:
   , kind: table
   )
 
-#principe(title: [Définition Fondamentale])[
-#strong[📐 Definition --- Angle
-]
- An #strong[angle] is the geometric
+#principe(title: [Definition — Angle])[An #strong[angle] is the geometric
 figure formed by two rays sharing the same starting point. This shared
 starting point is the #strong[vertex] of the angle; the two rays are its
 #strong[sides].
 ]
 
-#align(center)[
-  #block(
-    fill: rgb("#f8fafc"),
-    stroke: 1pt + rgb("#cbd5e1"),
-    inset: (x: 16pt, y: 10pt),
-    radius: 6pt,
-    breakable: false,
-  )[
-    #set text(font: "Liberation Mono", size: 9.5pt, fill: rgb("#0f172a"))
-    ```text
-Side [BC)
-← The opening: this rotation is the angle
-B  A
-Vertex       Side [BA)
-    ```
-  ]
+
+#principe(title: [Fundamental Definition — The Geometric Anatomy of an Angle])[- Side \[BC)
+- ← The opening: this rotation is the angle
+- B A
+- Vertex Side \[BA)
 ]
+
 
 To denote this angle symbolically, we write:
 
@@ -10615,10 +9552,7 @@ the $angle$ sign) placed above the letters serves as a clear warning:
 #emph[“I am not speaking of individual points, but of the rotational
 opening between these two rays.”]
 
-#alerte(title: [Attention au Piège !])[
-#strong[⚠️ Warning: Common Pitfall!
-]
- In the notation $accent(A B C, ̂)$,
+#alerte(title: [Warning: Common Pitfall!])[In the notation $accent(A B C, ̂)$,
 #strong[the middle letter must always designate the vertex].
 $accent(A B C, ̂)$ and $accent(C B A, ̂)$ describe the exact same angle
 (vertex $B$), but $accent(B A C, ̂)$ is an entirely different angle whose
@@ -10626,25 +9560,15 @@ vertex is $A$! When there is no risk of confusion, mathematicians often
 write simply $hat(B)$ (“angle $B$”).
 ]
 
+
 ==== 2.3 An Angle Is NOT a Length
 <an-angle-is-not-a-length>
 Here lies the most widespread misunderstanding among apprentice
 mathematicians. Examine these two angles:
 
-#align(center)[
-  #block(
-    fill: rgb("#f8fafc"),
-    stroke: 1pt + rgb("#cbd5e1"),
-    inset: (x: 16pt, y: 10pt),
-    radius: 6pt,
-    breakable: false,
-  )[
-    #set text(font: "Liberation Mono", size: 9.5pt, fill: rgb("#0f172a"))
-    ```text
-Angle 1:                            Angle 2:
-    ```
-  ]
+#decouvre(title: [Observation — Comparing the Aperture of an Angle's Rays])[- Angle 1: Angle 2:
 ]
+
 
 Which of the two angles is larger? Many beginners reflexively answer
 “the second one,” simply because its printed rays are drawn much longer
@@ -10655,14 +9579,13 @@ opening], never the length of the pencil strokes. The two angles shown
 above possess the exact same angular opening.
 
 #quote_box[
-#strong[🖐️ Try It Yourself ---
-]
- Take two pencils and bind them firmly
+#strong[🖐️ Try It Yourself ---] Take two pencils and bind them firmly
 together at one end with a tight rubber band, like a pair of compasses.
 Open them slightly. Now replace them with two long meter sticks, keeping
 the exact same opening: the angle has not changed by a single hair, only
 the length of the arms has changed!
 ]
+
 
 #divider()
 
@@ -10711,10 +9634,7 @@ Why did the ancients choose 360 instead of a round decimal number like
 
 ==== 3.2 Families of Angles
 <families-of-angles>
-#principe(title: [Définition Fondamentale])[
-#strong[📐 Definition --- Angle Classification
-]
- According to its measure
+#principe(title: [Definition — Angle Classification])[According to its measure
 $theta$, an angle is classified as:
 
 - #strong[Zero angle:] $theta = 0^compose$ (the two rays completely
@@ -10738,21 +9658,12 @@ $theta$, an angle is classified as:
   rotation).
 ]
 
-#align(center)[
-  #block(
-    fill: rgb("#f8fafc"),
-    stroke: 1pt + rgb("#cbd5e1"),
-    inset: (x: 16pt, y: 10pt),
-    radius: 6pt,
-    breakable: false,
-  )[
-    #set text(font: "Liberation Mono", size: 9.5pt, fill: rgb("#0f172a"))
-    ```text
-Acute            Right             Obtuse               Straight
-□)         ___\_____       _____________._____________
-    ```
+
+#figure(image("figures_en/vol_3/fig_15_quatre_types_angles.svg", alt: "Classification of the four angle types"),
+  caption: [
+    Classification of the four angle types
   ]
-]
+)
 
 In geometric drawings, a right angle is always highlighted by a
 #strong[small square] nestled in the corner: $corner.l.b$.
@@ -10769,11 +9680,8 @@ scales]: one reads from left to right, and the other reads from right to
 left. This dual scale is the source of nearly all beginner measurement
 blunders!
 
-#methode(title: [Méthode Pas à Pas])[
-#strong[🧭 Method --- Measuring an Angle $accent(A B C, ̂)$ with a
-Protractor
-]
- 1. Place the #strong[center point] of the protractor (the
+#methode(title: [Method — Measuring an Angle $accent(A B C, ̂)$ with a
+Protractor])[1. Place the #strong[center point] of the protractor (the
 crosshair or small hole) directly over the #strong[vertex] $B$. 2. Align
 the #strong[baseline zero-mark] of the protractor perfectly along one of
 the rays, say $\[B A\)$. 3. Locate the scale #strong[that starts at
@@ -10784,21 +9692,17 @@ naked eye! Is it acute or obtuse? Your numerical reading must agree with
 physical reality.
 ]
 
-#alerte(title: [Attention au Piège !])[
-#strong[⚠️ Warning: Double Scale Trap!
-]
- If an angle is visibly acute but
+
+#alerte(title: [Warning: Double Scale Trap!])[If an angle is visibly acute but
 your reading says “$130^compose$”, you have read from the wrong
 concentric ring! The correct reading is
 $180^compose - 130^compose = 50^compose$. Asking yourself #emph[“Is it
 sharp or blunt?”] prevents 99% of mistakes.
 ]
 
-#methode(title: [Méthode Pas à Pas])[
-#strong[🧭 Method --- Constructing an Angle of Given Measure (e.g.,
-$accent(x O y, ̂) = 65^compose$)
-]
- 1. Draw a straight ray $\[O x\)$ with a
+
+#methode(title: [Method — Constructing an Angle of Given Measure (e.g.,
+$accent(x O y, ̂) = 65^compose$)])[1. Draw a straight ray $\[O x\)$ with a
 ruler. 2. Place the protractor center on point $O$, aligning the
 zero-line with $\[O x\)$. 3. Starting from $0^compose$ along $\[O x\)$,
 count up to $65^compose$ and make a crisp pencil tick on the paper. 4.
@@ -10806,6 +9710,7 @@ Remove the protractor and use your ruler to draw ray $\[O y\)$ from
 vertex $O$ through your tick mark. 5. Mark the angle with a small arc
 and label it $65^compose$.
 ]
+
 
 ==== Solved Examples
 <solved-examples>
@@ -10854,9 +9759,9 @@ $accent(D E F, ̂) = 140^compose$.
 When two straight lines cross at a point, they form #strong[four
 angles]:
 
-#figure(image("figures/vol_3/fig_15_angles_opposes.svg", alt: "Angles opposés par le sommet et égalité géométrique"),
+#figure(image("figures_en/vol_3/fig_15_angles_opposes.svg", alt: "Vertically opposite angles and geometric equality"),
   caption: [
-    Angles opposés par le sommet et égalité géométrique
+    Vertically opposite angles and geometric equality
   ]
 )
 
@@ -10869,9 +9774,7 @@ angles]:
   angles].
 
 #quote_box[
-#strong[📐 Vocabulary --- Angle Pairs
-]
-
+#strong[📐 Vocabulary --- Angle Pairs]
 
 - Two angles are #strong[supplementary] if their sum equals
   $180^compose$.
@@ -10882,6 +9785,7 @@ angles]:
 - Two angles are #strong[adjacent] if they share the same vertex, have a
   common side, and lie on opposite sides of that common side.
 ]
+
 
 #strong[Why are vertically opposite angles strictly equal?] Because ① +
 ② $= 180^compose$ and ② + ③ $= 180^compose$. Both ① and ③ complete the
@@ -10896,22 +9800,17 @@ If just one of the four angles at an intersection is a right angle
 ($90^compose$), then all four angles are automatically right angles
 ($180^compose - 90^compose = 90^compose$).
 
-#principe(title: [Définition Fondamentale])[
-#strong[📐 Definition --- Perpendicular Lines
-]
- Two lines are
+#principe(title: [Definition — Perpendicular Lines])[Two lines are
 #strong[perpendicular] if they intersect at a right angle
 ($90^compose$). We write: $ \(d_1\)perp\(d_2\) $ and read “line $d_1$ is
 perpendicular to line $d_2$\.” The symbol $perp$ is itself a graphic
 depiction of two perpendicular lines!
 ]
 
+
 ==== 4.3 Parallel Lines
 <parallel-lines>
-#principe(title: [Définition Fondamentale])[
-#strong[📐 Definition --- Parallel Lines
-]
- Two lines lying in the same
+#principe(title: [Definition — Parallel Lines])[Two lines lying in the same
 plane are #strong[parallel] if they never intersect---no matter how far
 they are extended---or if they are identical (coincident). We write:
 $ \(d_1\)parallel\(d_2\)quad upright("or") quad\(d_1\)thin\/\/thin\(d_2\) $
@@ -10919,13 +9818,12 @@ and read “$d_1$ is parallel to $d_2$\.” The symbol depicts two
 side-by-side lines that never meet, like straight railway tracks.
 ]
 
+
 Three fundamental properties govern these relationships in a Euclidean
 plane:
 
 #quote_box[
-#strong[📐 Fundamental Euclidean Properties ---
-]
-
+#strong[📐 Fundamental Euclidean Properties ---]
 
 - #strong[P1.] If two lines are perpendicular to the same third line,
   then they are parallel to each other.
@@ -10937,9 +9835,10 @@ plane:
   are parallel to each other.
 ]
 
-#figure(image("figures/vol_3/fig_15_paralleles_perpendiculaires.svg", alt: "Droites parallèles et perpendiculaires fondamentales"),
+
+#figure(image("figures_en/vol_3/fig_15_paralleles_perpendiculaires.svg", alt: "Fundamental parallel and perpendicular lines"),
   caption: [
-    Droites parallèles et perpendiculaires fondamentales
+    Fundamental parallel and perpendicular lines
   ]
 )
 
@@ -10949,30 +9848,23 @@ on the right.
 
 ==== 4.4 Construction with Tools
 <construction-with-tools>
-#methode(title: [Méthode Pas à Pas])[
-#strong[🧭 Method --- Drawing the Perpendicular to $\(d\)$ Through Point
-$A$ (Set Square)
-]
- Place one side of the set square's right angle firmly
+#methode(title: [Method — Drawing the Perpendicular to $\(d\)$ Through Point
+$A$ (Set Square)])[Place one side of the set square's right angle firmly
 along line $\(d\)$. Slide the set square along $\(d\)$ until its other
 perpendicular side meets point $A$. Draw the line through $A$.
 ]
 
-#methode(title: [Méthode Pas à Pas])[
-#strong[🧭 Method --- Drawing the Parallel to $\(d\)$ Through Point $A$
-(Ruler + Set Square)
-]
- First, draw the line $\(p\)$ perpendicular to
+
+#principe(title: [Method — Drawing the Parallel to $\(d\)$ Through Point $A$
+(Ruler + Set Square)])[First, draw the line $\(p\)$ perpendicular to
 $\(d\)$ passing through $A$. Then construct the line perpendicular to
 $\(p\)$ passing through $A$. By property #strong[P1], this second line
 is strictly parallel to $\(d\)$.
 ]
 
-#methode(title: [Méthode Pas à Pas])[
-#strong[🧭 Method --- The Compass-Only Perpendicular (The Master
-Builder's Method)
-]
- 1. Place the compass point at $A$ and strike an arc
+
+#methode(title: [Method — The Compass-Only Perpendicular (The Master
+Builder's Method)])[1. Place the compass point at $A$ and strike an arc
 that cuts line $\(d\)$ at two points, $M$ and $N$. 2. With a wider
 opening, place the compass point at $M$, then at $N$, and strike two
 intersecting arcs at a point $P$ (on the other side of $\(d\)$). 3. Draw
@@ -10980,6 +9872,7 @@ line $\(A P\)$: it is guaranteed to be perpendicular to $\(d\)$.
 #emph[Why?] Both $A$ and $P$ are equidistant from $M$ and $N$, placing
 them on the #strong[perpendicular bisector] of segment $\[M N\]$.
 ]
+
 
 This compass method is precisely what Egyptian and medieval master
 builders performed on vast building sites using #strong[two pegs and a
@@ -10992,15 +9885,13 @@ to reach a straight paved road $\(d\)$ as quickly as possible.
 Instinctively, you walk straight towards the road at a
 #strong[perpendicular angle].
 
-#principe(title: [Définition Fondamentale])[
-#strong[📐 Definition --- Distance from a Point to a Line
-]
- The
+#principe(title: [Definition — Distance from a Point to a Line])[The
 #strong[distance from point $A$ to line $\(d\)$] is the length of
 segment $\[A H\]$, where $H$ is the foot of the perpendicular dropped
 from $A$ onto $\(d\)$. It represents the shortest possible path
 connecting $A$ to $\(d\)$.
 ]
+
 
 ==== Solved Example 4 --- Angles Around an Intersection
 <solved-example-4-angles-around-an-intersection>
@@ -11042,25 +9933,6 @@ truth.
   meet at a single common point, placing the colored edges snugly
   side-by-side:
 
-#align(center)[
-  #block(
-    fill: rgb("#f8fafc"),
-    stroke: 1pt + rgb("#cbd5e1"),
-    inset: (x: 16pt, y: 10pt),
-    radius: 6pt,
-    breakable: false,
-  )[
-    #set text(font: "Liberation Mono", size: 9.5pt, fill: rgb("#0f172a"))
-    ```text
-Paper Triangle                        Torn Corners Reassembled
-A (Blue)                                      A
-Blue    /  \   Red
-Red) B /______\ C (Amber)
-Amber           Line = 180°
-    ```
-  ]
-]
-
 The three angles fit together seamlessly to form a perfect straight
 edge! Since a straight edge represents a straight angle of
 $180^compose$, their sum is demonstrably $180^compose$.
@@ -11069,23 +9941,6 @@ $180^compose$, their sum is demonstrably $180^compose$.
 <proof-2-the-euclidean-proof-deductive-rigor>
 To transform this sensory experiment into a watertight mathematical
 proof, we follow Euclid's luminous reasoning using parallel lines:
-
-#align(center)[
-  #block(
-    fill: rgb("#f8fafc"),
-    stroke: 1pt + rgb("#cbd5e1"),
-    inset: (x: 16pt, y: 10pt),
-    radius: 6pt,
-    breakable: false,
-  )[
-    #set text(font: "Liberation Mono", size: 9.5pt, fill: rgb("#0f172a"))
-    ```text
-D  A  E       Line (DE) // (BC)
-Angle B' /   \ Angle C'
-BC
-    ```
-  ]
-]
 
 + Given any triangle $A B C$, construct line $\(D E\)$ passing through
   vertex $A$ parallel to the opposite base $\(B C\)$.
@@ -11162,21 +10017,11 @@ They used a single length of rope tied with #strong[thirteen knots
 spaced at identical intervals], and joined its ends to form a continuous
 closed loop:
 
-#align(center)[
-  #block(
-    fill: rgb("#f8fafc"),
-    stroke: 1pt + rgb("#cbd5e1"),
-    inset: (x: 16pt, y: 10pt),
-    radius: 6pt,
-    breakable: false,
-  )[
-    #set text(font: "Liberation Mono", size: 9.5pt, fill: rgb("#0f172a"))
-    ```text
-Knot 1  Knot 2  Knot 3  Knot 4  ...  Knot 13 (tied to Knot 1)
-12 equal intervals between the 13 knots
-    ```
+#figure(image("figures_en/vol_4/fig_27_corde_treize_noeuds.svg", alt: "The Egyptian thirteen-knot rope and the 3-4-5 right triangle"),
+  caption: [
+    The Egyptian thirteen-knot rope and the 3-4-5 right triangle
   ]
-]
+)
 
 Because knot 13 joins knot 1, the loop contains exactly #strong[12 equal
 segments]. The surveyors drove three wooden stakes into the ground and
@@ -11188,25 +10033,6 @@ pulled the rope tight around them, distributing the segments as follows:
   13/1).
 
 $ 3 + 4 + 5 = 12 upright(" segments") $
-
-#align(center)[
-  #block(
-    fill: rgb("#f8fafc"),
-    stroke: 1pt + rgb("#cbd5e1"),
-    inset: (x: 16pt, y: 10pt),
-    radius: 6pt,
-    breakable: false,
-  )[
-    #set text(font: "Liberation Mono", size: 9.5pt, fill: rgb("#0f172a"))
-    ```text
-Knot 4 (Stake)
-3 units  |                                |     \  5 units
-Knot 8 (Stake)
-Knot 1 & 13       4 units
-Stake)
-    ```
-  ]
-]
 
 When pulled taut, the angle formed between the side of 3 units and the
 side of 4 units is #strong[guaranteed to be an absolute, mathematical
@@ -11234,9 +10060,7 @@ a Euclidean flat plane, #strong[it is strictly impossible for a triangle
 to possess two right angles].
 
 #quote_box[
-#strong[🌍 Beyond Flat Space --- Spherical Geometry:
-]
- However, on the
+#strong[🌍 Beyond Flat Space --- Spherical Geometry:] However, on the
 curved surface of a sphere---such as planet Earth---lines of longitude
 meet the equator at $90^compose$ right angles, and they also meet at the
 North Pole! A triangle drawn from the North Pole down to the equator at
@@ -11245,6 +10069,7 @@ and back up to the pole has #strong[three right angles]
 ($90^compose + 90^compose + 90^compose = 270^compose$). The
 $180^compose$ theorem is true only in #strong[flat Euclidean space]!
 ]
+
 
 ==== Case 2: The Degenerate (Flat) Triangle
 <case-2-the-degenerate-flat-triangle>
@@ -11455,10 +10280,9 @@ But the gentle curve of the circle slips through the surveyor's fingers.
 To measure the perfect ring, one had to unroll the circumference upon
 the earth and discover that mysterious, unending number without
 repetition that the sages of Syracuse hunted down between two vast
-armies of polygons.”
+armies of polygons.”]
 ]
 
-]
 
 #divider()
 
@@ -11494,27 +10318,11 @@ spinning disc. His wet palms cup the earth. Under his thumbs, as if by
 enchantment, the shapeless lump blossoms into an exquisitely symmetrical
 bowl.
 
-#align(center)[
-  #block(
-    fill: rgb("#f8fafc"),
-    stroke: 1pt + rgb("#cbd5e1"),
-    inset: (x: 16pt, y: 10pt),
-    radius: 6pt,
-    breakable: false,
-  )[
-    #set text(font: "Liberation Mono", size: 9.5pt, fill: rgb("#0f172a"))
-    ```text
-Potter's wheel in rotation
-'     O     '-.
-'   . - ' ' - .   '.
-r      \   \
-Potter's hand
-'.   ' - . . - '   .'
-'-.___________.-'
-pivot
-    ```
+#figure(image("figures_en/vol_3/fig_16_vocabulaire_cercle.svg", alt: "Key circle elements: radius, diameter, and chord"),
+  caption: [
+    Key circle elements: radius, diameter, and chord
   ]
-]
+)
 
 Every single point along the outer rim of the bowl spins at the exact
 same distance from the central pivot. If one side were even a fraction
@@ -11555,12 +10363,7 @@ beginner trap.
 
 ==== 2.1 Circle vs.~Disc
 <circle-vs.-disc>
-#principe(title: [Définition Fondamentale])[
-#strong[📐 Definition --- Circle and Disc
-]
-
-
-- The #strong[circle] of center $O$ and radius $r$ is the collection of
+#principe(title: [Definition — Circle and Disc])[- The #strong[circle] of center $O$ and radius $r$ is the collection of
   all points in the plane located at the exact same distance $r$ from
   center $O$. The circle is #strong[a closed curved line]---it is the
   hollow boundary (like a wedding ring, a hoop, or an iron tire).
@@ -11570,53 +10373,16 @@ beginner trap.
   a coin, a dinner plate, or a pancake).
 ]
 
-#align(center)[
-  #block(
-    fill: rgb("#f8fafc"),
-    stroke: 1pt + rgb("#cbd5e1"),
-    inset: (x: 16pt, y: 10pt),
-    radius: 6pt,
-    breakable: false,
-  )[
-    #set text(font: "Liberation Mono", size: 9.5pt, fill: rgb("#0f172a"))
-    ```text
-THE CIRCLE (the boundary line)        THE DISC (the solid surface)
-""""-.                              .######.
-'        '.                          .##########.
-############\
-O       |                      |###### O #####|
-############/
-'.        .'                          '##########'
-'-....-'                              '######'
-Perimeter / Boundary)                   (Area and Perimeter)
-    ```
+
+#figure(image("figures_en/vol_3/fig_16_archimede_polygones.svg", alt: "Archimedes’ method: bounding Pi with regular polygons"),
+  caption: [
+    Archimedes' method: bounding Pi with regular polygons
   ]
-]
+)
 
 ==== 2.2 Remarkable Segments and Curves
 <remarkable-segments-and-curves>
 Mark a point $O$ on a sheet of paper:
-
-#align(center)[
-  #block(
-    fill: rgb("#f8fafc"),
-    stroke: 1pt + rgb("#cbd5e1"),
-    inset: (x: 16pt, y: 10pt),
-    radius: 6pt,
-    breakable: false,
-  )[
-    #set text(font: "Liberation Mono", size: 9.5pt, fill: rgb("#0f172a"))
-    ```text
-Radius r
-A  B'
-O       |
-Diameter d |
-Arc CD
-C  D
-Chord
-    ```
-  ]
-]
 
 - The #strong[center]: the fixed point $O$ located at the exact midpoint
   of the figure.
@@ -11639,15 +10405,13 @@ Chord
 - An #strong[arc]: a continuous portion of the curved circle between two
   points, denoted $C D^paren.t$.
 
-#decouvre(title: [Découverte & Histoire])[
-#strong[💡 Did You Know?
-]
- The word #emph[radius] comes from the Latin
+#decouvre(title: [Did You Know?])[The word #emph[radius] comes from the Latin
 word for the spoke of a chariot wheel or a weaver's rod. The word
 #emph[diameter] comes from the ancient Greek #emph[dia] (“across,
 through”) and #emph[metron] (“measure”): it is the measure that cuts
 straight through the figure from one side to the other.
 ]
+
 
 #divider()
 
@@ -11668,23 +10432,11 @@ masking tape, or a circular tin can:
   length of one full turn of the rim---the #strong[perimeter] of the
   circle, historically known as the #strong[circumference].
 
-#align(center)[
-  #block(
-    fill: rgb("#f8fafc"),
-    stroke: 1pt + rgb("#cbd5e1"),
-    inset: (x: 16pt, y: 10pt),
-    radius: 6pt,
-    breakable: false,
-  )[
-    #set text(font: "Liberation Mono", size: 9.5pt, fill: rgb("#0f172a"))
-    ```text
-Start (0 cm)                                      End (1 full turn)
-O  )                                                  ( O  )
-╧╧
-0 cm                                                    Perimeter P
-    ```
+#figure(image("figures_en/vol_3/fig_16_deroulement_cercle_pi.svg", alt: "Unrolling the circle: geometric definition of Pi"),
+  caption: [
+    Unrolling the circle: geometric definition of Pi
   ]
-]
+)
 
 Let us record careful measurements for round objects of widely varying
 sizes:
@@ -11719,12 +10471,11 @@ universal mathematical constant of Euclidean geometry. Mathematicians
 denote it with the Greek letter #strong[$pi$] (pronounced #emph[“pie”]).
 
 #quote_box[
-#strong[📐 The Universal Constant $pi$ ---
-]
- For every circle of
+#strong[📐 The Universal Constant $pi$ ---] For every circle of
 circumference $P$ and diameter $d$:
 $ P / d = pi approx 3.1415926535 dots.h $
 ]
+
 
 Multiplying both sides by diameter $d$ yields the famous formula for the
 #strong[circumference of a circle]:
@@ -11734,9 +10485,7 @@ Generations of students remember it by its rhythmic cadence:
 #strong[“Two $pi$ $r$”].
 
 #quote_box[
-#strong[🔍 Historical Note --- Where Did the Letter $pi$ Come From?
-]
- The
+#strong[🔍 Historical Note --- Where Did the Letter $pi$ Come From?] The
 letter $pi$ is the first letter of the Greek word #emph[periphereia]
 (which gave us “periphery,” meaning outer boundary). The Welsh
 mathematician William Jones was the first to use $pi$ to represent this
@@ -11744,6 +10493,7 @@ ratio in 1706 in an educational textbook. However, it was the Swiss
 mathematical titan #strong[Leonhard Euler] who popularized it worldwide
 starting in 1737 by adopting it in all his master treatises.
 ]
+
 
 #divider()
 
@@ -11770,23 +10520,6 @@ Archimedes trapped the circle between two regular polygons like a vise:
 circle, whose vertices touch the circle). 2. A #strong[circumscribed
 polygon] (lying entirely #strong[outside] the circle, whose straight
 sides touch the circle).
-
-#align(center)[
-  #block(
-    fill: rgb("#f8fafc"),
-    stroke: 1pt + rgb("#cbd5e1"),
-    inset: (x: 16pt, y: 10pt),
-    radius: 6pt,
-    breakable: false,
-  )[
-    #set text(font: "Liberation Mono", size: 9.5pt, fill: rgb("#0f172a"))
-    ```text
-Inscribed Polygon (Inside)         Circumscribed Polygon (Outside)
-'---'                             '-------'
-Inner Perimeter < Circle Perimeter < Outer Perimeter
-    ```
-  ]
-]
 
 Physical reality is undeniable:
 
@@ -11849,12 +10582,6 @@ disc into a large number of identical, razor-thin wedge-shaped slices
 (say 16 slices, like narrow arrowheads). 2. Separate the 16 slices and
 interlock them alternately, one pointing up, one pointing down:
 
-#figure(image("figures/vol_3/fig_16_deroulement_cercle_pi.svg", alt: "Le déroulement du cercle : définition géométrique du nombre Pi"),
-  caption: [
-    Le déroulement du cercle : définition géométrique du nombre Pi
-  ]
-)
-
 Look at the reassembled figure: it astonishingly resembles a
 #strong[rectangle] (or a near-perfect parallelogram)!
 
@@ -11874,23 +10601,18 @@ infinitely thin slices, the tiny curved scallops flatten completely into
 straight lines: the shape becomes an exact mathematical rectangle of
 area $pi r^2$.
 
-#quote_box[
-#strong[📐 Theorem --- Area of a Disc
-]
- The area $A$ of a disc of radius
+#principe(title: [Theorem — Area of a Disc])[The area $A$ of a disc of radius
 $r$ (and diameter $d = 2 r$) equals:
 $ A = pi times r^2 = pi times r times r $ Expressed in terms of diameter
 $d$: $A = pi times (d / 2)^2 = frac(pi d^2, 4)$.
 ]
 
+
 #divider()
 
 === 6. Beware of Pitfalls!
 <beware-of-pitfalls>
-#alerte(title: [Attention au Piège !])[
-#strong[⚠️ Warning: Deadly Traps!
-]
- 1. #strong[Never confuse radius and
+#alerte(title: [Warning: Deadly Traps!])[1. #strong[Never confuse radius and
 diameter!] In any word problem, highlight immediately whether you are
 given the radius or the diameter. If a wheel has a diameter of
 $10 upright(" cm")$, its radius is $5 upright(" cm")$. If you blindly
@@ -11916,6 +10638,7 @@ write $A = pi times 10^2$, your result will be four times too large! 2.
   your final answer (e.g., $16 pi upright(" cm")^2$).
 ]
 ]
+
 
 #divider()
 
@@ -11993,12 +10716,6 @@ A training stadium features a central circular grass lawn of radius
 $R_1 = 30 upright(" m")$, surrounded by a tartan running track of
 uniform width $4 upright(" m")$. What is the area of the tartan running
 track?
-
-#figure(image("figures/vol_3/fig_16_vocabulaire_cercle.svg", alt: "Éléments remarquables du cercle : rayon, diamètre et corde"),
-  caption: [
-    Éléments remarquables du cercle : rayon, diamètre et corde
-  ]
-)
 
 #emph[Solution:] The track forms an #strong[annulus] (a circular ring):
 the difference between the large outer disc and the small inner lawn
@@ -12276,10 +10993,9 @@ chapter.
 #emph[“Why risk one's life attempting to scale a mountain of stone? When
 the sun illuminates the world, every creature casts upon the earth a
 faithful mirror of its own height. One must simply learn to read the
-shadow.”
+shadow.”]
 ]
 
-]
 
 #divider()
 
@@ -12332,24 +11048,11 @@ ever lifting my feet from the ground!”]
 The Egyptian courtiers scoff. How could an itinerant Greek merchant
 measure a stone mountain with a common piece of wood?
 
-#align(center)[
-  #block(
-    fill: rgb("#f8fafc"),
-    stroke: 1pt + rgb("#cbd5e1"),
-    inset: (x: 16pt, y: 10pt),
-    radius: 6pt,
-    breakable: false,
-  )[
-    #set text(font: "Liberation Mono", size: 9.5pt, fill: rgb("#0f172a"))
-    ```text
-Sunlight Ray
-Pyramid Summit (Unknown Height H)
-Staff Top (Height h = 2 m)
-Ground
-Shadow L |      | l | (Staff shadow)
-    ```
+#figure(image("figures_en/vol_3/fig_17_thales_pyramide.svg", alt: "Right-triangle trigonometry: Cosine, Sine, and Tangent"),
+  caption: [
+    Right-triangle trigonometry: Cosine, Sine, and Tangent
   ]
-]
+)
 
 #divider()
 
@@ -12387,14 +11090,12 @@ second, the length of the pyramid's shadow (measured from the vertical
 line below its apex to the far tip of its shadow) is #strong[strictly
 equal to its true vertical height]!
 
-#decouvre(title: [Découverte & Histoire])[
-#strong[💡 Did You Know?
-]
- According to the Greek historian Plutarch,
+#decouvre(title: [Did You Know?])[According to the Greek historian Plutarch,
 Pharaoh Amasis was so utterly astonished to see Thales determine the
 monument's height in just a few paces that he showered the philosopher
 with gifts and revered him as the wisest living mortal.
 ]
+
 
 ==== 2.2 What If the Sun Won't Wait? The Power of Proportion
 <what-if-the-sun-wont-wait-the-power-of-proportion>
@@ -12411,25 +11112,6 @@ Therefore, at #strong[any hour of the day], the pyramid and its shadow
 form a triangle that has the #strong[exact same geometric shape] as the
 triangle formed by the staff and its shadow! One triangle is simply an
 #strong[enlargement] of the other.
-
-#align(center)[
-  #block(
-    fill: rgb("#f8fafc"),
-    stroke: 1pt + rgb("#cbd5e1"),
-    inset: (x: 16pt, y: 10pt),
-    radius: 6pt,
-    breakable: false,
-  )[
-    #set text(font: "Liberation Mono", size: 9.5pt, fill: rgb("#0f172a"))
-    ```text
-Pyramid Triangle                         Staff Triangle
-S                                    A
-Height H                       /   | Height h
-O       H'                           B       C
-Shadow L                             Shadow l
-    ```
-  ]
-]
 
 The ratio between vertical height and cast shadow is #strong[identical
 for all vertical objects standing under the sun at that same moment]:
@@ -12449,12 +11131,7 @@ deceived!
 
 ==== 3.1 The Scale Factor $k$
 <the-scale-factor-k>
-#principe(title: [Définition Fondamentale])[
-#strong[📐 Definition --- Enlargement and Reduction
-]
-
-
-- Transforming a figure by multiplying #strong[all its linear
+#principe(title: [Definition — Enlargement and Reduction])[- Transforming a figure by multiplying #strong[all its linear
   dimensions] by the same strictly positive number $k$ is called:
 
   - An #strong[enlargement] (or dilation) if $k > 1$.
@@ -12469,16 +11146,13 @@ deceived!
   remain parallel.
 ]
 
+
 ==== 3.2 The Effect on Lengths, Areas, and Volumes
 <the-effect-on-lengths-areas-and-volumes>
 Here is the golden rule that governs the geometry of our
 three-dimensional physical universe:
 
-#quote_box[
-#strong[📐 Fundamental Scaling Theorem --- The Powers of Factor $k$
-]
-
-When all linear dimensions of a figure or solid are multiplied by a
+#principe(title: [Fundamental Scaling Theorem — The Powers of Factor $k$])[When all linear dimensions of a figure or solid are multiplied by a
 scale factor $k$ ($k > 0$):
 
 - #strong[Lengths] are multiplied by $k$.
@@ -12487,6 +11161,7 @@ scale factor $k$ ($k > 0$):
 
 - #strong[Volumes] are multiplied by $k^3$ ($k times k times k$).
 ]
+
 
 ==== Why Squares and Cubes? The Visual Proof with Blocks
 <why-squares-and-cubes-the-visual-proof-with-blocks>
@@ -12500,26 +11175,6 @@ edge:
 
 Now perform an enlargement with scale factor #strong[$k = 2$] (doubling
 all linear dimensions: edge $= 2 upright(" cm")$):
-
-#align(center)[
-  #block(
-    fill: rgb("#f8fafc"),
-    stroke: 1pt + rgb("#cbd5e1"),
-    inset: (x: 16pt, y: 10pt),
-    radius: 6pt,
-    breakable: false,
-  )[
-    #set text(font: "Liberation Mono", size: 9.5pt, fill: rgb("#0f172a"))
-    ```text
-Initial Cube (k = 1)           Enlarged Cube (k = 2)
-4 small cubes in front
-Edge = 1 cm
-Face area = 1 cm²
-Volume = 1 cm³                + 4 small cubes in back!
-Total = 8 cubes = 2³
-    ```
-  ]
-]
 
 Look closely: 1. The edge length was multiplied by #strong[$2$]
 ($2 upright(" cm")$). 2. The area of a square face: it now contains
@@ -12535,11 +11190,7 @@ If we tripled all linear dimensions ($k = 3$):
 - Surface areas would scale by $times 3^2 = upright(bold(9))$.
 - Volumes would scale by $times 3^3 = upright(bold(27))$!
 
-#decouvre(title: [Découverte & Histoire])[
-#strong[💡 Did You Know? --- Why Giant Movie Monsters Cannot Exist
-]
-
-Galileo Galilei was the first to demonstrate this mathematical reality:
+#decouvre(title: [Did You Know? — Why Giant Movie Monsters Cannot Exist])[Galileo Galilei was the first to demonstrate this mathematical reality:
 if a human being were enlarged to 10 times his normal height ($k = 10$),
 he would be 10 times taller, but his body weight (which depends on
 volume) would multiply by $10^3 = upright(bold(1\,000))$! However, the
@@ -12549,6 +11200,7 @@ $10^2 = upright(bold(100))$. His bones would experience 10 times the
 normal stress: they would snap under his own weight at his very first
 step!
 ]
+
 
 #divider()
 
@@ -12563,25 +11215,6 @@ Thales' Theorem applies whenever a straight line intersects two sides of
 a triangle while being strictly #strong[parallel] to the third side.
 There are two geometric arrangements:
 
-#align(center)[
-  #block(
-    fill: rgb("#f8fafc"),
-    stroke: 1pt + rgb("#cbd5e1"),
-    inset: (x: 16pt, y: 10pt),
-    radius: 6pt,
-    breakable: false,
-  )[
-    #set text(font: "Liberation Mono", size: 9.5pt, fill: rgb("#0f172a"))
-    ```text
-Configuration 1: Nested Triangles              Configuration 2: Hourglass (Butterfly)
-A                                            M       N
-MN   (MN) // (BC)                             \ /
-BC                                        /   \
-BC   (MN) // (BC)
-    ```
-  ]
-]
-
 In both configurations:
 
 - Lines $\(M B\)$ and $\(N C\)$ are secant lines intersecting at point
@@ -12594,10 +11227,7 @@ angles are equal, and all pairs of corresponding sides are proportional.
 
 ==== 4.2 Formal Statement of Thales' Theorem
 <formal-statement-of-thales-theorem>
-#quote_box[
-#strong[📐 Thales' Theorem (Intercept Theorem) ---
-]
- Let $\(d\)$ and
+#principe(title: [Thales' Theorem (Intercept Theorem) —])[Let $\(d\)$ and
 $\(d'\)$ be two straight lines intersecting at point $A$. Let $B$ and
 $M$ be two points on $\(d\)$, distinct from $A$. Let $C$ and $N$ be two
 points on $\(d'\)$, distinct from $A$. If the lines $\(M N\)$ and
@@ -12605,14 +11235,12 @@ $\(B C\)$ are parallel, then:
 $ frac(A M, A B) = frac(A N, A C) = frac(M N, B C) $
 ]
 
+
 Each fraction compares a side of the smaller triangle to the
 corresponding side of the larger triangle:
 $ frac(upright("side of ") A M N, upright("side of ") A B C) = upright("scale factor ") k $
 
-#methode(title: [Méthode Pas à Pas])[
-#strong[🧭 Method --- Writing the Equal Ratios Without Error
-]
- 1.
+#methode(title: [Method — Writing the Equal Ratios Without Error])[1.
 Identify the #strong[shared intersection vertex] (the point where the
 two secant lines cross, here $A$). 2. Write the first two ratios
 radiating outward from this shared vertex:
@@ -12625,6 +11253,7 @@ upper triangle ($A M\,A N\,M N$) reside exclusively in the
 ($A B\,A C\,B C$) reside in the #strong[denominators] (or vice
 versa---never mix them up!).
 ]
+
 
 #divider()
 
@@ -12639,10 +11268,7 @@ need to prove with absolute certainty that two beams or property lines
 are #strong[parallel]. That is the purpose of the #strong[Converse of
 Thales' Theorem].
 
-#quote_box[
-#strong[📐 Converse of Thales' Theorem ---
-]
- Let $\(A B\)$ and $\(A C\)$
+#principe(title: [Converse of Thales' Theorem —])[Let $\(A B\)$ and $\(A C\)$
 be two lines intersecting at $A$. Let $M$ be a point on line $\(A B\)$
 and $N$ a point on line $\(A C\)$. If: 1. The points $A\,M\,B$ and
 $A\,N\,C$ are aligned #strong[in the exact same order], 2. And
@@ -12650,6 +11276,7 @@ $frac(A M, A B) = frac(A N, A C)$,
 
 then the lines $\(M N\)$ and $\(B C\)$ are #strong[parallel].
 ]
+
 
 ==== The Contrapositive: Proving Lines Are NOT Parallel
 <the-contrapositive-proving-lines-are-not-parallel>
@@ -12662,10 +11289,7 @@ lines $\(M N\)$ and $\(B C\)$ are not parallel].
 
 === 6. Beware of Pitfalls!
 <beware-of-pitfalls-1>
-#alerte(title: [Attention au Piège !])[
-#strong[⚠️ Warning: Classic Exam Traps!
-]
- 1. #strong[Inverting Numerator
+#alerte(title: [Warning: Classic Exam Traps!])[1. #strong[Inverting Numerator
 and Denominator:] Writing $frac(A M, A B) = frac(A C, A N)$ is a fatal
 error. You have placed “small over large” on the left, and “large over
 small” on the right. Any cross-multiplication will be completely wrong.
@@ -12681,6 +11305,7 @@ $k^2$:] If a scale model is built at scale $1 / 100$, lengths are
 divided by $100$, but the area of a surface on the model is divided by
 $100^2 = 10\,000$!
 ]
+
 
 #divider()
 
@@ -12699,26 +11324,6 @@ measurements:
   beyond the exterior edge of its base.
 
 What is the vertical height $H$ of the pyramid?
-
-#align(center)[
-  #block(
-    fill: rgb("#f8fafc"),
-    stroke: 1pt + rgb("#cbd5e1"),
-    inset: (x: 16pt, y: 10pt),
-    radius: 6pt,
-    breakable: false,
-  )[
-    #set text(font: "Liberation Mono", size: 9.5pt, fill: rgb("#0f172a"))
-    ```text
-Summit
-Slanted face
-Tip of shadow)
-74 m
-Half-base
-115 m
-    ```
-  ]
-]
 
 #emph[Solution:] 1. Find total shadow length $L$, measured from directly
 below the summit (the center of the square base):
@@ -12760,24 +11365,6 @@ swimming across. Lines $\(A D\)$ and $\(B C\)$ cross at point $O$, with
 $\(A B\)parallel\(C D\)$. Measurements on the accessible bank yield:
 $O B = 12 upright(" m")$, $O C = 30 upright(" m")$, and
 $C D = 45 upright(" m")$. Calculate distance $A B$.
-
-#align(center)[
-  #block(
-    fill: rgb("#f8fafc"),
-    stroke: 1pt + rgb("#cbd5e1"),
-    inset: (x: 16pt, y: 10pt),
-    radius: 6pt,
-    breakable: false,
-  )[
-    #set text(font: "Liberation Mono", size: 9.5pt, fill: rgb("#0f172a"))
-    ```text
-Tree A (Far bank)
-River
-B (Near bank)
-C   D   (Baseline CD on dry land)
-    ```
-  ]
-]
 
 #emph[Solution:] - Lines $\(A D\)$ and $\(B C\)$ intersect at $O$, with
 $\(A B\)parallel\(C D\)$. - By #strong[Thales' Theorem] in the hourglass
@@ -13087,10 +11674,9 @@ notation]!
 #emph[“Addition is the slow step of the walker advancing stone by stone.
 Multiplication is the gallop of the horseman. But exponentiation is the
 dazzling ascent of the rocket: in a few beats of its wings, it outstrips
-the comprehension of kings and fills the entire cosmos.”
+the comprehension of kings and fills the entire cosmos.”]
 ]
 
-]
 
 #divider()
 
@@ -13144,23 +11730,18 @@ square.] - #emph[Place #strong[4 grains of rice] upon the third square.]
 the sixty-fourth square is reached.] #emph[Grant me simply these few
 grains of rice, and my heart will be content.”]
 
+
 #align(center)[
-  #block(
-    fill: rgb("#f8fafc"),
-    stroke: 1pt + rgb("#cbd5e1"),
-    inset: (x: 16pt, y: 10pt),
-    radius: 6pt,
-    breakable: false,
-  )[
-    #set text(font: "Liberation Mono", size: 9.5pt, fill: rgb("#0f172a"))
-    ```text
-1st square     2nd square     3rd square     4th square     ...        64th square
-•           ••           ••••         ••••                     ?
-••••
-1 grain        2 grains       4 grains       8 grains                 2⁶³ grains!
-    ```
-  ]
+  #table(
+    columns: (1fr, 1fr, 1fr, 1fr, 0.8fr, 1.2fr),
+    align: center,
+    stroke: 0.5pt + rgb("#cbd5e1"),
+    fill: (x, y) => if y == 0 { rgb("#eff6ff") } else { rgb("#ffffff") },
+    [*1re case*], [*2e case*], [*3e case*], [*4e case*], [*...*], [*64e case*],
+    [1 grain], [2 grains], [4 grains], [8 grains], [...], [$2^(63)$ grains !]
+  )
 ]
+
 
 The king burst into hearty laughter: #emph[“What foolish modesty! You
 could have asked for a royal fortune, and you ask for bird food! Fetch a
@@ -13210,36 +11791,20 @@ mathematicians established an international code of the road: the
 Mathematicians memorize this operational hierarchy using the mnemonic
 #strong[PEMDAS]:
 
-#align(center)[
-  #block(
-    fill: rgb("#f8fafc"),
-    stroke: 1pt + rgb("#cbd5e1"),
-    inset: (x: 16pt, y: 10pt),
-    radius: 6pt,
-    breakable: false,
-  )[
-    #set text(font: "Liberation Mono", size: 9.5pt, fill: rgb("#0f172a"))
-    ```text
-1. P : PARENTHESES (innermost first)
-2. E : EXPONENTS (Powers & Roots)
-3. M / D : MULTIPLICATION & DIVISION
-tied in rank, evaluated left to right
-4. A / S : ADDITION & SUBTRACTION
-tied in rank, evaluated left to right
-    ```
+#figure(image("figures_en/vol_3/fig_18_pemdas.svg", alt: "The universal PEMDAS order of operations"),
+  caption: [
+    The universal PEMDAS order of operations
   ]
-]
+)
 
-#quote_box[
-#strong[📐 Official Rule --- Operational Precedence
-]
- 1. Always evaluate
+#principe(title: [Official Rule — Operational Precedence])[1. Always evaluate
 expressions inside #strong[parentheses] first, working from the
 innermost brackets outward. 2. Evaluate all #strong[exponents] (powers).
 \3. Perform all #strong[multiplications and divisions] in order from
 left to right. 4. Perform all #strong[additions and subtractions] in
 order from left to right.
 ]
+
 
 ==== 2.2 The Role of the Horizontal Fraction Bar
 <the-role-of-the-horizontal-fraction-bar>
@@ -13269,10 +11834,7 @@ In the 17th century, the French philosopher and mathematician
 writing the number of repeated factors in tiny script perched high to
 the upper right of the number.
 
-#principe(title: [Définition Fondamentale])[
-#strong[📐 Definition --- Power of a Number
-]
- For any real number $a$ and
+#principe(title: [Definition — Power of a Number])[For any real number $a$ and
 any positive integer $n gt.eq 1$:
 $ a^n = underbrace(a times a times a times dots.h times a, n upright(" factors")) $
 
@@ -13283,6 +11845,7 @@ $ a^n = underbrace(a times a times a times dots.h times a, n upright(" factors")
 - The notation $a^n$ reads aloud as #strong[“$a$ to the power of $n$”]
   or #strong[“$a$ raised to the $n$-th power”].
 ]
+
 
 ==== Special Terminology for Powers of 2 and 3
 <special-terminology-for-powers-of-2-and-3>
@@ -13322,14 +11885,12 @@ modern scientific calculation.
 
 ==== 4.1 Positive Powers of 10: The March of Zeros
 <positive-powers-of-10-the-march-of-zeros>
-#principe(title: [Définition Fondamentale])[
-#strong[📐 Rule --- Positive Powers of 10
-]
- For any positive integer $n$:
+#principe(title: [Rule — Positive Powers of 10])[For any positive integer $n$:
 $ 10^n = 1 underbrace(000 dots.h 0, n upright(" zeros")) $ The exponent
 indicates #strong[the exact number of zeros] following the leading digit
 1!
 ]
+
 
 - $10^1 = 10$ (ten)
 - $10^2 = 100$ (one hundred)
@@ -13352,10 +11913,7 @@ $ 10^3 & = 1\,000\
 10^(- 2) & = 1 / 10^2 = 1 / 100 = 0.01\
 10^(- 3) & = 1 / 10^3 = frac(1, 1\,000) = 0.001 $
 
-#principe(title: [Définition Fondamentale])[
-#strong[📐 Definition --- Negative Exponents
-]
- For any non-zero base
+#principe(title: [Definition — Negative Exponents])[For any non-zero base
 $a eq.not 0$ and any integer $n$: $ a^(- n) = 1 / a^n $ Specifically for
 powers of 10:
 $ 10^(- n) = 1 / 10^n = underbrace(0.00 dots.h 0, n upright(" total zeros")) 1 $
@@ -13363,6 +11921,7 @@ A negative exponent designates the #strong[reciprocal] of the power. In
 $10^(- n)$, there are #strong[$n$ zeros in total], including the leading
 zero before the decimal point!
 ]
+
 
 - $10^(- 1) = 0.1$ (one tenth, prefix #emph[deci-])
 - $10^(- 2) = 0.01$ (one hundredth, prefix #emph[centi-])
@@ -13378,10 +11937,7 @@ When manipulating powers with the same base, computation transforms
 magically: #strong[multiplication of powers becomes simple addition of
 exponents!]
 
-#quote_box[
-#strong[📐 Fundamental Exponent Laws
-]
- For all integers $m$ and $n$, and
+#principe(title: [Fundamental Exponent Laws])[For all integers $m$ and $n$, and
 non-zero bases $a$ and $b$:
 
 + #strong[Product of Powers with Same Base:]
@@ -13400,6 +11956,7 @@ non-zero bases $a$ and $b$:
   $\(2 times 5\)^3 = 2^3 times 5^3 = 8 times 125 = 1\,000 = 10^3$)]
 ]
 
+
 #divider()
 
 === 6. Scientific Notation: Writing the Universe
@@ -13411,10 +11968,7 @@ standard digits, human eyes lose count of the zeros instantly!
 Scientists therefore established an international standard format:
 #strong[scientific notation].
 
-#principe(title: [Définition Fondamentale])[
-#strong[📐 Definition --- Scientific Notation
-]
- A number is written in
+#principe(title: [Definition — Scientific Notation])[A number is written in
 #strong[scientific notation] when formatted strictly as:
 $ a times 10^n $ where:
 
@@ -13422,6 +11976,7 @@ $ a times 10^n $ where:
   the decimal point] ($1 lt.eq a < 10$ or $- 10 < a lt.eq - 1$).
 - $n$ is an integer (positive, zero, or negative).
 ]
+
 
 ==== Rapid Conversion Technique
 <rapid-conversion-technique>
@@ -13433,32 +11988,24 @@ $ a times 10^n $ where:
   #strong[right] $arrow.r.double.long 10^(- n)$.
   $ 0.00000012 upright(" m") = 1.2 times 10^(- 7) upright(" m") quad\(upright("size of a virus")\) $
 
+
 #align(center)[
-  #block(
-    fill: rgb("#f8fafc"),
-    stroke: 1pt + rgb("#cbd5e1"),
-    inset: (x: 16pt, y: 10pt),
-    radius: 6pt,
-    breakable: false,
-  )[
-    #set text(font: "Liberation Mono", size: 9.5pt, fill: rgb("#0f172a"))
-    ```text
-Scale of Magnitudes Across the Universe (in meters)
-10⁻¹⁵ m      10⁻¹⁰ m       1 m        10⁶ m       10¹¹ m        10²¹ m
-Atomic       Atom        Human       Earth       Solar        Milky Way
-nucleus                                         system         Galaxy
-    ```
-  ]
+  #table(
+    columns: (1fr, 1fr, 1fr, 1fr, 1fr, 1fr),
+    align: center + horizon,
+    stroke: 0.5pt + rgb("#cbd5e1"),
+    fill: (x, y) => if y == 0 { rgb("#eff6ff") } else { rgb("#ffffff") },
+    [*Nucleus*], [*Atom*], [*Human*], [*Earth*], [*Solar System*], [*Galaxy*],
+    [$10^(-15)$ m], [$10^(-10)$ m], [$1$ m ($10^0$ m)], [$10^6$ m], [$10^(11)$ m], [$10^(21)$ m]
+  )
 ]
+
 
 #divider()
 
 === 7. Beware of Pitfalls!
 <beware-of-pitfalls-2>
-#alerte(title: [Attention au Piège !])[
-#strong[⚠️ Warning: Monumental Exponent Blunders!
-]
- 1. #strong[The
+#alerte(title: [Warning: Monumental Exponent Blunders!])[1. #strong[The
 Phantom Exponent Addition Trap:] $ 10^2 + 10^3 eq.not 10^5 quad ! $
 Powers can NEVER be added by adding their exponents!
 $10^2 + 10^3 = 100 + 1\,000 = 1\,100$, whereas $10^5 = 100\,000$. 2.
@@ -13479,6 +12026,7 @@ preceding minus sign! 3. #strong[Non-Standard Scientific Format:]
   $ 2^3 times 2^4 eq.not 4^7 quad upright("correct is") quad 2^(3 + 4) = 2^7 = 128 $
 ]
 ]
+
 
 #divider()
 
@@ -13788,10 +12336,9 @@ with #strong[The Pythagorean Theorem]!
 #emph[“The disciples of Pythagoras chanted that the entire universe was
 nothing but an orderly harmony of whole numbers and gentle ratios. Yet
 within the heart of the humblest square slept an invisible monster: a
-number without end that was destined to shatter their sacred dream.”
+number without end that was destined to shatter their sacred dream.”]
 ]
 
-]
 
 #divider()
 
@@ -13856,22 +12403,11 @@ humblest square imaginable: #strong[a square whose sides measure exactly
 Then, he connected two opposite corners with a straight line: he drew
 #strong[the diagonal].
 
-#align(center)[
-  #block(
-    fill: rgb("#f8fafc"),
-    stroke: 1pt + rgb("#cbd5e1"),
-    inset: (x: 16pt, y: 10pt),
-    radius: 6pt,
-    breakable: false,
-  )[
-    #set text(font: "Liberation Mono", size: 9.5pt, fill: rgb("#0f172a"))
-    ```text
-1 meter
-1 m         d  /        1 m
-1 meter
-    ```
+#figure(image("figures_en/vol_3/fig_19_carre_diagonale_racine2.svg", alt: "The unit square and the incommensurable diagonal root of 2"),
+  caption: [
+    The unit square and the incommensurable diagonal root of 2
   ]
-]
+)
 
 Hippasus set out to calculate the exact numerical length $d$ of this
 diagonal. He applied the great theorem of his master. And what he
@@ -13885,30 +12421,7 @@ secrecy under penalty of death…
 Before reliving the intellectual tragedy of Hippasus, let us explore the
 royal figure of geometry: the #strong[right-angled triangle].
 
-#align(center)[
-  #block(
-    fill: rgb("#f8fafc"),
-    stroke: 1pt + rgb("#cbd5e1"),
-    inset: (x: 16pt, y: 10pt),
-    radius: 6pt,
-    breakable: false,
-  )[
-    #set text(font: "Liberation Mono", size: 9.5pt, fill: rgb("#0f172a"))
-    ```text
-Leg of the      |       \  Hypotenuse (the longest side)
-right angle     |         \
-A    | C
-Leg of the right angle
-    ```
-  ]
-]
-
-#principe(title: [Définition Fondamentale])[
-#strong[📐 Definition --- Right Triangle and Hypotenuse
-]
-
-
-- A #strong[right-angled triangle] (or right triangle) is a triangle
+#principe(title: [Definition — Right Triangle and Hypotenuse])[- A #strong[right-angled triangle] (or right triangle) is a triangle
   possessing one #strong[right angle] ($90^compose$).
 
 - The side directly facing the right angle is called the
@@ -13921,16 +12434,16 @@ Leg of the right angle
   #strong[legs] (or sides of the right angle).
 ]
 
+
 #quote_box[
-#strong[💡 Where Does This Strange Word Come From?
-]
- The word
+#strong[💡 Where Does This Strange Word Come From?] The word
 #emph[hypotenuse] originates from the ancient Greek #emph[hupoteinousa],
 formed from #emph[hupo] (“under”) and #emph[teinein] (“to stretch”). The
 hypotenuse is literally the string “stretched beneath” the right angle,
 just like the taut bowstring of an archer or the staysail stay of a
 ship.
 ]
+
 
 #divider()
 
@@ -13940,18 +12453,16 @@ The theorem is not originally an abstract algebraic formula, but an
 astonishing truth about the #strong[geometric areas of squares] resting
 against the triangle's flanks.
 
-#quote_box[
-#strong[📐 The Pythagorean Theorem (Geometric Statement)
-]
- In any
+#principe(title: [The Pythagorean Theorem (Geometric Statement)])[In any
 right-angled triangle, the area of the square constructed upon the
 hypotenuse is equal to the sum of the areas of the two squares
 constructed upon the two legs.
 ]
 
-#figure(image("figures/vol_3/fig_19_pythagore_puzzle.svg", alt: "Démonstration géométrique du Théorème de Pythagore"),
+
+#figure(image("figures_en/vol_3/fig_19_pythagore_puzzle.svg", alt: "Geometric proof of the Pythagorean Theorem"),
   caption: [
-    Démonstration géométrique du Théorème de Pythagore
+    Geometric proof of the Pythagorean Theorem
   ]
 )
 
@@ -13980,22 +12491,6 @@ eyes.
 This is the simplest demonstration in existence, applying to an
 isosceles right triangle (half of a square):
 
-#align(center)[
-  #block(
-    fill: rgb("#f8fafc"),
-    stroke: 1pt + rgb("#cbd5e1"),
-    inset: (x: 16pt, y: 10pt),
-    radius: 6pt,
-    breakable: false,
-  )[
-    #set text(font: "Liberation Mono", size: 9.5pt, fill: rgb("#0f172a"))
-    ```text
-Small Square 1     Small Square 2           Large Hypotenuse Square
-2 triangles        2 triangles                  4 triangles united!
-    ```
-  ]
-]
-
 Each small square resting on a leg contains 2 half-square right
 triangles, totaling $2 + 2 = 4$ triangles. The tilted square resting
 upon the hypotenuse contains #strong[precisely 4 identical half-square
@@ -14006,29 +12501,6 @@ triangles]! The combined area is visibly identical.
 Draw a large square of side length $\(a + b\)$. We can arrange 4
 identical copies of our right triangle (with sides $a\,b\,c$) inside
 this boundary in two distinct ways:
-
-#align(center)[
-  #block(
-    fill: rgb("#f8fafc"),
-    stroke: 1pt + rgb("#cbd5e1"),
-    inset: (x: 16pt, y: 10pt),
-    radius: 6pt,
-    breakable: false,
-  )[
-    #set text(font: "Liberation Mono", size: 9.5pt, fill: rgb("#0f172a"))
-    ```text
-Arrangement 1                           Arrangement 2
-a        b                      \                /
-Square                       \  c     c     /
-a²                                 \            /
-Square                       \    /
-4 right triangles                        Square   /
-nestled in corners                    c   c²    c
-b²
-Remaining Area = a² + b²                Remaining Area = c²
-    ```
-  ]
-]
 
 In both identical enclosing squares:
 
@@ -14076,28 +12548,7 @@ typically compute $c^2$ (the area of the square), and need to find $c$
 (the side length). To do so, we introduce a fundamental mathematical
 tool: #strong[the radical symbol for square roots].
 
-#align(center)[
-  #block(
-    fill: rgb("#f8fafc"),
-    stroke: 1pt + rgb("#cbd5e1"),
-    inset: (x: 16pt, y: 10pt),
-    radius: 6pt,
-    breakable: false,
-  )[
-    #set text(font: "Liberation Mono", size: 9.5pt, fill: rgb("#0f172a"))
-    ```text
-Side c = ?    Area c² = 25
-squared
-Side c = 5    Area c² = 25
-square root √
-    ```
-  ]
-]
-
-#principe(title: [Définition Fondamentale])[
-#strong[📐 Definition --- Square Root
-]
- For any non-negative real number
+#principe(title: [Definition — Square Root])[For any non-negative real number
 $x gt.eq 0$, the #strong[square root] of $x$, denoted $sqrt(x)$, is the
 unique #strong[non-negative] number whose square equals $x$:
 $ \(sqrt(x)\)^2 = x $
@@ -14107,6 +12558,7 @@ $ \(sqrt(x)\)^2 = x $
   word #emph[radix] (“root”).
 - $sqrt(x)$ reads aloud as #strong[“the square root of $x$”].
 ]
+
 
 ==== Perfect Squares to Memorize:
 <perfect-squares-to-memorize>
@@ -14173,12 +12625,7 @@ fraction could EVER exist].
 This proof stands as one of the supreme peaks of human intellect. Follow
 the logic step-by-step:
 
-#quote_box[
-#strong[✍️ Formal Proof --- The Irrationality of $sqrt(2)$
-]
-
-
-+ #strong[The Counter-Hypothesis (Assumption for Contradiction):]
+#exemple_resolu(title: [Formal Proof — The Irrationality of $sqrt(2)$])[+ #strong[The Counter-Hypothesis (Assumption for Contradiction):]
   Suppose the opposite of our claim: assume there exists a fraction of
   integers $p / q$ equal to $sqrt(2)$. Assume this fraction is written
   in #strong[irreducible form] (simplified to lowest terms: $p$ and $q$
@@ -14210,6 +12657,7 @@ the logic step-by-step:
   $p / q$.]
 ]
 
+
 This discovery sent shockwaves through the ancient world. The
 Pythagoreans termed such lengths #emph[aloga]---“the unspeakable” or
 “that which cannot be spoken aloud.” Today, we call them
@@ -14224,9 +12672,7 @@ or proportion).
   into eternity without ever repeating a fixed pattern!
 
 #quote_box[
-#strong[🔍 Historical Legend --- The Drowning of Hippasus
-]
- According to
+#strong[🔍 Historical Legend --- The Drowning of Hippasus] According to
 ancient lore recounted by the philosopher Iamblichus, the orthodox
 Pythagoreans were so appalled by the collapse of their numerical
 theology that they threw Hippasus overboard during a sea voyage,
@@ -14235,14 +12681,12 @@ $sqrt(2)$. Yet truth cannot be drowned: geometry had irrevocably crossed
 into a new epoch.
 ]
 
+
 #divider()
 
 === 7. Beware of Pitfalls!
 <beware-of-pitfalls-3>
-#alerte(title: [Attention au Piège !])[
-#strong[⚠️ Warning: Costly Errors!
-]
- 1. #strong[The Phantom Square Root
+#alerte(title: [Warning: Costly Errors!])[1. #strong[The Phantom Square Root
 of a Sum:] $ sqrt(a + b) eq.not sqrt(a) + sqrt(b) quad ! $ Verify with
 $a = 9$ and $b = 16$:
 
@@ -14271,6 +12715,7 @@ $a = 9$ and $b = 16$:
 ]
 ]
 
+
 #divider()
 
 === 8. Solved Examples
@@ -14296,25 +12741,6 @@ A $5 upright("-meter")$ rescue ladder leans against a vertical wall. The
 foot of the ladder sits on the ground $1.40 upright(" m")$ from the base
 of the wall. At what vertical height does the top of the ladder touch
 the wall?
-
-#align(center)[
-  #block(
-    fill: rgb("#f8fafc"),
-    stroke: 1pt + rgb("#cbd5e1"),
-    inset: (x: 16pt, y: 10pt),
-    radius: 6pt,
-    breakable: false,
-  )[
-    #set text(font: "Liberation Mono", size: 9.5pt, fill: rgb("#0f172a"))
-    ```text
-Vertical Wall
-Ladder (c = 5 m)
-h = ?   |     \
-Ground
-1.40 m |
-    ```
-  ]
-]
 
 #emph[Solution:] - The vertical wall and horizontal ground form a right
 angle. In right triangle $A B C$: hypotenuse $B C = 5 upright(" m")$,
@@ -14614,10 +13040,9 @@ two trails of Treasure Island]!
 trail. But to locate a buried chest across an open plain, guide a
 galleon through thick sea mist, or map every star in the night sky, one
 must open the universe in two dimensions and marry algebra to
-geometry.”
+geometry.”]
 ]
 
-]
 
 #divider()
 
@@ -14668,22 +13093,11 @@ But in which direction?
 - 50 meters to the West, beneath the tangled roots of a giant banyan
   tree?
 
-#align(center)[
-  #block(
-    fill: rgb("#f8fafc"),
-    stroke: 1pt + rgb("#cbd5e1"),
-    inset: (x: 16pt, y: 10pt),
-    radius: 6pt,
-    breakable: false,
-  )[
-    #set text(font: "Liberation Mono", size: 9.5pt, fill: rgb("#0f172a"))
-    ```text
-50 m North
-50 m West   [ Standing Stone ]   50 m East
-50 m South
-    ```
+#figure(image("figures_en/vol_3/fig_20_repere_cartesien_2d.svg", alt: "The 2D Cartesian coordinate system: x-axis and y-axis"),
+  caption: [
+    The 2D Cartesian coordinate system: x-axis and y-axis
   ]
-]
+)
 
 As we proved in Chapter 16, all the points located at 50 meters from the
 central stone form an #strong[immense circle surrounding the marker]! If
@@ -14717,28 +13131,6 @@ question that no human mind had ever formulated with such precision:
 fly to a friend across the room without needing to climb a ladder and
 point my finger at it?”]
 
-#align(center)[
-  #block(
-    fill: rgb("#f8fafc"),
-    stroke: 1pt + rgb("#cbd5e1"),
-    inset: (x: 16pt, y: 10pt),
-    radius: 6pt,
-    breakable: false,
-  )[
-    #set text(font: "Liberation Mono", size: 9.5pt, fill: rgb("#0f172a"))
-    ```text
-Far Wall (Vertical y-axis)
-4 |             Fly M (3 ; 4)
-3 |            :
-2 |            :
-1 |            :
-Right Wall (Horizontal x-axis)
-O   1   2    3    4    5
-Room Corner
-    ```
-  ]
-]
-
 Descartes looks at the two perpendicular walls meeting in the corner of
 his bedroom: 1. He measures the horizontal distance from the fly to the
 #strong[left wall]: say, #strong[3 meters]. 2. He measures the vertical
@@ -14759,35 +13151,7 @@ any point in a two-dimensional world: Descartes had just invented the
 Upon grid paper, we construct two perpendicular number lines
 intersecting at their common zero:
 
-#align(center)[
-  #block(
-    fill: rgb("#f8fafc"),
-    stroke: 1pt + rgb("#cbd5e1"),
-    inset: (x: 16pt, y: 10pt),
-    radius: 6pt,
-    breakable: false,
-  )[
-    #set text(font: "Liberation Mono", size: 9.5pt, fill: rgb("#0f172a"))
-    ```text
-Vertical y-axis (Ordinates)
-3 |       Quadrant II         Quadrant I
-2 |         (- , +)             (+ , +)
-1 |
-Horizontal  x-axis (Abscissas)
-Number line   -5   -4   -3   -2   -1    O|    1    2    3    4    5
-1 |
-2 |       Quadrant III        Quadrant IV
-3 |         (- , -)             (+ , -)
-    ```
-  ]
-]
-
-#quote_box[
-#strong[📐 Foundational Definitions --- Official Terminology
-]
-
-
-- The intersection of the two perpendicular axes is the #strong[origin],
+#principe(title: [Foundational Definitions — Official Terminology])[- The intersection of the two perpendicular axes is the #strong[origin],
   denoted $O$. Its coordinates are $\(0 thin\;thin 0\)$.
 
 - The horizontal axis is the #strong[$x$-axis] (axis of abscissas). The
@@ -14802,6 +13166,7 @@ Number line   -5   -4   -3   -2   -1    O|    1    2    3    4    5
   $1 upright(" grid unit") = 1 upright(" cm")$ on both axes).
 ]
 
+
 ==== 3.2 Coordinate Notation
 <coordinate-notation>
 For any point $M$, we write its ordered pair:
@@ -14810,10 +13175,7 @@ $ M\(x_M thin\;thin y_M\) $
 - $x_M$ is the #strong[abscissa] ($x$-coordinate).
 - $y_M$ is the #strong[ordinate] ($y$-coordinate).
 
-#quote_box[
-#strong[🧭 Mnemonic Rules --- Never Confuse $x$ and $y$
-]
- 1.
+#principe(title: [Mnemonic Rules — Never Confuse $x$ and $y$])[1.
 #strong[Alphabetical Order:] In the alphabet, #strong[A]bscissa precedes
 #strong[O]rdinate, just as #strong[$x$] precedes #strong[$y$]. The
 $x$-coordinate is ALWAYS written first! 2. #strong[The Apartment
@@ -14823,6 +13185,7 @@ walk down the street to the entrance of their building hallway
 floor (#strong[vertical $y$]). You cannot ride the elevator before you
 enter the lobby!
 ]
+
 
 ==== 3.3 The Four Quadrants
 <the-four-quadrants>
@@ -14850,22 +13213,20 @@ $\[A B\]$? It lies exactly halfway horizontally, and halfway vertically.
 It is simply the #strong[arithmetic mean (average)] of their
 coordinates!
 
-#principe(title: [Définition Fondamentale])[
-#strong[📐 Property --- Midpoint Coordinates
-]
- The coordinates of
+#principe(title: [Property — Midpoint Coordinates])[The coordinates of
 midpoint $I$ of segment $\[A B\]$ are:
 $ x_I = frac(x_A + x_B, 2) quad upright("and") quad y_I = frac(y_A + y_B, 2) $
 ]
+
 
 ==== 4.2 Distance Between Two Points: Pythagoras on the Grid
 <distance-between-two-points-pythagoras-on-the-grid>
 How can we calculate the exact straight-line distance $A B$ between any
 two points in the plane? Observe the diagram:
 
-#figure(image("figures/vol_3/fig_20_distance_plan_cartesien.svg", alt: "Distance euclidienne dans le repère cartésien"),
+#figure(image("figures_en/vol_3/fig_20_distance_plan_cartesien.svg", alt: "Euclidean distance in the Cartesian coordinate system"),
   caption: [
-    Distance euclidienne dans le repère cartésien
+    Euclidean distance in the Cartesian coordinate system
   ]
 )
 
@@ -14883,14 +13244,12 @@ $ A B^2 = A C^2 + B C^2 =\(x_B - x_A\)^2 +\(y_B - y_A\)^2 $
 Taking the square root delivers the universal Cartesian distance
 formula:
 
-#quote_box[
-#strong[📐 Theorem --- Cartesian Distance Formula
-]
- In an orthonormal
+#principe(title: [Theorem — Cartesian Distance Formula])[In an orthonormal
 coordinate plane, the distance between points $A\(x_A thin\;thin y_A\)$
 and $B\(x_B thin\;thin y_B\)$ is:
 $ A B = sqrt(\(x_B - x_A\)^2 +\(y_B - y_A\)^2) $
 ]
+
 
 #divider()
 
@@ -14969,12 +13328,7 @@ $ \(- 3\)times\(- 4\)= upright(bold(+ 12)) $
 If negative times negative did not equal positive, the entire framework
 of algebra would collapse into contradiction!
 
-#quote_box[
-#strong[📐 The Rule of Signs --- Multiplication and Division
-]
-
-
-- The product (or quotient) of two numbers with the #strong[same sign]
+#principe(title: [The Rule of Signs — Multiplication and Division])[- The product (or quotient) of two numbers with the #strong[same sign]
   is #strong[POSITIVE]:
   $ \(+\)times\(+\)=\(+\)quad upright("and") quad\(-\)times\(-\)=\(+\) $
 
@@ -14990,14 +13344,12 @@ For a product of multiple non-zero factors:
   product.
 ]
 
+
 #divider()
 
 === 6. Beware of Pitfalls!
 <beware-of-pitfalls-4>
-#alerte(title: [Attention au Piège !])[
-#strong[⚠️ Warning: Never Confuse Addition and Multiplication!
-]
- 1.
+#alerte(title: [Warning: Never Confuse Addition and Multiplication!])[1.
 #strong[The Deadly Sign Confusion:]
 $ - 3 - 5 = upright(bold(- 8)) quad\(upright("losing 3, then losing 5: this is addition/subtraction!")\) $
 $ \(- 3\)times\(- 5\)= upright(bold(+ 15)) quad\(upright("this is multiplication!")\) $
@@ -15011,6 +13363,7 @@ the horizontal leg length is:
 $ x_B - x_A = 4 -\(- 3\)= 4 + 3 = upright(bold(7)) $ Watch out for the
 double negative turning into addition!
 ]
+
 
 #divider()
 
@@ -15326,10 +13679,9 @@ our final chapter!
 surrenders three silver coins out of ten to that of an opulent merchant
 who yields thirty out of one hundred and fifty? To render justice blind
 and compare the incomparable, the human mind forged a magic mirror where
-every crowd is reduced to an ideal assembly of one hundred citizens.”
+every crowd is reduced to an ideal assembly of one hundred citizens.”]
 ]
 
-]
 
 #divider()
 
@@ -15381,17 +13733,12 @@ earned an enormous fortune compared to my humble shop! My 30 ecus
 represent a painful butchery of my meager earnings, while your 72 ecus
 are a mere drop in your golden vaults!”]
 
-#decouvre(title: [Découverte & Histoire])[
-#strong[💡 Découverte & Histoire --- La querelle des marchands
-médiévaux
-]
-
-
-- Geoffroy (Small merchant) Barthélemy (Wealthy merchant)
+#decouvre(title: [Discovery & History — The Dispute of Medieval Merchants])[- Geoffroy (Small merchant) Barthélemy (Wealthy merchant)
 - 150 ecus) (400 ecus)
 - Tax: 30 ecus Tax: 72 ecus
 - Part = 30 / 150 Part = 72 / 400
 ]
+
 
 The provost of the fair is summoned to judge the dispute. Who is truly
 taxed more heavily?
@@ -15423,14 +13770,12 @@ hundred]. This is the birth of the #strong[percentage].
 <the-percentage-a-fraction-over-one-hundred>
 ==== 2.1 Notation and Meaning
 <notation-and-meaning>
-#principe(title: [Définition Fondamentale])[
-#strong[📐 Definition --- Percentage
-]
- A #strong[percentage] is a
+#principe(title: [Definition — Percentage])[A #strong[percentage] is a
 standardized way of writing a fraction whose #strong[denominator is
 equal to 100]: $ t % = t / 100 $ The symbol #strong[$%$] reads aloud as
 #strong[“percent”] (literally #emph[“per hundred”]).
 ]
+
 
 - $50 % = 50 / 100 = 1 / 2 = 0.5$ (one half).
 - $25 % = 25 / 100 = 1 / 4 = 0.25$ (one quarter).
@@ -15439,15 +13784,14 @@ equal to 100]: $ t % = t / 100 $ The symbol #strong[$%$] reads aloud as
 - $100 % = 100 / 100 = 1$ (the entirety, the whole).
 
 #quote_box[
-#strong[💡 Where Did the Symbol $%$ Come From?
-]
- In 15th-century Italy,
+#strong[💡 Where Did the Symbol $%$ Come From?] In 15th-century Italy,
 merchant scribes abbreviated the phrase #emph[per cento] as
 #emph[p.~100] or #emph[p.~c.]. Over centuries of rapid quill-work, the
 letter #emph[p] vanished, the horizontal fraction stroke tilted into a
 forward slash, and the two zeros of 100 perched above and below the bar,
 giving birth to our modern $%$ sign.
 ]
+
 
 ==== 2.2 The Two Foundational Computations
 <the-two-foundational-computations>
@@ -15491,12 +13835,7 @@ $ upright("New Price") = 80 - 80 times 30 / 100 = 80 times (1 - 30 / 100) = 80 t
 Paying with a $30 %$ discount is mathematically identical to paying
 #strong[$70 %$ of the original price]!
 
-#quote_box[
-#strong[📐 Theorem --- Multiplier Coefficients
-]
-
-
-- To #strong[increase] a quantity by $t %$, multiply it by:
+#principe(title: [Theorem — Multiplier Coefficients])[- To #strong[increase] a quantity by $t %$, multiply it by:
   $ C = 1 + t / 100 $ #emph[\(Example: a $20 %$ increase
   $arrow.r.double.long times 1.20$\; a $5 %$ increase
   $arrow.r.double.long times 1.05$)]
@@ -15506,6 +13845,7 @@ Paying with a $30 %$ discount is mathematically identical to paying
   $arrow.r.double.long times 0.85$\; a $40 %$ discount
   $arrow.r.double.long times 0.60$)]
 ]
+
 
 #divider()
 
@@ -15541,27 +13881,19 @@ information.
 
 ==== 4.2 Three Standard Graphic Displays
 <three-standard-graphic-displays>
+
 #align(center)[
-  #block(
-    fill: rgb("#f8fafc"),
-    stroke: 1pt + rgb("#cbd5e1"),
-    inset: (x: 16pt, y: 10pt),
-    radius: 6pt,
-    breakable: false,
-  )[
-    #set text(font: "Liberation Mono", size: 9.5pt, fill: rgb("#0f172a"))
-    ```text
-1. BAR CHART                   2. HISTOGRAM (grouped bins)     3. PIE CHART
-Count                          Count
-6 |    |                       6 |                            .'     '.
-4 |    |   |                   4 |                       / 40% \ 25%/
-2 |  | | | |                   2 |                           |----------|
-0                  0                  \  35% /   /
-8 10 12 15                     [0;5) [5;10) [10;15)            '.     .'
-Scores                          Intervals                     '---'
-    ```
-  ]
+  #table(
+    columns: (1fr, 1fr, 1fr),
+    align: center + horizon,
+    stroke: 0.5pt + rgb("#cbd5e1"),
+    fill: (x, y) => if y == 0 { rgb("#eff6ff") } else { rgb("#ffffff") },
+    [*1. Bar Chart*], [*2. Histogram (bins)*], [*3. Pie Chart*],
+    [Isolated discrete values], [Adjacent continuous intervals], [Slices proportional to $360 degree$],
+    [Height proportional to count], [Area proportional to count], [Angle proportional to frequency (%)]
+  )
 ]
+
 
 In a #strong[pie chart], the surface area and central angle of each
 slice are strictly proportional to its frequency:
@@ -15596,10 +13928,7 @@ ordered data set into two groups of identical size:
 - At least $50 %$ of individuals have a value greater than or equal to
   the median.
 
-#methode(title: [Méthode Pas à Pas])[
-#strong[🧭 Method --- Finding the Median of a Data Set
-]
- 1. You
+#methode(title: [Method — Finding the Median of a Data Set])[1. You
 #strong[must first sort] all data values in ascending order (from
 smallest to largest). 2. Determine half the sample size: $N / 2$.
 
@@ -15614,6 +13943,7 @@ smallest to largest). 2. Determine half the sample size: $N / 2$.
   $= frac(upright("4th value") + upright("5th value"), 2)$).]
 ]
 
+
 ==== 5.3 The Range ($R$): Measuring Dispersion
 <the-range-r-measuring-dispersion>
 The #strong[range] measures the overall spread or dispersion of the data
@@ -15625,10 +13955,7 @@ group). A large range indicates substantial disparity.
 
 === 6. Beware of Pitfalls!
 <beware-of-pitfalls-5>
-#alerte(title: [Attention au Piège !])[
-#strong[⚠️ Warning: Statistical Illusions!
-]
- 1. #strong[The Consecutive
+#alerte(title: [Warning: Statistical Illusions!])[1. #strong[The Consecutive
 Increase and Decrease Trap:] #emph[“If an item rises in price by $20 %$
 and subsequently drops by $20 %$, does it return to its original
 price?”] #strong[ABSOLUTELY NOT, NEVER!] Test with an initial price of
@@ -15659,6 +13986,7 @@ $\$100$:
     reflects the true economic reality of the majority!
 ]
 ]
+
 
 #divider()
 
@@ -16081,7 +14409,7 @@ Balance of Al-Khwarizmi]!
 
 #divider()
 
-#frontispice-volume("figures/nature/vol_4_romanesco_fractale.jpg")
+#frontispice-volume("figures_en/nature/vol_4_romanesco_fractale.jpg")
 
 #ouverture-volume(
   "IV",
@@ -16104,10 +14432,9 @@ Balance of Al-Khwarizmi]!
 #emph[“The ignorant man forces the lock and tears open the bag to see
 what is hidden inside. The mathematician observes the two arms of the
 scale, removes a weight on the left, a weight on the right, and the
-unknown reveals itself in the clear light of reason.”
+unknown reveals itself in the clear light of reason.”]
 ]
 
-]
 
 #divider()
 
@@ -16158,22 +14485,11 @@ scale with two pans].
 The beam of the scale rocks slowly… and comes to rest, #strong[perfectly
 horizontal].
 
-#align(center)[
-  #block(
-    fill: rgb("#f8fafc"),
-    stroke: 1pt + rgb("#cbd5e1"),
-    inset: (x: 16pt, y: 10pt),
-    radius: 6pt,
-    breakable: false,
-  )[
-    #set text(font: "Liberation Mono", size: 9.5pt, fill: rgb("#0f172a"))
-    ```text
-Bag ] + 3 kg                     11 kg
-oo                        oo
-Scale Fulcrum
-    ```
+#figure(image("figures_en/vol_4/fig_22_balance_al_khwarizmi.svg", alt: "Al-Khwarizmi’s balance scale and the equilibrium of equations"),
+  caption: [
+    Al-Khwarizmi's balance scale and the equilibrium of equations
   ]
-]
+)
 
 #emph[“This bag contains pure gold dust. Whoever tells me its exact
 weight without breaking the seal will leave with all the gold! But
@@ -16191,22 +14507,6 @@ With his left hand, he removes the #strong[3 ingots] from the left pan:
 the pan lightens and rises. But instantly, with his right hand, he
 removes #strong[3 ingots] from the right pan. The beam settles back down
 and rests once more, #strong[level and still].
-
-#align(center)[
-  #block(
-    fill: rgb("#f8fafc"),
-    stroke: 1pt + rgb("#cbd5e1"),
-    inset: (x: 16pt, y: 10pt),
-    radius: 6pt,
-    breakable: false,
-  )[
-    #set text(font: "Liberation Mono", size: 9.5pt, fill: rgb("#0f172a"))
-    ```text
-Bag ]                          8 kg
-oo                        oo
-    ```
-  ]
-]
 
 On the left: the bag, all alone. On the right: $11 - 3 = 8$ ingots.
 #emph[“The bag weighs eight kilograms.”] The merchant pales, breaks the
@@ -16243,14 +14543,12 @@ $L times ell$. These formulas say something that is true #strong[for all
 squares], for #strong[all rectangles], all at once. That is the great
 power of letters: #strong[a single statement for an infinity of cases].
 
-#principe(title: [Définition Fondamentale])[
-#strong[📐 Definition --- Algebraic Expression.
-]
- An #emph[algebraic
+#principe(title: [Definition — Algebraic Expression.])[An #emph[algebraic
 expression] is a sequence of operations in which certain numbers are
 replaced by letters. Examples: $3 x + 5$\; $thick 2\(a - 4\)$\;
 $thick x^2 - 7 x + 1$.
 ]
+
 
 ==== 2.2 Notational Conventions (and How to Read Them)
 <notational-conventions-and-how-to-read-them>
@@ -16288,10 +14586,7 @@ Safety rules:
   Thus $3 x^2$ means $3 times\(x times x\)$ and #strong[not]
   $\(3 x\)times\(3 x\)$.
 
-#quote_box[
-#strong[🔍 True History --- Who Invented Letters in Math?
-]
- Al-Khwarizmi
+#decouvre(title: [True History — Who Invented Letters in Math?])[Al-Khwarizmi
 himself wrote #strong[no symbols at all]! Everything was written out in
 words: “a square and ten roots equal thirty-nine dirhams” (which we
 write $x^2 + 10 x = 39$). He called the unknown #emph[shay'] (“the
@@ -16307,16 +14602,15 @@ convention. A popular tale claims that $x$ comes from the Arabic word
 story, but no historical document confirms it.
 ]
 
-#decouvre(title: [Découverte & Histoire])[
-#strong[💡 Did You Know?
-]
- The symbols $+$ and $-$ first appeared in
+
+#decouvre(title: [Did You Know?])[The symbols $+$ and $-$ first appeared in
 print in 1489 in a commercial arithmetic book by the German Johannes
 Widmann. The equals sign $=$ was invented in 1557 by the Welsh
 mathematician #strong[Robert Recorde], who grew tired of writing “is
 equal to”: he chose two parallel line segments of identical length,
 “bicause noe 2 thynges can be moare equalle.”
 ]
+
 
 ==== 2.3 Evaluating an Expression (Substitution)
 <evaluating-an-expression-substitution>
@@ -16325,11 +14619,8 @@ The process is straightforward, but it requires two safeguards:
 #strong[reinsert the multiplication signs $times$] and #strong[put
 negative numbers in parentheses].
 
-#quote_box[
-#strong[✏️ Worked Example 1 --- Evaluating an expression for several
-values.
-]
- Let $A = 3 x^2 - 5 x + 2$. Evaluate $A$ for $x = 4$, then for
+#exemple_resolu(title: [✏️ Worked Example 1 — Evaluating an expression for several
+values.])[Let $A = 3 x^2 - 5 x + 2$. Evaluate $A$ for $x = 4$, then for
 $x = - 2$.
 
 For $x = 4$:
@@ -16342,12 +14633,8 @@ Note: $\(- 2\)^2 =\(- 2\)times\(- 2\)= 4$ (the rule of signs from
 Chapter 20), and $- 5 times\(- 2\)= + 10$.
 ]
 
-#alerte(title: [Attention au Piège !])[
-#strong[⚠️ Watch Out! Common Pitfall --- Squaring and the Minus Sign.
-]
 
-
-- $- x^2$ means “the opposite of $x^2$”. For $x = 3$: $- x^2 = - 9$.
+#alerte(title: [Watch Out! Common Pitfall — Squaring and the Minus Sign.])[- $- x^2$ means “the opposite of $x^2$”. For $x = 3$: $- x^2 = - 9$.
 
 - $\(- x\)^2$ means “the square of the opposite of $x$”. For $x = 3$:
   $\(- 3\)^2 = 9$.
@@ -16359,6 +14646,7 @@ Chapter 20), and $- 5 times\(- 2\)= + 10$.
 - And $x times x = x^2$, #strong[not] $2 x$! For $x = 5$: $x^2 = 25$
   whereas $2 x = 10$.
 ]
+
 
 #divider()
 
@@ -16374,12 +14662,7 @@ grouped into $7 x + 10$. The “$x$” terms go with the “$x$” terms, and
 the standalone constants with standalone constants. But $7 x + 10$
 cannot become $17 x$: they are not objects of the same nature.
 
-#principe(title: [Définition Fondamentale])[
-#strong[📐 Definition --- Like Terms, Combining Like Terms.
-]
-
-
-- In a sum, each piece separated by $+$ or $-$ is a #strong[term]. In
+#principe(title: [Definition — Like Terms, Combining Like Terms.])[- In a sum, each piece separated by $+$ or $-$ is a #strong[term]. In
   $5 x^2 - 3 x + 8$, the terms are $5 x^2$, $- 3 x$, and $8$.
 
 - The number placed in front of the variable part is called the
@@ -16394,14 +14677,12 @@ cannot become $17 x$: they are not objects of the same nature.
   is written in its shortest possible form.
 ]
 
+
 Why are we allowed to write $5 x + 2 x = 7 x$? Because $5 x + 2 x$ is “5
 bags plus 2 bags,” hence 7 bags. We will prove this rigorously in a
 moment using the distributive property.
 
-#quote_box[
-#strong[✏️ Worked Example 2 --- Combining like terms.
-]
- a)
+#exemple_resolu(title: [✏️ Worked Example 2 — Combining like terms.])[a)
 $B = 5 x + 3 - 2 x + 7$. We group: $\(5 x - 2 x\)+\(3 + 7\)= 3 x + 10$.
 
 #block[
@@ -16419,12 +14700,8 @@ $B = 5 x + 3 - 2 x + 7$. We group: $\(5 x - 2 x\)+\(3 + 7\)= 3 x + 10$.
 ]
 ]
 
-#alerte(title: [Attention au Piège !])[
-#strong[⚠️ Watch Out! Common Pitfall --- What Cannot Be Combined.
-]
 
-
-- $2 x + 3$ #strong[does not equal] $5 x$. Test: for $x = 10$,
+#alerte(title: [Watch Out! Common Pitfall — What Cannot Be Combined.])[- $2 x + 3$ #strong[does not equal] $5 x$. Test: for $x = 10$,
   $2 x + 3 = 23$, but $5 x = 50$.
 
 - $x^2 + x$ #strong[does not equal] $x^3$ nor $2 x^2$. Test: for
@@ -16433,6 +14710,7 @@ $B = 5 x + 3 - 2 x + 7$. We group: $\(5 x - 2 x\)+\(3 + 7\)= 3 x + 10$.
 - $3 x^2 + 2 x^2 = 5 x^2$, #strong[and not] $5 x^4$: we are adding
   “packets of $x^2$”, we are not multiplying.
 ]
+
 
 #divider()
 
@@ -16451,38 +14729,25 @@ total number of beads is identical! Therefore, $3\(a + b\)= 3 a + 3 b$.
 Draw a rectangle of height $k$ and width $a + b$, partitioned into two
 parts:
 
-#align(center)[
-  #block(
-    fill: rgb("#f8fafc"),
-    stroke: 1pt + rgb("#cbd5e1"),
-    inset: (x: 16pt, y: 10pt),
-    radius: 6pt,
-    breakable: false,
-  )[
-    #set text(font: "Liberation Mono", size: 9.5pt, fill: rgb("#0f172a"))
-    ```text
-a              b
-k     area k×a    area k×b
-a + b
-    ```
-  ]
+#principe(title: [Fundamental Rule — Geometric View of Single Distributivity])[- a b
+- k area k×a area k×b
+- a + b
 ]
+
 
 The area of the large rectangle is $k times\(a + b\)$. But it is also
 the sum of the areas of the two smaller rectangles:
 $k times a + k times b$. #strong[One and the same surface, two ways to
 calculate its area]: they must be equal.
 
-#principe(title: [Définition Fondamentale])[
-#strong[📐 Property --- The Distributive Property.
-]
- For any real numbers
+#principe(title: [Property — The Distributive Property.])[For any real numbers
 $k$, $a$, $b$:
 $ k\(a + b\)= k a + k b #h(2em) upright("and") #h(2em) k\(a - b\)= k a - k b . $
 Read from left to right, we #strong[expand] (converting a product into a
 sum). Read from right to left, we #strong[factor] (converting a sum into
 a product, factoring out the #strong[greatest common factor] $k$).
 ]
+
 
 The word “distributivity” comes from the image of the multiplier $k$
 being #strong[distributed] to each term inside the parentheses, just as
@@ -16491,10 +14756,7 @@ a mail carrier delivers a letter to every mailbox on the street.
 And here is the promised proof of $5 x + 2 x = 7 x$: it is simply the
 distributive property read in reverse: $5 x + 2 x =\(5 + 2\)x = 7 x$.
 
-#quote_box[
-#strong[✏️ Worked Example 3 --- Expanding and simplifying.
-]
- a)
+#exemple_resolu(title: [✏️ Worked Example 3 — Expanding and simplifying.])[a)
 $3\(2 x - 5\)= 3 times 2 x - 3 times 5 = 6 x - 15$.
 
 #block[
@@ -16508,38 +14770,30 @@ $3\(2 x - 5\)= 3 times 2 x - 3 times 5 = 6 x - 15$.
 ]
 ]
 
+
 ==== 4.3 The Minus Sign in Front of Parentheses
 <the-minus-sign-in-front-of-parentheses>
 Parentheses preceded by a minus sign secretly conceal a factor of $- 1$:
 $-\(a + b\)=\(- 1\)times\(a + b\)= - a - b$. Consequently:
 
-#principe(title: [Définition Fondamentale])[
-#strong[📐 Rule --- Removing Parentheses.
-]
-
-
-- Preceded by $+$: remove the parentheses #strong[without changing
+#principe(title: [Rule — Removing Parentheses.])[- Preceded by $+$: remove the parentheses #strong[without changing
   anything]. $thick 7 +\(3 x - 2\)= 7 + 3 x - 2$.
 - Preceded by $-$: remove the parentheses #strong[by reversing the sign
   of every term] inside. $thick 7 -\(3 x - 2\)= 7 - 3 x + 2 = 9 - 3 x$.
 ]
 
-#alerte(title: [Attention au Piège !])[
-#strong[⚠️ Watch Out! Common Pitfall.
-]
- The most frequent error in middle
+
+#alerte(title: [Watch Out! Common Pitfall.])[The most frequent error in middle
 school: writing $7 -\(3 x - 2\)= 7 - 3 x - 2$. The student forgot to
 flip the sign of the #strong[second] term! Test with $x = 0$:
 $7 -\(0 - 2\)= 9$, but $7 - 0 - 2 = 5$. The test exposes the blunder in
 two seconds.
 ]
 
+
 ==== 4.4 Factoring: The Return Journey
 <factoring-the-return-journey>
-#quote_box[
-#strong[✏️ Worked Example 4 --- Factoring out a common factor.
-]
- a)
+#exemple_resolu(title: [✏️ Worked Example 4 — Factoring out a common factor.])[a)
 $6 x + 9$: $6 x = 3 times 2 x$ and $9 = 3 times 3$. Common factor $3$:
 $6 x + 9 = 3\(2 x + 3\)$.
 
@@ -16555,6 +14809,7 @@ $6 x + 9 = 3\(2 x + 3\)$.
 #strong[Systematic Verification]: expand back out.
 $5 x\(x - 2\)= 5 x^2 - 10 x$ ✓.
 ]
+
 
 Why factor? Because a #strong[product] is often far easier to study than
 a sum. You will see in the next chapter that factoring allows us to
@@ -16574,10 +14829,9 @@ solve equations that no physical scale could ever untangle.
 #emph[“Do not recite an algebraic formula like a magical incantation.
 Close your eyes and look at the tiled floor: cut a rectangle, shift a
 corner, complete the missing square. Letters are nothing other than the
-sides of geometric shapes fitting together under your fingers.”
+sides of geometric shapes fitting together under your fingers.”]
 ]
 
-]
 
 #divider()
 
@@ -16624,9 +14878,9 @@ thought.
 Al-Khwarizmi, present during the audience, smiled quietly and sketched a
 figure in the fine sand with the tip of his reed cane:
 
-#figure(image("figures/vol_4/fig_23_identite_remarquable_carre.svg", alt: "Preuve géométrique de l’identité remarquable (a+b)²"),
+#figure(image("figures_en/vol_4/fig_23_identite_remarquable_carre.svg", alt: "Geometric proof of the special product (a+b)²"),
   caption: [
-    Preuve géométrique de l'identité remarquable (a+b)²
+    Geometric proof of the special product (a+b)²
   ]
 )
 
@@ -16668,9 +14922,9 @@ two segments?
 Let us draw a rectangle whose total length is $\(a + b\)$ and whose
 total width is $\(c + d\)$.
 
-#figure(image("figures/vol_4/fig_23_distributivite_double.svg", alt: "Distributivité de la multiplication sur l’addition"),
+#figure(image("figures_en/vol_4/fig_23_distributivite_double.svg", alt: "Distributivity of multiplication over addition"),
   caption: [
-    Distributivité de la multiplication sur l'addition
+    Distributivity of multiplication over addition
   ]
 )
 
@@ -16682,15 +14936,12 @@ of the 4 interior plots: $ a c + a d + b c + b d . $
 Since both calculations measure the exact same surface, they are
 strictly equal.
 
-#quote_box[
-#strong[📐 Fundamental Property --- The Double Distributive Property.
-]
-
-For any real numbers $a\,b\,c\,d$:
+#principe(title: [Fundamental Property — The Double Distributive Property.])[For any real numbers $a\,b\,c\,d$:
 $ \(a + b\)\(c + d\)= a c + a d + b c + b d . $ Every term in the first
 pair of parentheses is multiplied by every term in the second pair of
 parentheses. This produces 4 pairwise multiplications.
 ]
+
 
 ==== 2.2 The Arrow Rule and Managing Signs
 <the-arrow-rule-and-managing-signs>
@@ -16703,11 +14954,8 @@ method]: First, Outer, Inner, Last):
 + #strong[Inner:] $b times c = b c$
 + #strong[Last:] $b times d = b d$
 
-#alerte(title: [Attention au Piège !])[
-#strong[⚠️ Watch Out! Pitfall --- The Sign Belongs to the Term Following
-It!
-]
- When a factor contains a subtraction, such as
+#alerte(title: [Watch Out! Pitfall — The Sign Belongs to the Term Following
+It!])[When a factor contains a subtraction, such as
 $\(2 x - 3\)\(x + 4\)$, view the first factor as consisting of the terms
 $\(+ 2 x\)$ and $\(- 3\)$. Then apply the sign rules rigorously (Chapter
 20): \* $\(+ 2 x\)times\(+ x\)= + 2 x^2$ \*
@@ -16716,6 +14964,7 @@ $\(- 3\)times\(+ 4\)= - 12$ Then #strong[simplify] by combining like
 terms:
 $ \(2 x - 3\)\(x + 4\)= 2 x^2 + 8 x - 3 x - 12 = 2 x^2 + 5 x - 12 . $
 ]
+
 
 #divider()
 
@@ -16745,14 +14994,13 @@ The middle term $2 a b$ is known as the #strong[cross product] or
 #strong[double product].
 
 #quote_box[
-#strong[📐 First Special Product --- Square of a Sum.
-]
- For any real
+#strong[📐 First Special Product --- Square of a Sum.] For any real
 numbers $a$ and $b$: $ \(a + b\)^2 = a^2 + 2 a b + b^2 . $ #emph[In
 plain words:] “The square of a sum equals the square of the first term,
 plus twice the product of the terms, plus the square of the second
 term.”
 ]
+
 
 ==== 3.2 Second Identity: The Square of a Difference $\(a - b\)^2$
 <second-identity-the-square-of-a-difference-a-b2>
@@ -16760,9 +15008,9 @@ Now imagine a large square of side length $a$, with total area $a^2$. We
 want to determine the area of a smaller square nestled in the top-left
 corner, of side length $\(a - b\)$. Its area is $\(a - b\)^2$.
 
-#figure(image("figures/vol_4/fig_23_difference_deux_carres.svg", alt: "Différence de deux carrés : (a+b)(a-b) = a² - b²"),
+#figure(image("figures_en/vol_4/fig_23_difference_deux_carres.svg", alt: "Difference of two squares: (a+b)(a-b) = a² - b²"),
   caption: [
-    Différence de deux carrés : (a+b)(a-b) = a² - b²
+    Difference of two squares: (a+b)(a-b) = a² - b²
   ]
 )
 
@@ -16784,23 +15032,20 @@ distributivity to $\(a - b\)\(a - b\)$:
 $ \(a - b\)\(a - b\)= a times a - a times b - b times a +\(- b\)times\(- b\)= a^2 - 2 a b + b^2 . $
 
 #quote_box[
-#strong[📐 Second Special Product --- Square of a Difference.
-]
- For any
+#strong[📐 Second Special Product --- Square of a Difference.] For any
 real numbers $a$ and $b$: $ \(a - b\)^2 = a^2 - 2 a b + b^2 . $ #emph[In
 plain words:] “The square of a difference equals the square of the first
 term, minus twice the product of the terms, plus the square of the
 second term.”
 ]
 
-#alerte(title: [Attention au Piège !])[
-#strong[⚠️ Watch Out! Pitfall.
-]
- In $\(a - b\)^2 = a^2 - 2 a b + b^2$,
+
+#alerte(title: [Watch Out! Pitfall.])[In $\(a - b\)^2 = a^2 - 2 a b + b^2$,
 the final term is #strong[always preceded by a plus sign $+$]! Indeed,
 $\(- b\)times\(- b\)= + b^2$. Only the double product carries the minus
 sign.
 ]
+
 
 ==== 3.3 Third Identity: The Product of a Sum and a Difference $\(a + b\)\(a - b\)$
 <third-identity-the-product-of-a-sum-and-a-difference-aba-b>
@@ -16823,13 +15068,12 @@ The two middle terms cancel because $- a b + b a = 0$. What remains is:
 $ \(a + b\)\(a - b\)= a^2 - b^2 . $
 
 #quote_box[
-#strong[📐 Third Special Product --- Difference of Two Squares.
-]
- For any
+#strong[📐 Third Special Product --- Difference of Two Squares.] For any
 real numbers $a$ and $b$: $ \(a + b\)\(a - b\)= a^2 - b^2 . $ This
 identity is universally celebrated as the #strong[difference of
 squares].
 ]
+
 
 ==== 3.4 Summary Table of Special Products
 <summary-table-of-special-products>
@@ -16874,10 +15118,7 @@ without scrap paper or calculators!
 - #strong[Calculating $105 times 95$:]
   $ 105 times 95 =\(100 + 5\)\(100 - 5\)= 100^2 - 5^2 = 10 thin 000 - 25 = 9 thin 975 . $
 
-#decouvre(title: [Découverte & Histoire])[
-#strong[💡 Did You Know?
-]
- In Antiquity, the Babylonians possessed no
+#decouvre(title: [Did You Know?])[In Antiquity, the Babylonians possessed no
 multiplication tables for all numbers. However, they possessed engraved
 clay tables of squares ($1^2\,2^2\,3^2\,dots.h$). To multiply any two
 arbitrary numbers $x$ and $y$, they utilized the formula:
@@ -16885,6 +15126,7 @@ $ x times y = frac(\(x + y\)^2 -\(x - y\)^2, 4) . $ By calculating the
 sum, the difference, and looking up their squares in their tables, they
 found the product instantaneously!
 ]
+
 
 #divider()
 
@@ -16929,11 +15171,8 @@ $ A = underline(\(3 x + 2\))\(x - 5\)+ underline(\(3 x + 2\))\(2 x + 1\) $
 $ A = underline(\(3 x + 2\)) [\( x - 5 \) + \( 2 x + 1 \)] $
 $ A =\(3 x + 2\)\[x - 5 + 2 x + 1\] $ $ A =\(3 x + 2\)\(3 x - 4\). $
 
-#alerte(title: [Attention au Piège !])[
-#strong[⚠️ Watch Out! Pitfall --- When the Common Factor Stands “All
-Alone”!
-]
- Consider the expression $B =\(2 x + 1\)^2 -\(2 x + 1\)$.
+#alerte(title: [Watch Out! Pitfall — When the Common Factor Stands “All
+Alone”!])[Consider the expression $B =\(2 x + 1\)^2 -\(2 x + 1\)$.
 Remember that $\(2 x + 1\)^2 =\(2 x + 1\)\(2 x + 1\)$ and
 $\(2 x + 1\)=\(2 x + 1\)times 1$. When factoring out $\(2 x + 1\)$, the
 second term does not vanish into thin air; it leaves behind the number
@@ -16941,6 +15180,7 @@ $1$:
 $ B = underline(\(2 x + 1\))\(2 x + 1\)- underline(\(2 x + 1\)) times 1 = underline(\(2 x + 1\)) [\( 2 x + 1 \) - 1] =\(2 x + 1\)\(2 x\)= 2 x\(2 x + 1\). $
 Writing $B =\(2 x + 1\)\(2 x + 1\)=\(2 x + 1\)^2$ is a disastrous error!
 ]
+
 
 ==== 4.2 Second Technique: Recognizing a Special Product
 <second-technique-recognizing-a-special-product>
@@ -16978,24 +15218,19 @@ If you choose $A = 4$, for the product to be $0$, $B$ must
 zero (for instance $2 times 3 = 6$ or $\(- 5\)times 0.1 = - 0.5$), their
 product can #strong[never] equal zero!
 
-#quote_box[
-#strong[📐 Theorem --- Zero-Product Property.
-]
- A product of factors
+#principe(title: [Theorem — Zero-Product Property.])[A product of factors
 equals zero #strong[if and only if] at least one of its factors equals
 zero:
 $ A times B = 0 quad arrow.l.r.double quad A = 0 quad upright("or") quad B = 0 . $
 ]
+
 
 This theorem is momentous: it shatters a difficult second-degree
 equation into #strong[two straightforward first-degree equations]!
 
 ==== 5.2 Step-by-Step Method of Presentation
 <step-by-step-method-of-presentation>
-#methode(title: [Méthode Pas à Pas])[
-#strong[🧭 Method --- Solving a Zero-Product Equation.
-]
- Let us solve the
+#methode(title: [Method — Solving a Zero-Product Equation.])[Let us solve the
 equation $\(3 x - 12\)\(2 x + 8\)= 0$.
 
 + #strong[Introductory statement:] “A product of factors is zero if and
@@ -17014,10 +15249,8 @@ equation $\(3 x - 12\)\(2 x + 8\)= 0$.
   denote the solution set by $S = { - 4\,4 }$.
 ]
 
-#alerte(title: [Attention au Piège !])[
-#strong[⚠️ Watch Out! Pitfall --- Never Divide by $x$!
-]
- Faced with an
+
+#alerte(title: [Watch Out! Pitfall — Never Divide by $x$!])[Faced with an
 equation like $x^2 = 5 x$, a tempting but disastrous mistake is to
 divide both sides by $x$ to conclude $x = 5$. In doing so, #strong[you
 murder the solution $x = 0$]! (Because division by zero is strictly
@@ -17026,6 +15259,7 @@ produce a zero on the right, then factor:
 $ x^2 - 5 x = 0 arrow.l.r.double x\(x - 5\)= 0 arrow.l.r.double x = 0 quad upright("or") quad x - 5 = 0 arrow.l.r.double x = 0 quad upright("or") quad x = 5 . $
 There are genuinely two solutions: $0$ and $5$.
 ]
+
 
 #divider()
 
@@ -17062,23 +15296,21 @@ The answer depends entirely on the #strong[sign of $a$].
   #emph[Example:] $x^2 = - 4$ has no real solution. We write
   $S = nothing$ (the empty set).
 
+
 #align(center)[
-  #block(
-    fill: rgb("#f8fafc"),
-    stroke: 1pt + rgb("#cbd5e1"),
-    inset: (x: 16pt, y: 10pt),
-    radius: 6pt,
-    breakable: false,
-  )[
-    #set text(font: "Liberation Mono", size: 9.5pt, fill: rgb("#0f172a"))
-    ```text
-Equation: x² = a
-a > 0                    a = 0                    a < 0
-Two solutions:          One solution:           No real solution:
-x = √a  or  x = -√a           x = 0                 Impossible!
-    ```
-  ]
+  #table(
+    columns: (1fr, 1fr, 1fr),
+    align: center,
+    stroke: 0.5pt + rgb("#cbd5e1"),
+    fill: (x, y) => if y == 0 { rgb("#eff6ff") } else { rgb("#ffffff") },
+    [*Cas $a > 0$*], [*Cas $a = 0$*], [*Cas $a < 0$*],
+    [Deux solutions opposées :
+$x = sqrt(a)$ ou $x = -sqrt(a)$], [Une solution unique :
+$x = 0$], [Aucune solution réelle :
+Impossible dans $bb(R)$ ($S = emptyset$)]
+  )
 ]
+
 
 #divider()
 
@@ -17519,10 +15751,9 @@ and Inequalities].
 peace. But the moment one pan plunges, motion is born. Inequality is not
 a defect of justice: it is the driving engine of commerce, the breakeven
 threshold, the exact frontier where one decision becomes superior to
-another.”
+another.”]
 ]
 
-]
 
 #divider()
 
@@ -17567,21 +15798,10 @@ ship captains:
   seasonal patron card for 30 ducats, and I will deliver every liter of
   oil to you for only 4 ducats per liter!”]
 
-#align(center)[
-  #block(
-    fill: rgb("#f8fafc"),
-    stroke: 1pt + rgb("#cbd5e1"),
-    inset: (x: 16pt, y: 10pt),
-    radius: 6pt,
-    breakable: false,
-  )[
-    #set text(font: "Liberation Mono", size: 9.5pt, fill: rgb("#0f172a"))
-    ```text
-Giovanni's Tariff:  Total Price = 6 × Number of liters
-Marco's Tariff   :  Total Price = 30 + 4 × Number of liters
-    ```
-  ]
+#decouvre(title: [Solved Example — Comparing Pricing Plans (Affine Modeling)])[- Giovanni's Tariff: Total Price = 6 × Number of liters
+- Marco's Tariff : Total Price = 30 + 4 × Number of liters
 ]
+
 
 A tavern keeper stops, hesitating, clutching the purse at his belt. He
 asks his young apprentice: #emph[“From whom should we buy our oil this
@@ -17641,14 +15861,12 @@ quantity is greater or smaller than another.
   , kind: table
   )
 
-#quote_box[
-#strong[💡 The Arrowhead Visual Rule ---
-]
- The symbol always opens wide
+#principe(title: [The Arrowhead Visual Rule —])[The symbol always opens wide
 toward the larger number and points its sharp tip toward the smaller
 number:
 $ upright("BIG") > upright("small") #h(2em) upright("small") < upright("BIG") . $
 ]
+
 
 - #strong[Strict inequality ($<$ or $>$) :] Equality is strictly
   excluded. If age $a > 12$, being exactly 12 years old does not
@@ -17665,24 +15883,6 @@ Let us return to Al-Khwarizmi's two-pan scale, but this time,
 #strong[the beam tilts]. The left pan sits higher than the right pan:
 the left side is lighter than the right side ($A < B$).
 
-#align(center)[
-  #block(
-    fill: rgb("#f8fafc"),
-    stroke: 1pt + rgb("#cbd5e1"),
-    inset: (x: 16pt, y: 10pt),
-    radius: 6pt,
-    breakable: false,
-  )[
-    #set text(font: "Liberation Mono", size: 9.5pt, fill: rgb("#0f172a"))
-    ```text
-A (Lighter)
-oo
-B (Heavier)
-oo
-    ```
-  ]
-]
-
 What occurs if we perform identical operations on both pans
 simultaneously?
 
@@ -17693,14 +15893,12 @@ pan, the right pan remains heavier. The direction of the tilt does not
 budge by a millimeter. Likewise, if you remove 3 kg from both sides, the
 scale preserves its exact tilt.
 
-#quote_box[
-#strong[📐 Fundamental Rule 1 --- Addition and Subtraction.
-]
- The
+#principe(title: [Fundamental Rule 1 — Addition and Subtraction.])[The
 direction of an inequality does not change if you #strong[add] or
 #strong[subtract] the same number from both sides:
 $ upright("If ") a < b\,upright(" then ") a + c < b + c quad upright("and") quad a - c < b - c . $
 ]
+
 
 #emph[Numerical Example:] We know that $3 < 8$.
 
@@ -17715,15 +15913,13 @@ the right pan, the heavier side becomes three times heavier, and the
 lighter side three times lighter. The direction of imbalance remains
 unchanged.
 
-#quote_box[
-#strong[📐 Fundamental Rule 2 --- Multiplying and Dividing by a POSITIVE
-Number ($c > 0$).
-]
- The direction of an inequality does not change if you
+#principe(title: [Fundamental Rule 2 — Multiplying and Dividing by a POSITIVE
+Number ($c > 0$).])[The direction of an inequality does not change if you
 #strong[multiply] or #strong[divide] both sides by the same
 #strong[strictly positive] number:
 $ upright("If ") a < b upright(" and ") c > 0\,upright(" then ") a times c < b times c quad upright("and") quad a / c < b / c . $
 ]
+
 
 #emph[Numerical Example:] We have $- 4 < 6$. Multiply by $3$:
 $ - 4 times 3 < 6 times 3 arrow.r.double.long - 12 < 18 quad upright("(still true)") . $
@@ -17746,22 +15942,19 @@ $ - 2 > - 5 upright(" !") $
 
 #strong[The inequality has flipped!] The sign $<$ became $>$.
 
-#figure(image("figures/vol_4/fig_24_intervalles_droite.svg", alt: "Intervalles et inégalités sur la droite réelle : notation et crochets"),
+#figure(image("figures_en/vol_4/fig_24_intervalles_droite.svg", alt: "Intersection et réunion d’intervalles sur l’axe des réels"),
   caption: [
-    Intervalles et inégalités sur la droite réelle : notation et
-    crochets
+    Intersection et réunion d'intervalles sur l'axe des réels
   ]
 )
 
-#quote_box[
-#strong[📐 Fundamental Rule 3 --- Multiplying and Dividing by a NEGATIVE
-Number ($c < 0$).
-]
- #strong[Whenever you multiply or divide both sides of
+#principe(title: [Fundamental Rule 3 — Multiplying and Dividing by a NEGATIVE
+Number ($c < 0$).])[#strong[Whenever you multiply or divide both sides of
 an inequality by a STRICTLY NEGATIVE number, YOU MUST REVERSE THE
 DIRECTION OF THE INEQUALITY SYMBOL!]
 $ upright("If ") a < b upright(" and ") c < 0\,upright(" then ") a times c upright(bold(>)) b times c quad upright("and") quad a / c upright(bold(>)) b / c . $
 ]
+
 
 #strong[Why this reversal? Two concrete insights:] 1. #strong[The Mirror
 Reflection:] Multiplying by $- 1$ rotates the number line through a
@@ -17829,10 +16022,7 @@ excluded? #strong[Through the orientation of brackets!]
   boundary value is #strong[excluded] ($<$ or $>$). Example for
   $x > 15$:
 
-#methode(title: [Méthode Pas à Pas])[
-#strong[🧭 Method --- Writing Solutions in Interval Notation.
-]
- In
+#methode(title: [Method — Writing Solutions in Interval Notation.])[In
 standard mathematics, the solution set $S$ is written using intervals:
 
 - For $x gt.eq - 5$: $S =\[- 5\,+ oo\[$ (or $\[- 5\,+ oo\)$, read as
@@ -17842,6 +16032,7 @@ standard mathematics, the solution set $S$ is written using intervals:
   #strong[always] receives an open bracket, because infinity is a
   boundless direction, not a reachable number that can be closed in.
 ]
+
 
 #divider()
 
@@ -18009,22 +16200,15 @@ black rods (for negative numbers) on a felt counting board. Each column
 represented an equation and each row represented a different grade of
 grain (top-grade millet, medium-grade millet, low-grade millet):
 
-#align(center)[
-  #block(
-    fill: rgb("#f8fafc"),
-    stroke: 1pt + rgb("#cbd5e1"),
-    inset: (x: 16pt, y: 10pt),
-    radius: 6pt,
-    breakable: false,
-  )[
-    #set text(font: "Liberation Mono", size: 9.5pt, fill: rgb("#0f172a"))
-    ```text
-3 bundles top millet ] + [ 2 bundles medium millet ] + [ 1 bundle low millet ] = 39 measures
-2 bundles top millet ] + [ 3 bundles medium millet ] + [ 1 bundle low millet ] = 34 measures
-1 bundle top millet ] + [ 2 bundles medium millet ] + [ 3 bundles low millet ] = 26 measures
-    ```
-  ]
+#decouvre(title: [Discovery & History — Chapter VIII of the Chinese Nine
+Chapters])[- 3 bundles top millet \] + \[ 2 bundles medium millet \] + \[ 1 bundle
+  low millet \] = 39 measures
+- 2 bundles top millet \] + \[ 3 bundles medium millet \] + \[ 1 bundle
+  low millet \] = 34 measures
+- 1 bundle top millet \] + \[ 2 bundles medium millet \] + \[ 3 bundles
+  low millet \] = 26 measures
 ]
+
 
 By sliding rods across columns, multiplying a column and subtracting it
 from another, they systematically cleared entries to produce zeroes.
@@ -18466,10 +16650,9 @@ and the Tariff Line].
 motionless treasure. A function is the entire motion picture: it
 captures the unfolding of the world, where every cause produces an
 effect, and where every forward step lifts the traveler to a new
-altitude.”
+altitude.”]
 ]
 
-]
 
 #divider()
 
@@ -18512,9 +16695,9 @@ the bottom. He calls it his #strong[“Transforming Machine.”]
 - If you slip #strong[0] in, it ejects #strong[2].
 - If you slip #strong[$- 4$] in, it ejects #strong[$- 10$].
 
-#figure(image("figures/vol_4/fig_25_machine_fonction.svg", alt: "La fonction comme machine entrée-sortie : antécédent x et image f(x)"),
+#figure(image("figures_en/vol_4/fig_25_machine_fonction.svg", alt: "The function as Jacquard’s input-output machine"),
   caption: [
-    La fonction comme machine entrée-sortie : antécédent x et image f(x)
+    The function as Jacquard's input-output machine
   ]
 )
 
@@ -18553,13 +16736,11 @@ modern mathematics and all natural sciences.
 <the-concept-of-a-function-and-its-vocabulary>
 ==== 2.1 What Is a Function?
 <what-is-a-function>
-#principe(title: [Définition Fondamentale])[
-#strong[📐 Definition --- Function.
-]
- A #strong[function] is a
+#principe(title: [Definition — Function.])[A #strong[function] is a
 mathematical process that takes an initial input value (the variable)
 and assigns to it #strong[one, and only one], output value (the result).
 ]
+
 
 We typically designate a function by a letter: a lowercase letter such
 as $f$, $g$, or $h$ (standing for “function”), or an evocative uppercase
@@ -18576,12 +16757,7 @@ camera or portrait studio:
 - #strong[The output (image / value)]: the computed result that emerges
   #strong[out] of the machine. This is $f\(x\)$.
 
-#quote_box[
-#strong[⚠️ Critical Warning!
-]
-
-
-- Every input produces #strong[one and only one output] (the machine
+#alerte(title: [Critical Warning!])[- Every input produces #strong[one and only one output] (the machine
   cannot produce two contradictory results when a single button is
   pressed).
 - However, a single output may have #strong[multiple different inputs]!
@@ -18589,6 +16765,7 @@ camera or portrait studio:
   output $9$ possesses #strong[two distinct inputs]: $3$ (since
   $3^2 = 9$) and $- 3$ (since $\(- 3\)^2 = 9$).
 ]
+
 
 ==== 2.3 Notations: How to Write and Read Functions
 <notations-how-to-write-and-read-functions>
@@ -18626,12 +16803,21 @@ camera or portrait studio:
 A function is an abstract mathematical object. To visualize and work
 with it, mathematicians rely on three complementary representations:
 
-#figure(image("figures/vol_4/fig_25_droite_affine_complete.svg", alt: "Représentation graphique de la fonction affine : pente et ordonnée à l’origine"),
-  caption: [
-    Représentation graphique de la fonction affine : pente et ordonnée à
-    l'origine
-  ]
-)
+
+#align(center)[
+  #table(
+    columns: (1fr, 1fr, 1fr),
+    align: center,
+    stroke: 0.5pt + rgb("#cbd5e1"),
+    fill: (x, y) => if y == 0 { rgb("#eff6ff") } else { rgb("#ffffff") },
+    [*1. L'expression algébrique*], [*2. Le tableau de valeurs*], [*3. La courbe représentative*],
+    [La formule exacte
+Exemple : $f(x) = 2x + 1$], [Échantillons finis de couples
+$(x ; f(x))$], [Vision géométrique continue
+dans le repère]
+  )
+]
+
 
 ==== 3.1 The Table of Values
 <the-table-of-values>
@@ -18662,13 +16848,11 @@ Plot these coordinate pairs in a Cartesian plane:
 - The vertical axis ($y$-axis) displays the #strong[outputs
   $y = f\(x\)$].
 
-#principe(title: [Définition Fondamentale])[
-#strong[📐 Definition --- Graph of a Function.
-]
- The graph of a function
+#principe(title: [Definition — Graph of a Function.])[The graph of a function
 $f$ (often denoted $cal(C)_f$) is the collection of all points in the
 plane having coordinates $\(x\,f\(x\)\)$.
 ]
+
 
 #divider()
 
@@ -18680,14 +16864,12 @@ A #strong[linear function] is the simplest and purest of all functions:
 it is the algebraic translation of a #strong[perfectly proportional
 relationship] (as studied in Chapter 13).
 
-#principe(title: [Définition Fondamentale])[
-#strong[📐 Definition --- Linear Function.
-]
- A linear function is a
+#principe(title: [Definition — Linear Function.])[A linear function is a
 function defined by a formula of the form: $ f\(x\)= a x $ where $a$ is
 a fixed real constant, known as the #strong[constant of proportionality]
 or the #strong[slope].
 ]
+
 
 #emph[Examples:] - Buying cherries at €4 per kg: $P\(x\)= 4 x$
 ($a = 4$). - Cycling at a constant speed of 20 km/h: distance
@@ -18703,14 +16885,18 @@ passing through the origin $O\(0\,0\)$]!
 Why? Because if you purchase nothing ($x = 0$), you pay nothing
 ($f\(0\)= a times 0 = 0$).
 
-#quote_box[
-#strong[📐 Graphical Theorem ---
-]
- The graph of a linear function
+#figure(image("figures_en/vol_4/fig_25_droite_affine_complete.svg", alt: "Graph of the affine function: slope and y-intercept"),
+  caption: [
+    Graph of the affine function: slope and y-intercept
+  ]
+)
+
+#principe(title: [Graphical Theorem —])[The graph of a linear function
 $f\(x\)= a x$ is #strong[a straight line passing through the origin
 $O\(0\,0\)$]. Conversely, any non-vertical line passing through the
 origin represents a linear function.
 ]
+
 
 To plot the graph of a linear function, it suffices to calculate
 #strong[a single additional point] alongside the origin $\(0\,0\)$!
@@ -18727,10 +16913,7 @@ proportional rate is added? It is no longer pure proportionality, but an
 #strong[affine function] (commonly called a linear function with
 non-zero intercept in English curricula).
 
-#principe(title: [Définition Fondamentale])[
-#strong[📐 Definition --- Affine Function.
-]
- An affine function is a
+#principe(title: [Definition — Affine Function.])[An affine function is a
 function defined for all real numbers $x$ by: $ f\(x\)= a x + b $ where
 $a$ and $b$ are fixed real constants.
 
@@ -18739,6 +16922,7 @@ $a$ and $b$ are fixed real constants.
 - The constant $b$ is the #strong[$y$-intercept] (the initial value at
   $x = 0$).
 ]
+
 
 ==== 5.2 Why This Terminology?
 <why-this-terminology>
@@ -19249,10 +17433,9 @@ realm of plane transformations that we will explore in Chapter 26:
 butterfly opening to the sun, or the face of a dear friend: nature never
 selects its shapes by accident. It builds in the mirror of symmetry, for
 that which is symmetrical distributes forces, balances masses, and
-endures against the tempest.”
+endures against the tempest.”]
 ]
 
-]
 
 #divider()
 
@@ -19302,9 +17485,9 @@ pulled relentlessly upon the thinner side. A winding crack snaked across
 the vault… and with a deafening roar of crushed masonry, #strong[the
 bridge collapsed into the abyss]!
 
-#figure(image("figures/vol_4/fig_22_balance_al_khwarizmi.svg", alt: "La balance d’Al-Khwarizmi et l’équilibre des équations"),
+#figure(image("figures_en/vol_4/fig_26_symetrie_axiale.svg", alt: "Bilateral axial symmetry: orthogonal fold and reflection"),
   caption: [
-    La balance d'Al-Khwarizmi et l'équilibre des équations
+    Bilateral axial symmetry: orthogonal fold and reflection
   ]
 )
 
@@ -19333,25 +17516,6 @@ trench across the soil with his spear: #emph[“There is not merely one
 possible location: there are infinitely many fair locations for the
 well!”]
 
-#align(center)[
-  #block(
-    fill: rgb("#f8fafc"),
-    stroke: 1pt + rgb("#cbd5e1"),
-    inset: (x: 16pt, y: 10pt),
-    radius: 6pt,
-    breakable: false,
-  )[
-    #set text(font: "Liberation Mono", size: 9.5pt, fill: rgb("#0f172a"))
-    ```text
-Axis of the Perpendicular Bisector (d)
-Potential Well 1 (Equidistant!)
-Village A ooo Village B
-Arras)                 Midpoint            (Béthune)
-Potential Well 2 (Equidistant!)
-    ```
-  ]
-]
-
 This perpendicular line cutting the path precisely at its midpoint
 possesses a magical geometric property: #strong[every single point on
 this line is situated at the exact same distance from Village A and
@@ -19378,12 +17542,7 @@ the sheet in half along a straight crease $\(d\)$, and press down
 firmly. When unfolded, the ink blot has imprinted itself on the other
 side.
 
-#principe(title: [Définition Fondamentale])[
-#strong[📐 Definition --- Axial Reflection (across line $\(d\)$).
-]
-
-
-- The image of a point $M$ lying off $\(d\)$ is the point $M'$ such that
+#principe(title: [Definition — Axial Reflection (across line $\(d\)$).])[- The image of a point $M$ lying off $\(d\)$ is the point $M'$ such that
   the line $\(d\)$ is the #strong[perpendicular bisector] of the segment
   $\[M M'\]$. This means that $\(d\)$ is perpendicular to $\[M M'\]$ and
   passes through its midpoint.
@@ -19393,23 +17552,6 @@ side.
   point).
 ]
 
-#align(center)[
-  #block(
-    fill: rgb("#f8fafc"),
-    stroke: 1pt + rgb("#cbd5e1"),
-    inset: (x: 16pt, y: 10pt),
-    radius: 6pt,
-    breakable: false,
-  )[
-    #set text(font: "Liberation Mono", size: 9.5pt, fill: rgb("#0f172a"))
-    ```text
-d) Axis of Reflection
-Right angle
-Distance = Distance
-M'
-    ```
-  ]
-]
 
 #emph[The Mirror Effect:] Axial reflection reverses orientation! Your
 right hand reflects as a left hand in a mirror. If the vertices of a
@@ -19421,18 +17563,16 @@ images will proceed counterclockwise.
 Now imagine placing a pushpin into your paper at point $O$, and rotating
 the tracing paper through an #strong[exact half-turn ($180^compose$)].
 
-#principe(title: [Définition Fondamentale])[
-#strong[📐 Definition --- Point Reflection (Central Inversion across
-center $O$).
-]
- The image of a point $M$ under point reflection centered
+#principe(title: [Definition — Point Reflection (Central Inversion across
+center $O$).])[The image of a point $M$ under point reflection centered
 at $O$ is the point $M'$ such that #strong[point $O$ is the midpoint of
 the segment $\[M M'\]$].
 ]
 
-#figure(image("figures/vol_4/fig_26_symetrie_centrale.svg", alt: "La symétrie centrale : demi-tour parfait de 180° autour du centre O"),
+
+#figure(image("figures_en/vol_4/fig_26_symetrie_centrale.svg", alt: "Central symmetry: perfect 180° half-turn about center O"),
   caption: [
-    La symétrie centrale : demi-tour parfait de 180° autour du centre O
+    Central symmetry: perfect 180° half-turn about center O
   ]
 )
 
@@ -19451,10 +17591,7 @@ Picture opening a desk drawer, or a train speeding along straight
 tracks. Every point of the object glides by the exact same distance,
 along the same direction, and in the same sense.
 
-#principe(title: [Définition Fondamentale])[
-#strong[📐 Definition --- Translation.
-]
- A #strong[translation] slides a
+#principe(title: [Definition — Translation.])[A #strong[translation] slides a
 geometric figure from point $A$ to point $B$. The image of any point $M$
 is the point $M'$ such that: 1. The lines $\(A B\)$ and $\(M M'\)$ are
 #strong[parallel] (same direction). 2. Motion from $M$ to $M'$ has the
@@ -19465,22 +17602,12 @@ length $M M' = A B$ (same distance).
 #strong[parallelogram] (possibly degenerate).
 ]
 
-#align(center)[
-  #block(
-    fill: rgb("#f8fafc"),
-    stroke: 1pt + rgb("#cbd5e1"),
-    inset: (x: 16pt, y: 10pt),
-    radius: 6pt,
-    breakable: false,
-  )[
-    #set text(font: "Liberation Mono", size: 9.5pt, fill: rgb("#0f172a"))
-    ```text
-A > B
-Displacement Vector)
-M > M'
-    ```
+
+#figure(image("figures_en/vol_4/fig_26_homothetie.svg", alt: "Homothety (dilation): vector scaling from the center of alignment"),
+  caption: [
+    Homothety (dilation): vector scaling from the center of alignment
   ]
-]
+)
 
 In a translation, the figure glides without rotating by a hair. It
 models footprints left in sequence across beach sand.
@@ -19490,10 +17617,7 @@ models footprints left in sequence across beach sand.
 Think of the minute hand of a clock, the blades of a windmill, or the
 cabins on a Ferris wheel.
 
-#principe(title: [Définition Fondamentale])[
-#strong[📐 Definition --- Rotation.
-]
- A #strong[rotation] is determined
+#principe(title: [Definition — Rotation.])[A #strong[rotation] is determined
 by three inseparable components: 1. A fixed point called the
 #strong[center of rotation] $O$. 2. An #strong[angle of rotation]
 $alpha$ (in degrees). 3. A #strong[direction of rotation]:
@@ -19509,6 +17633,7 @@ is the point $M'$ such that:
   $O M$);
 - The angle $accent(M O M', ̂) = alpha$.
 ]
+
 
 #emph[Remarkable Insight:] A rotation of $180^compose$ is identical to a
 #strong[point reflection]!
@@ -19529,10 +17654,7 @@ a central projection point.
 
 ==== 4.1 Definition and Scale Factor $k$
 <definition-and-scale-factor-k>
-#principe(title: [Définition Fondamentale])[
-#strong[📐 Definition --- Dilation (Homothety).
-]
- A dilation is defined
+#principe(title: [Definition — Dilation (Homothety).])[A dilation is defined
 by: 1. A fixed point called the #strong[center] $O$. 2. A non-zero real
 number called the #strong[scale factor] $k$.
 
@@ -19548,11 +17670,6 @@ that:
   This combines an expansion/contraction with a half-turn!
 ]
 
-#figure(image("figures/vol_4/fig_26_homothetie.svg", alt: "L’homothétie : zoom vectoriel depuis le centre d’alignement"),
-  caption: [
-    L'homothétie : zoom vectoriel depuis le centre d'alignement
-  ]
-)
 
 ==== 4.2 Scaling Effects of Factor $k$
 <scaling-effects-of-factor-k>
@@ -19629,35 +17746,13 @@ all 6 components (3 sides and 3 angles)! Three suffice, according to the
   one side of the other, and #strong[the two angles adjacent to that
   side] have the same measures.
 
-#align(center)[
-  #block(
-    fill: rgb("#f8fafc"),
-    stroke: 1pt + rgb("#cbd5e1"),
-    inset: (x: 16pt, y: 10pt),
-    radius: 6pt,
-    breakable: false,
-  )[
-    #set text(font: "Liberation Mono", size: 9.5pt, fill: rgb("#0f172a"))
-    ```text
-SAS Criterion:
-b / |                               b / |
-a                              /  | a
-θ|                               /__θ|
-c                                   c
-    ```
-  ]
-]
-
 ==== 6.2 Similar Triangles: The Same Silhouette at Different Scales
 <similar-triangles-the-same-silhouette-at-different-scales>
 Two triangles are called #strong[similar] when they possess the
 #strong[exact same shape], though not necessarily the same size. One is
 an enlargement or reduction of the other.
 
-#principe(title: [Définition Fondamentale])[
-#strong[📐 Definition --- Similar Triangles.
-]
- Two triangles are similar
+#principe(title: [Definition — Similar Triangles.])[Two triangles are similar
 if:
 
 - Their #strong[corresponding angles are pairwise equal in measure]\;
@@ -19665,6 +17760,7 @@ if:
   proportional]:
   $ frac(A' B', A B) = frac(B' C', B C) = frac(A' C', A C) = k . $
 ]
+
 
 #emph[The Efficiency Theorem:] Since the sum of angles in any triangle
 always equals $180^compose$ (Chapter 15), as soon as #strong[two angles
@@ -19751,22 +17847,6 @@ performed a #strong[$90^compose$ rotation] to form the upper paw.
 Because every piece of area removed from one side is perfectly restored
 to another, the total area remains invariant, allowing the motifs to
 interlock into infinity!
-
-#align(center)[
-  #block(
-    fill: rgb("#f8fafc"),
-    stroke: 1pt + rgb("#cbd5e1"),
-    inset: (x: 16pt, y: 10pt),
-    radius: 6pt,
-    breakable: false,
-  )[
-    #set text(font: "Liberation Mono", size: 9.5pt, fill: rgb("#0f172a"))
-    ```text
-Cut out      Translation          Paste
-on left                         on right
-    ```
-  ]
-]
 
 #divider()
 
@@ -20166,10 +18246,9 @@ Potter's Box].
 #emph[“A formula memorized by heart without ever being seen is like a
 sterile seed. But take a pair of scissors, cut out a triangle, paste the
 pieces on the other side: the rectangle appears, and the formula becomes
-self-evident.”
+self-evident.”]
 ]
 
-]
 
 #divider()
 
@@ -20241,14 +18320,12 @@ Two shapes with completely different outlines can have the exact same
 area: it suffices that one can be dissected and reassembled to form the
 other.
 
-#principe(title: [Définition Fondamentale])[
-#strong[📐 Definition ---
-]
- We choose a unit of area: for example, the
+#principe(title: [Definition —])[We choose a unit of area: for example, the
 #strong[square of side length 1 cm]. The #strong[area] of a figure is
 the number of these unit squares (and fractions of squares) required to
 tile it exactly, without gaps or overlaps.
 ]
+
 
 #strong[The notation $upright("cm")^2$.] We write $1 upright(" cm")^2$
 and pronounce it “one #strong[square centimeter]\.” The small
@@ -20272,12 +18349,6 @@ One meter is 10 decimeters. But how many square decimeters are in one
 square of side length 10 dm, so it contains $10 times 10 = 100$ small
 squares of 1 dm on each side.
 
-#figure(image("figures/vol_2/fig_12_perimetre_vs_aire.svg", alt: "Périmètre linéaire 1D vs Aire surfacique 2D"),
-  caption: [
-    Périmètre linéaire 1D vs Aire surfacique 2D
-  ]
-)
-
 $ 1 upright(" m")^2 = 100 upright(" dm")^2 = 10\,000 upright(" cm")^2 = 1\,000\,000 upright(" mm")^2 . $
 
 In an area conversion table, #strong[every metric unit spans two
@@ -20299,10 +18370,7 @@ columns]:
 Here we read:
 $3.5 upright(" m")^2 = 350 upright(" dm")^2 = 35\,000 upright(" cm")^2$.
 
-#decouvre(title: [Découverte & Histoire])[
-#strong[💡 Did You Know?
-]
- Farmers traditionally use the #strong[are]
+#decouvre(title: [Did You Know?])[Farmers traditionally use the #strong[are]
 (a), which equals $1 upright(" dam")^2 = 100 upright(" m")^2$ (a square
 of 10 m by 10 m), and the #strong[hectare] (ha), which equals
 $1 upright(" hm")^2 = 10\,000 upright(" m")^2$ (a square of 100 m by 100
@@ -20311,16 +18379,14 @@ comes from the Latin #emph[area], meaning “open space,” which also gave
 rise to the English word “area”!
 ]
 
-#alerte(title: [Attention au Piège !])[
-#strong[⚠️ Watch Out! Pitfall.
-]
 
-$1 upright(" m")^2 eq.not 100 upright(" cm")^2$. Because
+#alerte(title: [Watch Out! Pitfall.])[$1 upright(" m")^2 eq.not 100 upright(" cm")^2$. Because
 $1 upright(" m") = 100 upright(" cm")$, we have
 $1 upright(" m")^2 = 100 upright(" cm") times 100 upright(" cm") = 10\,000 upright(" cm")^2$.
 When converting units of area, you multiply or divide by 100 #strong[at
 each step], not by 10.
 ]
+
 
 #divider()
 
@@ -20330,15 +18396,13 @@ each step], not by 10.
 <base-and-height-precise-definitions>
 Before cutting, we must establish exact terms.
 
-#principe(title: [Définition Fondamentale])[
-#strong[📐 Definition ---
-]
- In any triangle, we choose one side to call
+#principe(title: [Definition —])[In any triangle, we choose one side to call
 the #strong[base]. The #strong[altitude (height) relative to that base]
 is the line segment dropped from the opposite vertex
 #strong[perpendicular] to the line containing the base. Its length is
 also termed the “height.”
 ]
+
 
 The symbol $perp$ reads “is perpendicular to.” The small square drawn at
 the foot $H$ of the altitude indicates the right angle.
@@ -20367,31 +18431,11 @@ of a small rectangle (halved along its diagonal). The two small
 rectangles together form the large rectangle $b times h$, and the
 triangle occupies precisely half of it.
 
-#align(center)[
-  #block(
-    fill: rgb("#f8fafc"),
-    stroke: 1pt + rgb("#cbd5e1"),
-    inset: (x: 16pt, y: 10pt),
-    radius: 6pt,
-    breakable: false,
-  )[
-    #set text(font: "Liberation Mono", size: 9.5pt, fill: rgb("#0f172a"))
-    ```text
-1')  (2')         Pieces (1) and (2) form the triangle.
-Pieces (1') and (2') are their twin mirrors.
-1)        (2)       (1) = (1') and (2) = (2')
-therefore triangle = half the rectangle.
-A         H         B
-    ```
-  ]
-]
-
 #quote_box[
-#strong[📐 Formula --- Area of a Triangle
-]
-
+#strong[📐 Formula --- Area of a Triangle]
 $ cal(A)_(upright("triangle")) = frac(upright("base") times upright("height"), 2) = frac(b times h, 2) $
 ]
+
 
 We frequently write $cal(A)$ in calligraphy script to avoid confusion
 with vertex point $A$.
@@ -20404,20 +18448,15 @@ identical tax, down to the single grain of wheat.
 
 ==== 3.3 Boundary Cases: When the Altitude Falls Outside
 <boundary-cases-when-the-altitude-falls-outside>
-#alerte(title: [Attention au Piège !])[
-#strong[⚠️ Watch Out! Pitfall.
-]
- In an #strong[obtuse] triangle (having
+#alerte(title: [Watch Out! Pitfall.])[In an #strong[obtuse] triangle (having
 an angle greater than $90^compose$), the altitude to certain sides falls
 #strong[outside] the triangle, landing on the #strong[extended line] of
 the base. The formula remains unconditionally true, but the proof
 requires care!
 ]
 
-#quote_box[
-#strong[✍️ Proof ---
-]
- Foot $H$ lies on the line extension of $\[A B\]$,
+
+#exemple_resolu(title: [Proof —])[Foot $H$ lies on the line extension of $\[A B\]$,
 beyond vertex $B$. The large right triangle $A H C$ contains our target
 triangle $A B C$ #strong[plus] the small right triangle $B H C$.
 Therefore:
@@ -20426,16 +18465,15 @@ The formula “$upright("base") times upright("height") div 2$” is
 universally valid for #strong[all] triangles.
 ]
 
-#decouvre(title: [Découverte & Histoire])[
-#strong[💡 Did You Know?
-]
- Any triangle sharing base $\[A B\]$ whose
+
+#decouvre(title: [Did You Know?])[Any triangle sharing base $\[A B\]$ whose
 third vertex $C$ slides along a line parallel to $\(A B\)$ possesses
 #strong[the exact same area], because its perpendicular height never
 varies! Even if the triangle becomes extremely flattened and skewed.
 This is Euclid's famous “shearing triangle” theorem (Book I of the
 #emph[Elements], Proposition 37).
 ]
+
 
 #divider()
 
@@ -20448,41 +18486,21 @@ a parallelogram. Has it lost any material? Cut off the small protruding
 triangle on one side and glue it into the recess on the opposite side:
 #strong[the rectangle reappears], with identical base and height.
 
-#align(center)[
-  #block(
-    fill: rgb("#f8fafc"),
-    stroke: 1pt + rgb("#cbd5e1"),
-    inset: (x: 16pt, y: 10pt),
-    radius: 6pt,
-    breakable: false,
-  )[
-    #set text(font: "Liberation Mono", size: 9.5pt, fill: rgb("#0f172a"))
-    ```text
-h          /                  |              |
-b ----->                    <------ b ----->
-Cut the left triangle and paste it onto the right side.
-    ```
-  ]
-]
-
 #quote_box[
-#strong[📐 Formula --- Area of a Parallelogram
-]
-
+#strong[📐 Formula --- Area of a Parallelogram]
 $ cal(A)_(upright("parallelogram")) = b times h $ where $h$ is the
 distance between the two parallel sides of length $b$ (measured
 #strong[perpendicularly]).
 ]
 
-#alerte(title: [Attention au Piège !])[
-#strong[⚠️ Watch Out! Pitfall.
-]
- #strong[Never] multiply the base by the
+
+#alerte(title: [Watch Out! Pitfall.])[#strong[Never] multiply the base by the
 slanted side! A parallelogram with sides 10 cm and 6 cm can have an area
 of $60 upright(" cm")^2$ (if upright, forming a rectangle),
 $30 upright(" cm")^2$ (if tilted), or nearly 0 if squashed flat. The
 slanted edge length does not change, but the height certainly does.
 ]
+
 
 ==== 4.2 The Trapezoid: The Flared Skirt
 <the-trapezoid-the-flared-skirt>
@@ -20494,33 +18512,22 @@ Take two twin trapezoids. Invert one upside down and place it next to
 the other: together they form a #strong[parallelogram] whose base equals
 $B + b$ and whose height is $h$.
 
-#figure(image("figures/vol_4/fig_27_corde_treize_noeuds.svg", alt: "La corde égyptienne à treize nœuds et le triangle rectangle 3-4-5"),
-  caption: [
-    La corde égyptienne à treize nœuds et le triangle rectangle 3-4-5
-  ]
-)
-
-#quote_box[
-#strong[📐 Formula --- Area of a Trapezoid
+#alerte(title: [Formula — Area of a Trapezoid])[$ cal(A)_(upright("trapezoid")) = frac(\(B + b\)times h, 2) $
 ]
 
-$ cal(A)_(upright("trapezoid")) = frac(\(B + b\)times h, 2) $
-]
 
 This can also be understood as $frac(B + b, 2) times h$: it equals the
 area of a rectangle whose width is the #strong[average] of the two
 bases.
 
-#decouvre(title: [Découverte & Histoire])[
-#strong[💡 Did You Know?
-]
- Checking extreme boundary cases is reassuring.
+#alerte(title: [Did You Know?])[Checking extreme boundary cases is reassuring.
 If $b = B$, the trapezoid becomes a parallelogram, recovering
 $frac(2 B times h, 2) = B times h$. If $b = 0$, the minor base collapses
 to a point, turning the trapezoid into a triangle, recovering
 $frac(B times h, 2)$. A sound mathematical formula always holds true at
 its extreme limits!
 ]
+
 
 #divider()
 
@@ -20537,23 +18544,6 @@ wedges radiating from the center. Each wedge has length equal to radius
 $R$. He arranged these slices #strong[head-to-tail], alternating one
 pointing up and one pointing down:
 
-#align(center)[
-  #block(
-    fill: rgb("#f8fafc"),
-    stroke: 1pt + rgb("#cbd5e1"),
-    inset: (x: 16pt, y: 10pt),
-    radius: 6pt,
-    breakable: false,
-  )[
-    #set text(font: "Liberation Mono", size: 9.5pt, fill: rgb("#0f172a"))
-    ```text
-height ≈ R
-‾‾‾‾  ‾‾‾‾  ‾‾‾‾  ‾‾‾‾  ‾‾‾‾  ‾‾‾‾  ‾‾‾‾
-half-circumference = π R --------->|
-    ```
-  ]
-]
-
 The resulting shape resembles an #strong[undulating rectangle]: \* its
 height is radius $R$\; \* its length is #strong[half the circumference]
 of the pizza (the other half of the crust forms the bottom edge), which
@@ -20563,18 +18553,14 @@ As the slices become infinitely slender, the ripples vanish: in the
 limit, it becomes a true rectangle.
 
 #quote_box[
-#strong[📐 Formula --- Area of a Disk of Radius $R$
-]
-
+#strong[📐 Formula --- Area of a Disk of Radius $R$]
 $ cal(A)_(upright("disk")) = pi R times R = pi R^2 $ Pronounced “pi R
 squared.” Note: this is $pi times\(R times R\)$\; the exponent applies
 only to $R$.
 ]
 
-#alerte(title: [Attention au Piège !])[
-#strong[⚠️ Watch Out! Pitfall.
-]
- Two classical mistakes: 1. Using the
+
+#alerte(title: [Watch Out! Pitfall.])[Two classical mistakes: 1. Using the
 #strong[diameter] instead of the radius. For a disk of diameter 10 cm,
 $R = 5$ cm and $cal(A) = 25 pi approx 78.5 upright(" cm")^2$, and
 definitely not $100 pi$! 2. Confusing $2 pi R$ (the
@@ -20583,10 +18569,8 @@ definitely not $100 pi$! 2. Confusing $2 pi R$ (the
 contains a square exponent, matching its unit $upright("cm")^2$.
 ]
 
-#quote_box[
-#strong[🔍 True History ---
-]
- Archimedes did not possess the decimal
+
+#decouvre(title: [True History —])[Archimedes did not possess the decimal
 digits of $pi$ (no one can write them all down, as they are endless and
 non-repeating!). He proved that the area of a circle equals that of a
 right triangle whose legs are the radius and the circle's circumference:
@@ -20594,6 +18578,7 @@ $frac(2 pi R times R, 2) = pi R^2$. Furthermore, by inscribing and
 circumscribing 96-sided regular polygons around a circle, he bounded
 $pi$ strictly between $3 10 / 71$ and $3 1 / 7$.
 ]
+
 
 #divider()
 
@@ -20646,13 +18631,11 @@ area of the path?
 $6 + 2 = 8$ m) minus the small inner pond (radius 6 m).
 $ cal(A) = pi times 8^2 - pi times 6^2 = 64 pi - 36 pi = 28 pi approx 87.96 upright(" m")^2 . $
 
-#alerte(title: [Attention au Piège !])[
-#strong[⚠️ Watch Out! Pitfall.
-]
- You cannot subtract radii before
+#alerte(title: [Watch Out! Pitfall.])[You cannot subtract radii before
 squaring: $pi times\(8 - 6\)^2 = 4 pi$ is completely wrong! One
 subtracts the #strong[areas], not the linear radii.
 ]
+
 
 #strong[Worked Example 5 --- Notary Land Conversions.] A rectangular
 parcel of farmland measures 85 m by 64 m. Express its area in
@@ -20676,10 +18659,9 @@ a. Since $1 upright(" ha") = 100$ a: $54.4 upright(" a") = 0.544$ ha.
 #emph[“Do not say that the Earth is too vast to be measured by a mortal.
 Grant me a simple staff planted upright in the soil, a ray of sunlight,
 and a right triangle: I will tell you the circumference of the world
-before the sun sets.”
+before the sun sets.”]
 ]
 
-]
 
 #divider()
 
@@ -20725,24 +18707,11 @@ wooden staff---into level ground, and watches closely. To his wonder: in
 Alexandria, at the exact same moment, #strong[the staff casts a clear
 shadow]!
 
-#align(center)[
-  #block(
-    fill: rgb("#f8fafc"),
-    stroke: 1pt + rgb("#cbd5e1"),
-    inset: (x: 16pt, y: 10pt),
-    radius: 6pt,
-    breakable: false,
-  )[
-    #set text(font: "Liberation Mono", size: 9.5pt, fill: rgb("#0f172a"))
-    ```text
-Solar rays (parallel)
-Alexandria:                           Syene:
-Vertical staff                        Vertical staff
-Cast shadow!                         No shadow!
-The sun strikes at an angle)         (The sun is at the zenith)
-    ```
+#figure(image("figures_en/vol_4/fig_28_eratosthene_tour_terre.svg", alt: "Measuring Earth’s radius by Eratosthenes of Alexandria"),
+  caption: [
+    Measuring Earth's radius by Eratosthenes of Alexandria
   ]
-]
+)
 
 How is this possible? If the Earth were a flat disk, as ancient poets
 once imagined, the Sun---situated at a tremendous cosmic distance and
@@ -20760,49 +18729,10 @@ triangle]. Comparing these two lengths, he determines that the solar
 rays deviate from the vertical by an angle of approximately
 #strong[$7.2^compose$].
 
-#align(center)[
-  #block(
-    fill: rgb("#f8fafc"),
-    stroke: 1pt + rgb("#cbd5e1"),
-    inset: (x: 16pt, y: 10pt),
-    radius: 6pt,
-    breakable: false,
-  )[
-    #set text(font: "Liberation Mono", size: 9.5pt, fill: rgb("#0f172a"))
-    ```text
-Tip of the staff
-Vertical staff (height h)
-Sunbeam      /
-P (Base of staff)
-O      Right angle
-l ->
-Shadow on ground
-    ```
-  ]
-]
-
 Now, by the geometric theorem of alternate interior angles (studied in
 Chapter 15), this $7.2^compose$ angle at the tip of the staff is
 #strong[strictly equal to the subtended central angle at the center of
 the Earth] separating Alexandria from Syene!
-
-#align(center)[
-  #block(
-    fill: rgb("#f8fafc"),
-    stroke: 1pt + rgb("#cbd5e1"),
-    inset: (x: 16pt, y: 10pt),
-    radius: 6pt,
-    breakable: false,
-  )[
-    #set text(font: "Liberation Mono", size: 9.5pt, fill: rgb("#0f172a"))
-    ```text
-Alexandria
-Angle α = 7.2°
-Syene
-Center of the Earth
-    ```
-  ]
-]
 
 Eratosthenes then sets up a luminous proportion: \* A complete circle
 spans $360^compose$. \* But $7.2^compose$ is exactly
@@ -20839,25 +18769,6 @@ Consider triangle $A B C$, right-angled at $B$. Its two acute angles are
 $hat(A)$ and $hat(C)$. Let us choose to view the triangle from acute
 angle $hat(A)$.
 
-#align(center)[
-  #block(
-    fill: rgb("#f8fafc"),
-    stroke: 1pt + rgb("#cbd5e1"),
-    inset: (x: 16pt, y: 10pt),
-    radius: 6pt,
-    breakable: false,
-  )[
-    #set text(font: "Liberation Mono", size: 9.5pt, fill: rgb("#0f172a"))
-    ```text
-OPPOSITE side     \   HYPOTENUSE
-to angle A         \  (the longest side,
-facing the right angle)
-B   ^
-ADJACENT side to angle A
-    ```
-  ]
-]
-
 Observe the three sides from vertex $A$: 1. #strong[The hypotenuse:] the
 side directly opposite the $90^compose$ right angle. It is always the
 longest side of the right triangle. Here, it is segment $\[A C\]$. Its
@@ -20869,11 +18780,7 @@ angle $hat(A)$. Here, it is segment $\[A B\]$. 3. #strong[The side
 opposite to angle $hat(A)$:] it is the leg of the right angle facing
 directly across from angle $hat(A)$. Here, it is segment $\[B C\]$.
 
-#alerte(title: [Attention au Piège !])[
-#strong[⚠️ Watch Out! Pitfall --- Roles Reverse When You Switch Angles!
-]
-
-If you shift your perspective to vertex $C$:
+#alerte(title: [Watch Out! Pitfall — Roles Reverse When You Switch Angles!])[If you shift your perspective to vertex $C$:
 
 - The hypotenuse remains $\[A C\]$.
 
@@ -20883,6 +18790,7 @@ If you shift your perspective to vertex $C$:
   never “opposite” or “adjacent” in the absolute: it is so
   #strong[strictly relative to the chosen acute angle].
 ]
+
 
 #divider()
 
@@ -20900,10 +18808,7 @@ physical size of the drawing!
 
 For any given acute angle $x$, these ratios carry three universal names:
 
-#quote_box[
-#strong[📐 Fundamental Definitions ---
-]
- In any right triangle:
+#principe(title: [Fundamental Definitions —])[In any right triangle:
 
 + The #strong[cosine] of an acute angle is the ratio of the adjacent
   side to the hypotenuse:
@@ -20917,6 +18822,7 @@ For any given acute angle $x$, these ratios carry three universal names:
   side to the adjacent side:
   $ tan\(x\)= upright("length of opposite side") / upright("length of adjacent side") $
 ]
+
 
 ==== How to Pronounce and Write These Notations
 <how-to-pronounce-and-write-these-notations>
@@ -20955,18 +18861,13 @@ Since the numerator is strictly smaller than the denominator (and all
 lengths are positive):
 $ upright("adjacent") / upright("hypotenuse") < 1 #h(2em) upright("and") #h(2em) upright("opposite") / upright("hypotenuse") < 1 $
 
-#principe(title: [Définition Fondamentale])[
-#strong[📐 Property --- Bounds on Cosine and Sine.
-]
- For any acute angle
+#principe(title: [Property — Bounds on Cosine and Sine.])[For any acute angle
 $x$ in a right triangle ($0^compose < x < 90^compose$):
 $ 0 < cos\(x\)< 1 #h(2em) upright("and") #h(2em) 0 < sin\(x\)< 1 $
 ]
 
-#alerte(title: [Attention au Piège !])[
-#strong[⚠️ Watch Out! Pitfall.
-]
- If on a test you calculate
+
+#alerte(title: [Watch Out! Pitfall.])[If on a test you calculate
 $cos\(x\)= 1.45$ or $sin\(x\)= 2.3$, #strong[stop immediately]: that is
 mathematically impossible! You almost certainly inverted the numerator
 and denominator. By contrast, the #strong[tangent]
@@ -20974,6 +18875,7 @@ $tan\(x\)= upright("opposite") / upright("adjacent")$ can equal any
 positive real number: it can be $0.5$, $1$, $10$, or even $1\,000$ if
 the triangle is extremely tall and narrow!
 ]
+
 
 ==== 4.2 The Fundamental Pythagorean Trigonometric Identity
 <the-fundamental-pythagorean-trigonometric-identity>
@@ -20987,31 +18889,25 @@ $ cos^2\(x\)+ sin^2\(x\)= (a / c)^2 + (b / c)^2 = a^2 / c^2 + b^2 / c^2 = frac(a
 Since $a^2 + b^2 = c^2$, we have:
 $ frac(a^2 + b^2, c^2) = c^2 / c^2 = 1 $
 
-#quote_box[
-#strong[📐 Fundamental Theorem of Trigonometry ---
-]
- For any angle $x$:
+#principe(title: [Fundamental Theorem of Trigonometry —])[For any angle $x$:
 $ cos^2\(x\)+ sin^2\(x\)= 1 $ #emph[\(Note on notation: $cos^2\(x\)$
 denotes $\(cos\(x\)\)^2$, meaning the cosine multiplied by itself).]
 ]
+
 
 Furthermore, dividing sine by cosine yields:
 $ frac(sin\(x\), cos\(x\)) = upright("opposite") / upright("hypotenuse") / upright("adjacent") / upright("hypotenuse") = upright("opposite") / upright("adjacent") = tan\(x\) $
 
 #quote_box[
-#strong[📐 Quotient Identity ---
+#strong[📐 Quotient Identity ---] $ tan\(x\)= frac(sin\(x\), cos\(x\)) $
 ]
- $ tan\(x\)= frac(sin\(x\), cos\(x\)) $
-]
+
 
 These two identities allow you to determine the sine and tangent of an
 angle the instant its cosine is known, without even determining the
 angle itself!
 
-#decouvre(title: [Découverte & Histoire])[
-#strong[💡 Did You Know? Where Do These Strange Words Come From?
-]
- The
+#decouvre(title: [Did You Know? Where Do These Strange Words Come From?])[The
 word #strong[sine] traveled through one of the most famous linguistic
 misadventures in history. Fifth-century Indian astronomers termed this
 half-chord #emph[jya-ardha], shortened to #emph[jiva]. When Arab
@@ -21025,6 +18921,7 @@ As for #strong[cosine], it is an abbreviation of #emph[complementi
 sinus]: the sine of the complementary angle!
 ]
 
+
 #divider()
 
 === 5. Using the Calculator: Two Essential Modes
@@ -21032,10 +18929,7 @@ sinus]: the sine of the complementary angle!
 To carry out trigonometric calculations, you will use the scientific
 calculator keys: `cos`, `sin`, `tan`.
 
-#quote_box[
-#strong[⚠️ Critical Warning! Calculator Angle Mode!
-]
- A scientific
+#alerte(title: [Critical Warning! Calculator Angle Mode!])[A scientific
 calculator can measure angles in Degrees (DEG), Radians (RAD), or
 Gradians (GRA). In middle school, #strong[all angles are given in
 degrees]. Always ensure that a small letter #strong[D] or #strong[DEG]
@@ -21043,6 +18937,7 @@ appears at the top of your display screen. If you see an #strong[R] or
 #strong[RAD], all your calculations will be wrong! To switch to degrees,
 navigate to the `Setup` or `Mode` menu.
 ]
+
 
 ==== Case 1: The Angle Is Known, Find the Ratio
 <case-1-the-angle-is-known-find-the-ratio>
@@ -21075,29 +18970,18 @@ two side lengths.
 
 Here is the 4-step method:
 
-#align(center)[
-  #block(
-    fill: rgb("#f8fafc"),
-    stroke: 1pt + rgb("#cbd5e1"),
-    inset: (x: 16pt, y: 10pt),
-    radius: 6pt,
-    breakable: false,
-  )[
-    #set text(font: "Liberation Mono", size: 9.5pt, fill: rgb("#0f172a"))
-    ```text
-1. Sketch a diagram and identify the right
-angle and the target acute angle.
-2. Label the three sides:
-Hypotenuse / Adjacent / Opposite.
-3. Select the correct formula:
-Adjacent and Hypotenuse? => CAH
-Opposite and Hypotenuse? => SOH
-Opposite and Adjacent?   => TOA
-4. Write the equation, isolate the unknown
-cross-multiply), and evaluate.
-    ```
-  ]
+#methode(title: [Step-by-Step Method — Trigonometric Problem-Solving Method])[- + Sketch a diagram and identify the right
+- angle and the target acute angle.
+- 2. Label the three sides:
+- Hypotenuse / Adjacent / Opposite.
+- 3. Select the correct formula:
+- Adjacent and Hypotenuse? =\> CAH
+- Opposite and Hypotenuse? =\> SOH
+- Opposite and Adjacent? =\> TOA
+- 4. Write the equation, isolate the unknown
+- cross-multiply), and evaluate.
 ]
+
 
 #divider()
 
@@ -21108,13 +18992,6 @@ cross-multiply), and evaluate.
 In triangle $K L M$, right-angled at $L$, we are given
 $K M = 8 upright(" cm")$ and $hat(K) = 35^compose$. Calculate the length
 of side $\[L M\]$, rounded to the nearest millimeter.
-
-#figure(image("figures/vol_3/fig_17_thales_pyramide.svg", alt: "Trigonométrie dans le triangle rectangle : Cosinus, Sinus et Tangente"),
-  caption: [
-    Trigonométrie dans le triangle rectangle : Cosinus, Sinus et
-    Tangente
-  ]
-)
 
 #emph[Detailed Solution:] 1. #strong[Triangle type:] Triangle $K L M$ is
 right-angled at $L$. 2. #strong[Identify sides relative to angle
@@ -21535,10 +19412,9 @@ Euclid].
 #emph[“A number is not a soft dough to be spread out at will: it is an
 edifice constructed from prime stones cut from diamond. Find the
 fundamental building blocks, and you will understand how to partition
-without shattering.”
+without shattering.”]
 ]
 
-]
 
 #divider()
 
@@ -21591,26 +19467,11 @@ before the chief royal architect, their brows furrowed with concern.
     nothing left over in the chests! Finally, I wish to host the
     #strong[greatest possible number] of dignitaries!”]
 
-#align(center)[
-  #block(
-    fill: rgb("#f8fafc"),
-    stroke: 1pt + rgb("#cbd5e1"),
-    inset: (x: 16pt, y: 10pt),
-    radius: 6pt,
-    breakable: false,
-  )[
-    #set text(font: "Liberation Mono", size: 9.5pt, fill: rgb("#0f172a"))
-    ```text
-Problem 1: Tiling Without Waste          Problem 2: Gift Baskets Without Leftovers
-315 pomegranates    180 honey confections
-420 cm                                 (to divide)            (to divide)
-132 cm
-Basket 1 ]           [ Basket 2 ] ...
-Strictly identical contents!
-Maximal whole square slabs?               Maximal number of honored guests?
-    ```
+#figure(image("figures_en/vol_4/fig_29_euclide_rectangles.svg", alt: "Euclid’s geometric algorithm by square dissection"),
+  caption: [
+    Euclid's geometric algorithm by square dissection
   ]
-]
+)
 
 How can we resolve both dilemmas without spending three weeks testing
 random numbers? In both cases, the underlying mathematical challenge is
@@ -21643,10 +19504,7 @@ statements:
   $b divides a$).
 - #strong[$a$ is divisible by $b$].
 
-#alerte(title: [Attention au Piège !])[
-#strong[⚠️ Watch Out! Pitfall --- The Direction of Division!
-]
- Never
+#alerte(title: [Watch Out! Pitfall — The Direction of Division!])[Never
 confuse the divisor with the multiple:
 
 - Saying “6 divides 42” is #strong[true].
@@ -21655,6 +19513,7 @@ confuse the divisor with the multiple:
   or equal to the base; the #strong[divisor] is always smaller than or
   equal to the dividend.
 ]
+
 
 ==== Quick Review: Divisibility Rules
 <quick-review-divisibility-rules>
@@ -21684,13 +19543,11 @@ further: $4 = 2 times 2$. Thus $12 = 2 times 2 times 3$. Can you split 2
 or 3 any further? No! Two and three are indivisible. They can only be
 divided by 1 and by themselves.
 
-#quote_box[
-#strong[📐 Formal Definition --- Prime Number.
-]
- A natural number is
+#principe(title: [Formal Definition — Prime Number.])[A natural number is
 called #strong[prime] if it possesses #strong[exactly two distinct
 divisors]: 1 and itself.
 ]
+
 
 Observe the direct consequences of this definition:
 
@@ -21712,15 +19569,13 @@ $ upright(bold(2\,quad 3\,quad 5\,quad 7\,quad 11\,quad 13\,quad 17\,quad 19\,qu
 #emph[\(Continuing to 100: 31, 37, 41, 43, 47, 53, 59, 61, 67, 71, 73,
 79, 83, 89, 97).]
 
-#decouvre(title: [Découverte & Histoire])[
-#strong[💡 Did You Know?
-]
- In Book IX of the #emph[Elements], Euclid
+#principe(title: [Did You Know?])[In Book IX of the #emph[Elements], Euclid
 proved a breathtaking theorem: #strong[there are infinitely many prime
 numbers]. Even if you journeyed for billions of years through
 unimaginably colossal numbers, you would never run out of newly emerging
 primes!
 ]
+
 
 #divider()
 
@@ -21730,14 +19585,12 @@ Here stands the single most important theorem in all of number theory.
 It is so foundational that it is termed the #strong[Fundamental Theorem
 of Arithmetic].
 
-#quote_box[
-#strong[📐 Fundamental Theorem of Arithmetic ---
-]
- Every integer greater
+#principe(title: [Fundamental Theorem of Arithmetic —])[Every integer greater
 than or equal to 2 can be written as a #strong[product of prime
 numbers]. This factorization is #strong[unique], up to the order of the
 factors.
 ]
+
 
 This is the “genetic fingerprint” of an integer. Two different numbers
 can never share the exact same prime factorization.
@@ -21774,25 +19627,21 @@ divide both $a$ and $b$ simultaneously: these are their #strong[common
 divisors]. Because 1 divides every integer, there is always at least one
 common divisor: the number 1.
 
-#principe(title: [Définition Fondamentale])[
-#strong[📐 Definition --- GCD (Greatest Common Divisor).
-]
- Among all
+#principe(title: [Definition — GCD (Greatest Common Divisor).])[Among all
 common divisors of two positive integers $a$ and $b$, the greatest of
 them is called the #strong[Greatest Common Divisor], denoted
 #strong[$gcd\(a\,b\)$] or #strong[$upright("GCD")\(a\,b\)$].
 ]
 
-#principe(title: [Définition Fondamentale])[
-#strong[📐 Definition --- Relatively Prime (Coprime) Numbers.
-]
- Two
+
+#principe(title: [Definition — Relatively Prime (Coprime) Numbers.])[Two
 positive integers are said to be #strong[relatively prime (coprime)]
 when their only common divisor is 1: $ gcd\(a\,b\)= 1 $ #emph[\(Example:
 8 and 15 are not prime numbers, but they are coprime because the
 divisors of 8 are ${ 1\,2\,4\,8 }$ and those of 15 are
 ${ 1\,3\,5\,15 }$\; their sole common divisor is 1).]
 ]
+
 
 ==== 5.2 First Method: Using Prime Factorization
 <first-method-using-prime-factorization>
@@ -21852,13 +19701,12 @@ The matching numbers reached are 15, so
 $gcd\(75\,45\)= upright(bold(15))$.
 
 #quote_box[
-#strong[⚠️ The Limitation of Subtraction:
-]
- If you needed to compute
+#strong[⚠️ The Limitation of Subtraction:] If you needed to compute
 $gcd\(1\,000\,000\,2\)$, you would have to subtract 2 five hundred
 thousand times! That is impractically slow. Fortunately, Euclid
 conceived a stroke of brilliance.
 ]
+
 
 ==== 6.2 The Euclidean Algorithm (Successive Divisions)
 <the-euclidean-algorithm-successive-divisions>
@@ -21867,12 +19715,10 @@ possible multiples of $b$ in a single stroke? That is precisely the
 principle of #strong[Euclidean division] (integer division with
 remainder): $ a = b times q + r quad\(0 lt.eq r < b\) $
 
-#quote_box[
-#strong[📐 Euclid's Theorem ---
-]
- If integer division of $a$ by $b$
+#principe(title: [Euclid's Theorem —])[If integer division of $a$ by $b$
 yields remainder $r$, then: $ gcd\(a\,b\)= gcd\(b\,r\) $
 ]
+
 
 #strong[The Euclidean Algorithm Procedure:] 1. Perform integer division
 of the larger number by the smaller number. 2. If the remainder is
@@ -21883,22 +19729,12 @@ NON-ZERO remainder.]
 #emph[Example: Solve the Alexandria mosaic tiling problem:
 $gcd\(420\,132\)$.]
 
-#align(center)[
-  #block(
-    fill: rgb("#f8fafc"),
-    stroke: 1pt + rgb("#cbd5e1"),
-    inset: (x: 16pt, y: 10pt),
-    radius: 6pt,
-    breakable: false,
-  )[
-    #set text(font: "Liberation Mono", size: 9.5pt, fill: rgb("#0f172a"))
-    ```text
-Step 1:  420 = 132 × 3 + 24    (remainder r₁ = 24 ≠ 0)
-Step 2:  132 =  24 × 5 + 12    (remainder r₂ = 12 ≠ 0)
-Step 3:   24 =  12 × 2 +  0    (remainder r₃ = 0)
-    ```
-  ]
+#methode(title: [Step-by-Step Method — Computing the GCD via Euclid's
+Algorithm])[- Step 1: 420 = 132 × 3 + 24 (remainder r₁ = 24 ≠ 0)
+- Step 2: 132 = 24 × 5 + 12 (remainder r₂ = 12 ≠ 0)
+- Step 3: 24 = 12 × 2 + 0 (remainder r₃ = 0)
 ]
+
 
 The final remainder before 0 is #strong[12]. Therefore:
 $ gcd\(420\,132\)= upright(bold(12)) . $
@@ -21922,25 +19758,21 @@ numerator and denominator by common factors. But often students stop
 prematurely: dividing by 2, then by 3, uncertain whether further
 reduction is possible.
 
-#principe(title: [Définition Fondamentale])[
-#strong[📐 Definition --- Irreducible Fraction (Lowest Terms).
-]
- A
+#principe(title: [Definition — Irreducible Fraction (Lowest Terms).])[A
 fraction $a / b$ is said to be #strong[irreducible] (in lowest terms) if
 its numerator $a$ and denominator $b$ are #strong[relatively prime],
 meaning $gcd\(a\,b\)= 1$. It cannot be simplified any further.
 ]
 
+
 Using the GCD, any fraction can be simplified to lowest terms #strong[in
 a single step]:
 
-#methode(title: [Méthode Pas à Pas])[
-#strong[🧭 Method --- One-Step Simplification.
-]
- To reduce $a / b$ to
+#methode(title: [Method — One-Step Simplification.])[To reduce $a / b$ to
 lowest terms, divide both numerator and denominator by their
 #strong[GCD]: $ a / b = frac(a div gcd\(a\,b\), b div gcd\(a\,b\)) $
 ]
+
 
 #emph[Example:] Simplify the fraction $132 / 420$ to lowest terms. We
 previously calculated $gcd\(420\,132\)= 12$:
@@ -22452,15 +20284,13 @@ Chapter 30: #strong[The Roulette of Fate and the Hunter's Survival].
 #metadata("debut-section") <debut-section>
 == CHAPTER 30: The Roulette of Fate and the Hunter's Survival
 <chapter-30-the-roulette-of-fate-and-the-hunters-survival>
-#quote_box[
-#emph[“The ignorant man blames bad luck, consults fortune-tellers, or
+#alerte(title: [“The ignorant man blames bad luck, consults fortune-tellers, or
 trembles before the thunderstorm when danger approaches. The
 mathematician surveys the paths of the future, calculates the fraction
 of chance, and makes the decision that saves his caravan. Chance is no
-blind monster: it is a tree whose branches can be counted.”
+blind monster: it is a tree whose branches can be counted.”])[
 ]
 
-]
 
 #divider()
 
@@ -22492,24 +20322,11 @@ bales of precious spices and fine silks halts at the edge of an immense,
 dark, and misty forest. To reach the oasis where the grand annual market
 is being held, the caravan master must choose between two routes:
 
-#align(center)[
-  #block(
-    fill: rgb("#f8fafc"),
-    stroke: 1pt + rgb("#cbd5e1"),
-    inset: (x: 16pt, y: 10pt),
-    radius: 6pt,
-    breakable: false,
-  )[
-    #set text(font: "Liberation Mono", size: 9.5pt, fill: rgb("#0f172a"))
-    ```text
-Marsh Trail (A)
-1 caravan in 10 lost
-Caravan Departure                                Jade Oasis
-Gorge Trail (B)
-4 caravans in 10 lost
-    ```
+#figure(image("figures_en/vol_4/fig_30_sentiers_arbre.svg", alt: "Choice of path: weighted probability tree"),
+  caption: [
+    Choice of path: weighted probability tree
   ]
-]
+)
 
 - #strong[The Marsh Trail (Path A):] It is a flat track, easy on the
   animals' feet. But the region is riddled with treacherous mud pits.
@@ -22544,42 +20361,36 @@ be mastered.
 
 ==== 2.1 Random Experiment and Outcome
 <random-experiment-and-outcome>
-#principe(title: [Définition Fondamentale])[
-#strong[📐 Definition --- Random Experiment.
-]
- An experiment is said to
+#principe(title: [Definition — Random Experiment.])[An experiment is said to
 be #strong[random] if: 1. All possible results are known in advance; 2.
 The final result depends solely on chance and is #strong[impossible to
 predict with certainty].
 ]
+
 
 #emph[Examples:] - Tossing a balanced coin and observing the upper face
 is a random experiment. - Dropping an apple to see if it falls toward
 the ground is #strong[not] a random experiment (gravity guarantees that
 it will always fall).
 
-#principe(title: [Définition Fondamentale])[
-#strong[📐 Definition --- Outcome.
-]
- An #strong[outcome] (or elementary
+#principe(title: [Definition — Outcome.])[An #strong[outcome] (or elementary
 event) is one of the possible results of a random experiment. The set of
 all possible outcomes is called the #strong[sample space] (often denoted
 by the Greek letter $Omega$, “omega”).
 ]
+
 
 #emph[Example with a 6-sided die:] The possible outcomes are 1, 2, 3, 4,
 5, and 6. The sample space is ${ 1\,2\,3\,4\,5\,6 }$.
 
 ==== 2.2 Events: Impossible, Certain, Complementary
 <events-impossible-certain-complementary>
-#principe(title: [Définition Fondamentale])[
-#strong[📐 Definition --- Event.
-]
- An #strong[event] is a set consisting
+#principe(title: [Definition — Event.])[An #strong[event] is a set consisting
 of zero, one, or several outcomes. An event is said to #strong[occur]
 (or be realized) if the outcome obtained during the experiment belongs
 to that event.
 ]
+
 
 Consider the roll of an ordinary six-sided die:
 
@@ -22598,30 +20409,11 @@ Consider the roll of an ordinary six-sided die:
   denoted #strong[$macron(A)$] (read #strong[“A bar”] or “not $A$”), is
   the event that occurs #strong[precisely when $A$ does not occur].
 
-#align(center)[
-  #block(
-    fill: rgb("#f8fafc"),
-    stroke: 1pt + rgb("#cbd5e1"),
-    inset: (x: 16pt, y: 10pt),
-    radius: 6pt,
-    breakable: false,
-  )[
-    #set text(font: "Liberation Mono", size: 9.5pt, fill: rgb("#0f172a"))
-    ```text
-Complete Sample Space Ω (Total=1)
-Event A         Complement Ā
-Success)       (Failures)
-    ```
-  ]
-]
-
-#quote_box[
-#strong[📐 Fundamental Property of Complementary Events ---
-]
- For any
+#principe(title: [Fundamental Property of Complementary Events —])[For any
 event $A$:
 $ P\(macron(A)\)= 1 - P\(A\)#h(2em) upright("or equivalently") #h(2em) P\(A\)+ P\(macron(A)\)= 1 $
 ]
+
 
 #emph[Example:] If the probability of rain tomorrow is
 $P\(upright("Rain")\)= 0.3$ (or $30 %$), then the probability of no rain
@@ -22646,15 +20438,13 @@ phrases:
 
 ==== 3.2 Laplace's Formula
 <laplaces-formula>
-#quote_box[
-#strong[📐 Laplace's Rule --- Probability under Equiprobability.
-]
- In a
+#principe(title: [Laplace's Rule — Probability under Equiprobability.])[In a
 situation with equally likely outcomes, the probability of an event $E$
 is equal to the number of favorable outcomes divided by the total number
 of possible outcomes:
 $ P\(E\)= frac(upright("Number of outcomes favorable to ") E, upright("Total number of possible outcomes")) $
 ]
+
 
 ==== 3.3 The Three Guises of a Probability
 <the-three-guises-of-a-probability>
@@ -22663,15 +20453,13 @@ $ 0 lt.eq P\(E\)lt.eq 1 $ It can be written in three equivalent forms:
 \1. As a #strong[fraction] (exact value): $1 / 4$ 2. As a
 #strong[decimal number]: $0.25$ 3. As a #strong[percentage]: $25 %$
 
-#alerte(title: [Attention au Piège !])[
-#strong[⚠️ Warning, Trap!
-]
- A probability can #strong[NEVER] be negative,
+#alerte(title: [Warning, Trap!])[A probability can #strong[NEVER] be negative,
 nor greater than 1 (or $100 %$)! If you calculate $P = 1.25$ or
 $P = - 0.3$, there is inevitably an error in your work. Furthermore, the
 sum of the probabilities of all elementary outcomes is #strong[always
 equal to 1].
 ]
+
 
 Returning to our caravan:
 
@@ -22732,38 +20520,12 @@ Look at the long diagonal of #strong[7s]:
   A sum of 7 is #strong[six times more likely] than a sum of 2! It is
   the king of the dice table.
 
-#align(center)[
-  #block(
-    fill: rgb("#f8fafc"),
-    stroke: 1pt + rgb("#cbd5e1"),
-    inset: (x: 16pt, y: 10pt),
-    radius: 6pt,
-    breakable: false,
-  )[
-    #set text(font: "Liberation Mono", size: 9.5pt, fill: rgb("#0f172a"))
-    ```text
-Distribution of the sum of two dice:
-Probability
-6/36                      ██ (7)
-5/36                   ██ ██ ██ (6, 7, 8)
-4/36                ██ ██ ██ ██ ██
-3/36             ██ ██ ██ ██ ██ ██ ██
-2/36          ██ ██ ██ ██ ██ ██ ██ ██ ██
-1/36       ██ ██ ██ ██ ██ ██ ██ ██ ██ ██ ██
-2  3  4  5  6  7  8  9 10 11 12   Sum
-    ```
-  ]
-]
-
 ==== 4.2 Tool \#2: The Weighted Probability Tree Diagram
 <tool-2-the-weighted-probability-tree-diagram>
 The tree diagram is the Swiss Army knife of probability. Each fork
 represents a trial.
 
-#quote_box[
-#strong[📐 The Three Sacred Laws of the Probability Tree ---
-]
- 1.
+#principe(title: [The Three Sacred Laws of the Probability Tree —])[1.
 #strong[The sum of the probabilities] on all branches issuing from any
 single node is #strong[always equal to 1]. 2. #strong[Along any path],
 you #strong[multiply] the branch probabilities to find the probability
@@ -22772,31 +20534,6 @@ probability of an event] composed of several distinct paths is the
 #strong[sum] of the probabilities of those paths.
 ]
 
-#align(center)[
-  #block(
-    fill: rgb("#f8fafc"),
-    stroke: 1pt + rgb("#cbd5e1"),
-    inset: (x: 16pt, y: 10pt),
-    radius: 6pt,
-    breakable: false,
-  )[
-    #set text(font: "Liberation Mono", size: 9.5pt, fill: rgb("#0f172a"))
-    ```text
-1st Trial                2nd Trial             Full Path Outcome
-1/2
-Heads ===> (Heads ; Heads) : 1/2 × 1/2 = 1/4
-1/2
-1/2
-Heads     Tails ===> (Heads ; Tails) : 1/2 × 1/2 = 1/4
-Start
-Tails     Heads ===> (Tails ; Heads) : 1/2 × 1/2 = 1/4
-1/2
-1/2
-Tails ===> (Tails ; Tails) : 1/2 × 1/2 = 1/4
-1/2
-    ```
-  ]
-]
 
 #divider()
 
@@ -22834,13 +20571,11 @@ return it]!
   - The probability of drawing two reds $\(R\;R\)$ is:
     $ P\(R\;R\)= 3 / 5 times 2 / 4 = 6 / 20 = 3 / 10 = 0.30 = upright(bold(30 %)) . $
 
-#alerte(title: [Attention au Piège !])[
-#strong[⚠️ Warning, Trap!
-]
- In sampling without replacement, #strong[the
+#alerte(title: [Warning, Trap!])[In sampling without replacement, #strong[the
 denominator decreases by 1] on the second draw, and the numerator
 corresponding to the drawn color also decreases by 1!
 ]
+
 
 #divider()
 
@@ -22857,46 +20592,19 @@ What happens, however, if you flip the coin 100 times, 1,000 times,
 frequency]:
 $ f = frac(upright("Number of observed Heads"), upright("Total number of flips ") N) $
 
-#quote_box[
-#strong[📐 Phenomenon of Frequency Stabilization (Law of Large Numbers)
----
-]
- When a random experiment is repeated an #strong[independently large
+#principe(title: [Phenomenon of Frequency Stabilization (Law of Large Numbers)
+—])[When a random experiment is repeated an #strong[independently large
 number of times], the observed relative frequency of an event approaches
 and stabilizes around its #strong[theoretical probability].
 ]
 
-#align(center)[
-  #block(
-    fill: rgb("#f8fafc"),
-    stroke: 1pt + rgb("#cbd5e1"),
-    inset: (x: 16pt, y: 10pt),
-    radius: 6pt,
-    breakable: false,
-  )[
-    #set text(font: "Liberation Mono", size: 9.5pt, fill: rgb("#0f172a"))
-    ```text
-Relative Frequency f
-1.0 o
-0.7 o
-0.5 \ooo Theoretical Probability = 0.5
-0.3 o   \  /   o   \
-o          \
-0.0
-10    100    1,000   10,000   Number of trials N
-    ```
-  ]
-]
 
 This very principle allows insurance companies to set policy premiums
 fairly, meteorologists to predict storm patterns, and casinos to
 guarantee they never operate at a net loss over the course of a full
 year!
 
-#quote_box[
-#strong[🔍 True History --- The Letters of Pascal and Fermat (1654)
-]
- In
+#decouvre(title: [True History — The Letters of Pascal and Fermat (1654)])[In
 1654, a Parisian gambler, the #strong[Chevalier de Méré], presented
 #strong[Blaise Pascal] with an enigma that set tavern arguments ablaze:
 “the problem of points” (#emph[le problème des partis]). Two players are
@@ -22911,6 +20619,7 @@ in only 1. Natural justice therefore demanded giving $3 / 4$ of the pot
 to Player A (48 pistoles) and $1 / 4$ to Player B (16 pistoles). Modern
 probability theory was born!
 ]
+
 
 #divider()
 
@@ -23204,20 +20913,28 @@ least one 6 in 4 rolls. Was the Chevalier right to place this bet?
 A Python program simulates 10,000 rolls of a balanced 6-sided die. Here
 is the script used:
 
-```python
+#align(center)[
+  #block(
+    fill: rgb("#f8fafc"),
+    stroke: 1pt + rgb("#cbd5e1"),
+    inset: (x: 16pt, y: 10pt),
+    radius: 6pt,
+    breakable: false,
+  )[
+    #set text(font: "Liberation Mono", size: 9.5pt, fill: rgb("#0f172a"))
+    ```text
 import random
-
 rolls = 10000
 sixes = 0
-
 for i in range(rolls):
-  die = random.randint(1, 6)
-  if die == 6:
-    sixes += 1
-
+die = random.randint(1, 6)
+if die == 6:
+sixes += 1
 frequency = sixes / rolls
 print("Frequency of 6:", frequency)
-```
+    ```
+  ]
+]
 
 + What is the theoretical probability of obtaining a 6 on a single roll?
   Give its value as a fraction and as a decimal rounded to 0.001.
@@ -23445,7 +21162,7 @@ flight, grow arrows, soar into the sky, and become #strong[vectors].
 
 #divider()
 
-#frontispice-volume("figures/nature/vol_5_toile_araignee.jpg")
+#frontispice-volume("figures_en/nature/vol_5_toile_araignee.jpg")
 
 #ouverture-volume(
   "V",
@@ -23464,15 +21181,13 @@ flight, grow arrows, soar into the sky, and become #strong[vectors].
 #metadata("debut-section") <debut-section>
 == CHAPTER 31: The Court of Logic
 <chapter-31-the-court-of-logic>
-#quote_box[
-#emph[“In the courtroom of mathematics, no eloquence can save the
+#exemple_resolu(title: [“In the courtroom of mathematics, no eloquence can save the
 accused. Verdicts are not reached on the sincere expression of the
 witness, nor on the number of those who believe him: judgement is passed
 strictly on proof. A single counterexample suffices to condemn a
-statement, but a thousand examples will never suffice to clear it.”
+statement, but a thousand examples will never suffice to clear it.”])[
 ]
 
-]
 
 #divider()
 
@@ -23540,15 +21255,13 @@ $ 40^2 + 40 + 41 = 1600 + 40 + 41 = 1681 = 41 times 41 . $
 $1681$ is #strong[not] prime. The statement is #strong[false]. The gavel
 strikes; the verdict is final and unappealable.
 
-#decouvre(title: [Découverte & Histoire])[
-#strong[💡 Did You Know?
-]
- This polynomial was observed by
+#decouvre(title: [Did You Know?])[This polynomial was observed by
 #strong[Leonhard Euler] in 1772. It produces prime numbers for $n$ from
 $0$ up to $39$---an astounding streak---but it fails at $n = 40$. One
 can even see this without calculating: for $n = 41$,
 $41^2 + 41 + 41 = 41 times 43$, which is obviously divisible by $41$.
 ]
+
 
 This story encapsulates the entire spirit of this chapter:
 
@@ -23566,9 +21279,7 @@ need precise language (which numbers are we talking about? what does
 construct together.
 
 #quote_box[
-#strong[🔍 The True Story ---
-]
- Around 350 BCE, #strong[Aristotle] laid
+#strong[🔍 The True Story ---] Around 350 BCE, #strong[Aristotle] laid
 the foundations of logic by studying the #emph[syllogism]: “All men are
 mortal; Socrates is a man; therefore Socrates is mortal.” More than two
 thousand years later, in 1847 and 1854, the Englishman #strong[George
@@ -23577,6 +21288,7 @@ an #emph[algebra]: truth became $1$, falsehood $0$, and “and” became
 multiplication. Without knowing it, he had just penned the grammar for
 all twentieth-century computers.
 ]
+
 
 #divider()
 
@@ -23591,12 +21303,10 @@ expand the universe of numbers.
 The very first numbers are those of the shepherd counting his sheep:
 $0\,1\,2\,3\,dots.h$
 
-#principe(title: [Définition Fondamentale])[
-#strong[📐 Definition ---
-]
- The set of #strong[natural numbers] is
+#principe(title: [Definition —])[The set of #strong[natural numbers] is
 $ bb(N) = { 0 thin\;1 thin\;2 thin\;3 thin\;dots.h } . $
 ]
+
 
 #strong[Notation Explained.] - The #strong[curly braces] ${ med }$ are
 used to write a set by listing its elements. We read this as “the set of
@@ -23618,13 +21328,11 @@ causes trouble: $3 - 5$ has no answer in $bb(N)$.
 Recall the merchant's slate (Chapter 14): to record a debt, negative
 numbers become indispensable.
 
-#principe(title: [Définition Fondamentale])[
-#strong[📐 Definition ---
-]
- The set of #strong[integers] (or relative
+#principe(title: [Definition —])[The set of #strong[integers] (or relative
 integers) is
 $ bb(Z) = { dots.h thin\;- 3 thin\;- 2 thin\;- 1 thin\;0 thin\;1 thin\;2 thin\;3 thin\;dots.h } . $
 ]
+
 
 The letter $bb(Z)$ comes from the German #strong[#emph[Zahlen]]
 (“numbers”), widely adopted by Richard Dedekind and German
@@ -23637,14 +21345,12 @@ integer.
 A merchant weighing spices needs $2.35 upright(" kg")$. Simon Stevin
 (Chapter 11) popularized decimal numbers.
 
-#principe(title: [Définition Fondamentale])[
-#strong[📐 Definition ---
-]
- A number is #strong[decimal] if it can be
+#principe(title: [Definition —])[A number is #strong[decimal] if it can be
 written in the form
 $ a / 10^n quad upright("with ") a in bb(Z) upright(" and ") n in bb(N) . $
 The set of decimal numbers is denoted $bb(D)$.
 ]
+
 
 In other words: a decimal number is one that can be written with a
 #strong[finite] number of digits after the decimal point. Examples:
@@ -23663,15 +21369,13 @@ Everything seems in order… until the day we divide a loaf of bread into
 
 ==== 2.4 The Rational Numbers $bb(Q)$: Dividing into Three
 <the-rational-numbers-mathbbq-dividing-into-three>
-#principe(title: [Définition Fondamentale])[
-#strong[📐 Definition ---
-]
- A number is #strong[rational] if it can be
+#principe(title: [Definition —])[A number is #strong[rational] if it can be
 written in the form
 $ p / q quad upright("with ") p in bb(Z) upright(" and ") q in bb(N)\,med q eq.not 0 . $
 The set of rational numbers is denoted $bb(Q)$ (from the initial of
 #emph[quotient], proposed by Peano in 1895).
 ]
+
 
 The word “rational” comes from the Latin #emph[ratio], meaning “ratio”
 or “proportion”: a rational number is a #strong[ratio] of two integers.
@@ -23683,12 +21387,7 @@ Your calculator displays $0.333333333$, which #emph[looks] like a
 decimal. But its screen is too small to tell the whole truth. Here is
 the first trial of the chapter.
 
-#quote_box[
-#strong[✍️ Proof (Core Curriculum) --- $1 / 3$ is not a decimal number.
-]
-
-
-Let us reason #strong[by contradiction] (#emph[reductio ad absurdum]):
+#exemple_resolu(title: [Proof (Core Curriculum) — $1 / 3$ is not a decimal number.])[Let us reason #strong[by contradiction] (#emph[reductio ad absurdum]):
 suppose that $1 / 3$ were a decimal number. There would then exist an
 integer $a$ and a natural number $n$ such that $ 1 / 3 = a / 10^n . $
 Multiplying both sides by $3 times 10^n$, we obtain: $ 10^n = 3 a . $
@@ -23704,14 +21403,12 @@ We have reached a contradiction. The initial assumption must therefore
 be false: $1 / 3 in.not bb(D)$. $square.filled.medium$
 ]
 
+
 The small filled black square $square.filled.medium$ (or Halmos symbol)
 marks the end of a proof. The Ancients used to write “#strong[QED]”:
 #emph[quod erat demonstrandum] (“which was to be demonstrated”).
 
-#decouvre(title: [Découverte & Histoire])[
-#strong[💡 Did You Know?
-]
- An irreducible fraction $p / q$ is decimal if
+#decouvre(title: [Did You Know?])[An irreducible fraction $p / q$ is decimal if
 and only if its denominator $q$ contains only the prime factors $2$ and
 $5$. Thus $7 / 40 = frac(7, 2^3 times 5) = 0.175$ is decimal, but
 $1 / 6 = frac(1, 2 times 3)$ is not. Every rational number has a decimal
@@ -23720,6 +21417,7 @@ representation that is either #strong[terminating] (finite) or
 $1 / 7 = 0 . overline(142857)$ (where the overline indicates the
 repeating period).
 ]
+
 
 ==== 2.5 The Real Numbers $bb(R)$: The Diagonal That Broke the Brotherhood
 <the-real-numbers-mathbbr-the-diagonal-that-broke-the-brotherhood>
@@ -23732,26 +21430,19 @@ betrayed them. We will now write out the proof with full high-school
 rigor. First, we need a small lemma (a #emph[lemma] is an auxiliary
 stepping stone towards a main theorem).
 
-#quote_box[
-#strong[✍️ Proof (Core Curriculum) --- The square of an odd integer is
-odd.
-]
-
-
-Let $n$ be an odd integer. By definition, there exists an integer $k$
+#exemple_resolu(title: [Proof (Core Curriculum) — The square of an odd integer is
+odd.])[Let $n$ be an odd integer. By definition, there exists an integer $k$
 such that $n = 2 k + 1$. Then:
 $ n^2 =\(2 k + 1\)^2 = 4 k^2 + 4 k + 1 = 2\(2 k^2 + 2 k\)+ 1 . $ Since
 $2 k^2 + 2 k$ is an integer (let us call it $k'$), we have
 $n^2 = 2 k' + 1$: therefore $n^2$ is odd. $square.filled.medium$
 ]
 
+
 Similarly, the square of an even integer $n = 2 k$ is
 $n^2 = 4 k^2 = 2\(2 k^2\)$, which is even.
 
-#quote_box[
-#strong[📐 Consequence (by Contraposition) ---
-]
- If $n^2$ is even, then
+#alerte(title: [Consequence (by Contraposition) —])[If $n^2$ is even, then
 $n$ is even.
 
 Indeed, if $n$ were not even, it would be odd, and its square would be
@@ -23759,12 +21450,8 @@ odd by the lemma above. We will revisit this mode of reasoning
 (contraposition) in detail in Section 6.
 ]
 
-#quote_box[
-#strong[✍️ Proof (Core Curriculum) --- $sqrt(2)$ is irrational.
-]
 
-
-Let us reason by contradiction. Suppose that $sqrt(2)$ were rational.
+#exemple_resolu(title: [Proof (Core Curriculum) — $sqrt(2)$ is irrational.])[Let us reason by contradiction. Suppose that $sqrt(2)$ were rational.
 Then it could be written as an #strong[irreducible fraction]:
 $ sqrt(2) = p / q\,quad p in bb(N)\,med q in bb(N)^(*)\,med upright("where ") p upright(" and ") q upright(" share no common factor other than 1.") $
 Squaring both sides: $2 = p^2 / q^2$, hence: $ p^2 = 2 q^2 . $ 1.
@@ -23780,17 +21467,16 @@ The assumption “$sqrt(2)$ is rational” leads to an absurdity: it must be
 false. Therefore $sqrt(2) in.not bb(Q)$. $square.filled.medium$
 ]
 
+
 The notation $bb(N)^(*)$ denotes $bb(N)$ excluding $0$. Likewise,
 $bb(R)^(*)$ denotes the non-zero real numbers.
 
-#principe(title: [Définition Fondamentale])[
-#strong[📐 Definition ---
-]
- The set of #strong[real numbers], denoted
+#principe(title: [Definition —])[The set of #strong[real numbers], denoted
 $bb(R)$, is the set of all coordinates of points along a graduated
 number line. A real number that is not rational is called
 #strong[irrational].
 ]
+
 
 Examples of irrationals: $sqrt(2)$, $sqrt(3)$, $pi$ (proved irrational
 by Lambert in 1761), $sqrt(2) + 1$ (see Exercise 11).
@@ -23801,20 +21487,18 @@ Every natural number is an integer; every integer is a decimal; every
 decimal is rational ($a / 10^n$ is a quotient of integers); every
 rational is real.
 
-#principe(title: [Définition Fondamentale])[
-#strong[📐 Definition ---
-]
- A set $A$ is said to be #strong[included] in
+#principe(title: [Definition —])[A set $A$ is said to be #strong[included] in
 (or a #strong[subset] of) a set $B$, written $A subset B$, if every
 element of $A$ is also an element of $B$. We read this as “$A$ is
 included in $B$” or “$A$ is a subset of $B$\.”
 ]
 
+
 $ bb(N) subset bb(Z) subset bb(D) subset bb(Q) subset bb(R) $
 
-#figure(image("figures/vol_5/fig_31_ensembles_emboites.svg", alt: "Les ensembles de nombres emboîtés N ⊂ Z ⊂ D ⊂ Q ⊂ R"),
+#figure(image("figures_en/vol_5/fig_31_ensembles_emboites.svg", alt: "Nested number sets: N ⊂ Z ⊂ D ⊂ Q ⊂ R"),
   caption: [
-    Les ensembles de nombres emboîtés N ⊂ Z ⊂ D ⊂ Q ⊂ R
+    Nested number sets: N ⊂ Z ⊂ D ⊂ Q ⊂ R
   ]
 )
 
@@ -23823,10 +21507,7 @@ $- 1 in.not bb(N)$\; $0.5 in bb(D)$ but $0.5 in.not bb(Z)$\;
 $1 / 3 in bb(Q)$ but $1 / 3 in.not bb(D)$\; $sqrt(2) in bb(R)$ but
 $sqrt(2) in.not bb(Q)$.
 
-#quote_box[
-#strong[⚠️ Pitfall Warning!
-]
- Do not confuse $in$ and $subset$.
+#alerte(title: [Pitfall Warning!])[Do not confuse $in$ and $subset$.
 
 - $in$ connects an #strong[element] to a #strong[set]: $3 in bb(N)$.
 - $subset$ connects #strong[two sets]: ${ 3 } subset bb(N)$,
@@ -23836,20 +21517,16 @@ Writing “$3 subset bb(N)$” or “$bb(N) in bb(Z)$” is a violation of
 mathematical grammar.
 ]
 
-#quote_box[
-#strong[⚠️ Pitfall Warning!
-]
- A number can wear many disguises. $12 / 4$
+
+#alerte(title: [Pitfall Warning!])[A number can wear many disguises. $12 / 4$
 looks like a fraction, but it simplifies to $3$, a natural number.
 $sqrt(9) = 3 in bb(N)$, $sqrt(4 / 9) = 2 / 3 in bb(Q)$,
 $21 / 75 = 7 / 25 = 0.28 in bb(D)$. Always #strong[simplify] before
 passing judgement.
 ]
 
-#exemple_resolu(title: [Exemple Résolu Pas à Pas])[
-#strong[Worked Example 1 --- Classifying Numbers.
-]
- For each number,
+
+#exemple_resolu(title: [Worked Example 1 — Classifying Numbers.])[For each number,
 determine the smallest set among $bb(N)\,bb(Z)\,bb(D)\,bb(Q)\,bb(R)$
 that contains it:
 $ a = - 18 / 6\,quad b = 3 / 8\,quad c = 5 / 12\,quad d = sqrt(16) - sqrt(2)\,quad e =\(sqrt(5)\)^2\,quad f = frac(pi, 2 pi) . $
@@ -23872,6 +21549,7 @@ $ a = - 18 / 6\,quad b = 3 / 8\,quad c = 5 / 12\,quad d = sqrt(16) - sqrt(2)\,qu
 - $f = 1 / 2 = 0.5$: $bb(D)$. The $pi$ cancels out: do not let outward
   appearances mislead you!
 ]
+
 
 #divider()
 
@@ -23902,12 +21580,7 @@ not a box containing a zero.
 <union-intersection-and-complement>
 Let $A$ and $B$ be two subsets of a universal set $E$.
 
-#principe(title: [Définition Fondamentale])[
-#strong[📐 Definitions ---
-]
-
-
-- The #strong[intersection] $A inter B$ (read “$A$ intersect $B$”) is
+#principe(title: [Definitions —])[- The #strong[intersection] $A inter B$ (read “$A$ intersect $B$”) is
   the set of elements belonging to both $A$ #strong[and] $B$.
 
 - The #strong[union] $A union B$ (read “$A$ union $B$”) is the set of
@@ -23920,34 +21593,19 @@ Let $A$ and $B$ be two subsets of a universal set $E$.
 - $A$ and $B$ are #strong[disjoint] if $A inter B = diameter$.
 ]
 
+
 A mnemonic trick: $inter$ resembles a narrow tunnel or arch through
 which only those holding both tickets may pass; $union$ resembles a wide
 cup or bowl, a #strong[U] for #strong[U]nion, gathering everything
 together.
 
-#align(center)[
-  #block(
-    fill: rgb("#f8fafc"),
-    stroke: 1pt + rgb("#cbd5e1"),
-    inset: (x: 16pt, y: 10pt),
-    radius: 6pt,
-    breakable: false,
-  )[
-    #set text(font: "Liberation Mono", size: 9.5pt, fill: rgb("#0f172a"))
-    ```text
-A ∩ B                        A ∪ B
-A                 ███████████
-██                   ███
-B                ███████B
-only the shared region)       (all shaded areas combined)
-    ```
+#figure(image("figures_en/vol_5/fig_31_venn_intersection_union.svg", alt: "Venn diagrams: Intersection A ∩ B and Union A ∪ B"),
+  caption: [
+    Venn diagrams: Intersection A ∩ B and Union A ∪ B
   ]
-]
+)
 
-#exemple_resolu(title: [Exemple Résolu Pas à Pas])[
-#strong[Worked Example 2 --- Operations on Finite Sets.
-]
- Let
+#exemple_resolu(title: [Worked Example 2 — Operations on Finite Sets.])[Let
 $E = { 1 thin\;2 thin\;dots.h thin\;12 }$, $A$ = the set of multiples of
 2 in $E$, and $B$ = the set of multiples of 3 in $E$.
 
@@ -23968,15 +21626,13 @@ $E = { 1 thin\;2 thin\;dots.h thin\;12 }$, $A$ = the set of multiples of
   of elements.)
 ]
 
+
 ==== 3.3 Intervals of $bb(R)$
 <intervals-of-mathbbr>
 On the real number line, the most useful subsets are #strong[unbroken
 line segments without holes]: intervals.
 
-#principe(title: [Définition Fondamentale])[
-#strong[📐 Definition ---
-]
- Let $a$ and $b$ be two real numbers with
+#principe(title: [Definition —])[Let $a$ and $b$ be two real numbers with
 $a < b$.
 
 #figure(
@@ -24011,6 +21667,7 @@ numbers $a$ and $b$ are the #strong[endpoints] (or bounds) of the
 interval; $b - a$ is its #strong[length] (or width).
 ]
 
+
 #strong[Why these brackets?] The French and ISO convention is visual: an
 #strong[inward-facing bracket] $\[$ or $\]$ “captures” the endpoint (it
 is included); an #strong[outward-facing bracket] $\]$ or $\[$ “pushes it
@@ -24025,12 +21682,7 @@ to express “without bound in this direction.” This is why brackets are
 #strong[always open] adjacent to $+ oo$ or $- oo$: one can never “reach”
 infinity, and so it can never be included.
 
-#quote_box[
-#strong[⚠️ Pitfall Warning!
-]
-
-
-- $\[3 thin\;+ oo\]$ is #strong[incorrect]: the bracket must be open at
+#alerte(title: [Pitfall Warning!])[- $\[3 thin\;+ oo\]$ is #strong[incorrect]: the bracket must be open at
   $+ oo$.
 
 - $\[5 thin\;2\]$ makes no sense: the smaller endpoint must always be
@@ -24045,37 +21697,32 @@ infinity, and so it can never be included.
   ${ 1 thin\;2 thin\;3 }$.
 ]
 
+
 #strong[Useful Notations:] $bb(R)_(+) =\[0 thin\;+ oo\[$ (non-negative
 real numbers), $bb(R)_(-) =\]- oo thin\;0\]$ (non-positive reals),
 $bb(R)_(+)^(*) =\]0 thin\;+ oo\[$ (strictly positive reals),
 $bb(R)^(*) = bb(R)\\{ 0 } =\]- oo thin\;0\[union\]0 thin\;+ oo\[$.
 
-#exemple_resolu(title: [Exemple Résolu Pas à Pas])[
-#strong[Worked Example 3 --- Intersection and Union of Intervals.
-]
- Let
+#exemple_resolu(title: [Worked Example 3 — Intersection and Union of Intervals.])[Let
 $I =\[- 2 thin\;5\[$ and $J =\]1 thin\;+ oo\[$. Find $I inter J$ and
 $I union J$.
 
 Let us draw both intervals aligned on a line:
 ]
 
+
 #quote_box[
 - $I inter J$: a number must satisfy both $gt.eq - 2$, $< 5$, and $> 1$.
   The most restrictive lower bound is $x > 1$, and upper bound $x < 5$.
-  Therefore $I inter J =\
-]
-1 thin\;5\[$.
+  Therefore $I inter J =\]1 thin\;5\[$.
 - $I union J$: belonging to at least one suffices. This spans everything
   from $- 2$ (included) onwards to $+ oo$. Hence
   $I union J =\[- 2 thin\;+ oo\[$.
 ]
 
-#exemple_resolu(title: [Exemple Résolu Pas à Pas])[
-#strong[Worked Example 4 --- Translating an Inequality into an
-Interval.
-]
- Solve in $bb(R)$: $- 3 < 2 x + 1 lt.eq 7$, and express the
+
+#exemple_resolu(title: [Worked Example 4 — Translating an Inequality into an
+Interval.])[Solve in $bb(R)$: $- 3 < 2 x + 1 lt.eq 7$, and express the
 solution set as an interval.
 
 Subtract $1$ across all three parts: $- 4 < 2 x lt.eq 6$. Divide by $2$,
@@ -24083,10 +21730,8 @@ which is #strong[positive] (preserving inequality direction):
 $- 2 < x lt.eq 3$. The solution set is $S =\]- 2 thin\;3\]$.
 ]
 
-#exemple_resolu(title: [Exemple Résolu Pas à Pas])[
-#strong[Worked Example 5 --- A Union That Cannot Be Simplified.
-]
- Solve
+
+#exemple_resolu(title: [Worked Example 5 — A Union That Cannot Be Simplified.])[Solve
 $x^2 > 9$ in $bb(R)$.
 
 $x^2 > 9 arrow.l.r.double x^2 - 9 > 0 arrow.l.r.double\(x - 3\)\(x + 3\)> 0$.
@@ -24115,6 +21760,7 @@ ignores the negative branch: $x = - 4$ indeed satisfies
 $\(- 4\)^2 = 16 > 9$.
 ]
 
+
 #divider()
 
 #metadata("fin-section") <fin-section>
@@ -24129,10 +21775,9 @@ coordinate states where you are. But the sailor confronting the swell
 has little use for an anchor: he needs to know where the wind is driving
 him, at what speed, and how two competing currents merge into a single
 momentum. To liberate motion from the earth, humanity had to invent the
-flying arrow: the Vector.”
+flying arrow: the Vector.”]
 ]
 
-]
 
 #divider()
 
@@ -24174,11 +21819,14 @@ Yet the river is no tranquil pond. A strong current rushes from West to
 
 Look at the scene from the riverbank:
 
-#figure(image("figures/vol_5/fig_32_chasles_addition.svg", alt: "Vecteurs dans le plan : relation de Chasles et coordonnées"),
-  caption: [
-    Vecteurs dans le plan : relation de Chasles et coordonnées
-  ]
-)
+#decouvre(title: [Concrete Modeling — The Sailboat Drift and Velocity
+Addition])[- C (Actual landing point)
+- Actual /
+- trajectory / Oar propulsion (North: 3 km/h)
+- o B
+- A River current (East: 4 km/h)
+]
+
 
 What forces act upon your vessel? 1. Your arms drive you North: in one
 hour, without current, you would travel $3 upright(" km")$ North. 2. The
@@ -24237,10 +21885,7 @@ This geometric entity was given the name #strong[vector], from the Latin
 
 ==== 2.2 The Three Defining Characteristics of a Vector
 <the-three-defining-characteristics-of-a-vector>
-#principe(title: [Définition Fondamentale])[
-#strong[📐 Definition --- Vector.
-]
- A non-zero vector $arrow(u)$ is
+#principe(title: [Definition — Vector.])[A non-zero vector $arrow(u)$ is
 defined by three inseparable pieces of data: 1. #strong[Its direction:]
 the line along which it lies (or any line parallel to it). This
 indicates the line of action of the movement (e.g., the North-South
@@ -24252,6 +21897,13 @@ segment, denoted $parallel arrow(u) parallel$. It represents physical
 intensity (a speed in $upright("km/h")$, a force in newtons, a
 displacement in meters).
 ]
+
+
+#figure(image("figures_en/vol_5/fig_32_vecteur_definition.svg", alt: "Characterization of a vector: direction, sense, and magnitude"),
+  caption: [
+    Characterization of a vector: direction, sense, and magnitude
+  ]
+)
 
 #strong[Notation Explained.] - We place a rightward arrow above the
 letter: $arrow(u)$, $arrow(v)$, $arrow(w)$. We read this aloud as:
@@ -24266,10 +21918,7 @@ AB”. We always have $parallel accent(A B, ⃗) parallel = A B$ (the
 standard geometric length). Double bars are used to avoid confusion with
 the absolute value $\|x\|$ of a real number.
 
-#quote_box[
-#strong[⚠️ Pitfall Warning! Never confuse direction and sense!
-]
- In
+#alerte(title: [Pitfall Warning! Never confuse direction and sense!])[In
 everyday English, people often say “walk in the direction of Paris.” In
 mathematics, this is imprecise:
 
@@ -24279,6 +21928,7 @@ mathematics, this is imprecise:
   along the same straight highway share the #strong[same direction], but
   have #strong[opposite senses].
 ]
+
 
 ==== 2.3 The Zero Vector and Representatives
 <the-zero-vector-and-representatives>
@@ -24291,10 +21941,7 @@ $parallel arrow(0) parallel = 0$. It possesses neither a distinct
 direction nor a specific sense (it is said to have every possible
 direction).
 
-#decouvre(title: [Découverte & Histoire])[
-#strong[💡 Did You Know? A vector is an infinity of arrows at once!
-]
- A
+#decouvre(title: [Did You Know? A vector is an infinity of arrows at once!])[A
 vector $arrow(u)$ is not “glued” to one specific spot on paper. It is an
 equivalence class of displacements. If ten birds fly in tight formation,
 all heading South at $40 upright(" km/h")$, each bird traces its own
@@ -24303,43 +21950,28 @@ sense, and the same length. They are called #strong[representatives] (or
 bound arrows) of one and the same free vector $arrow(u)$.
 ]
 
-#align(center)[
-  #block(
-    fill: rgb("#f8fafc"),
-    stroke: 1pt + rgb("#cbd5e1"),
-    inset: (x: 16pt, y: 10pt),
-    radius: 6pt,
-    breakable: false,
-  )[
-    #set text(font: "Liberation Mono", size: 9.5pt, fill: rgb("#0f172a"))
-    ```text
-Bird 1              Bird 2              Bird 3
-A                   C                   E
-o                   o                   o
-u = AB          \   u = CD          \   u = EF
-B                   D                   F
-AB = CD = EF = same free vector u!
-    ```
-  ]
+
+#principe(title: [Fundamental Rule — Multiplying a Vector by a Scalar])[- Bird 1 Bird 2 Bird 3
+- A C E
+- o o o
+- u = AB ~ u = CD ~ u = EF
+- B D F
+- AB = CD = EF = same free vector u!
 ]
+
 
 ==== 2.4 Vector Equality and Parallelograms
 <vector-equality-and-parallelograms>
 When can two arrows $accent(A B, ⃗)$ and $accent(C D, ⃗)$ be declared
 identical as vectors?
 
-#quote_box[
-#strong[📐 Fundamental Theorem --- Vector Equality.
-]
- Let $A\,B\,C\,D$ be
+#principe(title: [Fundamental Theorem — Vector Equality.])[Let $A\,B\,C\,D$ be
 four points in the plane.
 $ accent(A B, ⃗) = accent(C D, ⃗) arrow.l.r.double upright("quadrilateral ") A B D C upright(" is a parallelogram (possibly degenerate/flat)") . $
 ]
 
-#quote_box[
-#strong[⚠️ Pitfall Warning! The vertex order matters.
-]
- Pay close
+
+#alerte(title: [Pitfall Warning! The vertex order matters.])[Pay close
 attention to the order of letters: $accent(A B, ⃗) = accent(C D, ⃗)$ means
 that $A B upright(bold(D C))$ is a parallelogram, #strong[not]
 $A B C D$! To travel from $A$ to $B$, one performs the exact same
@@ -24348,9 +21980,10 @@ $\[B C\]$ therefore share the same midpoint: their diagonals bisect each
 other.
 ]
 
-#figure(image("figures/vol_5/fig_32_vecteur_composantes.svg", alt: "Décomposition vectorielle fondamentale : u = x i + y j"),
+
+#figure(image("figures_en/vol_5/fig_32_vecteur_composantes.svg", alt: "Fundamental vector decomposition: u = x i + y j"),
   caption: [
-    Décomposition vectorielle fondamentale : u = x i + y j
+    Fundamental vector decomposition: u = x i + y j
   ]
 )
 
@@ -24371,24 +22004,24 @@ carried by horse couriers:
 What is the net outcome for the royal message? It departed from $A$ and
 has arrived at $C$.
 
-#quote_box[
-#strong[📐 Theorem (Chasles' Relation, 1837) ---
-]
- For any points
+#principe(title: [Theorem (Chasles' Relation, 1837) —])[For any points
 $A\,B\,C$ in the plane:
 $ accent(A B, ⃗) + accent(B C, ⃗) = accent(A C, ⃗) . $
 ]
+
+
+#figure(image("figures_en/vol_5/fig_32_chasles_addition.svg", alt: "Vecteurs dans le plan : relation de Chasles u + v"),
+  caption: [
+    Vecteurs dans le plan : relation de Chasles u + v
+  ]
+)
 
 #strong[Historical Origin.] This identity honors the French geometer
 #strong[Michel Chasles] (1793--1880), professor at the Sorbonne and the
 École Polytechnique, who unified projective geometry and algebraic
 directed segment metrics.
 
-#decouvre(title: [Découverte & Histoire])[
-#strong[💡 Did You Know? The pitfall of adding lengths.
-]
-
-$accent(A B, ⃗) + accent(B C, ⃗) = accent(A C, ⃗)$ is an equality of
+#alerte(title: [Did You Know? The pitfall of adding lengths.])[$accent(A B, ⃗) + accent(B C, ⃗) = accent(A C, ⃗)$ is an equality of
 #strong[vectors]. It #strong[never] implies $A B + B C = A C$ for
 standard lengths, unless the three points lie aligned in the precise
 order $A\,B\,C$! In any non-degenerate triangle, the triangle inequality
@@ -24397,6 +22030,7 @@ strictly shorter than detouring through $B$. The norm of the sum is
 always less than or equal to the sum of the norms:
 $parallel arrow(u) + arrow(v) parallel lt.eq parallel arrow(u) parallel + parallel arrow(v) parallel$.
 ]
+
 
 ==== 3.2 The Opposite Vector and Subtraction
 <the-opposite-vector-and-subtraction>
@@ -24429,10 +22063,7 @@ In physics and geometry, a real number is often called a #strong[scalar]
 (from the Latin #emph[scala], ladder or scale), because it scales the
 magnitude of a quantity without changing its fundamental nature.
 
-#principe(title: [Définition Fondamentale])[
-#strong[📐 Definition --- Scalar Multiplication.
-]
- Let $arrow(u)$ be a
+#principe(title: [Definition — Scalar Multiplication.])[Let $arrow(u)$ be a
 vector and $k in bb(R)$ a real number. The vector $k arrow(u)$ is
 defined by: 1. If $k = 0$ or $arrow(u) = arrow(0)$, then
 $k arrow(u) = arrow(0)$. 2. If $k eq.not 0$ and
@@ -24447,19 +22078,13 @@ $arrow(u) eq.not arrow(0)$:
   $parallel k arrow(u) parallel =\|k\|times parallel arrow(u) parallel$.
 ]
 
-#principe(title: [Définition Fondamentale])[
-#strong[📐 Règle Fondamentale --- Multiplication d'un Vecteur par un
-Scalaire
+
+#principe(title: [Fundamental Rule — Multiplying a Vector by a Scalar])[- 2u -u 0 u 2u 3u
 ]
 
-
-- 2u -u 0 u 2u 3u
-]
 
 #quote_box[
-#strong[📐 Algebraic Properties ---
-]
- For all vectors
+#strong[📐 Algebraic Properties ---] For all vectors
 $arrow(u)\,arrow(v)$ and all scalars $k\,k'$:
 
 - $\(k + k'\)arrow(u) = k arrow(u) + k' arrow(u)$ (distributivity with
@@ -24473,6 +22098,7 @@ $arrow(u)\,arrow(v)$ and all scalars $k\,k'$:
 - $1 arrow(u) = arrow(u)$ and $\(- 1\)arrow(u) = - arrow(u)$.
 ]
 
+
 ==== 3.5 Vector Characterization of the Midpoint
 <vector-characterization-of-the-midpoint>
 Let $\[A B\]$ be a line segment. The midpoint $I$ of $\[A B\]$ can be
@@ -24482,10 +22108,7 @@ half-length); 2. $accent(I A, ⃗) + accent(I B, ⃗) = arrow(0)$ ($I$ is the
 balance point between $A$ and $B$); 3. For any arbitrary point $M$ in
 the plane: $accent(M A, ⃗) + accent(M B, ⃗) = 2 accent(M I, ⃗)$.
 
-#quote_box[
-#strong[✍️ Proof --- Midpoint Identity.
-]
- By Chasles' relation:
+#exemple_resolu(title: [Proof — Midpoint Identity.])[By Chasles' relation:
 $accent(M A, ⃗) = accent(M I, ⃗) + accent(I A, ⃗)$ and
 $accent(M B, ⃗) = accent(M I, ⃗) + accent(I B, ⃗)$. Summing term by term:
 $ accent(M A, ⃗) + accent(M B, ⃗) =\(accent(M I, ⃗) + accent(I A, ⃗)\)+\(accent(M I, ⃗) + accent(I B, ⃗)\)= 2 accent(M I, ⃗) +\(accent(I A, ⃗) + accent(I B, ⃗)\). $
@@ -24493,6 +22116,7 @@ Since $I$ is the midpoint of $\[A B\]$, we know
 $accent(I A, ⃗) + accent(I B, ⃗) = arrow(0)$. Therefore:
 $ accent(M A, ⃗) + accent(M B, ⃗) = 2 accent(M I, ⃗) . quad square.filled.medium $
 ]
+
 
 #divider()
 
@@ -24507,10 +22131,7 @@ of $arrow(i)$ and $arrow(j)$ are perpendicular and
 $parallel arrow(i) parallel = parallel arrow(j) parallel = 1$, the frame
 is called #strong[orthonormal] (or Cartesian rectangular).
 
-#quote_box[
-#strong[📐 Theorem and Definition --- Coordinates of a Vector.
-]
- For
+#principe(title: [Theorem and Definition — Coordinates of a Vector.])[For
 every vector $arrow(u)$ in the plane, there exists a #strong[unique]
 pair of real numbers $\(x thin\;y\)$ such that:
 $ arrow(u) = x arrow(i) + y arrow(j) . $ We write $arrow(u) vec(x, y)$
@@ -24518,15 +22139,14 @@ or $arrow(u)\(x thin\;y\)$. $x$ is the #strong[abscissa] ($x$-component)
 and $y$ is the #strong[ordinate] ($y$-component).
 ]
 
+
 ==== 4.2 Fundamental Coordinate Formulas
 <fundamental-coordinate-formulas>
 Let $A\(x_A thin\;y_A\)$ and $B\(x_B thin\;y_B\)$ be two points, and let
 $arrow(u) vec(x, y)$ and $arrow(v) vec(x', y')$ be two vectors.
 
 #quote_box[
-#strong[📐 Key Formulas to Master ---
-]
- 1. #strong[Vector connecting two
+#strong[📐 Key Formulas to Master ---] 1. #strong[Vector connecting two
 points (“Arrival minus Departure”):]
 $ accent(A B, ⃗) vec(x_B - x_A, y_B - y_A) $ 2. #strong[Vector addition:]
 $ arrow(u) + arrow(v) vec(x + x', y + y') $ 3. #strong[Scalar
@@ -24539,10 +22159,8 @@ two points:
 $ A B = parallel accent(A B, ⃗) parallel = sqrt(\(x_B - x_A\)^2 +\(y_B - y_A\)^2) . $
 ]
 
-#quote_box[
-#strong[✍️ Proof --- Coordinates of $accent(A B, ⃗)$.
-]
- By definition of
+
+#principe(title: [Proof — Coordinates of $accent(A B, ⃗)$.])[By definition of
 point coordinates, $accent(O A, ⃗) = x_A arrow(i) + y_A arrow(j)$ and
 $accent(O B, ⃗) = x_B arrow(i) + y_B arrow(j)$. Using Chasles' relation:
 $ accent(A B, ⃗) = accent(A O, ⃗) + accent(O B, ⃗) = - accent(O A, ⃗) + accent(O B, ⃗) = accent(O B, ⃗) - accent(O A, ⃗) . $
@@ -24551,6 +22169,7 @@ $ accent(A B, ⃗) =\(x_B arrow(i) + y_B arrow(j)\)-\(x_A arrow(i) + y_A arrow(j
 The coordinates of $accent(A B, ⃗)$ are therefore indeed
 $\(x_B - x_A thin\;thin y_B - y_A\)$. $square.filled.medium$
 ]
+
 
 #divider()
 
@@ -24563,10 +22182,7 @@ lie on parallel lines, they have the #strong[same direction]. In
 mathematics, they are termed #strong[collinear] (from the Latin
 #emph[cum], together, and #emph[linea], line: “on the same line”).
 
-#principe(title: [Définition Fondamentale])[
-#strong[📐 Definition --- Collinear Vectors.
-]
- Two vectors $arrow(u)$ and
+#principe(title: [Definition — Collinear Vectors.])[Two vectors $arrow(u)$ and
 $arrow(v)$ are said to be #strong[collinear] if one is the scalar
 multiple of the other:
 $ upright("there exists ") k in bb(R) upright(" such that ") arrow(u) = k arrow(v) quad upright("or") quad arrow(v) = k arrow(u) . $
@@ -24574,15 +22190,13 @@ By convention, the zero vector $arrow(0)$ is collinear to #strong[all]
 vectors in the plane (since $arrow(0) = 0 times arrow(u)$).
 ]
 
+
 ==== 5.2 The Determinant of Two Vectors
 <the-determinant-of-two-vectors>
 How can one instantly test whether two vectors $arrow(u) vec(x, y)$ and
 $arrow(v) vec(x', y')$ are collinear, without guessing $k$?
 
-#principe(title: [Définition Fondamentale])[
-#strong[📐 Definition and Theorem --- Determinant in the Plane.
-]
- The
+#principe(title: [Definition and Theorem — Determinant in the Plane.])[The
 #strong[determinant] of vectors $arrow(u)$ and $arrow(v)$ in an
 orthonormal basis is the real number denoted
 $det\(arrow(u)\,arrow(v)\)$, calculated by the cross-product rule:
@@ -24591,12 +22205,8 @@ $ det\(arrow(u)\,arrow(v)\)= mat(delim: "|", x, x'; y, y') = x y' - y x' . $
 $ arrow(u) upright(" and ") arrow(v) upright(" are collinear") arrow.l.r.double det\(arrow(u)\,arrow(v)\)= 0 arrow.l.r.double x y' - y x' = 0 . $
 ]
 
-#quote_box[
-#strong[✍️ Proof --- Collinearity Condition.
-]
 
-
-- #strong[Forward direction ($arrow.r.double.long$):] Assume $arrow(u)$
+#exemple_resolu(title: [Proof — Collinearity Condition.])[- #strong[Forward direction ($arrow.r.double.long$):] Assume $arrow(u)$
   and $arrow(v)$ are collinear. If $arrow(v) = arrow(0)$, then
   $x' = y' = 0$, so $x y' - y x' = x\(0\)- y\(0\)= 0$. If
   $arrow(v) eq.not arrow(0)$, there exists $k in bb(R)$ such that
@@ -24618,16 +22228,16 @@ $ arrow(u) upright(" and ") arrow(v) upright(" are collinear") arrow.l.r.double 
   $square.filled.medium$
 ]
 
+
 #quote_box[
-#strong[💡 Geometric Interpretation: Area of the Parallelogram.
-]
- The
+#strong[💡 Geometric Interpretation: Area of the Parallelogram.] The
 absolute value of the determinant $\|det\(arrow(u)\,arrow(v)\)\|$ is
 exactly equal to the #strong[area of the parallelogram] spanned by the
 two vectors $arrow(u)$ and $arrow(v)$! If the vectors are collinear, the
 parallelogram collapses flat: its area is zero, which yields
 $det\(arrow(u)\,arrow(v)\)= 0$.
 ]
+
 
 ==== 5.3 Two Major Geometric Applications
 <two-major-geometric-applications>
@@ -24648,11 +22258,8 @@ parallelism transform into direct algebraic tests:
 
 === 6. Detailed Worked Examples
 <detailed-worked-examples>
-#exemple_resolu(title: [Exemple Résolu Pas à Pas])[
-#strong[Worked Example 1 --- Simplifying a Vector Expression Using
-Chasles.
-]
- Simplify the following vector expression as much as possible:
+#exemple_resolu(title: [Worked Example 1 — Simplifying a Vector Expression Using
+Chasles.])[Simplify the following vector expression as much as possible:
 $ arrow(W) = accent(A B, ⃗) - accent(C B, ⃗) + accent(C D, ⃗) - accent(A D, ⃗) . $
 
 #strong[Step-by-Step Method:] 1. Replace subtractions by the addition of
@@ -24667,10 +22274,8 @@ $ accent(A D, ⃗) + accent(D A, ⃗) = accent(A A, ⃗) = arrow(0) . $
 #strong[Conclusion:] $arrow(W) = arrow(0)$.
 ]
 
-#exemple_resolu(title: [Exemple Résolu Pas à Pas])[
-#strong[Worked Example 2 --- Calculating Coordinates and Distances.
-]
- In
+
+#exemple_resolu(title: [Worked Example 2 — Calculating Coordinates and Distances.])[In
 an orthonormal coordinate system $\(O thin\;arrow(i)\,arrow(j)\)$,
 consider $A\(- 3 thin\;2\)$, $B\(1 thin\;5\)$, and $C\(4 thin\;1\)$. 1.
 Determine the coordinates of $accent(A B, ⃗)$ and the exact length $A B$.
@@ -24696,11 +22301,9 @@ $(frac(1 + 0, 2) thin \; thin frac(5 +\(- 2\), 2)) =\(0.5 thin\;thin 1.5\)$.
 The diagonals indeed bisect each other!)]
 ]
 
-#exemple_resolu(title: [Exemple Résolu Pas à Pas])[
-#strong[Worked Example 3 --- Testing Point Collinearity with the
-Determinant.
-]
- Consider points $E\(- 2 thin\;- 3\)$, $F\(2 thin\;3\)$,
+
+#exemple_resolu(title: [Worked Example 3 — Testing Point Collinearity with the
+Determinant.])[Consider points $E\(- 2 thin\;- 3\)$, $F\(2 thin\;3\)$,
 and $G\(6 thin\;9\)$. Are they collinear?
 
 #strong[Solution:] Compute coordinates of vectors $accent(E F, ⃗)$ and
@@ -24713,10 +22316,8 @@ are collinear. Since they share the common point $E$, points $E$, $F$,
 and $G$ are collinear.
 ]
 
-#exemple_resolu(title: [Exemple Résolu Pas à Pas])[
-#strong[Worked Example 4 --- Finding a Parameter for Parallelism.
-]
- Let
+
+#exemple_resolu(title: [Worked Example 4 — Finding a Parameter for Parallelism.])[Let
 $arrow(u) vec(2 m - 1, 3)$ and $arrow(v) vec(5, m + 2)$ where
 $m in bb(R)$ is an unknown scalar. For what values of $m$ are these
 vectors collinear?
@@ -24731,10 +22332,8 @@ two distinct real solutions:
 $ m_1 = frac(- 3 - sqrt(145), 4) quad upright("and") quad m_2 = frac(- 3 + sqrt(145), 4) . $
 ]
 
-#exemple_resolu(title: [Exemple Résolu Pas à Pas])[
-#strong[Worked Example 5 --- Pure Geometric Vector Decomposition.
-]
- Let
+
+#exemple_resolu(title: [Worked Example 5 — Pure Geometric Vector Decomposition.])[Let
 $A B C$ be a triangle. Points $P$ and $Q$ are defined by
 $accent(A P, ⃗) = 1 / 3 accent(A B, ⃗)$ and
 $accent(A Q, ⃗) = 1 / 3 accent(A C, ⃗)$. Prove without using a coordinate
@@ -24751,10 +22350,8 @@ proves that lines $\(P Q\)$ and $\(B C\)$ are strictly parallel.
 #emph[\(Notice: we have just reproved Thales' theorem using vectors!)]
 ]
 
-#exemple_resolu(title: [Exemple Résolu Pas à Pas])[
-#strong[Worked Example 6 --- The Centroid of a Triangle.
-]
- Let $A B C$ be
+
+#exemple_resolu(title: [Worked Example 6 — The Centroid of a Triangle.])[Let $A B C$ be
 a triangle. Let $G$ be the point defined by the relation:
 $ accent(G A, ⃗) + accent(G B, ⃗) + accent(G C, ⃗) = arrow(0) . $ 1. Let
 $A'$ be the midpoint of $\[B C\]$. Express
@@ -24776,6 +22373,7 @@ vertex $A$. $G$ is the #strong[centroid] (isobarycenter) of triangle
 $A B C$.
 ]
 
+
 #divider()
 
 === 7. In Computer Science: Testing Collinearity in Python
@@ -24783,22 +22381,30 @@ $A B C$.
 Here is a Python script that takes the coordinates of two vectors and
 tests their collinearity using the determinant:
 
-```python
+#align(center)[
+  #block(
+    fill: rgb("#f8fafc"),
+    stroke: 1pt + rgb("#cbd5e1"),
+    inset: (x: 16pt, y: 10pt),
+    radius: 6pt,
+    breakable: false,
+  )[
+    #set text(font: "Liberation Mono", size: 9.5pt, fill: rgb("#0f172a"))
+    ```text
 def determinant(ux, uy, vx, vy):
-    """Calculates the determinant of two vectors u(ux, uy) and v(vx, vy)."""
-    return ux * vy - uy * vx
-
+"""Calculates the determinant of two vectors u(ux, uy) and v(vx, vy)."""
+return ux * vy - uy * vx
 def are_collinear(ux, uy, vx, vy, tolerance=1e-9):
-    """Checks whether two vectors are collinear up to a given precision."""
-    det = determinant(ux, uy, vx, vy)
-    return abs(det) < tolerance
-
+"""Checks whether two vectors are collinear up to a given precision."""
+det = determinant(ux, uy, vx, vy)
+return abs(det) < tolerance
 # Test with u(4, 6) and v(6, 9)
 print("u and v collinear?", are_collinear(4, 6, 6, 9))  # Outputs True
-
 # Test with u(3, -1) and v(2, 5)
 print("u and v collinear?", are_collinear(3, -1, 2, 5))  # Outputs False
-```
+    ```
+  ]
+]
 
 #divider()
 
@@ -25091,16 +22697,14 @@ Line of Sight].
 #metadata("debut-section") <debut-section>
 == CHAPTER 33: The Line of Sight
 <chapter-33-the-line-of-sight>
-#quote_box[
-#emph[“A straight line is not merely an ink trace drawn with a ruler: it
+#principe(title: [“A straight line is not merely an ink trace drawn with a ruler: it
 is an infinite laser beam traversing the universe, a line of sight swept
 by a watchman's gaze. To confine this infinity of points into an
 algebraic formula, two numbers suffice: an anchor along the vertical
 axis and a climbing slope. Then, the crossing of two paths becomes the
-unfolding of an equation.”
+unfolding of an equation.”])[
 ]
 
-]
 
 #divider()
 
@@ -25137,10 +22741,9 @@ The lighthouse keeper monitors a Cartesian radar screen:
   $B\(- 1 thin\;8\)$, steaming in a straight path along vector
   $arrow(v) vec(1, - 1)$.
 
-#figure(image("figures/vol_5/fig_33_pente_ordonnee.svg", alt: "Droite affine y = mx + p : coefficient directeur et ordonnée à l’origine"),
+#figure(image("figures_en/vol_5/fig_33_pente_ordonnee.svg", alt: "Affine line y = mx + p: slope and y-intercept"),
   caption: [
-    Droite affine y = mx + p : coefficient directeur et ordonnée à
-    l'origine
+    Affine line y = mx + p: slope and y-intercept
   ]
 )
 
@@ -25167,42 +22770,22 @@ A line in the plane is entirely determined by:
 - or #strong[one anchor point] $A$ and #strong[one non-zero vector]
   prescribing its direction.
 
-#principe(title: [Définition Fondamentale])[
-#strong[📐 Definition --- Direction Vector.
-]
- Let $cal(D)$ be a line in
+#principe(title: [Definition — Direction Vector.])[Let $cal(D)$ be a line in
 the plane. Any non-zero vector $arrow(u)$ having the same direction as
 line $cal(D)$ is called a #strong[direction vector] of $cal(D)$. If $A$
 and $B$ are two distinct points on $cal(D)$, then the vector
 $accent(A B, ⃗)$ is a direction vector of $cal(D)$.
 ]
 
-#align(center)[
-  #block(
-    fill: rgb("#f8fafc"),
-    stroke: 1pt + rgb("#cbd5e1"),
-    inset: (x: 16pt, y: 10pt),
-    radius: 6pt,
-    breakable: false,
-  )[
-    #set text(font: "Liberation Mono", size: 9.5pt, fill: rgb("#0f172a"))
-    ```text
-u (direction vector)
-o A
-    ```
-  ]
-]
 
-#decouvre(title: [Découverte & Histoire])[
-#strong[💡 Did You Know? A line possesses infinitely many direction
-vectors!
-]
- If $arrow(u)$ is a direction vector of line $cal(D)$, then for
+#decouvre(title: [Did You Know? A line possesses infinitely many direction
+vectors!])[If $arrow(u)$ is a direction vector of line $cal(D)$, then for
 any non-zero real number $k$, the vector $k arrow(u)$ shares the same
 direction: it is therefore also a direction vector of $cal(D)$. Twice as
 long, one third the length, or pointing in reverse, it still lies along
 the very same line.
 ]
+
 
 ==== 2.2 Vector Characterization of a Line
 <vector-characterization-of-a-line>
@@ -25223,10 +22806,7 @@ This single, elegant condition generates all linear equations!
 <the-cartesian-equation-of-a-line>
 ==== 3.1 The General Form $a x + b y + c = 0$
 <the-general-form-ax-by-c-0>
-#quote_box[
-#strong[📐 Fundamental Theorem --- Cartesian Equation.
-]
- 1. Every
+#principe(title: [Fundamental Theorem — Cartesian Equation.])[1. Every
 straight line $cal(D)$ in the plane admits an equation of the form:
 $ a x + b y + c = 0 $ where $a\,b\,c$ are real numbers with
 $\(a\,b\)eq.not\(0\,0\)$ (that is, $a$ and $b$ are not both zero). 2.
@@ -25235,11 +22815,9 @@ $\(a\,b\)eq.not\(0\,0\)$ represents a straight line. 3. The vector
 $arrow(u) vec(- b, a)$ is a #strong[direction vector] of this line.
 ]
 
-#quote_box[
-#strong[✍️ Proof (Core Curriculum) --- From Collinearity to the
-Cartesian Equation.
-]
- Let $cal(D)$ be the line passing through
+
+#exemple_resolu(title: [Proof (Core Curriculum) — From Collinearity to the
+Cartesian Equation.])[Let $cal(D)$ be the line passing through
 $A\(x_A thin\;y_A\)$ with non-zero direction vector
 $arrow(u) vec(u_1, u_2)$. Let $M\(x thin\;y\)$ be an arbitrary point in
 the plane. Vector $accent(A M, ⃗)$ has coordinates:
@@ -25255,10 +22833,8 @@ $vec(u_1, u_2) = vec(- b, a)$. This is indeed a direction vector of the
 line. $square.filled.medium$
 ]
 
-#quote_box[
-#strong[⚠️ Pitfall Warning! Cartesian equations are not unique.
-]
- If
+
+#alerte(title: [Pitfall Warning! Cartesian equations are not unique.])[If
 $2 x - 3 y + 5 = 0$ is the equation of a line, then multiplying each
 term by $2$ gives $4 x - 6 y + 10 = 0$, which describes #strong[the
 exact same line]! Two equations $a x + b y + c = 0$ and
@@ -25266,6 +22842,7 @@ $a' x + b' y + c' = 0$ represent the same line if and only if their
 coefficients are proportional: there exists a non-zero real scalar $k$
 such that $a' = k a$, $b' = k b$, and $c' = k c$.
 ]
+
 
 #divider()
 
@@ -25305,14 +22882,12 @@ direction vector is strictly vertical, such as $arrow(j) vec(0, 1)$.
 
 ==== 4.2 The Geometric Meaning of Slope $m$
 <the-geometric-meaning-of-slope-m>
-#quote_box[
-#strong[📐 Fundamental Property --- Calculating the Slope.
-]
- Let
+#principe(title: [Fundamental Property — Calculating the Slope.])[Let
 $A\(x_A thin\;y_A\)$ and $B\(x_B thin\;y_B\)$ be two distinct points on
 a non-vertical line ($x_A eq.not x_B$). The slope $m$ is given by:
 $ m = frac(y_B - y_A, x_B - x_A) = frac(Delta y, Delta x) = upright("rise") / upright("run") . $
 ]
+
 
 #strong[Physical Intuition:] $Delta y$ represents vertical elevation
 change and $Delta x$ represents horizontal advance.
@@ -25366,21 +22941,11 @@ $arrow(u) vec(- b, a)$ and $arrow(u)' vec(- b', a')$ respectively.
 
 ==== 6.1 The Three Configurations
 <the-three-configurations>
-#align(center)[
-  #block(
-    fill: rgb("#f8fafc"),
-    stroke: 1pt + rgb("#cbd5e1"),
-    inset: (x: 16pt, y: 10pt),
-    radius: 6pt,
-    breakable: false,
-  )[
-    #set text(font: "Liberation Mono", size: 9.5pt, fill: rgb("#0f172a"))
-    ```text
-Intersecting Lines          Strictly Parallel Lines            Coincident Lines
-X  (one point)               /     /   (no point)           /////// (infinitely many)
-    ```
+#figure(image("figures_en/vol_5/fig_33_positions_droites_affines.svg", alt: "Relative positions of two affine lines in the plane"),
+  caption: [
+    Relative positions of two affine lines in the plane
   ]
-]
+)
 
 + #strong[Intersecting Lines:] Their direction vectors are not
   collinear:
@@ -25423,11 +22988,8 @@ Adding the two resulting equations cancels $x$ completely!
 
 === 7. Detailed Worked Examples
 <detailed-worked-examples-1>
-#exemple_resolu(title: [Exemple Résolu Pas à Pas])[
-#strong[Worked Example 1 --- Readdressing the Port Problem: Ship
-Collision.
-]
- Recap of the data:
+#exemple_resolu(title: [Worked Example 1 — Readdressing the Port Problem: Ship
+Collision.])[Recap of the data:
 
 - #emph[L'Espérance] departs $A\(2 thin\;3\)$ along
   $arrow(u) vec(2, 1)$.
@@ -25468,11 +23030,8 @@ $y = 1 / 2 x + 2$).
 ]
 ]
 
-#exemple_resolu(title: [Exemple Résolu Pas à Pas])[
-#strong[Worked Example 2 --- Equation of a Line Through Two Points.
-]
 
-Given $E\(- 3 thin\;5\)$ and $F\(1 thin\;- 3\)$. Find the
+#exemple_resolu(title: [Worked Example 2 — Equation of a Line Through Two Points.])[Given $E\(- 3 thin\;5\)$ and $F\(1 thin\;- 3\)$. Find the
 slope-intercept equation of line $\(E F\)$.
 
 #strong[Solution:] Check if vertical: $x_E = - 3$ and $x_F = 1$. Since
@@ -25487,10 +23046,8 @@ $#box(stroke: black, inset: 3pt, [$ y = - 2 x - 1 $])$.
 Matches!)]
 ]
 
-#exemple_resolu(title: [Exemple Résolu Pas à Pas])[
-#strong[Worked Example 3 --- Solving a System via Elimination.
-]
- Solve in
+
+#exemple_resolu(title: [Worked Example 3 — Solving a System via Elimination.])[Solve in
 $bb(R)^2$ the system: $ {3 x + 4 y = 11 quad\(L_1\)\
 5 x - 2 y = 40 quad\(L_2\) $
 
@@ -25506,11 +23063,8 @@ The unique solution pair is $\(7 thin\;- 2.5\)$. Solution set:
 $S = {\(7 thin\;- 2.5\)}$.
 ]
 
-#exemple_resolu(title: [Exemple Résolu Pas à Pas])[
-#strong[Worked Example 4 --- Inconsistent and Dependent Systems.
-]
 
-Examine geometrically the following two systems: a) ${2 x - 3 y = 7\
+#exemple_resolu(title: [Worked Example 4 — Inconsistent and Dependent Systems.])[Examine geometrically the following two systems: a) ${2 x - 3 y = 7\
 - 4 x + 6 y = 5$ b) ${x - 2 y = 3\
 3 x - 6 y = 9$
 
@@ -25532,11 +23086,8 @@ $S = diameter$.
 ]
 ]
 
-#exemple_resolu(title: [Exemple Résolu Pas à Pas])[
-#strong[Worked Example 5 --- Equation of the Perpendicular Bisector.
-]
 
-Let $A\(1 thin\;2\)$ and $B\(5 thin\;4\)$. Find the equation of the
+#exemple_resolu(title: [Worked Example 5 — Equation of the Perpendicular Bisector.])[Let $A\(1 thin\;2\)$ and $B\(5 thin\;4\)$. Find the equation of the
 perpendicular bisector $Delta$ of segment $\[A B\]$.
 
 #strong[Solution:] Recall: the perpendicular bisector is the locus of
@@ -25555,11 +23106,8 @@ Dividing through by $4$:
 $ #box(stroke: black, inset: 3pt, [$ 2 x + y - 9 = 0 $]) quad upright("or in slope-intercept form") quad #box(stroke: black, inset: 3pt, [$ y = - 2 x + 9 $]) . $
 ]
 
-#exemple_resolu(title: [Exemple Résolu Pas à Pas])[
-#strong[Worked Example 6 --- Pencil of Lines Depending on a Parameter.
-]
 
-For any real parameter $m$, consider line $cal(D)_m$ defined by:
+#exemple_resolu(title: [Worked Example 6 — Pencil of Lines Depending on a Parameter.])[For any real parameter $m$, consider line $cal(D)_m$ defined by:
 $ \(m - 1\)x +\(2 m + 1\)y - 5 m + 2 = 0 . $ Prove that all lines
 $cal(D)_m$ pass through a fixed point $K$, and find its coordinates.
 
@@ -25575,6 +23123,7 @@ $ - x + 1 + 2 = 0 arrow.l.r.double x = 3 . $ Every line in the family
 passes through the fixed pivot point $K\(3 thin\;1\)$!
 ]
 
+
 #divider()
 
 === 8. In Computer Science: Solving a $2 times 2$ System in Python
@@ -25582,36 +23131,45 @@ passes through the fixed pivot point $K\(3 thin\;1\)$!
 Here is a Python script that takes Cartesian coefficients for two lines
 and determines their intersection point:
 
-```python
+#align(center)[
+  #block(
+    fill: rgb("#f8fafc"),
+    stroke: 1pt + rgb("#cbd5e1"),
+    inset: (x: 16pt, y: 10pt),
+    radius: 6pt,
+    breakable: false,
+  )[
+    #set text(font: "Liberation Mono", size: 9.5pt, fill: rgb("#0f172a"))
+    ```text
 def solve_system(a1, b1, c1, a2, b2, c2):
-    """
-    Solves the linear system:
-    a1*x + b1*y + c1 = 0
-    a2*x + b2*y + c2 = 0
-    """
-    # Main determinant (a1*b2 - a2*b1)
-    det = a1 * b2 - a2 * b1
-
-    if abs(det) < 1e-12:
-        # Lines are parallel or coincident
-        # Test proportionality with constants
-        if abs(a1 * c2 - a2 * c1) < 1e-12 and abs(b1 * c2 - b2 * c1) < 1e-12:
-            return "Infinitely many solutions (coincident lines)"
-        else:
-            return "No solution (strictly parallel lines)"
-    else:
-        # Cramer's rule to find x and y
-        # Rewrite in form: a*x + b*y = -c
-        e1, e2 = -c1, -c2
-        x = (e1 * b2 - e2 * b1) / det
-        y = (a1 * e2 - a2 * e1) / det
-        return (x, y)
-
+"""
+Solves the linear system:
+a1*x + b1*y + c1 = 0
+a2*x + b2*y + c2 = 0
+"""
+# Main determinant (a1*b2 - a2*b1)
+det = a1 * b2 - a2 * b1
+if abs(det) < 1e-12:
+# Lines are parallel or coincident
+# Test proportionality with constants
+if abs(a1 * c2 - a2 * c1) < 1e-12 and abs(b1 * c2 - b2 * c1) < 1e-12:
+return "Infinitely many solutions (coincident lines)"
+else:
+return "No solution (strictly parallel lines)"
+else:
+# Cramer's rule to find x and y
+# Rewrite in form: a*x + b*y = -c
+e1, e2 = -c1, -c2
+x = (e1 * b2 - e2 * b1) / det
+y = (a1 * e2 - a2 * e1) / det
+return (x, y)
 # Test using system from Worked Example 1:
 # x - 2y + 4 = 0  and  x + y - 7 = 0
 solution = solve_system(1, -2, 4, 1, 1, -7)
 print("Intersection point:", solution)  # Outputs (3.3333333333333335, 3.6666666666666665)
-```
+    ```
+  ]
+]
 
 #divider()
 
@@ -25877,15 +23435,13 @@ Jacquard Loom and the Function Box].
 #metadata("debut-section") <debut-section>
 == CHAPTER 34: The Jacquard Loom and the Function Box
 <chapter-34-the-jacquard-loom-and-the-function-box>
-#quote_box[
-#emph[“A function is not a frozen drawing in a book. It is a living
+#principe(title: [“A function is not a frozen drawing in a book. It is a living
 machine: you slide a raw block of metal into the input slot, the cogs
 turn, the mechanical rule executes, and a finely crafted part emerges on
 the conveyor belt. Modern mathematics is the great workshop where these
-transformations unfold.”
+transformations unfold.”])[
 ]
 
-]
 
 #divider()
 
@@ -25939,23 +23495,6 @@ cards] linked together in a chain.
 
 The Jacquard loom was the first programmable machine in human history!
 
-#align(center)[
-  #block(
-    fill: rgb("#f8fafc"),
-    stroke: 1pt + rgb("#cbd5e1"),
-    inset: (x: 16pt, y: 10pt),
-    radius: 6pt,
-    breakable: false,
-  )[
-    #set text(font: "Liberation Mono", size: 9.5pt, fill: rgb("#0f172a"))
-    ```text
-Punched Card ]    [ Patterned Silk ]
-Input x)              The Jacquard Loom              (Output f(x))
-Mechanical Rule)
-    ```
-  ]
-]
-
 In #strong[1843], in London, a young mathematician of extraordinary
 vision, #strong[Ada Lovelace] (the only legitimate child of the poet
 Lord Byron), studied the mechanical blueprints of Charles Babbage's
@@ -25980,28 +23519,7 @@ thought is the very soul of what mathematicians define as a
 Put aside complicated graphs for a moment. Picture an
 #strong[uncompromising industrial machine]:
 
-#align(center)[
-  #block(
-    fill: rgb("#f8fafc"),
-    stroke: 1pt + rgb("#cbd5e1"),
-    inset: (x: 16pt, y: 10pt),
-    radius: 6pt,
-    breakable: false,
-  )[
-    #set text(font: "Liberation Mono", size: 9.5pt, fill: rgb("#0f172a"))
-    ```text
-x (Raw input material: PREIMAGE / ANTÉCÉDENT)
-Machine f      Rule: "Take input, multiply by 3,
-then subtract 5"
-f(x) = 3x - 5  (Finished output part: IMAGE)
-    ```
-  ]
-]
-
-#quote_box[
-#strong[📐 Fundamental Definitions ---
-]
- 1. A #strong[function] $f$ is a
+#principe(title: [Fundamental Definitions —])[1. A #strong[function] $f$ is a
 mathematical process that assigns to each real number $x$ in a given set
 #strong[at most one] unique real number, denoted $f\(x\)$. 2. We write:
 $ f : x mapsto f\(x\) $ Read aloud as: “the function $f$ mapping $x$ to
@@ -26010,12 +23528,8 @@ $x$ fed into the machine at the start. 4. #strong[The Image:] the
 resulting output number $f\(x\)$ emerging at the end.
 ]
 
-#quote_box[
-#strong[⚠️ Ironclad Rule --- Uniqueness of the Image.
-]
 
-
-- A number $x$ has #strong[at most one single image] under a function
+#principe(title: [Ironclad Rule — Uniqueness of the Image.])[- A number $x$ has #strong[at most one single image] under a function
   $f$. If you load the exact same flour into the oven under identical
   settings, two different loaves cannot emerge simultaneously!
 
@@ -26028,20 +23542,19 @@ resulting output number $f\(x\)$ emerging at the end.
   - The number $- 4$ has no real preimage (no real square is negative).
 ]
 
+
 ==== 2.2 The Domain of Definition $cal(D)_f$: Forbidden Values
 <the-domain-of-definition-mathcald_f-forbidden-values>
 All real machines have operating tolerances: drop a heavy iron crowbar
 into a small plastic coffee grinder, and the grinder shatters. In
 mathematics, certain operations are forbidden across the real numbers.
 
-#principe(title: [Définition Fondamentale])[
-#strong[📐 Definition --- Domain of Definition.
-]
- The #strong[domain of
+#principe(title: [Definition — Domain of Definition.])[The #strong[domain of
 definition] of a function $f$, denoted $cal(D)_f$, is the set of all
 real numbers $x$ for which the evaluation of $f\(x\)$ is mathematically
 valid and meaningful.
 ]
+
 
 In high school mathematics, two operations necessitate checking for
 #strong[forbidden values (domain restrictions)]: 1. #strong[Division by
@@ -26057,10 +23570,7 @@ $ sqrt(A) upright(" exists if and only if ") A gt.eq 0 . $
 <graphs-variations-and-extrema>
 ==== 3.1 The Function Graph in a Coordinate Plane
 <the-function-graph-in-a-coordinate-plane>
-#principe(title: [Définition Fondamentale])[
-#strong[📐 Definition --- Graph of a Function.
-]
- In a coordinate frame
+#principe(title: [Definition — Graph of a Function.])[In a coordinate frame
 $\(O thin\;arrow(i)\,arrow(j)\)$, the #strong[graph (or representative
 curve)] of a function $f$, denoted $cal(C)_f$, is the set of all points
 $M\(x thin\;y\)$ whose $x$-coordinate lies in $cal(D)_f$ and whose
@@ -26068,6 +23578,7 @@ $y$-coordinate is its image $y = f\(x\)$:
 $ cal(C)_f = {M \( x thin \; f \( x \) \) divides x in cal(D)_f} . $ The
 equation of the curve is: $y = f\(x\)$.
 ]
+
 
 To check whether a point $A\(x_A thin\;y_A\)$ lies on the curve, compute
 $f\(x_A\)$. If it equals $y_A$, the point is on the curve; otherwise, it
@@ -26078,28 +23589,13 @@ is not.
 Imagine a hiker traversing the curve $cal(C)_f$ from left to right (in
 the direction of increasing $x$).
 
-#align(center)[
-  #block(
-    fill: rgb("#f8fafc"),
-    stroke: 1pt + rgb("#cbd5e1"),
-    inset: (x: 16pt, y: 10pt),
-    radius: 6pt,
-    breakable: false,
-  )[
-    #set text(font: "Liberation Mono", size: 9.5pt, fill: rgb("#0f172a"))
-    ```text
-y              Peak (Maximum)
-Trough (Minimum)
-O  x
-a                 b
-    ```
+#figure(image("figures_en/vol_5/fig_34_resolution_fx_k.svg", alt: "Graphical solution of f(x) = k by line intersection"),
+  caption: [
+    Graphical solution of f(x) = k by line intersection
   ]
-]
+)
 
-#principe(title: [Définition Fondamentale])[
-#strong[📐 Definition --- Variations on an Interval $I$.
-]
- Let $f$ be a
+#principe(title: [Definition — Variations on an Interval $I$.])[Let $f$ be a
 function defined on an interval $I$. 1. $f$ is #strong[strictly
 increasing] on $I$ if for all real numbers $a$ and $b$ in $I$:
 $ a < b arrow.r.double.long f\(a\)< f\(b\). $ #emph[\(An increasing
@@ -26112,12 +23608,10 @@ if for all $a\,b in I$, $f\(a\)= f\(b\)$. 4. A function is called
 purely decreasing across that interval.
 ]
 
+
 ==== 3.3 Extrema: Peaks and Troughs
 <extrema-peaks-and-troughs>
-#principe(title: [Définition Fondamentale])[
-#strong[📐 Definition --- Maximum and Minimum.
-]
- Let $f$ be a function
+#principe(title: [Definition — Maximum and Minimum.])[Let $f$ be a function
 defined on domain $cal(D)_f$ and let $x_0 in cal(D)_f$.
 
 - $f$ attains a #strong[maximum] at $x_0$ on $cal(D)_f$, with value
@@ -26128,6 +23622,7 @@ defined on domain $cal(D)_f$ and let $x_0 in cal(D)_f$.
   The term #strong[extremum] (plural #emph[extrema]) refers to either a
   maximum or a minimum.
 ]
+
 
 #divider()
 
@@ -26144,10 +23639,7 @@ set).
 
 ==== 4.2 Even and Odd Functions
 <even-and-odd-functions>
-#principe(title: [Définition Fondamentale])[
-#strong[📐 Definition --- Parity.
-]
- 1. A function $f$ is #strong[even] if
+#principe(title: [Definition — Parity.])[1. A function $f$ is #strong[even] if
 for all $x in cal(D)_f$: $ f\(- x\)= f\(x\). $ #strong[Geometric
 property:] Its curve $cal(C)_f$ is #strong[symmetric with respect to the
 $y$-axis $\(O y\)$] (reflectional symmetry). 2. A function $f$ is
@@ -26156,24 +23648,12 @@ $y$-axis $\(O y\)$] (reflectional symmetry). 2. A function $f$ is
 with respect to the origin $O$] (half-turn rotational symmetry).
 ]
 
-#align(center)[
-  #block(
-    fill: rgb("#f8fafc"),
-    stroke: 1pt + rgb("#cbd5e1"),
-    inset: (x: 16pt, y: 10pt),
-    radius: 6pt,
-    breakable: false,
-  )[
-    #set text(font: "Liberation Mono", size: 9.5pt, fill: rgb("#0f172a"))
-    ```text
-EVEN FUNCTION                       ODD FUNCTION
-Line Symmetry)                     (Point Symmetry)
-y                                  y
-x                o x
-O                                 /
-    ```
+
+#figure(image("figures_en/vol_5/fig_34_parite_fonctions.svg", alt: "Function parity: bilateral axial symmetry vs central symmetry"),
+  caption: [
+    Function parity: bilateral axial symmetry vs central symmetry
   ]
-]
+)
 
 #divider()
 
@@ -26199,9 +23679,7 @@ school function machinery is assembled.
   $x = 0$.
 
 #quote_box[
-#strong[Table of variations of $x mapsto x^2$:
-]
-
+#strong[Table of variations of $x mapsto x^2$:]
 
 #figure(
   align(center)[#table(
@@ -26215,6 +23693,7 @@ school function machinery is assembled.
   , kind: table
   )
 ]
+
 
 ==== 5.2 The Reciprocal Function: $f\(x\)= 1 / x$
 <the-reciprocal-function-fx-frac1x>
@@ -26230,10 +23709,7 @@ school function machinery is assembled.
   point-symmetric about $O$. The coordinate axes serve as its
   #strong[asymptotes].
 
-#quote_box[
-#strong[⚠️ Classic Pitfall Warning!
-]
- Never say that the reciprocal
+#alerte(title: [Classic Pitfall Warning!])[Never say that the reciprocal
 function is “decreasing on $bb(R)^(*)$\.” Take $a = - 1$ and $b = 1$.
 Clearly $a < b$, but $f\(a\)= frac(1, - 1) = - 1$ and $f\(b\)= 1$. The
 value increased from $- 1$ to $+ 1$! The function is strictly decreasing
@@ -26241,10 +23717,9 @@ value increased from $- 1$ to $+ 1$! The function is strictly decreasing
 disconnected union.
 ]
 
-#quote_box[
-#strong[Table of variations of $x mapsto 1 / x$:
-]
 
+#quote_box[
+#strong[Table of variations of $x mapsto 1 / x$:]
 
 #figure(
   align(center)[#table(
@@ -26261,6 +23736,7 @@ disconnected union.
 #emph[\(The double vertical bar $parallel$ denotes the excluded value at
 $0$).]
 ]
+
 
 ==== 5.3 The Square Root Function: $f\(x\)= sqrt(x)$
 <the-square-root-function-fx-sqrtx>
@@ -26324,20 +23800,11 @@ $0$).]
   of the $x$-axis where curve $cal(C)_f$ lies #strong[below] (or
   touches) curve $cal(C)_g$.
 
-#figure(image("figures/vol_5/fig_34_resolution_fx_k.svg", alt: "Résolution graphique de l’équation f(x) = k par intersection"),
-  caption: [
-    Résolution graphique de l'équation f(x) = k par intersection
-  ]
-)
-
 ==== 6.2 Cascading Machines: Composition $g compose f$
 <cascading-machines-composition-g-circ-f>
 When two processing machines are linked in series:
 
-#principe(title: [Définition Fondamentale])[
-#strong[📐 Definition --- Composite Function.
-]
- Let $f$ and $g$ be two
+#principe(title: [Definition — Composite Function.])[Let $f$ and $g$ be two
 functions. The composite function of $f$ followed by $g$, denoted
 $g compose f$ (read “g of f” or “g circle f”), is defined by:
 $ \(g compose f\)\(x\)= g\(f\(x\)\). $ For this operation to be valid,
@@ -26345,10 +23812,8 @@ $x$ must belong to $cal(D)_f$, and the intermediate output $f\(x\)$ must
 lie within the domain of the second machine: $f\(x\)in cal(D)_g$.
 ]
 
-#quote_box[
-#strong[⚠️ Pitfall Warning! Machine order is crucial.
-]
- In general,
+
+#alerte(title: [Pitfall Warning! Machine order is crucial.])[In general,
 $g compose f eq.not f compose g$. If $f\(x\)= x + 3$ and $g\(x\)= x^2$:
 
 - $\(g compose f\)\(x\)= g\(x + 3\)=\(x + 3\)^2 = x^2 + 6 x + 9$.
@@ -26356,15 +23821,12 @@ $g compose f eq.not f compose g$. If $f\(x\)= x + 3$ and $g\(x\)= x^2$:
   completely different!
 ]
 
+
 #divider()
 
 === 7. Detailed Worked Examples
 <detailed-worked-examples-2>
-#exemple_resolu(title: [Exemple Résolu Pas à Pas])[
-#strong[Worked Example 1 --- Determining Domains of Definition.
-]
-
-Determine the domain of definition for each function: a)
+#principe(title: [Worked Example 1 — Determining Domains of Definition.])[Determine the domain of definition for each function: a)
 $f\(x\)= frac(2 x - 1, x^2 - 9)$ b) $g\(x\)= sqrt(3 x - 6)$ c)
 $h\(x\)= frac(1, sqrt(x) - 2)$
 
@@ -26391,10 +23853,8 @@ $cal(D)_f = bb(R)\\{ - 3 thin\;3 } =\]- oo thin\;- 3\[union\]- 3 thin\;3\[union\
 ]
 ]
 
-#exemple_resolu(title: [Exemple Résolu Pas à Pas])[
-#strong[Worked Example 2 --- Images and Preimages.
-]
- Let $f$ be defined
+
+#exemple_resolu(title: [Worked Example 2 — Images and Preimages.])[Let $f$ be defined
 on $bb(R)$ by $f\(x\)= 2 x^2 - 3 x - 5$. 1. Calculate the images of
 $- 2$ and $1 / 2$ under $f$. 2. Determine any preimages of $- 5$ under
 $f$.
@@ -26409,11 +23869,8 @@ $ x\(2 x - 3\)= 0 arrow.l.r.double x = 0 quad upright("or") quad 2 x - 3 = 0 arr
 The number $- 5$ has two preimages under $f$: $0$ and $3 / 2$.
 ]
 
-#exemple_resolu(title: [Exemple Résolu Pas à Pas])[
-#strong[Worked Example 3 --- Proving Variations Without Derivatives.
-]
 
-Let $f$ be defined on $\]1 thin\;+ oo\[$ by $f\(x\)= frac(3, x - 1)$.
+#exemple_resolu(title: [Worked Example 3 — Proving Variations Without Derivatives.])[Let $f$ be defined on $\]1 thin\;+ oo\[$ by $f\(x\)= frac(3, x - 1)$.
 Prove rigorously that $f$ is strictly decreasing on this interval.
 
 #strong[Solution:] Let $a$ and $b$ be two arbitrary real numbers in
@@ -26429,10 +23886,8 @@ order is inverted: the function $f$ is #strong[strictly decreasing] on
 $\]1 thin\;+ oo\[$. $square.filled.medium$
 ]
 
-#exemple_resolu(title: [Exemple Résolu Pas à Pas])[
-#strong[Worked Example 4 --- Algebraic Parity Testing.
-]
- Determine the
+
+#exemple_resolu(title: [Worked Example 4 — Algebraic Parity Testing.])[Determine the
 parity of each function: a) $f\(x\)= frac(x^4 - 3, x^2 + 1)$ b)
 $g\(x\)= frac(2 x, x^2 + 4)$ c) $h\(x\)= x^3 - 2 x + 1$
 
@@ -26457,11 +23912,9 @@ Hence $f$ is #strong[even].
 ]
 ]
 
-#exemple_resolu(title: [Exemple Résolu Pas à Pas])[
-#strong[Worked Example 5 --- Decomposing and Evaluating Composite
-Functions.
-]
- Let $f\(x\)= 2 x - 5$ and $g\(x\)= 1 / x$. 1. Determine
+
+#exemple_resolu(title: [Worked Example 5 — Decomposing and Evaluating Composite
+Functions.])[Let $f\(x\)= 2 x - 5$ and $g\(x\)= 1 / x$. 1. Determine
 $\(g compose f\)\(x\)$ and its domain of definition. 2. Determine
 $\(f compose g\)\(x\)$ and its domain of definition.
 
@@ -26479,11 +23932,9 @@ Thus $cal(D)_(g compose f) = bb(R)\\{5 / 2}$.
 ]
 ]
 
-#exemple_resolu(title: [Exemple Résolu Pas à Pas])[
-#strong[Worked Example 6 --- Graphical Solving and Parent Function
-Inversion.
-]
- Solve in $bb(R)$: a) $x^2 lt.eq 7$ b) $1 / x > 2$
+
+#exemple_resolu(title: [Worked Example 6 — Graphical Solving and Parent Function
+Inversion.])[Solve in $bb(R)$: a) $x^2 lt.eq 7$ b) $1 / x > 2$
 
 #strong[Solution:] a) The square function is decreasing on
 $\]- oo thin\;0\]$ and increasing on $\[0 thin\;+ oo\[$. Equation
@@ -26506,6 +23957,7 @@ $#box(stroke: black, inset: 3pt, [$ S =\[- sqrt(7) thin\;sqrt(7)\] $])$.
 ]
 ]
 
+
 #divider()
 
 === 8. In Computer Science: Value Tables and Root Sweeping in Python
@@ -26513,35 +23965,42 @@ $#box(stroke: black, inset: 3pt, [$ S =\[- sqrt(7) thin\;sqrt(7)\] $])$.
 In mathematics and data science, scripts are routinely used to generate
 values and pinpoint where functions cross zero:
 
-```python
+#align(center)[
+  #block(
+    fill: rgb("#f8fafc"),
+    stroke: 1pt + rgb("#cbd5e1"),
+    inset: (x: 16pt, y: 10pt),
+    radius: 6pt,
+    breakable: false,
+  )[
+    #set text(font: "Liberation Mono", size: 9.5pt, fill: rgb("#0f172a"))
+    ```text
 def f(x):
-    """Defines function f(x) = x**3 - 3*x + 1"""
-    return x**3 - 3*x + 1
-
+"""Defines function f(x) = x**3 - 3*x + 1"""
+return x**3 - 3*x + 1
 def value_table(start, end, step):
-    """Prints a table of values for function f."""
-    print("  x   |  f(x)")
-    print("------|--------")
-    x = start
-    while x <= end + 1e-9:
-        print(f"{x:5.2f} | {f(x):7.3f}")
-        x += step
-
+"""Prints a table of values for function f."""
+print("  x   |  f(x)")
+print("------|--------")
+x = start
+while x <= end + 1e-9:
+print(f"{x:5.2f} | {f(x):7.3f}")
+x += step
 # Display values from -2 to 2 with step 0.5
 value_table(-2, 2, 0.5)
-
 # Numerical root finding by step sweeping
 def find_root(a, b, step=0.001):
-    x = a
-    while x <= b:
-        if f(x) * f(x + step) <= 0:
-            return round(x + step / 2, 3)
-        x += step
-    return None
-
+x = a
+while x <= b:
+if f(x) * f(x + step) <= 0:
+return round(x + step / 2, 3)
+x += step
+return None
 solution = find_root(0, 1)
 print(f"\nAn approximate root in [0, 1] is x ≈ {solution}")
-```
+    ```
+  ]
+]
 
 #divider()
 
@@ -26772,7 +24231,7 @@ print(f"\nAn approximate root in [0, 1] is x ≈ {solution}")
   - If $x < 0$, $1 / x < 0 < 3$, so all strictly negative numbers are
     solutions: $\]- oo thin\;0\[$.
   - If $x > 0$, $1 / x lt.eq 3 arrow.l.r.double x gt.eq 1 / 3$. Solution
-    set: $S =\]- oo thin\;0\[union [1 / 3 thin \; + oo]$.
+    set: $S =\]- oo thin\;0\[union [1 / 3 thin \; + oo[$.
 
 + $cal(D)_f = bb(R)$ (since $x^2 + 1 > 0$). Symmetric about 0.
   $f\(- x\)= frac(\(- x\)^3, \(- x\)^2 + 1) = frac(- x^3, x^2 + 1) = - f\(x\)$.
@@ -26876,10 +24335,9 @@ arch, then falls back in a graceful curve into the pool. This perfect
 drawing that gravity traces in the air is not an arc of a circle: it is
 a parabola. From the scholars of Babylon and Baghdad to Galileo, the art
 of the second degree is the master key that unlocks the trajectories of
-worlds.”
+worlds.”]
 ]
 
-]
 
 #divider()
 
@@ -26927,24 +24385,11 @@ to Galileo's law of falling bodies, the altitude decreases
 proportionally to the #strong[square of elapsed time]:
 $ y\(t\)= - 1 / 2 g t^2 + h_0 . $
 
-#align(center)[
-  #block(
-    fill: rgb("#f8fafc"),
-    stroke: 1pt + rgb("#cbd5e1"),
-    inset: (x: 16pt, y: 10pt),
-    radius: 6pt,
-    breakable: false,
-  )[
-    #set text(font: "Liberation Mono", size: 9.5pt, fill: rgb("#0f172a"))
-    ```text
-y                Vertex S
-Water Jet
-h0
-O  x
-Impact
-    ```
+#figure(image("figures_en/vol_5/fig_35_parabole_second_degre.svg", alt: "Quadratic parabola: orientation and vertex coordinates"),
+  caption: [
+    Quadratic parabola: orientation and vertex coordinates
   ]
-]
+)
 
 Let us eliminate time $t$! From the first equation, we get
 $t = x / v_0$. Substituting this value into the second equation, the
@@ -26966,16 +24411,14 @@ the exact distance at which the jet hits the surface of the basin
 <the-quadratic-trinomial-and-canonical-vertex-form>
 ==== 2.1 Definitions and Standard Form
 <definitions-and-standard-form>
-#principe(title: [Définition Fondamentale])[
-#strong[📐 Definition --- Quadratic Polynomial Function.
-]
- A
+#principe(title: [Definition — Quadratic Polynomial Function.])[A
 #strong[quadratic polynomial function] (or #strong[quadratic trinomial])
 is any function $f$ defined on $bb(R)$ by: $ f\(x\)= a x^2 + b x + c $
 where $a\,b\,c$ are fixed real numbers, with #strong[$a eq.not 0$]. This
 expression is called the #strong[standard form] (or expanded form) of
 the trinomial.
 ]
+
 
 - The term $a$ is the quadratic coefficient (we must have $a eq.not 0$,
   otherwise the expression would reduce to an affine function
@@ -26992,10 +24435,7 @@ brilliant idea dates back to the Persian mathematician
 geometrically reconstructing a perfect square so that the variable $x$
 appears #strong[only once] in the entire expression!
 
-#quote_box[
-#strong[📐 Fundamental Theorem --- The Canonical (Vertex) Form.
-]
- Every
+#principe(title: [Fundamental Theorem — The Canonical (Vertex) Form.])[Every
 quadratic trinomial $f\(x\)= a x^2 + b x + c$ ($a eq.not 0$) can be
 uniquely written in #strong[canonical (vertex) form]:
 $ #box(stroke: black, inset: 3pt, [$ f\(x\)= a\(x - alpha\)^2 + beta $]) $
@@ -27003,11 +24443,8 @@ where:
 $ alpha = - frac(b, 2 a) quad upright("and") quad beta = f\(alpha\)= - frac(b^2 - 4 a c, 4 a) . $
 ]
 
-#quote_box[
-#strong[✍️ Proof (Required knowledge) --- Conversion to Canonical Form.
-]
 
-Start with the standard form: $ f\(x\)= a x^2 + b x + c . $ 1. Factor
+#exemple_resolu(title: [Proof (Required knowledge) — Conversion to Canonical Form.])[Start with the standard form: $ f\(x\)= a x^2 + b x + c . $ 1. Factor
 out the coefficient $a eq.not 0$ from the first two terms:
 $ f\(x\)= a [x^2 + b / a x] + c . $ 2. Look at the expression inside the
 brackets: $x^2 + b / a x$ resembles the beginning of the expansion of a
@@ -27028,6 +24465,7 @@ obtain the canonical form:
 $ f\(x\)= a\(x - alpha\)^2 + beta . quad square.filled.medium $
 ]
 
+
 #divider()
 
 === 3. Geometry of the Parabola: Vertex and Axis of Symmetry
@@ -27039,27 +24477,6 @@ $ \(x - alpha\)^2 gt.eq 0 quad upright("for all ") x in bb(R)\, $ with
 equality if and only if $x = alpha$.
 
 Two cases arise depending on the sign of $a$:
-
-#align(center)[
-  #block(
-    fill: rgb("#f8fafc"),
-    stroke: 1pt + rgb("#cbd5e1"),
-    inset: (x: 16pt, y: 10pt),
-    radius: 6pt,
-    breakable: false,
-  )[
-    #set text(font: "Liberation Mono", size: 9.5pt, fill: rgb("#0f172a"))
-    ```text
-CASE a > 0                                CASE a < 0
-Opens UPWARD)                            (Opens DOWNWARD)
-y                                        y
-Vertex S(α, β)
-β o Vertex S(α, β)
-O  x                         O  x
-α                                         α
-    ```
-  ]
-]
 
 + #strong[If $a > 0$:] $a\(x - alpha\)^2 gt.eq 0$, hence
   $f\(x\)gt.eq beta$. The function attains an #strong[absolute minimum]
@@ -27074,15 +24491,14 @@ O  x                         O  x
   $\]- oo\,alpha\]$ and strictly decreasing on $\[alpha\,+ oo\[$.
 
 #quote_box[
-#strong[📐 Fundamental Properties of the Parabola ---
-]
-
+#strong[📐 Fundamental Properties of the Parabola ---]
 
 - The #strong[vertex] of the parabola is the point $S\(alpha\,beta\)$
   with $alpha = - frac(b, 2 a)$ and $beta = f\(alpha\)$.
 - The vertical line with equation $x = alpha$ is the #strong[axis of
   symmetry] of the parabola.
 ]
+
 
 #divider()
 
@@ -27104,10 +24520,7 @@ equal to zero. The denominator on the right-hand side,
 $4 a^2 =\(2 a\)^2$, is strictly positive. Everything therefore depends
 exclusively on the sign of the numerator: $ Delta = b^2 - 4 a c . $
 
-#principe(title: [Définition Fondamentale])[
-#strong[📐 Definition --- Discriminant.
-]
- The real number
+#principe(title: [Definition — Discriminant.])[The real number
 $Delta = b^2 - 4 a c$ is called the #strong[discriminant] of the
 trinomial $a x^2 + b x + c$. The uppercase Greek letter $Delta$
 (“Delta”) was chosen by nineteenth-century mathematicians because it is
@@ -27116,14 +24529,10 @@ separate”, “to distinguish”. It discriminates between the possible
 outcomes.
 ]
 
+
 ==== 4.2 The Three Fundamental Cases
 <the-three-fundamental-cases>
-#quote_box[
-#strong[📐 Fundamental Theorem --- Solving $a x^2 + b x + c = 0$.
-]
-
-
-+ #strong[If $Delta < 0$:] The right-hand side $frac(Delta, 4 a^2)$ is
+#principe(title: [Fundamental Theorem — Solving $a x^2 + b x + c = 0$.])[+ #strong[If $Delta < 0$:] The right-hand side $frac(Delta, 4 a^2)$ is
   strictly negative. But a real square can never be negative. The
   equation has #strong[no real solution] ($S = diameter$). The parabola
   never crosses or touches the horizontal axis.
@@ -27146,6 +24555,7 @@ outcomes.
   coordinates $\(x_1\,0\)$ and $\(x_2\,0\)$.
 ]
 
+
 #divider()
 
 === 5. Factored Form and the Sign of the Trinomial
@@ -27155,12 +24565,7 @@ outcomes.
 Knowing the roots of a trinomial allows us to write it as a product of
 first-degree factors:
 
-#quote_box[
-#strong[📐 Theorem --- Factored Form.
-]
-
-
-- If $Delta > 0$: $f\(x\)= a\(x - x_1\)\(x - x_2\)$.
+#principe(title: [Theorem — Factored Form.])[- If $Delta > 0$: $f\(x\)= a\(x - x_1\)\(x - x_2\)$.
 
 - If $Delta = 0$: $f\(x\)= a\(x - x_0\)^2$.
 
@@ -27168,25 +24573,19 @@ first-degree factors:
   factors in $bb(R)$.
 ]
 
-#quote_box[
-#strong[⚠️ Beware: Common Pitfall! Never forget the leading coefficient
-$a$!
-]
- This is the most common error: writing $\(x - x_1\)\(x - x_2\)$
+
+#alerte(title: [Beware: Common Pitfall! Never forget the leading coefficient
+$a$!])[This is the most common error: writing $\(x - x_1\)\(x - x_2\)$
 while forgetting to multiply by the coefficient $a$ in front. For
 example, $2 x^2 - 6 x + 4 = 0$ has roots $1$ and $2$. Its factored form
 is $2\(x - 1\)\(x - 2\)$, and not $\(x - 1\)\(x - 2\)$ (which would
 expand to $x^2 - 3 x + 2$).
 ]
 
+
 ==== 5.2 The Sign of the Trinomial
 <the-sign-of-the-trinomial>
-#quote_box[
-#strong[📐 Golden Rule --- Sign of $a x^2 + b x + c$.
-]
-
-
-+ #strong[If $Delta < 0$:] The trinomial never vanishes. It
+#principe(title: [Golden Rule — Sign of $a x^2 + b x + c$.])[+ #strong[If $Delta < 0$:] The trinomial never vanishes. It
   #strong[always has the same sign as $a$] over all of $bb(R)$.
 
 + #strong[If $Delta = 0$:] The trinomial vanishes at
@@ -27201,10 +24600,9 @@ expand to $x^2 - 3 x + 2$).
     roots] (for $x_1 < x < x_2$).
 ]
 
-#quote_box[
-#strong[Summary Sign Chart for $Delta > 0$:
-]
 
+#quote_box[
+#strong[Summary Sign Chart for $Delta > 0$:]
 
 #figure(
   align(center)[#table(
@@ -27219,6 +24617,7 @@ expand to $x^2 - 3 x + 2$).
   , kind: table
   )
 ]
+
 
 #strong[Vivid Geometric Intuition:] If $a > 0$, the parabola opens its
 arms toward the sky. To dip below the horizontal axis, it must plunge
@@ -27235,25 +24634,21 @@ In 1591, the French jurist and cryptographer to King Henry IV,
 linking the coefficients of a polynomial to its roots, without
 calculating $Delta$.
 
-#quote_box[
-#strong[📐 Theorem (Viète's Formulas) ---
-]
- If the trinomial
+#principe(title: [Theorem (Viète's Formulas) —])[If the trinomial
 $a x^2 + b x + c$ admits two real roots $x_1$ and $x_2$ (which may
 coincide if $Delta = 0$), then:
 $ #box(stroke: black, inset: 3pt, [$ S = x_1 + x_2 = - b / a $]) quad upright("and") quad #box(stroke: black, inset: 3pt, [$ P = x_1 times x_2 = c / a $]) . $
 ]
 
-#quote_box[
-#strong[✍️ Proof ---
-]
- Expand the factored form
+
+#exemple_resolu(title: [Proof —])[Expand the factored form
 $a\(x - x_1\)\(x - x_2\)$:
 $ a\(x - x_1\)\(x - x_2\)= a [x^2 - \( x_1 + x_2 \) x + x_1 x_2] = a x^2 - a\(x_1 + x_2\)x + a\(x_1 x_2\). $
 Matching coefficients with the standard form $a x^2 + b x + c$:
 $ - a\(x_1 + x_2\)= b arrow.r.double.long x_1 + x_2 = - b / a\, $
 $ a\(x_1 x_2\)= c arrow.r.double.long x_1 x_2 = c / a . quad square.filled.medium $
 ]
+
 
 ==== 6.1 Finding Two Numbers Knowing Their Sum and Product
 <finding-two-numbers-knowing-their-sum-and-product>
@@ -27277,11 +24672,7 @@ Before rushing to compute the discriminant, always check if an
 
 === 7. Detailed Worked Examples
 <detailed-worked-examples-3>
-#exemple_resolu(title: [Exemple Résolu Pas à Pas])[
-#strong[Worked Example 1 --- Converting to Canonical Form in Practice.
-]
-
-Write the trinomial $P\(x\)= 2 x^2 - 8 x + 11$ in canonical form. Deduce
+#exemple_resolu(title: [Worked Example 1 — Converting to Canonical Form in Practice.])[Write the trinomial $P\(x\)= 2 x^2 - 8 x + 11$ in canonical form. Deduce
 the coordinates of the vertex of the parabola and its extremum.
 
 #strong[Solution:] 1. Factor the leading coefficient $a = 2$ out of the
@@ -27297,11 +24688,8 @@ since its minimum is $3 > 0$, the parabola never dips below 0, so
 $P\(x\)= 0$ has no real solution).
 ]
 
-#exemple_resolu(title: [Exemple Résolu Pas à Pas])[
-#strong[Worked Example 2 --- Solving Equations with the Discriminant.
-]
 
-Solve the following three equations in $bb(R)$: a) $3 x^2 - 5 x - 2 = 0$
+#exemple_resolu(title: [Worked Example 2 — Solving Equations with the Discriminant.])[Solve the following three equations in $bb(R)$: a) $3 x^2 - 5 x - 2 = 0$
 b) $4 x^2 - 12 x + 9 = 0$ c) $2 x^2 + 3 x + 5 = 0$
 
 #strong[Step-by-Step Solution:] a) $a = 3\,b = - 5\,c = - 2$.
@@ -27327,10 +24715,8 @@ $3 (x + 1 / 3)\(x - 2\)=\(3 x + 1\)\(x - 2\)$.
 ]
 ]
 
-#exemple_resolu(title: [Exemple Résolu Pas à Pas])[
-#strong[Worked Example 3 --- Solving a Quadratic Inequality.
-]
- Solve the
+
+#exemple_resolu(title: [Worked Example 3 — Solving a Quadratic Inequality.])[Solve the
 following inequality in $bb(R)$: $ - 2 x^2 + 7 x - 3 gt.eq 0 . $
 
 #strong[Solution:] 1. First, find the roots of the trinomial:
@@ -27357,10 +24743,8 @@ the closed interval:
 $#box(stroke: black, inset: 3pt, [$ S = [1 / 2 \, 3] $])$.
 ]
 
-#exemple_resolu(title: [Exemple Résolu Pas à Pas])[
-#strong[Worked Example 4 --- Using Obvious Roots and Viète.
-]
- Solve the
+
+#exemple_resolu(title: [Worked Example 4 — Using Obvious Roots and Viète.])[Solve the
 equation $15 x^2 - 2 x - 17 = 0$ mentally.
 
 #strong[Solution:] Test the sum of the coefficients:
@@ -27374,11 +24758,9 @@ $#box(stroke: black, inset: 3pt, [$ S = {- 1 \, 17 / 15} $])$, without
 computing any discriminant!
 ]
 
-#exemple_resolu(title: [Exemple Résolu Pas à Pas])[
-#strong[Worked Example 5 --- Finding Dimensions from Perimeter and
-Area.
-]
- A rectangular plot of land has a semi-perimeter of
+
+#exemple_resolu(title: [Worked Example 5 — Finding Dimensions from Perimeter and
+Area.])[A rectangular plot of land has a semi-perimeter of
 $29 upright(" meters")$ and an area of $198 upright(" m")^2$. What are
 the dimensions of this plot?
 
@@ -27395,11 +24777,9 @@ $18 + 11 = 29 upright(" m")$\; area
 $18 times 11 = 198 upright(" m")^2$).]
 ]
 
-#exemple_resolu(title: [Exemple Résolu Pas à Pas])[
-#strong[Worked Example 6 --- Biquadratic Equation Reducible to a
-Quadratic.
-]
- Solve the following equation in $bb(R)$:
+
+#exemple_resolu(title: [Worked Example 6 — Biquadratic Equation Reducible to a
+Quadratic.])[Solve the following equation in $bb(R)$:
 $ x^4 - 5 x^2 - 36 = 0 . $
 
 #strong[Solution:] This equation has degree 4, but it contains only even
@@ -27419,6 +24799,7 @@ Now return to the original variable $x$:
   $#box(stroke: black, inset: 3pt, [$ S = { - 3\,3 } $])$.
 ]
 
+
 #divider()
 
 === 8. In Computer Science: The Quadratic Solver in Python
@@ -27426,40 +24807,46 @@ Now return to the original variable $x$:
 Here is a Python script that implements the full analysis algorithm for
 a quadratic trinomial:
 
-```python
+#align(center)[
+  #block(
+    fill: rgb("#f8fafc"),
+    stroke: 1pt + rgb("#cbd5e1"),
+    inset: (x: 16pt, y: 10pt),
+    radius: 6pt,
+    breakable: false,
+  )[
+    #set text(font: "Liberation Mono", size: 9.5pt, fill: rgb("#0f172a"))
+    ```text
 import math
-
 def analyze_trinomial(a, b, c):
-    """Complete analysis of the trinomial a*x^2 + b*x + c."""
-    if a == 0:
-        return "Error: This is not a quadratic trinomial (a = 0)."
-
-    # 1. Vertex of the parabola
-    alpha = -b / (2 * a)
-    beta = a * alpha**2 + b * alpha + c
-    print(f"Vertex S: ({alpha:.3f}, {beta:.3f})")
-    print(f"Orientation: opens {'UPWARD' if a > 0 else 'DOWNWARD'}")
-
-    # 2. Discriminant
-    delta = b**2 - 4 * a * c
-    print(f"Discriminant Delta = {delta}")
-
-    if delta > 0:
-        x1 = (-b - math.sqrt(delta)) / (2 * a)
-        x2 = (-b + math.sqrt(delta)) / (2 * a)
-        print(f"Two distinct real roots: x1 = {x1:.3f} and x2 = {x2:.3f}")
-        print(f"Factored form: {a} * (x - {x1:.3f}) * (x - {x2:.3f})")
-    elif delta == 0:
-        x0 = -b / (2 * a)
-        print(f"One double root: x0 = {x0:.3f}")
-        print(f"Factored form: {a} * (x - {x0:.3f})^2")
-    else:
-        print("No real roots.")
-        print("No factorization in R.")
-
+"""Complete analysis of the trinomial a*x^2 + b*x + c."""
+if a == 0:
+return "Error: This is not a quadratic trinomial (a = 0)."
+# 1. Vertex of the parabola
+alpha = -b / (2 * a)
+beta = a * alpha**2 + b * alpha + c
+print(f"Vertex S: ({alpha:.3f}, {beta:.3f})")
+print(f"Orientation: opens {'UPWARD' if a > 0 else 'DOWNWARD'}")
+# 2. Discriminant
+delta = b**2 - 4 * a * c
+print(f"Discriminant Delta = {delta}")
+if delta > 0:
+x1 = (-b - math.sqrt(delta)) / (2 * a)
+x2 = (-b + math.sqrt(delta)) / (2 * a)
+print(f"Two distinct real roots: x1 = {x1:.3f} and x2 = {x2:.3f}")
+print(f"Factored form: {a} * (x - {x1:.3f}) * (x - {x2:.3f})")
+elif delta == 0:
+x0 = -b / (2 * a)
+print(f"One double root: x0 = {x0:.3f}")
+print(f"Factored form: {a} * (x - {x0:.3f})^2")
+else:
+print("No real roots.")
+print("No factorization in R.")
 # Example call: 2x^2 - 7x + 3
 analyze_trinomial(2, -7, 3)
-```
+    ```
+  ]
+]
 
 #divider()
 
@@ -27754,10 +25141,9 @@ lifting the pen from the parchment. But the time of human affairs moves
 in discrete strides: heartbeats, clock ticks, the stone steps of a
 staircase, and interest payments falling due at month's end. A numerical
 sequence is a voyage where each step rests upon the previous one to
-spring forward toward infinity.”
+spring forward toward infinity.”]
 ]
 
-]
 
 #divider()
 
@@ -27789,27 +25175,22 @@ borrow $1 thin 000$ gold florins for a term of 10 years.
 
 They approach two moneylenders on the Ponte Vecchio:
 
+
 #align(center)[
-  #block(
-    fill: rgb("#f8fafc"),
-    stroke: 1pt + rgb("#cbd5e1"),
-    inset: (x: 16pt, y: 10pt),
-    radius: 6pt,
-    breakable: false,
-  )[
-    #set text(font: "Liberation Mono", size: 9.5pt, fill: rgb("#0f172a"))
-    ```text
-MATTEO'S CONTRACT (Arithmetic Loan)          COSIMO'S CONTRACT (Geometric Loan)
-Each year, Matteo repays                     Each year, Cosimo's debt
-a FIXED penalty of 100 florins.              increases by 10% (compound rate).
-Year 0 : 1,000 florins                       Year 0 : 1,000 florins
-Year 1 : 1,100 florins                       Year 1 : 1,100 florins
-Year 2 : 1,200 florins                       Year 2 : 1,210 florins
-Year 3 : 1,300 florins                       Year 3 : 1,331 florins
-Year 10: 2,000 florins                       Year 10: 2,593.74 florins!
-    ```
-  ]
+  #table(
+    columns: (1.2fr, 2fr, 2fr),
+    align: (center, center, center),
+    stroke: 0.5pt + rgb("#cbd5e1"),
+    fill: (x, y) => if y == 0 { rgb("#eff6ff") } else { rgb("#ffffff") },
+    [*Échéance*], [*Contrat Matteo (Prêt arithmétique : +100 / an)*], [*Contrat Cosimo (Prêt géométrique : +10 % / an)*],
+    [Année 0], [1 000 florins], [1 000 florins],
+    [Année 1], [1 100 florins], [1 100 florins],
+    [Année 2], [1 200 florins], [1 210 florins],
+    [Année 3], [1 300 florins], [1 331 florins],
+    [Année 10], [2 000 florins], [*2 593,74 florins !*]
+  )
 ]
+
 
 Look closely at what occurred:
 
@@ -27841,10 +25222,7 @@ $x = 1.5$, $x = sqrt(2)$, $x = pi$… A #strong[sequence] is far more
 restrained: it accepts only #strong[non-negative integer indices]:
 $0\,1\,2\,3\,4 dots.h$
 
-#principe(title: [Définition Fondamentale])[
-#strong[📐 Definition --- Numerical Sequence.
-]
- A #strong[numerical
+#principe(title: [Definition — Numerical Sequence.])[A #strong[numerical
 sequence] is a function whose domain is the set of natural numbers
 $bb(N)$ (or a subset of $bb(N)$ starting from a certain index $n_0$).
 For any natural number $n$, the image of $n$ is written as a
@@ -27860,16 +25238,13 @@ aloud: “$u$ sub $n$” (or “$u$ index $n$”).
   $\(u_n\)_(n in bb(N))$.
 ]
 
-#quote_box[
-#strong[⚠️ Beware: Common Pitfall! Never confuse $u_n$ and $\(u_n\)$!
-]
 
-
-- $u_n$ is an #strong[isolated real number] (for instance, $u_3 = 8$).
+#alerte(title: [Beware: Common Pitfall! Never confuse $u_n$ and $\(u_n\)$!])[- $u_n$ is an #strong[isolated real number] (for instance, $u_3 = 8$).
 - $\(u_n\)$ with parentheses denotes #strong[the entire sequence], the
   infinite machine producing the ordered list
   ${ u_0\,u_1\,u_2\,u_3\,dots.h }$.
 ]
+
 
 ==== 2.2 The Two Modes of Generation
 <the-two-modes-of-generation>
@@ -27890,14 +25265,12 @@ construct the next term from the current one: $u_(n + 1) = g\(u_n\)$.
 $u_1 = 3 u_0 - 4 = 3\(2\)- 4 = 2$. - $u_2 = 3 u_1 - 4 = 3\(2\)- 4 = 2$.
 #emph[\(Here the sequence remains constant!)]
 
-#quote_box[
-#strong[⚠️ Beware: Common Pitfall! In a recursive sequence, you advance
-step by step.
-]
- To compute $u_10$ using a recurrence relation, you are
+#alerte(title: [Beware: Common Pitfall! In a recursive sequence, you advance
+step by step.])[To compute $u_10$ using a recurrence relation, you are
 obliged to first compute $u_1\,u_2\,u_3 dots.h$ all the way to $u_9$. It
 operates like falling dominoes: each domino topples the next.
 ]
+
 
 ==== 2.3 Graphical Representation of a Sequence
 <graphical-representation-of-a-sequence>
@@ -27907,10 +25280,9 @@ isolated points] with coordinates $\(n\,u_n\)$. You must #strong[never
 connect these points with a continuous solid line], because intermediate
 non-integer values (such as $n = 1.5$) have no meaning for a sequence!
 
-#figure(image("figures/vol_5/fig_36_suite_graphique.svg", alt: "Représentation graphique d’une suite numérique : nuage de points isolés"),
+#figure(image("figures_en/vol_5/fig_36_suite_graphique.svg", alt: "Graph of a numerical sequence: discrete scatter plot"),
   caption: [
-    Représentation graphique d'une suite numérique : nuage de points
-    isolés
+    Graph of a numerical sequence: discrete scatter plot
   ]
 )
 
@@ -27920,15 +25292,13 @@ non-integer values (such as $n = 1.5$) have no meaning for a sequence!
 <arithmetic-sequences-the-regular-staircase>
 ==== 3.1 Definition and General Term
 <definition-and-general-term>
-#principe(title: [Définition Fondamentale])[
-#strong[📐 Definition --- Arithmetic Sequence.
-]
- A sequence $\(u_n\)$ is
+#principe(title: [Definition — Arithmetic Sequence.])[A sequence $\(u_n\)$ is
 called #strong[arithmetic] if there exists a fixed real number $r$,
 called the #strong[common difference], such that for every natural
 number $n$:
 $ #box(stroke: black, inset: 3pt, [$ u_(n + 1) = u_n + r $]) $
 ]
+
 
 To climb from one step to the next, we always add the same number $r$:
 
@@ -27938,16 +25308,14 @@ To climb from one step to the next, we always add the same number $r$:
 
 Continuing in this fashion up to index $n$:
 
-#quote_box[
-#strong[📐 Theorem --- Explicit Formula for the General Term.
-]
- If
+#principe(title: [Theorem — Explicit Formula for the General Term.])[If
 $\(u_n\)$ is an arithmetic sequence with initial term $u_0$ and common
 difference $r$, then for all $n in bb(N)$:
 $ #box(stroke: black, inset: 3pt, [$ u_n = u_0 + n r $]) $ If the
 initial term is given at index $p$ as $u_p$, the formula becomes:
 $ u_n = u_p +\(n - p\)r . $
 ]
+
 
 #strong[Remark:] The points representing an arithmetic sequence all lie
 on the straight line with equation $y = r x + u_0$. The common
@@ -27987,11 +25355,8 @@ That child was #strong[Carl Friedrich Gauss].
   ]
 ]
 
-#quote_box[
-#strong[✍️ Proof (Required knowledge) --- Sum of the First $n$ Positive
-Integers.
-]
- For any natural number $n gt.eq 1$:
+#exemple_resolu(title: [Proof (Required knowledge) — Sum of the First $n$ Positive
+Integers.])[For any natural number $n gt.eq 1$:
 $ #box(stroke: black, inset: 3pt, [$ 1 + 2 + 3 + dots.h + n = frac(n\(n + 1\), 2) $]) $
 
 #emph[Proof:] Write the sum $S_n$ in ascending order, and directly
@@ -28005,20 +25370,19 @@ There are precisely $n$ columns. Therefore:
 $ 2 S_n = n times\(n + 1\)arrow.r.double.long S_n = frac(n\(n + 1\), 2) . quad square.filled.medium $
 ]
 
+
 For $n = 100$:
 $S_100 = frac(100 times 101, 2) = 50 times 101 = 5 thin 050$.
 
 ==== 3.3 Sum of Consecutive Terms of an Arithmetic Sequence
 <sum-of-consecutive-terms-of-an-arithmetic-sequence>
-#quote_box[
-#strong[📐 General Theorem --- Arithmetic Sum.
-]
- For any arithmetic
+#principe(title: [General Theorem — Arithmetic Sum.])[For any arithmetic
 sequence:
 $ #box(stroke: black, inset: 3pt, [$ S = sum_(k = p)^n u_k = u_p + u_(p + 1) + dots.h + u_n =\(upright("number of terms")\)times frac(upright("first term") + upright("last term"), 2) $]) $
 where the number of terms is given by:
 $upright("last index") - upright("first index") + 1 = n - p + 1$.
 ]
+
 
 #divider()
 
@@ -28026,14 +25390,12 @@ $upright("last index") - upright("first index") + 1 = n - p + 1$.
 <geometric-sequences-the-vertigo-of-multiplication>
 ==== 4.1 Definition and General Term
 <definition-and-general-term-1>
-#principe(title: [Définition Fondamentale])[
-#strong[📐 Definition --- Geometric Sequence.
-]
- A sequence $\(u_n\)$ is
+#principe(title: [Definition — Geometric Sequence.])[A sequence $\(u_n\)$ is
 called #strong[geometric] if there exists a fixed real number $q$,
 called the #strong[common ratio], such that for every natural number
 $n$: $ #box(stroke: black, inset: 3pt, [$ u_(n + 1) = q times u_n $]) $
 ]
+
 
 To move from one term to the next, we always multiply by the same number
 $q$:
@@ -28042,16 +25404,14 @@ $q$:
 - $u_2 = q times u_1 = q times\(q u_0\)= u_0 times q^2$
 - $u_3 = q times u_2 = u_0 times q^3$
 
-#quote_box[
-#strong[📐 Theorem --- Explicit Formula for the General Term.
-]
- If
+#principe(title: [Theorem — Explicit Formula for the General Term.])[If
 $\(u_n\)$ is a geometric sequence with initial term $u_0$ and common
 ratio $q$, then for all $n in bb(N)$:
 $ #box(stroke: black, inset: 3pt, [$ u_n = u_0 times q^n $]) $ If the
 initial term is given at index $p$ as $u_p$, the formula becomes:
 $ u_n = u_p times q^(n - p) . $
 ]
+
 
 ==== 4.2 Sissa's Chessboard and Exponential Explosion
 <sissas-chessboard-and-exponential-explosion>
@@ -28077,10 +25437,7 @@ millennia! The king could never honor his promise.
 
 ==== 4.3 Sum of Consecutive Powers of a Number $q$
 <sum-of-consecutive-powers-of-a-number-q>
-#quote_box[
-#strong[✍️ Proof (Required knowledge) --- Sum of Powers of $q$.
-]
- For any
+#exemple_resolu(title: [Proof (Required knowledge) — Sum of Powers of $q$.])[For any
 real $q eq.not 1$ and any integer $n gt.eq 0$:
 $ #box(stroke: black, inset: 3pt, [$ 1 + q + q^2 + q^3 + dots.h + q^n = frac(1 - q^(n + 1), 1 - q) $]) $
 
@@ -28096,13 +25453,12 @@ Since $q eq.not 1$, we can divide by $1 - q$:
 $ S_n = frac(1 - q^(n + 1), 1 - q) . quad square.filled.medium $
 ]
 
-#quote_box[
-#strong[📐 General Theorem --- Geometric Sum.
-]
- For any geometric
+
+#principe(title: [General Theorem — Geometric Sum.])[For any geometric
 sequence with common ratio $q eq.not 1$:
 $ #box(stroke: black, inset: 3pt, [$ S =\(upright("first term")\)times frac(1 - q^(upright("number of terms")), 1 - q) $]) $
 ]
+
 
 #divider()
 
@@ -28152,35 +25508,40 @@ A fundamental problem in finance, biology, and physics is determining
 #strong[at which index $n$] a sequence crosses a given critical boundary
 (the threshold). We use a `while` loop for this purpose:
 
-```python
+#align(center)[
+  #block(
+    fill: rgb("#f8fafc"),
+    stroke: 1pt + rgb("#cbd5e1"),
+    inset: (x: 16pt, y: 10pt),
+    radius: 6pt,
+    breakable: false,
+  )[
+    #set text(font: "Liberation Mono", size: 9.5pt, fill: rgb("#0f172a"))
+    ```text
 def growth_threshold(initial_value, rate, threshold):
-    """
-    Computes the number of periods needed to exceed a given threshold.
-    Example: an initial capital of €1,000 invested at 5% per year (ratio q = 1.05)
-    must exceed €2,000 (double).
-    """
-    n = 0
-    u = initial_value
-
-    while u < threshold:
-        u = u * (1 + rate)  # Apply annual growth rate
-        n += 1              # Step to the next year
-
-    return n, round(u, 2)
-
+"""
+Computes the number of periods needed to exceed a given threshold.
+Example: an initial capital of €1,000 invested at 5% per year (ratio q = 1.05)
+must exceed €2,000 (double).
+"""
+n = 0
+u = initial_value
+while u < threshold:
+u = u * (1 + rate)  # Apply annual growth rate
+n += 1              # Step to the next year
+return n, round(u, 2)
 years, final_amount = growth_threshold(1000, 0.05, 2000)
 print(f"The capital will double after {years} years, reaching €{final_amount}.")
 # Prints: The capital will double after 15 years, reaching €2078.93.
-```
+    ```
+  ]
+]
 
 #divider()
 
 === 7. Detailed Worked Examples
 <detailed-worked-examples-4>
-#exemple_resolu(title: [Exemple Résolu Pas à Pas])[
-#strong[Worked Example 1 --- Reconstructing an Arithmetic Sequence.
-]
- Let
+#exemple_resolu(title: [Worked Example 1 — Reconstructing an Arithmetic Sequence.])[Let
 $\(u_n\)$ be an arithmetic sequence such that $u_4 = 17$ and $u_9 = 37$.
 \1. Determine the common difference $r$ and the initial term $u_0$. 2.
 Express $u_n$ in terms of $n$. 3. Calculate the value of $u_50$.
@@ -28195,11 +25556,8 @@ $#box(stroke: black, inset: 3pt, [$ u_n = 1 + 4 n $])$. 3. For $n = 50$:
 $u_50 = 1 + 4\(50\)= 1 + 200 = 201$.
 ]
 
-#exemple_resolu(title: [Exemple Résolu Pas à Pas])[
-#strong[Worked Example 2 --- Computing an Arithmetic Sum of Terms.
-]
 
-Compute the sum: $ S = 7 + 11 + 15 + 19 + dots.h + 123 . $
+#exemple_resolu(title: [Worked Example 2 — Computing an Arithmetic Sum of Terms.])[Compute the sum: $ S = 7 + 11 + 15 + 19 + dots.h + 123 . $
 
 #strong[Solution:] The terms increase by $+ 4$ each step: this is an
 arithmetic sequence with common difference $r = 4$ and initial term
@@ -28212,10 +25570,8 @@ arithmetic sequence:
 $ S =\(upright("number of terms")\)times frac(upright("first") + upright("last"), 2) = 30 times frac(7 + 123, 2) = 30 times 130 / 2 = 30 times 65 = 1 thin 950 . $
 ]
 
-#exemple_resolu(title: [Exemple Résolu Pas à Pas])[
-#strong[Worked Example 3 --- Geometric Sequence and Sum of Powers.
-]
- Let
+
+#exemple_resolu(title: [Worked Example 3 — Geometric Sequence and Sum of Powers.])[Let
 $\(v_n\)$ be the geometric sequence with initial term $v_0 = 5$ and
 common ratio $q = 3$. 1. Compute $v_1\,v_2$, and $v_6$. 2. Compute the
 sum $S = v_0 + v_1 + v_2 + dots.h + v_6$.
@@ -28227,11 +25583,8 @@ $v_0$ to $v_6$: $6 - 0 + 1 = 7 upright(" terms")$.
 $ S = v_0 times frac(1 - q^7, 1 - q) = 5 times frac(1 - 3^7, 1 - 3) = 5 times frac(1 - 2 thin 187, - 2) = 5 times frac(- 2 thin 186, - 2) = 5 times 1 thin 093 = 5 thin 465 . $
 ]
 
-#exemple_resolu(title: [Exemple Résolu Pas à Pas])[
-#strong[Worked Example 4 --- Studying the Monotonicity of a Sequence.
-]
 
-Determine the direction of variation of the following sequences: a)
+#exemple_resolu(title: [Worked Example 4 — Studying the Monotonicity of a Sequence.])[Determine the direction of variation of the following sequences: a)
 $u_n = frac(n, n + 1)$ for $n in bb(N)$ b) $v_n = frac(3^n, n !)$ for
 $n gt.eq 1$
 
@@ -28261,10 +25614,8 @@ $\(u_n\)$ is #strong[strictly increasing].
 ]
 ]
 
-#exemple_resolu(title: [Exemple Résolu Pas à Pas])[
-#strong[Worked Example 5 --- Arithmetico-Geometric Sequence.
-]
- An animal
+
+#exemple_resolu(title: [Worked Example 5 — Arithmetico-Geometric Sequence.])[An animal
 shelter has $200$ animals on January 1, 2025. Each year, $20 %$ of the
 animals are adopted and leave the shelter, while $50$ newly abandoned
 animals are taken in. Let $u_n$ denote the number of animals after $n$
@@ -28289,11 +25640,9 @@ Consequently: $ lim_(n arrow.r + oo) u_n = 250 - 50 times 0 = 250 . $ In
 the long term, the shelter population stabilizes around $250$ animals.
 ]
 
-#exemple_resolu(title: [Exemple Résolu Pas à Pas])[
-#strong[Worked Example 6 --- Cobweb Plot (Web Diagram) of a Recurrence
-Sequence.
-]
- Consider the recursive sequence defined by $u_0 = 0$ and
+
+#exemple_resolu(title: [Worked Example 6 — Cobweb Plot (Web Diagram) of a Recurrence
+Sequence.])[Consider the recursive sequence defined by $u_0 = 0$ and
 $u_(n + 1) = 1 / 2 u_n + 1$. Graphically represent the first four terms
 on a coordinate plane using the line $y = x$.
 
@@ -28311,6 +25660,7 @@ the intersection point of the two lines:
 $ x = 1 / 2 x + 1 arrow.l.r.double 1 / 2 x = 1 arrow.l.r.double x = 2 . $
 The sequence $\(u_n\)$ increases, approaching its limit $L = 2$.
 ]
+
 
 #divider()
 
@@ -28545,13 +25895,25 @@ The sequence $\(u_n\)$ increases, approaching its limit $L = 2$.
 
   + Python script:
 
-    ```python
-    n, c = 0, 5000
-    while c <= 8000:
-        c *= 1.04
-        n += 1
-    print(n)  # Prints 12 years (c ≈ 8005.16 €)
+    #align(center)[
+  #block(
+    fill: rgb("#f8fafc"),
+    stroke: 1pt + rgb("#cbd5e1"),
+    inset: (x: 16pt, y: 10pt),
+    radius: 6pt,
+    breakable: false,
+  )[
+    #set text(font: "Liberation Mono", size: 9.5pt, fill: rgb("#0f172a"))
+    ```text
+n, c = 0, 5000
+while c <= 8000:
+c *= 1.04
+n += 1
+print(n)  # Prints 12 years (c ≈ 8005.16 €)
+
     ```
+  ]
+]
   ]
 
 + $u_n > 0$ for all $n gt.eq 1$.
@@ -28659,10 +26021,9 @@ the Winding Circle].
 #quote_box[
 #emph[“The degree is an invention of Babylonian merchants who were fond
 of the number 60. The radian, on the other hand, is an invention of the
-wheel itself: it is the circle measuring itself with its own radius.”
+wheel itself: it is the circle measuring itself with its own radius.”]
 ]
 
-]
 
 #divider()
 
@@ -28701,29 +26062,6 @@ right-angled triangle,
 $cos hat(A) = upright("adjacent") / upright("hypotenuse")$. But very
 quickly, three major obstacles arise.
 
-#align(center)[
-  #block(
-    fill: rgb("#f8fafc"),
-    stroke: 1pt + rgb("#cbd5e1"),
-    inset: (x: 16pt, y: 10pt),
-    radius: 6pt,
-    breakable: false,
-  )[
-    #set text(font: "Liberation Mono", size: 9.5pt, fill: rgb("#0f172a"))
-    ```text
-peak (42 m)
-'   |   '-.
-'      |      '.
-O---------|   axle at 22 m
-20 m  /
-'.      |      .'
-'-.   |   .-'
-'-*-'   ← gondola boarding (2 m)
-ground
-    ```
-  ]
-]
-
 #strong[Obstacle 1 --- Middle-school angles stop at 90°.] A right-angled
 triangle cannot have an acute angle of $120^compose$, much less
 $400^compose$. Yet your gondola keeps turning: after a turn and a half,
@@ -28746,10 +26084,7 @@ This is precisely what mathematicians constructed between the
 seventeenth and eighteenth centuries, and what you will now reconstruct
 with a simple piece of string.
 
-#quote_box[
-#strong[🔍 The True History --- The Sine Is a Pocket!
-]
- Around 150 BC,
+#decouvre(title: [The True History — The Sine Is a Pocket!])[Around 150 BC,
 the Greek astronomer #strong[Hipparchus] compiled the first table of
 “chords” to calculate the positions of celestial bodies;
 #strong[Ptolemy] refined it in the #emph[Almagest] (2nd century AD). In
@@ -28764,6 +26099,7 @@ Toledo, #strong[Gerard of Cremona] rendered it literally into Latin as
 wave function in mathematics bears the name of a fold in a tunic!
 ]
 
+
 #divider()
 
 === 2. The Radian: Measuring an Angle with the Radius
@@ -28771,22 +26107,21 @@ wave function in mathematics bears the name of a fold in a tunic!
 ==== 2.1 The String Experiment
 <the-string-experiment>
 #quote_box[
-#strong[🖐️ Your Turn to Try ---
-]
- Take a round tin can, a piece of
+#strong[🖐️ Your Turn to Try ---] Take a round tin can, a piece of
 string, and a marker. Cut a piece of string whose length is exactly
 equal to the #strong[radius] of the can. Place one end on the rim, then
 press the string flush along the circular rim. Draw the two radii
 connecting the center of the can to both ends of the string.
 ]
 
+
 The angle you have just traced---the angle that subtends an arc
 #strong[whose length is equal to the radius]---is the natural unit of
 the circle: it is #strong[one radian].
 
-#figure(image("figures/vol_5/fig_37_cercle_trigo_complet.svg", alt: "Le cercle trigonométrique complet : enroulement et projections"),
+#figure(image("figures_en/vol_5/fig_37_cercle_trigo_complet.svg", alt: "Le cercle trigonométrique complet et les lignes de sinus et cosinus"),
   caption: [
-    Le cercle trigonométrique complet : enroulement et projections
+    Le cercle trigonométrique complet et les lignes de sinus et cosinus
   ]
 )
 
@@ -28796,15 +26131,13 @@ $frac(2 pi R, R) = 2 pi approx 6.28$ strings. A complete revolution thus
 measures $2 pi$ radians. With $6$ strings, a small gap remains ($0.28$
 of a string) to close the full loop.
 
-#principe(title: [Définition Fondamentale])[
-#strong[📐 Definition --- The Radian
-]
- In a circle of radius $R$, a
+#principe(title: [Definition — The Radian])[In a circle of radius $R$, a
 central angle measures #strong[$1$ radian] (symbol: #strong[rad]) when
 it subtends an arc of length $R$. A full turn measures
 $2 pi upright(" rad")$, therefore:
 $ #box(stroke: black, inset: 3pt, [$ pi upright(" rad") = 180^compose $]) $
 ]
+
 
 The word “radian” naturally derives from “radius” (#emph[radius] in
 Latin). The idea of measuring angles by arc length dates back to the
@@ -28813,15 +26146,13 @@ English mathematician #strong[Roger Cotes] (1714); the name
 examination papers set by #strong[James Thomson] (brother of Lord
 Kelvin) in Belfast.
 
-#decouvre(title: [Découverte & Histoire])[
-#strong[💡 Did You Know?
-]
- The radian is dimensionless: it is a ratio of
+#decouvre(title: [Did You Know?])[The radian is dimensionless: it is a ratio of
 two lengths ($upright("arc") / upright("radius")$, meters divided by
 meters). That is why we often omit the unit: we write “the angle
 $pi / 3$” rather than “$pi / 3 upright(" rad")$”. When no unit is
 specified, #strong[it is always radians].
 ]
+
 
 ==== 2.2 Conversions
 <conversions>
@@ -28842,10 +26173,7 @@ $ upright("measure in rad") = upright("measure in degrees") times pi / 180 #h(2e
 
 And $1 upright(" rad") = 180 / pi zws^compose approx 57.3^compose$.
 
-#quote_box[
-#strong[✅ Worked Example 1 --- Conversions
-]
- a) Convert $75^compose$ to
+#exemple_resolu(title: [Worked Example 1 — Conversions])[a) Convert $75^compose$ to
 radians. b) Convert $frac(7 pi, 9) upright(" rad")$ to degrees. c)
 Convert $2.5 upright(" rad")$ to degrees.
 
@@ -28858,6 +26186,7 @@ Convert $2.5 upright(" rad")$ to degrees.
 ]
 ]
 
+
 ==== 2.3 Arc Length and Sector Area
 <arc-length-and-sector-area>
 Because the radian is defined by “$upright("arc") = upright("radius")$
@@ -28865,10 +26194,7 @@ for 1 rad”, the arc length is directly proportional to the angle:
 $1 upright(" rad") arrow.l.r R$, hence
 $theta upright(" rad") arrow.l.r R theta$.
 
-#principe(title: [Définition Fondamentale])[
-#strong[📐 Property --- Arc Length, Sector Area
-]
- In a circle of radius
+#principe(title: [Property — Arc Length, Sector Area])[In a circle of radius
 $R$, a central angle of $theta$ #strong[radians] subtends:
 
 - an arc of length
@@ -28876,6 +26202,7 @@ $R$, a central angle of $theta$ #strong[radians] subtends:
 - an angular sector (a “slice of pie”) of area
   $#box(stroke: black, inset: 3pt, [$ cal(A) = 1 / 2 R^2 theta $])$.
 ]
+
 
 #emph[Justification of the area:] The full disk (angle $2 pi$) has area
 $pi R^2$\; by proportionality, an angle $theta$ yields an area of
@@ -28888,10 +26215,7 @@ virtue of the radian: #strong[it eliminates parasitic constants]. You
 will see a second, even more spectacular reason in Grade 12: the
 derivative of $sin x$ is $cos x$ #strong[only when $x$ is in radians].
 
-#quote_box[
-#strong[✅ Worked Example 2 --- The Ferris Wheel Gondola
-]
- The wheel has
+#exemple_resolu(title: [Worked Example 2 — The Ferris Wheel Gondola])[The wheel has
 a radius of $20 upright(" m")$. The gondola has traveled
 $50 upright(" m")$ along the circumference. Through what angle has the
 wheel turned? And how many full turns after $1 upright(" km")$?
@@ -28904,10 +26228,8 @@ the wheel has completed $7$ full revolutions and almost an eighth turn
 (falling short by about $0.04$ of a turn).
 ]
 
-#quote_box[
-#strong[✅ Worked Example 3 --- A Slice of Pizza
-]
- A pizza with a
+
+#exemple_resolu(title: [Worked Example 3 — A Slice of Pizza])[A pizza with a
 diameter of $30 upright(" cm")$ is sliced into sectors of angle
 $pi / 5$. What is the crust length and the area of one slice? How many
 slices are there?
@@ -28918,11 +26240,8 @@ $1 / 2 times 15^2 times pi / 5 = frac(225 pi, 10) = 22.5 pi approx 70.7 upright(
 Number of slices: $frac(2 pi, pi\/5) = 10$.
 ]
 
-#quote_box[
-#strong[⚠️ Beware: Common Pitfall! --- Calculator Angle Mode
-]
 
-Calculators have a #strong[DEG] mode and a #strong[RAD] mode. If you
+#alerte(title: [Beware: Common Pitfall! — Calculator Angle Mode])[Calculators have a #strong[DEG] mode and a #strong[RAD] mode. If you
 enter `cos(60)` in RAD mode, you obtain
 $cos\(60 upright(" rad")\)approx - 0.952$, rather than $0.5$!
 Conversely, `cos(π/3)` in DEG mode yields
@@ -28931,15 +26250,13 @@ verify the mode. In Python, `math.cos` #strong[always] expects radians;
 to convert degrees, use `math.radians(60)`.
 ]
 
-#quote_box[
-#strong[⚠️ Beware: Common Pitfall! --- Arc Formulas with Degrees
-]
 
-$ell = R theta$ is #strong[false] if $theta$ is in degrees: with $R = 1$
+#alerte(title: [Beware: Common Pitfall! — Arc Formulas with Degrees])[$ell = R theta$ is #strong[false] if $theta$ is in degrees: with $R = 1$
 and $theta = 90$, one would obtain an arc of 90 meters on a circle whose
 total circumference is only $6.28 upright(" m")$! Always convert to
 radians first.
 ]
+
 
 #divider()
 
@@ -28952,16 +26269,14 @@ $\(O\;arrow(dotless.i)\,arrow(dotless.j)\)$---recall: “orthonormal”
 means both axes are perpendicular and have the same unit length. Let
 $I\(1\;0\)$ and $J\(0\;1\)$.
 
-#principe(title: [Définition Fondamentale])[
-#strong[📐 Definition --- Unit Circle (Trigonometric Circle)
-]
- The
+#principe(title: [Definition — Unit Circle (Trigonometric Circle)])[The
 #strong[unit circle] (or trigonometric circle) is the circle $cal(C)$
 centered at the origin $O$ with radius $1$, #strong[oriented]: we choose
 as the #strong[positive direction] (or direct, counterclockwise, or
 #strong[trigonometric] direction) the direction opposite to the hands of
 a clock.
 ]
+
 
 Why this direction? Because it is the direction that leads from $I$ (on
 the horizontal axis) to $J$ (on the vertical axis) via the shortest
@@ -28985,31 +26300,6 @@ point $I$, with the zero mark of the line resting on $I$. Then
 - the negative half-line wraps around in the #strong[clockwise
   (negative) direction].
 
-#align(center)[
-  #block(
-    fill: rgb("#f8fafc"),
-    stroke: 1pt + rgb("#cbd5e1"),
-    inset: (x: 16pt, y: 10pt),
-    radius: 6pt,
-    breakable: false,
-  )[
-    #set text(font: "Liberation Mono", size: 9.5pt, fill: rgb("#0f172a"))
-    ```text
-real number line (tape)
-↑  2
-J       |
-↑  1
-'     '.    |
-O    *---0   ← the 0 mark is placed at I
-'.     .'    |
-'-*-'      ↓ -1
-↓ -2
-The upper tape wraps toward J (positive direction),
-the lower tape wraps downward (negative direction).
-    ```
-  ]
-]
-
 Each real number $x$ on the tape comes to rest on a specific point on
 the circle: we call it the #strong[image point] of $x$, denoted
 $M\(x\)$.
@@ -29021,15 +26311,13 @@ $M\(x\)$.
   $J'\(0\;- 1\)$.
 - $x = 2 pi$: a complete turn: back at $I\(1\;0\)$.
 
-#principe(title: [Définition Fondamentale])[
-#strong[📐 Definition --- Image Point of a Real Number
-]
- To every real
+#principe(title: [Definition — Image Point of a Real Number])[To every real
 number $x$, the winding process associates a unique point $M$ on the
 unit circle, called the #strong[image of $x$]. We also say that $x$ is
 #strong[a radian measure] of the directed angle
 $\(accent(O I, ⃗)\,accent(O M, ⃗)\)$.
 ]
+
 
 ==== 3.3 One Point, Infinitely Many Reals: “Modulo $2 pi$”
 <one-point-infinitely-many-reals-modulo-2pi>
@@ -29039,16 +26327,14 @@ $pi / 3 + 2 pi = frac(7 pi, 3)$, $pi / 3 + 4 pi = frac(13 pi, 3)$,
 $pi / 3 - 2 pi = - frac(5 pi, 3)$… all share #strong[the exact same
 image point].
 
-#principe(title: [Définition Fondamentale])[
-#strong[📐 Property --- Real Numbers Sharing the Same Image
-]
- Two real
+#principe(title: [Property — Real Numbers Sharing the Same Image])[Two real
 numbers $x$ and $y$ have the same image on the circle if and only if
 their difference is an integer multiple of $2 pi$:
 $ y = x + 2 k pi quad upright("with ") k in bb(Z) . $ We write
 $y equiv x med\[2 pi\]$, read as “$y$ is congruent to $x$
 #strong[modulo] $2 pi$”.
 ]
+
 
 #emph[Reading the notations:] $k in bb(Z)$ means “$k$ belongs to
 $bb(Z)$”, i.e., “$k$ is an integer”
@@ -29058,14 +26344,12 @@ $bb(Z)$”, i.e., “$k$ is an integer”
 for modular arithmetic; here it means “up to an integer number of full
 revolutions”.
 
-#principe(title: [Définition Fondamentale])[
-#strong[📐 Definition --- Principal Measure
-]
- Among all the real numbers
+#principe(title: [Definition — Principal Measure])[Among all the real numbers
 sharing the same image point $M$, there exists #strong[exactly one] in
 the half-open interval $\]- pi\,pi\]$. It is called the
 #strong[principal measure] of the angle.
 ]
+
 
 \(Recall of interval notation: $\]- pi\,pi\]$ denotes the set of real
 numbers $x$ such that $- pi < x lt.eq pi$\; the bracket pointing outward
@@ -29074,21 +26358,15 @@ inward at $pi$ means $pi$ is #strong[included]. We exclude $- pi$
 because it represents the same image point as $pi$: otherwise, point
 $I'$ would have two principal measures.)
 
-#methode(title: [Méthode Pas à Pas])[
-#strong[🧭 Method --- Finding the Principal Measure of $frac(p pi, q)$
-]
-
-\1. Look at $p / q$ and seek the nearest #strong[even] multiple: we want
+#methode(title: [Method — Finding the Principal Measure of $frac(p pi, q)$])[\1. Look at $p / q$ and seek the nearest #strong[even] multiple: we want
 $frac(p pi, q) = alpha + 2 k pi$ with $- pi < alpha lt.eq pi$. 2. In
 practice: divide $p$ by $2 q$ to determine how many full revolutions
 ($2 pi = frac(2 q pi, q)$) to subtract or add. 3. Adjust by one turn if
 the remaining value falls outside $\]- pi\,pi\]$.
 ]
 
-#quote_box[
-#strong[✅ Worked Example 4 --- Principal Measures
-]
- Determine the
+
+#exemple_resolu(title: [Worked Example 4 — Principal Measures])[Determine the
 principal measure of: a) $frac(37 pi, 4)$\; b) $- frac(17 pi, 3)$\; c)
 $frac(2023 pi, 6)$.
 
@@ -29117,31 +26395,27 @@ $frac(2023 pi, 6)$.
 ]
 ]
 
-#quote_box[
-#strong[⚠️ Beware: Common Pitfall! --- Principal Measure and Interval
-]
 
-The principal measure lies in $\]- pi\,pi\]$, #strong[not] in
+#alerte(title: [Beware: Common Pitfall! — Principal Measure and Interval])[The principal measure lies in $\]- pi\,pi\]$, #strong[not] in
 $\[0\,2 pi\[$. For $frac(37 pi, 4)$, answering $frac(5 pi, 4)$ is
 incorrect as the “principal measure” (even though $frac(5 pi, 4)$ has
 the exact same image point).
 ]
+
 
 ==== 3.4 Marking Special Points
 <marking-special-points>
 By dividing the circle into $4$, $8$, and $12$ equal parts, we locate
 the images of multiples of $pi / 2$, $pi / 4$, $pi / 6$, and $pi / 3$:
 
-#methode(title: [Méthode Pas à Pas])[
-#strong[🧭 Method --- Locating $frac(k pi, n)$ Quickly
-]
- Count in “slices
+#methode(title: [Method — Locating $frac(k pi, n)$ Quickly])[Count in “slices
 of $pi / n$”: the upper half-turn ($0$ to $pi$) contains $n$ such
 slices. For $frac(5 pi, 6)$, advance $5$ slices out of $6$ in the upper
 semicircle: you are almost at $I'$, just above it. For
 $- frac(2 pi, 3)$, step downward (negative direction) by $2$ slices out
 of $3$ in the lower semicircle.
 ]
+
 
 #divider()
 
@@ -29152,10 +26426,7 @@ of $3$ in the lower semicircle.
 The image point $M\(x\)$ has two coordinates in the Cartesian system
 $\(O\;arrow(dotless.i)\,arrow(dotless.j)\)$. We give them precise names:
 
-#principe(title: [Définition Fondamentale])[
-#strong[📐 Definition --- Cosine and Sine of a Real Number
-]
- Let $x$ be a
+#principe(title: [Definition — Cosine and Sine of a Real Number])[Let $x$ be a
 real number and $M$ its image point on the unit circle. We call:
 
 - the #strong[cosine of $x$], written $cos x$ or $cos\(x\)$, the
@@ -29165,6 +26436,7 @@ real number and $M$ its image point on the unit circle. We call:
   $ M\(x\)= #scale(x: 120%, y: 120%)[\(] cos x med\;med sin x #scale(x: 120%, y: 120%)[\)] . $
 ]
 
+
 Reading: $cos x$ is pronounced “cosine of $x$”. The abbreviation
 #emph[cos] originates from #emph[complementi sinus], “sine of the
 complement” (we shall see below that $cos x = sin\(pi / 2 - x\)$). The
@@ -29173,10 +26445,7 @@ century, notably through the English mathematician #strong[William
 Oughtred]\; it was #strong[Euler] who, in the eighteenth century,
 treated them firmly as #strong[functions] of a real variable.
 
-#quote_box[
-#strong[⚠️ Beware: Common Pitfall! --- It Is Not a Product
-]
- $cos x$ is
+#alerte(title: [Beware: Common Pitfall! — It Is Not a Product])[$cos x$ is
 not “$cos times x$”: “cos” by itself is meaningless. Thus
 $cos\(2 x\)eq.not 2 cos x$, and $cos\(a + b\)eq.not cos a + cos b$ (for
 instance, $cos (pi / 2 + pi / 2) = cos pi = - 1$ whereas
@@ -29184,6 +26453,7 @@ $cos pi / 2 + cos pi / 2 = 0$). Standard notation: $cos^2 x$ means
 $\(cos x\)^2$, the square of the cosine---not to be confused with
 $cos\(x^2\)$.
 ]
+
 
 ==== 4.2 Return to the Ferris Wheel
 <return-to-the-ferris-wheel>
@@ -29212,19 +26482,15 @@ nearly back at the lowest point, as anticipated (7.96 revolutions).
 ==== 4.3 First Properties
 <first-properties>
 #quote_box[
-#strong[📐 Fundamental Properties
-]
- --- For every real number $x$ and
+#strong[📐 Fundamental Properties] --- For every real number $x$ and
 every integer $k$: 1. $- 1 lt.eq cos x lt.eq 1$ and
 $- 1 lt.eq sin x lt.eq 1$\; 2. $cos\(x + 2 k pi\)= cos x$ and
 $sin\(x + 2 k pi\)= sin x$\; 3.
 $#box(stroke: black, inset: 3pt, [$ cos^2 x + sin^2 x = 1 $])$.
 ]
 
-#quote_box[
-#strong[✍️ Proof
-]
- 1. Point $M$ lies on the circle centered at $O$ with
+
+#exemple_resolu(title: [Proof])[1. Point $M$ lies on the circle centered at $O$ with
 radius $1$, so its coordinates are bounded between $- 1$ and $1$. 2. $x$
 and $x + 2 k pi$ share the same image point (§3.3), and hence have the
 exact same coordinates. 3. $O M = 1$. The distance formula in an
@@ -29233,23 +26499,19 @@ gives $O M^2 =\(cos x - 0\)^2 +\(sin x - 0\)^2$, hence
 $cos^2 x + sin^2 x = 1$. $square.filled.medium$
 ]
 
+
 ==== 4.4 Consistency with Middle School
 <consistency-with-middle-school>
 Does this new definition contradict the middle-school triangle
 definition? Not at all.
 
-#principe(title: [Définition Fondamentale])[
-#strong[📐 Property --- Connection to the Right-Angled Triangle
-]
- If
+#principe(title: [Property — Connection to the Right-Angled Triangle])[If
 $0 < x < pi / 2$, then $cos x$ and $sin x$ coincide with the cosine and
 sine of the acute angle of measure $x$ in a right-angled triangle.
 ]
 
-#quote_box[
-#strong[✍️ Proof
-]
- Let $M\(x\)$ with $0 < x < pi / 2$: $M$ lies in the
+
+#exemple_resolu(title: [Proof])[Let $M\(x\)$ with $0 < x < pi / 2$: $M$ lies in the
 upper-right quadrant. Let $H$ be the orthogonal projection of $M$ onto
 the horizontal axis. The triangle $O H M$ is right-angled at $H$, with
 hypotenuse $O M = 1$, and the angle $accent(H O M, ̂)$ measures
@@ -29260,18 +26522,16 @@ $sin accent(H O M, ̂) = frac(H M, O M) = H M$, which is the
 $y$-coordinate of $M$. $square.filled.medium$
 ]
 
+
 ==== 4.5 Signs According to Quadrants
 <signs-according-to-quadrants>
-#figure(image("figures/vol_5/fig_37_cercle_trigo_quadrants.svg", alt: "Les quatre quadrants trigonométriques : signes de cos et sin"),
+#figure(image("figures_en/vol_5/fig_37_cercle_trigo_quadrants.svg", alt: "The four trigonometric quadrants: signs of cos and sin"),
   caption: [
-    Les quatre quadrants trigonométriques : signes de cos et sin
+    The four trigonometric quadrants: signs of cos and sin
   ]
 )
 
-#quote_box[
-#strong[✅ Worked Example 5 --- Using $cos^2 + sin^2 = 1$
-]
- Suppose that
+#exemple_resolu(title: [Worked Example 5 — Using $cos^2 + sin^2 = 1$])[Suppose that
 $x in ]pi / 2 \, pi[$ and $sin x = 3 / 5$. Compute $cos x$.
 
 $cos^2 x = 1 - sin^2 x = 1 - 9 / 25 = 16 / 25$, so $cos x = 4 / 5$ or
@@ -29280,15 +26540,13 @@ strictly negative. Therefore,
 $#box(stroke: black, inset: 3pt, [$ cos x = - 4 / 5 $])$.
 ]
 
-#quote_box[
-#strong[⚠️ Beware: Common Pitfall! --- Never Forget the Sign
-]
 
-$cos^2 x = 16 / 25$ does not automatically imply $cos x = 4 / 5$. The
+#alerte(title: [Beware: Common Pitfall! — Never Forget the Sign])[$cos^2 x = 16 / 25$ does not automatically imply $cos x = 4 / 5$. The
 quadratic equation $X^2 = a$ (with $a > 0$) has #strong[two] solutions,
 $sqrt(a)$ and $- sqrt(a)$ (Chapter 23). It is the #strong[geometric
 location of the point] on the circle that decides between them.
 ]
+
 
 #divider()
 
@@ -29303,10 +26561,9 @@ location of the point] on the circle that decides between them.
 your brow drips with sweat, and yet the load crawls forward at a snail's
 pace. Why? Because the universe does not reward you for effort spent
 into the void: it counts only the useful shadow of your force along the
-path.”
+path.”]
 ]
 
-]
 
 #divider()
 
@@ -29348,10 +26605,10 @@ the canal: the #strong[towpath].
 
 Observe the scene from a footbridge above the water:
 
-#figure(image("figures/vol_5/fig_38_produit_scalaire_travail.svg", alt: "Produit scalaire et travail d’une force : composante utile et signe géométrique"),
+#figure(image("figures_en/vol_5/fig_38_produit_scalaire_travail.svg", alt: "Dot product and work of a force: effective component and geometric sign"),
   caption: [
-    Produit scalaire et travail d'une force : composante utile et signe
-    géométrique
+    Dot product and work of a force: effective component and geometric
+    sign
   ]
 )
 
@@ -29372,25 +26629,6 @@ forward: it tries only to ground the barge in the reeds. I have to fight
 against it constantly by leaning on the tiller. Only the part of the
 force pointing straight ahead, parallel to the water, produces useful
 motion.”]
-
-#align(center)[
-  #block(
-    fill: rgb("#f8fafc"),
-    stroke: 1pt + rgb("#cbd5e1"),
-    inset: (x: 16pt, y: 10pt),
-    radius: 6pt,
-    breakable: false,
-  )[
-    #set text(font: "Liberation Mono", size: 9.5pt, fill: rgb("#0f172a"))
-    ```text
-F (total effort deployed)
-Wasted lateral component (pulls toward the bank)
-o Canal (displacement d)
-Effective shadow |
-F|| × cos(θ)
-    ```
-  ]
-]
 
 To measure the energy actually delivered to the boat, multiplying force
 by distance is not enough. We must #strong[extract the effective shadow
@@ -29421,10 +26659,7 @@ $arrow(u)$ and $arrow(v)$ to produce #strong[a single real number] (a
 scalar, as opposed to a vector), mathematicians forged a universal
 concept.
 
-#principe(title: [Définition Fondamentale])[
-#strong[📐 Definition --- Scalar Product (by Norm and Cosine)
-]
- Let
+#principe(title: [Definition — Scalar Product (by Norm and Cosine)])[Let
 $arrow(u)$ and $arrow(v)$ be two vectors in the plane.
 
 - If either vector is the zero vector ($arrow(u) = arrow(0)$ or
@@ -29439,15 +26674,12 @@ $arrow(u)$ and $arrow(v)$ be two vectors in the plane.
 $ arrow(u) dot.op arrow(v) = parallel arrow(u) parallel times parallel arrow(v) parallel times cos\(accent(A O B, ̂)\). $
 ]
 
+
 #strong[Reading and Pronunciation:] $arrow(u) dot.op arrow(v)$ is read
 aloud as “#strong[$arrow(u)$ dot $arrow(v)$]”. The centered dot
 “$dot.op$” is reserved for this operation.
 
-#quote_box[
-#strong[🔍 The True History --- Where Does the Word “Scalar” Come From?
-]
-
-The word comes from the Latin #emph[scala], meaning “ladder” or “scale”.
+#decouvre(title: [The True History — Where Does the Word “Scalar” Come From?])[The word comes from the Latin #emph[scala], meaning “ladder” or “scale”.
 The Irish mathematician #strong[William Rowan Hamilton] introduced it in
 1843 when inventing quaternions: he called the pure numerical part,
 which is marked on a standard numerical scale, the “scalar part”,
@@ -29455,6 +26687,7 @@ distinguishing it from the directional “vector part”. The modern dot
 product with a dot symbol was popularized by the American physicist
 #strong[Josiah Willard Gibbs] in the late nineteenth century.
 ]
+
 
 ==== 2.2 The Three Regimes of the Rope
 <the-three-regimes-of-the-rope>
@@ -29475,34 +26708,13 @@ two vectors:
   this is the role of brakes or hydrodynamic friction, which physicists
   call #strong[resistive work].
 
-#align(center)[
-  #block(
-    fill: rgb("#f8fafc"),
-    stroke: 1pt + rgb("#cbd5e1"),
-    inset: (x: 16pt, y: 10pt),
-    radius: 6pt,
-    breakable: false,
-  )[
-    #set text(font: "Liberation Mono", size: 9.5pt, fill: rgb("#0f172a"))
-    ```text
-θ acute: u · v > 0            θ = 90°: u · v = 0            θ obtuse: u · v < 0
-v                             v                               v
-θ                                                           θ   \
-o u                    o u                    o
-Motive work                    Zero work                      u   Resistive work
-    ```
-  ]
-]
-
-#quote_box[
-#strong[⚠️ Beware: Common Pitfall! --- A Scalar Is Not a Vector
-]
- The dot
+#alerte(title: [Beware: Common Pitfall! — A Scalar Is Not a Vector])[The dot
 product of two vectors is #strong[never a vector]! It is a #strong[real
 number] (which can be positive, zero, or negative). Writing
 $arrow(u) dot.op arrow(v) = arrow(0)$ with an arrow over the zero is a
 severe error of notation. Always write $arrow(u) dot.op arrow(v) = 0$.
 ]
+
 
 #divider()
 
@@ -29513,10 +26725,7 @@ severe error of notation. Always write $arrow(u) dot.op arrow(v) = 0$.
 Instead of calculating a cosine, it is often much faster to drop a
 perpendicular.
 
-#principe(title: [Définition Fondamentale])[
-#strong[📐 Property --- Definition by Orthogonal Projection
-]
- Let
+#principe(title: [Property — Definition by Orthogonal Projection])[Let
 $arrow(u) = accent(O A, ⃗)$ and $arrow(v) = accent(O B, ⃗)$ be two
 non-zero vectors. Let $H$ be the orthogonal projection of point $B$ onto
 the line $\(O A\)$.
@@ -29532,29 +26741,8 @@ In terms of directed lengths along the axis $\(O A\)$:
   $arrow(u) dot.op arrow(v) = - O A times O H$.
 ]
 
-#align(center)[
-  #block(
-    fill: rgb("#f8fafc"),
-    stroke: 1pt + rgb("#cbd5e1"),
-    inset: (x: 16pt, y: 10pt),
-    radius: 6pt,
-    breakable: false,
-  )[
-    #set text(font: "Liberation Mono", size: 9.5pt, fill: rgb("#0f172a"))
-    ```text
-Case 1: Same direction                 Case 2: Opposite directions
-B                                            B
-o                               o
-O   H         A                                  H   O        A
-u · v = + OA × OH                                u · v = - OA × OH
-    ```
-  ]
-]
 
-#quote_box[
-#strong[✍️ Proof
-]
- In the triangle $O H B$, right-angled at $H$:
+#exemple_resolu(title: [Proof])[In the triangle $O H B$, right-angled at $H$:
 
 - If the angle $accent(A O B, ̂)$ is acute,
   $cos\(accent(A O B, ̂)\)= frac(O H, O B)$, so
@@ -29571,15 +26759,14 @@ u · v = + OA × OH                                u · v = - OA × OH
   $square.filled.medium$
 ]
 
-#decouvre(title: [Découverte & Histoire])[
-#strong[💡 Did You Know? --- The Symmetry of the Dot Product
-]
- Projecting
+
+#decouvre(title: [Did You Know? — The Symmetry of the Dot Product])[Projecting
 $B$ onto $\(O A\)$ gives the exact same result as projecting $A$ onto
 $\(O B\)$! Indeed,
 $arrow(u) dot.op arrow(v) = parallel arrow(u) parallel parallel arrow(v) parallel cos theta = parallel arrow(v) parallel parallel arrow(u) parallel cos theta = arrow(v) dot.op arrow(u)$.
 The dot product is #strong[commutative].
 ]
+
 
 ==== 3.2 The Scalar Square
 <the-scalar-square>
@@ -29587,10 +26774,7 @@ What happens when we take the dot product of a vector with itself? The
 angle between $arrow(u)$ and $arrow(u)$ is zero ($theta = 0$), and
 $cos\(0\)= 1$.
 
-#principe(title: [Définition Fondamentale])[
-#strong[📐 Definition --- Scalar Square
-]
- For any vector $arrow(u)$, we
+#principe(title: [Definition — Scalar Square])[For any vector $arrow(u)$, we
 write $arrow(u)^2 = arrow(u) dot.op arrow(u)$. We have:
 
 $ arrow(u)^2 = parallel arrow(u) parallel^2 . $
@@ -29600,6 +26784,7 @@ a #strong[non-negative real number], and
 $arrow(u)^2 = 0 arrow.l.r.double arrow(u) = arrow(0)$. For a geometric
 segment $\[A B\]$, we have $accent(A B, ⃗)^2 = A B^2$.
 ]
+
 
 #divider()
 
@@ -29618,20 +26803,15 @@ $\(O\;arrow(i)\,arrow(j)\)$, the unit basis vectors satisfy:
 Here the beauty of algebra dramatically simplifies geometric
 computations:
 
-#quote_box[
-#strong[📐 Theorem --- Analytical Formula for the Dot Product
-]
- In an
+#principe(title: [Theorem — Analytical Formula for the Dot Product])[In an
 #strong[orthonormal] coordinate system $\(O\;arrow(i)\,arrow(j)\)$, if
 $arrow(u) vec(x, y)$ and $arrow(v) vec(x', y')$, then:
 
 $ #box(stroke: black, inset: 3pt, [$ arrow(u) dot.op arrow(v) = x x' + y y' $]) $
 ]
 
-#quote_box[
-#strong[✍️ Proof
-]
- By the bilinearity of the scalar product (expanding
+
+#exemple_resolu(title: [Proof])[By the bilinearity of the scalar product (expanding
 just like an ordinary product):
 $ arrow(u) dot.op arrow(v) & =\(x arrow(i) + y arrow(j)\)dot.op\(x' arrow(i) + y' arrow(j)\)\
  & = x x'\(arrow(i) dot.op arrow(i)\)+ x y'\(arrow(i) dot.op arrow(j)\)+ y x'\(arrow(j) dot.op arrow(i)\)+ y y'\(arrow(j) dot.op arrow(j)\). $
@@ -29641,15 +26821,14 @@ cross-terms vanish entirely! We are left with:
 $ arrow(u) dot.op arrow(v) = x x'\(1\)+ 0 + 0 + y y'\(1\)= x x' + y y' . quad square.filled.medium $
 ]
 
-#quote_box[
-#strong[⚠️ Beware: Common Pitfall! --- Coordinate System Must Be
-Orthonormal
-]
- The formula $arrow(u) dot.op arrow(v) = x x' + y y'$ is
+
+#alerte(title: [Beware: Common Pitfall! — Coordinate System Must Be
+Orthonormal])[The formula $arrow(u) dot.op arrow(v) = x x' + y y'$ is
 #strong[false] if the axes are not perpendicular or if the units on the
 two axes differ! It holds true only in an #strong[orthonormal]
 coordinate system.
 ]
+
 
 #divider()
 
@@ -29666,16 +26845,14 @@ $ parallel arrow(u) + arrow(v) parallel^2 =\(arrow(u) + arrow(v)\)^2 = arrow(u)^
 Isolating the dot product $arrow(u) dot.op arrow(v)$ yields the famous
 polarization formulas:
 
-#quote_box[
-#strong[📐 Theorem --- Polarization Identities
-]
- For all vectors
+#principe(title: [Theorem — Polarization Identities])[For all vectors
 $arrow(u)$ and $arrow(v)$:
 
 + $arrow(u) dot.op arrow(v) = 1 / 2 (parallel arrow(u) + arrow(v) parallel^2 - parallel arrow(u) parallel^2 - parallel arrow(v) parallel^2)$
 + $arrow(u) dot.op arrow(v) = 1 / 2 (parallel arrow(u) parallel^2 + parallel arrow(v) parallel^2 - parallel arrow(u) - arrow(v) parallel^2)$
 + $arrow(u) dot.op arrow(v) = 1 / 4 (parallel arrow(u) + arrow(v) parallel^2 - parallel arrow(u) - arrow(v) parallel^2)$
 ]
+
 
 In a triangle $A B C$ with $arrow(u) = accent(A B, ⃗)$ and
 $arrow(v) = accent(A C, ⃗)$, notice that
@@ -29693,10 +26870,7 @@ a triangle and the dot product!
 <orthogonality-normal-vectors-and-equations-of-lines>
 ==== 6.1 The Orthogonality Criterion
 <the-orthogonality-criterion>
-#quote_box[
-#strong[📐 Fundamental Theorem of Orthogonality
-]
- Two vectors $arrow(u)$
+#principe(title: [Fundamental Theorem of Orthogonality])[Two vectors $arrow(u)$
 and $arrow(v)$ are orthogonal if and only if:
 
 $ arrow(u) perp arrow(v) arrow.l.r.double arrow(u) dot.op arrow(v) = 0 . $
@@ -29707,6 +26881,7 @@ $arrow(v)\(x'\;y'\)$:
 $ arrow(u) perp arrow(v) arrow.l.r.double x x' + y y' = 0 . $
 ]
 
+
 ==== 6.2 Normal Vector to a Line
 <normal-vector-to-a-line>
 In Grade 10, a line was characterized by a point and a #emph[direction
@@ -29714,30 +26889,11 @@ vector] $arrow(u)$ parallel to the line. In Grade 11, the dot product
 allows a much more convenient approach: characterizing the line by an
 arrow that is #strong[perpendicular] to it.
 
-#principe(title: [Définition Fondamentale])[
-#strong[📐 Definition --- Normal Vector
-]
- A non-zero vector $arrow(n)$ is
+#principe(title: [Definition — Normal Vector])[A non-zero vector $arrow(n)$ is
 said to be #strong[normal] to a line $\(d\)$ if it is orthogonal to
 every direction vector of $\(d\)$.
 ]
 
-#align(center)[
-  #block(
-    fill: rgb("#f8fafc"),
-    stroke: 1pt + rgb("#cbd5e1"),
-    inset: (x: 16pt, y: 10pt),
-    radius: 6pt,
-    breakable: false,
-  )[
-    #set text(font: "Liberation Mono", size: 9.5pt, fill: rgb("#0f172a"))
-    ```text
-n (normal vector)
-M Line (d)
-A      AM ⟂ n
-    ```
-  ]
-]
 
 A point $M\(x\;y\)$ belongs to the line $\(d\)$ passing through
 $A\(x_A\;y_A\)$ with normal vector $arrow(n)\(a\;b\)$ if and only if:
@@ -29747,12 +26903,7 @@ $ accent(A M, ⃗) dot.op arrow(n) = 0 arrow.l.r.double a\(x - x_A\)+ b\(y - y_A
 Setting $c = - a x_A - b y_A$, we retrieve the standard Cartesian
 equation!
 
-#quote_box[
-#strong[📐 Theorem --- Cartesian Equation and Normal Vector
-]
-
-
-- In an orthonormal coordinate system, every line with normal vector
+#principe(title: [Theorem — Cartesian Equation and Normal Vector])[- In an orthonormal coordinate system, every line with normal vector
   $arrow(n) vec(a, b)$ has a Cartesian equation of the form:
 
 $ a x + b y + c = 0 quad\(upright("with ")\(a\;b\)eq.not\(0\;0\)\). $
@@ -29761,6 +26912,7 @@ $ a x + b y + c = 0 quad\(upright("with ")\(a\;b\)eq.not\(0\;0\)\). $
   $\(a\;b\)eq.not\(0\;0\)$ is the equation of a straight line having
   normal vector $arrow(n) vec(a, b)$.
 ]
+
 
 #divider()
 
@@ -29771,11 +26923,8 @@ $ a x + b y + c = 0 quad\(upright("with ")\(a\;b\)eq.not\(0\;0\)\). $
 In an arbitrary triangle $A B C$, when the angle $hat(A)$ is not right,
 what becomes of the Pythagorean theorem?
 
-#quote_box[
-#strong[📐 Al-Kashi's Theorem (Generalized Pythagorean Theorem / Law of
-Cosines)
-]
- Let $A B C$ be any triangle. Setting $a = B C$, $b = A C$,
+#principe(title: [Al-Kashi's Theorem (Generalized Pythagorean Theorem / Law of
+Cosines)])[Let $A B C$ be any triangle. Setting $a = B C$, $b = A C$,
 $c = A B$, and $hat(A) = accent(B A C, ̂)$:
 
 $ a^2 = b^2 + c^2 - 2 b c cos hat(A) . $
@@ -29784,10 +26933,8 @@ Likewise for the other two vertices:
 $ b^2 = a^2 + c^2 - 2 a c cos hat(B)\,#h(2em) c^2 = a^2 + b^2 - 2 a b cos hat(C) . $
 ]
 
-#quote_box[
-#strong[✍️ Geometric Proof via the Dot Product
-]
- Write Chasles' relation
+
+#exemple_resolu(title: [Geometric Proof via the Dot Product])[Write Chasles' relation
 for the vector $accent(B C, ⃗)$:
 $accent(B C, ⃗) = accent(B A, ⃗) + accent(A C, ⃗) = accent(A C, ⃗) - accent(A B, ⃗)$.
 Take the scalar square of both sides:
@@ -29799,15 +26946,13 @@ substituting gives:
 $ a^2 = b^2 + c^2 - 2 b c cos hat(A) . quad square.filled.medium $
 ]
 
+
 Notice the beauty of the formula: if $hat(A) = 90^compose$, then
 $cos\(90^compose\)= 0$, and the corrective term $- 2 b c cos hat(A)$
 vanishes: we recover exactly the Pythagorean theorem $a^2 = b^2 + c^2$!
 Al-Kashi contains Pythagoras as a special case.
 
-#quote_box[
-#strong[🔍 The True History --- Ghiyath al-Din Jamshid al-Kashi
-]
- A
+#decouvre(title: [The True History — Ghiyath al-Din Jamshid al-Kashi])[A
 fifteenth-century Persian astronomer and mathematician, Al-Kashi worked
 at the Samarkand observatory under the patronage of Prince Ulugh Beg. In
 his masterpiece, #emph[The Key to Arithmetic] (1427), he calculated $pi$
@@ -29818,25 +26963,21 @@ solve any oblique triangle without dividing it into right-angled
 triangles.
 ]
 
+
 ==== 7.2 The Median Theorem (Apollonius's Theorem)
 <the-median-theorem-apolloniuss-theorem>
 Consider a triangle $A B C$ and let $I$ be the #strong[midpoint] of side
 $\[B C\]$. How can we relate the length of the median $A I$ to the
 lengths of the three sides?
 
-#quote_box[
-#strong[📐 Median Theorem (Apollonius's Theorem)
-]
- In every triangle
+#principe(title: [Median Theorem (Apollonius's Theorem)])[In every triangle
 $A B C$, if $I$ is the midpoint of segment $\[B C\]$, then:
 
 $ A B^2 + A C^2 = 2 A I^2 + 1 / 2 B C^2 . $
 ]
 
-#quote_box[
-#strong[✍️ Proof
-]
- Express the vectors $accent(A B, ⃗)$ and
+
+#exemple_resolu(title: [Proof])[Express the vectors $accent(A B, ⃗)$ and
 $accent(A C, ⃗)$ passing through the midpoint $I$:
 $accent(A B, ⃗) = accent(A I, ⃗) + accent(I B, ⃗)$ and
 $accent(A C, ⃗) = accent(A I, ⃗) + accent(I C, ⃗)$. Take their scalar
@@ -29852,6 +26993,7 @@ $I B^2 + I C^2 = (frac(B C, 2))^2 + (frac(B C, 2))^2 = 2 frac(B C^2, 4) = 1 / 2 
 We arrive directly at:
 $ A B^2 + A C^2 = 2 A I^2 + 1 / 2 B C^2 . quad square.filled.medium $
 ]
+
 
 #divider()
 
@@ -29881,10 +27023,7 @@ $ accent(M A, ⃗) dot.op accent(M B, ⃗) = 0 . $
 \(Note: if $M = A$ or $M = B$, one of the vectors is zero, so the dot
 product is still zero; the relation holds for all points on the circle.)
 
-#quote_box[
-#strong[📐 Theorem --- Equation of a Circle with Diameter $\[A B\
-]
-$] The
+#principe(title: [Theorem — Equation of a Circle with Diameter $\[A B\]$])[The
 circle with diameter $\[A B\]$, where $A\(x_A\;y_A\)$ and
 $B\(x_B\;y_B\)$, is the set of points $M\(x\;y\)$ satisfying:
 
@@ -29893,15 +27032,13 @@ or equivalently:
 $ #box(stroke: black, inset: 3pt, [$ \(x - x_A\)\(x - x_B\)+\(y - y_A\)\(y - y_B\)= 0 $]) $
 ]
 
+
 #divider()
 
 === Step-by-Step Worked Examples
 <step-by-step-worked-examples-7>
-#quote_box[
-#strong[✅ Worked Example 1 --- Computing the Dot Product in Various
-Ways
-]
- Consider a square $A B C D$ of side length 4 and center $O$.
+#exemple_resolu(title: [Worked Example 1 — Computing the Dot Product in Various
+Ways])[Consider a square $A B C D$ of side length 4 and center $O$.
 Compute the following dot products: 1.
 $accent(A B, ⃗) dot.op accent(A C, ⃗)$ 2.
 $accent(A B, ⃗) dot.op accent(A D, ⃗)$ 3.
@@ -29919,10 +27056,8 @@ the diagonals intersect perpendicularly at their midpoint $O$, so
 $\(O A\)perp\(O B\)$. Thus, $accent(O A, ⃗) dot.op accent(O B, ⃗) = 0$.
 ]
 
-#quote_box[
-#strong[✅ Worked Example 2 --- Computing an Angle Using Coordinates
-]
- In
+
+#exemple_resolu(title: [Worked Example 2 — Computing an Angle Using Coordinates])[In
 an orthonormal coordinate system, three points are given: $A\(1\;2\)$,
 $B\(4\;6\)$, and $C\(- 2\;6\)$. Compute the angle $accent(B A C, ̂)$
 rounded to the nearest tenth of a degree.
@@ -29946,11 +27081,9 @@ $accent(A B, ⃗)$ and $accent(A C, ⃗)$:
   $accent(B A C, ̂) = arccos\(0.28\)approx 73.7^compose$.
 ]
 
-#quote_box[
-#strong[✅ Worked Example 3 --- Cartesian Equation Using a Normal
-Vector
-]
- Find a Cartesian equation of the line $\(d\)$ passing through
+
+#exemple_resolu(title: [Worked Example 3 — Cartesian Equation Using a Normal
+Vector])[Find a Cartesian equation of the line $\(d\)$ passing through
 the point $A\(3\;- 1\)$ and perpendicular to the line $\(Delta\)$ with
 equation $2 x - 5 y + 7 = 0$.
 
@@ -29975,11 +27108,9 @@ equation $2 x - 5 y + 7 = 0$.
   $#box(stroke: black, inset: 3pt, [$ 5 x + 2 y - 13 = 0 $])$.
 ]
 
-#quote_box[
-#strong[✅ Worked Example 4 --- Length and Angle Calculation via
-Al-Kashi
-]
- A surveyor inspects a triangular parcel $A B C$. He measures
+
+#exemple_resolu(title: [Worked Example 4 — Length and Angle Calculation via
+Al-Kashi])[A surveyor inspects a triangular parcel $A B C$. He measures
 $A B = 60 upright(" m")$, $A C = 100 upright(" m")$, and the angle
 $accent(B A C, ̂) = 60^compose$. 1. Compute the distance $B C$. 2.
 Compute the angle $accent(A B C, ̂)$ to the nearest degree.
@@ -30003,11 +27134,9 @@ $B C = sqrt(7600) approx 87.18 upright(" m")$.
 ]
 ]
 
-#quote_box[
-#strong[✅ Worked Example 5 --- Equation of a Circle Defined by a
-Diameter
-]
- Given points $A\(- 1\;3\)$ and $B\(5\;1\)$. 1. Determine a
+
+#exemple_resolu(title: [Worked Example 5 — Equation of a Circle Defined by a
+Diameter])[Given points $A\(- 1\;3\)$ and $B\(5\;1\)$. 1. Determine a
 Cartesian equation of the circle $cal(C)$ having diameter $\[A B\]$. 2.
 Find the coordinates of its center $Omega$ and radius $R$, and verify
 the form $\(x - x_Omega\)^2 +\(y - y_Omega\)^2 = R^2$.
@@ -30033,10 +27162,8 @@ $\(- 5 + x - 5 x + x^2\)+\(3 - 3 y - y + y^2\)= 0 arrow.l.r.double x^2 - 4 x + y
 ]
 ]
 
-#quote_box[
-#strong[✅ Worked Example 6 --- Using the Median Theorem
-]
- Let $A B C$ be
+
+#principe(title: [Worked Example 6 — Using the Median Theorem])[Let $A B C$ be
 a triangle such that $A B = 7$, $A C = 9$, and $B C = 8$. Compute the
 exact length of the median through $A$.
 
@@ -30049,6 +27176,7 @@ $A I^2$:
 $ 2 A I^2 = 130 - 32 = 98 arrow.r.double.long A I^2 = 49 arrow.r.double.long A I = sqrt(49) = 7 . $
 The median measures exactly 7.
 ]
+
 
 #divider()
 
@@ -30367,10 +27495,9 @@ point of contact? This is the great adventure of
 fixed positions, averages over long distances. But life is not an album
 of dead pictures: it is a continuous torrent. To measure the slope of a
 hill at the exact millisecond the heart beats, one must place a
-microscope upon flowing time.”
+microscope upon flowing time.”]
 ]
 
-]
 
 #divider()
 
@@ -30423,27 +27550,6 @@ yourself this fundamental question of physics:
 bite into the snowpack, what is the slope of the mountain beneath my
 boots?”]
 
-#align(center)[
-  #block(
-    fill: rgb("#f8fafc"),
-    stroke: 1pt + rgb("#cbd5e1"),
-    inset: (x: 16pt, y: 10pt),
-    radius: 6pt,
-    breakable: false,
-  )[
-    #set text(font: "Liberation Mono", size: 9.5pt, fill: rgb("#0f172a"))
-    ```text
-Elevation y
-Profile of the hill y = f(x)
-'""'--_   (Peak: Zero slope!)
-"          "-_
-' (Steep uphill slope)   \__
-'                                "---_ (Fast descent)
-Position x
-    ```
-  ]
-]
-
 Finding your altitude at this point is trivial: it is simply the value
 $f\(a\)$. But what about #strong[the slope]? Ever since middle school,
 you have known that a slope (or gradient) is always calculated by
@@ -30481,23 +27587,13 @@ that caresses the curve at a point without locally crossing it is the
 #strong[tangent line] to the curve. And the slope beneath your boots is
 quite simply #strong[the slope of your ski]!
 
-#align(center)[
-  #block(
-    fill: rgb("#f8fafc"),
-    stroke: 1pt + rgb("#cbd5e1"),
-    inset: (x: 16pt, y: 10pt),
-    radius: 6pt,
-    breakable: false,
-  )[
-    #set text(font: "Liberation Mono", size: 9.5pt, fill: rgb("#0f172a"))
-    ```text
-Curve of the mountain
-The rigid ski (the Tangent!)
-Δy   /  |  Vertical rise
-Δx    Horizontal run
-    ```
-  ]
+#decouvre(title: [Intuitive Metaphor — The Skier and the Instantaneous Slope
+of the Mountain])[- Curve of the mountain
+- The rigid ski (the Tangent!)
+- Δy / | Vertical rise
+- Δx Horizontal run
 ]
+
 
 ==== 2.2 The Difference Quotient: The Secant Line
 <the-difference-quotient-the-secant-line>
@@ -30506,9 +27602,9 @@ of your ski touches the snow at $A\(a\;f\(a\)\)$, and the tip touches
 the snow slightly ahead, at $M\(a + h\;f\(a + h\)\)$, where $h$ is a
 small, non-zero separation.
 
-#figure(image("figures/vol_5/fig_39_secante_tangente.svg", alt: "Nombre dérivé et limite des sécantes quand le pas h tend vers zéro"),
+#figure(image("figures_en/vol_5/fig_39_secante_tangente.svg", alt: "Derivative and limit of secants as step h approaches zero"),
   caption: [
-    Nombre dérivé et limite des sécantes quand le pas h tend vers zéro
+    Derivative and limit of secants as step h approaches zero
   ]
 )
 
@@ -30531,10 +27627,7 @@ hill, merging into point $A$. The secant line $\(A M\)$ pivots smoothly
 and stabilizes onto a definite limiting position: #strong[the tangent
 line]!
 
-#principe(title: [Définition Fondamentale])[
-#strong[📐 Definition --- Derivative at a Point
-]
- Let $f$ be a function
+#principe(title: [Definition — Derivative at a Point])[Let $f$ be a function
 defined on an open interval containing $a$. We say that $f$ is
 #strong[differentiable at $a$] if the difference quotient
 $frac(f\(a + h\)- f\(a\), h)$ approaches a finite limit as $h$ tends to
@@ -30546,6 +27639,7 @@ $ #box(stroke: black, inset: 3pt, [$ f'\(a\)= lim_(h arrow.r 0) frac(f\(a + h\)-
 Geometrically, $f'\(a\)$ is the #strong[slope (gradient) of the tangent
 line] to the curve of $f$ at the point with abscissa $a$.
 ]
+
 
 #divider()
 
@@ -30588,15 +27682,13 @@ follows directly from coordinate geometry:
 
 $ y - y_A = m\(x - x_A\)arrow.l.r.double y - f\(a\)= f'\(a\)\(x - a\). $
 
-#quote_box[
-#strong[📐 Theorem --- Equation of the Tangent Line
-]
- If $f$ is
+#principe(title: [Theorem — Equation of the Tangent Line])[If $f$ is
 differentiable at $a$, the curve $cal(C)_f$ admits at the point
 $A\(a\;f\(a\)\)$ a tangent line with equation:
 
 $ #box(stroke: black, inset: 3pt, [$ y = f'\(a\)\(x - a\)+ f\(a\) $]) $
 ]
+
 
 This line represents the #strong[best local linear approximation] of the
 function near $a$. For any $x$ very close to $a$:
@@ -30627,34 +27719,10 @@ Therefore: $ #box(stroke: black, inset: 3pt, [$ \(x\)' = 1 $]) $
 <the-square-function-why-x2-2x>
 Here enters the luminous demonstration of the expanding garden:
 
-#quote_box[
-#strong[✍️ Geometric Proof --- The Growing Flowerbed
-]
- Consider a square
+#exemple_resolu(title: [Geometric Proof — The Growing Flowerbed])[Consider a square
 flowerbed with side length $x$. Its area is $S\(x\)= x^2$. In spring,
 the gardener expands the bed by adding a thin strip of soil of width $h$
 to the East, and a strip of width $h$ to the North.
-]
-
-#quote_box[
-#align(center)[
-  #block(
-    fill: rgb("#f8fafc"),
-    stroke: 1pt + rgb("#cbd5e1"),
-    inset: (x: 16pt, y: 10pt),
-    radius: 6pt,
-    breakable: false,
-  )[
-    #set text(font: "Liberation Mono", size: 9.5pt, fill: rgb("#0f172a"))
-    ```text
-x                h
-x     Original square    B  h  (East strip: x × h)
-x²)
-h      North strip       C  h  (Corner: h²)
-x             h
-    ```
-  ]
-]
 ]
 
 
@@ -30671,10 +27739,9 @@ shrink to zero! The tiny corner $h^2$ vanishes infinitely faster than
 the borders. All that remains is:
 $ lim_(h arrow.r 0)\(2 x + h\)= 2 x . $ The number 2 is not magic:
 #strong[it represents the 2 open sides of the square expanding outward
-into space!
+into space!] $square.filled.medium$
 ]
- $square.filled.medium$
-]
+
 
 By pure algebra:
 $ frac(\(a + h\)^2 - a^2, h) = frac(a^2 + 2 a h + h^2 - a^2, h) = frac(2 a h + h^2, h) = 2 a + h arrow.r_(h arrow.r 0)^() 2 a . $
@@ -30730,14 +27797,12 @@ This is the most notorious trap in the history of mathematics. Even
 Leibniz fell into it in his initial notes in 1673, before correcting
 himself by sketching an expanding rectangle!
 
-#quote_box[
-#strong[✍️ Geometric Proof --- The Expanding Rectangle
-]
- Consider a
+#exemple_resolu(title: [Geometric Proof — The Expanding Rectangle])[Consider a
 rectangular field of dimensions $u\(x\)$ by $v\(x\)$. Its area is
 $A\(x\)= u\(x\)times v\(x\)$. When $x$ increases by a small amount $h$,
 the width becomes $u + Delta u$ and the length becomes $v + Delta v$.
 ]
+
 
 #quote_box[
 The newly added surface area is composed of three zones: 1. A vertical
@@ -30753,10 +27818,9 @@ As $h arrow.r 0$:
   $frac(Delta v, h) arrow.r v'\(x\)$\;
 - The third term vanishes because $Delta u arrow.r 0$! Only the two main
   strips remain:
-  $ #box(stroke: black, inset: 3pt, [$ \(u dot.op v\)' = u' v + u v' $
+  $ #box(stroke: black, inset: 3pt, [$ \(u dot.op v\)' = u' v + u v' $]) quad square.filled.medium $
 ]
-) quad square.filled.medium $
-]
+
 
 ==== 6.3 Derivative of the Reciprocal and Quotient
 <derivative-of-the-reciprocal-and-quotient>
@@ -30769,15 +27833,13 @@ If $v\(x\)eq.not 0$ on $I$:
   product rule:
   $ (u / v)' = u' (1 / v) + u (- v' / v^2) = frac(u' v, v^2) - frac(u v', v^2) = #box(stroke: black, inset: 3pt, [$ frac(u' v - u v', v^2) $]) $
 
-#quote_box[
-#strong[⚠️ Caution: Classic Trap! --- Order Matters in the Quotient
-Rule
-]
- In the numerator $u' v - u v'$, the minus sign makes the order
+#alerte(title: [Caution: Classic Trap! — Order Matters in the Quotient
+Rule])[In the numerator $u' v - u v'$, the minus sign makes the order
 crucial! It is always the derivative of the top ($u'$) multiplying the
 untouched bottom ($v$) first. Reversing the terms flips the sign of your
 entire result.
 ]
+
 
 #divider()
 
@@ -30788,11 +27850,8 @@ hard global geometric question (“is the function climbing or falling
 across an interval?”) into a straightforward local algebraic check
 (“what is the sign of a number?”).
 
-#quote_box[
-#strong[📐 Fundamental Theorem --- Monotonicity and Sign of the
-Derivative
-]
- Let $f$ be differentiable on an interval $I$.
+#principe(title: [Fundamental Theorem — Monotonicity and Sign of the
+Derivative])[Let $f$ be differentiable on an interval $I$.
 
 - If $f'\(x\)> 0$ for all $x in I$, then $f$ is #strong[strictly
   increasing] on $I$.
@@ -30803,6 +27862,7 @@ Derivative
 - If $f'\(x\)= 0$ for all $x in I$, then $f$ is #strong[constant] on
   $I$.
 ]
+
 
 Intuitively: if the tips of your skis point upward ($f'\(x\)> 0$) at
 every single millisecond of your glide, you cannot help but gain
@@ -30817,21 +27877,14 @@ of a valley? At the summit of a hill, the slope ceases to rise and
 prepares to fall: for one infinitesimal heartbeat, the ski levels out to
 absolute horizontality!
 
-#principe(title: [Définition Fondamentale])[
-#strong[📐 Règle Fondamentale --- Tangente Horizontale et Extrema Locaux
-($f'\(x_0\)= 0$)
-]
-
-
-- Horizontal Tangent (f'(x₀) = 0)
+#principe(title: [Fundamental Rule — Horizontal Tangent and Local Extrema
+($f'\(x_0\)= 0$)])[- Horizontal Tangent (f'(x₀) = 0)
 - f' \> 0 f' \< 0
 - Uphill) (Downhill)
 ]
 
-#quote_box[
-#strong[📐 Theorem --- Local Extremum Condition
-]
- Let $f$ be
+
+#principe(title: [Theorem — Local Extremum Condition])[Let $f$ be
 differentiable on an open interval containing $x_0$. If $f$ attains a
 local extremum (maximum or minimum) at $x_0$, then: $ f'\(x_0\)= 0 . $
 
@@ -30845,17 +27898,16 @@ $x_0$:
   then rises).
 ]
 
-#quote_box[
-#strong[⚠️ Caution: Classic Trap! --- $f'\(x_0\)= 0$ Does Not Guarantee
-an Extremum
-]
- Look at the cubic function $f\(x\)= x^3$. Its derivative is
+
+#alerte(title: [Caution: Classic Trap! — $f'\(x_0\)= 0$ Does Not Guarantee
+an Extremum])[Look at the cubic function $f\(x\)= x^3$. Its derivative is
 $f'\(x\)= 3 x^2$. At $x = 0$, indeed $f'\(0\)= 0$ (the tangent is
 perfectly horizontal). But for all $x eq.not 0$, $3 x^2 > 0$: the
 derivative never changes sign! The curve climbs before 0 and continues
 climbing after 0. The origin $\(0\;0\)$ is a flat bench (an inflection
 point), not a summit or basin!
 ]
+
 
 #divider()
 
@@ -30895,11 +27947,7 @@ has a #strong[vertical half-tangent] along the $y$-axis ($x = 0$).
 
 === Step-by-Step Worked Examples
 <step-by-step-worked-examples-8>
-#quote_box[
-#strong[✅ Worked Example 1 --- Computing a Derivative from Definition
-]
-
-Let $f\(x\)= 3 x^2 - 5 x + 2$. Compute $f'\(2\)$ directly using the
+#principe(title: [Worked Example 1 — Computing a Derivative from Definition])[Let $f\(x\)= 3 x^2 - 5 x + 2$. Compute $f'\(2\)$ directly using the
 definition of the difference quotient.
 
 #strong[Detailed Solution:] First find $f\(2\)$:
@@ -30914,10 +27962,8 @@ Thus $f$ is differentiable at $2$ and
 $#box(stroke: black, inset: 3pt, [$ f'\(2\)= 7 $])$.
 ]
 
-#quote_box[
-#strong[✅ Worked Example 2 --- Equation of a Tangent Line
-]
- Let
+
+#exemple_resolu(title: [Worked Example 2 — Equation of a Tangent Line])[Let
 $f\(x\)= 1 / x$. Determine the equation of the tangent line to the curve
 of $f$ at the point with abscissa $a = 2$.
 
@@ -30934,10 +27980,8 @@ of $f$ at the point with abscissa $a = 2$.
   $#box(stroke: black, inset: 3pt, [$ y = - 1 / 4 x + 1 $])$.
 ]
 
-#quote_box[
-#strong[✅ Worked Example 3 --- Product and Quotient Rules
-]
- Compute the
+
+#principe(title: [Worked Example 3 — Product and Quotient Rules])[Compute the
 derivatives of: 1. $g\(x\)=\(2 x - 3\)\(x^2 + 4 x\)$ 2.
 $h\(x\)= frac(3 x - 1, x^2 + 1)$
 
@@ -30957,11 +28001,8 @@ Hence:
 $#box(stroke: black, inset: 3pt, [$ h'\(x\)= frac(- 3 x^2 + 2 x + 3, \(x^2 + 1\)^2) $])$.
 ]
 
-#quote_box[
-#strong[✅ Worked Example 4 --- Complete Analysis of a Cubic Polynomial
-]
 
-Let $f\(x\)= 2 x^3 - 9 x^2 + 12 x - 1$ defined on $bb(R)$. Construct its
+#exemple_resolu(title: [Worked Example 4 — Complete Analysis of a Cubic Polynomial])[Let $f\(x\)= 2 x^3 - 9 x^2 + 12 x - 1$ defined on $bb(R)$. Construct its
 complete variation table and determine all local extrema.
 
 #strong[Detailed Solution:] 1. Derivative:
@@ -30998,11 +28039,8 @@ roots $x_1 = 1$ and $x_2 = 2$. The leading coefficient is positive
 $x = 1$, and a #strong[local minimum] of $3$ at $x = 2$.
 ]
 
-#quote_box[
-#strong[✅ Worked Example 5 --- Concrete Optimization: The Open Box
-]
 
-From a square sheet of cardboard measuring 12 cm on each side, small
+#exemple_resolu(title: [Worked Example 5 — Concrete Optimization: The Open Box])[From a square sheet of cardboard measuring 12 cm on each side, small
 squares of side length $x$ (with $0 < x < 6$) are cut from each of the
 four corners. The sides are then folded up to form an open-top
 rectangular box. What value of $x$ maximizes the box's volume?
@@ -31029,10 +28067,8 @@ rectangular box. What value of $x$ maximizes the box's volume?
 ]
 ]
 
-#quote_box[
-#strong[✅ Worked Example 6 --- Tangent Parallel to a Given Line
-]
- Let
+
+#exemple_resolu(title: [Worked Example 6 — Tangent Parallel to a Given Line])[Let
 $f\(x\)= x^2 - 4 x + 1$. Are there any points on the parabola where the
 tangent line is parallel to the line $y = 2 x - 5$?
 
@@ -31056,6 +28092,7 @@ tangent line is parallel to the line $y = 2 x - 5$?
   $A\(3\;- 2\)$. Its tangent line equation is
   $y = 2\(x - 3\)- 2 = 2 x - 8$.
 ]
+
 
 #divider()
 
@@ -31468,10 +28505,9 @@ function], in the next chapter.
 external force. In the ardent world of the living, force springs from
 number: each cell is its own engine. The larger the colony grows, the
 faster it explodes. Nature has chosen a single curve to sing the
-proliferation of life: the exponential function.”
+proliferation of life: the exponential function.”]
 ]
 
-]
 
 #divider()
 
@@ -31505,21 +28541,18 @@ This bacterium feeds. After twenty minutes, it elongates and splits into
 two: there are 2 bacteria. Twenty minutes later, each divides in turn:
 there are 4 bacteria. Then 8, then 16, 32, 64, 128, 256…
 
+
 #align(center)[
-  #block(
-    fill: rgb("#f8fafc"),
-    stroke: 1pt + rgb("#cbd5e1"),
-    inset: (x: 16pt, y: 10pt),
-    radius: 6pt,
-    breakable: false,
-  )[
-    #set text(font: "Liberation Mono", size: 9.5pt, fill: rgb("#0f172a"))
-    ```text
-Time t (h) :  0      1      2      3       ...   10
-Bacteria   :  1      8     64    512       ...   1 000 000 000
-    ```
-  ]
+  #table(
+    columns: (1.5fr, 1fr, 1fr, 1fr, 1fr, 1fr),
+    align: (left, center, center, center, center, center),
+    stroke: 0.5pt + rgb("#cbd5e1"),
+    fill: (x, y) => if y == 0 { rgb("#f1f5f9") } else { rgb("#ffffff") },
+    [Temps $t$ (h)], [0], [1], [2], [3], [10],
+    [Bactéries], [1 000], [2 000], [4 000], [8 000], [1 024 000]
+  )
 ]
+
 
 Observe closely what distinguishes this growth from every curve we have
 studied until now:
@@ -31551,9 +28584,7 @@ individual at $t = 0$, we face the most fascinating challenge ever
 presented to differential calculus:
 
 #quote_box[
-#strong[The Fundamental Enigma:
-]
- Does there exist a mathematical
+#strong[The Fundamental Enigma:] Does there exist a mathematical
 function $f$, defined and differentiable on $bb(R)$, which is
 #strong[strictly equal to its own derivative] at every moment, and
 equals 1 at the origin?
@@ -31561,6 +28592,7 @@ equals 1 at the origin?
 $ {f'\(x\)= f\(x\)quad upright("for all ") x in bb(R)\
 f\(0\)= 1 $
 ]
+
 
 This is a function whose ski-slope beneath the boot at every point is
 equal to its instantaneous altitude! The higher it climbs, the steeper
@@ -31611,23 +28643,6 @@ before our eyes!
 <the-standard-python-algorithm>
 Here is the Python script to simulate Euler's method:
 
-```python
-def euler_method(n_steps):
-    h = 1.0 / n_steps  # step size to travel from 0 to 1
-    x = 0.0
-    y = 1.0
-    for _ in range(n_steps):
-        y = y + h * y  # equivalent to y = y * (1 + h)
-        x = x + h
-    return y
-
-# Testing with increasingly fine subdivisions:
-for n in [10, 100, 1000, 10000]:
-    print(f"For n = {n:5d} steps: f(1) ≈ {euler_method(n):.6f}")
-```
-
-Output:
-
 #align(center)[
   #block(
     fill: rgb("#f8fafc"),
@@ -31638,13 +28653,30 @@ Output:
   )[
     #set text(font: "Liberation Mono", size: 9.5pt, fill: rgb("#0f172a"))
     ```text
-For n =    10 steps: f(1) ≈ 2.593742
-For n =   100 steps: f(1) ≈ 2.704814
-For n =  1000 steps: f(1) ≈ 2.716924
-For n = 10000 steps: f(1) ≈ 2.718146
+def euler_method(n_steps):
+h = 1.0 / n_steps  # step size to travel from 0 to 1
+x = 0.0
+y = 1.0
+for _ in range(n_steps):
+y = y + h * y  # equivalent to y = y * (1 + h)
+x = x + h
+return y
+# Testing with increasingly fine subdivisions:
+for n in [10, 100, 1000, 10000]:
+print(f"For n = {n:5d} steps: f(1) ≈ {euler_method(n):.6f}")
     ```
   ]
 ]
+
+Output:
+
+#methode(title: [Step-by-Step Method — Step-by-Step Approximation via
+Euler's Method])[- For n = 10 steps: f(1) ≈ 2.593742
+- For n = 100 steps: f(1) ≈ 2.704814
+- For n = 1000 steps: f(1) ≈ 2.716924
+- For n = 10000 steps: f(1) ≈ 2.718146
+]
+
 
 The decimals steadily stabilize toward a mysterious number:
 #strong[$2.71828 dots.h$]
@@ -31653,11 +28685,7 @@ The decimals steadily stabilize toward a mysterious number:
 
 === 3. Existence Theorem and Proof of Uniqueness
 <existence-theorem-and-proof-of-uniqueness>
-#quote_box[
-#strong[📐 Fundamental Theorem (Existence admitted, uniqueness proved)
-]
-
-There exists a #strong[unique] function $f$ differentiable on $bb(R)$
+#principe(title: [Fundamental Theorem (Existence admitted, uniqueness proved)])[There exists a #strong[unique] function $f$ differentiable on $bb(R)$
 such that:
 
 $ {f'\(x\)= f\(x\)quad upright("for all ") x in bb(R)\
@@ -31667,15 +28695,13 @@ This function is called the #strong[exponential function], denoted
 $exp$.
 ]
 
+
 The proof of uniqueness is a masterpiece of mathematical elegance. It
 hinges on a crucial lemma: the function can never vanish to zero.
 
 ==== 3.1 Lemma: The Function Never Vanishes
 <lemma-the-function-never-vanishes>
-#quote_box[
-#strong[✍️ Proof --- Non-vanishing of $f$
-]
- Let $f$ be a differentiable
+#exemple_resolu(title: [Proof — Non-vanishing of $f$])[Let $f$ be a differentiable
 function on $bb(R)$ satisfying $f' = f$ and $f\(0\)= 1$. Consider the
 auxiliary function $g$ defined on $bb(R)$ by:
 $ g\(x\)= f\(x\)times f\(- x\). $ Differentiate $g$ using the product
@@ -31696,12 +28722,10 @@ Consequently, #strong[for all real $x$, $f\(x\)eq.not 0$].
 $square.filled.medium$
 ]
 
+
 ==== 3.2 Proof of Uniqueness
 <proof-of-uniqueness>
-#quote_box[
-#strong[✍️ Proof --- Uniqueness of the Exponential Function
-]
- Suppose
+#exemple_resolu(title: [Proof — Uniqueness of the Exponential Function])[Suppose
 there exist two functions $f_1$ and $f_2$, both satisfying the
 conditions: $f'_1 = f_1$ with $f_1\(0\)= 1$, and $f'_2 = f_2$ with
 $f_2\(0\)= 1$. Since $f_1$ never vanishes on $bb(R)$ by the lemma above,
@@ -31719,6 +28743,7 @@ $ f_2\(x\)= f_1\(x\). $ Thus there exists only one such function!
 $square.filled.medium$
 ]
 
+
 #divider()
 
 === 4. The Fundamental Property: Transforming Addition into Multiplication
@@ -31726,19 +28751,14 @@ $square.filled.medium$
 This is the crowning property that makes the exponential the most
 powerful tool in all of mathematical science:
 
-#quote_box[
-#strong[📐 Fundamental Theorem --- Functional Equation
-]
- For all real
+#principe(title: [Fundamental Theorem — Functional Equation])[For all real
 numbers $x$ and $y$:
 
 $ #box(stroke: black, inset: 3pt, [$ exp\(x + y\)= exp\(x\)times exp\(y\) $]) $
 ]
 
-#quote_box[
-#strong[✍️ Proof
-]
- Fix an arbitrary real number $y$, and consider the
+
+#exemple_resolu(title: [Proof])[Fix an arbitrary real number $y$, and consider the
 function of the single variable $x$:
 $ h\(x\)= frac(exp\(x + y\), exp\(x\)) . $ (The quotient is valid
 because the denominator $exp\(x\)$ never vanishes). Differentiate $h$
@@ -31754,29 +28774,27 @@ Therefore, for all $x in bb(R)$:
 $ frac(exp\(x + y\), exp\(x\)) = exp\(y\)arrow.l.r.double exp\(x + y\)= exp\(x\)times exp\(y\). quad square.filled.medium $
 ]
 
+
 ==== 4.1 Algebraic Corollaries
 <algebraic-corollaries>
 From this core formula follow all the familiar laws of powers:
 
 #quote_box[
-#strong[📐 Algebraic Properties
-]
- --- For all real numbers $x\,y$ and any
+#strong[📐 Algebraic Properties] --- For all real numbers $x\,y$ and any
 integer $n$: 1. $exp\(- x\)= frac(1, exp\(x\))$ 2.
 $exp\(x - y\)= frac(exp\(x\), exp\(y\))$ 3.
 $exp\(n dot.op x\)= #scale(x: 120%, y: 120%)[\(] exp\(x\)#scale(x: 120%, y: 120%)[\)]^n$
 ]
 
-#quote_box[
-#strong[✍️ Brief Proofs
-]
- 1. From the lemma:
+
+#exemple_resolu(title: [Brief Proofs])[1. From the lemma:
 $exp\(x\)times exp\(- x\)= exp\(x - x\)= exp\(0\)= 1 arrow.r.double.long exp\(- x\)= frac(1, exp\(x\))$.
 \2.
 $exp\(x - y\)= exp\(x +\(- y\)\)= exp\(x\)times exp\(- y\)= exp\(x\)times frac(1, exp\(y\)) = frac(exp\(x\), exp\(y\))$.
 \3. By straightforward induction for $n in bb(N)$:
 $exp\(2 x\)= exp\(x + x\)=\(exp\(x\)\)^2$, etc. $square.filled.medium$
 ]
+
 
 #divider()
 
@@ -31799,9 +28817,7 @@ Then, for every integer $n$, $exp\(n\)=\(exp\(1\)\)^n = e^n$. Euler
 boldly generalized this notation to all real numbers $x$:
 
 #quote_box[
-#strong[📐 Euler's Notation
-]
- For every real number $x$, we write:
+#strong[📐 Euler's Notation] For every real number $x$, we write:
 
 $ #box(stroke: black, inset: 3pt, [$ exp\(x\)= e^x $]) $
 
@@ -31810,6 +28826,7 @@ to the power x]”. The rules of manipulation mirror exponent laws
 exactly:
 $ e^0 = 1\,quad e^1 = e\,quad e^(x + y) = e^x dot.op e^y\,quad e^(- x) = 1 / e^x\,quad e^(x - y) = e^x / e^y\,quad\(e^x\)^n = e^(n x) . $
 ]
+
 
 #divider()
 
@@ -31822,10 +28839,7 @@ $e^x = e^(x\/2 + x\/2) = (e^(x\/2))^2$. Any squared real number is
 non-negative. Because it cannot be zero, it must be #strong[strictly
 positive]!
 
-#quote_box[
-#strong[📐 Theorem --- Strict Positivity
-]
- For every real number $x$:
+#principe(title: [Theorem — Strict Positivity])[For every real number $x$:
 
 $ #box(stroke: black, inset: 3pt, [$ e^x > 0 $]) $
 
@@ -31833,21 +28847,20 @@ The graph of the exponential function lies #strong[entirely above the
 horizontal axis]. It never touches or crosses the zero line.
 ]
 
+
 ==== 6.2 Monotonicity
 <monotonicity>
 The derivative of the exponential function is itself:
 $ \(e^x\)' = e^x . $ Since $e^x > 0$ for all $x in bb(R)$, #strong[the
 derivative is strictly positive everywhere].
 
-#quote_box[
-#strong[📐 Theorem --- Strict Growth
-]
- The exponential function is
+#principe(title: [Theorem — Strict Growth])[The exponential function is
 #strong[strictly increasing] on all of $bb(R)$. Consequently:
 
 - $e^a = e^b arrow.l.r.double a = b$
 - $e^a < e^b arrow.l.r.double a < b$
 ]
+
 
 ==== 6.3 Limits at Infinity and Asymptotes
 <limits-at-infinity-and-asymptotes>
@@ -31859,13 +28872,11 @@ derivative is strictly positive everywhere].
   $ e^x = e^(- X) = 1 / e^X arrow.r_(X arrow.r + oo)^() 0^(+) . $
   $ lim_(x arrow.r - oo) e^x = 0 . $
 
-#quote_box[
-#strong[📐 Geometric Property --- Horizontal Asymptote
-]
- The line $y = 0$
+#principe(title: [Geometric Property — Horizontal Asymptote])[The line $y = 0$
 (the $x$-axis) is a #strong[horizontal asymptote] to the graph of the
 exponential function at $- oo$.
 ]
+
 
 ==== 6.4 Variation Table and Graph
 <variation-table-and-graph>
@@ -31884,9 +28895,9 @@ exponential function at $- oo$.
 Tangent line at $0$ ($a = 0$):
 $y = e^0\(x - 0\)+ e^0 arrow.l.r.double #box(stroke: black, inset: 3pt, [$ y = x + 1 $])$.
 
-#figure(image("figures/vol_5/fig_40_exponentielle.svg", alt: "La fonction exponentielle : croissance continue et propriétés"),
+#figure(image("figures_en/vol_5/fig_40_exponentielle.svg", alt: "The exponential function: continuous growth and properties"),
   caption: [
-    La fonction exponentielle : croissance continue et propriétés
+    The exponential function: continuous growth and properties
   ]
 )
 
@@ -31901,35 +28912,27 @@ In physical applications (radioactivity, epidemics, RC circuits), the
 exponent is rarely a bare $x$, but a function of time: $e^(- 3 t)$,
 $e^(- x^2\/2)$, and so on.
 
-#quote_box[
-#strong[📐 Theorem --- Derivative of $e^u$
-]
- If $u$ is a differentiable
+#principe(title: [Theorem — Derivative of $e^u$])[If $u$ is a differentiable
 function on an interval $I$, then $f\(x\)= e^(u\(x\))$ is differentiable
 on $I$, and:
 
 $ #box(stroke: black, inset: 3pt, [$ #scale(x: 120%, y: 120%)[\(] e^(u\(x\)) #scale(x: 120%, y: 120%)[\)]' = u'\(x\)dot.op e^(u\(x\)) $]) $
 ]
 
-#quote_box[
-#strong[⚠️ Caution: Classic Trap! --- Never Forget $u'\(x\)$
-]
- The
+
+#alerte(title: [Caution: Classic Trap! — Never Forget $u'\(x\)$])[The
 derivative of $e^(5 x)$ is not $e^(5 x)$! Here
 $u\(x\)= 5 x arrow.r.double.long u'\(x\)= 5$. Thus
 $\(e^(5 x)\)' = 5 e^(5 x)$. Similarly: $\(e^(- x)\)' = - e^(- x)$, and
 $\(e^(x^2)\)' = 2 x e^(x^2)$.
 ]
 
+
 #divider()
 
 === Step-by-Step Worked Examples
 <step-by-step-worked-examples-9>
-#quote_box[
-#strong[✅ Worked Example 1 --- Simplifying Exponential Expressions
-]
-
-Simplify the following expressions completely: 1.
+#exemple_resolu(title: [Worked Example 1 — Simplifying Exponential Expressions])[Simplify the following expressions completely: 1.
 $A = frac(e^3 times e^(- 5), \(e^2\)^3)$ 2.
 $B = frac(e^(2 x + 1) times e^(- x + 3), e^(x - 2))$ 3.
 $C =\(e^x + e^(- x)\)^2 -\(e^x - e^(- x)\)^2$
@@ -31942,10 +28945,8 @@ $B = e^(\(2 x + 1\)+\(- x + 3\)) / e^(x - 2) = e^(x + 4) / e^(x - 2) = e^(\(x + 
 $C = 4 times e^x times e^(- x) = 4 times e^(x - x) = 4 times e^0 = 4 times 1 = 4$.
 ]
 
-#quote_box[
-#strong[✅ Worked Example 2 --- Solving Exponential Equations
-]
- Solve in
+
+#exemple_resolu(title: [Worked Example 2 — Solving Exponential Equations])[Solve in
 $bb(R)$: 1. $e^(3 x - 1) = e^(x + 5)$ 2. $e^(x^2 - 4) = 1$ 3.
 $e^(2 x) - 3 e^x + 2 = 0$
 
@@ -31963,25 +28964,20 @@ $X_1 = 1$ and $X_2 = 2$. Returning to $x$:
   $approx 0.693$). $ S = { 0\;ln 2 } . $
 ]
 
-#quote_box[
-#strong[✅ Worked Example 3 --- Solving Inequalities
-]
- Solve in $bb(R)$:
+
+#exemple_resolu(title: [Worked Example 3 — Solving Inequalities])[Solve in $bb(R)$:
 \1. $e^(4 x - 7) lt.eq 1$ 2. $frac(e^x - 3, e^x + 2) > 0$
 
 #strong[Detailed Solution:] 1.
 $e^(4 x - 7) lt.eq e^0 arrow.l.r.double 4 x - 7 lt.eq 0 arrow.l.r.double 4 x lt.eq 7 arrow.l.r.double x lt.eq 7 / 4$.
-$ S = ]- oo \; 7 / 4[ . $ 2. For all real $x$, $e^x > 0$, so the
+$ S = ]- oo \; 7 / 4] . $ 2. For all real $x$, $e^x > 0$, so the
 denominator $e^x + 2 > 2 > 0$ is strictly positive! The sign of the
 quotient is therefore determined entirely by the numerator:
 $ e^x - 3 > 0 arrow.l.r.double e^x > 3 arrow.l.r.double x > ln 3 . quad S =\]ln 3\;+ oo\[. $
 ]
 
-#quote_box[
-#strong[✅ Worked Example 4 --- Differentiating Composite Functions
-]
 
-Differentiate the following functions: 1. $f\(x\)=\(2 x - 3\)e^(- x)$ 2.
+#exemple_resolu(title: [Worked Example 4 — Differentiating Composite Functions])[Differentiate the following functions: 1. $f\(x\)=\(2 x - 3\)e^(- x)$ 2.
 $g\(x\)= e^(- x^2 + 4 x)$ 3. $h\(x\)= frac(e^x, x + 1)$ for
 $x eq.not - 1$
 
@@ -31996,10 +28992,8 @@ Quotient form $u / v$:
 $ h'\(x\)= frac(\(e^x\)'\(x + 1\)- e^x\(x + 1\)', \(x + 1\)^2) = frac(e^x\(x + 1\)- e^x\(1\), \(x + 1\)^2) = frac(e^x\(x + 1 - 1\), \(x + 1\)^2) = frac(x e^x, \(x + 1\)^2) . $
 ]
 
-#quote_box[
-#strong[✅ Worked Example 5 --- Complete Curve Study
-]
- Let
+
+#exemple_resolu(title: [Worked Example 5 — Complete Curve Study])[Let
 $f\(x\)=\(x - 1\)e^x$ defined on $bb(R)$. Construct its complete
 variation table and find the equation of its tangent line at 0.
 
@@ -32027,11 +29021,8 @@ $f'\(x\)$ is #strong[identical to the sign of $x$]!
 ]
 ]
 
-#quote_box[
-#strong[✅ Worked Example 6 --- Concrete Modeling: Capacitor Discharge
-]
 
-In an electrical circuit, the voltage across a discharging capacitor
+#decouvre(title: [Worked Example 6 — Concrete Modeling: Capacitor Discharge])[In an electrical circuit, the voltage across a discharging capacitor
 through a resistor is modeled by $U\(t\)= 12 e^(- 0.5 t)$, where $t$ is
 time in seconds and $U$ is in volts. 1. What is the initial voltage at
 $t = 0$? 2. After how much time does the voltage drop to half its
@@ -32047,6 +29038,7 @@ $ U'\(t\)= 12 times\(- 0.5\)e^(- 0.5 t) = - 6 e^(- 0.5 t) . $ At
 $t = 0$, $U'\(0\)= - 6 e^0 = - 6 upright(" V/s")$. The voltage initially
 drops at a rate of 6 volts per second.
 ]
+
 
 #divider()
 
@@ -32305,23 +29297,32 @@ identity $cos^2 x + sin^2 x = 1$!).
 
 #strong[\20.]
 
-```python
+#align(center)[
+  #block(
+    fill: rgb("#f8fafc"),
+    stroke: 1pt + rgb("#cbd5e1"),
+    inset: (x: 16pt, y: 10pt),
+    radius: 6pt,
+    breakable: false,
+  )[
+    #set text(font: "Liberation Mono", size: 9.5pt, fill: rgb("#0f172a"))
+    ```text
 import math
-
 def euler_comparison(n=100):
-    h = 1.0 / n
-    y = 1.0
-    for _ in range(n):
-        y = y * (1 + h)
-    exact = math.exp(1)
-    error = abs(y - exact) / exact * 100
-    print(f"Euler (n={n}): {y:.6f}")
-    print(f"Exact: {exact:.6f}")
-    print(f"Relative error: {error:.3f}%")
-
+h = 1.0 / n
+y = 1.0
+for _ in range(n):
+y = y * (1 + h)
+exact = math.exp(1)
+error = abs(y - exact) / exact * 100
+print(f"Euler (n={n}): {y:.6f}")
+print(f"Exact: {exact:.6f}")
+print(f"Relative error: {error:.3f}%")
 euler_comparison(100)
 # Yields a relative error of only ~0.49%!
-```
+    ```
+  ]
+]
 
 #strong[\21.] At $x = 0$, $f_k\(0\)= k e^0 = k$. Derivative:
 $f'_k\(x\)= k dot.op\(k e^(k x)\)= k^2 e^(k x)$. The slope equals $k^2$
@@ -32358,10 +29359,9 @@ pollster and standard deviation].
 of ice, an incautious statistician will tell you that, ‘on average,'
 your body temperature is ideal. The mean is a lighthouse illuminating
 the center while plunging the peripheral storms into deep shadow. To
-understand the real world, one must measure the dispersion.”
+understand the real world, one must measure the dispersion.”]
 ]
 
-]
 
 #divider()
 
@@ -32413,27 +29413,19 @@ A naive purchasing agent might declare: #emph[“Both suppliers produce
 identical results, let's buy the cheaper one!”] However, the chief
 technical director inspects the pieces under an electronic microscope:
 
-#align(center)[
-  #block(
-    fill: rgb("#f8fafc"),
-    stroke: 1pt + rgb("#cbd5e1"),
-    inset: (x: 16pt, y: 10pt),
-    radius: 6pt,
-    breakable: false,
-  )[
-    #set text(font: "Liberation Mono", size: 9.5pt, fill: rgb("#0f172a"))
-    ```text
-Workshop Alpha:
-Every single shaft measures between 49.98 mm and 50.02 mm.
-They are virtually immaculate, tightly clustered like a dense swarm around 50.00 mm.
-49.99  50  50.01
-Workshop Beta:
-One shaft measures 46.00 mm, another 54.00 mm, another 48.20 mm...
-The pieces are scattered across a frightening expanse of chaotic variation!
-46   47   48   49   50   51   52   53   54
-    ```
-  ]
+#methode(title: [Solved Example — Comparative Spread: Workshop Alpha vs
+Workshop Beta])[- Workshop Alpha:
+- Every single shaft measures between 49.98 mm and 50.02 mm.
+- They are virtually immaculate, tightly clustered like a dense swarm
+  around 50.00 mm.
+- 49.99 50 50.01
+- Workshop Beta:
+- One shaft measures 46.00 mm, another 54.00 mm, another 48.20 mm…
+- The pieces are scattered across a frightening expanse of chaotic
+  variation!
+- 46 47 48 49 50 51 52 53 54
 ]
+
 
 In Workshop Beta, #strong[virtually no part can safely be fitted into an
 aircraft]! Some are wildly oversized, others dangerously thin, even
@@ -32460,16 +29452,14 @@ The mean is the center of gravity of the distribution: it is the fair
 share each individual would receive if all values were pooled and
 redistributed equally.
 
-#principe(title: [Définition Fondamentale])[
-#strong[📐 Definition --- Weighted Mean
-]
- The #strong[weighted mean] of a
+#principe(title: [Definition — Weighted Mean])[The #strong[weighted mean] of a
 dataset, denoted $macron(x)$ (read “#strong[x bar]”), is given by:
 
 $ #box(stroke: black, inset: 3pt, [$ macron(x) = frac(sum_(i = 1)^p n_i x_i, N) = sum_(i = 1)^p f_i x_i $]) $
 
 where $f_i = n_i / N$ denotes the relative frequency of the value $x_i$.
 ]
+
 
 #strong[Linearity Property:] If every value is multiplied by a constant
 $a$ and shifted by a constant $b$ (affine transformation
@@ -32481,10 +29471,7 @@ $ macron(y) = a macron(x) + b . $
 The median ignores the sum total and focuses entirely on
 #strong[position in line].
 
-#principe(title: [Définition Fondamentale])[
-#strong[📐 Definition --- Median
-]
- The #strong[median] of a sorted
+#principe(title: [Definition — Median])[The #strong[median] of a sorted
 statistical dataset, denoted $M_e$, is a value that splits the
 population into two halves of equal size:
 
@@ -32493,6 +29480,7 @@ population into two halves of equal size:
 - At least 50% of the individuals have a value greater than or equal to
   $M_e$.
 ]
+
 
 #strong[Practical Computation Method:] 1. If the total count $N$ is
 #strong[odd]: $N = 2 k + 1$. The median is the value of the individual
@@ -32503,9 +29491,7 @@ the values at ranks $k$ and $k + 1$. #emph[\(Example: for $N = 10$, take
 the average of the 5th and 6th values).]
 
 #quote_box[
-#strong[🔍 True Story --- Bill Gates Walks into a Bar
-]
- Imagine a
+#strong[🔍 True Story --- Bill Gates Walks into a Bar] Imagine a
 neighborhood café where ten factory workers and clerks sit at the
 counter. Each earns \$2,000 per month. The mean wage is \$2,000, and the
 median wage is \$2,000. Suddenly, billionaire #strong[Bill Gates] opens
@@ -32524,6 +29510,7 @@ the door and takes a seat at the bar. His monthly income is around
   hyper-sensitive.
 ]
 
+
 #divider()
 
 === 3. Quartiles and the Box-and-Whisker Plot
@@ -32533,10 +29520,7 @@ To analyze the spread more deeply, we partition the ordered dataset into
 
 ==== 3.1 Formal Definitions of Quartiles
 <formal-definitions-of-quartiles>
-#principe(title: [Définition Fondamentale])[
-#strong[📐 Definition --- Quartiles
-]
- In a sorted dataset of size $N$:
+#principe(title: [Definition — Quartiles])[In a sorted dataset of size $N$:
 
 - The #strong[first quartile], denoted $Q_1$, is the smallest value in
   the dataset such that at least #strong[25%] of observations are less
@@ -32551,10 +29535,8 @@ To analyze the spread more deeply, we partition the ordered dataset into
 - The second quartile $Q_2$ is none other than the median $M_e$.
 ]
 
-#principe(title: [Définition Fondamentale])[
-#strong[📐 Definition --- Interquartile Range
-]
- The difference between
+
+#principe(title: [Definition — Interquartile Range])[The difference between
 the third and first quartiles is called the #strong[interquartile range]
 ($I Q R$):
 
@@ -32565,28 +29547,18 @@ of the population. Like the median, this measure of spread is entirely
 impervious to extreme outliers.
 ]
 
+
 ==== 3.2 John Tukey's Boxplot (1977)
 <john-tukeys-boxplot-1977>
 Pioneered by the American statistician #strong[John Tukey], the
 box-and-whisker plot summarizes an entire distribution at a single
 glance:
 
-#align(center)[
-  #block(
-    fill: rgb("#f8fafc"),
-    stroke: 1pt + rgb("#cbd5e1"),
-    inset: (x: 16pt, y: 10pt),
-    radius: 6pt,
-    breakable: false,
-  )[
-    #set text(font: "Liberation Mono", size: 9.5pt, fill: rgb("#0f172a"))
-    ```text
-Central Box (50% of data)
-Min         Q₁               Median           Q₃         Max
-25%|25%|25%|25%|
-    ```
+#figure(image("figures_en/vol_5/fig_40_boite_moustaches.svg", alt: "Box plot: median, quartiles, and statistical spread"),
+  caption: [
+    Box plot: median, quartiles, and statistical spread
   ]
-]
+)
 
 - The #strong[box] spans from $Q_1$ to $Q_3$. Its width is the
   interquartile range.
@@ -32618,21 +29590,17 @@ the mean are:
 Add them up: $\(- 4\)+ 0 +\(+ 4\)= upright(bold(0))$! The positive
 deviations were completely cancelled out by the negative ones!
 
-#quote_box[
-#strong[📐 Theorem --- The Sum of Deviations is Always Zero
-]
- For any
+#principe(title: [Theorem — The Sum of Deviations is Always Zero])[For any
 dataset:
 
 $ sum_(i = 1)^p n_i\(x_i - macron(x)\)= 0 $
 ]
 
-#quote_box[
-#strong[✍️ Proof
-]
- Expand the summation:
+
+#exemple_resolu(title: [Proof])[Expand the summation:
 $ sum_(i = 1)^p n_i\(x_i - macron(x)\)= sum_(i = 1)^p n_i x_i - sum_(i = 1)^p n_i macron(x) = sum_(i = 1)^p n_i x_i - macron(x) sum_(i = 1)^p n_i = N macron(x) - macron(x) N = 0 . quad square.filled.medium $
 ]
+
 
 The average of raw deviations is #strong[identically zero], no matter
 how dispersed the data is! It is entirely useless as a measure of
@@ -32644,14 +29612,12 @@ To prevent negative deviations from neutralizing positive ones,
 mathematicians square each deviation: $\(- 4\)^2 = + 16$! A squared real
 number is always non-negative.
 
-#principe(title: [Définition Fondamentale])[
-#strong[📐 Definition --- Variance
-]
- The #strong[variance] of a dataset,
+#principe(title: [Definition — Variance])[The #strong[variance] of a dataset,
 denoted $V$, is the mean of the squared deviations from the mean:
 
 $ #box(stroke: black, inset: 3pt, [$ V = 1 / N sum_(i = 1)^p n_i\(x_i - macron(x)\)^2 = sum_(i = 1)^p f_i\(x_i - macron(x)\)^2 $]) $
 ]
+
 
 ==== 4.3 Standard Deviation ($sigma$): Restoring the Physical Unit
 <standard-deviation-sigma-restoring-the-physical-unit>
@@ -32663,15 +29629,13 @@ square meters makes no physical sense. To restore the original unit of
 measurement (meters, euros, millimeters), we take the #strong[square
 root]:
 
-#principe(title: [Définition Fondamentale])[
-#strong[📐 Definition --- Standard Deviation
-]
- The #strong[standard
+#principe(title: [Definition — Standard Deviation])[The #strong[standard
 deviation], denoted $sigma$ (lowercase Greek letter #strong[sigma]), is
 the square root of the variance:
 
 $ #box(stroke: black, inset: 3pt, [$ sigma = sqrt(V) = sqrt(1 / N sum_(i = 1)^p n_i\(x_i - macron(x)\)^2) $]) $
 ]
+
 
 #strong[Intuitive Meaning:] The standard deviation measures the
 #emph[typical] distance by which an individual data point deviates from
@@ -32694,10 +29658,7 @@ as $macron(x)$ involves decimals. Fortunately, 17th-century
 mathematicians #strong[Samuel König] and #strong[Christiaan Huygens]
 established an ingenious computational identity:
 
-#quote_box[
-#strong[📐 Theorem --- König-Huygens Formula
-]
- The variance equals
+#principe(title: [Theorem — König-Huygens Formula])[The variance equals
 #strong[the mean of the squares minus the square of the mean]:
 
 $ #box(stroke: black, inset: 3pt, [$ V = overline(x^2) -\(macron(x)\)^2 $]) $
@@ -32706,10 +29667,8 @@ where $overline(x^2) = 1 / N sum_(i = 1)^p n_i x_i^2$ denotes the mean
 of the squared values.
 ]
 
-#quote_box[
-#strong[✍️ Proof
-]
- Expand the square inside the variance definition:
+
+#principe(title: [Proof])[Expand the square inside the variance definition:
 $ V = 1 / N sum_(i = 1)^p n_i #scale(x: 120%, y: 120%)[\(] x_i^2 - 2 x_i macron(x) + macron(x)^2 #scale(x: 120%, y: 120%)[\)] . $
 Distribute the summation:
 $ V = 1 / N sum n_i x_i^2 - frac(2 macron(x), N) sum n_i x_i + macron(x)^2 / N sum n_i . $
@@ -32718,16 +29677,15 @@ $1 / N sum n_i x_i = macron(x)$, and $sum n_i = N$, this simplifies to:
 $ V = overline(x^2) - 2 macron(x)\(macron(x)\)+ macron(x)^2 / N\(N\)= overline(x^2) - 2\(macron(x)\)^2 +\(macron(x)\)^2 = overline(x^2) -\(macron(x)\)^2 . quad square.filled.medium $
 ]
 
-#quote_box[
-#strong[💡 Affine Transformation Property ---
-]
- If $y_i = a x_i + b$,
+
+#principe(title: [Affine Transformation Property —])[If $y_i = a x_i + b$,
 then:
 $ V\(a X + b\)= a^2 V\(X\)quad upright("and") quad #box(stroke: black, inset: 3pt, [$ sigma\(a X + b\)=\|a\|dot.op sigma\(X\) $]) $
 Note: Adding a constant $b$ (e.g., granting a 2-point bonus to the
 entire class) shifts all scores without altering their spread: the
 standard deviation remains unchanged!
 ]
+
 
 #divider()
 
@@ -32747,50 +29705,19 @@ fluctuates around $p$. However, for a sufficiently large sample
 guarantees that in #strong[at least 95% of random samples], the observed
 frequency $f$ falls within a well-defined interval:
 
-#principe(title: [Définition Fondamentale])[
-#strong[📐 Definition --- 95% Fluctuation Interval
-]
-
-
-- Introductory approximation:
+#principe(title: [Definition — 95% Fluctuation Interval])[- Introductory approximation:
   $ I = [p - 1 / sqrt(n) med \; med p + 1 / sqrt(n)] $
 
 - Asymptotic formula (derived from the Normal distribution):
   $ #box(stroke: black, inset: 3pt, [$ I_0.95 = [p - 1.96 sqrt(frac(p\(1 - p\), n)) med \; med p + 1.96 sqrt(frac(p\(1 - p\), n))] $]) $
 ]
 
+
 ==== 6.2 Sampling Simulation in Python
 <sampling-simulation-in-python>
 To verify this experimentally, let us simulate 1,000 independent polls
 of size $n = 100$ drawn from a population where the true proportion is
 $p = 0.40$ (40%):
-
-```python
-import random
-
-def simulate_sample(n, p):
-    """Simulates drawing a sample of size n and returns observed frequency f."""
-    successes = sum(1 for _ in range(n) if random.random() < p)
-    return successes / n
-
-def fluctuation_study(num_samples=1000, n=100, p=0.40):
-    lower_bound = p - 1.96 * (p * (1 - p) / n) ** 0.5
-    upper_bound = p + 1.96 * (p * (1 - p) / n) ** 0.5
-
-    inside_interval = 0
-    for _ in range(num_samples):
-        f = simulate_sample(n, p)
-        if lower_bound <= f <= upper_bound:
-            inside_interval += 1
-
-    percentage = (inside_interval / num_samples) * 100
-    print(f"Theoretical 95% interval: [{lower_bound:.4f} ; {upper_bound:.4f}]")
-    print(f"Percentage of samples inside interval: {percentage:.1f}%")
-
-fluctuation_study()
-```
-
-Output:
 
 #align(center)[
   #block(
@@ -32802,11 +29729,33 @@ Output:
   )[
     #set text(font: "Liberation Mono", size: 9.5pt, fill: rgb("#0f172a"))
     ```text
-Theoretical 95% interval: [0.3040 ; 0.4960]
-Percentage of samples inside interval: 95.3%
+import random
+def simulate_sample(n, p):
+"""Simulates drawing a sample of size n and returns observed frequency f."""
+successes = sum(1 for _ in range(n) if random.random() < p)
+return successes / n
+def fluctuation_study(num_samples=1000, n=100, p=0.40):
+lower_bound = p - 1.96 * (p * (1 - p) / n) ** 0.5
+upper_bound = p + 1.96 * (p * (1 - p) / n) ** 0.5
+inside_interval = 0
+for _ in range(num_samples):
+f = simulate_sample(n, p)
+if lower_bound <= f <= upper_bound:
+inside_interval += 1
+percentage = (inside_interval / num_samples) * 100
+print(f"Theoretical 95% interval: [{lower_bound:.4f} ; {upper_bound:.4f}]")
+print(f"Percentage of samples inside interval: {percentage:.1f}%")
+fluctuation_study()
     ```
   ]
 ]
+
+Output:
+
+#principe(title: [Fundamental Rule — 95% Asymptotic Fluctuation Interval])[- Theoretical 95% interval: \[0.3040 \; 0.4960\]
+- Percentage of samples inside interval: 95.3%
+]
+
 
 Precisely as predicted: over 95% of random polls hit the theoretical
 bullseye!
@@ -32815,11 +29764,7 @@ bullseye!
 
 === Step-by-Step Worked Examples
 <step-by-step-worked-examples-10>
-#quote_box[
-#strong[✅ Worked Example 1 --- Computing Mean and Standard Deviation
-]
-
-The grades of 20 students on an examination are distributed as follows:
+#exemple_resolu(title: [Worked Example 1 — Computing Mean and Standard Deviation])[The grades of 20 students on an examination are distributed as follows:
 
 #figure(
   align(center)[#table(
@@ -32855,10 +29800,8 @@ $ macron(x) = 212 / 20 = 10.6 . $
 ]
 ]
 
-#quote_box[
-#strong[✅ Worked Example 2 --- Determining Median and Quartiles
-]
- Find
+
+#exemple_resolu(title: [Worked Example 2 — Determining Median and Quartiles])[Find
 $M_e$, $Q_1$, $Q_3$, and the $I Q R$ for the dataset in Example 1.
 
 #strong[Detailed Solution:] Construct the cumulative frequency table:
@@ -32892,11 +29835,9 @@ $M_e$, $Q_1$, $Q_3$, and the $I Q R$ for the dataset in Example 1.
   middle 50% of the class earned grades between 8 and 12.
 ]
 
-#quote_box[
-#strong[✅ Worked Example 3 --- Boxplot Comparison of Two Archery
-Competitors
-]
- Two archers $A$ and $B$ shoot 50 arrows each. Their
+
+#exemple_resolu(title: [Worked Example 3 — Boxplot Comparison of Two Archery
+Competitors])[Two archers $A$ and $B$ shoot 50 arrows each. Their
 five-number summaries are:
 
 - Archer $A$: $upright("Min") = 5$, $Q_1 = 8$, $M_e = 9$, $Q_3 = 10$,
@@ -32921,11 +29862,9 @@ five-number summaries are:
   reliable], despite their identical median scores.
 ]
 
-#quote_box[
-#strong[✅ Worked Example 4 --- Linear Transformation of Mean and
-Standard Deviation
-]
- A teacher administers a challenging test: the mean
+
+#exemple_resolu(title: [Worked Example 4 — Linear Transformation of Mean and
+Standard Deviation])[A teacher administers a challenging test: the mean
 is $macron(x) = 8$ and standard deviation is $sigma = 3$. To rescale the
 grades, she applies the formula: $ y = 1.2 x + 2 . $ Find the new mean
 $macron(y)$ and new standard deviation $sigma_y$.
@@ -32942,11 +29881,8 @@ $macron(y)$ and new standard deviation $sigma_y$.
   score gaps widen slightly.
 ]
 
-#quote_box[
-#strong[✅ Worked Example 5 --- Hypothesis Testing on a Quality Sample
-]
 
-A bakery claims that only 2% of its packaged cookies have baking defects
+#exemple_resolu(title: [Worked Example 5 — Hypothesis Testing on a Quality Sample])[A bakery claims that only 2% of its packaged cookies have baking defects
 ($p = 0.02$). A consumer watchdog inspects a sample of $n = 500$ cookies
 and finds 18 defective ones. Should the manufacturer's claim be rejected
 at the 95% confidence level?
@@ -32967,10 +29903,8 @@ manufacturer's claim is #strong[rejected]. The defect rate is abnormally
 high.
 ]
 
-#quote_box[
-#strong[✅ Worked Example 6 --- Detecting Statistical Outliers
-]
- Tukey
+
+#principe(title: [Worked Example 6 — Detecting Statistical Outliers])[Tukey
 established a standard rule for identifying outliers: any value strictly
 outside the fences:
 $ \[Q_1 - 1.5 times I Q R med\;med Q_3 + 1.5 times I Q R\]. $ In a
@@ -32987,6 +29921,7 @@ executive salary of \$4,000 considered an outlier?
 - Since $\$4\,000 >\$3\,800$, this salary exceeds the upper threshold:
   it is formally classified as an #strong[outlier].
 ]
+
 
 #divider()
 
@@ -33205,14 +30140,25 @@ temperature swings.
 
 #strong[\15.]
 
-```python
+#align(center)[
+  #block(
+    fill: rgb("#f8fafc"),
+    stroke: 1pt + rgb("#cbd5e1"),
+    inset: (x: 16pt, y: 10pt),
+    radius: 6pt,
+    breakable: false,
+  )[
+    #set text(font: "Liberation Mono", size: 9.5pt, fill: rgb("#0f172a"))
+    ```text
 def statistics(data):
-    N = len(data)
-    mean_val = sum(data) / N
-    variance_val = sum((x - mean_val) ** 2 for x in data) / N
-    std_val = variance_val ** 0.5
-    return {"size": N, "mean": mean_val, "std_dev": std_val}
-```
+N = len(data)
+mean_val = sum(data) / N
+variance_val = sum((x - mean_val) ** 2 for x in data) / N
+std_val = variance_val ** 0.5
+return {"size": N, "mean": mean_val, "std_dev": std_val}
+    ```
+  ]
+]
 
 #strong[\16.] Let $S_1 = sum_(x in G_1) x^2$ and
 $S_2 = sum_(x in G_2) x^2$. By König-Huygens in each group:
@@ -33252,20 +30198,30 @@ $V = overline(x^2) -\(macron(x)\)^2 = frac(\(n + 1\)\(2 n + 1\), 6) - frac(\(n +
 
 #strong[\20.]
 
-```python
+#align(center)[
+  #block(
+    fill: rgb("#f8fafc"),
+    stroke: 1pt + rgb("#cbd5e1"),
+    inset: (x: 16pt, y: 10pt),
+    radius: 6pt,
+    breakable: false,
+  )[
+    #set text(font: "Liberation Mono", size: 9.5pt, fill: rgb("#0f172a"))
+    ```text
 import math
-
 def detect_outliers(data):
-    s = sorted(data)
-    N = len(s)
-    q1 = s[math.ceil(N / 4) - 1]
-    q3 = s[math.ceil(3 * N / 4) - 1]
-    iqr = q3 - q1
-    lower_bound = q1 - 1.5 * iqr
-    upper_bound = q3 + 1.5 * iqr
-    outliers = [x for x in data if x < lower_bound or x > upper_bound]
-    return {"Q1": q1, "Q3": q3, "IQR": iqr, "outliers": outliers}
-```
+s = sorted(data)
+N = len(s)
+q1 = s[math.ceil(N / 4) - 1]
+q3 = s[math.ceil(3 * N / 4) - 1]
+iqr = q3 - q1
+lower_bound = q1 - 1.5 * iqr
+upper_bound = q3 + 1.5 * iqr
+outliers = [x for x in data if x < lower_bound or x > upper_bound]
+return {"Q1": q1, "Q3": q3, "IQR": iqr, "outliers": outliers}
+    ```
+  ]
+]
 
 #divider()
 
@@ -33294,10 +30250,9 @@ stumbling in the dark. When a medical test advertised as 99% reliable
 declares you diseased, panic shrieks that you are 99% doomed. The
 mathematician breathes calmly, draws a tree in the space of
 possibilities, narrows the sample space, and reveals that you have a
-nine-in-ten chance of being perfectly healthy.”
+nine-in-ten chance of being perfectly healthy.”]
 ]
 
-]
 
 #divider()
 
@@ -33362,27 +30317,11 @@ precision be wrong nine times out of ten when it announces a disease?
 To see through this paradox without dense symbolism, consider a
 concrete, representative cohort of #strong[100,000 individuals]:
 
-#align(center)[
-  #block(
-    fill: rgb("#f8fafc"),
-    stroke: 1pt + rgb("#cbd5e1"),
-    inset: (x: 16pt, y: 10pt),
-    radius: 6pt,
-    breakable: false,
-  )[
-    #set text(font: "Liberation Mono", size: 9.5pt, fill: rgb("#0f172a"))
-    ```text
-TOTAL POPULATION
-100,000 individuals
-1 in 1,000 /                  \  999 in 1,000
-DISEASED                  HEALTHY
-100 individuals          99,900 individuals
-99%    /            \ 1%    1%    /            \ 99%
-POSITIVE       NEGATIVE    POSITIVE       NEGATIVE
-99 diseased    1 diseased  999 healthy  98,901 healthy
-    ```
+#figure(image("figures_en/vol_5/fig_42_arbre_medical.svg", alt: "Weighted tree for medical screening and Bayes’ formula"),
+  caption: [
+    Weighted tree for medical screening and Bayes' formula
   ]
-]
+)
 
 Trace the arithmetic carefully: 1. Among 100,000 people, because the
 condition strikes 1 in 1,000, there are #strong[100 diseased
@@ -33425,10 +30364,7 @@ people creates ten times more false alarms than genuine cases!
 Let $Omega$ be a sample space endowed with a probability measure $P$.
 Let $A$ and $B$ be two events.
 
-#principe(title: [Définition Fondamentale])[
-#strong[📐 Definition --- Conditional Probability
-]
- Let $A$ be an event
+#principe(title: [Definition — Conditional Probability])[Let $A$ be an event
 with non-zero probability ($P\(A\)> 0$). The #strong[conditional
 probability of $B$ given $A$], denoted $P_A\(B\)$ or $P\(B divides A\)$,
 is defined by:
@@ -33438,41 +30374,23 @@ $ #box(stroke: black, inset: 3pt, [$ P\(B divides A\)= frac(P\(A inter B\), P\(A
 Read aloud as: “#strong[probability of B given A]”.
 ]
 
+
 #strong[Geometric Interpretation:] We replace the universal reference
 sample space $Omega$ (which had total probability 1) with the restricted
 subspace $A$. The event $A$ becomes the new universe. The fraction of
 $B$ that survives inside this restricted frame is the intersection
 $A inter B$, normalized by the measure of $A$.
 
-#align(center)[
-  #block(
-    fill: rgb("#f8fafc"),
-    stroke: 1pt + rgb("#cbd5e1"),
-    inset: (x: 16pt, y: 10pt),
-    radius: 6pt,
-    breakable: false,
-  )[
-    #set text(font: "Liberation Mono", size: 9.5pt, fill: rgb("#0f172a"))
-    ```text
-Sample Space Ω
-A ∩ B    B
-The universe is restricted to bubble A: P(B|A) = Area(A ∩ B) / Area(A)
-    ```
-  ]
-]
-
 ==== 3.2 The Multiplication Rule
 <the-multiplication-rule>
 Multiplying by $P\(A\)$ yields the fundamental product identity:
 
-#quote_box[
-#strong[📐 Theorem --- Multiplication Rule
-]
- For any events $A$ and $B$
+#principe(title: [Theorem — Multiplication Rule])[For any events $A$ and $B$
 with $P\(A\)> 0$:
 
 $ #box(stroke: black, inset: 3pt, [$ P\(A inter B\)= P\(A\)times P\(B divides A\) $]) $
 ]
+
 
 #divider()
 
@@ -33483,34 +30401,7 @@ $ #box(stroke: black, inset: 3pt, [$ P\(A inter B\)= P\(A\)times P\(B divides A\
 A probability tree organizes successive sequential stages of a random
 experiment with clarity.
 
-#align(center)[
-  #block(
-    fill: rgb("#f8fafc"),
-    stroke: 1pt + rgb("#cbd5e1"),
-    inset: (x: 16pt, y: 10pt),
-    radius: 6pt,
-    breakable: false,
-  )[
-    #set text(font: "Liberation Mono", size: 9.5pt, fill: rgb("#0f172a"))
-    ```text
-P(B|A)
-B      Path A ∩ B: P(A ∩ B) = P(A) × P(B|A)
-P(A) /
-' B̄      Path A ∩ B̄: P(A ∩ B̄) = P(A) × P(B̄|A)
-o        P(B̄|A)
-B      Path Ā ∩ B: P(Ā ∩ B) = P(Ā) × P(B|Ā)
-' Ā
-P(Ā) \
-' B̄      Path Ā ∩ B̄: P(Ā ∩ B̄) = P(Ā) × P(B̄|Ā)
-P(B̄|Ā)
-    ```
-  ]
-]
-
-#principe(title: [Définition Fondamentale])[
-#strong[📐 Rules of Probability Trees
-]
- 1. #strong[Node Rule:] The sum of
+#principe(title: [Rules of Probability Trees])[1. #strong[Node Rule:] The sum of
 probabilities on all branches emanating from any single node
 #strong[always equals 1].
 $ P\(A\)+ P\(overline(A)\)= 1\,#h(2em) P\(B divides A\)+ P\(overline(B) divides A\)= 1 . $
@@ -33521,12 +30412,10 @@ probability of an outcome is the #strong[sum] of the path probabilities
 that terminate at that outcome.
 ]
 
+
 ==== 4.2 The Law of Total Probability
 <the-law-of-total-probability>
-#principe(title: [Définition Fondamentale])[
-#strong[📐 Definition --- Partition of a Sample Space
-]
- A family of
+#principe(title: [Definition — Partition of a Sample Space])[A family of
 events $A_1\,A_2\,dots.h\,A_n$ forms a #strong[partition] of $Omega$ if:
 
 - They are pairwise disjoint ($A_i inter A_j = diameter$ for
@@ -33541,10 +30430,8 @@ The most frequent partition is the elementary binary partition
 ${ A\,overline(A) }$.
 ]
 
-#quote_box[
-#strong[📐 Theorem --- Law of Total Probability
-]
- If
+
+#principe(title: [Theorem — Law of Total Probability])[If
 $A_1\,A_2\,dots.h\,A_n$ form a partition of $Omega$, then for any event
 $B$:
 
@@ -33553,6 +30440,7 @@ $ #box(stroke: black, inset: 3pt, [$ P\(B\)= sum_(i = 1)^n P\(B inter A_i\)= sum
 In the two-event case ${ A\,overline(A) }$:
 $ #box(stroke: black, inset: 3pt, [$ P\(B\)= P\(A\)times P\(B divides A\)+ P\(overline(A)\)times P\(B divides overline(A)\) $]) $
 ]
+
 
 #divider()
 
@@ -33565,14 +30453,12 @@ has occurred (the test is positive), what is the probability that a
 specific underlying cause generated it (the patient is truly
 diseased)?”]
 
-#quote_box[
-#strong[📐 Theorem --- Bayes' Theorem
-]
- Let ${ A\,overline(A) }$
+#principe(title: [Theorem — Bayes' Theorem])[Let ${ A\,overline(A) }$
 partition the sample space and let $B$ have non-zero probability.
 
 $ #box(stroke: black, inset: 3pt, [$ P\(A divides B\)= frac(P\(A inter B\), P\(B\)) = frac(P\(A\)times P\(B divides A\), P\(A\)times P\(B divides A\)+ P\(overline(A)\)times P\(B divides overline(A)\)) $]) $
 ]
+
 
 Applying Bayes' formula to Thomas's scenario:
 
@@ -33601,10 +30487,7 @@ When two events exert no causal or probabilistic influence on one
 another, learning that one has occurred provides zero information about
 the likelihood of the other.
 
-#principe(title: [Définition Fondamentale])[
-#strong[📐 Definition --- Independent Events
-]
- Two events $A$ and $B$ are
+#principe(title: [Definition — Independent Events])[Two events $A$ and $B$ are
 #strong[independent] if and only if:
 
 $ #box(stroke: black, inset: 3pt, [$ P\(A inter B\)= P\(A\)times P\(B\) $]) $
@@ -33612,11 +30495,9 @@ $ #box(stroke: black, inset: 3pt, [$ P\(A inter B\)= P\(A\)times P\(B\) $]) $
 If $P\(A\)> 0$, this is equivalent to: $ P\(B divides A\)= P\(B\). $
 ]
 
-#quote_box[
-#strong[⚠️ Caution: The Ultimate Trap! --- Never Conflate “Independent”
-and “Disjoint”
-]
- This is the single most common conceptual error in
+
+#alerte(title: [Caution: The Ultimate Trap! — Never Conflate “Independent”
+and “Disjoint”])[This is the single most common conceptual error in
 probability!
 
 - Two events are #strong[disjoint] (mutually exclusive) if they cannot
@@ -33632,6 +30513,7 @@ occurs, you know with 100% certainty that $B$ did not occur
 ($P\(B divides A\)= 0 eq.not P\(B\)$)!
 ]
 
+
 #divider()
 
 === 7. Discrete Random Variables
@@ -33642,15 +30524,13 @@ probability to arithmetic: it attaches a #strong[real number] (a
 monetary gain, an arrival count, a waiting time) to every elementary
 outcome.
 
-#principe(title: [Définition Fondamentale])[
-#strong[📐 Definition --- Discrete Random Variable
-]
- A #strong[discrete
+#principe(title: [Definition — Discrete Random Variable])[A #strong[discrete
 random variable] $X$ defined on a sample space $Omega$ is a function
 that maps every elementary outcome $omega in Omega$ to a real number
 $x_i in bb(R)$. We write $X\(Omega\)= { x_1\,x_2\,dots.h\,x_k }$ for the
 set of values $X$ can take.
 ]
+
 
 ==== 7.1 Probability Distribution
 <probability-distribution>
@@ -33677,15 +30557,13 @@ $sum_(i = 1)^k p_i = 1$.
 Imagine a carnival lottery: what can you expect to win on average per
 ticket if you play millions of games?
 
-#principe(title: [Définition Fondamentale])[
-#strong[📐 Definition --- Expected Value
-]
- The #strong[expected value]
+#principe(title: [Definition — Expected Value])[The #strong[expected value]
 (or expectation) of a discrete random variable $X$, denoted $E\(X\)$, is
 the weighted average of the values taken by $X$:
 
 $ #box(stroke: black, inset: 3pt, [$ E\(X\)= sum_(i = 1)^k x_i dot.op P\(X = x_i\) $]) $
 ]
+
 
 - If $X$ represents a player's net profit (payout minus ticket cost):
   - $E\(X\)> 0$: the game is #strong[in the player's favor].
@@ -33701,12 +30579,7 @@ $ #box(stroke: black, inset: 3pt, [$ E\(X\)= sum_(i = 1)^k x_i dot.op P\(X = x_i
 Just as in Chapter 41 for descriptive statistics, we measure uncertainty
 and dispersion around the mean:
 
-#principe(title: [Définition Fondamentale])[
-#strong[📐 Definition --- Variance and Standard Deviation
-]
-
-
-- The #strong[variance] of $X$ is:
+#principe(title: [Definition — Variance and Standard Deviation])[- The #strong[variance] of $X$ is:
   $ #box(stroke: black, inset: 3pt, [$ V\(X\)= E #scale(x: 120%, y: 120%)[\(]\(X - E\(X\)\)^2 #scale(x: 120%, y: 120%)[\)] = sum_(i = 1)^k\(x_i - E\(X\)\)^2 P\(X = x_i\) $]) $
 
 - Probabilistic König-Huygens identity:
@@ -33716,12 +30589,10 @@ and dispersion around the mean:
   $ #box(stroke: black, inset: 3pt, [$ sigma\(X\)= sqrt(V\(X\)) $]) $
 ]
 
+
 ==== 7.4 Linearity of Expectation
 <linearity-of-expectation>
-#quote_box[
-#strong[📐 Theorem --- Affine Transformation of a Random Variable
-]
- For
+#principe(title: [Theorem — Affine Transformation of a Random Variable])[For
 all real numbers $a$ and $b$:
 
 + $#box(stroke: black, inset: 3pt, [$ E\(a X + b\)= a E\(X\)+ b $])$
@@ -33730,23 +30601,18 @@ all real numbers $a$ and $b$:
 + $#box(stroke: black, inset: 3pt, [$ sigma\(a X + b\)=\|a\|sigma\(X\) $])$
 ]
 
-#quote_box[
-#strong[✍️ Proof of Linearity
-]
 
-$ E\(a X + b\)= sum_(i = 1)^k\(a x_i + b\)p_i = sum_(i = 1)^k a x_i p_i + sum_(i = 1)^k b p_i = a sum_(i = 1)^k x_i p_i + b sum_(i = 1)^k p_i . $
+#exemple_resolu(title: [Proof of Linearity])[$ E\(a X + b\)= sum_(i = 1)^k\(a x_i + b\)p_i = sum_(i = 1)^k a x_i p_i + sum_(i = 1)^k b p_i = a sum_(i = 1)^k x_i p_i + b sum_(i = 1)^k p_i . $
 Since $sum x_i p_i = E\(X\)$ and $sum p_i = 1$:
 $ E\(a X + b\)= a E\(X\)+ b\(1\)= a E\(X\)+ b . quad square.filled.medium $
 ]
+
 
 #divider()
 
 === Step-by-Step Worked Examples
 <step-by-step-worked-examples-11>
-#quote_box[
-#strong[✅ Worked Example 1 --- Direct Conditional Probability
-]
- In a
+#exemple_resolu(title: [Worked Example 1 — Direct Conditional Probability])[In a
 class of 32 students, 18 study Spanish, 10 study German, and 6 study
 both languages. A student is chosen at random. 1. What is the
 probability that the student studies German? 2. Given that the chosen
@@ -33760,11 +30626,9 @@ seek $P\(G divides S\)$ (sample space restricted to Spanish students):
 $ P\(G divides S\)= frac(P\(S inter G\), P\(S\)) = frac(6\/32, 18\/32) = 6 / 18 = 1 / 3 approx 0.333 . $
 ]
 
-#quote_box[
-#strong[✅ Worked Example 2 --- Tree Diagram and Law of Total
-Probability
-]
- A company sources microchips from two suppliers:
+
+#principe(title: [Worked Example 2 — Tree Diagram and Law of Total
+Probability])[A company sources microchips from two suppliers:
 
 - Supplier $A$ provides 70% of the inventory, with a 2% defect rate.
 - Supplier $B$ provides the remaining 30%, with a 5% defect rate. A chip
@@ -33786,10 +30650,8 @@ Even though Supplier $B$ delivers only 30% of total volume, it accounts
 for more than half of all defective parts!
 ]
 
-#quote_box[
-#strong[✅ Worked Example 3 --- Testing for Independence
-]
- Two standard
+
+#exemple_resolu(title: [Worked Example 3 — Testing for Independence])[Two standard
 fair 6-sided dice are rolled, one red and one blue. Let $A$ be: “the red
 die shows 4” and $B$ be: “the sum of the two dice is 7”. Are events $A$
 and $B$ independent?
@@ -33816,10 +30678,8 @@ outcomes.
   provides zero information regarding whether the sum will equal 7.
 ]
 
-#quote_box[
-#strong[✅ Worked Example 4 --- Random Variable and Game Expectation
-]
- A
+
+#exemple_resolu(title: [Worked Example 4 — Random Variable and Game Expectation])[A
 carnival stall offers the following game for an entry stake of \$5: A
 fair 6-sided die is rolled:
 
@@ -33853,11 +30713,9 @@ $X\(Omega\)= { - 5\,1\,15 }$.
 ]
 ]
 
-#quote_box[
-#strong[✅ Worked Example 5 --- Variance and Standard Deviation of a
-Random Variable
-]
- Compute the variance $V\(X\)$ and standard deviation
+
+#exemple_resolu(title: [Worked Example 5 — Variance and Standard Deviation of a
+Random Variable])[Compute the variance $V\(X\)$ and standard deviation
 $sigma\(X\)$ for the game in Example 4.
 
 #strong[Detailed Solution:] 1. Compute $E\(X^2\)$:
@@ -33871,10 +30729,8 @@ standard deviation is high: earnings fluctuate substantially around the
 mean.
 ]
 
-#quote_box[
-#strong[✅ Worked Example 6 --- Linearity of Expectation
-]
- An insurance
+
+#exemple_resolu(title: [Worked Example 6 — Linearity of Expectation])[An insurance
 provider insures a citywide fleet of shared bicycles. The daily number
 of bicycle accidents $X$ has expected value $E\(X\)= 4$ and standard
 deviation $sigma\(X\)= 1.5$. Each accident costs \$50 in repairs, plus a
@@ -33892,6 +30748,7 @@ deviation of the daily cost.
   The insurer must budget an average of \$300 per day, with typical
   day-to-day fluctuations of \$75.
 ]
+
 
 #divider()
 
@@ -34161,25 +31018,34 @@ $sigma\(X\)= sqrt(16) = 4$.
 
 #strong[\16.]
 
-```python
+#align(center)[
+  #block(
+    fill: rgb("#f8fafc"),
+    stroke: 1pt + rgb("#cbd5e1"),
+    inset: (x: 16pt, y: 10pt),
+    radius: 6pt,
+    breakable: false,
+  )[
+    #set text(font: "Liberation Mono", size: 9.5pt, fill: rgb("#0f172a"))
+    ```text
 import random
-
 def simulate_game(num_plays=10000):
-    payouts = []
-    for _ in range(num_plays):
-        roll = random.randint(1, 6)
-        if roll in [2, 4, 6]:
-            gain = 1  # 3 - 2
-        elif roll == 5:
-            gain = 4  # 6 - 2
-        else:
-            gain = -2  # 0 - 2
-        payouts.append(gain)
-    sim_mean = sum(payouts) / num_plays
-    print(f"Simulated mean: {sim_mean:.4f} € (Theoretical: 0.5000 €)")
-
+payouts = []
+for _ in range(num_plays):
+roll = random.randint(1, 6)
+if roll in [2, 4, 6]:
+gain = 1  # 3 - 2
+elif roll == 5:
+gain = 4  # 6 - 2
+else:
+gain = -2  # 0 - 2
+payouts.append(gain)
+sim_mean = sum(payouts) / num_plays
+print(f"Simulated mean: {sim_mean:.4f} € (Theoretical: 0.5000 €)")
 simulate_game()
-```
+    ```
+  ]
+]
 
 #strong[\17.] The sample space of two-child families is
 $Omega = {\(B\,B\)\,\(B\,G\)\,\(G\,B\)\,\(G\,G\)}$, with 4 equally
@@ -34249,7 +31115,7 @@ in the next chapter!
 
 #divider()
 
-#frontispice-volume("figures/nature/vol_6_conus_textile.jpg")
+#frontispice-volume("figures_en/nature/vol_6_conus_textile.jpg")
 
 #ouverture-volume(
   "VI",
@@ -34272,10 +31138,9 @@ in the next chapter!
 #emph[“To climb an infinite staircase, it is not necessary to see the
 top step. It suffices to be certain of two things: that one can set foot
 upon the first, and that from any step one always knows how to climb to
-the next.”
+the next.”]
 ]
 
-]
 
 #divider()
 
@@ -34307,9 +31172,9 @@ the next.”
 Take a handful of pebbles and arrange them in nested squares, just as
 the Pythagoreans did in the sand:
 
-#figure(image("figures/vol_6/fig_43_dominos_recurrence.svg", alt: "Le principe de récurrence : l’effet domino mathématique"),
+#figure(image("figures_en/vol_6/fig_43_dominos_recurrence.svg", alt: "Mathematical induction: the mathematical domino effect"),
   caption: [
-    Le principe de récurrence : l'effet domino mathématique
+    Mathematical induction: the mathematical domino effect
   ]
 )
 
@@ -34389,10 +31254,7 @@ We require an intellectual tool that #strong[captures the entirety of
 the infinite sequence of integers in a single stroke]. That tool is
 mathematical induction.
 
-#decouvre(title: [Découverte & Histoire])[
-#strong[💡 Did You Know?
-]
- Some conjectures hold out far longer. The
+#decouvre(title: [Did You Know?])[Some conjectures hold out far longer. The
 Pólya conjecture (1919), which asserted that “most” integers up to any
 bound have an odd number of prime factors, was verified up to hundreds
 of millions before a counterexample was found in 1958; the smallest
@@ -34400,6 +31262,7 @@ counterexample is $906 thin 150 thin 257$. No computer search could ever
 have “proven” this conjecture by finite verification---and fortunately
 so, since it was false.
 ]
+
 
 #divider()
 
@@ -34419,24 +31282,6 @@ Note carefully: condition 2 does #strong[not] assert that the dominoes
 are falling. It merely says: “#emph[if] this one falls, #emph[then] the
 next one will fall as well.” It is an #strong[implication], a guarantee
 of transmission.
-
-#align(center)[
-  #block(
-    fill: rgb("#f8fafc"),
-    stroke: 1pt + rgb("#cbd5e1"),
-    inset: (x: 16pt, y: 10pt),
-    radius: 6pt,
-    breakable: false,
-  )[
-    #set text(font: "Liberation Mono", size: 9.5pt, fill: rgb("#0f172a"))
-    ```text
-Push!
-▌ ▌ ▌ ▌ ▌ ▌ ▌ ▌ ▌ ...      Base step (initialization): the first one falls.
-▌ ▌ ▌ ▌ ▌ ▌ ▌ ▌ ...      Inductive step (heredity): each fall triggers the next.
-▌ ▌ ▌ ▌ ...      Conclusion: they all fall.
-    ```
-  ]
-]
 
 If either condition is missing, the entire guarantee collapses:
 
@@ -34474,10 +31319,7 @@ Before formally stating the principle, let us sharpen our vocabulary.
 
 ==== 2.3 The Principle of Mathematical Induction
 <the-principle-of-mathematical-induction>
-#principe(title: [Définition Fondamentale])[
-#strong[📐 Definition --- Principle of Mathematical Induction.
-]
- Let
+#principe(title: [Definition — Principle of Mathematical Induction.])[Let
 $cal(P)\(n\)$ be a mathematical proposition depending on a natural
 number $n$, and let $n_0$ be a fixed integer. If: 1.
 #strong[Initialization (Base Step)]: $cal(P)\(n_0\)$ is true; 2.
@@ -34487,6 +31329,7 @@ $cal(P)\(n\)$ is true, then $cal(P)\(n + 1\)$ is true;
 then #strong[\(Conclusion)] $cal(P)\(n\)$ is true for all integers
 $n gt.eq n_0$.
 ]
+
 
 The assumption “$cal(P)\(n\)$ is true”, invoked during the inductive
 step, is termed the #strong[induction hypothesis] (frequently
@@ -34512,9 +31355,7 @@ principle as one of the foundational #strong[Peano Axioms] defining
 arithmetic.
 
 #quote_box[
-#strong[🔍 Historical Note ---
-]
- Early manifestations of inductive
+#strong[🔍 Historical Note ---] Early manifestations of inductive
 reasoning appear in the work of the Persian mathematician
 #strong[Al-Karaji] (around 1000 CE), who applied it to the binomial
 theorem and sums of cubes, and later #strong[Francesco Maurolico], who
@@ -34527,10 +31368,8 @@ arbitrary base, it will necessarily hold in the following one.” Augustus
 De Morgan coined the term “mathematical induction” in 1838.
 ]
 
-#quote_box[
-#strong[⚠️ Pitfall Alert! ---
-]
- In the inductive step, you do
+
+#alerte(title: [Pitfall Alert! —])[In the inductive step, you do
 #strong[not] assume that $cal(P)\(n\)$ is true for all $n$ (that would
 be assuming the very thing you set out to prove!). Rather, you
 #strong[fix] an arbitrary integer $n gt.eq n_0$, #strong[assume] that
@@ -34539,16 +31378,12 @@ that $cal(P)\(n + 1\)$ must consequently hold. You are proving an
 implication, not asserting unconditional truth.
 ]
 
+
 #divider()
 
 === 3. Method: Writing an Impeccable Induction Proof
 <method-writing-an-impeccable-induction-proof>
-#methode(title: [Méthode Pas à Pas])[
-#strong[🧭 Method --- Standard Structure for Written Examinations.
-]
-
-
-#emph[For every integer $n gt.eq n_0$, let $cal(P)\(n\)$ denote the
+#methode(title: [Method — Standard Structure for Written Examinations.])[#emph[For every integer $n gt.eq n_0$, let $cal(P)\(n\)$ denote the
 statement: “\[…\]”.]
 
 #strong[Base Step (Initialization).] For $n = n_0$: evaluate the
@@ -34568,6 +31403,7 @@ from rank $n$ to $n + 1$ for all $n gt.eq n_0$\; by the principle of
 mathematical induction, $cal(P)\(n\)$ is true for every integer
 $n gt.eq n_0$.
 ]
+
 
 Three golden rules from exam graders: 1. #strong[Always write down the
 goal] (the statement at rank $n + 1$) before computing: know exactly
@@ -34637,10 +31473,7 @@ $cal(P)\(n + 1\)$ is true.
 #emph[Conclusion.] $cal(P)\(n\)$ holds for all $n gt.eq 1$.
 $square.filled.medium$
 
-#decouvre(title: [Découverte & Histoire])[
-#strong[💡 Did You Know?
-]
- The young Carl Friedrich Gauss famously
+#decouvre(title: [Did You Know?])[The young Carl Friedrich Gauss famously
 evaluated this sum for $n = 100$ in school by pairing terms:
 $\(1 + 100\)+\(2 + 99\)+ dots.h$, giving 50 pairs of 101, or 5050.
 Gauss's insight #strong[discovers] the formula; mathematical induction
@@ -34648,6 +31481,7 @@ Gauss's insight #strong[discovers] the formula; mathematical induction
 formidable at proving a formula once known, but it cannot invent it out
 of thin air.
 ]
+
 
 ==== Worked Example 3 --- Sum of Squares
 <worked-example-3-sum-of-squares>
@@ -34730,13 +31564,11 @@ the expression at rank $n + 1$.
 
 ==== Worked Example 6 --- Bernoulli's Inequality (Core Curriculum Proof)
 <worked-example-6-bernoullis-inequality-core-curriculum-proof>
-#quote_box[
-#strong[📐 Theorem --- Bernoulli's Inequality.
-]
- For every real number
+#principe(title: [Theorem — Bernoulli's Inequality.])[For every real number
 $a > - 1$ (and in particular for all $a > 0$) and for every natural
 number $n in bb(N)$: $ \(1 + a\)^n gt.eq 1 + n a . $
 ]
+
 
 #strong[Concrete Intuition.] Invest a capital at a compound interest
 rate $a$ per year (e.g., $a = 0.05$ for $5 %$): after $n$ years, the
@@ -34746,10 +31578,7 @@ multiply by $1 + n a$. Bernoulli's inequality asserts that
 interest]---which is intuitive, because you earn interest on top of
 accumulated interest.
 
-#quote_box[
-#strong[✍️ Proof.
-]
- Let $a > - 1$ be a fixed real number. For
+#exemple_resolu(title: [Proof.])[Let $a > - 1$ be a fixed real number. For
 $n in bb(N)$, let $cal(P)\(n\)$ be: “$\(1 + a\)^n gt.eq 1 + n a$”.
 
 #emph[Base Step.] For $n = 0$: $\(1 + a\)^0 = 1$ and
@@ -34770,6 +31599,7 @@ true.
 #emph[Conclusion.] For all $n in bb(N)$, $\(1 + a\)^n gt.eq 1 + n a$.
 $square.filled.medium$
 ]
+
 
 The little black square $square.filled.medium$ (or Q.E.D., #emph[quod
 erat demonstrandum], “which was to be demonstrated”) marks the
@@ -34908,10 +31738,9 @@ Zeno. For to reach it, he must first cover half the distance, then half
 of the remainder, then half of what still remains. An infinity of steps
 cannot be completed in a finite time. Zeno's mistake was not in his view
 of the world, but in his lack of a mathematical tool: the concept of a
-limit.”
+limit.”]
 ]
 
-]
 
 #divider()
 
@@ -34950,23 +31779,12 @@ $50 upright(" m")$ left to run; he must first cover half of this
 remainder, which is $75 upright(" m")$. At $75 upright(" m")$, he must
 cover half of the remaining quarter, reaching $87.5 upright(" m")$…
 
-#align(center)[
-  #block(
-    fill: rgb("#f8fafc"),
-    stroke: 1pt + rgb("#cbd5e1"),
-    inset: (x: 16pt, y: 10pt),
-    radius: 6pt,
-    breakable: false,
-  )[
-    #set text(font: "Liberation Mono", size: 9.5pt, fill: rgb("#0f172a"))
-    ```text
-Start                                                       Finish
-0] [100]
-50              75    87.5 93.75 ...
-1/2             3/4     7/8 15/16
-    ```
+#figure(image("figures_en/vol_6/fig_44_achille_tortue.svg", alt: "Zeno’s paradox: convergent geometric series sum of Achilles and the tortoise"),
+  caption: [
+    Zeno's paradox: convergent geometric series sum of Achilles and the
+    tortoise
   ]
-]
+)
 
 At each step $n$, the distance traveled as a fraction of the total track
 is: $ u_n = 1 - 1 / 2^n . $
@@ -35040,9 +31858,9 @@ limit of a sequence].
   $epsilon$, “epsilon”, traditionally denoting an error tolerance as
   tiny as one wishes).
 
-#figure(image("figures/vol_6/fig_44_theoreme_gendarmes.svg", alt: "Le théorème d’encadrement des gendarmes"),
+#figure(image("figures_en/vol_6/fig_44_theoreme_gendarmes.svg", alt: "The squeeze theorem (two policemen and a drunk)"),
   caption: [
-    Le théorème d'encadrement des gendarmes
+    The squeeze theorem (two policemen and a drunk)
   ]
 )
 
@@ -35054,10 +31872,7 @@ sequence $1 + 1 / n$ approaches $- 5$, but its limit is not $- 5$! They
 must approach $L$ #strong[as closely as one wishes], and they must
 #strong[stay there forever].
 
-#principe(title: [Définition Fondamentale])[
-#strong[📐 Definition --- Finite limit (convergent sequence).
-]
- We say
+#principe(title: [Definition — Finite limit (convergent sequence).])[We say
 that a sequence $\(u_n\)$ has the real number $L$ as its limit when:
 #strong[Every open interval containing $L$ contains all terms of the
 sequence from a certain rank onward.] We then write:
@@ -35065,6 +31880,7 @@ $ lim_(n arrow.r + oo) u_n = L . $ A sequence that has a finite real
 limit $L$ is said to be #strong[convergent]. Otherwise, it is said to be
 #strong[divergent].
 ]
+
 
 #strong[Geometric and dynamic translation:] Imagine a game between two
 players: a #emph[Challenger] and a #emph[Defender]. 1. The Challenger
@@ -35077,10 +31893,7 @@ target, never leaving it again. If the Defender has a winning strategy
 regardless of the interval imposed at the start, then the sequence
 converges to $L$.
 
-#decouvre(title: [Découverte & Histoire])[
-#strong[💡 Did you know?
-]
- In formalized symbols at the university level,
+#decouvre(title: [Did you know?])[In formalized symbols at the university level,
 this is written with the quantifiers $forall$ (“for all”) and $exists$
 (“there exists”):
 $ forall epsilon > 0\,thick exists N in bb(N)\,thick forall n gt.eq N\,thick\|u_n - L\|< epsilon . $
@@ -35089,17 +31902,13 @@ with open intervals: #emph[“for every open interval $I$ containing $L$,
 there exists an integer $N$ such that for all $n gt.eq N$, $u_n in I$”].
 ]
 
+
 ==== 2.3 Divergent Sequence toward $+ oo$ or $- oo$
 <divergent-sequence-toward-infty-or--infty>
 A sequence does not always converge to a number. It can explode toward
 infinity, or oscillate indefinitely without ever settling down.
 
-#principe(title: [Définition Fondamentale])[
-#strong[📐 Definition --- Infinite limit.
-]
-
-
-- We say that a sequence $\(u_n\)$ has limit $+ oo$ if every interval of
+#principe(title: [Definition — Infinite limit.])[- We say that a sequence $\(u_n\)$ has limit $+ oo$ if every interval of
   the form $\]A\;+ oo\[$ (where $A$ is an arbitrary real number)
   contains all terms of the sequence from a certain rank onward:
   $ lim_(n arrow.r + oo) u_n = + oo . $
@@ -35110,15 +31919,13 @@ infinity, or oscillate indefinitely without ever settling down.
   $ lim_(n arrow.r + oo) u_n = - oo . $
 ]
 
+
 #strong[Concrete meaning:] Set a barrier $A$ as high as you want (a
 billion, ten billion…). From a certain rank $N$ onward, the sequence
 crosses above this barrier and never drops back below it.
 
-#quote_box[
-#strong[⚠️ Caution, trap! --- “Divergent” does not mean “tends to
-infinity”.
-]
- A divergent sequence is simply a sequence that #strong[does
+#alerte(title: [Caution, trap! — “Divergent” does not mean “tends to
+infinity”.])[A divergent sequence is simply a sequence that #strong[does
 not converge] to a finite real number.
 
 - The sequence $u_n = n^2$ diverges to $+ oo$.
@@ -35128,16 +31935,15 @@ not converge] to a finite real number.
   $1$, but has no limit.
 ]
 
+
 ==== 2.4 Uniqueness of the Limit
 <uniqueness-of-the-limit>
-#quote_box[
-#strong[📐 Fundamental Property --- Uniqueness.
-]
- When a sequence
+#principe(title: [Fundamental Property — Uniqueness.])[When a sequence
 $\(u_n\)$ admits a limit (finite or infinite), #strong[this limit is
 unique]. A sequence cannot converge to two distinct numbers at the same
 time.
 ]
+
 
 #emph[Why?] If $u_n$ converged both to $L_1$ and $L_2$ with
 $L_1 eq.not L_2$, we could surround $L_1$ and $L_2$ with two small
@@ -35218,16 +32024,13 @@ The result depends on which component is “stronger”:
   run faster than the denominator?
 + #strong[$0 / 0$] (quotient of two infinitely small quantities).
 
-#quote_box[
-#strong[⚠️ Caution, trap! --- I.F. does not mean “no limit”.
-]
-
-“Indeterminate” does not mean the calculation is impossible or that the
+#alerte(title: [Caution, trap! — I.F. does not mean “no limit”.])[“Indeterminate” does not mean the calculation is impossible or that the
 limit does not exist! It simply means: #emph[“Stop, do not conclude
 immediately: transform the expression to resolve the ambiguity”]. The
 primary technique for polynomials and rational fractions is to
 #strong[factor out the highest-degree term].
 ]
+
 
 #divider()
 
@@ -35235,16 +32038,14 @@ primary technique for polynomials and rational fractions is to
 <fundamental-theorems>
 ==== 5.1 Comparison Theorems
 <comparison-theorems>
-#quote_box[
-#strong[📐 Comparison Theorem (toward infinity).
-]
- Let $\(u_n\)$ and
+#principe(title: [Comparison Theorem (toward infinity).])[Let $\(u_n\)$ and
 $\(v_n\)$ be two sequences such that from a certain rank onward:
 $ u_n gt.eq v_n . $ 1. If $lim_(n arrow.r + oo) v_n = + oo$, then
 $lim_(n arrow.r + oo) u_n = + oo$. 2. If
 $lim_(n arrow.r + oo) u_n = - oo$, then
 $lim_(n arrow.r + oo) v_n = - oo$.
 ]
+
 
 #emph[Mental image:] If your friend $v_n$ climbs toward the sky without
 limit and you are constantly standing on their shoulders
@@ -35253,10 +32054,7 @@ them.
 
 ==== 5.2 The Squeeze Theorem (Sandwich Theorem)
 <the-squeeze-theorem-sandwich-theorem>
-#quote_box[
-#strong[📐 Theorem --- Squeeze Theorem (Theorem of the Gendarmes).
-]
- Let
+#principe(title: [Theorem — Squeeze Theorem (Theorem of the Gendarmes).])[Let
 $\(u_n\)$, $\(v_n\)$, and $\(w_n\)$ be three real sequences. If there
 exists a rank $N$ from which: $ v_n lt.eq u_n lt.eq w_n $ and if
 $lim_(n arrow.r + oo) v_n = lim_(n arrow.r + oo) w_n = L in bb(R)$, then
@@ -35264,32 +32062,13 @@ the sequence $\(u_n\)$ converges and its limit is:
 $ lim_(n arrow.r + oo) u_n = L . $
 ]
 
-#align(center)[
-  #block(
-    fill: rgb("#f8fafc"),
-    stroke: 1pt + rgb("#cbd5e1"),
-    inset: (x: 16pt, y: 10pt),
-    radius: 6pt,
-    breakable: false,
-  )[
-    #set text(font: "Liberation Mono", size: 9.5pt, fill: rgb("#0f172a"))
-    ```text
-w_n (upper officer)
-u_n (trapped suspect)  * converges to L
-v_n (lower officer)
-    ```
-  ]
-]
 
 #emph[Origin of the French name (« Théorème des Gendarmes »):] If two
 police officers ($v_n$ and $w_n$) both converge toward the same police
 station $L$ while keeping the suspect ($u_n$) flanked between them, the
 suspect has no choice but to enter the police station $L$ as well.
 
-#quote_box[
-#strong[✍️ Proof of the Squeeze Theorem.
-]
- Let $I$ be any open interval
+#principe(title: [Proof of the Squeeze Theorem.])[Let $I$ be any open interval
 containing $L$. By definition of an open interval, there exists a real
 number $epsilon > 0$ such that
 $\]L - epsilon thin\;thin L + epsilon\[subset I$. Since $lim v_n = L$,
@@ -35306,56 +32085,40 @@ rank $N$ onward. The sequence $\(u_n\)$ indeed converges to $L$.
 $square.filled.medium$
 ]
 
+
 ==== 5.3 Monotone Convergence Theorem
 <monotone-convergence-theorem>
 This is one of the most profound theorems in analysis: it allows one to
 establish that a sequence converges #strong[without even calculating its
 limit].
 
-#quote_box[
-#strong[📐 Monotone Convergence Theorem.
-]
- 1. Every sequence that is
+#principe(title: [Monotone Convergence Theorem.])[1. Every sequence that is
 #strong[increasing and bounded above] converges to a real limit $L$. 2.
 Every sequence that is #strong[decreasing and bounded below] converges
 to a real limit $L$.
 ]
 
-#align(center)[
-  #block(
-    fill: rgb("#f8fafc"),
-    stroke: 1pt + rgb("#cbd5e1"),
-    inset: (x: 16pt, y: 10pt),
-    radius: 6pt,
-    breakable: false,
-  )[
-    #set text(font: "Liberation Mono", size: 9.5pt, fill: rgb("#0f172a"))
-    ```text
-Ceiling (Upper bound M)
-Lim L ---------------------------
-u_n    .-'""'-.
-'        '-.
-u_0 .-'
-    ```
+
+#figure(image("figures_en/vol_6/fig_44_convergence_monotone.svg", alt: "Monotone convergence theorem: bounded increasing sequence"),
+  caption: [
+    Monotone convergence theorem: bounded increasing sequence
   ]
-]
+)
 
 #emph[Vocabulary review:] - A sequence is #strong[bounded above] by $M$
 if for all $n$, $u_n lt.eq M$. - A sequence is #strong[bounded below] by
 $m$ if for all $n$, $u_n gt.eq m$. - A sequence is #strong[bounded] if
 it is both bounded above and bounded below ($m lt.eq u_n lt.eq M$).
 
-#quote_box[
-#strong[⚠️ Caution, trap! --- The upper bound is not necessarily the
-limit!
-]
- If an increasing sequence $\(u_n\)$ is bounded above by $10$,
+#alerte(title: [Caution, trap! — The upper bound is not necessarily the
+limit!])[If an increasing sequence $\(u_n\)$ is bounded above by $10$,
 the theorem guarantees that it converges to a limit $L$, and that
 $L lt.eq 10$. But the limit $L$ is not necessarily $10$! It could
 converge to $2$, or to $sqrt(3)$, because $10$ is merely one ceiling
 among others. Moreover, an increasing sequence that is not bounded above
 always diverges to $+ oo$.
 ]
+
 
 #divider()
 
@@ -35365,12 +32128,7 @@ The fundamental geometric sequence is defined by $u_n = q^n$ where $q$
 is a fixed real number called the common ratio. Its behavior depends on
 the position of $q$ relative to $- 1$ and $1$.
 
-#quote_box[
-#strong[📐 Theorem --- Limit of $q^n$.
-]
-
-
-- If $q > 1$: $lim_(n arrow.r + oo) q^n = + oo$.
+#principe(title: [Theorem — Limit of $q^n$.])[- If $q > 1$: $lim_(n arrow.r + oo) q^n = + oo$.
 
 - If $q = 1$: the sequence is constantly equal to $1$, so
   $lim_(n arrow.r + oo) q^n = 1$.
@@ -35381,16 +32139,14 @@ the position of $q$ relative to $- 1$ and $1$.
   alternating signs).
 ]
 
+
 ==== Required Baccalaureate Proof (Case $q > 1$)
 <required-baccalaureate-proof-case-q-1>
 This proof relies directly on #strong[Bernoulli's inequality]
 established in Chapter 43: for any real number $a > 0$ and any integer
 $n in bb(N)$, $\(1 + a\)^n gt.eq 1 + n a$.
 
-#quote_box[
-#strong[✍️ Proof (Required knowledge).
-]
- Let $q$ be a real number
+#exemple_resolu(title: [Proof (Required knowledge).])[Let $q$ be a real number
 strictly greater than $1$. Set $a = q - 1$. Since $q > 1$, we have
 $a > 0$. We can therefore write: $q = 1 + a$. According to Bernoulli's
 inequality: $ q^n =\(1 + a\)^n gt.eq 1 + n a . $ Now, since $a > 0$, the
@@ -35399,6 +32155,7 @@ $ lim_(n arrow.r + oo)\(1 + n a\)= + oo . $ By the comparison theorem
 (5.1), since $q^n gt.eq 1 + n a$ for all $n$, we deduce immediately:
 $ lim_(n arrow.r + oo) q^n = + oo . quad square.filled.medium $
 ]
+
 
 #emph[Consequences for the case $0 < q < 1$:] If $0 < q < 1$, set
 $q' = 1 / q > 1$. Then $q^n = frac(1, \(q'\)^n)$. Since
@@ -35426,32 +32183,40 @@ geometric sequence: $ T_n = 20 + 80 times 0.9^n . $ The engine is
 considered cold as soon as its temperature drops below
 $30^compose upright("C")$.
 
-```python
+#align(center)[
+  #block(
+    fill: rgb("#f8fafc"),
+    stroke: 1pt + rgb("#cbd5e1"),
+    inset: (x: 16pt, y: 10pt),
+    radius: 6pt,
+    breakable: false,
+  )[
+    #set text(font: "Liberation Mono", size: 9.5pt, fill: rgb("#0f172a"))
+    ```text
 def engine_threshold(threshold):
-    """Calculates the number of minutes required to fall below the threshold."""
-    n = 0
-    T = 100.0  # T_0 = 20 + 80 = 100 °C
-    while T > threshold:
-        n = n + 1
-        T = 20 + 80 * (0.9 ** n)
-    return n
-
+"""Calculates the number of minutes required to fall below the threshold."""
+n = 0
+T = 100.0  # T_0 = 20 + 80 = 100 °C
+while T > threshold:
+n = n + 1
+T = 20 + 80 * (0.9 ** n)
+return n
 # Test for a threshold of 30 °C
 minutes = engine_threshold(30)
 print(f"The engine drops below 30°C after {minutes} minutes.")
 # Output: 20 minutes (since T_19 ≈ 30.8 °C and T_20 ≈ 29.7 °C)
-```
-
-#methode(title: [Méthode Pas à Pas])[
-#strong[🧭 Method --- Standard structure of a threshold algorithm on the
-Bac:
+    ```
+  ]
 ]
- 1. Initialize the rank counter: `n = 0`. 2. Initialize the
+
+#methode(title: [Method — Standard structure of a threshold algorithm on the
+Bac:])[1. Initialize the rank counter: `n = 0`. 2. Initialize the
 sequence value: `u = u_0`. 3. Condition of the `while` loop: put the
 #strong[opposite] condition of what is sought (continue #emph[while] the
 threshold has not yet been crossed). 4. In the loop body: update the
 term `u` and increment `n = n + 1`. 5. Return `n` at the end.
 ]
+
 
 #divider()
 
@@ -35852,15 +32617,26 @@ $\(u_n\)$ converges to the unique solution of $f\(x\)= x$ in $\[0\;1\]$.
 
 - #strong[44.8:]
 
-```python
+#align(center)[
+  #block(
+    fill: rgb("#f8fafc"),
+    stroke: 1pt + rgb("#cbd5e1"),
+    inset: (x: 16pt, y: 10pt),
+    radius: 6pt,
+    breakable: false,
+  )[
+    #set text(font: "Liberation Mono", size: 9.5pt, fill: rgb("#0f172a"))
+    ```text
 def geometric_threshold(q, A):
-    n = 0
-    u = 1.0
-    while u <= A:
-        n += 1
-        u = q ** n
-    return n
-```
+n = 0
+u = 1.0
+while u <= A:
+n += 1
+u = q ** n
+return n
+    ```
+  ]
+]
 
 #divider()
 
@@ -35954,14 +32730,25 @@ def geometric_threshold(q, A):
     $L = 0.8 L + 1 arrow.l.r.double 0.2 L = 1 arrow.l.r.double L = 5$.
   + Python script:
 
-```python
+#align(center)[
+  #block(
+    fill: rgb("#f8fafc"),
+    stroke: 1pt + rgb("#cbd5e1"),
+    inset: (x: 16pt, y: 10pt),
+    radius: 6pt,
+    breakable: false,
+  )[
+    #set text(font: "Liberation Mono", size: 9.5pt, fill: rgb("#0f172a"))
+    ```text
 n = 0
 u = 2.0
 while abs(u - 5.0) >= 1e-5:
-    n += 1
-    u = 0.8 * u + 1.0
+n += 1
+u = 0.8 * u + 1.0
 print(f"Rank n found: {n}")
-```
+    ```
+  ]
+]
 
 - #strong[44.17:]
   + $u_1 = frac(4, 2\(4\)+ 1) = 4 / 9$.
@@ -36067,10 +32854,9 @@ together', ‘not meeting'. It is the sailor's horizon: the further the
 ship ventures out to sea, the more the horizon seems to offer itself,
 yet the hull can never cross its threshold. In the Cartesian sky,
 asymptotes are the invisible rails guiding the destiny of curves toward
-infinity.”
+infinity.”]
 ]
 
-]
 
 #divider()
 
@@ -36115,22 +32901,12 @@ $ p'\(p\)= frac(f dot.op p, p - f) . $
 
 What happens as the experimenter moves the object closer to the lens?
 
-#align(center)[
-  #block(
-    fill: rgb("#f8fafc"),
-    stroke: 1pt + rgb("#cbd5e1"),
-    inset: (x: 16pt, y: 10pt),
-    radius: 6pt,
-    breakable: false,
-  )[
-    #set text(font: "Liberation Mono", size: 9.5pt, fill: rgb("#0f172a"))
-    ```text
-Object                     Lens                     Screen
-p | p' |
-Light source]               (Focus F)
-    ```
+#figure(image("figures_en/vol_6/fig_45_asymptotes_complete.svg", alt: "Comportement asymptotique aux bornes : asymptotes verticales et horizontales"),
+  caption: [
+    Comportement asymptotique aux bornes : asymptotes verticales et
+    horizontales
   ]
-]
+)
 
 + #strong[If the object is infinitely far away ($p arrow.r + oo$)]:
   $ p'\(p\)= frac(f dot.op p, p\(1 - f\/p\)) = frac(f, 1 - f\/p) arrow.r_(p arrow.r + oo)^() f . $
@@ -36181,16 +32957,14 @@ With functions of a real variable $x mapsto f\(x\)$, the world becomes
 
 ==== 2.2 Finite Limit at Infinity
 <finite-limit-at-infinity>
-#principe(title: [Définition Fondamentale])[
-#strong[📐 Definition --- Finite limit at $+ oo$.
-]
- Let $f$ be a function
+#principe(title: [Definition — Finite limit at $+ oo$.])[Let $f$ be a function
 defined on an interval $\[a thin\;thin + oo\[$, and let $L in bb(R)$. We
 say that #strong[$f$ has limit $L$ at $+ oo$] if: #strong[Every open
 interval containing $L$ contains all values $f\(x\)$ for sufficiently
 large $x$.] We write: $ lim_(x arrow.r + oo) f\(x\)= L . $ (Analogous
 definition at $- oo$ on an interval $\]- oo thin\;thin b\]$).
 ]
+
 
 #emph[Concrete meaning:] Draw a horizontal strip of width $2 epsilon$
 centered on $y = L$, as narrow as you wish. If you move sufficiently far
@@ -36199,16 +32973,14 @@ graph of the function remains trapped inside this strip forever.
 
 ==== 2.3 Infinite Limit at a Point: The Vertical Wall
 <infinite-limit-at-a-point-the-vertical-wall>
-#principe(title: [Définition Fondamentale])[
-#strong[📐 Definition --- Infinite limit at a real point $x_0$.
-]
- Let
+#principe(title: [Definition — Infinite limit at a real point $x_0$.])[Let
 $x_0 in bb(R)$. We say that #strong[$f\(x\)$ tends to $+ oo$ as $x$
 tends to $x_0$] if: #strong[For every real number $A > 0$, the interval
 $\]A thin\;thin + oo\[$ contains all values $f\(x\)$ for $x$
 sufficiently close to $x_0$.] We write:
 $ lim_(x arrow.r x_0) f\(x\)= + oo . $
 ]
+
 
 ==== 2.4 Left-Hand and Right-Hand Limits
 <left-hand-and-right-hand-limits>
@@ -36224,34 +32996,15 @@ archetype is the reciprocal function $f\(x\)= 1 / x$ near zero:
   $- 0.001$. The quotient $1 / x$ is $- 10$\; $- 1000$:
   $ lim_(x arrow.r 0^(-)) 1 / x = - oo . $
 
-#align(center)[
-  #block(
-    fill: rgb("#f8fafc"),
-    stroke: 1pt + rgb("#cbd5e1"),
-    inset: (x: 16pt, y: 10pt),
-    radius: 6pt,
-    breakable: false,
-  )[
-    #set text(font: "Liberation Mono", size: 9.5pt, fill: rgb("#0f172a"))
-    ```text
-x > 0: climbs toward +∞
-x < 0:    /
-plunges to -∞
-    ```
-  ]
-]
-
-#quote_box[
-#strong[📐 Fundamental Theorem --- Existence of the global two-sided
-limit at a point.
-]
- A function $f$ admits a limit $L$ at $x_0$ if and
+#principe(title: [Fundamental Theorem — Existence of the global two-sided
+limit at a point.])[A function $f$ admits a limit $L$ at $x_0$ if and
 only if it admits both a left-hand limit and a right-hand limit at
 $x_0$, and these two limits are #strong[equal]:
 $ lim_(x arrow.r x_0) f\(x\)= L arrow.l.r.double lim_(x arrow.r x_0^(-)) f\(x\)= lim_(x arrow.r x_0^(+)) f\(x\)= L . $
 For $f\(x\)= 1 / x$ at 0, since $+ oo eq.not - oo$, the function has
 #strong[no global two-sided limit] at 0.
 ]
+
 
 #divider()
 
@@ -36260,19 +33013,9 @@ For $f\(x\)= 1 / x$ at 0, since $+ oo eq.not - oo$, the function has
 An asymptote is a line that the curve $cal(C)_f$ approaches arbitrarily
 closely as points on the curve recede toward infinity.
 
-#figure(image("figures/vol_6/fig_45_asymptotes_complete.svg", alt: "Comportement asymptotique aux bornes : asymptotes verticales et horizontales"),
-  caption: [
-    Comportement asymptotique aux bornes : asymptotes verticales et
-    horizontales
-  ]
-)
-
 ==== 3.1 Horizontal Asymptote
 <horizontal-asymptote>
-#principe(title: [Définition Fondamentale])[
-#strong[📐 Definition --- Horizontal asymptote.
-]
- If
+#principe(title: [Definition — Horizontal asymptote.])[If
 $lim_(x arrow.r + oo) f\(x\)= L$ (or if
 $lim_(x arrow.r - oo) f\(x\)= L$), where $L$ is a finite real number,
 then the line $cal(D)$ with equation #strong[$y = L$] is called a
@@ -36280,31 +33023,28 @@ then the line $cal(D)$ with equation #strong[$y = L$] is called a
 neighborhood of $+ oo$ (or $- oo$).
 ]
 
+
 ==== 3.2 Vertical Asymptote
 <vertical-asymptote>
-#principe(title: [Définition Fondamentale])[
-#strong[📐 Definition --- Vertical asymptote.
-]
- If
+#principe(title: [Definition — Vertical asymptote.])[If
 $lim_(x arrow.r a^(+)) f\(x\)= plus.minus oo$ or if
 $lim_(x arrow.r a^(-)) f\(x\)= plus.minus oo$ (where $a in bb(R)$), then
 the line $Delta$ with equation #strong[$x = a$] is called a
 #strong[vertical asymptote] to the curve $cal(C)_f$.
 ]
 
+
 ==== 3.3 Oblique Asymptote
 <oblique-asymptote>
 Sometimes the curve does not level off horizontally, but aligns itself
 along a slanted line with equation $y = a x + b$ with $a eq.not 0$.
 
-#principe(title: [Définition Fondamentale])[
-#strong[📐 Definition --- Oblique asymptote.
-]
- The line $cal(D)$ with
+#principe(title: [Definition — Oblique asymptote.])[The line $cal(D)$ with
 equation #strong[$y = a x + b$] is an oblique asymptote to the curve
 $cal(C)_f$ at $+ oo$ (resp. $- oo$) if:
 $ lim_(x arrow.r + oo) #scale(x: 120%, y: 120%)[\[] f\(x\)-\(a x + b\)#scale(x: 120%, y: 120%)[\]] = 0 quad upright("(resp. at ") - oo upright(")") . $
 ]
+
 
 #emph[Geometric sense:] The vertical distance between the point on the
 curve $M\(x\;f\(x\)\)$ and the point on the line $P\(x\;a x + b\)$
@@ -36317,10 +33057,7 @@ To determine whether the curve $cal(C)_f$ lies #strong[above] or
 #strong[below] its asymptote (horizontal $y = L$ or oblique
 $y = a x + b$), one applies the following universal method:
 
-#methode(title: [Méthode Pas à Pas])[
-#strong[🧭 Method --- Relative position of a curve and an asymptote:
-]
- 1.
+#methode(title: [Method — Relative position of a curve and an asymptote:])[1.
 Compute the difference: $d\(x\)= f\(x\)- y_(upright("asymptote"))$. 2.
 Rigorously study the #strong[sign] of $d\(x\)$:
 
@@ -36333,6 +33070,7 @@ Rigorously study the #strong[sign] of $d\(x\)$:
 - If $d\(x\)= 0$ at a point $x_1$, the curve #strong[intersects /
   crosses] its asymptote at the point of abscissa $x_1$.
 ]
+
 
 #divider()
 
@@ -36352,17 +33090,14 @@ highest-degree term dictates the law to all others.
 - For a fraction: factor out the respective dominant powers from both
   numerator and denominator, then simplify.
 
-#quote_box[
-#strong[⚠️ Caution, trap! --- The sign under the square root at $- oo$.
-]
-
-Always remember that for any real number $x$:
+#alerte(title: [Caution, trap! — The sign under the square root at $- oo$.])[Always remember that for any real number $x$:
 $ sqrt(x^2) =\|x\|= cases(delim: "{", x & upright("if ") x gt.eq 0, - x & upright("if ") x < 0) $
 As $x arrow.r - oo$, $x$ is a #strong[strictly negative] number.
 Consequently:
 $ sqrt(x^2) = - x quad\(upright("and not ") + x upright(" !")\). $ This
 is the single most heavily penalized error on Baccalaureate exams!
 ]
+
 
 ==== Method 2: The Conjugate Expression
 <method-2-the-conjugate-expression>
@@ -36397,26 +33132,20 @@ When the exponential function confronts a polynomial or a power of $x$
 at infinity, the explosive growth of $e^x$ infinitely surpasses any
 polynomial growth.
 
-#quote_box[
-#strong[📐 Theorem --- Comparative growth of the exponential function.
-]
-
-For any natural number $n gt.eq 1$: 1.
+#principe(title: [Theorem — Comparative growth of the exponential function.])[For any natural number $n gt.eq 1$: 1.
 $lim_(x arrow.r + oo) e^x / x = + oo$ $quad$ and more generally $quad$
 $lim_(x arrow.r + oo) e^x / x^n = + oo$ 2.
 $lim_(x arrow.r - oo) x thin e^x = 0$ $quad$ and more generally $quad$
 $lim_(x arrow.r - oo) x^n thin e^x = 0$
 ]
 
+
 #emph[Rule of thumb:] At $+ oo$ as well as at $- oo$, #strong[the
 exponential always dominates any power of $x$].
 
 ==== Required Baccalaureate Proof: $lim_(x arrow.r + oo) e^x / x = + oo$
 <required-baccalaureate-proof-lim_x-to-infty-fracexx-infty>
-#quote_box[
-#strong[✍️ Proof (Required knowledge).
-]
- The goal is to obtain a lower
+#exemple_resolu(title: [Proof (Required knowledge).])[The goal is to obtain a lower
 bound for $e^x$ by a degree-2 polynomial, so that the quotient $e^x / x$
 is bounded below by a degree-1 linear term tending to $+ oo$.
 
@@ -36444,6 +33173,7 @@ theorem] for limits, we conclude irrefutably:
 $ lim_(x arrow.r + oo) e^x / x = + oo . quad square.filled.medium $
 ]
 
+
 #emph[Proof of $lim_(x arrow.r - oo) x e^x = 0$ via change of variable:]
 Set $X = - x$. As $x arrow.r - oo$, we have $X arrow.r + oo$. Then:
 $ x thin e^x =\(- X\)thin e^(- X) = - X / e^X = - 1 / e^X / X . $ Since
@@ -36459,20 +33189,14 @@ A composite function is a cascade: the output of the first machine $f$
 becomes the input of the second machine $g$. This operation is denoted
 $\(g compose f\)\(x\)= g\(f\(x\)\)$.
 
-#quote_box[
-#strong[📐 Theorem --- Limit of a composite function.
-]
- Let $a\,b\,c$
+#principe(title: [Theorem — Limit of a composite function.])[Let $a\,b\,c$
 denote either real numbers, $+ oo$, or $- oo$. If:
 $ lim_(x arrow.r a) f\(x\)= b quad upright("and") quad lim_(y arrow.r b) g\(y\)= c\, $
 then: $ lim_(x arrow.r a) g\(f\(x\)\)= c . $
 ]
 
-#methode(title: [Méthode Pas à Pas])[
-#strong[🧭 Method --- Writing out the limit of a composite on the Bac:
-]
 
-Never compute everything all at once. Clearly separate into two steps by
+#methode(title: [Method — Writing out the limit of a composite on the Bac:])[Never compute everything all at once. Clearly separate into two steps by
 introducing a dummy variable substitution: 1. #emph[Inner step:]
 calculate $lim_(x arrow.r a) f\(x\)= b$. 2. #emph[Outer step:] set
 $X = f\(x\)$, and since $X arrow.r b$, calculate
@@ -36480,14 +33204,12 @@ $lim_(X arrow.r b) g\(X\)= c$. 3. #emph[Conclusion:] By composition of
 limits, $lim_(x arrow.r a) g\(f\(x\)\)= c$.
 ]
 
+
 #divider()
 
 === 7. Traps to Avoid!
 <traps-to-avoid>
-#quote_box[
-#strong[⚠️ Caution, trap! --- Crossing an asymptote.
-]
- A widespread
+#alerte(title: [Caution, trap! — Crossing an asymptote.])[A widespread
 misconception among students is that a curve “is never allowed to touch
 its asymptote”. This is #strong[true for a vertical asymptote] $x = a$
 (because the function is generally undefined there). But it is
@@ -36501,16 +33223,15 @@ asymptote, and crosses this axis at every integer multiple of $pi$
 ($pi\,2 pi\,3 pi dots.h$).
 ]
 
-#quote_box[
-#strong[⚠️ Caution, trap! --- Comparative growth applies only at
-infinity!
-]
- Never say: “$lim_(x arrow.r 0) e^x / x = + oo$ by comparative
+
+#alerte(title: [Caution, trap! — Comparative growth applies only at
+infinity!])[Never say: “$lim_(x arrow.r 0) e^x / x = + oo$ by comparative
 growth”! At 0, the numerator tends to $e^0 = 1$ and the denominator to
 \0. It is a direct quotient of a finite non-zero number by zero
 ($1\/0^(+)$ or $1\/0^(-)$), not comparative growth! Comparative growth
 compares the escape velocity toward infinity.
 ]
+
 
 #divider()
 
@@ -37117,10 +33838,9 @@ reappear suddenly fifty kilometers down the line. It pressed against
 every meter, every millimeter of track without ever lifting its wheels.
 In mathematics, this fidelity to the path is called continuity, and it
 possesses the magical power to guarantee that an equation has a solution
-even when one is incapable of calculating it by hand.”
+even when one is incapable of calculating it by hand.”]
 ]
 
-]
 
 #divider()
 
@@ -37154,7 +33874,7 @@ the mountain at $2200 upright(" meters")$. Can you state with certainty
 that at some precise moment during the morning, her altimeter read
 exactly $1500 upright(" meters")$?
 
-#figure(image("figures/vol_6/fig_46_tvi_continuite.svg", alt: "Théorème des Valeurs Intermédiaires (TVI) sur un intervalle fermé"),
+#figure(image("figures_en/vol_6/fig_46_tvi_continuite.svg", alt: "Théorème des Valeurs Intermédiaires (TVI) sur un intervalle fermé"),
   caption: [
     Théorème des Valeurs Intermédiaires (TVI) sur un intervalle fermé
   ]
@@ -37176,25 +33896,11 @@ machine directly charges you €$4.00$. The price took an #strong[abrupt
 jump]. It never took the value €$2.87$ or €$3.50$. The pricing function
 is #strong[discontinuous].
 
-#align(center)[
-  #block(
-    fill: rgb("#f8fafc"),
-    stroke: 1pt + rgb("#cbd5e1"),
-    inset: (x: 16pt, y: 10pt),
-    radius: 6pt,
-    breakable: false,
-  )[
-    #set text(font: "Liberation Mono", size: 9.5pt, fill: rgb("#0f172a"))
-    ```text
-Fee (€)
-4                [)
-Jump
-2  [)
-Time (h)
-0             1           2
-    ```
+#figure(image("figures_en/vol_6/fig_46_continu_vs_discontinu.svg", alt: "Continuité mathématique : trajectoire continue vs saut de palier"),
+  caption: [
+    Continuité mathématique : trajectoire continue vs saut de palier
   ]
-]
+)
 
 The fundamental question of mathematical analysis is this: #emph[what
 mathematical guarantees do we possess when a curve has no breaks?]
@@ -37210,13 +33916,11 @@ lifting the pencil. Yet how can a computer or an algebraic equation
 “know” whether a pencil was lifted? Mathematicians express this
 kinematic intuition through an equality of limits:
 
-#principe(title: [Définition Fondamentale])[
-#strong[📐 Definition --- Continuity at a point.
-]
- Let $f$ be a function
+#principe(title: [Definition — Continuity at a point.])[Let $f$ be a function
 defined on an open interval containing $x_0$. We say that #strong[$f$ is
 continuous at $x_0$] if: $ lim_(x arrow.r x_0) f\(x\)= f\(x_0\). $
 ]
+
 
 #strong[Deconstruction of the condition:] For this equality to hold,
 three conditions must be satisfied simultaneously: 1. $f\(x_0\)$ exists
@@ -37232,13 +33936,11 @@ at $x_0$.
 
 ==== 2.2 Continuity on an Interval
 <continuity-on-an-interval>
-#principe(title: [Définition Fondamentale])[
-#strong[📐 Definition --- Continuity on an interval.
-]
- A function $f$ is
+#principe(title: [Definition — Continuity on an interval.])[A function $f$ is
 said to be #strong[continuous on an interval $I$] if it is continuous at
 every point $x_0 in I$.
 ]
+
 
 ==== 2.3 Continuity of Standard Functions
 <continuity-of-standard-functions>
@@ -37263,19 +33965,13 @@ continuous functions.
 
 ==== 2.4 The Vital Link: Differentiability and Continuity
 <the-vital-link-differentiability-and-continuity>
-#quote_box[
-#strong[📐 Fundamental Theorem --- Differentiable implies continuous.
-]
-
-If a function $f$ is differentiable at a point $x_0$, then it is
+#principe(title: [Fundamental Theorem — Differentiable implies continuous.])[If a function $f$ is differentiable at a point $x_0$, then it is
 #strong[necessarily continuous] at $x_0$. If $f$ is differentiable on an
 interval $I$, then it is continuous on $I$.
 ]
 
-#quote_box[
-#strong[✍️ Proof (Required knowledge).
-]
- Assume $f$ is differentiable at
+
+#exemple_resolu(title: [Proof (Required knowledge).])[Assume $f$ is differentiable at
 $x_0$. This means the difference quotient has a finite limit denoted
 $f'\(x_0\)$:
 $ lim_(x arrow.r x_0) frac(f\(x\)- f\(x_0\), x - x_0) = f'\(x_0\). $ For
@@ -37287,10 +33983,8 @@ We immediately deduce: $ lim_(x arrow.r x_0) f\(x\)= f\(x_0\). $ The
 function $f$ is therefore continuous at $x_0$. $square.filled.medium$
 ]
 
-#quote_box[
-#strong[⚠️ Caution, trap! --- The converse is FALSE!
-]
- A function can be
+
+#alerte(title: [Caution, trap! — The converse is FALSE!])[A function can be
 perfectly continuous at a point without being differentiable there.
 #strong[Classic Counterexample \#1: The absolute value function
 $f\(x\)=\|x\|$ at 0.] Its graph forms a sharp corner (a V). It is drawn
@@ -37306,6 +34000,7 @@ $lim_(x arrow.r 0)\|x\|= 0 =\|0\|$. However, its difference quotient at
   (vertical tangent).
 ]
 
+
 #divider()
 
 === 3. The Intermediate Value Theorem (IVT)
@@ -37316,15 +34011,13 @@ The Czech mathematician Bernard Bolzano (1817) and the French
 mathematician Augustin-Louis Cauchy (1821) provided the first rigorous
 proofs of this clear geometric principle:
 
-#quote_box[
-#strong[📐 Intermediate Value Theorem (IVT).
-]
- Let $f$ be a function that
+#principe(title: [Intermediate Value Theorem (IVT).])[Let $f$ be a function that
 is #strong[continuous] on a closed interval $\[a thin\;thin b\]$. For
 every real number $k$ between $f\(a\)$ and $f\(b\)$, there exists
 #strong[at least one real number $c$] belonging to the interval
 $\[a thin\;thin b\]$ such that: $ f\(c\)= k . $
 ]
+
 
 #emph[Crucial remarks:] - The theorem asserts the #strong[existence] of
 at least one solution, but it does not specify the exact count: on the
@@ -37336,14 +34029,12 @@ without ever touching it!
 <the-special-case-of-zero-bolzanos-theorem>
 This is the most common form in practical applications:
 
-#quote_box[
-#strong[📐 Corollary --- Sign change.
-]
- Let $f$ be a continuous function
+#principe(title: [Corollary — Sign change.])[Let $f$ be a continuous function
 on $\[a thin\;thin b\]$. If $f\(a\)$ and $f\(b\)$ have #strong[opposite
 signs] (that is, $f\(a\)times f\(b\)lt.eq 0$), then there exists at
 least one real number $c in\[a thin\;thin b\]$ such that $f\(c\)= 0$.
 ]
+
 
 #emph[In plain words:] To pass from a negative altitude (underwater) to
 a positive altitude (in the air), a continuous path must inevitably
@@ -37359,10 +34050,7 @@ one must prevent the curve from reversing direction. We thus require the
 function to be #strong[strictly monotonic] (always strictly increasing
 or always strictly decreasing).
 
-#quote_box[
-#strong[📐 Theorem --- Corollary of the IVT (Bijection Theorem).
-]
- Let
+#principe(title: [Theorem — Corollary of the IVT (Bijection Theorem).])[Let
 $f$ be a function defined on an interval $I =\[a thin\;thin b\]$. If: 1.
 $f$ is #strong[continuous] on $\[a thin\;thin b\]$\; 2. $f$ is
 #strong[strictly monotonic] (strictly increasing or strictly decreasing)
@@ -37372,6 +34060,7 @@ Then, for every real number $k$ between $f\(a\)$ and $f\(b\)$, the
 equation: $ f\(x\)= k $ admits #strong[a unique solution] $alpha$ in the
 interval $\[a thin\;thin b\]$.
 ]
+
 
 ==== Extension to Open or Infinite Intervals
 <extension-to-open-or-infinite-intervals>
@@ -37385,10 +34074,7 @@ $k in ]lim_(x arrow.r a^(+)) f \( x \) thin \; thin lim_(x arrow.r b^(-)) f \( x
 the equation $f\(x\)= k$ admits a unique solution in
 $\]a thin\;thin b\[$.
 
-#methode(title: [Méthode Pas à Pas])[
-#strong[🧭 Method --- Canonical Baccalaureate solution layout:
-]
- To
+#methode(title: [Method — Canonical Baccalaureate solution layout:])[To
 justify that the equation $f\(x\)= k$ admits a unique solution $alpha$
 on an interval $I$: 1. #strong[Continuity:] State that $f$ is continuous
 on $I$ (e.g., as a sum, product, or quotient of standard functions, or
@@ -37402,6 +34088,7 @@ $k in\[f\(a\)thin\;thin f\(b\)\]$ (or $\]lim_a f thin\;thin lim_b f\[$).
 the intermediate value theorem (bijection theorem), the equation
 $f\(x\)= k$ admits a unique solution $alpha$ in $I$\.”]
 ]
+
 
 #divider()
 
@@ -37431,6 +34118,20 @@ $m = frac(a + b, 2)$. 2. Examine the sign of $f\(m\)$:
   the uncertainty on the root is reduced to $frac(b - a, 2^n)$.
 ]
 
+#methode(title: [Step-by-Step Method — Root Finding by Bisection
+(Dichotomy)])[- Step 0: \[ α \] Width L
+- Step 1: \[ α \] Width L/2
+- Step 2: \[ α \] Width L/4
+]
+
+
+==== 5.2 Python Implementation
+<python-implementation>
+Consider the equation $x^3 + x - 1 = 0$ on $\[0 thin\;thin 1\]$. The
+function $f\(x\)= x^3 + x - 1$ is continuous, strictly increasing, with
+$f\(0\)= - 1 < 0$ and $f\(1\)= 1 > 0$. There exists a unique solution
+$alpha in\[0 thin\;thin 1\]$.
+
 #align(center)[
   #block(
     fill: rgb("#f8fafc"),
@@ -37441,44 +34142,29 @@ $m = frac(a + b, 2)$. 2. Examine the sign of $f\(m\)$:
   )[
     #set text(font: "Liberation Mono", size: 9.5pt, fill: rgb("#0f172a"))
     ```text
-Step 0:  [ α ]   Width L
-Step 1:  [ α ]                    Width L/2
-Step 2:            [ α ]                    Width L/4
-    ```
-  ]
-]
-
-==== 5.2 Python Implementation
-<python-implementation>
-Consider the equation $x^3 + x - 1 = 0$ on $\[0 thin\;thin 1\]$. The
-function $f\(x\)= x^3 + x - 1$ is continuous, strictly increasing, with
-$f\(0\)= - 1 < 0$ and $f\(1\)= 1 > 0$. There exists a unique solution
-$alpha in\[0 thin\;thin 1\]$.
-
-```python
 def f(x):
-    """Function whose zero is sought."""
-    return x**3 + x - 1
-
+"""Function whose zero is sought."""
+return x**3 + x - 1
 def bisection(a, b, precision):
-    """
-    Returns an interval [a, b] bracketing the root of f(x) = 0
-    with a width b - a <= precision.
-    """
-    while (b - a) > precision:
-        m = (a + b) / 2
-        # If f(a) and f(m) have opposite signs, root is in [a, m]
-        if f(a) * f(m) <= 0:
-            b = m
-        else:
-            a = m
-    return a, b
-
+"""
+Returns an interval [a, b] bracketing the root of f(x) = 0
+with a width b - a <= precision.
+"""
+while (b - a) > precision:
+m = (a + b) / 2
+# If f(a) and f(m) have opposite signs, root is in [a, m]
+if f(a) * f(m) <= 0:
+b = m
+else:
+a = m
+return a, b
 # Search for a bracketing to within 10^-4
 lower, upper = bisection(0.0, 1.0, 1e-4)
 print(f"Bracketing obtained: {lower:.5f} < alpha < {upper:.5f}")
 # Output: 0.68231 < alpha < 0.68237
-```
+    ```
+  ]
+]
 
 #emph[Remarkable speed:] To achieve a precision of $10^(- 6)$ (one
 millionth) starting from an initial interval of length 1: Since
@@ -37495,10 +34181,7 @@ is generated by a recurrence relation $u_(n + 1) = f\(u_n\)$?
 
 Here is where continuity demonstrates its full power!
 
-#quote_box[
-#strong[📐 Fixed-Point Theorem.
-]
- Let $\(u_n\)$ be a sequence defined by
+#principe(title: [Fixed-Point Theorem.])[Let $\(u_n\)$ be a sequence defined by
 $u_0$ and the recurrence relation $u_(n + 1) = f\(u_n\)$ for all
 $n in bb(N)$. If: 1. The sequence $\(u_n\)$ #strong[converges] to a real
 number $L$\; 2. The function $f$ is #strong[continuous] at $L$\;
@@ -37507,10 +34190,8 @@ Then the limit $L$ is a solution to the equation: $ f\(L\)= L . $ Such a
 number $L$ is called a #strong[fixed point] of the function $f$.
 ]
 
-#quote_box[
-#strong[✍️ Proof.
-]
- Since $lim_(n arrow.r + oo) u_n = L$, the shifted
+
+#exemple_resolu(title: [Proof.])[Since $lim_(n arrow.r + oo) u_n = L$, the shifted
 sequence $\(u_(n + 1)\)$ clearly converges to the same limit:
 $lim_(n arrow.r + oo) u_(n + 1) = L$. On the other hand, since $f$ is
 continuous at $L$, by composite limits:
@@ -37520,11 +34201,12 @@ both sides of the equality, we necessarily obtain:
 $ L = f\(L\). quad square.filled.medium $
 ]
 
+
 #emph[Geometric interpretation (the cobweb / staircase diagram):] The
 limit $L$ is the $x$-coordinate of an intersection point between the
 function curve $y = f\(x\)$ and the main diagonal line #strong[$y = x$].
 
-#figure(image("figures/vol_6/fig_46_methode_escalier_cobweb.svg", alt: "Méthode de l’escalier (Cobweb) : itération graphique de la suite u_(n+1) = f(u_n)"),
+#figure(image("figures_en/vol_6/fig_46_methode_escalier_cobweb.svg", alt: "Méthode de l’escalier (Cobweb) : itération graphique de la suite u_(n+1) = f(u_n)"),
   caption: [
     Méthode de l'escalier (Cobweb) : itération graphique de la suite
     u\_(n+1) = f(u\_n)
@@ -37535,10 +34217,7 @@ function curve $y = f\(x\)$ and the main diagonal line #strong[$y = x$].
 
 === 7. Traps to Avoid!
 <traps-to-avoid-1>
-#quote_box[
-#strong[⚠️ Caution, trap! --- Forgetting strict monotonicity.
-]
- If you
+#alerte(title: [Caution, trap! — Forgetting strict monotonicity.])[If you
 state only that “$f$ is continuous on $\[a\;b\]$ and $k$ lies between
 $f\(a\)$ and $f\(b\)$”, the IVT guarantees only the existence of
 #strong[at least one] solution. To assert that there is #strong[exactly
@@ -37546,16 +34225,15 @@ one], explicit mention of #strong[strict monotonicity] is absolutely
 essential. Omitting it results in lost points on exams.
 ]
 
-#quote_box[
-#strong[⚠️ Caution, trap! --- Non-continuous functions.
-]
- Consider the
+
+#alerte(title: [Caution, trap! — Non-continuous functions.])[Consider the
 function $f\(x\)= 1 / x$ on $\[- 1 thin\;thin 1\]\\{ 0 }$. We have
 $f\(- 1\)= - 1 < 0$ and $f\(1\)= 1 > 0$. Yet the equation $f\(x\)= 0$
 has #strong[no solution]! Why does the IVT fail to apply? Because the
 function is #strong[not continuous at 0] (it is not even defined there).
 The thread is severed in the middle.
 ]
+
 
 #divider()
 
@@ -38055,19 +34733,29 @@ places compared to bisection (quadratic convergence).
 
 - #strong[46.8:]
 
-```python
+#align(center)[
+  #block(
+    fill: rgb("#f8fafc"),
+    stroke: 1pt + rgb("#cbd5e1"),
+    inset: (x: 16pt, y: 10pt),
+    radius: 6pt,
+    breakable: false,
+  )[
+    #set text(font: "Liberation Mono", size: 9.5pt, fill: rgb("#0f172a"))
+    ```text
 def f(x):
-    return x**2 - 2
-
+return x**2 - 2
 a, b = 1.0, 2.0
 while (b - a) > 1e-3:
-    m = (a + b) / 2
-    if f(a) * f(m) <= 0:
-        b = m
-    else:
-        a = m
+m = (a + b) / 2
+if f(a) * f(m) <= 0:
+b = m
+else:
+a = m
 print(f"sqrt(2) ≈ {(a + b)/2:.4f}")
-```
+    ```
+  ]
+]
 
 #divider()
 
@@ -38118,21 +34806,31 @@ print(f"sqrt(2) ≈ {(a + b)/2:.4f}")
     $alpha in\[0 thin\;thin 1\]$.
   + Python script:
 
-```python
+#align(center)[
+  #block(
+    fill: rgb("#f8fafc"),
+    stroke: 1pt + rgb("#cbd5e1"),
+    inset: (x: 16pt, y: 10pt),
+    radius: 6pt,
+    breakable: false,
+  )[
+    #set text(font: "Liberation Mono", size: 9.5pt, fill: rgb("#0f172a"))
+    ```text
 import math
 def h(x):
-    return math.exp(-x) - x
-
+return math.exp(-x) - x
 a, b = 0.0, 1.0
 while (b - a) > 1e-6:
-    m = (a + b) / 2
-    if h(a) * h(m) <= 0:
-        b = m
-    else:
-        a = m
+m = (a + b) / 2
+if h(a) * h(m) <= 0:
+b = m
+else:
+a = m
 print(f"Intersection point alpha ≈ {(a + b)/2:.6f}")
 # alpha ≈ 0.567143 (Omega constant)
-```
+    ```
+  ]
+]
 
 - #strong[46.12:]
 
@@ -38248,21 +34946,31 @@ print(f"Intersection point alpha ≈ {(a + b)/2:.6f}")
 
   + Python script:
 
-```python
+#align(center)[
+  #block(
+    fill: rgb("#f8fafc"),
+    stroke: 1pt + rgb("#cbd5e1"),
+    inset: (x: 16pt, y: 10pt),
+    radius: 6pt,
+    breakable: false,
+  )[
+    #set text(font: "Liberation Mono", size: 9.5pt, fill: rgb("#0f172a"))
+    ```text
 def f(x):
-    return x**2 - 2
+return x**2 - 2
 def f_prime(x):
-    return 2*x
-
+return 2*x
 x = 1.0
 for i in range(5):
-    x = x - f(x) / f_prime(x)
-    print(f"Step {i+1}: x = {x:.12f}")
+x = x - f(x) / f_prime(x)
+print(f"Step {i+1}: x = {x:.12f}")
 # Step 1: 1.500000000000
 # Step 2: 1.416666666667
 # Step 3: 1.414215686275
 # Step 4: 1.414213562375 (12 exact decimals in 4 steps!)
-```
+    ```
+  ]
+]
 
 #block[
 #set enum(numbering: "1.", start: 2)
@@ -38303,10 +35011,9 @@ gearing up the effort from pedal to rear wheel: each speed multiplies
 the preceding one. Look at a ceramic bowl catching rainwater without
 losing a drop: its upward-facing contour is a convex curve, and it is
 the acceleration of its slope that decides whether it gathers or
-spills.”
+spills.”]
 ]
 
-]
 
 #divider()
 
@@ -38352,6 +35059,13 @@ crankset and a small 25-tooth cog on the rear wheel.
   each rotation of the wheel propels the bicycle forward by a distance
   $z = 2.10 times y$ meters.
 
+#figure(image("figures_en/vol_6/fig_47_convexite_inflexion.svg", alt: "Convexité, concavité et point d’inflexion : position relative des tangentes"),
+  caption: [
+    Convexité, concavité et point d'inflexion : position relative des
+    tangentes
+  ]
+)
+
 If the cyclist presses slightly faster on the pedals (variation
 $Delta x$):
 
@@ -38387,13 +35101,6 @@ bell jar placed upside down: rainwater slides down its sides and runs
 off. A secant chord stays beneath the bell, and a tangent line remains
 above it. This is a #strong[concave] curve.
 
-#figure(image("figures/vol_6/fig_47_convexite_inflexion.svg", alt: "Convexité, concavité et point d’inflexion : position relative des tangentes"),
-  caption: [
-    Convexité, concavité et point d'inflexion : position relative des
-    tangentes
-  ]
-)
-
 How can the derivative distinguish between these two shapes? How can a
 single equation predict whether a mountain hairpin tightens or flattens
 out? This is the role of the #strong[second derivative].
@@ -38417,24 +35124,18 @@ out? This is the role of the #strong[second derivative].
 
 ==== 2.2 The Fundamental Theorem
 <the-fundamental-theorem>
-#quote_box[
-#strong[📐 Theorem --- Derivative of a composite function (Chain Rule).
-]
-
-Let $u$ be a function differentiable on an interval $I$, and let $g$ be
+#principe(title: [Theorem — Derivative of a composite function (Chain Rule).])[Let $u$ be a function differentiable on an interval $I$, and let $g$ be
 a function differentiable on an interval $J$ containing $u\(I\)$. Then
 the composite function $f = g compose u$ is differentiable on the
 interval $I$, and for every real number $x in I$:
 $ \(g compose u\)'\(x\)= u'\(x\)times g' #scale(x: 120%, y: 120%)[\(] u\(x\)#scale(x: 120%, y: 120%)[\)] . $
 ]
 
+
 #emph[Spoken aloud:] “The derivative of $g\(u\)$ is $u'$ multiplied by
 $g'$ evaluated at $u$\.”
 
-#quote_box[
-#strong[✍️ Idea of the proof.
-]
- Let $x_0 in I$. Form the difference
+#exemple_resolu(title: [Idea of the proof.])[Let $x_0 in I$. Form the difference
 quotient of the composite function between $x$ and $x_0$:
 $ frac(g\(u\(x\)\)- g\(u\(x_0\)\), x - x_0) . $ If
 $u\(x\)eq.not u\(x_0\)$ in a neighborhood of $x_0$, we can cleverly
@@ -38456,6 +35157,7 @@ As $x arrow.r x_0$:
   $ \(g compose u\)'\(x_0\)= g' #scale(x: 120%, y: 120%)[\(] u\(x_0\)#scale(x: 120%, y: 120%)[\)] times u'\(x_0\)= u'\(x_0\)dot.op g' #scale(x: 120%, y: 120%)[\(] u\(x_0\)#scale(x: 120%, y: 120%)[\)] . quad square.filled.medium $
 ]
 
+
 #divider()
 
 === 3. The Three Powerhouse Formulas of the Baccalaureate
@@ -38469,15 +35171,13 @@ three primary functions:
 Take $g\(y\)= e^y$. We know that $g'\(y\)= e^y$. Applying the general
 formula $\(g compose u\)' = u' dot.op g'\(u\)$:
 
-#principe(title: [Définition Fondamentale])[
-#strong[📐 Property --- Derivative of composite exponential.
-]
- Let $u$ be
+#principe(title: [Property — Derivative of composite exponential.])[Let $u$ be
 a function differentiable on an interval $I$. The function
 $f : x mapsto e^(u\(x\))$ is differentiable on $I$, and for all
 $x in I$:
 $ upright(bold(#scale(x: 120%, y: 120%)[\(] e^(u\(x\)) #scale(x: 120%, y: 120%)[\)]' = u'\(x\)thin e^(u\(x\)))) . $
 ]
+
 
 #emph[Lightning example:] Let $f\(x\)= e^(- 3 x^2 + 5 x)$. Here
 $u\(x\)= - 3 x^2 + 5 x$, so $u'\(x\)= - 6 x + 5$. We apply the rule
@@ -38488,39 +35188,33 @@ directly: $f'\(x\)=\(- 6 x + 5\)e^(- 3 x^2 + 5 x)$.
 Take $g\(y\)= sqrt(y)$ defined for $y > 0$. Its derivative is
 $g'\(y\)= frac(1, 2 sqrt(y))$.
 
-#principe(title: [Définition Fondamentale])[
-#strong[📐 Property --- Derivative of composite square root.
-]
- Let $u$ be
+#principe(title: [Property — Derivative of composite square root.])[Let $u$ be
 a function differentiable and #strong[strictly positive] on an interval
 $I$. The function $f : x mapsto sqrt(u\(x\))$ is differentiable on $I$,
 and for all $x in I$:
 $ upright(bold(#scale(x: 120%, y: 120%)[\(] sqrt(u\(x\)) #scale(x: 120%, y: 120%)[\)]' = frac(u'\(x\), 2 sqrt(u\(x\))))) . $
 ]
 
-#quote_box[
-#strong[⚠️ Caution, trap! --- The condition $u\(x\)> 0$.
-]
- The function
+
+#alerte(title: [Caution, trap! — The condition $u\(x\)> 0$.])[The function
 $sqrt(u\(x\))$ is defined whenever $u\(x\)gt.eq 0$, but it is
 #strong[differentiable] only where $u\(x\)> 0$ (strictly positive). If
 $u\(x_0\)= 0$, the curve typically displays a vertical half-tangent at
 $x_0$, and the denominator $2 sqrt(u\(x\))$ would vanish!
 ]
 
+
 ==== 3.3 Derivative of $\(u\(x\)\)^n$
 <derivative-of-uxn>
 Take $g\(y\)= y^n$ with $n in bb(Z)^(*)$. Its derivative is
 $g'\(y\)= n y^(n - 1)$.
 
-#principe(title: [Définition Fondamentale])[
-#strong[📐 Property --- Derivative of composite power.
-]
- Let $u$ be a
+#principe(title: [Property — Derivative of composite power.])[Let $u$ be a
 function differentiable on an interval $I$. For any non-zero integer
 $n gt.eq 1$ (or $n < 0$ on intervals where $u\(x\)eq.not 0$):
 $ upright(bold(#scale(x: 120%, y: 120%)[\(] u^n #scale(x: 120%, y: 120%)[\)]' = n thin u'\(x\)thin #scale(x: 120%, y: 120%)[\(] u\(x\)#scale(x: 120%, y: 120%)[\)]^(n - 1))) . $
 ]
+
 
 #emph[Fundamental special case:] For $n = - 1$, the formula gives the
 derivative of the reciprocal:
@@ -38577,10 +35271,7 @@ gravitation or vehicle braking dynamics.
 <convexity-the-bowl-the-chords-and-the-tangents>
 ==== 5.1 Fundamental Geometric Definition
 <fundamental-geometric-definition>
-#quote_box[
-#strong[📐 Geometric Definition --- Convex / Concave function.
-]
- Let $f$
+#principe(title: [Geometric Definition — Convex / Concave function.])[Let $f$
 be a function defined on an interval $I$.
 
 - We say that $f$ is #strong[convex] on $I$ if, for any two points $A$
@@ -38592,6 +35283,7 @@ be a function defined on an interval $I$.
   #strong[below or on] the curve.
 ]
 
+
 #emph[Practical remark:] A function $f$ is concave if and only if $- f$
 is convex.
 
@@ -38601,10 +35293,7 @@ For a twice-differentiable function, the syllabus establishes a
 magnificent triple equivalence connecting chord geometry, tangent
 placement, and differential calculus:
 
-#quote_box[
-#strong[📐 Fundamental Theorem --- Characterizations of convexity.
-]
- Let
+#principe(title: [Fundamental Theorem — Characterizations of convexity.])[Let
 $f$ be a twice-differentiable function on an interval $I$. The following
 statements are #strong[strictly equivalent]: 1. $f$ is #strong[convex]
 on $I$\; 2. The derivative function $f'$ is #strong[increasing] on $I$\;
@@ -38613,18 +35302,17 @@ on $I$\; 2. The derivative function $f'$ is #strong[increasing] on $I$\;
 #strong[above all its tangent lines].
 ]
 
+
 And symmetrically for concavity:
 
-#quote_box[
-#strong[📐 Theorem --- Characterizations of concavity.
-]
- Let $f$ be twice
+#principe(title: [Theorem — Characterizations of concavity.])[Let $f$ be twice
 differentiable on an interval $I$. The following statements are
 equivalent: 1. $f$ is #strong[concave] on $I$\; 2. The derivative
 function $f'$ is #strong[decreasing] on $I$\; 3. For all $x in I$, the
 second derivative is non-positive: #strong[$f''\(x\)lt.eq 0$]\; 4. The
 curve $cal(C)_f$ lies entirely #strong[below all its tangent lines].
 ]
+
 
 ==== 5.3 Convexity Inequalities
 <convexity-inequalities>
@@ -38648,30 +35336,11 @@ high-school inequality:
 
 #quote_box[
 #strong[📐 Remarkable Convexity Inequality --- The exponential above its
-tangent:
-]
- For every real number $x in bb(R)$:
+tangent:] For every real number $x in bb(R)$:
 $ upright(bold(e^x gt.eq x + 1)) . $ With equality if and only if
 $x = 0$.
 ]
 
-#align(center)[
-  #block(
-    fill: rgb("#f8fafc"),
-    stroke: 1pt + rgb("#cbd5e1"),
-    inset: (x: 16pt, y: 10pt),
-    radius: 6pt,
-    breakable: false,
-  )[
-    #set text(font: "Liberation Mono", size: 9.5pt, fill: rgb("#0f172a"))
-    ```text
-y                         /  y = e^x (convex)
-y = x + 1 (tangent at 0)
-1                   * /
-1                0
-    ```
-  ]
-]
 
 This inequality allows one to prove in two lines that
 $lim_(x arrow.r + oo) e^x = + oo$, since $e^x gt.eq x + 1 arrow.r + oo$.
@@ -38694,10 +35363,7 @@ This transition moment is an #strong[inflection point].
 
 ==== 6.1 Geometric Definition
 <geometric-definition>
-#principe(title: [Définition Fondamentale])[
-#strong[📐 Definition --- Inflection point.
-]
- Let $f$ be a function
+#principe(title: [Definition — Inflection point.])[Let $f$ be a function
 differentiable on an interval $I$. An #strong[inflection point] is any
 point
 $A #scale(x: 120%, y: 120%)[\(] x_0 thin\;thin f\(x_0\)#scale(x: 120%, y: 120%)[\)]$
@@ -38705,23 +35371,19 @@ on the curve $cal(C)_f$ where the curve #strong[crosses its tangent
 line].
 ]
 
+
 ==== 6.2 Characterization via the Second Derivative
 <characterization-via-the-second-derivative>
-#quote_box[
-#strong[📐 Fundamental Theorem --- Necessary and sufficient condition
-for inflection.
-]
- Let $f$ be a twice-differentiable function on an
+#principe(title: [Fundamental Theorem — Necessary and sufficient condition
+for inflection.])[Let $f$ be a twice-differentiable function on an
 interval $I$. The point
 $A #scale(x: 120%, y: 120%)[\(] x_0 thin\;thin f\(x_0\)#scale(x: 120%, y: 120%)[\)]$
 is an #strong[inflection point] if and only if: #strong[The second
 derivative $f''$ vanishes at $x_0$ AND CHANGES SIGN.]
 ]
 
-#quote_box[
-#strong[⚠️ Caution, trap! --- Vanishing alone is NOT SUFFICIENT!
-]
- This
+
+#alerte(title: [Caution, trap! — Vanishing alone is NOT SUFFICIENT!])[This
 is a favorite trap on Baccalaureate exams. If $f''\(x_0\)= 0$, this does
 #strong[not guarantee] that $x_0$ is an inflection point! One must
 imperatively check that $f''$ #strong[changes sign] (from $+$ to $-$ or
@@ -38738,17 +35400,13 @@ $f\(x\)= x^4$.
   0!]
 ]
 
+
 #divider()
 
 === 7. Traps to Avoid!
 <traps-to-avoid-2>
-#quote_box[
-#strong[⚠️ Caution, trap! --- Forgetting $u'\(x\)$ in composite
-derivatives.
-]
-
-
-- Writing $(e^(5 x))' = e^(5 x)$ is false! The correct answer is
+#alerte(title: [Caution, trap! — Forgetting $u'\(x\)$ in composite
+derivatives.])[- Writing $(e^(5 x))' = e^(5 x)$ is false! The correct answer is
   $5 e^(5 x)$.
 
 - Writing $(sqrt(x^2 + 1))' = frac(1, 2 sqrt(x^2 + 1))$ is false! The
@@ -38760,12 +35418,8 @@ derivatives.
   #strong[you must bring $u'\(x\)$ out in front].
 ]
 
-#quote_box[
-#strong[⚠️ Caution, trap! --- Confusing monotonicity with convexity.
-]
 
-
-- A function can be #strong[increasing and convex] (e.g., $e^x$ on
+#alerte(title: [Caution, trap! — Confusing monotonicity with convexity.])[- A function can be #strong[increasing and convex] (e.g., $e^x$ on
   $bb(R)$, $x^2$ on $\[0\;+ oo\[$).
 
 - A function can be #strong[increasing and concave] (e.g., $sqrt(x)$ on
@@ -38779,6 +35433,7 @@ derivatives.
   falling); the sign of $f''$ determines curvature (cupping upward or
   bulging downward).
 ]
+
 
 #divider()
 
@@ -39411,10 +36066,9 @@ logarithm] function. See you in Chapter 48.
 <chapter-48-napiers-logarithm-and-the-navigators-tables>
 #quote_box[
 #emph[“By shortening the labours, the invention of logarithms doubled
-the life of astronomers.”
+the life of astronomers.”] --- Pierre-Simon de Laplace
 ]
- --- Pierre-Simon de Laplace
-]
+
 
 #divider()
 
@@ -39466,10 +36120,7 @@ as #strong[Tycho Brahe] and #strong[Johannes Kepler], spent whole
 #strong[decades] of their lives grinding through tedious multiplications
 to determine planetary orbits.
 
-#decouvre(title: [Découverte & Histoire])[
-#strong[💡 Did you know?
-]
- Before logarithms, mathematicians used a
+#decouvre(title: [Did you know?])[Before logarithms, mathematicians used a
 computational shortcut known as #strong[prosthaphaeresis] (from the
 Greek for “addition and subtraction”), which exploited the
 product-to-sum trigonometric identity
@@ -39477,6 +36128,7 @@ $cos a cos b = 1 / 2 [cos \( a + b \) + cos \( a - b \)]$ to convert
 products into sums… but it was cumbersome, error-prone, and restricted
 to numbers between $- 1$ and $1$.
 ]
+
 
 ==== 1.2 The Dream: Replacing × with +
 <the-dream-replacing-with>
@@ -39487,29 +36139,25 @@ Renaissance computers:
 #quote_box[
 #emph[To find a “dictionary” that pairs every positive number with
 another number in such a way that the translation of a product is simply
-the sum of the translations.
+the sum of the translations.]
 ]
 
-]
 
 The German monk #strong[Michael Stifel] caught a glimpse of this dream
 in 1544 by tabulating two sequences, one beneath the other:
 
+
 #align(center)[
-  #block(
-    fill: rgb("#f8fafc"),
-    stroke: 1pt + rgb("#cbd5e1"),
-    inset: (x: 16pt, y: 10pt),
-    radius: 6pt,
-    breakable: false,
-  )[
-    #set text(font: "Liberation Mono", size: 9.5pt, fill: rgb("#0f172a"))
-    ```text
-Arithmetic progression :   0    1    2    3    4     5     6      7      8
-Geometric progression  :   1    2    4    8   16    32    64    128    256
-    ```
-  ]
+  #table(
+    columns: (2.2fr, 0.7fr, 0.7fr, 0.7fr, 0.7fr, 0.7fr, 0.7fr, 0.7fr, 0.8fr, 0.8fr),
+    align: center,
+    stroke: 0.5pt + rgb("#cbd5e1"),
+    fill: (x, y) => if y == 0 { rgb("#eff6ff") } else { rgb("#ffffff") },
+    [*Progression arithmétique*], [0], [1], [2], [3], [4], [5], [6], [7], [8],
+    [*Progression géométrique*], [1], [2], [4], [8], [16], [32], [64], [128], [256]
+  )
 ]
+
 
 To multiply $8 times 32$, look above: $8$ corresponds to $3$, and $32$
 corresponds to $5$. Add them: $3 + 5 = 8$. Look back down: under $8$
@@ -39541,10 +36189,7 @@ number that measures ratios”. The logarithm of a number is, in essence,
 #strong[the number of steps] one must take along the geometric
 progression to reach it.
 
-#quote_box[
-#strong[🔍 True History ---
-]
- The English mathematician #strong[Henry
+#decouvre(title: [True History —])[The English mathematician #strong[Henry
 Briggs], reading Napier's work, was so astonished that he journeyed from
 London to Scotland in 1615 to meet him. It is said that when they met,
 the two men stood looking at one another in speechless admiration for a
@@ -39556,6 +36201,7 @@ immediately used them to complete his monumental #emph[Rudolphine
 Tables] of planetary motions and dedicated one of his works to Napier…
 unaware that Napier had passed away in the interim.
 ]
+
 
 For more than #strong[three centuries], logarithmic tables and
 #strong[slide rules] (pairs of logarithmic scales sliding against each
@@ -39571,10 +36217,9 @@ faces the #strong[inverse] question:
 
 #quote_box[
 #emph[“The population has grown by a factor of 1000. How long ago did
-the infection begin?”
+the infection begin?”]
 ]
 
-]
 
 This requires solving $e^(k t) = 1000$---that is, finding the
 #strong[exponent] that produces a desired result. The exponential
@@ -39606,28 +36251,24 @@ interval onto its image. Here:
 
 #quote_box[
 #strong[For every real number $a > 0$, the equation $e^x = a$ has a
-unique real solution.
+unique real solution.]
 ]
 
-]
 
 Visually: the exponential curve intersects every horizontal line $y = a$
 (with $a > 0$) #strong[at exactly one point]. And it never intersects
 the lines $y = a$ with $a lt.eq 0$, because the curve lies entirely
 above the horizontal axis.
 
-#figure(image("figures/vol_6/fig_48_exp_log_reciproques.svg", alt: "Réciprocité des fonctions exponentielle et logarithme népérien"),
+#figure(image("figures_en/vol_6/fig_48_exp_log_reciproques.svg", alt: "Inverse relationship of exponential and natural logarithm functions"),
   caption: [
-    Réciprocité des fonctions exponentielle et logarithme népérien
+    Inverse relationship of exponential and natural logarithm functions
   ]
 )
 
 ==== 2.2 The Definition
 <the-definition-1>
-#principe(title: [Définition Fondamentale])[
-#strong[📐 Definition ---
-]
- For every strictly positive real number $a$,
+#principe(title: [Definition —])[For every strictly positive real number $a$,
 the #strong[natural logarithm] of $a$, denoted by $ln a$ (or $ln\(a\)$),
 is the #strong[unique] real number $x$ such that $e^x = a$. The function
 $ln : thick\]0 thin\;+ oo\[thick arrow.r bb(R)\,thick x mapsto ln x$ is
@@ -39636,16 +36277,14 @@ function] of the exponential function.
 $ upright("For ") a > 0 upright(" and ") x in bb(R) : #h(2em) e^x = a arrow.l.r.double x = ln a . $
 ]
 
+
 #strong[Notation.] The symbol $ln$ abbreviates #emph[logarithmus
 naturalis] (Latin for “natural logarithm”). It is read “the natural
 logarithm of $x$”, or informally “el-en of $x$”. Parentheses are
 optional when there is no ambiguity: $ln 2$, $ln x$\; but one writes
 $ln\(x + 1\)$, and never $ln x + 1$, which represents $\(ln x\)+ 1$.
 
-#decouvre(title: [Découverte & Histoire])[
-#strong[💡 Did you know?
-]
- Napier did not use the symbol $ln$, nor did he
+#decouvre(title: [Did you know?])[Napier did not use the symbol $ln$, nor did he
 view it as the inverse of $e^x$: the base $e$ had not yet been
 identified or named! It was #strong[Grégoire de Saint-Vincent] and
 #strong[Alphonse Antonio de Sarasa] (around 1647--1649) who discovered
@@ -39655,6 +36294,7 @@ Euler], in 1748, who systematically established the exponential and
 logarithm as mutual inverse operations. Napier's original tables
 corresponded closely to the function $x mapsto 10^7 ln (10^7 / x)$.
 ]
+
 
 ==== 2.3 Immediate Consequences
 <immediate-consequences>
@@ -39680,15 +36320,13 @@ The last two rows express cancellation: #strong[applying “$exp$” then
 “$ln$”, or “$ln$” then “$exp$”, returns you to your starting value.] It
 is like opening a drawer and then closing it.
 
-#quote_box[
-#strong[⚠️ Common Pitfall!
-]
- $e^(ln a) = a$ holds only if $a > 0$. For
+#alerte(title: [Common Pitfall!])[$e^(ln a) = a$ holds only if $a > 0$. For
 instance, $e^(ln\(- 3\))$ is #strong[meaningless], because $ln\(- 3\)$
 does not exist in the real numbers. In contrast, $ln\(e^x\)= x$ is valid
 for #strong[every] real number $x$, even negative numbers:
 $ln\(e^(- 5)\)= - 5$.
 ]
+
 
 ==== 2.4 The Curve: A Mirror Reflection of the Exponential
 <the-curve-a-mirror-reflection-of-the-exponential>
@@ -39700,10 +36338,9 @@ $y = x$ (interchanging abscissa and ordinate).
 
 #quote_box[
 #strong[The curves of $exp$ and $ln$ are reflections of each other
-across the first bisector line $y = x$.
+across the first bisector line $y = x$.]
 ]
 
-]
 
 If you fold the coordinate plane along the diagonal line $y = x$, the
 exponential curve lands precisely on top of the logarithmic curve. The
@@ -39714,49 +36351,36 @@ $x arrow.r 0^(+)$).
 
 ==== 2.5 Worked Examples
 <worked-examples-1>
-#exemple_resolu(title: [Exemple Résolu Pas à Pas])[
-#strong[Worked Example 1 --- Solve $e^x = 5$.
-]
- Since $5 > 0$, the
+#exemple_resolu(title: [Worked Example 1 — Solve $e^x = 5$.])[Since $5 > 0$, the
 equation has a unique solution: $x = ln 5 approx 1.609$. Verification:
 $e^1.609 approx 4.998$. ✔
 ]
 
-#exemple_resolu(title: [Exemple Résolu Pas à Pas])[
-#strong[Worked Example 2 --- Solve $e^(2 x - 1) = 3$.
-]
- Since $3 > 0$, we
+
+#exemple_resolu(title: [Worked Example 2 — Solve $e^(2 x - 1) = 3$.])[Since $3 > 0$, we
 have
 $e^(2 x - 1) = 3 arrow.l.r.double 2 x - 1 = ln 3 arrow.l.r.double x = frac(1 + ln 3, 2)$.
 Solution set: $cal(S) = {frac(1 + ln 3, 2)} approx 1.049$.
 ]
 
-#exemple_resolu(title: [Exemple Résolu Pas à Pas])[
-#strong[Worked Example 3 --- Solve $ln x = 2$.
-]
- The equation is defined
+
+#exemple_resolu(title: [Worked Example 3 — Solve $ln x = 2$.])[The equation is defined
 only for $x > 0$. Then $ln x = 2 arrow.l.r.double x = e^2$. Since
 $e^2 > 0$, the solution is valid: $cal(S) = { e^2 }$, where
 $e^2 approx 7.389$.
 ]
 
-#exemple_resolu(title: [Exemple Résolu Pas à Pas])[
-#strong[Worked Example 4 --- Solve $e^x = - 4$ and $3 e^x + 6 = 0$.
-]
- The
+
+#exemple_resolu(title: [Worked Example 4 — Solve $e^x = - 4$ and $3 e^x + 6 = 0$.])[The
 exponential is strictly positive for all real inputs: $e^x = - 4$ has
 #strong[no solution], so $cal(S) = diameter$. Similarly,
 $3 e^x + 6 = 0 arrow.l.r.double e^x = - 2$: $cal(S) = diameter$. Writing
 “$x = ln\(- 2\)$” is a fatal conceptual error.
 ]
 
-#exemple_resolu(title: [Exemple Résolu Pas à Pas])[
-#strong[Worked Example 5 --- Simplify $A = e^(ln 7)$,
-$B = ln\(e^(- 3)\)$, $C = e^(- ln 2)$, $D = ln (sqrt(e))$.
-]
 
-
-- $A = 7$\;
+#exemple_resolu(title: [Worked Example 5 — Simplify $A = e^(ln 7)$,
+$B = ln\(e^(- 3)\)$, $C = e^(- ln 2)$, $D = ln (sqrt(e))$.])[- $A = 7$\;
 
 - $B = - 3$\;
 
@@ -39765,12 +36389,8 @@ $B = ln\(e^(- 3)\)$, $C = e^(- ln 2)$, $D = ln (sqrt(e))$.
 - $D = ln (e^(1\/2)) = 1 / 2$.
 ]
 
-#quote_box[
-#strong[⚠️ Common Pitfall! --- Domain Boundaries.
-]
 
-
-- $ln 0$ #strong[does not exist]: no real power of $e$ equals $0$ (the
+#alerte(title: [Common Pitfall! — Domain Boundaries.])[- $ln 0$ #strong[does not exist]: no real power of $e$ equals $0$ (the
   exponential approaches $0$ asymptotically but never reaches it).
 
 - The logarithm of a negative number #strong[does not exist] within the
@@ -39782,27 +36402,23 @@ $B = ln\(e^(- 3)\)$, $C = e^(- ln 2)$, $D = ln (sqrt(e))$.
   #strong[strictly positive].
 ]
 
+
 #divider()
 
 === 3. Algebraic Properties: Napier's Dream Realized
 <algebraic-properties-napiers-dream-realized>
 ==== 3.1 The Fundamental Identity
 <the-fundamental-identity>
-#quote_box[
-#strong[📐 Fundamental Theorem ---
-]
- For all real numbers $a > 0$ and
+#principe(title: [Fundamental Theorem —])[For all real numbers $a > 0$ and
 $b > 0$: $ ln\(a b\)= ln a + ln b . $
 ]
+
 
 #strong[In words:] the logarithm #strong[converts products into sums].
 This is precisely Stifel's top row, freed from all gaps: every positive
 real number participates.
 
-#quote_box[
-#strong[✍️ Proof (Required Curriculum Proof) ---
-]
- Let $a > 0$ and
+#exemple_resolu(title: [Proof (Required Curriculum Proof) —])[Let $a > 0$ and
 $b > 0$. Then $a b > 0$, so $ln\(a b\)$ is defined. On the one hand,
 $e^(ln\(a b\)) = a b$ by definition of the logarithm. On the other hand,
 applying the fundamental exponent rule $e^(x + y) = e^x e^y$:
@@ -39813,6 +36429,7 @@ exponential function is strictly increasing, it is #strong[injective]
 equal: $ ln\(a b\)= ln a + ln b . quad square.filled.medium $
 ]
 
+
 The entire mystery is revealed: #strong[the fundamental additive
 identity of the logarithm is the exact mirror image of the
 multiplicative identity $e^(x + y) = e^x e^y$ of the exponential],
@@ -39821,18 +36438,14 @@ reflected across the diagonal line $y = x$.
 ==== 3.2 Derived Algebraic Identities
 <derived-algebraic-identities>
 #quote_box[
-#strong[📐 Properties ---
-]
- For all real numbers $a > 0$, $b > 0$, and
+#strong[📐 Properties ---] For all real numbers $a > 0$, $b > 0$, and
 every integer $n in bb(Z)$: 1. $ln (1 / a) = - ln a$ 2.
 $ln (a / b) = ln a - ln b$ 3. $ln\(a^n\)= n ln a$ 4.
 $ln (sqrt(a)) = 1 / 2 ln a$
 ]
 
-#quote_box[
-#strong[✍️ Proofs ---
-]
- 1. Since $a times 1 / a = 1$, we have
+
+#exemple_resolu(title: [Proofs —])[1. Since $a times 1 / a = 1$, we have
 $ln a + ln (1 / a) = ln 1 = 0$, which yields $ln (1 / a) = - ln a$. 2.
 Using identity 1:
 $ln (a / b) = ln (a times 1 / b) = ln a + ln (1 / b) = ln a - ln b$. 3.
@@ -39856,10 +36469,8 @@ $2 ln (sqrt(a)) = ln a$, whence $ln\(sqrt(a)\)= 1 / 2 ln a$.
 $square.filled.medium$
 ]
 
-#decouvre(title: [Découverte & Histoire])[
-#strong[💡 Did you know?
-]
- More generally, for $a > 0$ and any real
+
+#decouvre(title: [Did you know?])[More generally, for $a > 0$ and any real
 number $r$, we #strong[define] general powers by $a^r = e^(r ln a)$,
 which immediately entails $ln\(a^r\)= r ln a$. This is how a digital
 computer evaluates $2^(sqrt(2))$ or $10^0.3$. In particular,
@@ -39867,13 +36478,10 @@ $2^x = e^(x ln 2)$: #strong[all] constant-rate exponential growth is
 nothing more than base-$e$ exponential growth in disguise.
 ]
 
+
 ==== 3.3 Worked Examples
 <worked-examples-2>
-#exemple_resolu(title: [Exemple Résolu Pas à Pas])[
-#strong[Worked Example 6 --- Express in terms of $ln 2$ and $ln 3$:
-]
-
-$A = ln 12$, $quad B = ln (9 / 16)$, $quad C = ln sqrt(72)$,
+#exemple_resolu(title: [Worked Example 6 — Express in terms of $ln 2$ and $ln 3$:])[$A = ln 12$, $quad B = ln (9 / 16)$, $quad C = ln sqrt(72)$,
 $quad D = 3 ln 4 - 2 ln 6$.
 
 - $12 = 2^2 times 3$, so $A = 2 ln 2 + ln 3$.
@@ -39886,20 +36494,15 @@ $quad D = 3 ln 4 - 2 ln 6$.
 - $D = 3 times 2 ln 2 - 2\(ln 2 + ln 3\)= 6 ln 2 - 2 ln 2 - 2 ln 3 = 4 ln 2 - 2 ln 3$.
 ]
 
-#exemple_resolu(title: [Exemple Résolu Pas à Pas])[
-#strong[Worked Example 7 --- Simplify
-$E = ln\(e^3\)+ ln (1 / e) - ln (e sqrt(e))$.
-]
- We have $ln\(e^3\)= 3$,
+
+#exemple_resolu(title: [Worked Example 7 — Simplify
+$E = ln\(e^3\)+ ln (1 / e) - ln (e sqrt(e))$.])[We have $ln\(e^3\)= 3$,
 $ln (1 / e) = - 1$, and $ln (e sqrt(e)) = ln (e^(3\/2)) = 3 / 2$. Thus
 $E = 3 - 1 - 3 / 2 = 1 / 2$.
 ]
 
-#exemple_resolu(title: [Exemple Résolu Pas à Pas])[
-#strong[Worked Example 8 --- Multiplying like a Navigator in 1620.
-]
 
-Suppose we need to compute $2.37 times 5.81$ using a table of
+#exemple_resolu(title: [Worked Example 8 — Multiplying like a Navigator in 1620.])[Suppose we need to compute $2.37 times 5.81$ using a table of
 #strong[common logarithms] ($log_10 x = frac(ln x, ln 10)$, which
 satisfies $log\(a b\)= log a + log b$ and $log 10 = 1$). The table
 provides: $log 2.37 approx 0.37475$ and $log 5.81 approx 0.76418$. We
@@ -39911,14 +36514,10 @@ $2.37 times 5.81 = 13.7697$. ✔ One addition and two table lookups
 completely replace long multiplication!
 ]
 
+
 ==== 3.4 Crucial Pitfalls to Avoid
 <crucial-pitfalls-to-avoid>
-#quote_box[
-#strong[⚠️ Common Pitfall! --- Erroneous Identities.
-]
-
-
-- In general, $ln\(a + b\)eq.not ln a + ln b$. Counterexample:
+#alerte(title: [Common Pitfall! — Erroneous Identities.])[- In general, $ln\(a + b\)eq.not ln a + ln b$. Counterexample:
   $ln\(1 + 1\)= ln 2 approx 0.69$, whereas $ln 1 + ln 1 = 0$. The
   logarithm transforms #strong[products], never sums.
 
@@ -39934,10 +36533,8 @@ completely replace long multiplication!
   mean the square of the logarithm.
 ]
 
-#quote_box[
-#strong[⚠️ Common Pitfall! --- Hidden Signs.
-]
- The formula
+
+#alerte(title: [Common Pitfall! — Hidden Signs.])[The formula
 $ln\(a b\)= ln a + ln b$ strictly requires $a > 0$ #strong[and] $b > 0$.
 However, the product $a b$ can be positive when both $a < 0$ and
 $b < 0$! For instance,
@@ -39952,24 +36549,20 @@ the former is defined on $bb(R)^(*)$, while the latter is defined only
 on $\]0 thin\;+ oo\[$.
 ]
 
+
 #divider()
 
 === 4. Comprehensive Analysis of the Natural Logarithm Function
 <comprehensive-analysis-of-the-natural-logarithm-function>
 ==== 4.1 Differentiability and the Derivative
 <differentiability-and-the-derivative>
-#quote_box[
-#strong[📐 Theorem ---
-]
- The natural logarithm function $ln$ is
+#principe(title: [Theorem —])[The natural logarithm function $ln$ is
 differentiable on $\]0 thin\;+ oo\[$, and for every real number $x > 0$:
 $ ln'\(x\)= 1 / x . $
 ]
 
-#quote_box[
-#strong[✍️ Proof (Required Curriculum Proof) ---
-]
- For every real number
+
+#exemple_resolu(title: [Proof (Required Curriculum Proof) —])[For every real number
 $x > 0$, we have the identity: $ e^(ln x) = x . $ The function $ln$ is
 differentiable on $\]0 thin\;+ oo\[$ because it is the inverse of the
 exponential function $exp$, which is differentiable on $bb(R)$ with a
@@ -39981,10 +36574,8 @@ simplifies to:
 $ \(ln\)'\(x\)times x = 1 arrow.l.r.double ln'\(x\)= 1 / x . quad square.filled.medium $
 ]
 
-#quote_box[
-#strong[💡 Alternative Proof via the Difference Quotient ---
-]
- Let
+
+#exemple_resolu(title: [Alternative Proof via the Difference Quotient —])[Let
 $x > 0$ be fixed and let $h eq.not 0$ be such that $x + h > 0$. The
 difference quotient of $ln$ at $x$ is:
 $ tau\(h\)= frac(ln\(x + h\)- ln x, h) = 1 / h ln (1 + h / x) . $ Let
@@ -39999,16 +36590,14 @@ the limit:
 $ lim_(h arrow.r 0) tau\(h\)= 1 / x times 1 / 1 = 1 / x . quad square.filled.medium $
 ]
 
+
 ==== 4.2 Derivative of $ln\(u\)$ and $ln\|u\|$
 <derivative-of-lnu-and-lnu>
 When the argument of the logarithm is a differentiable function $u$, the
 chain rule $\(f compose u\)' = u' times\(f' compose u\)$ immediately
 provides:
 
-#quote_box[
-#strong[📐 Chain Rule for Logarithms ---
-]
- Let $u$ be a differentiable,
+#principe(title: [Chain Rule for Logarithms —])[Let $u$ be a differentiable,
 #strong[strictly positive] function on an interval $I$. Then
 $f = ln compose u$, defined by $f\(x\)= ln\(u\(x\)\)$, is differentiable
 on $I$, and: $ \(ln\(u\)\)' = u' / u . $ More generally, if $u$ is
@@ -40017,10 +36606,8 @@ $x mapsto ln\|u\(x\)\|$ is differentiable on $I$, and:
 $ \(ln\|u\|\)' = u' / u . $
 ]
 
-#quote_box[
-#strong[✍️ Proof for $ln\|u\|$ when $u\(x\)< 0$ ---
-]
- If $u\(x\)< 0$,
+
+#exemple_resolu(title: [Proof for $ln\|u\|$ when $u\(x\)< 0$ —])[If $u\(x\)< 0$,
 then $\|u\(x\)\|= - u\(x\)> 0$. Hence $ln\|u\(x\)\|= ln\(- u\(x\)\)$.
 Differentiating via the chain rule:
 $#scale(x: 120%, y: 120%)[\(] ln\(- u\)#scale(x: 120%, y: 120%)[\)]' = frac(\(- u\)', - u) = frac(- u', - u) = u' / u$.
@@ -40028,15 +36615,14 @@ The resulting derivative is identical regardless of the sign of
 $u\(x\)$! $square.filled.medium$
 ]
 
-#methode(title: [Méthode Pas à Pas])[
-#strong[🧭 Method --- Differentiating an Expression Involving
-$ln\(u\)$:
-]
- 1. Determine the domain where the argument $u\(x\)$ is
+
+#methode(title: [Method — Differentiating an Expression Involving
+$ln\(u\)$:])[1. Determine the domain where the argument $u\(x\)$ is
 strictly positive (or non-zero for $ln\|u\|$). 2. Differentiate the
 inside function to find $u'\(x\)$. 3. Form the quotient
 $frac(u'\(x\), u\(x\))$ and simplify algebraically.
 ]
+
 
 ==== 4.3 Monotonicity and Sign of the Logarithm
 <monotonicity-and-sign-of-the-logarithm>
@@ -40044,16 +36630,14 @@ For every $x in thick\]0 thin\;+ oo\[$, we have $x > 0$, and therefore
 $ln'\(x\)= 1 / x > 0$. The derivative is #strong[strictly positive]
 across its entire domain.
 
-#principe(title: [Définition Fondamentale])[
-#strong[Property ---
-]
- The natural logarithm function is #strong[strictly
+#principe(title: [Property —])[The natural logarithm function is #strong[strictly
 increasing] on $\]0 thin\;+ oo\[$. For all positive real numbers
 $a\,b in thick\]0 thin\;+ oo\[$:
 
 - $ln a = ln b arrow.l.r.double a = b$ (injectivity);
 - $ln a < ln b arrow.l.r.double a < b$ (strict monotonicity).
 ]
+
 
 Since $ln 1 = 0$, strict monotonicity immediately establishes the
 #strong[sign of $ln x$]:
@@ -40078,10 +36662,7 @@ Since $ln 1 = 0$, strict monotonicity immediately establishes the
 
 ==== 4.4 Boundary Limits
 <boundary-limits>
-#quote_box[
-#strong[📐 Boundary Limits Theorem ---
-]
- 1.
+#principe(title: [Boundary Limits Theorem —])[1.
 $lim_(x arrow.r + oo) ln x = + oo$ 2.
 $lim_(x arrow.r 0^(+)) ln x = - oo$
 
@@ -40089,10 +36670,8 @@ The vertical axis $x = 0$ (the $y$-axis) is therefore a #strong[vertical
 asymptote] to the graph of $ln$.
 ]
 
-#quote_box[
-#strong[✍️ Proofs (Required Curriculum Proofs) ---
-]
- 1. #strong[Limit at
+
+#exemple_resolu(title: [Proofs (Required Curriculum Proofs) —])[1. #strong[Limit at
 $+ oo$:] For every natural number $n$, we have $ln\(2^n\)= n ln 2$.
 Since $2 > 1$, $ln 2 > 0$. Consequently,
 $lim_(n arrow.r + oo) ln\(2^n\)= lim_(n arrow.r + oo)\(n ln 2\)= + oo$.
@@ -40113,6 +36692,7 @@ $lim_(x arrow.r + oo) ln x = + oo$. $square.filled.medium$
   $ lim_(x arrow.r 0^(+)) ln x = lim_(X arrow.r + oo)\(- ln X\)= - oo . quad square.filled.medium $
 ]
 ]
+
 
 ==== 4.5 Variation Table and Graphic Profile
 <variation-table-and-graphic-profile>
@@ -40143,10 +36723,7 @@ Differentiating once more to find the second derivative:
 $ \(ln\)''\(x\)= (1 / x)' = - 1 / x^2 . $ For every
 $x in thick\]0 thin\;+ oo\[$, $x^2 > 0$, so $\(ln\)''\(x\)< 0$.
 
-#quote_box[
-#strong[Fundamental Concavity Property ---
-]
- The natural logarithm
+#principe(title: [Fundamental Concavity Property —])[The natural logarithm
 function is #strong[strictly concave] on $\]0 thin\;+ oo\[$.
 Consequently: 1. The graph of $ln$ lies #strong[strictly below every one
 of its tangent lines] (except at the point of tangency). 2. In
@@ -40154,6 +36731,7 @@ particular, comparing it to its tangent at $x = 1$ ($y = x - 1$), we
 have for all $x > 0$: $ ln x lt.eq x - 1 . $ Equality holds if and only
 if $x = 1$.
 ]
+
 
 Setting $x = 1 + h$ with $h > - 1$, this fundamental inequality is
 equivalently written as: $ ln\(1 + h\)lt.eq h . $
@@ -40175,21 +36753,15 @@ number of grains of sand on the entire planet Earth!
 This extreme slowness gives rise to the classic #strong[comparative
 growth theorems].
 
-#quote_box[
-#strong[📐 Comparative Growth Theorems (Required Curriculum Proofs) ---
-]
-
-For every positive integer $n gt.eq 1$: 1.
+#principe(title: [Comparative Growth Theorems (Required Curriculum Proofs) —])[For every positive integer $n gt.eq 1$: 1.
 $lim_(x arrow.r + oo) frac(ln x, x^n) = 0$ 2.
 $lim_(x arrow.r 0^(+)) x^n ln x = 0$ 3.
 $lim_(h arrow.r 0) frac(ln\(1 + h\), h) = 1 quad upright("or equivalently") quad lim_(x arrow.r 1) frac(ln x, x - 1) = 1$.
 ]
 
-#quote_box[
-#strong[✍️ Proof of $lim_(x arrow.r + oo) frac(ln x, x) = 0$ (Required
-Curriculum Proof) ---
-]
- Recall the comparative growth limit of the
+
+#exemple_resolu(title: [Proof of $lim_(x arrow.r + oo) frac(ln x, x) = 0$ (Required
+Curriculum Proof) —])[Recall the comparative growth limit of the
 exponential function (established in Chapter 45):
 $ lim_(t arrow.r + oo) e^t / t = + oo . $ Perform the change of variable
 $t = ln x$, so that $x = e^t$. As $x arrow.r + oo$, we have
@@ -40199,11 +36771,9 @@ $t arrow.r + oo$:
 $ lim_(x arrow.r + oo) frac(ln x, x) = lim_(t arrow.r + oo) 1 / e^t / t = frac(1, + oo) = 0 . quad square.filled.medium $
 ]
 
-#quote_box[
-#strong[✍️ Proof of $lim_(x arrow.r 0^(+)) x ln x = 0$ (Required
-Curriculum Proof) ---
-]
- Perform the substitution $X = 1 / x$. As
+
+#exemple_resolu(title: [Proof of $lim_(x arrow.r 0^(+)) x ln x = 0$ (Required
+Curriculum Proof) —])[Perform the substitution $X = 1 / x$. As
 $x arrow.r 0^(+)$, we have $X arrow.r + oo$. Thus:
 $ x ln x = 1 / X ln (1 / X) = frac(- ln X, X) = - frac(ln X, X) . $ By
 the preceding result, $lim_(X arrow.r + oo) frac(ln X, X) = 0$.
@@ -40211,14 +36781,12 @@ Therefore:
 $ lim_(x arrow.r 0^(+)) x ln x = 0 . quad square.filled.medium $
 ]
 
-#quote_box[
-#strong[✍️ Proof of $lim_(h arrow.r 0) frac(ln\(1 + h\), h) = 1$ ---
-]
 
-This expression is simply the difference quotient of the function $ln$
+#exemple_resolu(title: [Proof of $lim_(h arrow.r 0) frac(ln\(1 + h\), h) = 1$ —])[This expression is simply the difference quotient of the function $ln$
 evaluated at $x_0 = 1$:
 $ lim_(h arrow.r 0) frac(ln\(1 + h\)- ln 1, h) = ln'\(1\)= 1 / 1 = 1 . quad square.filled.medium $
 ]
+
 
 #divider()
 
@@ -40226,10 +36794,7 @@ $ lim_(h arrow.r 0) frac(ln\(1 + h\)- ln 1, h) = ln'\(1\)= 1 / 1 = 1 . quad squa
 <methods-equations-inequalities-and-geometric-thresholds>
 ==== 5.1 Solving Equations with $ln$
 <solving-equations-with-ln>
-#methode(title: [Méthode Pas à Pas])[
-#strong[🧭 Method --- Standard Protocol for Logarithmic Equations:
-]
- 1.
+#methode(title: [Method — Standard Protocol for Logarithmic Equations:])[1.
 #strong[Validity Domain:] Find the domain $D$ where all arguments inside
 logarithms are #strong[strictly positive]. 2. #strong[Consolidation:]
 Use algebraic identities to consolidate the expression into one of the
@@ -40247,10 +36812,8 @@ standard forms:
 ]
 ]
 
-#exemple_resolu(title: [Exemple Résolu Pas à Pas])[
-#strong[Worked Example 9 --- Equation with Two Logarithms.
-]
- Solve
+
+#exemple_resolu(title: [Worked Example 9 — Equation with Two Logarithms.])[Solve
 $ln\(2 x - 3\)= ln\(x + 5\)$.
 
 - #emph[Step 1: Domain.] We need
@@ -40265,11 +36828,9 @@ $ln\(2 x - 3\)= ln\(x + 5\)$.
   set is $cal(S) = { 8 }$.
 ]
 
-#exemple_resolu(title: [Exemple Résolu Pas à Pas])[
-#strong[Worked Example 10 --- Sum of Logarithms and Extraneous
-Solutions.
-]
- Solve $ln\(x\)+ ln\(x - 2\)= ln 3$.
+
+#exemple_resolu(title: [Worked Example 10 — Sum of Logarithms and Extraneous
+Solutions.])[Solve $ln\(x\)+ ln\(x - 2\)= ln 3$.
 
 - #emph[Step 1: Domain.] We require $x > 0$ and
   $x - 2 > 0 arrow.l.r.double x > 2$. Hence the validity domain is
@@ -40289,14 +36850,12 @@ Solutions.
   valid solution is $cal(S) = { 3 }$.
 ]
 
+
 ==== 5.2 Equations Involving Change of Variables
 <equations-involving-change-of-variables>
 When the unknown appears as powers of $ln x$, substitute a new variable.
 
-#exemple_resolu(title: [Exemple Résolu Pas à Pas])[
-#strong[Worked Example 11 --- Quadratic Equation in $ln x$.
-]
- Solve
+#exemple_resolu(title: [Worked Example 11 — Quadratic Equation in $ln x$.])[Solve
 $2\(ln x\)^2 - 5 ln x + 2 = 0$ on $\]0 thin\;+ oo\[$. Set $X = ln x$.
 The equation transforms into: $ 2 X^2 - 5 X + 2 = 0 . $ The discriminant
 is $Delta =\(- 5\)^2 - 4\(2\)\(2\)= 25 - 16 = 9 = 3^2$. The solutions
@@ -40309,16 +36868,14 @@ Converting back to $x$:
   positive. The solution set is $cal(S) = { sqrt(e) thin\;e^2 }$.
 ]
 
+
 ==== 5.3 Solving Inequalities with $ln$
 <solving-inequalities-with-ln>
 Because the logarithm is strictly increasing, it preserves inequalities:
 
 $ upright("For all ") A > 0 upright(" and ") B > 0 : quad ln A < ln B arrow.l.r.double A < B . $
 
-#exemple_resolu(title: [Exemple Résolu Pas à Pas])[
-#strong[Worked Example 12 --- Simple Inequality.
-]
- Solve
+#exemple_resolu(title: [Worked Example 12 — Simple Inequality.])[Solve
 $ln\(3 x - 1\)lt.eq 2$. 1. #emph[Domain:]
 $3 x - 1 > 0 arrow.l.r.double x > 1 / 3$. Thus
 $D = ]1 / 3 thin \; + oo[$. 2. #emph[Solving:] Express $2$ as
@@ -40327,8 +36884,9 @@ $ ln\(3 x - 1\)lt.eq ln\(e^2\)arrow.l.r.double 3 x - 1 lt.eq e^2 arrow.l.r.doubl
 \3. #emph[Intersection with $D$:] Since
 $frac(e^2 + 1, 3) approx frac(7.389 + 1, 3) approx 2.796 > 1 / 3$, the
 solution set is:
-$ cal(S) = ]1 / 3 thick \; thick frac(e^2 + 1, 3)[ . $
+$ cal(S) = ]1 / 3 thick \; thick frac(e^2 + 1, 3)] . $
 ]
+
 
 ==== 5.4 Finding Thresholds for Geometric Sequences
 <finding-thresholds-for-geometric-sequences>
@@ -40336,10 +36894,7 @@ This is one of the most frequent exam applications: determining the
 smallest index $n$ at which a geometric sequence surpasses or falls
 below a prescribed value.
 
-#methode(title: [Méthode Pas à Pas])[
-#strong[🧭 Method --- Solving $q^n < S$ or $q^n > S$:
-]
- 1. Isolate the
+#methode(title: [Method — Solving $q^n < S$ or $q^n > S$:])[1. Isolate the
 power $q^n$ on one side of the inequality. 2. Apply $ln$ to both sides
 (valid because $q > 0$ and $S > 0$). 3. Apply the exponent identity
 $ln\(q^n\)= n ln q$. 4. #strong[Divide by $ln q$, paying extreme
@@ -40351,11 +36906,9 @@ attention to the sign of $ln q$:]
   #strong[reversed] ($lt.eq$ becomes $gt.eq$)!
 ]
 
-#exemple_resolu(title: [Exemple Résolu Pas à Pas])[
-#strong[Worked Example 13 --- Depreciation Threshold (Inequality
-Reversal).
-]
- A new piece of industrial machinery costs $\$20\,000$. Each
+
+#exemple_resolu(title: [Worked Example 13 — Depreciation Threshold (Inequality
+Reversal).])[A new piece of industrial machinery costs $\$20\,000$. Each
 year, its value depreciates by $15 %$. After how many years will its
 book value fall below $\$5\,000$?
 
@@ -40374,25 +36927,35 @@ satisfying this is #strong[$n = 9$]. After 9 years, the machine will be
 worth less than $\$5\,000$.
 ]
 
-#quote_box[
-#strong[💻 Associated Python Script --- Threshold Search:
-]
-
-]
 
 #quote_box[
-```python
+#strong[💻 Associated Python Script --- Threshold Search:]
+]
+
+
+#quote_box[
+#align(center)[
+  #block(
+    fill: rgb("#f8fafc"),
+    stroke: 1pt + rgb("#cbd5e1"),
+    inset: (x: 16pt, y: 10pt),
+    radius: 6pt,
+    breakable: false,
+  )[
+    #set text(font: "Liberation Mono", size: 9.5pt, fill: rgb("#0f172a"))
+    ```text
 def threshold_decay(initial_value, rate, target):
-    n = 0
-    v = initial_value
-    while v >= target:
-        v = v * (1 - rate)
-        n += 1
-    return n
->
+n = 0
+v = initial_value
+while v >= target:
+v = v * (1 - rate)
+n += 1
+return n
 print("Years required:", threshold_decay(20000, 0.15, 5000))
 # Output: Years required: 9
-```
+    ```
+  ]
+]
 ]
 
 
@@ -40419,24 +36982,20 @@ trillion! To compress this enormous span into convenient numbers between
 #strong[pH] (potential of hydrogen) in 1909 using the common logarithm
 $log_10\(x\)= frac(ln x, ln 10)$:
 
-#principe(title: [Définition Fondamentale])[
-#strong[📐 Definition of pH ---
-]
-
-$ upright("pH") = - log_10 (frac(\[H_3 O^(+)\], c_0)) = - frac(ln\(\[H_3 O^(+)\]\/c_0\), ln 10) $
+#principe(title: [Definition of pH —])[$ upright("pH") = - log_10 (frac(\[H_3 O^(+)\], c_0)) = - frac(ln\(\[H_3 O^(+)\]\/c_0\), ln 10) $
 where $c_0 = 1 thin upright("mol") dot.op upright("L")^(- 1)$ is the
 standard reference concentration. Inversely:
 $\[H_3 O^(+)\]= 10^(- upright("pH")) thin upright("mol") dot.op upright("L")^(- 1)$.
 ]
 
+
 #quote_box[
-#strong[Direct Consequence:
-]
- When the pH drops by a single unit (for
+#strong[Direct Consequence:] When the pH drops by a single unit (for
 instance from 7 to 6), the concentration of $\[H_3 O^(+)\]$ ions
 #strong[multiplies by 10]. If the pH drops from 7 to 4, it multiplies by
 $10^3 = 1 thin 000$!
 ]
+
 
 ==== 6.2 Acoustics and Decibels
 <acoustics-and-decibels>
@@ -40449,17 +37008,13 @@ $10^14$. The #strong[sound intensity level] $L$, measured in
 #strong[decibels (dB)], is defined as:
 
 #quote_box[
-#strong[📐 Sound Level in Decibels ---
-]
-
+#strong[📐 Sound Level in Decibels ---]
 $ L = 10 log_10 (I / I_0) = 10 frac(ln\(I\/I_0\), ln 10) . $
 ]
 
-#exemple_resolu(title: [Exemple Résolu Pas à Pas])[
-#strong[Worked Example 14 --- Do Two Vacuum Cleaners Make Twice the
-Noise?
-]
- Suppose a vacuum cleaner emits an acoustic intensity $I_1$
+
+#exemple_resolu(title: [Worked Example 14 — Do Two Vacuum Cleaners Make Twice the
+Noise?])[Suppose a vacuum cleaner emits an acoustic intensity $I_1$
 resulting in a sound level of $L_1 = 70 thin upright("dB")$. Two
 identical vacuum cleaners operating simultaneously produce double the
 acoustic intensity: $I_2 = 2 I_1$. What is the resulting sound level
@@ -40471,6 +37026,7 @@ have: $ L_2 approx 70 + 3 = 73 thin upright("dB") ! $ #strong[Doubling
 the physical acoustic power increases the perceived sound level by only
 3 decibels!]
 ]
+
 
 ==== 6.3 Earthquakes and the Richter Magnitude Scale
 <earthquakes-and-the-richter-magnitude-scale>
@@ -40763,7 +37319,7 @@ $3 - x > 0 arrow.l.r.double x < 3$.
 $ln\(3 - x\)lt.eq 1 = ln e arrow.l.r.double 3 - x lt.eq e arrow.l.r.double x gt.eq 3 - e$.
 Intersecting with the domain: $cal(S) =\[3 - e thin\;3\[$. 3.
 $e^(2 x) gt.eq 7 arrow.l.r.double 2 x gt.eq ln 7 arrow.l.r.double x gt.eq frac(ln 7, 2)$.
-$cal(S) = [frac(ln 7, 2) thin \; + oo]$. 4. Domain $x > 0$.
+$cal(S) = [frac(ln 7, 2) thin \; + oo[$. 4. Domain $x > 0$.
 $2 ln x < - 3 arrow.l.r.double ln x < - 3 / 2 arrow.l.r.double 0 < x < e^(- 3\/2) = frac(1, e sqrt(e))$.
 $cal(S) = ]0 thin \; e^(- 3\/2)[$.
 
@@ -41096,11 +37652,10 @@ Functions].
 <chapter-49-the-swing-and-oscillating-functions>
 #quote_box[
 #emph[“The pendular motion revealed to me that time is not a straight
-line fleeing away, but a breath that endlessly returns.”
-]
- --- Inspired
+line fleeing away, but a breath that endlessly returns.”] --- Inspired
 by the observations of Galileo Galilei (1583)
 ]
+
 
 #divider()
 
@@ -41154,6 +37709,12 @@ plucked violin string, water sloshing in an enclosed bay, alternating
 electrons surging through a radio antenna---all obey this very same
 fundamental rhythmic cadence.
 
+#figure(image("figures_en/vol_6/fig_49_pendule_oscillant.svg", alt: "Le pendule simple : modélisation du mouvement périodique oscillant"),
+  caption: [
+    Le pendule simple : modélisation du mouvement périodique oscillant
+  ]
+)
+
 ==== 1.2 From the Circle to the Wave: Optical Projection
 <from-the-circle-to-the-wave-optical-projection>
 How can we represent this oscillatory back-and-forth movement
@@ -41178,25 +37739,11 @@ or a swing]! If we pull a strip of paper vertically past the wall at a
 constant speed, the moving shadow traces a pristine periodic curve:
 #strong[a sinusoid].
 
-#align(center)[
-  #block(
-    fill: rgb("#f8fafc"),
-    stroke: 1pt + rgb("#cbd5e1"),
-    inset: (x: 16pt, y: 10pt),
-    radius: 6pt,
-    breakable: false,
-  )[
-    #set text(font: "Liberation Mono", size: 9.5pt, fill: rgb("#0f172a"))
-    ```text
-Rotating wheel                              Wave traced on paper
-y                                               y
-M    .           Projection                   1    /    \
-0 *** t
-O    .                                               -1             --
-0    π   2π
-    ```
+#figure(image("figures_en/vol_6/fig_49_onde_sinusoidale.svg", alt: "Génération de l’onde sinusoïdale par rotation du cercle"),
+  caption: [
+    Génération de l'onde sinusoïdale par rotation du cercle
   ]
-]
+)
 
 Rectilinear oscillation is nothing other than #strong[the orthogonal
 projection of uniform circular motion]. To understand the swing, we must
@@ -41221,10 +37768,7 @@ every single derivative!
 
 The intrinsic, natural mathematical unit is the #strong[radian]:
 
-#principe(title: [Définition Fondamentale])[
-#strong[📐 Definition of the Radian ---
-]
- In the Cartesian plane equipped
+#principe(title: [Definition of the Radian —])[In the Cartesian plane equipped
 with an orthonormal coordinate system $\(O\;arrow(i)\,arrow(j)\)$, the
 #strong[trigonometric circle] (or unit circle) $cal(C)$ is the circle
 centered at the origin $O\(0 thin\;0\)$ with radius $R = 1$, oriented in
@@ -41233,6 +37777,7 @@ mathematical orientation). The measure of an angle in #strong[radians]
 is defined as the #strong[arc length] subtended by that angle along the
 unit circle of radius 1.
 ]
+
 
 Since the circumference of a circle of radius 1 is $2 pi R = 2 pi$, a
 full revolution of $360^compose$ corresponds to an angle of
@@ -41261,10 +37806,7 @@ circumference:
 To every real number $x in bb(R)$ corresponds a unique point $M$ on the
 unit circle.
 
-#principe(title: [Définition Fondamentale])[
-#strong[📐 Definition of the Cosine and Sine Functions ---
-]
- For every
+#principe(title: [Definition of the Cosine and Sine Functions —])[For every
 real number $x$, let $M$ be the point on the unit circle paired with $x$
 by wrapping the real number line.
 
@@ -41275,6 +37817,7 @@ by wrapping the real number line.
 
 $ M\(x\)= #scale(x: 120%, y: 120%)[\(] cos x thin\;thin sin x #scale(x: 120%, y: 120%)[\)] . $
 ]
+
 
 ==== 2.3 Immediate Consequences and Special Angles
 <immediate-consequences-and-special-angles>
@@ -41304,15 +37847,14 @@ $ M\(x\)= #scale(x: 120%, y: 120%)[\(] cos x thin\;thin sin x #scale(x: 120%, y:
   )
 
 #quote_box[
-#strong[💡 Mnemonic Trick for the Sine Row:
-]
- Notice the pattern of
+#strong[💡 Mnemonic Trick for the Sine Row:] Notice the pattern of
 square roots: $sin 0 = sqrt(0) / 2 = 0$,
 $sin pi / 6 = sqrt(1) / 2 = 1 / 2$, $sin pi / 4 = sqrt(2) / 2$,
 $sin pi / 3 = sqrt(3) / 2$, $sin pi / 2 = sqrt(4) / 2 = 1$. The
 numerators march upward from $sqrt(0)$ to $sqrt(4)$, while the cosine
 row runs in reverse!
 ]
+
 
 ==== 2.4 Periodicity and Parity: The Power of Symmetry
 <periodicity-and-parity-the-power-of-symmetry>
@@ -41321,13 +37863,12 @@ to the wrapped arc length: the terminal point $M$ lands on the exact
 same location.
 
 #quote_box[
-#strong[📐 Periodicity ---
-]
- The cosine and sine functions are
+#strong[📐 Periodicity ---] The cosine and sine functions are
 #strong[periodic with period $2 pi$] (or $2 pi$-periodic). For every
 real number $x$ and every integer $k in bb(Z)$:
 $ cos\(x + 2 k pi\)= cos x quad upright("and") quad sin\(x + 2 k pi\)= sin x . $
 ]
+
 
 Now consider geometric reflections on the circle:
 
@@ -41336,9 +37877,7 @@ Now consider geometric reflections on the circle:
   $x$-coordinate and have opposite $y$-coordinates.
 
 #quote_box[
-#strong[📐 Parity ---
-]
-
+#strong[📐 Parity ---]
 
 - The cosine function is #strong[even]: $cos\(- x\)= cos x$. Its
   Cartesian graph is symmetric with respect to #strong[the vertical axis
@@ -41347,6 +37886,7 @@ Now consider geometric reflections on the circle:
   Cartesian graph is symmetric with respect to #strong[the origin
   $O\(0 thin\;0\)$].
 ]
+
 
 ==== 2.5 Associated Angle Identities (Reflections of the Circle)
 <associated-angle-identities-reflections-of-the-circle>
@@ -41374,14 +37914,12 @@ the coordinate axes produces key geometric relationships:
   , kind: table
   )
 
-#decouvre(title: [Découverte & Histoire])[
-#strong[💡 Did you know? The Word "Cosine":
-]
- The prefix #emph[co-]
+#decouvre(title: [Did you know? The Word "Cosine":])[The prefix #emph[co-]
 stands for #emph[complementi]: the #strong[cosine] of an angle is
 literally the #strong[sine of the complementary angle]
 ($cos x = sin\(pi / 2 - x\)$).
 ]
+
 
 ==== 2.6 Addition and Double-Angle Formulas
 <addition-and-double-angle-formulas>
@@ -41389,33 +37927,28 @@ These algebraic identities decompose trigonometric functions of
 composite angles into products of elementary components:
 
 #quote_box[
-#strong[📐 Addition Formulas ---
-]
- For all real numbers $a$ and $b$:
+#strong[📐 Addition Formulas ---] For all real numbers $a$ and $b$:
 $ cos\(a + b\)= cos a cos b - sin a sin b $
 $ cos\(a - b\)= cos a cos b + sin a sin b $
 $ sin\(a + b\)= sin a cos b + cos a sin b $
 $ sin\(a - b\)= sin a cos b - cos a sin b $
 ]
 
+
 #quote_box[
-#strong[📐 Double-Angle Formulas ---
-]
- Setting $a = b = x$:
+#strong[📐 Double-Angle Formulas ---] Setting $a = b = x$:
 $ sin\(2 x\)= 2 sin x cos x $
 $ cos\(2 x\)= cos^2 x - sin^2 x = 2 cos^2 x - 1 = 1 - 2 sin^2 x $
 ]
 
-#exemple_resolu(title: [Exemple Résolu Pas à Pas])[
-#strong[Worked Example 1 --- Exact Evaluation of $cos (pi / 12)$.
-]
 
-Observe that $pi / 12 = pi / 3 - pi / 4$. Applying the cosine difference
+#exemple_resolu(title: [Worked Example 1 — Exact Evaluation of $cos (pi / 12)$.])[Observe that $pi / 12 = pi / 3 - pi / 4$. Applying the cosine difference
 formula:
 $ cos (pi / 12) = cos (pi / 3 - pi / 4) = cos pi / 3 cos pi / 4 + sin pi / 3 sin pi / 4 . $
 Substituting the standard values:
 $ cos (pi / 12) = (1 / 2) (sqrt(2) / 2) + (sqrt(3) / 2) (sqrt(2) / 2) = frac(sqrt(2) + sqrt(6), 4) . $
 ]
+
 
 #divider()
 
@@ -41434,17 +37967,13 @@ $x arrow.r 0$, this yields the indeterminate form “$0 / 0$”. We resolve
 this using an elegant geometric comparison of areas.
 
 #quote_box[
-#strong[📐 Fundamental Lemma (Trigonometric Squeeze) ---
-]
- For every real
+#strong[📐 Fundamental Lemma (Trigonometric Squeeze) ---] For every real
 number $x in ]0 thin \; pi / 2[$:
 $ sin x lt.eq x lt.eq tan x quad (upright("where ") tan x = frac(sin x, cos x)) . $
 ]
 
-#quote_box[
-#strong[✍️ Geometric Proof (Required Curriculum Proof) ---
-]
- On the unit
+
+#exemple_resolu(title: [Geometric Proof (Required Curriculum Proof) —])[On the unit
 circle centered at $O$ with radius 1, consider:
 
 - The point $A\(1 thin\;0\)$\;
@@ -41475,23 +38004,18 @@ Multiplying by 2 yields:
 $ sin x lt.eq x lt.eq tan x . quad square.filled.medium $
 ]
 
-#figure(image("figures/vol_6/fig_49_tangente_cercle.svg", alt: "Ligne trigonométrique de la tangente sur le cercle unité"),
+
+#figure(image("figures_en/vol_6/fig_49_tangente_cercle.svg", alt: "Ligne trigonométrique de la tangente sur le cercle unité"),
   caption: [
     Ligne trigonométrique de la tangente sur le cercle unité
   ]
 )
 
-#quote_box[
-#strong[📐 Theorem --- Fundamental Limit at 0:
+#principe(title: [Theorem — Fundamental Limit at 0:])[$ lim_(x arrow.r 0) frac(sin x, x) = 1 . $
 ]
 
-$ lim_(x arrow.r 0) frac(sin x, x) = 1 . $
-]
 
-#quote_box[
-#strong[✍️ Proof ---
-]
- For every $x in ]0 thin \; pi / 2[$, we have
+#exemple_resolu(title: [Proof —])[For every $x in ]0 thin \; pi / 2[$, we have
 $sin x > 0$. Divide the inequality
 $sin x lt.eq x lt.eq frac(sin x, cos x)$ by $sin x$:
 $ 1 lt.eq frac(x, sin x) lt.eq frac(1, cos x) . $ Taking reciprocals
@@ -41504,12 +38028,9 @@ Applying the #strong[Squeeze Theorem]:
 $ lim_(x arrow.r 0) frac(sin x, x) = 1 . quad square.filled.medium $
 ]
 
-#quote_box[
-#strong[Fundamental Corollary --- The Limit of $frac(1 - cos x, x^2)$ at
-0:
-]
 
-$ lim_(x arrow.r 0) frac(1 - cos x, x^2) = 1 / 2 quad upright("and consequently") quad lim_(x arrow.r 0) frac(cos x - 1, x) = 0 . $
+#principe(title: [Fundamental Corollary — The Limit of $frac(1 - cos x, x^2)$ at
+0:])[$ lim_(x arrow.r 0) frac(1 - cos x, x^2) = 1 / 2 quad upright("and consequently") quad lim_(x arrow.r 0) frac(cos x - 1, x) = 0 . $
 
 #emph[Proof:] Use the double-angle formula $cos\(2 u\)= 1 - 2 sin^2 u$
 with $u = x / 2$, giving $1 - cos x = 2 sin^2 (x / 2)$. Then:
@@ -41522,20 +38043,16 @@ $frac(cos x - 1, x) = - x times frac(1 - cos x, x^2) arrow.r 0 times 1 / 2 = 0$.
 $square.filled.medium$
 ]
 
+
 ==== 3.2 Calculating the Derivatives of Sine and Cosine
 <calculating-the-derivatives-of-sine-and-cosine>
-#quote_box[
-#strong[📐 Theorem (Required Curriculum Proofs) ---
-]
- The functions $sin$
+#principe(title: [Theorem (Required Curriculum Proofs) —])[The functions $sin$
 and $cos$ are differentiable on $bb(R)$, and for every real number $x$:
 $ sin'\(x\)= cos x quad upright("and") quad cos'\(x\)= - sin x . $
 ]
 
-#quote_box[
-#strong[✍️ Proof for $sin'\(x\)$ ---
-]
- Let $x in bb(R)$ be fixed and let
+
+#exemple_resolu(title: [Proof for $sin'\(x\)$ —])[Let $x in bb(R)$ be fixed and let
 $h eq.not 0$. Form the difference quotient of sine between $x$ and
 $x + h$: $ tau\(h\)= frac(sin\(x + h\)- sin x, h) . $ Using the sine
 addition formula: $sin\(x + h\)= sin x cos h + cos x sin h$. Hence:
@@ -41551,16 +38068,15 @@ The sine function is differentiable for all $x in bb(R)$, and
 $sin'\(x\)= cos x$. $square.filled.medium$
 ]
 
-#quote_box[
-#strong[✍️ Proof for $cos'\(x\)$ ---
-]
- Using the cosine addition formula:
+
+#exemple_resolu(title: [Proof for $cos'\(x\)$ —])[Using the cosine addition formula:
 $ frac(cos\(x + h\)- cos x, h) = frac(cos x cos h - sin x sin h - cos x, h) = cos x (frac(cos h - 1, h)) - sin x (frac(sin h, h)) . $
 Taking the limit as $h arrow.r 0$:
 $ lim_(h arrow.r 0) frac(cos\(x + h\)- cos x, h) = cos x times 0 - sin x times 1 = - sin x . $
 The cosine function is differentiable on $bb(R)$, and
 $cos'\(x\)= - sin x$. $square.filled.medium$
 ]
+
 
 ==== 3.3 The Mystery of the Quarter-Turn: Kinematic View
 <the-mystery-of-the-quarter-turn-kinematic-view>
@@ -41573,10 +38089,9 @@ quarter-turn, which is an angle of $+ pi / 2$:
 
 #quote_box[
 #strong[Differentiating a sinusoid shifts it forward in phase by exactly
-one quarter of a cycle ($pi / 2$ radians)!
+one quarter of a cycle ($pi / 2$ radians)!]
 ]
 
-]
 
 In kinematics, if a particle travels around the unit circle
 counter-clockwise with position vector
@@ -41590,32 +38105,13 @@ The velocity vector is #strong[strictly perpendicular] to the radius
 vector: it points tangent to the circle in the direction of motion,
 exactly $90^compose$ ahead of the position.
 
-#align(center)[
-  #block(
-    fill: rgb("#f8fafc"),
-    stroke: 1pt + rgb("#cbd5e1"),
-    inset: (x: 16pt, y: 10pt),
-    radius: 6pt,
-    breakable: false,
-  )[
-    #set text(font: "Liberation Mono", size: 9.5pt, fill: rgb("#0f172a"))
-    ```text
-velocity v (perpendicular to OM)
-M (cos t, sin t)
-radius OM
-    ```
-  ]
-]
-
 ==== 3.4 Chain Rule with Trigonometric Functions
 <chain-rule-with-trigonometric-functions>
 Applying the composite differentiation theorem
 $\(f compose u\)' = u' times\(f' compose u\)$:
 
 #quote_box[
-#strong[📐 Composition Formulas ---
-]
- Let $u$ be a differentiable
+#strong[📐 Composition Formulas ---] Let $u$ be a differentiable
 function on an interval $I$: 1.
 $#scale(x: 120%, y: 120%)[\(] sin\(u\(x\)\)#scale(x: 120%, y: 120%)[\)]' = u'\(x\)cos\(u\(x\)\)$
 \2.
@@ -41627,10 +38123,8 @@ $ #scale(x: 120%, y: 120%)[\(] sin\(omega t + phi\)#scale(x: 120%, y: 120%)[\)]'
 $ #scale(x: 120%, y: 120%)[\(] cos\(omega t + phi\)#scale(x: 120%, y: 120%)[\)]' = - omega sin\(omega t + phi\) $
 ]
 
-#exemple_resolu(title: [Exemple Résolu Pas à Pas])[
-#strong[Worked Example 2 --- Composite Derivatives.
-]
- 1.
+
+#exemple_resolu(title: [Worked Example 2 — Composite Derivatives.])[1.
 $f_1\(x\)= sin\(3 x - pi\)arrow.r.double.long f'_1\(x\)= 3 cos\(3 x - pi\)$.
 \2.
 $f_2\(x\)= cos\(x^2 + 1\)arrow.r.double.long f'_2\(x\)= -\(2 x\)sin\(x^2 + 1\)= - 2 x sin\(x^2 + 1\)$.
@@ -41641,6 +38135,7 @@ $\(u v\)' = u' v + u v'$:
 $ f'_4\(x\)=\(- e^(- x)\)cos\(2 x\)+ e^(- x)\(- 2 sin\(2 x\)\)= - e^(- x) #scale(x: 120%, y: 120%)[\(] cos\(2 x\)+ 2 sin\(2 x\)#scale(x: 120%, y: 120%)[\)] . $
 ]
 
+
 ==== 3.5 Second Derivatives and the Harmonic Oscillator Equation
 <second-derivatives-and-the-harmonic-oscillator-equation>
 Differentiating the function $f\(t\)= cos\(omega t\)$ twice:
@@ -41650,16 +38145,14 @@ Differentiating the function $f\(t\)= cos\(omega t\)$ twice:
 
 Rearranging: $ f''\(t\)+ omega^2 f\(t\)= 0 . $
 
-#quote_box[
-#strong[💡 Master Discovery ---
-]
- Sinusoidal functions are the
+#decouvre(title: [Master Discovery —])[Sinusoidal functions are the
 #strong[general solutions] to the second-order linear differential
 equation: $ y'' + omega^2 y = 0 . $ This is the foundational equation of
 classical mechanics: governing mass-spring systems (Hooke's law
 $m a = - k x$), inductor-capacitor LC circuits, acoustic vibrations, and
 electromagnetic waves!
 ]
+
 
 #divider()
 
@@ -41719,11 +38212,11 @@ curve crosses the horizontal axis with a slope of $- 1$.
 On the interval $\[0 thin\;pi\]$:
 
 - $sin'\(x\)= cos x$.
-- On $[0 thin \; pi / 2]$, $cos x > 0$: $sin$ is #strong[strictly
+- On $[0 thin \; pi / 2[$, $cos x > 0$: $sin$ is #strong[strictly
   increasing].
 - At $x = pi / 2$, $cos (pi / 2) = 0$: horizontal tangent at
   $(pi / 2 thin \; 1)$.
-- On $]pi / 2 thin \; pi[$, $cos x < 0$: $sin$ is #strong[strictly
+- On $]pi / 2 thin \; pi]$, $cos x < 0$: $sin$ is #strong[strictly
   decreasing].
 
 Variation table on $\[- pi thin\;pi\]$:
@@ -41747,57 +38240,28 @@ The tangent line at the origin is: $ y = x . $ For $x approx 0$, the
 first-order approximation yields #strong[$sin x approx x$]. This is the
 celebrated small-angle approximation widely used in physics!
 
-#align(center)[
-  #block(
-    fill: rgb("#f8fafc"),
-    stroke: 1pt + rgb("#cbd5e1"),
-    inset: (x: 16pt, y: 10pt),
-    radius: 6pt,
-    breakable: false,
-  )[
-    #set text(font: "Liberation Mono", size: 9.5pt, fill: rgb("#0f172a"))
-    ```text
-y                      _---_ (π/2 ; 1)
-'     '-_
-1                 -'           '-
-y = sin(x)
-0 ** x
-0/ ¦                   π
-1           /  ¦
-y = x (tangent at 0)
-    ```
-  ]
-]
-
 #divider()
 
 === 5. Solving Trigonometric Equations and Inequalities
 <solving-trigonometric-equations-and-inequalities>
 ==== 5.1 Fundamental Equations
 <fundamental-equations>
-#methode(title: [Méthode Pas à Pas])[
-#strong[🧭 Method --- Solving $cos x = cos alpha$:
-]
- Two points on the
+#methode(title: [Method — Solving $cos x = cos alpha$:])[Two points on the
 unit circle share the same abscissa if and only if their angles are
 equal or opposite, up to integer multiples of $2 pi$:
 $ cos x = cos alpha arrow.l.r.double x = alpha + 2 k pi quad upright("or") quad x = - alpha + 2 k pi quad\(k in bb(Z)\). $
 ]
 
-#methode(title: [Méthode Pas à Pas])[
-#strong[🧭 Method --- Solving $sin x = sin alpha$:
-]
- Two points on the
+
+#methode(title: [Method — Solving $sin x = sin alpha$:])[Two points on the
 unit circle share the same ordinate if and only if their angles are
 equal or supplementary ($pi - alpha$), up to integer multiples of
 $2 pi$:
 $ sin x = sin alpha arrow.l.r.double x = alpha + 2 k pi quad upright("or") quad x = pi - alpha + 2 k pi quad\(k in bb(Z)\). $
 ]
 
-#exemple_resolu(title: [Exemple Résolu Pas à Pas])[
-#strong[Worked Example 3 --- Solving on a Specified Interval.
-]
- Solve
+
+#exemple_resolu(title: [Worked Example 3 — Solving on a Specified Interval.])[Solve
 $cos\(2 x\)= 1 / 2$ on $\[0 thin\;2 pi\]$.
 
 - Recall that $1 / 2 = cos (pi / 3)$.
@@ -41829,12 +38293,10 @@ $cos\(2 x\)= 1 / 2$ on $\[0 thin\;2 pi\]$.
   $cal(S) = {pi / 6 thick \; thick frac(5 pi, 6) thick \; thick frac(7 pi, 6) thick \; thick frac(11 pi, 6)}$.
 ]
 
+
 ==== 5.2 Equations with Change of Variables
 <equations-with-change-of-variables>
-#exemple_resolu(title: [Exemple Résolu Pas à Pas])[
-#strong[Worked Example 4 --- Quadratic Trigonometric Equation.
-]
- Solve
+#exemple_resolu(title: [Worked Example 4 — Quadratic Trigonometric Equation.])[Solve
 $2 sin^2 x - 3 sin x + 1 = 0$ on $\[0 thin\;2 pi\[$. Set $X = sin x$.
 The equation becomes: $ 2 X^2 - 3 X + 1 = 0 . $
 $Delta =\(- 3\)^2 - 4\(2\)\(1\)= 9 - 8 = 1$. The roots for $X$ are
@@ -41849,16 +38311,14 @@ The solutions in $\[0 thin\;2 pi\[$ are:
 $cal(S) = {pi / 6 thick \; thick pi / 2 thick \; thick frac(5 pi, 6)}$.
 ]
 
+
 ==== 5.3 Trigonometric Inequalities
 <trigonometric-inequalities>
 To solve inequalities such as $cos x gt.eq c$ or $sin x < c$, read the
 arc directly off the unit circle by drawing the boundary line $x = c$
 (vertical) or $y = c$ (horizontal).
 
-#exemple_resolu(title: [Exemple Résolu Pas à Pas])[
-#strong[Worked Example 5 --- Inequality on $\[- pi thin\;pi\
-]
-$.] Solve
+#exemple_resolu(title: [Worked Example 5 — Inequality on $\[- pi thin\;pi\]$.])[Solve
 $sin x gt.eq - sqrt(2) / 2$ on $\[- pi thin\;pi\]$. Draw the horizontal
 line $y = - sqrt(2) / 2$. It intersects the unit circle at angles
 $- pi / 4$ and $- frac(3 pi, 4)$. The region where the $y$-coordinate is
@@ -41874,6 +38334,7 @@ Traversing the interval from $- pi$ to $pi$:
 The solution set is:
 $ cal(S) = [- pi thick \; thick - frac(3 pi, 4)] union [- pi / 4 thick \; thick pi] . $
 ]
+
 
 #divider()
 
@@ -41920,32 +38381,39 @@ sound $c approx 340 upright(" m") dot.op upright("s")^(- 1)$) is:
 $ lambda = c / f = 340 / 440 approx 0.77 upright(" m") . $
 
 #quote_box[
-#strong[💻 Python Simulation --- Sampling a Sinusoid:
+#strong[💻 Python Simulation --- Sampling a Sinusoid:]
 ]
 
-]
 
 #quote_box[
-```python
+#align(center)[
+  #block(
+    fill: rgb("#f8fafc"),
+    stroke: 1pt + rgb("#cbd5e1"),
+    inset: (x: 16pt, y: 10pt),
+    radius: 6pt,
+    breakable: false,
+  )[
+    #set text(font: "Liberation Mono", size: 9.5pt, fill: rgb("#0f172a"))
+    ```text
 import math
->
 def sinusoidal_signal(amplitude, frequency, duration, num_points):
-    omega = 2 * math.pi * frequency
-    step = duration / num_points
-    points = [
-]
-
-    for i in range(num_points):
-        t = i * step
-        value = amplitude * math.sin(omega * t)
-        points.append((round(t, 4), round(value, 3)))
-    return points
->
+omega = 2 * math.pi * frequency
+step = duration / num_points
+points = []
+for i in range(num_points):
+t = i * step
+value = amplitude * math.sin(omega * t)
+points.append((round(t, 4), round(value, 3)))
+return points
 # Generate a 50 Hz signal over 0.02 seconds (1 complete period)
 sampled = sinusoidal_signal(amplitude=325, frequency=50, duration=0.02, num_points=5)
 print("Sampled points:", sampled)
-```
+    ```
+  ]
 ]
+]
+
 
 #divider()
 
@@ -42116,7 +38584,7 @@ analysis).]
 
 #strong[Exercise 49.18 ---] Jordan's Inequality. 1. Prove that the
 function $f\(x\)= frac(sin x, x)$ is strictly decreasing on
-$]0 thin \; pi / 2[$. 2. Deduce #strong[Jordan's inequality]:
+$]0 thin \; pi / 2]$. 2. Deduce #strong[Jordan's inequality]:
 $ upright("For all ") x in [0 thin \; pi / 2] : quad 2 / pi x lt.eq sin x lt.eq x . $
 \3. Give the geometric interpretation of this inequality using a chord
 and a tangent line.
@@ -42279,10 +38747,10 @@ $2 cos x + 1$:
 
 - $2 cos x + 1 = 0 arrow.l.r.double cos x = - 1 / 2 arrow.l.r.double x = frac(2 pi, 3)$.
 
-- On $[0 thin \; frac(2 pi, 3)]$,
+- On $[0 thin \; frac(2 pi, 3)[$,
   $cos x > - 1\/2 arrow.r.double.long 2 cos x + 1 > 0 arrow.r.double.long f'\(x\)< 0$.
 
-- On $]frac(2 pi, 3) thin \; pi[$,
+- On $]frac(2 pi, 3) thin \; pi]$,
   $cos x < - 1\/2 arrow.r.double.long 2 cos x + 1 < 0 arrow.r.double.long f'\(x\)> 0$.
   Thus $f$ is strictly decreasing on $[0 thin \; frac(2 pi, 3)]$ and
   strictly increasing on $[frac(2 pi, 3) thin \; pi]$.
@@ -42409,13 +38877,13 @@ $sin ((n + 1 / 2) x)$. Hence:
 $2 sin (x / 2) S_n\(x\)= sin ((n + 1 / 2) x)$. Dividing by
 $2 sin (x / 2) eq.not 0$ yields the Dirichlet kernel formula.
 
-#strong[Solution 49.18:] 1. For $x in ]0 thin \; pi / 2[$,
+#strong[Solution 49.18:] 1. For $x in ]0 thin \; pi / 2]$,
 $f'\(x\)= frac(x cos x - sin x, x^2) = frac(cos x\(x - tan x\), x^2)$.
 By the fundamental lemma of Section 3.1, for all
 $x in ]0 thin \; pi / 2[$,
 $x < tan x arrow.l.r.double x - tan x < 0$. Since $cos x > 0$ and
 $x^2 > 0$, we have $f'\(x\)< 0$. Thus $f$ is strictly decreasing. 2. For
-all $x in ]0 thin \; pi / 2[$:
+all $x in ]0 thin \; pi / 2]$:
 $f (pi / 2) lt.eq f\(x\)lt.eq lim_(t arrow.r 0^(+)) f\(t\)arrow.l.r.double frac(sin\(pi\/2\), pi\/2) lt.eq frac(sin x, x) lt.eq 1 arrow.l.r.double 2 / pi lt.eq frac(sin x, x) lt.eq 1$.
 Multiplying by $x > 0$: $2 / pi x lt.eq sin x lt.eq x$. This inequality
 holds at $x = 0$ as well. 3. Graphically on $[0 thin \; pi / 2]$, the
@@ -42480,10 +38948,9 @@ Water] and the discovery of integral calculus.
 infinitesimal instants to extract instantaneous velocity, the integral
 is the golden needle that sews all the crumbs back together to
 reconstruct the grand journey of space. Nothing is lost, everything
-accumulates within the memory of the curve.”
+accumulates within the memory of the curve.”]
 ]
 
-]
 
 #divider()
 
@@ -42549,22 +39016,12 @@ flat, infinitely thin circular disks], calculate the volume of each disk
 (which is virtually a perfect flat cylinder), and then #strong[add all
 these disks together] from the bottom to the top!
 
-#align(center)[
-  #block(
-    fill: rgb("#f8fafc"),
-    stroke: 1pt + rgb("#cbd5e1"),
-    inset: (x: 16pt, y: 10pt),
-    radius: 6pt,
-    breakable: false,
-  )[
-    #set text(font: "Liberation Mono", size: 9.5pt, fill: rgb("#0f172a"))
-    ```text
-Cask sliced into thin disks:
-Each slice is a flat circular disk
-of infinitesimal thickness dt
-    ```
+#figure(image("figures_en/vol_6/fig_50_tonneau_kepler.svg", alt: "La stéréométrie des tonneaux de Kepler : calcul intégral par tranches"),
+  caption: [
+    La stéréométrie des tonneaux de Kepler : calcul intégral par
+    tranches
   ]
-]
+)
 
 ==== 1.2 The Speedometer and the Broken Odometer
 <the-speedometer-and-the-broken-odometer>
@@ -42586,26 +39043,12 @@ departure at time $t = a$ and arrival at time $t = b$?
   precisely to the #strong[area of the rectangle] of base
   $\[0 thin\;2\]$ and height $90$!
 
-#align(center)[
-  #block(
-    fill: rgb("#f8fafc"),
-    stroke: 1pt + rgb("#cbd5e1"),
-    inset: (x: 16pt, y: 10pt),
-    radius: 6pt,
-    breakable: false,
-  )[
-    #set text(font: "Liberation Mono", size: 9.5pt, fill: rgb("#0f172a"))
-    ```text
-Speed v(t)
-90
-Area of rectangle
-Distance = 90 × 2        = 180 km
-180
-0  Time t
-0                         2h
-    ```
+#figure(image("figures_en/vol_6/fig_50_riemann_integrale.svg", alt: "L’intégrale de Riemann : encadrement de l’aire sous la courbe par des rectangles"),
+  caption: [
+    L'intégrale de Riemann : encadrement de l'aire sous la courbe par
+    des rectangles
   ]
-]
+)
 
 #block[
 #set enum(numbering: "1.", start: 2)
@@ -42640,13 +39083,6 @@ planar region bounded by:
 This geometric region is known as the #strong[curvilinear trapezoid] or
 the area under the curve.
 
-#figure(image("figures/vol_6/fig_50_riemann_integrale.svg", alt: "L’intégrale de Riemann : encadrement de l’aire sous la courbe par des rectangles"),
-  caption: [
-    L'intégrale de Riemann : encadrement de l'aire sous la courbe par
-    des rectangles
-  ]
-)
-
 To approximate this area, divide the interval $\[a thin\;b\]$ into $n$
 equal sub-intervals of width $Delta x = frac(b - a, n)$ using the
 subdivision points:
@@ -42665,10 +39101,7 @@ from $a$ to $b$].
 
 ==== 2.2 Leibniz's Notation: $integral_a^b f\(t\)thin d t$
 <leibnizs-notation-int_ab-ftdt>
-#quote_box[
-#strong[🔍 True History --- October 29, 1675 in Paris:
-]
- It was the
+#decouvre(title: [True History — October 29, 1675 in Paris:])[It was the
 German philosopher and polymath #strong[Gottfried Wilhelm Leibniz] who
 introduced the integral sign $integral$. Leibniz pondered: #emph[“What
 are we doing? We are computing the Sum of an infinity of infinitely
@@ -42679,6 +39112,7 @@ And to denote the infinitely small width of each slice, he wrote $d t$
 (the differential of $t$).
 ]
 
+
 When you encounter the formula: $ integral_a^b f\(t\)thin d t $ here is
 what it communicates:
 
@@ -42688,43 +39122,51 @@ what it communicates:
 - and infinitesimal base width $d t$.
 
 #quote_box[
-#strong[Note on Dummy Variables:
-]
- The variable $t$ beneath the integral
+#strong[Note on Dummy Variables:] The variable $t$ beneath the integral
 sign is a #strong[dummy variable]: it merely scans the interval from $a$
 to $b$. It can be replaced by any other letter without altering the
 numerical value of the integral:
 $ integral_a^b f\(t\)thin d t = integral_a^b f\(x\)thin d x = integral_a^b f\(u\)thin d u . $
 ]
 
+
 ==== 2.3 Python Implementation: Midpoint Riemann Sums
 <python-implementation-midpoint-riemann-sums>
 Here is a clean Python script that approximates the definite integral of
 a continuous function using the midpoint rule:
 
-```python
+#align(center)[
+  #block(
+    fill: rgb("#f8fafc"),
+    stroke: 1pt + rgb("#cbd5e1"),
+    inset: (x: 16pt, y: 10pt),
+    radius: 6pt,
+    breakable: false,
+  )[
+    #set text(font: "Liberation Mono", size: 9.5pt, fill: rgb("#0f172a"))
+    ```text
 def rectangle_integral(f, a, b, n):
-    """
-    Computes an approximation of the definite integral of f from a to b
-    using the midpoint Riemann sum method.
-    """
-    width = (b - a) / n
-    total_sum = 0.0
-    for k in range(n):
-        # Midpoint of the k-th sub-interval
-        x_mid = a + (k + 0.5) * width
-        total_sum += f(x_mid)
-    return total_sum * width
-
+"""
+Computes an approximation of the definite integral of f from a to b
+using the midpoint Riemann sum method.
+"""
+width = (b - a) / n
+total_sum = 0.0
+for k in range(n):
+# Midpoint of the k-th sub-interval
+x_mid = a + (k + 0.5) * width
+total_sum += f(x_mid)
+return total_sum * width
 # Test on f(x) = x^2 from 0 to 3 (exact theoretical area is 9)
 def square(x):
-    return x**2
-
+return x**2
 print("Approximation with 10 rectangles   :", rectangle_integral(square, 0, 3, 10))
 print("Approximation with 100 rectangles  :", rectangle_integral(square, 0, 3, 100))
 print("Approximation with 1000 rectangles :", rectangle_integral(square, 0, 3, 1000))
 # With 1000 rectangles, we obtain 8.9999988... virtually 9!
-```
+    ```
+  ]
+]
 
 #divider()
 
@@ -42757,27 +39199,21 @@ As $h arrow.r 0$, the difference quotient of the area function becomes
 
 #quote_box[
 #strong[The derivative of the accumulation function is the original
-function itself:
+function itself:] $ A'\(x\)= f\(x\). $
 ]
- $ A'\(x\)= f\(x\). $
-]
+
 
 ==== 3.2 Rigorous Proof of the Fundamental Theorem of Calculus
 <rigorous-proof-of-the-fundamental-theorem-of-calculus>
-#quote_box[
-#strong[📐 Fundamental Theorem of Calculus (Required Curriculum Proof)
----
-]
- Let $f$ be a continuous function on an interval $I$, and let
+#principe(title: [Fundamental Theorem of Calculus (Required Curriculum Proof)
+—])[Let $f$ be a continuous function on an interval $I$, and let
 $a in I$. The function $A$ defined on $I$ by:
 $ A\(x\)= integral_a^x f\(t\)thin d t $ is differentiable on $I$, and
 for every $x in I$: $ A'\(x\)= f\(x\). $
 ]
 
-#quote_box[
-#strong[✍️ Proof ---
-]
- Let $x in I$ and let $h > 0$ such that
+
+#exemple_resolu(title: [Proof —])[Let $x in I$ and let $h > 0$ such that
 $x + h in I$. By Chasles' relation for integrals:
 $ A\(x + h\)- A\(x\)= integral_a^(x + h) f\(t\)thin d t - integral_a^x f\(t\)thin d t = integral_x^(x + h) f\(t\)thin d t . $
 Because $f$ is continuous on the closed interval $\[x thin\;x + h\]$,
@@ -42801,25 +39237,22 @@ conclude that $A$ is differentiable at $x$ and $A'\(x\)= f\(x\)$.
 $square.filled.medium$
 ]
 
+
 #divider()
 
 === 4. Antiderivatives and the Evaluation of Definite Integrals
 <antiderivatives-and-the-evaluation-of-definite-integrals>
 ==== 4.1 What Is an Antiderivative?
 <what-is-an-antiderivative>
-#principe(title: [Définition Fondamentale])[
-#strong[📐 Definition ---
-]
- Let $f$ be a continuous function on an
+#principe(title: [Definition —])[Let $f$ be a continuous function on an
 interval $I$. An #strong[antiderivative] (or primitive) of $f$ on $I$ is
 any function $F$ differentiable on $I$ such that:
 $ upright("For all ") x in I : quad F'\(x\)= f\(x\). $
 ]
 
+
 #quote_box[
-#strong[Fundamental Properties of Antiderivatives ---
-]
- If $F$ is an
+#strong[Fundamental Properties of Antiderivatives ---] If $F$ is an
 antiderivative of $f$ on an interval $I$, then: 1. For any real constant
 $C$, the function $x mapsto F\(x\)+ C$ is also an antiderivative of $f$
 (since the derivative of a constant is zero: $\(F + C\)' = F' + 0 = f$).
@@ -42830,24 +39263,20 @@ with $x_0 in I$, there exists #strong[a unique] antiderivative of $f$
 satisfying $F\(x_0\)= y_0$.
 ]
 
+
 ==== 4.2 The Evaluation Formula for Definite Integrals
 <the-evaluation-formula-for-definite-integrals>
 Thanks to the Fundamental Theorem, evaluating a definite integral
 requires no rectangles whatsoever:
 
-#quote_box[
-#strong[📐 Theorem (Evaluating Integrals via Antiderivatives) ---
-]
- Let
+#principe(title: [Theorem (Evaluating Integrals via Antiderivatives) —])[Let
 $f$ be a continuous function on $\[a thin\;b\]$, and let $F$ be any
 antiderivative of $f$ on $\[a thin\;b\]$. Then:
 $ integral_a^b f\(t\)thin d t =\[F\(t\)\]_a^b = F\(b\)- F\(a\). $
 ]
 
-#quote_box[
-#strong[✍️ Proof ---
-]
- Define $A\(x\)= integral_a^x f\(t\)thin d t$. By
+
+#principe(title: [Proof —])[Define $A\(x\)= integral_a^x f\(t\)thin d t$. By
 the Fundamental Theorem, $A$ is an antiderivative of $f$ on
 $\[a thin\;b\]$. Since $F$ is another antiderivative of $f$, there
 exists a constant $C in bb(R)$ such that for all $x in\[a thin\;b\]$:
@@ -42862,6 +39291,7 @@ $ G\(b\)- G\(a\)=\(F\(b\)+ K\)-\(F\(a\)+ K\)= F\(b\)- F\(a\). $ The
 evaluation is entirely independent of the arbitrary constant chosen!
 $square.filled.medium$
 ]
+
 
 ==== 4.3 Table of Standard Antiderivatives
 <table-of-standard-antiderivatives>
@@ -42915,19 +39345,14 @@ integral calculus:
   , kind: table
   )
 
-#exemple_resolu(title: [Exemple Résolu Pas à Pas])[
-#strong[Worked Example 1 --- Direct Antiderivatives.
-]
- 1.
+#exemple_resolu(title: [Worked Example 1 — Direct Antiderivatives.])[1.
 $f_1\(x\)= 3 x^4 - 2 x^2 + 5 arrow.r.double.long F_1\(x\)= 3 (x^5 / 5) - 2 (x^3 / 3) + 5 x = 3 / 5 x^5 - 2 / 3 x^3 + 5 x$.
 \2. $f_2\(x\)= 3 / x + e^(- 2 x)$ on
 $\]0 thin\;+ oo\[arrow.r.double.long F_2\(x\)= 3 ln x - 1 / 2 e^(- 2 x)$.
 ]
 
-#exemple_resolu(title: [Exemple Résolu Pas à Pas])[
-#strong[Worked Example 2 --- Recognizing Composite Patterns.
-]
- 1.
+
+#exemple_resolu(title: [Worked Example 2 — Recognizing Composite Patterns.])[1.
 $f\(x\)=\(2 x + 1\)\(x^2 + x + 4\)^3$. Let $u\(x\)= x^2 + x + 4$. Then
 $u'\(x\)= 2 x + 1$. The expression is formatted as $u' u^3$. An
 antiderivative is: $ F\(x\)= u^4 / 4 = frac(\(x^2 + x + 4\)^4, 4) . $
@@ -42949,6 +39374,7 @@ antiderivative is: $ F\(x\)= u^4 / 4 = frac(\(x^2 + x + 4\)^4, 4) . $
 ]
 ]
 
+
 #divider()
 
 === 5. Algebraic Properties of the Definite Integral
@@ -42958,20 +39384,16 @@ specified intervals.
 
 ==== 5.1 Linearity
 <linearity>
-#quote_box[
-#strong[📐 Linearity Property ---
-]
- For all constants
+#principe(title: [Linearity Property —])[For all constants
 $alpha\,beta in bb(R)$ and continuous functions $f\,g$:
 $ integral_a^b #scale(x: 120%, y: 120%)[\(] alpha f\(t\)+ beta g\(t\)#scale(x: 120%, y: 120%)[\)] thin d t = alpha integral_a^b f\(t\)thin d t + beta integral_a^b g\(t\)thin d t . $
 ]
 
+
 ==== 5.2 Chasles' Relation
 <chasles-relation>
 #quote_box[
-#strong[📐 Chasles' Relation ---
-]
- For all real numbers $a\,b\,c$
+#strong[📐 Chasles' Relation ---] For all real numbers $a\,b\,c$
 belonging to an interval where $f$ is continuous:
 $ integral_a^c f\(t\)thin d t + integral_c^b f\(t\)thin d t = integral_a^b f\(t\)thin d t . $
 In particular:
@@ -42982,12 +39404,11 @@ In particular:
   (reversing the integration limits flips the sign).
 ]
 
+
 ==== 5.3 Positivity and Order Preservation
 <positivity-and-order-preservation>
 #quote_box[
-#strong[📐 Positivity ---
-]
- Let $a lt.eq b$.
+#strong[📐 Positivity ---] Let $a lt.eq b$.
 
 - If for all $t in\[a thin\;b\]$, $f\(t\)gt.eq 0$, then
   $integral_a^b f\(t\)thin d t gt.eq 0$.
@@ -42999,15 +39420,14 @@ In particular:
   $lr(|integral_a^b f \( t \) thin d t|) lt.eq integral_a^b\|f\(t\)\|thin d t$.
 ]
 
-#quote_box[
-#strong[⚠️ Common Pitfall! --- Order of Limits Matters!
-]
- The rule
+
+#alerte(title: [Common Pitfall! — Order of Limits Matters!])[The rule
 “$f gt.eq 0 arrow.r.double.long integral_a^b f\(t\)thin d t gt.eq 0$”
 strictly assumes #strong[$a lt.eq b$]. If the integration limits are
 reversed ($a > b$), the integral of a strictly positive function is
 #strong[negative]!
 ]
+
 
 ==== 5.4 Area Enclosed Between Two Curves
 <area-enclosed-between-two-curves>
@@ -43019,26 +39439,6 @@ area under $f$ minus the area under $g$:
 
 $ cal(A) = integral_a^b #scale(x: 120%, y: 120%)[\(] f\(x\)- g\(x\)#scale(x: 120%, y: 120%)[\)] thin d x . $
 
-#align(center)[
-  #block(
-    fill: rgb("#f8fafc"),
-    stroke: 1pt + rgb("#cbd5e1"),
-    inset: (x: 16pt, y: 10pt),
-    radius: 6pt,
-    breakable: false,
-  )[
-    #set text(font: "Liberation Mono", size: 9.5pt, fill: rgb("#0f172a"))
-    ```text
-y                ..---*---.. y = f(x) (upper curve)
-Area  : : : \
-A  : : : : )
-'--.......---'   y = g(x) (lower curve)
-0  x
-a                 b
-    ```
-  ]
-]
-
 ==== 5.5 The Mean Value of a Function
 <the-mean-value-of-a-function>
 How can one define the average temperature of a day if temperature
@@ -43046,14 +39446,12 @@ $T\(t\)$ fluctuates continuously from hour to hour? One cannot simply
 sum an infinity of readings and divide by infinity! We use the
 #strong[integral mean value]:
 
-#principe(title: [Définition Fondamentale])[
-#strong[📐 Definition --- Mean Value:
-]
- Let $f$ be continuous on
+#principe(title: [Definition — Mean Value:])[Let $f$ be continuous on
 $\[a thin\;b\]$ with $a < b$. The #strong[mean value] (or average value)
 of $f$ on $\[a thin\;b\]$, denoted $mu$ (or $overline(f)$), is the real
 number: $ mu = frac(1, b - a) integral_a^b f\(t\)thin d t . $
 ]
+
 
 #strong[Geometric Interpretation:] $mu$ is the height of a rectangle
 sharing the same base $\[a thin\;b\]$ that encloses #strong[the exact
@@ -43072,19 +39470,13 @@ counterpart of the product rule for differentiation.
 
 ==== 6.1 Theorem and Proof
 <theorem-and-proof>
-#quote_box[
-#strong[📐 Integration by Parts Theorem (Required Curriculum Proof) ---
-]
-
-Let $u$ and $v$ be differentiable functions on $\[a thin\;b\]$ whose
+#principe(title: [Integration by Parts Theorem (Required Curriculum Proof) —])[Let $u$ and $v$ be differentiable functions on $\[a thin\;b\]$ whose
 derivatives $u'$ and $v'$ are continuous on $\[a thin\;b\]$. Then:
 $ integral_a^b u'\(t\)v\(t\)thin d t = #scale(x: 180%, y: 180%)[\[] u\(t\)v\(t\)#scale(x: 180%, y: 180%)[\]]_a^b - integral_a^b u\(t\)v'\(t\)thin d t . $
 ]
 
-#quote_box[
-#strong[✍️ Proof ---
-]
- From the product rule of differentiation, for all
+
+#principe(title: [Proof —])[From the product rule of differentiation, for all
 $t in\[a thin\;b\]$: $ \(u v\)'\(t\)= u'\(t\)v\(t\)+ u\(t\)v'\(t\). $
 Isolating $u'\(t\)v\(t\)$:
 $ u'\(t\)v\(t\)=\(u v\)'\(t\)- u\(t\)v'\(t\). $ Integrating both sides
@@ -43096,6 +39488,7 @@ Substituting this back yields the required formula:
 $ integral_a^b u'\(t\)v\(t\)thin d t = #scale(x: 180%, y: 180%)[\[] u\(t\)v\(t\)#scale(x: 180%, y: 180%)[\]]_a^b - integral_a^b u\(t\)v'\(t\)thin d t . quad square.filled.medium $
 ]
 
+
 ==== 6.2 Strategy: Choosing $u'$ and $v$
 <strategy-choosing-u-and-v>
 The goal of integration by parts is to trade an intractable integral for
@@ -43105,9 +39498,7 @@ degree when differentiated!).
 
 #quote_box[
 #strong[🧭 The LIATE / ALPES Heuristic for Choosing $v\(x\)$ (the factor
-to differentiate):
-]
- Choose $v\(x\)$ to be whichever function type
+to differentiate):] Choose $v\(x\)$ to be whichever function type
 appears highest on this list: 1. #strong[L] : #strong[Logarithms]
 ($ln x$) 2. #strong[I] : #strong[Inverse trigonometric functions]
 ($arctan x$, etc.) 3. #strong[A] : #strong[Algebraic / Polynomials]
@@ -43116,11 +39507,8 @@ appears highest on this list: 1. #strong[L] : #strong[Logarithms]
 ($e^x\,e^(2 x)\,dots.h$)
 ]
 
-#exemple_resolu(title: [Exemple Résolu Pas à Pas])[
-#strong[Worked Example 3 --- Evaluating $integral_0^1 x e^x thin d x$.
-]
 
-We have the product of a polynomial $x$ and an exponential $e^x$.
+#exemple_resolu(title: [Worked Example 3 — Evaluating $integral_0^1 x e^x thin d x$.])[We have the product of a polynomial $x$ and an exponential $e^x$.
 According to the LIATE rule, the polynomial $x$ takes precedence over
 the exponential for differentiation:
 
@@ -43137,10 +39525,8 @@ $integral_0^1 e^x thin d x =\[e^x\]_0^1 = e^1 - e^0 = e - 1$. Therefore:
 $ integral_0^1 x e^x thin d x = e -\(e - 1\)= upright(bold(1)) . $
 ]
 
-#exemple_resolu(title: [Exemple Résolu Pas à Pas])[
-#strong[Worked Example 4 --- The Clever Trick to Integrate $ln x$.
-]
- How
+
+#exemple_resolu(title: [Worked Example 4 — The Clever Trick to Integrate $ln x$.])[How
 do we find an antiderivative of $ln x$ on $\]0 thin\;+ oo\[$? There is
 no obvious product? Write it as $ln x = 1 times ln x$! Set:
 
@@ -43152,14 +39538,13 @@ Then:
 $ integral ln x thin d x = x ln x - integral x times 1 / x thin d x = x ln x - integral 1 thin d x = x ln x - x + C . $
 
 #quote_box[
-#strong[Memorable Formula --- An antiderivative of $ln x$ is:
-]
-
+#strong[Memorable Formula --- An antiderivative of $ln x$ is:]
 $ F\(x\)= x ln x - x . $ Immediate verification by differentiation:
 $\(x ln x - x\)' = 1 times ln x + x times 1 / x - 1 = ln x + 1 - 1 = ln x$.
 Impeccable! ✔
 ]
 ]
+
 
 #divider()
 
@@ -43611,13 +39996,11 @@ Chapter 51 with #strong[The Cooling Cup of Tea].
 #metadata("debut-section") <debut-section>
 == CHAPTER 51: The Cooling Cup of Tea
 <chapter-51-the-cooling-cup-of-tea>
-#quote_box[
-#emph[“Nature does not hand us trajectories pre-drawn; she gives us only
+#principe(title: [“Nature does not hand us trajectories pre-drawn; she gives us only
 local laws connecting the present state to the rate of its change.
-Everything else is a differential equation.”
+Everything else is a differential equation.”])[--- Henri Poincaré
 ]
- --- Henri Poincaré
-]
+
 
 #divider()
 
@@ -43671,13 +40054,11 @@ the #emph[Philosophical Transactions of the Royal Society] entitled
 #emph[Scala graduum caloris] (“Scale of the Degrees of Heat”). In it, he
 formulated a universal empirical principle:
 
-#quote_box[
-#strong[Newton's Law of Cooling ---
-]
- The rate at which a hot body loses
+#principe(title: [Newton's Law of Cooling —])[The rate at which a hot body loses
 heat to its surroundings is #strong[proportional to the temperature
 difference] between the body and the ambient environment.
 ]
+
 
 ==== 1.2 Translation into a Mathematical Equation
 <translation-into-a-mathematical-equation>
@@ -43707,16 +40088,14 @@ equation links this unknown function directly to its own derivative!
 <the-homogeneous-differential-equation-y-ay>
 ==== 2.1 Definition and Intuition
 <definition-and-intuition>
-#principe(title: [Définition Fondamentale])[
-#strong[📐 Definition ---
-]
- Let $a$ be a fixed real number. The
+#principe(title: [Definition —])[Let $a$ be a fixed real number. The
 differential equation: $ \(E_0\): quad y' = a y $ is called a
 #strong[first-order homogeneous linear differential equation with
 constant coefficients]. A solution of $\(E_0\)$ on an interval $I$ is
 any function $f$ differentiable on $I$ such that for all $t in I$:
 $ f'\(t\)= a f\(t\). $
 ]
+
 
 #strong[What this means:] We seek a function whose derivative is
 directly proportional to itself. Do you know a function that is its own
@@ -43730,19 +40109,14 @@ others? The answer is no.
 
 ==== 2.2 Fundamental Theorem and Rigorous Proof
 <fundamental-theorem-and-rigorous-proof>
-#quote_box[
-#strong[📐 Theorem (Required Curriculum Proof) ---
-]
- Let $a in bb(R)$.
+#principe(title: [Theorem (Required Curriculum Proof) —])[Let $a in bb(R)$.
 The solutions on $bb(R)$ to the differential equation $y' = a y$ are
 precisely the functions of the form: $ y\(t\)= C e^(a t) $ where $C$ is
 an arbitrary real constant.
 ]
 
-#quote_box[
-#strong[✍️ Rigorous Proof ---
-]
- The proof proceeds in two stages:
+
+#exemple_resolu(title: [Rigorous Proof —])[The proof proceeds in two stages:
 verification (existence) and uniqueness. 1. #strong[Verification:] Let
 $C in bb(R)$ and define $f\(t\)= C e^(a t)$. The function $f$ is
 differentiable on $bb(R)$, and for all $t in bb(R)$:
@@ -43771,13 +40145,14 @@ function of the form $C e^(a t)$ is indeed a solution to $\(E_0\)$.
 ]
 ]
 
+
 ==== 2.3 Uniqueness Under Initial Conditions: The Cauchy Problem
 <uniqueness-under-initial-conditions-the-cauchy-problem>
 The equation $y' = a y$ admits an infinite family of solutions (one for
 each real value of $C$). Graphically, this corresponds to an entire
 family of non-intersecting trajectories:
 
-#figure(image("figures/vol_6/fig_51_circuit_rc_euler.svg", alt: "Charge du condensateur et méthode d’Euler pour les équations différentielles"),
+#figure(image("figures_en/vol_6/fig_51_circuit_rc_euler.svg", alt: "Charge du condensateur et méthode d’Euler pour les équations différentielles"),
   caption: [
     Charge du condensateur et méthode d'Euler pour les équations
     différentielles
@@ -43788,20 +40163,15 @@ To determine $C$ and fix the unique physical trajectory followed by the
 system, one must specify an #strong[initial condition] at some reference
 time $t_0$.
 
-#quote_box[
-#strong[📐 Existence and Uniqueness Theorem (Cauchy Initial Value
-Problem) ---
-]
- For any real numbers $t_0$ and $y_0$, the differential
+#principe(title: [Existence and Uniqueness Theorem (Cauchy Initial Value
+Problem) —])[For any real numbers $t_0$ and $y_0$, the differential
 equation $y' = a y$ has #strong[a unique solution] $f$ satisfying the
 initial condition: $ f\(t_0\)= y_0 . $ This solution is given for all
 $t in bb(R)$ by: $ f\(t\)= y_0 thin e^(a\(t - t_0\)) . $
 ]
 
-#quote_box[
-#strong[✍️ Proof ---
-]
- The general solutions have the form
+
+#exemple_resolu(title: [Proof —])[The general solutions have the form
 $f\(t\)= C e^(a t)$. The initial condition requires:
 $ f\(t_0\)= y_0 arrow.l.r.double C e^(a t_0) = y_0 arrow.l.r.double C = y_0 e^(- a t_0) . $
 Substituting $C$ back into the function:
@@ -43810,10 +40180,8 @@ Because $C$ is uniquely determined, the solution is unique.
 $square.filled.medium$
 ]
 
-#exemple_resolu(title: [Exemple Résolu Pas à Pas])[
-#strong[Worked Example 1 --- Radioactive Decay.
-]
- A sample of Iodine-131
+
+#exemple_resolu(title: [Worked Example 1 — Radioactive Decay.])[A sample of Iodine-131
 initially contains $N_0 = 10^8$ radioactive nuclei at $t = 0$. The
 number of remaining undecayed nuclei $N\(t\)$ satisfies the differential
 equation $N'\(t\)= - 0.0866 N\(t\)$ (with time $t$ measured in days). 1.
@@ -43828,6 +40196,7 @@ $N\(8\)= 10^8 e^(- 0.0866 times 8) = 10^8 e^(- 0.6928) approx 10^8 times 0.50017
 (Approximately half of the sample has decayed: the half-life of
 Iodine-131 is roughly 8 days!).
 ]
+
 
 #divider()
 
@@ -43848,28 +40217,22 @@ derivative is identically zero: $y'\(t\)= 0$. Substituting into $\(E\)$:
 $ 0 = a k + b arrow.l.r.double a k = - b arrow.l.r.double k = - b / a . $
 
 #quote_box[
-#strong[The constant particular solution of $y' = a y + b$ is:
-]
-
+#strong[The constant particular solution of $y' = a y + b$ is:]
 $ y_p\(t\)= - b / a . $ In physical modeling, this value represents the
 #strong[steady-state equilibrium] of the system.
 ]
 
+
 ==== 3.2 Solution Structure Theorem
 <solution-structure-theorem>
-#quote_box[
-#strong[📐 Theorem (General Solution of $y' = a y + b$) ---
-]
- Let
+#principe(title: [Theorem (General Solution of $y' = a y + b$) —])[Let
 $a eq.not 0$ and $b$ be real numbers. The solutions on $bb(R)$ to the
 differential equation $y' = a y + b$ are precisely the functions:
 $ y\(t\)= C e^(a t) - b / a $ where $C$ is an arbitrary real constant.
 ]
 
-#quote_box[
-#strong[✍️ Proof (Required Curriculum Proof) ---
-]
- Let
+
+#exemple_resolu(title: [Proof (Required Curriculum Proof) —])[Let
 $\(E\): y' = a y + b$ and let $\(E_0\): y' = a y$ be its associated
 homogeneous equation. Define $y_p\(t\)= - b / a$. We have
 $y'_p = 0 = a y_p + b$, so $y_p$ is a particular solution of $\(E\)$.
@@ -43891,12 +40254,10 @@ constant $C in bb(R)$ such that:
 $ \(f - y_p\)\(t\)= C e^(a t) arrow.l.r.double f\(t\)= C e^(a t) + y_p\(t\)arrow.l.r.double f\(t\)= C e^(a t) - b / a . quad square.filled.medium $
 ]
 
-#quote_box[
-#strong[🧭 The Principle of Superposition:
+
+#principe(title: [The Principle of Superposition:])[$ upright("General Solution of ")\(E\)= underbrace(C e^(a t), upright("General solution of homogeneous equation")) + underbrace((- b / a), upright("Constant particular solution")) $
 ]
 
-$ upright("General Solution of ")\(E\)= underbrace(C e^(a t), upright("General solution of homogeneous equation")) + underbrace((- b / a), upright("Constant particular solution")) $
-]
 
 ==== 3.3 Initial Condition for $y' = a y + b$
 <initial-condition-for-y-ay-b>
@@ -43904,10 +40265,7 @@ To determine $C$ from an initial condition $y\(t_0\)= y_0$:
 $ y\(t_0\)= y_0 arrow.l.r.double C e^(a t_0) - b / a = y_0 arrow.l.r.double C e^(a t_0) = y_0 + b / a arrow.l.r.double C = (y_0 + b / a) e^(- a t_0) . $
 Substituting back: $ y\(t\)= (y_0 + b / a) e^(a\(t - t_0\)) - b / a . $
 
-#exemple_resolu(title: [Exemple Résolu Pas à Pas])[
-#strong[Worked Example 2 --- The Cooling Tea Solved.
-]
- Revisit our cup of
+#exemple_resolu(title: [Worked Example 2 — The Cooling Tea Solved.])[Revisit our cup of
 tea cooling from $90^compose upright("C")$ in a room at
 $20^compose upright("C")$. The equation is $T'\(t\)= - 0.1 T\(t\)+ 2$
 (with $t$ in minutes). 1. Determine the general solution of the
@@ -43931,6 +40289,7 @@ $ - 0.1 t = ln (5 / 14) = - ln (14 / 5) arrow.l.r.double t = 10 ln\(2.8\)approx 
 The tea will be drinkable after approximately 10 minutes and 18 seconds.
 ]
 
+
 #divider()
 
 === 4. Foundational Real-World Models
@@ -43951,15 +40310,14 @@ the initial condition of an initially uncharged capacitor
 $ u_C\(t\)= E (1 - e^(- t\/tau)) . $
 
 #quote_box[
-#strong[Notable Properties of Time Constant $tau$:
-]
- At $t = tau$, the
+#strong[Notable Properties of Time Constant $tau$:] At $t = tau$, the
 voltage reaches
 $u_C\(tau\)= E\(1 - e^(- 1)\)approx E\(1 - 0.368\)= 0.632 E$. The
 capacitor is charged to #strong[$63.2 %$] of its capacity. At
 $t = 3 tau$, it reaches $95 %$. At $t = 5 tau$, it reaches $99.3 %$
 (effectively full charge).
 ]
+
 
 ==== 4.2 Terminal Velocity with Linear Drag
 <terminal-velocity-with-linear-drag>
@@ -44013,36 +40371,43 @@ Here is the Python script implementing Euler's method for $y' = - 2 y$
 with $y\(0\)= 1$ on $\[0 thin\;2\]$, comparing the numerical simulation
 against the exact analytical solution $y\(t\)= e^(- 2 t)$:
 
-```python
+#align(center)[
+  #block(
+    fill: rgb("#f8fafc"),
+    stroke: 1pt + rgb("#cbd5e1"),
+    inset: (x: 16pt, y: 10pt),
+    radius: 6pt,
+    breakable: false,
+  )[
+    #set text(font: "Liberation Mono", size: 9.5pt, fill: rgb("#0f172a"))
+    ```text
 import math
-
 def euler_method(a, b, y0, n):
-    """
-    Numerically solves y' = -2y on [a, b] with y(a) = y0 using n steps.
-    """
-    h = (b - a) / n
-    t = a
-    y = y0
-    results = [(t, y, math.exp(-2 * t))]
-
-    for _ in range(n):
-        # Slope from differential equation y' = -2y
-        slope = -2 * y
-        y = y + h * slope
-        t = t + h
-        y_exact = math.exp(-2 * t)
-        results.append((round(t, 4), round(y, 4), round(y_exact, 4)))
-
-    return results
-
+"""
+Numerically solves y' = -2y on [a, b] with y(a) = y0 using n steps.
+"""
+h = (b - a) / n
+t = a
+y = y0
+results = [(t, y, math.exp(-2 * t))]
+for _ in range(n):
+# Slope from differential equation y' = -2y
+slope = -2 * y
+y = y + h * slope
+t = t + h
+y_exact = math.exp(-2 * t)
+results.append((round(t, 4), round(y, 4), round(y_exact, 4)))
+return results
 # Run with 10 steps of h = 0.2
 points = euler_method(0, 2, 1.0, 10)
 print(f"{'t':<6} | {'y_Euler':<10} | {'y_Exact':<10} | {'Error':<10}")
 print("-" * 42)
 for t_val, y_e, y_ex in points:
-    err = abs(y_e - y_ex)
-    print(f"{t_val:<6} | {y_e:<10} | {y_ex:<10} | {err:<10.4f}")
-```
+err = abs(y_e - y_ex)
+print(f"{t_val:<6} | {y_e:<10} | {y_ex:<10} | {err:<10.4f}")
+    ```
+  ]
+]
 
 #divider()
 
@@ -44430,11 +40795,10 @@ geometry in three dimensions.
 #quote_box[
 #emph[“Geometry is a magic that allows orienting a nave toward the North
 Star, raising stone vaults to the sky without collapsing, and measuring
-the distance of an invisible point without ever leaving the ground.”
-]
-
+the distance of an invisible point without ever leaving the ground.”]
 --- Notebooks of medieval master builders
 ]
+
 
 #divider()
 
@@ -44486,7 +40850,7 @@ directions at different altitudes, or two cables crossing in a timber
 frame without touching. Such lines are said to be #strong[skew
 (non-coplanar)].
 
-#figure(image("figures/vol_6/fig_52_vecteur_espace_3d.svg", alt: "Coordonnées et norme d’un vecteur dans l’espace à 3 dimensions"),
+#figure(image("figures_en/vol_6/fig_52_vecteur_espace_3d.svg", alt: "Coordonnées et norme d’un vecteur dans l’espace à 3 dimensions"),
   caption: [
     Coordonnées et norme d'un vecteur dans l'espace à 3 dimensions
   ]
@@ -44516,12 +40880,7 @@ equipped with a unit vector of equal length:
 The triplet $\(O\;arrow(i)\,arrow(j)\,arrow(k)\)$ constitutes an
 #strong[orthonormal coordinate frame of space].
 
-#principe(title: [Définition Fondamentale])[
-#strong[📐 Definition --- Coordinates of a Point and a Vector:
-]
-
-
-- For any point $M$ in space, there exists a unique triplet of real
+#principe(title: [Definition — Coordinates of a Point and a Vector:])[- For any point $M$ in space, there exists a unique triplet of real
   numbers $\(x thin\;y thin\;z\)$ such that:
   $ accent(O M, ⃗) = x arrow(i) + y arrow(j) + z arrow(k) . $ The point
   $M$ has coordinates $M\(x thin\;y thin\;z\)$. $x$ is the abscissa, $y$
@@ -44534,6 +40893,7 @@ The triplet $\(O\;arrow(i)\,arrow(j)\,arrow(k)\)$ constitutes an
 - The midpoint $I$ of segment $\[A B\]$ has coordinates:
   $ I (frac(x_A + x_B, 2) thick \; thick frac(y_A + y_B, 2) thick \; thick frac(z_A + z_B, 2)) . $
 ]
+
 
 ==== 2.2 Norm and Distance: The Double Pythagorean Theorem
 <norm-and-distance-the-double-pythagorean-theorem>
@@ -44549,18 +40909,14 @@ segment $\[A B\]$:
   second application of Pythagoras gives:
   $ A B^2 = A C^2 + B C^2 =\(x_B - x_A\)^2 +\(y_B - y_A\)^2 +\(z_B - z_A\)^2 . $
 
-#quote_box[
-#strong[📐 Theorem --- Vector Norm and Distance Between Two Points:
-]
-
-
-- The norm (length) of a vector $arrow(u)\(x thin\;y thin\;z\)$ in an
+#principe(title: [Theorem — Vector Norm and Distance Between Two Points:])[- The norm (length) of a vector $arrow(u)\(x thin\;y thin\;z\)$ in an
   orthonormal frame is:
   $ parallel arrow(u) parallel = sqrt(x^2 + y^2 + z^2) . $
 
 - The distance between two points $A$ and $B$ is:
   $ A B = parallel accent(A B, ⃗) parallel = sqrt(\(x_B - x_A\)^2 +\(y_B - y_A\)^2 +\(z_B - z_A\)^2) . $
 ]
+
 
 #divider()
 
@@ -44589,10 +40945,7 @@ $ M in cal(D) arrow.l.r.double upright("there exists a real number ") t in bb(R)
 
 Projecting onto the three coordinate components:
 
-#principe(title: [Définition Fondamentale])[
-#strong[📐 Definition --- Parametric Representation of a Line:
-]
- The line
+#principe(title: [Definition — Parametric Representation of a Line:])[The line
 $cal(D)$ passing through $A\(x_A thin\;y_A thin\;z_A\)$ and directed by
 $arrow(u)\(a thin\;b thin\;c\)$ admits as a parametric representation
 the system: $ {x = x_A + a t\
@@ -44601,15 +40954,13 @@ z = z_A + c t quad\(t in bb(R)\). $ The real number $t$ is called the
 #strong[parameter].
 ]
 
+
 #strong[Kinematic Interpretation:] Think of an aircraft taking off at
 time $t = 0$ from point $A$, with constant velocity vector $arrow(u)$.
 The parameter $t$ plays the role of time: at every second $t$, the
 aircraft occupies a precise position along the line!
 
-#exemple_resolu(title: [Exemple Résolu Pas à Pas])[
-#strong[Worked Example 1 --- Line passing through two points.
-]
- Let
+#exemple_resolu(title: [Worked Example 1 — Line passing through two points.])[Let
 $A\(1 thin\;- 2 thin\;3\)$ and $B\(4 thin\;2 thin\;- 1\)$. 1. Determine
 a parametric representation of the line $\(A B\)$. 2. Does the point
 $C\(7 thin\;6 thin\;- 5\)$ lie on the line $\(A B\)$? 3. Does the point
@@ -44633,44 +40984,27 @@ $D\(2 thin\;0 thin\;1\)$:
   The equations are incompatible. Therefore #strong[$D in.not\(A B\)$].
 ]
 
+
 ==== 3.3 Relative Positions of Two Lines in Space
 <relative-positions-of-two-lines-in-space>
 Consider two lines $cal(D)_1$ directed by $arrow(u)_1$ and $cal(D)_2$
 directed by $arrow(u)_2$.
 
-#align(center)[
-  #block(
-    fill: rgb("#f8fafc"),
-    stroke: 1pt + rgb("#cbd5e1"),
-    inset: (x: 16pt, y: 10pt),
-    radius: 6pt,
-    breakable: false,
-  )[
-    #set text(font: "Liberation Mono", size: 9.5pt, fill: rgb("#0f172a"))
-    ```text
-Are the direction vectors collinear?
-u₁ = k u₂)
-YES        NO
-Parallel lines     Do they intersect?
-system of 3 equations in 2 unknowns)
-Coincident       Strictly               /            \
-common point)      parallel            YES              NO
-Intersecting at a point   SKEW (NON-COPLANAR)
-they are coplanar)       (no contact, no common plane)
-    ```
+#figure(image("figures_en/vol_6/fig_52_droites_espace.svg", alt: "Positions relatives de deux droites dans l’espace : parallèles, sécantes ou non coplanaires"),
+  caption: [
+    Positions relatives de deux droites dans l'espace : parallèles,
+    sécantes ou non coplanaires
   ]
-]
+)
 
-#alerte(title: [Attention au Piège !])[
-#strong[⚠️ Warning, Pitfall! --- Two lines with no intersection point
-are NOT necessarily parallel!
-]
- This is the most frequent trap for
+#alerte(title: [Warning, Pitfall! — Two lines with no intersection point
+are NOT necessarily parallel!])[This is the most frequent trap for
 students coming from plane geometry: in space, the vast majority of line
 pairs are #strong[neither parallel nor intersecting]: they are
 #strong[skew / non-coplanar] (they pass over or under each other at
 different heights without ever crossing).
 ]
+
 
 #divider()
 
@@ -44681,10 +41015,7 @@ different heights without ever crossing).
 The dot product (scalar product) in space possesses exactly the same
 geometric properties as in the plane:
 
-#principe(title: [Définition Fondamentale])[
-#strong[📐 Definition --- Dot Product in Space:
-]
- For any vectors
+#principe(title: [Definition — Dot Product in Space:])[For any vectors
 $arrow(u)$ and $arrow(v)$:
 $ arrow(u) dot.op arrow(v) = parallel arrow(u) parallel times parallel arrow(v) parallel times cos\(arrow(u)\,arrow(v)\). $
 In an #strong[orthonormal] frame $\(O\;arrow(i)\,arrow(j)\,arrow(k)\)$,
@@ -44693,17 +41024,14 @@ $arrow(v)\(x' thin\;y' thin\;z'\)$:
 $ arrow(u) dot.op arrow(v) = x x' + y y' + z z' . $
 ]
 
-#quote_box[
-#strong[Orthogonality Criterion:
-]
 
+#quote_box[
+#strong[Orthogonality Criterion:]
 $ arrow(u) perp arrow(v) arrow.l.r.double arrow(u) dot.op arrow(v) = 0 arrow.l.r.double x x' + y y' + z z' = 0 . $
 ]
 
-#exemple_resolu(title: [Exemple Résolu Pas à Pas])[
-#strong[Worked Example 2 --- Computing an angle in space.
-]
- Given points
+
+#exemple_resolu(title: [Worked Example 2 — Computing an angle in space.])[Given points
 $A\(1 thin\;0 thin\;1\)$, $B\(2 thin\;1 thin\;0\)$, and
 $C\(0 thin\;2 thin\;2\)$. Determine the measure of angle
 $accent(B A C, ̂)$.
@@ -44719,6 +41047,7 @@ $accent(B A C, ̂)$.
   $accent(B A C, ̂) = 90^compose = pi / 2 upright(" rad")$.
 ]
 
+
 #divider()
 
 === 5. Planes in Space: Normal Vector and Cartesian Equation
@@ -44731,10 +41060,7 @@ peg perpendicular to the surface. If we know the direction of the peg
 and the position of one point on the table, the entire surface is
 completely locked in space!
 
-#principe(title: [Définition Fondamentale])[
-#strong[📐 Definition --- Normal Vector to a Plane:
-]
- A non-zero vector
+#principe(title: [Definition — Normal Vector to a Plane:])[A non-zero vector
 $arrow(n)$ is said to be #strong[normal] to a plane $cal(P)$ if it is
 orthogonal to the direction of every line in the plane $cal(P)$. In
 practice: $arrow(n)$ is normal to $cal(P)$ if and only if it is
@@ -44742,23 +41068,12 @@ orthogonal to #strong[two non-collinear direction vectors] lying in
 plane $cal(P)$.
 ]
 
-#align(center)[
-  #block(
-    fill: rgb("#f8fafc"),
-    stroke: 1pt + rgb("#cbd5e1"),
-    inset: (x: 16pt, y: 10pt),
-    radius: 6pt,
-    breakable: false,
-  )[
-    #set text(font: "Liberation Mono", size: 9.5pt, fill: rgb("#0f172a"))
-    ```text
-n (normal vector)
-Plane P
-A \                 /
-u/    \ v             /
-    ```
+
+#figure(image("figures_en/vol_6/fig_52_plan_vecteur_normal.svg", alt: "Cartesian equation of the plane and normal vector dans l’espace"),
+  caption: [
+    Cartesian equation of the plane and normal vector dans l'espace
   ]
-]
+)
 
 ==== 5.2 Cartesian Equation of a Plane
 <cartesian-equation-of-a-plane>
@@ -44776,12 +41091,7 @@ $ a\(x - x_A\)+ b\(y - y_A\)+ c\(z - z_A\)= 0 arrow.l.r.double a x + b y + c z -
 Setting the constant $d = -\(a x_A + b y_A + c z_A\)$, we obtain the
 fundamental theorem:
 
-#quote_box[
-#strong[📐 Theorem (Cartesian Equation of a Plane) ---
-]
-
-
-- Every plane $cal(P)$ in space admits a Cartesian equation of the form:
+#principe(title: [Theorem (Cartesian Equation of a Plane) —])[- Every plane $cal(P)$ in space admits a Cartesian equation of the form:
   $ a x + b y + c z + d = 0 $ where
   $\(a thin\;b thin\;c\)eq.not\(0 thin\;0 thin\;0\)$.
 
@@ -44792,11 +41102,9 @@ fundamental theorem:
   $ arrow(n) vec(a, b, c) . $
 ]
 
-#exemple_resolu(title: [Exemple Résolu Pas à Pas])[
-#strong[Worked Example 3 --- Equation of a plane given a point and a
-normal vector.
-]
- Determine the Cartesian equation of the plane $cal(P)$
+
+#exemple_resolu(title: [Worked Example 3 — Equation of a plane given a point and a
+normal vector.])[Determine the Cartesian equation of the plane $cal(P)$
 passing through $A\(2 thin\;- 1 thin\;3\)$ with normal vector
 $arrow(n)\(3 thin\;4 thin\;- 2\)$.
 
@@ -44810,11 +41118,9 @@ $arrow(n)\(3 thin\;4 thin\;- 2\)$.
   $ 3 x + 4 y - 2 z + 4 = 0 . $
 ]
 
-#exemple_resolu(title: [Exemple Résolu Pas à Pas])[
-#strong[Worked Example 4 --- Equation of a plane passing through three
-non-collinear points.
-]
- Determine a Cartesian equation of the plane
+
+#exemple_resolu(title: [Worked Example 4 — Equation of a plane passing through three
+non-collinear points.])[Determine a Cartesian equation of the plane
 passing through $A\(1 thin\;0 thin\;0\)$, $B\(0 thin\;2 thin\;0\)$, and
 $C\(0 thin\;0 thin\;3\)$.
 
@@ -44839,38 +41145,19 @@ $C\(0 thin\;0 thin\;3\)$.
   $x / 1 + y / 2 + z / 3 = 1$).
 ]
 
+
 #divider()
 
 === 6. Orthogonality, Orthogonal Projection, and Distance
 <orthogonality-orthogonal-projection-and-distance>
 ==== 6.1 Orthogonality of a Line and a Plane
 <orthogonality-of-a-line-and-a-plane>
-#principe(title: [Définition Fondamentale])[
-#strong[Property ---
-]
- A line $cal(D)$ with direction vector $arrow(u)$
+#principe(title: [Property —])[A line $cal(D)$ with direction vector $arrow(u)$
 is #strong[orthogonal (perpendicular)] to a plane $cal(P)$ with normal
 vector $arrow(n)$ if and only if the vectors $arrow(u)$ and $arrow(n)$
 are #strong[collinear].
 ]
 
-#align(center)[
-  #block(
-    fill: rgb("#f8fafc"),
-    stroke: 1pt + rgb("#cbd5e1"),
-    inset: (x: 16pt, y: 10pt),
-    radius: 6pt,
-    breakable: false,
-  )[
-    #set text(font: "Liberation Mono", size: 9.5pt, fill: rgb("#0f172a"))
-    ```text
-D (line directed by u)
-n (normal vector)
-Plane P
-H (projection)  /
-    ```
-  ]
-]
 
 ==== 6.2 Orthogonal Projection of a Point onto a Plane
 <orthogonal-projection-of-a-point-onto-a-plane>
@@ -44881,11 +41168,8 @@ $\(M H\)$ is orthogonal to the plane $cal(P)$. The distance $M H$ is
 then the #strong[shortest distance] between the point $M$ and any point
 belonging to the plane.
 
-#methode(title: [Méthode Pas à Pas])[
-#strong[🧭 Method --- Calculating the Coordinates of the Orthogonal
-Projection $H$:
-]
- 1. Determine a normal vector
+#methode(title: [Method — Calculating the Coordinates of the Orthogonal
+Projection $H$:])[1. Determine a normal vector
 $arrow(n)\(a thin\;b thin\;c\)$ to the plane $cal(P)$. 2. Write the
 parametric representation of the line $cal(D)$ passing through
 $M\(x_M thin\;y_M thin\;z_M\)$ and directed by $arrow(n)$:
@@ -44899,11 +41183,9 @@ the plane is then the norm
 $d\(M\,cal(P)\)= parallel accent(M H, ⃗) parallel$.
 ]
 
-#exemple_resolu(title: [Exemple Résolu Pas à Pas])[
-#strong[Worked Example 5 --- Full computation of an orthogonal
-projection and distance.
-]
- Let $M\(1 thin\;2 thin\;3\)$ and let $cal(P)$
+
+#exemple_resolu(title: [Worked Example 5 — Full computation of an orthogonal
+projection and distance.])[Let $M\(1 thin\;2 thin\;3\)$ and let $cal(P)$
 be the plane with equation $2 x - y + 2 z - 9 = 0$. 1. Determine the
 coordinates of the orthogonal projection $H$ of $M$ onto $cal(P)$. 2.
 Compute the distance from $M$ to the plane $cal(P)$.
@@ -44923,14 +41205,14 @@ distance is:
 $ d\(M\,cal(P)\)= parallel accent(M H, ⃗) parallel = lr(|1 / 3|) parallel arrow(n) parallel = 1 / 3 sqrt(2^2 +\(- 1\)^2 + 2^2) = 1 / 3 sqrt(4 + 1 + 4) = 1 / 3 sqrt(9) = 3 / 3 = upright(bold(1)) . $
 ]
 
-#quote_box[
-#strong[💡 General Formula for the Distance from a Point to a Plane:
-]
 
+#quote_box[
+#strong[💡 General Formula for the Distance from a Point to a Plane:]
 For any point $M\(x_0 thin\;y_0 thin\;z_0\)$ and any plane
 $cal(P) : a x + b y + c z + d = 0$:
 $ d\(M\,cal(P)\)= frac(\|a x_0 + b y_0 + c z_0 + d\|, sqrt(a^2 + b^2 + c^2)) . $
 ]
+
 
 #divider()
 
@@ -45390,15 +41672,13 @@ choosing].
 #metadata("debut-section") <debut-section>
 == CHAPTER 53: The Combination Lock and Ways of Choosing
 <chapter-53-the-combination-lock-and-ways-of-choosing>
-#quote_box[
-#emph[“Nothing is more deceptive than our intuition regarding the number
+#decouvre(title: [“Nothing is more deceptive than our intuition regarding the number
 of possibilities: the human mind goes astray as soon as choices
-multiply. Yet the moment reason structures the spectrum---ordering or
-mingling, repeating or excluding---the boundless maze becomes a crystal
-edifice governed by humble factorials.”
+multiply. Yet the moment reason structures the spectrum—ordering or
+mingling, repeating or excluding—the boundless maze becomes a crystal
+edifice governed by humble factorials.”])[
 ]
 
-]
 
 #divider()
 
@@ -45502,15 +41782,13 @@ mathematician does not list: he #strong[structures],
 Let $E$ be a set. We say that $E$ is a #strong[finite set] if it
 contains a finite integer number of elements.
 
-#principe(title: [Définition Fondamentale])[
-#strong[📐 Definition --- Cardinality of a Finite Set
-]
- The number of
+#principe(title: [Definition — Cardinality of a Finite Set])[The number of
 elements of a finite set $E$ is called the #strong[cardinality] of $E$.
 It is denoted by $upright("Card")\(E\)$ or, more commonly in upper
 secondary and higher mathematics, $\|E\|$ or $\#E$. If $E = nothing$
 (the empty set), then $\|E\|= 0$.
 ]
+
 
 #emph[Etymology and Notation:] The word #emph[cardinal] comes from the
 Latin #emph[cardo], meaning “hinge, pivot”: it is the fundamental number
@@ -45519,10 +41797,7 @@ the absolute value (which measures magnitude or distance).
 
 ==== 2.2 The Addition Principle: Partitions and Disjoint Sets
 <the-addition-principle-partitions-and-disjoint-sets>
-#quote_box[
-#strong[📐 Fundamental Property --- Addition Principle
-]
- Let $A$ and $B$
+#principe(title: [Fundamental Property — Addition Principle])[Let $A$ and $B$
 be two finite subsets of a set $E$. If $A$ and $B$ are #strong[disjoint]
 (meaning they share no common element: $A inter B = nothing$), then:
 $ \|A union B\|=\|A\|+\|B\| $ More generally, if $A_1\,A_2\,dots.h\,A_m$
@@ -45531,41 +41806,27 @@ union equals all of $E$), then:
 $ \|E\|=\|A_1\|+\|A_2\|+ dots.h +\|A_m\|= sum_(i = 1)^m\|A_i\| $
 ]
 
-#align(center)[
-  #block(
-    fill: rgb("#f8fafc"),
-    stroke: 1pt + rgb("#cbd5e1"),
-    inset: (x: 16pt, y: 10pt),
-    radius: 6pt,
-    breakable: false,
-  )[
-    #set text(font: "Liberation Mono", size: 9.5pt, fill: rgb("#0f172a"))
-    ```text
-Set E
-A         B         A ∩ B = ∅
-5 elem    7 elem      |A ∪ B| = 5 + 7 = 12
-    ```
+
+#figure(image("figures_en/vol_6/fig_53_arbre_decision_combinatoire.svg", alt: "Combinatorial decision tree: permutations, combinations, arrangements"),
+  caption: [
+    Combinatorial decision tree: permutations, combinations,
+    arrangements
   ]
-]
+)
 
 What if the two sets overlap? This gives the celebrated Principle of
 Inclusion-Exclusion (for 2 sets):
 
-#quote_box[
-#strong[📐 Theorem --- Two-Set Inclusion-Exclusion Formula
-]
- For any
+#principe(title: [Theorem — Two-Set Inclusion-Exclusion Formula])[For any
 finite sets $A$ and $B$: $ \|A union B\|=\|A\|+\|B\|-\|A inter B\| $
 ]
+
 
 #emph[Visual proof:] In adding $\|A\|$ and $\|B\|$, elements belonging
 to the intersection $A inter B$ were counted twice. We must therefore
 subtract $\|A inter B\|$ once to restore the exact tally.
 
-#methode(title: [Méthode Pas à Pas])[
-#strong[🧭 Method --- The Complement Principle
-]
- If $A$ is a subset of a
+#principe(title: [Method — The Complement Principle])[If $A$ is a subset of a
 finite universal set $E$, its complement $overline(A)$ (or $E\\A$)
 satisfies:
 $ \|A\|+\|overline(A)\|=\|E\|arrow.l.r.double\|A\|=\|E\|-\|overline(A)\| $
@@ -45574,25 +41835,22 @@ least one…”], it is almost always ten times faster to count the opposite
 (#emph[“none at all…”]) and subtract from the total!
 ]
 
+
 ==== 2.3 The Multiplication Principle and the Cartesian Product
 <the-multiplication-principle-and-the-cartesian-product>
-#principe(title: [Définition Fondamentale])[
-#strong[📐 Definition --- Cartesian Product
-]
- Let $A$ and $B$ be two
+#principe(title: [Definition — Cartesian Product])[Let $A$ and $B$ be two
 sets. The Cartesian product $A times B$ is the set of all ordered pairs
 $\(a\,b\)$ where $a in A$ and $b in B$:
 $ A times B = {\(a\,b\)divides a in A\,b in B } $
 ]
 
-#quote_box[
-#strong[📐 Theorem --- Multiplication Principle
-]
- If $A$ and $B$ are two
+
+#principe(title: [Theorem — Multiplication Principle])[If $A$ and $B$ are two
 finite sets, then: $ \|A times B\|=\|A\|times\|B\| $ Generally, for $k$
 finite sets $A_1\,A_2\,dots.h\,A_k$:
 $ \|A_1 times A_2 times dots.h times A_k\|=\|A_1\|times\|A_2\|times dots.h times\|A_k\|= product_(i = 1)^k\|A_i\| $
 ]
+
 
 #emph[The Tree of Choices:] Each successive choice corresponds to a
 branching point. If the first stage offers $n_1$ branches, and from each
@@ -45609,15 +41867,13 @@ We draw $k$ objects from $n$, #strong[one after the other], replacing
 the drawn object back into the bag at each step (or reusing the same
 symbol, as on a combination dial).
 
-#quote_box[
-#strong[📐 Theorem --- Number of $k$-tuples
-]
- Let $E$ be a set of $n$
+#principe(title: [Theorem — Number of $k$-tuples])[Let $E$ be a set of $n$
 elements. A #strong[$k$-tuple] (or list / sequence of length $k$) of
 elements of $E$ is an element of the Cartesian product
 $E^k = underbrace(E times E times dots.h times E, k upright(" factors"))$.
 The number of $k$-tuples from a set of $n$ elements is: $ \|E^k\|= n^k $
 ]
+
 
 #emph[Concrete Examples:] - Number of possible bytes (8-bit binary words
 made of 0s and 1s): $2^8 = 256$. - Number of 4-digit bank PIN codes:
@@ -45630,10 +41886,7 @@ This time, we select $k$ elements from $n$ #strong[one after the other],
 but #strong[without replacement]: each element can be chosen at most
 once.
 
-#principe(title: [Définition Fondamentale])[
-#strong[📐 Definition & Theorem --- Arrangements ($k$-permutations)
-]
- Let
+#principe(title: [Definition & Theorem — Arrangements ($k$-permutations)])[Let
 $E$ be a set of $n$ elements and $k$ an integer such that
 $0 lt.eq k lt.eq n$. An #strong[arrangement] of $k$ elements from $E$
 (or $k$-tuple of distinct elements) is an ordered list
@@ -45642,6 +41895,7 @@ number of such arrangements is denoted by $A_n^k$ (or $P\(n\,k\)$) and
 equals:
 $ A_n^k = n times\(n - 1\)times\(n - 2\)times dots.h times\(n - k + 1\) $
 ]
+
 
 #emph[Proof:] For the 1st position, we have $n$ available candidates.
 For the 2nd position, there remain $n - 1$ candidates. For the 3rd
@@ -45654,10 +41908,7 @@ principle, we multiply these integers together.
 What happens when we take all elements, that is, when $k = n$? We
 arrange all $n$ elements in order: this is a #strong[permutation].
 
-#principe(title: [Définition Fondamentale])[
-#strong[📐 Definition & Theorem --- Permutations and Factorial
-]
- A
+#principe(title: [Definition & Theorem — Permutations and Factorial])[A
 #strong[permutation] of a set $E$ of $n$ elements is an arrangement of
 all elements of $E$ (an $n$-tuple of distinct elements of $E$). The
 number of permutations of an $n$-element set is denoted by $n !$ (read
@@ -45665,6 +41916,7 @@ number of permutations of an $n$-element set is denoted by $n !$ (read
 $ n ! = n times\(n - 1\)times\(n - 2\)times dots.h times 2 times 1 $ By
 fundamental convention: $ 0 ! = 1 $
 ]
+
 
 #emph[Notation Explained:] The exclamation mark was introduced in 1808
 by French mathematician #strong[Christian Kramp] of Strasbourg, simply
@@ -45680,10 +41932,7 @@ arithmetic.
 product of $A_n^k$ down to 1:
 $ A_n^k = frac(n times\(n - 1\)times dots.h times\(n - k + 1\)times\(n - k\)times dots.h times 1, \(n - k\)times dots.h times 1) = frac(n !, \(n - k\)!) $
 
-#decouvre(title: [Découverte & Histoire])[
-#strong[💡 Did You Know? Factorial Explosion
-]
- The factorial grows with
+#decouvre(title: [Did You Know? Factorial Explosion])[The factorial grows with
 astonishing rapidity:
 
 - $3 ! = 6$
@@ -45697,6 +41946,7 @@ astonishing rapidity:
   existed] in the entire history of humanity, and will likely never
   appear again before the Sun burns out!
 ]
+
 
 #divider()
 
@@ -45715,10 +41965,7 @@ In these cases, the outcome is not a $k$-tuple (an ordered list in
 parentheses), but a #strong[subset] of size $k$ (enclosed in curly
 braces ${ x_1\,dots.h\,x_k }$).
 
-#principe(title: [Définition Fondamentale])[
-#strong[📐 Definition --- Combinations
-]
- Let $E$ be a set with $n$
+#principe(title: [Definition — Combinations])[Let $E$ be a set with $n$
 elements and $k$ an integer such that $0 lt.eq k lt.eq n$. A
 #strong[combination] of $k$ elements from $n$ is a subset of $E$ having
 exactly $k$ elements. The number of such combinations is denoted by
@@ -45726,12 +41973,10 @@ $binom(n, k)$ (read #strong[“$n$ choose $k$”]). #emph[\(Older notation:
 $C_n^k$ or $C\(n\,k\)$).]
 ]
 
+
 ==== 4.2 The Master Formula
 <the-master-formula>
-#quote_box[
-#strong[✍️ Required Proof --- Formula for $binom(n, k)$
-]
- Let us count
+#exemple_resolu(title: [Required Proof — Formula for $binom(n, k)$])[Let us count
 the number of arrangements $A_n^k$ in two different ways: 1. On one
 hand, we know that the number of arrangements is
 $A_n^k = frac(n !, \(n - k\)!)$. 2. On the other hand, to construct an
@@ -45749,6 +41994,7 @@ Isolating $binom(n, k)$ yields the fundamental theorem:
 $ binom(n, k) = frac(A_n^k, k !) = frac(n !, k !\(n - k\)!) $
 ]
 
+
 #emph[Immediate Example:] The number of 3-card hands from a deck of 10
 cards:
 $ binom(10, 3) = frac(10 !, 3 ! times 7 !) = frac(10 times 9 times 8, 3 times 2 times 1) = 720 / 6 = 120 . $
@@ -45761,12 +42007,7 @@ We recover our intuitive calculation from the locker room!
 
 + #strong[Symmetry of Choices:] $ binom(n, k) = binom(n, n - k) $
 
-#quote_box[
-#strong[✍️ Proof --- Symmetry
-]
-
-
-- #strong[By algebraic computation:]
+#exemple_resolu(title: [Proof — Symmetry])[- #strong[By algebraic computation:]
   $ binom(n, n - k) = frac(n !, \(n - k\)!\(n -\(n - k\)\)!) = frac(n !, \(n - k\)! k !) = binom(n, k) $
 
 - #strong[By combinatorial reasoning (pure elegance!):] Choosing $k$
@@ -45777,21 +42018,17 @@ We recover our intuitive calculation from the locker room!
   other.
 ]
 
+
 ==== 4.4 Pascal's Recurrence Relation
 <pascals-recurrence-relation>
-#quote_box[
-#strong[📐 Theorem --- Pascal's Identity
-]
- For all integers $n gt.eq 1$
+#principe(title: [Theorem — Pascal's Identity])[For all integers $n gt.eq 1$
 and $1 lt.eq k lt.eq n$:
 $ binom(n, k) = binom(n - 1, k - 1) + binom(n - 1, k) $
 ]
 
-#quote_box[
-#strong[✍️ Required Combinatorial Proof --- The Designated Witness
-Method
-]
- Let $E$ be a set with $n$ elements. Single out one particular
+
+#methode(title: [Required Combinatorial Proof — The Designated Witness
+Method])[Let $E$ be a set with $n$ elements. Single out one particular
 individual in $E$, and call her #strong[Alice]. We wish to choose a
 subset of $k$ members from these $n$ people. There are $binom(n, k)$
 total ways. Partition these subsets into two mutually exclusive
@@ -45812,6 +42049,7 @@ $ binom(n, k) = binom(n - 1, k - 1) + binom(n - 1, k) $ The formula is
 established without writing down a single algebraic fraction!
 ]
 
+
 #divider()
 
 === 5. Pascal's Triangle and Newton's Binomial Theorem
@@ -45829,7 +42067,7 @@ above: the one directly above, and the one directly above to the left.
     align: center,
     stroke: 0.5pt + rgb("#cbd5e1"),
     fill: (x, y) => if y == 0 { rgb("#eff6ff") } else { rgb("#ffffff") },
-    [$n \ k$], [0], [1], [2], [3], [4], [5], [Somme $2^n$],
+    [$n \ k$], [0], [1], [2], [3], [4], [5], [Sum $2^n$],
     [0], [1], [], [], [], [], [], [$1 = 2^0$],
     [1], [1], [1], [], [], [], [], [$2 = 2^1$],
     [2], [1], [2], [1], [], [], [], [$4 = 2^2$],
@@ -45866,21 +42104,15 @@ Observe the coefficients:
 
 These are precisely the rows of Pascal's triangle!
 
-#quote_box[
-#strong[📐 Fundamental Theorem --- Newton's Binomial Formula
-]
- For all
+#principe(title: [Fundamental Theorem — Newton's Binomial Formula])[For all
 real or complex numbers $a$ and $b$, and for every non-negative integer
 $n in bb(N)$: $ \(a + b\)^n = sum_(k = 0)^n binom(n, k) a^(n - k) b^k $
 Written out in full:
 $ \(a + b\)^n = binom(n, 0) a^n + binom(n, 1) a^(n - 1) b + binom(n, 2) a^(n - 2) b^2 + dots.h + binom(n, n) b^n $
 ]
 
-#quote_box[
-#strong[✍️ Combinatorial Proof --- Why the Formula is Self-Evident
-]
 
-Expand the product of $n$ identical binomial factors:
+#exemple_resolu(title: [Combinatorial Proof — Why the Formula is Self-Evident])[Expand the product of $n$ identical binomial factors:
 $ \(a + b\)^n = underbrace(\(a + b\)\(a + b\)dots.h\(a + b\), n upright(" factors")) $
 Under complete distributivity, to form each term in the expansion, we
 must choose #strong[either the letter $a$ or the letter $b$] from each
@@ -45894,6 +42126,7 @@ $b$ out of the $n$ factors available! This is the very definition of
 proved with total transparency.
 ]
 
+
 #divider()
 
 === 6. Toolbox and Classical Traps
@@ -45903,35 +42136,9 @@ proved with total transparency.
 When confronted with a combinatorial counting problem, #strong[always]
 ask these two questions in sequence:
 
-#align(center)[
-  #block(
-    fill: rgb("#f8fafc"),
-    stroke: 1pt + rgb("#cbd5e1"),
-    inset: (x: 16pt, y: 10pt),
-    radius: 6pt,
-    breakable: false,
-  )[
-    #set text(font: "Liberation Mono", size: 9.5pt, fill: rgb("#0f172a"))
-    ```text
-DOES ORDER MATTER?
-YES          NO
-IS REPETITION ALLOWED?   IS REPETITION ALLOWED?
-YES           NO                   NO
-k-tuples      Arrangements         Combinations
-n^k            A_n^k             (n choose k)
-n!/(n-k)!        = n! / (k!(n-k)!)
-if k=n : n!)
-    ```
-  ]
-]
-
 ==== 6.2 Fatal Pitfalls
 <fatal-pitfalls>
-#alerte(title: [Attention au Piège !])[
-#strong[⚠️ Warning, Trap! --- Overcounting via False Decomposition
-]
-
-#emph[Example:] In a class of 10 boys and 12 girls, we wish to form a
+#alerte(title: [Warning, Trap! — Overcounting via False Decomposition])[#emph[Example:] In a class of 10 boys and 12 girls, we wish to form a
 group of 4 students containing #strong[at least one girl].
 
 - #emph[Tempting False Reasoning:] “I choose 1 girl among 12 (12 ways),
@@ -45949,11 +42156,8 @@ group of 4 students containing #strong[at least one girl].
   $binom(22, 4) - binom(10, 4) = 7 thin 315 - 210 = 7 thin 105$.
 ]
 
-#quote_box[
-#strong[🔍 True History --- The Dice of Chevalier de Méré (1654)
-]
 
-Antoine Gombaud, known as the Chevalier de Méré---a nobleman and avid
+#decouvre(title: [True History — The Dice of Chevalier de Méré (1654)])[Antoine Gombaud, known as the Chevalier de Méré---a nobleman and avid
 gambler---brought a puzzle to Blaise Pascal: #emph[“Rolling a fair
 6-sided die 4 times, I have better than an even chance of getting at
 least one 6. But rolling a pair of dice 24 times, I seem to have less
@@ -45968,6 +42172,7 @@ least one double 6 = $1 - 0.509 = 0.491 < 1\/2$. (Unfavorable bet!) The
 Chevalier was losing his money because of a naive ratio. Modern
 probability and combinatorics were born!
 ]
+
 
 #divider()
 
@@ -46089,9 +42294,9 @@ heads to $B\(5\,3\)$. At every intersection, he can only move East ($E$,
 one unit right) or North ($N$, one unit up). How many minimal paths lead
 from $A$ to $B$?
 
-#figure(image("figures/vol_6/fig_53_chemins_grille.svg", alt: "Chemins sur un quadrillage et coefficients binomiaux"),
+#figure(image("figures_en/vol_6/fig_53_chemins_grille.svg", alt: "Grid paths and binomial coefficients"),
   caption: [
-    Chemins sur un quadrillage et coefficients binomiaux
+    Grid paths and binomial coefficients
   ]
 )
 
@@ -46437,16 +42642,14 @@ and The Thousand Coin Tosses].
 #metadata("debut-section") <debut-section>
 == CHAPTER 54: The Thousand Coin Tosses
 <chapter-54-the-thousand-coin-tosses>
-#quote_box[
-#emph[“If you toss a coin ten times, chance may play the prank of giving
+#principe(title: [“If you toss a coin ten times, chance may play the prank of giving
 you ten Heads in a row. But toss it a million times: disorder cancels
 out, caprice fades away, and out of the anarchy of individual tosses
 emerges a crystalline regularity. The law of large numbers is not some
 magical constraint imposed upon the coin: it is the inevitable
-mathematical victory of the multitude over the singular.”
+mathematical victory of the multitude over the singular.”])[
 ]
 
-]
 
 #divider()
 
@@ -46514,10 +42717,7 @@ The Swiss mathematician and physicist #strong[Jacob Bernoulli]
 (1655--1705) studied the most elementary random experiment imaginable:
 one admitting only #strong[two possible outcomes].
 
-#principe(title: [Définition Fondamentale])[
-#strong[📐 Definition --- Bernoulli Trial
-]
- A #strong[Bernoulli trial]
+#principe(title: [Definition — Bernoulli Trial])[A #strong[Bernoulli trial]
 with parameter $p in\(0\,1\)$ is a random experiment that admits only
 two complementary outcomes:
 
@@ -46530,6 +42730,7 @@ The associated indicator random variable $X$ that equals $1$ on success
 and $0$ on failure follows a #strong[Bernoulli distribution] with
 parameter $p$, denoted $X tilde.op cal(B)\(p\)$.
 ]
+
 
 #emph[Bernoulli Probability Mass Function Table:] | $k$ | 0 | 1 |
 |---|---|---| | $P\(X = k\)$ | $1 - p$ | $p$ |
@@ -46549,14 +42750,12 @@ Let us immediately compute its parameters:
 
 ==== 2.2 The Bernoulli Scheme
 <the-bernoulli-scheme>
-#principe(title: [Définition Fondamentale])[
-#strong[📐 Definition --- Bernoulli Scheme
-]
- A #strong[Bernoulli scheme]
+#principe(title: [Definition — Bernoulli Scheme])[A #strong[Bernoulli scheme]
 with parameters $n$ and $p$ is the sequence of $n$ identical and
 #strong[mutually independent] Bernoulli trials, each having the same
 success probability $p$.
 ]
+
 
 #emph[What does independence mean?] The outcome of any trial in no way
 affects the probabilities of subsequent trials. Examples include
@@ -46594,10 +42793,7 @@ successes] obtained across the $n$ trials.
     number 3? It is the number of ways to choose the positions of the 2
     successes among the 3 trials, which is $binom(3, 2) = 3$!
 
-#quote_box[
-#strong[📐 Fundamental Theorem --- The Binomial Distribution
-]
- Let $X$ be
+#principe(title: [Fundamental Theorem — The Binomial Distribution])[Let $X$ be
 the random variable equal to the number of successes in a Bernoulli
 scheme of $n$ independent trials with parameter $p$. We say that $X$
 follows the #strong[binomial distribution with parameters $n$ and $p$],
@@ -46607,6 +42803,7 @@ successes is:
 
 $ P\(X = k\)= binom(n, k) p^k\(1 - p\)^(n - k) $
 ]
+
 
 #emph[Consistency Check:] The sum of all probabilities must equal 1:
 $ sum_(k = 0)^n P\(X = k\)= sum_(k = 0)^n binom(n, k) p^k\(1 - p\)^(n - k) =\(p +\(1 - p\)\)^n = 1^n = 1 . $
@@ -46637,11 +42834,8 @@ $V\(a X\)= a^2 V\(X\)$).]
 
 ==== 3.2 Derivation of Expected Value for the Binomial Distribution
 <derivation-of-expected-value-for-the-binomial-distribution>
-#quote_box[
-#strong[✍️ Required Proof --- Expected Value of the Binomial
-Distribution
-]
- Let $X tilde.op cal(B)\(n\,p\)$. We decompose $X$ as
+#exemple_resolu(title: [Required Proof — Expected Value of the Binomial
+Distribution])[Let $X tilde.op cal(B)\(n\,p\)$. We decompose $X$ as
 $X = sum_(i = 1)^n X_i$, where the $X_i$ are $n$ identical Bernoulli
 variables with parameter $p$. For each $i in { 1\,dots.h\,n }$, we have
 $E\(X_i\)= p$. By linearity of expectation:
@@ -46650,6 +42844,7 @@ $ E\(X\)= E (sum_(i = 1)^n X_i) = sum_(i = 1)^n E\(X_i\)= underbrace(p + p + dot
 $ upright(bold(E\(X\)= n p)) $
 ]
 
+
 #emph[Intuitive Meaning:] If you toss a fair coin ($p = 0.5$) 100 times,
 you expect on average to obtain $100 times 0.5 = 50$ Heads. If you roll
 a die 60 times and win on a 6 ($p = 1\/6$), you expect on average to win
@@ -46657,11 +42852,7 @@ $60 times 1 / 6 = 10$ times.
 
 ==== 3.3 Derivation of Variance and Standard Deviation
 <derivation-of-variance-and-standard-deviation>
-#quote_box[
-#strong[✍️ Required Proof --- Variance of the Binomial Distribution
-]
-
-Since the trials are mutually independent in a Bernoulli scheme, the
+#exemple_resolu(title: [Required Proof — Variance of the Binomial Distribution])[Since the trials are mutually independent in a Bernoulli scheme, the
 random variables $X_1\,X_2\,dots.h\,X_n$ are independent. By additivity
 of variance for independent variables:
 $ V\(X\)= V (sum_(i = 1)^n X_i) = sum_(i = 1)^n V\(X_i\) $ For each
@@ -46675,6 +42866,7 @@ The standard deviation is consequently:
 
 $ upright(bold(sigma\(X\)= sqrt(n p\(1 - p\)))) $
 ]
+
 
 #emph[Crucial Remark on Scaling:] - The expectation $E\(X\)$ scales
 linearly with $n$ (order of magnitude $n$). - The standard deviation
@@ -46695,18 +42887,13 @@ substantially from its mean?
 The Russian mathematician #strong[Andrey Markov] (1856--1922)
 established a universal bound for non-negative random variables.
 
-#quote_box[
-#strong[📐 Theorem --- Markov's Inequality
-]
- Let $Y$ be a non-negative
+#principe(title: [Theorem — Markov's Inequality])[Let $Y$ be a non-negative
 random variable ($Y gt.eq 0$). For any strictly positive real number
 $a > 0$: $ P\(Y gt.eq a\)lt.eq frac(E\(Y\), a) $
 ]
 
-#quote_box[
-#strong[✍️ Curriculum Proof --- Markov's Inequality
-]
- Let $Y$ be a
+
+#exemple_resolu(title: [Curriculum Proof — Markov's Inequality])[Let $Y$ be a
 discrete random variable taking non-negative values
 $y_1\,y_2\,dots.h\,y_m gt.eq 0$. The expected value is given by:
 $ E\(Y\)= sum_(i = 1)^m y_i P\(Y = y_i\) $ Split this sum into two
@@ -46722,6 +42909,7 @@ Because $a > 0$, dividing by $a$ immediately yields:
 $ P\(Y gt.eq a\)lt.eq frac(E\(Y\), a) $
 ]
 
+
 #emph[Striking Example:] If the average monthly income in a country is
 €2,000, what fraction of the population could earn at least €10,000?
 Here $Y gt.eq 0$, $E\(Y\)= 2 thin 000$, and $a = 10 thin 000$.
@@ -46736,19 +42924,14 @@ Russian peer #strong[Pafnuty Chebyshev] (1867) had the brilliant insight
 to apply Markov's inequality to the squared deviation from the mean:
 $Y =\(X - E\(X\)\)^2$.
 
-#quote_box[
-#strong[📐 Fundamental Theorem --- Bienaymé-Chebyshev Inequality
-]
- Let
+#principe(title: [Fundamental Theorem — Bienaymé-Chebyshev Inequality])[Let
 $X$ be a random variable admitting expectation $E\(X\)$ and variance
 $V\(X\)$. For any real number $epsilon > 0$ (epsilon):
 $ P\(\|X - E\(X\)\|gt.eq epsilon\)lt.eq frac(V\(X\), epsilon^2) $
 ]
 
-#quote_box[
-#strong[✍️ Required Proof --- Bienaymé-Chebyshev
-]
- Let $epsilon > 0$.
+
+#exemple_resolu(title: [Required Proof — Bienaymé-Chebyshev])[Let $epsilon > 0$.
 Note the fundamental equivalence between events:
 $ \|X - E\(X\)\|gt.eq epsilon arrow.l.r.double\(X - E\(X\)\)^2 gt.eq epsilon^2 $
 Define the auxiliary random variable $Y =\(X - E\(X\)\)^2$.
@@ -46765,6 +42948,7 @@ $ P (\( X - E \( X \) \)^2 gt.eq epsilon^2) lt.eq frac(V\(X\), epsilon^2) $
 Which translates precisely to:
 $ P\(\|X - E\(X\)\|gt.eq epsilon\)lt.eq frac(V\(X\), epsilon^2) $
 ]
+
 
 #emph[Significance:] The probability that a random variable $X$ strays
 from its mean by at least $epsilon$ is strictly bounded by a term
@@ -46800,13 +42984,11 @@ mean vanishes toward zero]!
 
 ==== 5.2 The Concentration Inequality
 <the-concentration-inequality>
-#quote_box[
-#strong[📐 Theorem --- Concentration Inequality
-]
- For every real number
+#principe(title: [Theorem — Concentration Inequality])[For every real number
 $epsilon > 0$:
 $ P\(\|M_n - mu\|gt.eq epsilon\)lt.eq frac(V\(X_1\), n epsilon^2) $
 ]
+
 
 #emph[Proof:] Simply apply the Bienaymé-Chebyshev inequality to the
 random variable $M_n$:
@@ -46816,10 +42998,7 @@ result directly.
 
 ==== 5.3 Proof of the Weak Law of Large Numbers
 <proof-of-the-weak-law-of-large-numbers>
-#quote_box[
-#strong[✍️ Required Proof --- Weak Law of Large Numbers
-]
- Let
+#principe(title: [Required Proof — Weak Law of Large Numbers])[Let
 $epsilon > 0$ be an arbitrarily small positive tolerance (for instance,
 $epsilon = 0.001$). The concentration inequality guarantees that:
 $ 0 lt.eq P\(\|M_n - mu\|gt.eq epsilon\)lt.eq frac(V\(X_1\), n epsilon^2) $
@@ -46834,6 +43013,7 @@ Equivalently, passing to the complementary event:
 
 $ upright(bold(lim_(n arrow.r + oo) P\(\|M_n - mu\|< epsilon\)= 1)) $
 ]
+
 
 #emph[Philosophical and Practical Meaning:] No matter how tiny the error
 margin $epsilon > 0$ might be, provided the sample size $n$ is
@@ -46852,37 +43032,6 @@ To verify this theorem experimentally, let us run a Python simulation of
 $N = 10 thin 000$ tosses of a fair coin ($p = 0.5$) tracking the
 evolution of the relative frequency of Heads:
 
-```python
-import random
-
-def simulate_tosses(n):
-    successes = 0
-    frequency_history = []
-
-    for i in range(1, n + 1):
-        # 1 = Heads (success), 0 = Tails (failure)
-        draw = random.choice([0, 1])
-        successes += draw
-        frequency = successes / i
-        frequency_history.append((i, frequency))
-
-    return frequency_history
-
-# Run the simulation
-results = simulate_tosses(10000)
-
-# Display key milestones
-milestones = [10, 50, 100, 500, 1000, 5000, 10000]
-print(f"{'Tosses (n)':<12} | {'Heads Frequency':<17} | {'Deviation from 0.5':<18}")
-print("-" * 50)
-for m in milestones:
-    freq = results[m - 1][1]
-    deviation = abs(freq - 0.5)
-    print(f"{m:<12} | {freq:<17.4f} | {deviation:<18.4f}")
-```
-
-#emph[Typical Console Output:]
-
 #align(center)[
   #block(
     fill: rgb("#f8fafc"),
@@ -46893,27 +43042,58 @@ for m in milestones:
   )[
     #set text(font: "Liberation Mono", size: 9.5pt, fill: rgb("#0f172a"))
     ```text
-Tosses (n)   | Heads Frequency   | Deviation from 0.5
-10           | 0.7000            | 0.2000
-50           | 0.4400            | 0.0600
-100          | 0.5300            | 0.0300
-500          | 0.4880            | 0.0120
-1000         | 0.5040            | 0.0040
-5000         | 0.4982            | 0.0018
-10000        | 0.5007            | 0.0007
+import random
+def simulate_tosses(n):
+successes = 0
+frequency_history = []
+for i in range(1, n + 1):
+# 1 = Heads (success), 0 = Tails (failure)
+draw = random.choice([0, 1])
+successes += draw
+frequency = successes / i
+frequency_history.append((i, frequency))
+return frequency_history
+# Run the simulation
+results = simulate_tosses(10000)
+# Display key milestones
+milestones = [10, 50, 100, 500, 1000, 5000, 10000]
+print(f"{'Tosses (n)':<12} | {'Heads Frequency':<17} | {'Deviation from 0.5':<18}")
+print("-" * 50)
+for m in milestones:
+freq = results[m - 1][1]
+deviation = abs(freq - 0.5)
+print(f"{m:<12} | {freq:<17.4f} | {deviation:<18.4f}")
     ```
   ]
 ]
+
+#emph[Typical Console Output:]
+
+
+#align(center)[
+  #table(
+    columns: (1fr, 1fr, 1fr),
+    align: (center, center, center),
+    stroke: 0.5pt + rgb("#cbd5e1"),
+    fill: (x, y) => if y == 0 { rgb("#eff6ff") } else { rgb("#ffffff") },
+    [Lancers ($n$)], [Frequency Pile], [Écart à 0.5],
+    [10], [0.7000], [+0.2000],
+    [50], [0.4400], [+0.0600],
+    [100], [0.5300], [+0.0300],
+    [500], [0.4880], [+0.0120],
+    [1 000], [0.5040], [+0.0040],
+    [5 000], [0.4982], [+0.0018],
+    [10 000], [0.5007], [+0.0007]
+  )
+]
+
 
 At first (10 tosses), the frequency fluctuates erratically (anywhere
 from 0.30 to 0.70). By 1,000 tosses, it is locked within 1% of 0.5. At
 10,000 tosses, precision reaches parts per thousand! The chaotic storm
 of chance has crystallized into stable order.
 
-#quote_box[
-#strong[🔍 True History --- The Galton Board and the Bell Curve
-]
- In
+#decouvre(title: [True History — The Galton Board and the Bell Curve])[In
 1877, British polymath Francis Galton conceived a physical apparatus to
 visualize the convergence of the binomial distribution: #strong[the
 quincunx] (or #strong[Galton board]). Steel ball bearings drop one by
@@ -46923,6 +43103,7 @@ the bottom, the balls accumulate into vertical columns: the central pile
 rises majestically while the extremities taper off, carving out the bell
 curve of Gauss with astonishing mechanical regularity.
 ]
+
 
 #figure(image("figures/histoire/ch_54_galton_box.png", alt: "The Galton Board: physical manifestation of the convergence of Pascal’s triangle to the Gaussian bell curve"),
   caption: [
@@ -47453,10 +43634,9 @@ weather vane on the rooftop: when the wind turns ninety degrees, the
 world does not collapse---it opens up. What algebra thought forbidden
 along the straight line, the geometry of the plane brings to light.
 Complex numbers are not imaginary: they are the breathing of the
-two-dimensional plane.”
+two-dimensional plane.”]
 ]
 
-]
 
 #divider()
 
@@ -47574,25 +43754,11 @@ twice consecutively, produces a half-turn? #strong[A rotation by a
 quarter-turn ($90^compose$ or $pi / 2$ radians) in the counterclockwise
 (positive) direction!]
 
-#align(center)[
-  #block(
-    fill: rgb("#f8fafc"),
-    stroke: 1pt + rgb("#cbd5e1"),
-    inset: (x: 16pt, y: 10pt),
-    radius: 6pt,
-    breakable: false,
-  )[
-    #set text(font: "Liberation Mono", size: 9.5pt, fill: rgb("#0f172a"))
-    ```text
-Imaginary Axis (North)
-i  (after 1 quarter-turn of 90°)
-Real Axis (East)
-1 (after 2 quarters)     0                           +1  (start)
-180° half-turn
-i  (after 3 quarters: 270°)
-    ```
+#figure(image("figures_en/vol_6/fig_55_plan_complexe.svg", alt: "The Argand-Gauss complex plane: algebraic and trigonometric forms"),
+  caption: [
+    The Argand-Gauss complex plane: algebraic and trigonometric forms
   ]
-]
+)
 
 Observe the cyclic progression of powers of $i$:
 
@@ -47612,10 +43778,7 @@ two-dimensional plane!]
 <the-algebraic-form-and-its-operations>
 ==== 3.1 The Field $bb(C)$ of Complex Numbers
 <the-field-mathbbc-of-complex-numbers>
-#principe(title: [Définition Fondamentale])[
-#strong[📐 Definition --- The Set of Complex Numbers
-]
- There exists a set
+#principe(title: [Definition — The Set of Complex Numbers])[There exists a set
 denoted by $bb(C)$, containing the set of real numbers $bb(R)$, equipped
 with addition and multiplication operations extending those of $bb(R)$,
 such that: 1. There exists an element $i in bb(C)$ satisfying:
@@ -47626,6 +43789,7 @@ This expression is called the #strong[algebraic (or Cartesian) form] of
 $z$.
 ]
 
+
 #emph[Standard Terminology:] - $a$ is the #strong[real part] of $z$,
 denoted $upright("Re")\(z\)= a$. - $b$ is the #strong[imaginary part] of
 $z$, denoted $upright("Im")\(z\)= b$. #emph[\(⚠️ Frequent Trap: The
@@ -47635,34 +43799,28 @@ imaginary part is the real number $b$, not $i b$!)]
 ($bb(R) subset bb(C)$). - If $a = 0$, $z = i b$ is called #strong[purely
 imaginary] (the set is denoted $i bb(R)$).
 
-#quote_box[
-#strong[📐 Theorem --- Uniqueness of Algebraic Form
-]
- Let $z = a + i b$
+#principe(title: [Theorem — Uniqueness of Algebraic Form])[Let $z = a + i b$
 and $z' = a' + i b'$ ($a\,b\,a'\,b' in bb(R)$).
 $ z = z' arrow.l.r.double {a = a'\
 b = b' $ In particular:
 $ a + i b = 0 arrow.l.r.double a = 0 upright(" and ") b = 0 $
 ]
 
+
 ==== 3.2 The Complex Conjugate
 <the-complex-conjugate>
-#principe(title: [Définition Fondamentale])[
-#strong[📐 Definition --- Complex Conjugate
-]
- For any complex number
+#principe(title: [Definition — Complex Conjugate])[For any complex number
 $z = a + i b$ ($a\,b in bb(R)$), the #strong[complex conjugate] of $z$,
 denoted $macron(z)$ (read “$z$ bar”), is defined by:
 $ macron(z) = a - i b $
 ]
 
+
 Geometrically, the point representing $macron(z)$ is the reflection of
 the point representing $z$ across the horizontal real axis.
 
 #quote_box[
-#strong[📐 Fundamental Properties of the Conjugate
-]
- For all complex
+#strong[📐 Fundamental Properties of the Conjugate] For all complex
 numbers $z\,z'$ and any integer $n in bb(Z)$: 1.
 $overline(z + z') = macron(z) + macron(z)'$ 2.
 $overline(z times z') = macron(z) times macron(z)'$ 3.
@@ -47676,6 +43834,7 @@ $ z in bb(R) arrow.l.r.double macron(z) = z #h(2em) upright("and") #h(2em) z in 
 $ z macron(z) =\(a + i b\)\(a - i b\)= a^2 -\(i b\)^2 = a^2 - i^2 b^2 = a^2 + b^2 gt.eq 0 $
 ]
 
+
 #emph[Method for Dividing Complex Numbers:] To make the denominator of a
 fraction $z_1 / z_2$ real, multiply both numerator and denominator by
 the conjugate $macron(z)_2$:
@@ -47683,23 +43842,19 @@ $ frac(1 + 2 i, 3 - 4 i) = frac(\(1 + 2 i\)\(3 + 4 i\), \(3 - 4 i\)\(3 + 4 i\)) 
 
 ==== 3.3 The Modulus of a Complex Number
 <the-modulus-of-a-complex-number>
-#principe(title: [Définition Fondamentale])[
-#strong[📐 Definition --- Modulus
-]
- For any complex number $z = a + i b$
+#principe(title: [Definition — Modulus])[For any complex number $z = a + i b$
 ($a\,b in bb(R)$), the #strong[modulus] of $z$, denoted $\|z\|$, is the
 non-negative real number defined by:
 $ \|z\|= sqrt(a^2 + b^2) = sqrt(z macron(z)) $
 ]
+
 
 Geometrically, if $M$ has coordinates $\(a\,b\)$ in the orthonormal
 frame $\(O\;arrow(u)\,arrow(v)\)$, by the Pythagorean theorem, $\|z\|$
 is precisely the #strong[distance $O M$] from the origin to point $M$!
 
 #quote_box[
-#strong[📐 Properties of the Modulus
-]
- 1. $\|z\|gt.eq 0$, and
+#strong[📐 Properties of the Modulus] 1. $\|z\|gt.eq 0$, and
 $\|z\|= 0 arrow.l.r.double z = 0$. 2. $\|- z\|=\|macron(z)\|=\|z\|$. 3.
 $\|z times z'\|=\|z\|times\|z'\|$. 4.
 $lr(|z / z'|) = frac(\|z\|, \|z'\|) quad\(z' eq.not 0\)$. 5.
@@ -47707,6 +43862,7 @@ $\|z^n\|=\|z\|^n$ for all $n in bb(Z)$. 6. #strong[Triangle Inequality:]
 For all $z\,z' in bb(C)$: $ \|z + z'\|lt.eq\|z\|+\|z'\| $ #emph[\(In any
 triangle, the length of one side is at most the sum of the other two).]
 ]
+
 
 #divider()
 
@@ -47721,10 +43877,7 @@ plane. The position of $M$ is uniquely determined by:
 - The oriented angle between the positive real axis and vector
   $accent(O M, ⃗)$: $theta =\(arrow(u)\,accent(O M, ⃗)\)$.
 
-#principe(title: [Définition Fondamentale])[
-#strong[📐 Definition --- Argument
-]
- For any non-zero complex number
+#principe(title: [Definition — Argument])[For any non-zero complex number
 $z = a + i b$, an #strong[argument] of $z$, denoted $arg\(z\)$, is any
 radian measure of the oriented angle $\(arrow(u)\,accent(O M, ⃗)\)$. The
 argument is defined modulo $2 pi$:
@@ -47733,16 +43886,15 @@ argument lying in the interval $\(- pi\,pi\]$ is called the
 #strong[principal argument]. #emph[\(The number 0 has no argument).]
 ]
 
+
 Since the coordinates of $M$ are $a = r cos theta$ and
 $b = r sin theta$, we obtain:
 
-#principe(title: [Définition Fondamentale])[
-#strong[📐 Definition --- Trigonometric Form
-]
- Every non-zero complex
+#principe(title: [Definition — Trigonometric Form])[Every non-zero complex
 number $z$ can be written as:
 $ z = r\(cos theta + i sin theta\)quad upright("where ") r =\|z\|> 0 upright(" and ") theta equiv arg\(z\)med\(mod med 2 pi\) $
 ]
+
 
 ==== 4.2 Euler's Exponential Notation
 <eulers-exponential-notation>
@@ -47754,20 +43906,14 @@ is the defining characteristic of the exponential function ($y' = k y$)!
 In #strong[1748], Leonhard Euler introduced what is celebrated as one of
 the most fruitful notations in mathematical history:
 
-#principe(title: [Définition Fondamentale])[
-#strong[📐 Definition --- Euler's Exponential Notation
-]
- For every real
+#principe(title: [Definition — Euler's Exponential Notation])[For every real
 number $theta in bb(R)$: $ e^(i theta) = cos theta + i sin theta $ Every
 non-zero complex number $z$ thus admits an #strong[exponential form]:
 $ z = r e^(i theta) quad upright("where ") r =\|z\|> 0 upright(" and ") theta equiv arg\(z\)med\(mod med 2 pi\) $
 ]
 
-#decouvre(title: [Découverte & Histoire])[
-#strong[💡 Did You Know? Euler's Identity, the Most Beautiful Formula
-]
 
-Setting $theta = pi$ in Euler's formula yields:
+#decouvre(title: [Did You Know? Euler's Identity, the Most Beautiful Formula])[Setting $theta = pi$ in Euler's formula yields:
 $ e^(i pi) = cos\(pi\)+ i sin\(pi\)= - 1 + 0 = - 1 $ Which writes
 majestically as: $ upright(bold(e^(i pi) + 1 = 0)) $ This single
 equation links the five fundamental constants of mathematics:
@@ -47783,15 +43929,13 @@ equation links the five fundamental constants of mathematics:
 - $i$ (the master of complex algebra)
 ]
 
+
 ==== 4.3 Algebraic Properties and De Moivre's Formula
 <algebraic-properties-and-de-moivres-formula>
 Exponential notation transforms trigonometry into elementary exponent
 rules:
 
-#quote_box[
-#strong[📐 Theorem --- Exponent Rules for Complex Exponentials
-]
- For all
+#principe(title: [Theorem — Exponent Rules for Complex Exponentials])[For all
 real numbers $theta\,theta'$: 1. Product:
 $e^(i theta) times e^(i theta') = e^(i\(theta + theta'\))$
 #emph[\(Immediate corollary:
@@ -47803,13 +43947,12 @@ Conjugate: $overline(e^(i theta)) = e^(- i theta)$ 4. Reciprocal:
 $1 / e^(i theta) = e^(- i theta)$
 ]
 
-#quote_box[
-#strong[📐 Theorem --- De Moivre's Formula
-]
- For any real number $theta$
+
+#principe(title: [Theorem — De Moivre's Formula])[For any real number $theta$
 and any integer $n in bb(Z)$:
 $ \(e^(i theta)\)^n = e^(i n theta) arrow.l.r.double\(cos theta + i sin theta\)^n = cos\(n theta\)+ i sin\(n theta\) $
 ]
+
 
 #emph[Euler's Formulas for Linearization:] Adding and subtracting
 $e^(i theta) = cos theta + i sin theta$ and
@@ -47826,12 +43969,7 @@ Consider the equation $a z^2 + b z + c = 0$, where $a\,b\,c in bb(R)$
 with $a eq.not 0$. Compute the standard discriminant
 $Delta = b^2 - 4 a c$.
 
-#quote_box[
-#strong[📐 Theorem --- Quadratic Solutions over $bb(R)$ and $bb(C)$
-]
-
-
-- If $Delta > 0$: two distinct real roots:
+#principe(title: [Theorem — Quadratic Solutions over $bb(R)$ and $bb(C)$])[- If $Delta > 0$: two distinct real roots:
   $ z_1 = frac(- b - sqrt(Delta), 2 a) quad upright("and") quad z_2 = frac(- b + sqrt(Delta), 2 a) $
 
 - If $Delta = 0$: a single double real root: $ z_0 = - frac(b, 2 a) $
@@ -47840,6 +43978,7 @@ $Delta = b^2 - 4 a c$.
   conjugates]:
   $ z_1 = frac(- b - i sqrt(- Delta), 2 a) quad upright("and") quad z_2 = frac(- b + i sqrt(- Delta), 2 a) = macron(z)_1 $
 ]
+
 
 #emph[Proof for $Delta < 0$:] Completing the square yields:
 $ a [(z + frac(b, 2 a))^2 - frac(Delta, 4 a^2)] = 0 $ Since $Delta < 0$,
@@ -47858,10 +43997,7 @@ apply the quadratic formula $frac(- B plus.minus delta, 2 A)$, we need
 to find a complex number $delta = x + i y$ such that: $ delta^2 = Z $
 Such a number $delta$ is called a #strong[complex square root] of $Z$.
 
-#methode(title: [Méthode Pas à Pas])[
-#strong[🧭 Method --- Finding Complex Square Roots of $X + i Y$
-]
- Let
+#methode(title: [Method — Finding Complex Square Roots of $X + i Y$])[Let
 $delta = x + i y$ with $x\,y in bb(R)$. Set up the three-equation
 system: 1. Equality of squares:
 $delta^2 =\(x^2 - y^2\)+ 2 i x y = X + i Y$
@@ -47883,6 +44019,7 @@ The sign condition on $x y$ (governed by $2 x y = Y$) determines the two
 opposite pairs $\(x\,y\)$.
 ]
 
+
 #divider()
 
 === 6. The $n$-th Roots of Unity and Regular Polygons
@@ -47898,10 +44035,7 @@ moduli and arguments:
 - $n theta equiv 0 med\(mod med 2 pi\) arrow.r.double.long n theta = 2 k pi arrow.r.double.long theta = frac(2 k pi, n)$
   for $k in bb(Z)$.
 
-#quote_box[
-#strong[📐 Theorem --- The Group of $n$-th Roots of Unity
-]
- There exist
+#principe(title: [Theorem — The Group of $n$-th Roots of Unity])[There exist
 exactly $n$ distinct complex solutions to $z^n = 1$, denoted $bb(U)_n$:
 $ bb(U)_n = {omega_k = e^(i frac(2 k pi, n)) med mid(bar.v) med k in { 0 \, 1 \, 2 \, dots.h \, n - 1 }} $
 Setting $omega = e^(i frac(2 pi, n))$, these roots are the successive
@@ -47909,35 +44043,22 @@ powers of $omega$:
 $ bb(U)_n = { 1\,omega\,omega^2\,dots.h\,omega^(n - 1) } $
 ]
 
-#align(center)[
-  #block(
-    fill: rgb("#f8fafc"),
-    stroke: 1pt + rgb("#cbd5e1"),
-    inset: (x: 16pt, y: 10pt),
-    radius: 6pt,
-    breakable: false,
-  )[
-    #set text(font: "Liberation Mono", size: 9.5pt, fill: rgb("#0f172a"))
-    ```text
-6th Roots of Unity (Regular Hexagon)
-Im
-ω²          ω¹ = e^(iπ/3)
-ω³ = -1  ω⁰ = 1   Re
-ω⁴          ω⁵ = e^(-iπ/3)
-    ```
+
+#figure(image("figures_en/vol_6/fig_55_racines_unite.svg", alt: "Modular arithmetic: clock face modulo 12"),
+  caption: [
+    Modular arithmetic: clock face modulo 12
   ]
-]
+)
 
 #quote_box[
-#strong[📐 Geometric Properties
-]
- 1. #strong[Regular Polygon:] The points
+#strong[📐 Geometric Properties] 1. #strong[Regular Polygon:] The points
 representing the $n$-th roots of unity form the vertices of a
 #strong[regular $n$-sided polygon] inscribed in the unit circle, with
 one vertex at $\(1\,0\)$. 2. #strong[Vanishing Sum (Center of Gravity):]
 For every $n gt.eq 2$:
 $ sum_(k = 0)^(n - 1) e^(i frac(2 k pi, n)) = 1 + omega + omega^2 + dots.h + omega^(n - 1) = 0 $
 ]
+
 
 #emph[Proof of the Vanishing Sum:] This is a geometric series with
 common ratio $omega = e^(i frac(2 pi, n)) eq.not 1$:
@@ -47960,13 +44081,11 @@ $\(O\;arrow(u)\,arrow(v)\)$:
 - The #strong[distance] $A B$ is the modulus:
   $ A B = parallel accent(A B, ⃗) parallel =\|z_B - z_A\| $
 
-#quote_box[
-#strong[📐 Theorem --- Oriented Angle Between Two Vectors
-]
- For any four
+#principe(title: [Theorem — Oriented Angle Between Two Vectors])[For any four
 points $A\,B\,C\,D$ with $A eq.not B$ and $C eq.not D$:
 $ \(accent(A B, ⃗)\,accent(C D, ⃗)\)equiv arg (frac(z_D - z_C, z_B - z_A)) med\(mod med 2 pi\) $
 ]
+
 
 ==== 7.2 Collinearity and Orthogonality Criteria
 <collinearity-and-orthogonality-criteria>
@@ -48462,10 +44581,9 @@ arithmetic, which every child practices without realizing it, is one of
 the deepest jewels of the human mind. It was by studying the remainders
 of divisions that Fermat unlocked the secret of powers, and that three
 centuries later, all of humanity learned to lock its digital secrets
-behind the indestructible padlock of prime numbers.”
+behind the indestructible padlock of prime numbers.”]
 ]
 
-]
 
 #divider()
 
@@ -48532,15 +44650,13 @@ magistrate in #strong[1640], Pierre de Fermat, and on the theory of
 <divisibility-and-euclidean-division-in-mathbbz>
 ==== 2.1 Divisibility in the Set of Integers $bb(Z)$
 <divisibility-in-the-set-of-integers-mathbbz>
-#principe(title: [Définition Fondamentale])[
-#strong[📐 Definition --- Divisibility
-]
- Let $a in bb(Z)$ and
+#principe(title: [Definition — Divisibility])[Let $a in bb(Z)$ and
 $b in bb(Z)$. We say that #strong[$a$ divides $b$] (or that $b$ is a
 #strong[multiple] of $a$, or that $b$ is divisible by $a$), denoted by
 #strong[$a divides b$], if there exists an integer $k in bb(Z)$ such
 that: $ b = k dot.op a $
 ]
+
 
 #emph[Examples:] - $7 divides 42$ because $42 = 6 times 7$. -
 $- 3 divides 15$ because $15 =\(- 5\)times\(- 3\)$. - $5 divides 0$
@@ -48548,9 +44664,7 @@ because $0 = 0 times 5$ (every nonzero integer divides 0). - 0 divides
 no nonzero number, because $0 times k = 0 eq.not b$.
 
 #quote_box[
-#strong[📐 Fundamental Properties of Divisibility
-]
- 1.
+#strong[📐 Fundamental Properties of Divisibility] 1.
 #strong[Reflexivity:] For all $a in bb(Z)$, $a divides a$. 2.
 #strong[Transitivity:] If $a divides b$ and $b divides c$, then
 $a divides c$. 3. #strong[Linear combinations (essential!):] If
@@ -48558,16 +44672,14 @@ $a divides b$ and $a divides c$, then for all integers $u\,v in bb(Z)$:
 $ a divides\(u b + v c\) $
 ]
 
+
 #emph[Proof of linear combination:] If $b = k_1 a$ and $c = k_2 a$, then
 $u b + v c = u\(k_1 a\)+ v\(k_2 a\)=\(u k_1 + v k_2\)a$. Since
 $\(u k_1 + v k_2\)in bb(Z)$, $a$ indeed divides $u b + v c$.
 
 ==== 2.2 The Euclidean Division Theorem
 <the-euclidean-division-theorem>
-#quote_box[
-#strong[📐 Fundamental Theorem --- Euclidean Division in $bb(Z)$
-]
- Let
+#principe(title: [Fundamental Theorem — Euclidean Division in $bb(Z)$])[Let
 $a in bb(Z)$ and $b in bb(Z)^(*)$ (with $b > 0$). There exists a
 #strong[unique] pair of integers $\(q\,r\)in bb(Z) times bb(N)$ such
 that: $ a = b q + r quad upright("with") quad 0 lt.eq r < b $
@@ -48581,10 +44693,8 @@ that: $ a = b q + r quad upright("with") quad 0 lt.eq r < b $
 - $r$ is the #strong[remainder].
 ]
 
-#alerte(title: [Attention au Piège !])[
-#strong[⚠️ Warning: Pitfall! --- Division of a Negative Number
-]
- Let
+
+#alerte(title: [Warning: Pitfall! — Division of a Negative Number])[Let
 $a = - 23$ and $b = 5$. A common mistake is writing
 $- 23 = 5 times\(- 4\)- 3$. This is #strong[strictly forbidden]! The
 remainder $r$ must imperatively be #strong[non-negative]
@@ -48592,6 +44702,7 @@ remainder $r$ must imperatively be #strong[non-negative]
 $ - 23 = 5 times\(- 5\)+ 2 $ The quotient is $q = - 5$ and the remainder
 is $r = 2$ (which strictly satisfies $0 lt.eq 2 < 5$).
 ]
+
 
 #divider()
 
@@ -48603,16 +44714,14 @@ revolutionized algebra: the concept of #strong[congruence].
 
 ==== 3.1 Definition and Circular Meaning
 <definition-and-circular-meaning>
-#principe(title: [Définition Fondamentale])[
-#strong[📐 Definition --- Congruence Modulo $n$
-]
- Let $n$ be a positive
+#principe(title: [Definition — Congruence Modulo $n$])[Let $n$ be a positive
 integer ($n gt.eq 2$). Two integers $a$ and $b$ are said to be
 #strong[congruent modulo $n$], denoted by:
 $ a equiv b med\(mod med n\) quad upright("or") quad a equiv b med\[n\] $
 if and only if their difference $a - b$ is divisible by $n$:
 $ n divides\(a - b\)arrow.l.r.double exists k in bb(Z)\,med a - b = k n $
 ]
+
 
 #emph[Characterization via remainders:] Two integers $a$ and $b$ are
 congruent modulo $n$ if and only if #strong[they have exactly the same
@@ -48623,19 +44732,10 @@ wait 7 hours, it will be 16 o'clock, which corresponds to 4 o'clock:
 $ 9 + 7 = 16 equiv 4 med\(mod med 12\) $ The set of possible remainders
 modulo $n$ is finite: it is ${ 0\,1\,2\,dots.h\,n - 1 }$.
 
-#figure(image("figures/vol_6/fig_55_racines_unite.svg", alt: "Arithmétique modulaire : le cadran d’horloge modulo 12"),
-  caption: [
-    Arithmétique modulaire : le cadran d'horloge modulo 12
-  ]
-)
-
 ==== 3.2 The Magical Compatibility with Operations
 <the-magical-compatibility-with-operations>
-#quote_box[
-#strong[📐 Fundamental Theorem --- Operational Properties of
-Congruences
-]
- If $a equiv b med\(mod med n\)$ and
+#principe(title: [Fundamental Theorem — Operational Properties of
+Congruences])[If $a equiv b med\(mod med n\)$ and
 $c equiv d med\(mod med n\)$, then: 1. #strong[Addition:]
 $a + c equiv b + d med\(mod med n\)$ 2. #strong[Subtraction:]
 $a - c equiv b - d med\(mod med n\)$ 3. #strong[Multiplication:]
@@ -48643,11 +44743,8 @@ $a times c equiv b times d med\(mod med n\)$ 4. #strong[Integer powers:]
 For any integer $k in bb(N)$, $a^k equiv b^k med\(mod med n\)$
 ]
 
-#alerte(title: [Attention au Piège !])[
-#strong[⚠️ Warning: Critical Pitfall! --- Prohibition of Naive Division
-]
 
-In classical equality, $6 x = 6 y arrow.r.double.long x = y$. #strong[In
+#alerte(title: [Warning: Critical Pitfall! — Prohibition of Naive Division])[In classical equality, $6 x = 6 y arrow.r.double.long x = y$. #strong[In
 congruences, this is generally false!] Observe:
 $2 times 1 = 2 equiv 2 med\(mod med 4\)$ and
 $2 times 3 = 6 equiv 2 med\(mod med 4\)$. Thus
@@ -48656,6 +44753,7 @@ $1 equiv.not 3 med\(mod med 4\)$! One cannot simply "divide by 2". One
 can divide by $c$ in $a c equiv b c med\(mod med n\)$ only if
 #strong[$c$ is coprime to $n$] ($gcd\(c\,n\)= 1$)!
 ]
+
 
 #divider()
 
@@ -48696,15 +44794,13 @@ $ 126 times\(- 3\)+ 48 times 8 = 6 $
 
 ==== 4.3 Bézout's Identity (Theorem)
 <bézouts-identity-theorem>
-#quote_box[
-#strong[📐 Fundamental Theorem --- Bézout's Identity (1767)
-]
- Two nonzero
+#principe(title: [Fundamental Theorem — Bézout's Identity (1767)])[Two nonzero
 integers $a$ and $b$ are #strong[coprime] ($gcd\(a\,b\)= 1$) if and only
 if there exist two integers $u$ and $v$ such that:
 
 $ upright(bold(a u + b v = 1)) $
 ]
+
 
 #emph[Immediate converse direction:] If $a u + b v = 1$, every common
 divisor $d$ of $a$ and $b$ divides the linear combination
@@ -48717,10 +44813,7 @@ A #strong[Diophantine equation] (named in honor of Diophantus of
 Alexandria) is an equation whose solutions $\(x\,y\)$ are sought
 strictly in the set of integer pairs $bb(Z)^2$.
 
-#methode(title: [Méthode Pas à Pas])[
-#strong[🧭 Method --- Solving $a x + b y = c$
-]
- 1. #strong[Existence
+#methode(title: [Method — Solving $a x + b y = c$])[1. #strong[Existence
 condition:] Let $d = gcd\(a\,b\)$. The equation has integer solutions if
 and only if #strong[$d$ divides $c$]. 2. #strong[Simplification:] Divide
 the entire equation by $d$ to obtain $a' x + b' y = c'$ with
@@ -48734,24 +44827,20 @@ divides $\(y_0 - y\)$. From this, deduce the set of all solutions
 $\(x\,y\)$ indexed by an integer $k in bb(Z)$.
 ]
 
+
 #divider()
 
 === 5. Gauss's Lemma (Theorem)
 <gausss-lemma-theorem>
-#quote_box[
-#strong[📐 Fundamental Theorem --- Gauss's Lemma
-]
- Let
+#principe(title: [Fundamental Theorem — Gauss's Lemma])[Let
 $a\,b\,c in bb(Z)$. If #strong[$a$ divides the product $b c$] and if
 #strong[$gcd\(a\,b\)= 1$], then:
 
 $ upright(bold(a upright(" divides ") c)) $
 ]
 
-#quote_box[
-#strong[✍️ Required Proof --- Gauss's Lemma
-]
- Assume that $a divides b c$
+
+#exemple_resolu(title: [Required Proof — Gauss's Lemma])[Assume that $a divides b c$
 and that $gcd\(a\,b\)= 1$. Since $a$ and $b$ are coprime, by Bézout's
 identity, there exist two integers $u\,v in bb(Z)$ such that:
 $ a u + b v = 1 $ Multiply both sides of this equality by the integer
@@ -48769,6 +44858,7 @@ $ a\(c u + k v\)= c $ Since $\(c u + k v\)in bb(Z)$, this equality
 rigorously proves that $a$ divides $c$.
 ]
 
+
 #emph[Corollary (Uniqueness of prime factorization):] If a prime number
 $p$ divides a product $x_1 x_2 dots.h x_m$, then $p$ must divide at
 least one of the factors $x_i$.
@@ -48779,20 +44869,15 @@ least one of the factors $x_i$.
 <fermats-little-theorem-and-fast-exponentiation>
 ==== 6.1 Fermat's Little Theorem (1640)
 <fermats-little-theorem-1640>
-#quote_box[
-#strong[📐 Theorem --- Fermat's Little Theorem
-]
- Let $p$ be a prime
+#principe(title: [Theorem — Fermat's Little Theorem])[Let $p$ be a prime
 number. 1. For any integer $a$ not divisible by $p$ ($gcd\(a\,p\)= 1$):
 $ upright(bold(a^(p - 1) equiv 1 med\(mod med p\))) $ 2. For any integer
 $a in bb(Z)$ (without any restriction):
 $ upright(bold(a^p equiv a med\(mod med p\))) $
 ]
 
-#quote_box[
-#strong[✍️ Classical Proof via Remainders
-]
- Let $p$ be a prime and $a$ an
+
+#exemple_resolu(title: [Classical Proof via Remainders])[Let $p$ be a prime and $a$ an
 integer not divisible by $p$. Consider the $p - 1$ successive multiples:
 $a\,2 a\,3 a\,dots.h\,\(p - 1\)a$. Let us show that their remainders
 modulo $p$ are all distinct and nonzero: If
@@ -48812,6 +44897,7 @@ $gcd\(\(p - 1\)!\,p\)= 1$. By Gauss's lemma (or by multiplying by the
 modular inverse of $\(p - 1\)!$), we can simplify by $\(p - 1\)!$:
 $ a^(p - 1) equiv 1 med\(mod med p\) $
 ]
+
 
 ==== 6.2 The Fast Modular Exponentiation Algorithm
 <the-fast-modular-exponentiation-algorithm>
@@ -48858,17 +44944,13 @@ decryption function is then: $ x equiv a'\(y - b\)med\(mod med 26\) $
 <the-principle-of-asymmetric-rsa-encryption>
 Here is the crowning jewel of modern computer security:
 
-#figure(image("figures/vol_6/fig_56_cryptographie_rsa.svg", alt: "Cryptographie asymétrique RSA : échange de clé publique et déchiffrement"),
+#figure(image("figures_en/vol_6/fig_56_cryptographie_rsa.svg", alt: "RSA asymmetric cryptography: public-key exchange and decryption"),
   caption: [
-    Cryptographie asymétrique RSA : échange de clé publique et
-    déchiffrement
+    RSA asymmetric cryptography: public-key exchange and decryption
   ]
 )
 
-#quote_box[
-#strong[✍️ Mathematical Proof --- Why RSA Always Decrypts Exactly
-]
- By
+#exemple_resolu(title: [Mathematical Proof — Why RSA Always Decrypts Exactly])[By
 construction, $d$ is the inverse of $e$ modulo
 $phi\(n\)=\(p - 1\)\(q - 1\)$. Hence there exists an integer
 $k in bb(Z)$ such that: $ e dot.op d = 1 + k\(p - 1\)\(q - 1\) $ Bob
@@ -48896,6 +44978,7 @@ $n = p q$ divides $\(M^(e d) - M\)$:
 $ M^(e d) equiv M med\(mod med n\) $ The original message reappears
 intact!
 ]
+
 
 #emph[Why is it impossible to cheat?] To find the private key $d$, an
 eavesdropper must compute the inverse of $e$ modulo
@@ -49412,10 +45495,9 @@ orchestrated the rising and falling of shuttles to weave patterns of
 boundless complexity. Matrices are the Jacquard punched cards of modern
 algebra: grids of numbers capable of distorting space, enumerating the
 paths of a network, and predicting the future equilibrium of the world's
-flows.”
+flows.”]
 ]
 
-]
 
 #divider()
 
@@ -49483,10 +45565,7 @@ probability theory with matrix algebra: this is the theory of
 <the-matrix-object-and-its-operations>
 ==== 2.1 Definition of a Matrix
 <definition-of-a-matrix>
-#principe(title: [Définition Fondamentale])[
-#strong[📐 Definition --- Matrix
-]
- Let $n$ and $p$ be positive integers.
+#principe(title: [Definition — Matrix])[Let $n$ and $p$ be positive integers.
 A #strong[matrix] of dimension (or size) $n times p$ (read “$n$ rows,
 $p$ columns”) with real coefficients is a rectangular array of numbers
 arranged in $n$ rows and $p$ columns:
@@ -49498,6 +45577,7 @@ The entry $a_(i\,j)$ is located at the intersection of the $i$-th row
 and the $j$-th column. The set of $n times p$ matrices with real
 coefficients is denoted by $cal(M)_(n\,p)\(bb(R)\)$.
 ]
+
 
 #emph[Terminology:] - If $n = p$, the matrix is called #strong[square]
 of order $n$. The set is denoted $cal(M)_n\(bb(R)\)$. - If $n = 1$, it
@@ -49520,10 +45600,7 @@ to zero.
 Multiplication of two matrices is #strong[not] element-wise! It captures
 the composition of linear maps.
 
-#principe(title: [Définition Fondamentale])[
-#strong[📐 Definition --- Matrix Product
-]
- Let $A$ be a matrix of size
+#principe(title: [Definition — Matrix Product])[Let $A$ be a matrix of size
 $n times upright(bold(k))$ and $B$ a matrix of size
 $upright(bold(k)) times p$. #emph[\(The number of columns of $A$ must
 strictly equal the number of rows of $B$!)] The product $C = A times B$
@@ -49534,34 +45611,19 @@ of $B$]:
 $ c_(i\,j) = sum_(m = 1)^k a_(i\,m) dot.op b_(m\,j) = a_(i\,1) b_(1\,j) + a_(i\,2) b_(2\,j) + dots.h + a_(i\,k) b_(k\,j) $
 ]
 
-#align(center)[
-  #block(
-    fill: rgb("#f8fafc"),
-    stroke: 1pt + rgb("#cbd5e1"),
-    inset: (x: 16pt, y: 10pt),
-    radius: 6pt,
-    breakable: false,
-  )[
-    #set text(font: "Liberation Mono", size: 9.5pt, fill: rgb("#0f172a"))
-    ```text
-Row i of A : ( a_i,1   a_i,2  ...  a_i,k )
-Column j of B :  b_1,j
-b_2,j
-b_k,j
-c_i,j = a_i,1 · b_1,j + a_i,2 · b_2,j + ... + a_i,k · b_k,j
-    ```
+
+#figure(image("figures_en/vol_6/fig_57_produit_matriciel.svg", alt: "Principle of matrix multiplication row by column"),
+  caption: [
+    Principle of matrix multiplication row by column
   ]
-]
+)
 
 #emph[Fundamental $2 times 2$ example:]
 $ mat(delim: "(", a, b; c, d) mat(delim: "(", x, y; z, t) = mat(delim: "(", a x + b z, a y + b t; c x + d z, c y + d t) $
 
 ==== 2.4 Properties and Pitfalls of Matrix Multiplication
 <properties-and-pitfalls-of-matrix-multiplication>
-#alerte(title: [Attention au Piège !])[
-#strong[⚠️ Warning: Pitfall! --- Non-Commutativity in General
-]
- For two
+#alerte(title: [Warning: Pitfall! — Non-Commutativity in General])[For two
 square matrices $A$ and $B$, in general:
 $ upright(bold(A B eq.not B A)) $ #emph[Example:]
 $A = mat(delim: "(", 0, 1; 0, 0)$ and $B = mat(delim: "(", 0, 0; 1, 0)$.
@@ -49572,15 +45634,14 @@ standard algebraic identities like $\(A + B\)^2 = A^2 + 2 A B + B^2$ are
 $\(A + B\)^2 = A^2 + A B + B A + B^2$).
 ]
 
-#quote_box[
-#strong[⚠️ Second Pitfall --- Zero Divisors
-]
- For real numbers,
+
+#alerte(title: [Second Pitfall — Zero Divisors])[For real numbers,
 $a b = 0 arrow.r.double.long a = 0 upright(" or ") b = 0$. #strong[This
 fails for matrices!] Take $A = mat(delim: "(", 0, 1; 0, 0)$:
 $ A^2 = A times A = mat(delim: "(", 0, 1; 0, 0) mat(delim: "(", 0, 1; 0, 0) = mat(delim: "(", 0, 0; 0, 0) = 0_2 $
 The product of two nonzero matrices can be the zero matrix!
 ]
+
 
 ==== 2.5 Identity Matrix and Powers
 <identity-matrix-and-powers>
@@ -49598,15 +45659,13 @@ $A^k = underbrace(A times A times dots.h times A, k upright(" factors"))$.
 <matrix-inversion-and-linear-systems>
 ==== 3.1 Definition of Invertibility
 <definition-of-invertibility>
-#principe(title: [Définition Fondamentale])[
-#strong[📐 Definition --- Invertible Matrix
-]
- A square matrix
+#principe(title: [Definition — Invertible Matrix])[A square matrix
 $A in cal(M)_n\(bb(R)\)$ is called #strong[invertible] if there exists a
 square matrix $B in cal(M)_n\(bb(R)\)$ such that: $ A B = B A = I_n $ If
 such a matrix exists, it is unique. It is called the #strong[inverse
 matrix] of $A$ and is denoted #strong[$A^(- 1)$].
 ]
+
 
 #emph[\(⚠️ There is no matrix “division” $B / A$! One multiplies by the
 inverse $A^(- 1)$, carefully respecting left-multiplication versus
@@ -49614,10 +45673,7 @@ right-multiplication).]
 
 ==== 3.2 Inversion of $2 times 2$ Matrices
 <inversion-of-2-times-2-matrices>
-#quote_box[
-#strong[📐 Theorem --- Inverse of a $2 times 2$ Matrix
-]
- Let
+#principe(title: [Theorem — Inverse of a $2 times 2$ Matrix])[Let
 $A = mat(delim: "(", a, b; c, d) in cal(M)_2\(bb(R)\)$. The
 #strong[determinant] of $A$ is the real number: $ det\(A\)= a d - b c $
 \1. The matrix $A$ is #strong[invertible if and only if
@@ -49626,6 +45682,7 @@ the formula:
 
 $ upright(bold(A^(- 1) = frac(1, a d - b c) mat(delim: "(", d, - b; - c, a))) $
 ]
+
 
 #emph[Direct proof by verification:]
 $ mat(delim: "(", a, b; c, d) mat(delim: "(", d, - b; - c, a) = mat(delim: "(", a d - b c, - a b + b a; c d - d c, - c b + d a) = mat(delim: "(", a d - b c, 0; 0, a d - b c) =\(a d - b c\)I_2 $
@@ -49665,10 +45722,7 @@ A #strong[graph] $G =\(V\,E\)$ consists of:
 
 ==== 4.2 The Adjacency Matrix
 <the-adjacency-matrix>
-#principe(title: [Définition Fondamentale])[
-#strong[📐 Definition --- Adjacency Matrix
-]
- Let $G$ be a graph of order
+#principe(title: [Definition — Adjacency Matrix])[Let $G$ be a graph of order
 $n$ whose vertices are labeled from 1 to $n$. The #strong[adjacency
 matrix] of $G$ is the square matrix $M in cal(M)_n\(bb(R)\)$ whose entry
 in row $i$ and column $j$ is:
@@ -49677,42 +45731,24 @@ $ m_(i\,j) = upright("number of edges (or arcs) going from vertex ") i upright("
 symmetric: $m_(i\,j) = m_(j\,i)$).]
 ]
 
-#align(center)[
-  #block(
-    fill: rgb("#f8fafc"),
-    stroke: 1pt + rgb("#cbd5e1"),
-    inset: (x: 16pt, y: 10pt),
-    radius: 6pt,
-    breakable: false,
-  )[
-    #set text(font: "Liberation Mono", size: 9.5pt, fill: rgb("#0f172a"))
-    ```text
-3-Vertex Graph                     Adjacency Matrix M
-1)
-To 1    To 2    To 3
-From 1    0       1       0
-2)  (3)             From 2    0       0       1
-From 3    1       0       0
-    ```
+
+#figure(image("figures_en/vol_6/fig_57_graphe_oriente_matrice.svg", alt: "Directed graph with 3 vertices and associated adjacency matrix"),
+  caption: [
+    Directed graph with 3 vertices and associated adjacency matrix
   ]
-]
+)
 
 ==== 4.3 The Fundamental Theorem of Paths of Length $k$
 <the-fundamental-theorem-of-paths-of-length-k>
-#quote_box[
-#strong[📐 Fundamental Theorem --- Powers of the Adjacency Matrix
-]
- Let
+#principe(title: [Fundamental Theorem — Powers of the Adjacency Matrix])[Let
 $M$ be the adjacency matrix of a graph with $n$ vertices. For every
 positive integer $k gt.eq 1$, the entry in the $i$-th row and $j$-th
 column of the matrix #strong[$M^k$] equals the #strong[number of paths
 of length $k$ from vertex $i$ to vertex $j$].
 ]
 
-#quote_box[
-#strong[✍️ Required Proof by Induction
-]
- Let $c_(i\,j)^(\(k\))$ denote
+
+#exemple_resolu(title: [Required Proof by Induction])[Let $c_(i\,j)^(\(k\))$ denote
 the $\(i\,j\)$ entry of the matrix $M^k$, and $N_(i\,j)^(\(k\))$ denote
 the number of paths of length $k$ from $i$ to $j$. Let us prove by
 mathematical induction on $k gt.eq 1$ the property
@@ -49746,6 +45782,7 @@ $cal(P)\(k\): upright("“For all ") i\,j\,med c_(i\,j)^(\(k\)) = N_(i\,j)^(\(k\
   $k gt.eq 1$.
 ]
 
+
 #divider()
 
 === 5. Markov Chains and Probabilistic Graphs
@@ -49757,10 +45794,7 @@ states (for example: States $E_1\,E_2\,dots.h\,E_k$). At each unit of
 time (step $n$), the system transitions from one state to another
 according to fixed probabilities.
 
-#principe(title: [Définition Fondamentale])[
-#strong[📐 Definition --- Transition Matrix
-]
- The #strong[transition
+#principe(title: [Definition — Transition Matrix])[The #strong[transition
 matrix] $T$ of a probabilistic graph with $k$ states is the $k times k$
 square matrix whose entry $t_(i\,j)$ is the conditional probability of
 moving to state $j$ given that the system is currently in state $i$:
@@ -49769,24 +45803,23 @@ each row of $T$, the sum of entries equals 1:
 $ sum_(j = 1)^k t_(i\,j) = 1 quad\(upright("since the sum of outgoing transition probabilities from any vertex equals 1")\) $
 ]
 
+
 ==== 5.2 Evolution of the Probability Distribution
 <evolution-of-the-probability-distribution>
 Let $P_n$ denote the #strong[row vector] of state probabilities at step
 $n$:
 $ P_n = mat(delim: "(", p_n^(\(1\)), p_n^(\(2\)), dots.h, p_n^(\(k\))) quad upright("with ") sum_(i = 1)^k p_n^(\(i\)) = 1 $
 
-#quote_box[
-#strong[📐 Theorem --- Matrix Recurrence Formula
-]
- By the law of total
+#principe(title: [Theorem — Matrix Recurrence Formula])[By the law of total
 probability: $ upright(bold(P_(n + 1) = P_n times T)) $ By immediate
 induction, for any integer $n in bb(N)$:
 $ upright(bold(P_n = P_0 times T^n)) $
 ]
 
-#figure(image("figures/vol_6/fig_57_graphe_probabiliste.svg", alt: "Graphe probabiliste à 2 états et matrice de transition"),
+
+#figure(image("figures_en/vol_6/fig_57_graphe_probabiliste.svg", alt: "2-state Markov graph and transition matrix"),
   caption: [
-    Graphe probabiliste à 2 états et matrice de transition
+    2-state Markov graph and transition matrix
   ]
 )
 
@@ -49798,10 +45831,7 @@ $0.8 + 0.2 = 1$ and $0.4 + 0.6 = 1$).]
 <the-steady-state-stationary-distribution>
 What happens to $P_n$ when the number of steps $n$ becomes very large?
 
-#principe(title: [Définition Fondamentale])[
-#strong[📐 Definition & Theorem --- Steady State
-]
- A probability row
+#principe(title: [Definition & Theorem — Steady State])[A probability row
 vector $P = mat(delim: "(", x, y)$ (or $mat(delim: "(", x, y, z)$) is
 called a #strong[steady state] (or stationary distribution) of the
 Markov chain if it satisfies:
@@ -49814,6 +45844,7 @@ Regardless of the initial state $P_0$, the sequence of distributions
 $\(P_n\)$ converges toward this unique steady state:
 $ upright(bold(lim_(n arrow.r + oo) P_n = P)) $
 ]
+
 
 #emph[Calculation method for 2 states:] Let $P = mat(delim: "(", x, y)$
 with $x + y = 1 arrow.r.double.long y = 1 - x$. The equation $P = P T$
@@ -50405,9 +46436,7 @@ and The End of the Voyage].
 #quote_box[
 #emph[“The book of nature is written in the language of mathematics, and
 its characters are triangles, circles, and other geometrical figures,
-without which it is humanly impossible to understand a single word.”
-]
-
+without which it is humanly impossible to understand a single word.”]
 --- Galileo Galilei, #emph[The Assayer] (1623)
 
 #emph[“The miracle of the appropriateness of the language of mathematics
@@ -50416,6 +46445,7 @@ neither understand nor deserve.”] --- Eugene Wigner, #emph[The
 Unreasonable Effectiveness of Mathematics in the Natural Sciences]
 (1960)
 ]
+
 
 #divider()
 
@@ -50454,13 +46484,8 @@ using the Bienaymé-Chebyshev inequality.
 
 Behold the pyramid your mind has climbed, step by step:
 
-#principe(title: [Définition Fondamentale])[
-#strong[📐 Règle Fondamentale --- Synthèse de l'Édifice Mathématique et
-Cap sur le Supérieur
-]
-
-
-- VOLUME VI : TAMED INFINITY AND THE MODERN EDIFICE (Ages 17--18 / Grade
+#principe(title: [Fundamental Rule — Synthesis of the Mathematical Edifice
+and Gateway to Higher Mathematics])[- VOLUME VI : TAMED INFINITY AND THE MODERN EDIFICE (Ages 17--18 / Grade
   12 & Advanced)
 - Induction, Limits of Sequences & Functions, Continuity & IVT,
   Convexity,
@@ -50495,6 +46520,7 @@ Cap sur le Supérieur
   Tens,
 - The Number Line of Steps Forward and Steps Back.
 ]
+
 
 Not a single arbitrary leap. Not a single authoritarian dogma. Never was
 anyone told: #emph[“Memorize this formula because it is on the exam.”]
@@ -50560,13 +46586,8 @@ probability with dice and playing cards. Yet as the mind matures, the
 partitions crumble. Mathematics is not an archipelago of disconnected
 islands: it is a #strong[single continent spanned by colossal bridges].
 
-#principe(title: [Définition Fondamentale])[
-#strong[📐 Règle Fondamentale --- Synthèse de l'Édifice Mathématique et
-Cap sur le Supérieur
-]
-
-
-- MATHEMATICS
+#principe(title: [Fundamental Rule — Synthesis of the Mathematical Edifice
+and Gateway to Higher Mathematics])[- MATHEMATICS
 - BRIDGE 1: ALGEBRA \] \[ BRIDGE 2: DISCRETE \] \[ BRIDGE 3: LOCAL \]
 - AND AND AND
 - GEOMETRY \] \[ CONTINUOUS \] \[ GLOBAL \]
@@ -50580,6 +46601,7 @@ Cap sur le Supérieur
 - Fundamental Theorem:
 - F(b) - F(a) = ∫ f(t)dt !
 ]
+
 
 ==== Bridge 1: Algebra and Geometry
 <bridge-1-algebra-and-geometry>
@@ -50666,13 +46688,8 @@ the mountain: #strong[it is base camp]. Here are the five great
 continents you will explore in higher education (University Mathematics,
 Engineering Schools, and Advanced Sciences):
 
-#principe(title: [Définition Fondamentale])[
-#strong[📐 Règle Fondamentale --- Synthèse de l'Édifice Mathématique et
-Cap sur le Supérieur
-]
-
-
-- HIGHER EDUCATION
+#principe(title: [Fundamental Rule — Synthesis of the Mathematical Edifice
+and Gateway to Higher Mathematics])[- HIGHER EDUCATION
 - ABSTRACT LINEAR ALGEBRA \] \[ TOPOLOGY \] \[ COMPLEX ANALYSIS \]
 - Vector spaces of arbitrary or Open/closed sets, Differentiating
   functions
@@ -50688,6 +46705,7 @@ Cap sur le Supérieur
 - dominated convergence theorem, differential forms,
 - almost sure convergence, martingales. tensor calculus of Relativity.
 ]
+
 
 + #strong[Abstract Linear Algebra:] In high school, you manipulated
   vectors with 2 or 3 coordinates. In higher education, you will explore
@@ -51127,7 +47145,7 @@ mind.] May your journey into new discoveries be filled with wonder!
 = GENERAL CONCLUSION & EPILOGUE: THE EDIFICE OF THE NUMBER AND THE FREEDOM OF THE MIND
 
 #align(center)[
-  #figure(image("figures/vol_6/fig_58_arbre_savoirs.svg", width: 92%), caption: [The Tree of Mathematical Knowledge: from sensory experience to modern abstraction])
+  #figure(image("figures_en/vol_6/fig_58_arbre_savoirs.svg", width: 92%), caption: [The Tree of Mathematical Knowledge: from sensory experience to modern abstraction])
 ]
 
 #v(0.4cm)

@@ -11,6 +11,7 @@
 - **Subtitle:** *A Constructive Odyssey, from the First Pebble to Advanced High School Mathematics*
 - **Companion Book:** *THE COMPANION GUIDE — Didactic Foundations, Epistemological Pillars, and Practical Keys* (*Le Guide de l'Accompagnateur*)
 - **Architecture:** 58 chapters distributed across 6 progressive learning volumes (Grade 1 / CP to Grade 12 / Terminale Spécialité & Advanced Mathematics).
+- **International Translation Guidelines:** Refer to `TRANSLATION_GUIDELINES.md` for mathematical notation equivalences, glossary of core concepts, and bilingual synchronization rules.
 
 ---
 
@@ -87,3 +88,47 @@ All SVG diagrams and book illustrations adhere to a functional color code:
 The entire work (*The Way of the Number* and *The Companion Guide*), including texts, vector graphics, and compilation scripts, is released under the **Creative Commons Attribution-ShareAlike 4.0 International (CC BY-SA 4.0)** license.
 - The Markdown source code and SVG figures are hosted and versioned on a public GitHub repository.
 - The authors encourage redistribution, adaptation, and pedagogical reuse, provided original credits are attributed and derivatives are shared under an identical license.
+
+---
+
+## 7. PROTOCOLE ÉDITORIAL DE TRADUCTION INTÉGRALE ET SYNCHRONISATION 1:1 (FRENCH TO ENGLISH)
+
+> Whenever the French reference edition (*LA VOIE DU NOMBRE*) is revised or expanded, the English international edition (*THE WAY OF THE NUMBER*) must be synchronized immediately following the strict 1:1 mirror protocol below. Loose interpretations, summaries, or heuristic compiling shortcuts are strictly prohibited.
+
+### A. The Master Rule: The French `.typ` File is the Single Source of Truth
+1. **Never translate via dynamic Markdown + Pandoc + Heuristic Regex Pipelines:**
+   - Heuristic matching between separate Markdown files and compiled blocks causes catastrophic drift (mismatched code blocks falling back to ASCII zombie blocks, missing callout colors, or corrupted delimiters).
+   - The master French Typst file (`LA_VOIE_DU_NOMBRE.typ`) is the **single source of truth** for all page structures, exact callout macros, mathematical formulas, and figure placements.
+2. **Direct 1:1 Typst Translation:**
+   - Any translation into English must be performed **directly on the Typst source code**, paragraph by paragraph, macro by macro, and formula by formula.
+   - Every macro (`#principe`, `#alerte`, `#cas_limite`, `#methode`, `#exemple_resolu`, `#decouvre`) must be preserved with its identical styling and translated English title/content.
+
+### B. Strict Asset Mirroring: `figures/` $\leftrightarrow$ `figures_en/`
+1. **Identical Paths and Filenames:**
+   - English SVGs reside in the mirror directory `figures_en/`, reproducing the exact subfolder tree of `figures/` (`vol_1` to `vol_6`, `histoire/`, `nature/`).
+   - Filenames remain strictly identical (e.g. `figures_en/vol_5/fig_37_cercle_trigo_quadrants.svg`).
+2. **Zero French Residuals & Oliver Byrne Color Compliance:**
+   - Every text element (`<text>`, `<tspan>`) in `figures_en/` must be 100% translated into idiomatic English.
+   - The functional color palette (Blue = action, Red = constraint, Yellow = product/energy, Green = balance) must be rigorously maintained.
+3. **XML Syntax Integrity:**
+   - In SVG files, literal `<` and `&` characters in text content must be escaped as `&lt;` and `&amp;` (e.g. `&lt;- The lonely soldier!`, `-2 ≤ x &lt; 5`).
+   - Automatic verification via `xml.etree.ElementTree` is mandatory before compiling.
+
+### C. Zero ASCII Box-Drawing & Zero Zombie Blocks
+- No monospace block (`data_table` or box characters `┌─┐│└─┘`) is ever allowed in the body text or callouts.
+- Every illustration is a sharp vector SVG or a native Typst `#table(...)`.
+- The classic pitfall block (`Caution: Classic Trap!`) must always be formatted with `#alerte(title: [...])[...]` in red (`#b91c1c`), never with generic quote boxes.
+
+### D. Mathematical Delimiters & Typst Math Traps
+1. **Interval Delimiters:**
+   - Typst reverses French open intervals (`]a, b[`) correctly only when written without broken `lr(` syntax. Ensure interval delimiters do not contain orphaned `lr(` calls.
+2. **Math Slash vs. Division:**
+   - Never use slashes inside `$ ... $` as text separators, because Typst interprets `/` as algebraic fractions. Use text mode or `thin / thin` outside math.
+
+### E. Compilation & Continuous Verification Protocol
+Before committing any changes to the repository:
+1. **Compile PDF:** Run `typst compile THE_WAY_OF_THE_NUMBER.typ THE_WAY_OF_THE_NUMBER.pdf` and verify exit code 0.
+2. **Audit Titles & Blocks:** Run an automated audit script ensuring:
+   - 0 French words in callout titles.
+   - 0 `data_table` occurrences in the Typst source.
+   - 0 XML parsing errors across all SVGs in `figures_en/`.
