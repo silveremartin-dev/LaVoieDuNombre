@@ -897,11 +897,13 @@ pierre tranchante sur un os poli ou un morceau de bois plat : #emph[Cric
 #strong[🔍 L'histoire vraie --- Le bâton d'Ishango
 ]
  Au bord du lac
-Édouard, entre le Congo et l'Ouganda en Afrique, des archéologues ont
+Édouard, entre la République Démocratique du Congo et l'Ouganda en Afrique, des archéologues ont
 découvert un os fossilisé vieux de plus de #strong[20 000 ans] : le
 #strong[bâton d'Ishango]. Il porte des encoches soigneusement regroupées
-en paquets. C'est l'un des plus anciens témoignages de l'esprit
-mathématique humain au monde.
+en séries régulières. Si certains chercheurs y ont vu un système de dénombrement par paquets de 5 ou de 10,
+d'autres ethnomathématiciens et préhistoriens suggèrent qu'il pourrait s'agir d'un calendrier lunaire,
+d'un jeu arithmétique ou d'une notation rythmique. C'est l'un des plus anciens témoignages de l'esprit
+mathématique humain et de l'inscription des quantités dans la matière.
 ]
 
 #figure(image("figures/histoire/ch_01_ishango.jpg", alt: "L’os fossilisé d’Ishango (~20 000 ans av. J.-C., Congo) : les premières encoches de dénombrement et groupements de nombres de l’humanité"),
@@ -1149,7 +1151,7 @@ que Maya ?
 #strong[Exercice 1.10] Chiffre ou nombre ? Dans les phrases suivantes,
 dis si le mot souligné est un #strong[chiffre] ou un #strong[nombre] :
 \1. « Pour écrire le nombre 38, j'utilise le #strong[3] et le
-#strong[8]. » 2. « Dans ce panier, il y a un #strong[38] pommes. » 3. «
+#strong[8]. » 2. « Dans ce panier, il y a #strong[38] pommes. » 3. «
 Mon numéro de dossard pour la course est le #strong[7]. »
 
 #divider()
@@ -2358,8 +2360,11 @@ compter sur tes doigts :
 
 #strong[Exercice 3.2] La balance est-elle droite ? Dis si ces égalités
 sont #strong[Vraies] (la balance est en équilibre) ou #strong[Fausses]
-(la balance penche) : 1. $5 + 3 = 8$ 2. $6 + 4 = 7 + 3$ 3.
-$10 - 2 = 5 + 2$ 4. $4 + 4 = 10 - 2$
+(la balance penche) :
+1. $5 + 3 = 8$
+2. $6 + 4 = 7 + 3$
+3. $10 - 2 = 5 + 2$
+4. $4 + 4 = 10 - 2$
 
 #strong[Exercice 3.3] La ruse du 9. Calcule mentalement en ajoutant 10
 puis en enlevant 1 :
@@ -3343,10 +3348,7 @@ pour casser une dizaine alors que le chiffre des unités est un zéro.
 
 Combien de passagers restent dans le bus après le deuxième arrêt ?
 
-#strong[Exercice 4.15] Le défi du boulier géant. En utilisant les trois
-chiffres #strong[2], #strong[5] et #strong[8], fabrique deux nombres à
-deux chiffres différents tels que leur somme soit la plus grande
-possible. Calcule ensuite cette somme.
+#strong[Exercice 4.15] Le défi du boulier géant. À l'aide des chiffres #strong[2], #strong[5] et #strong[8], forme deux nombres à deux chiffres distincts (sans répéter le même chiffre dans un nombre) pour obtenir la somme la plus grande possible. Calcule ensuite cette somme.
 
 #divider()
 
@@ -3399,13 +3401,10 @@ $7 - 4 = 3 arrow.r.double.long upright(bold(35))$.
   camarade s'est trompé d'une dizaine. Le vrai résultat de $75 - 39$ est
   #strong[36] (car $36 + 39 = 75$).
 
-#strong[Solution 4.8] - $65 + 47$ : unités $5 + 7 = 12$ (pose 2, retiens
-1) \; dizaines $1 + 6 + 4 = 11$ dizaines
-$arrow.r.double.long upright(bold(112))$. - $78 + 56$ : unités
-$8 + 6 = 14$ (pose 4, retiens 1) \; dizaines
-$1 + 7 + 5 = 13 arrow.r.double.long upright(bold(134))$. - $89 + 35$ :
-unités $9 + 5 = 14$ (pose 4, retiens 1) \; dizaines
-$1 + 8 + 3 = 12 arrow.r.double.long upright(bold(124))$.
+#strong[Solution 4.8]
+- $65 + 47$ : unités $5 + 7 = 12$ (pose 2, retiens 1) ; dizaines $1 + 6 + 4 = 11$ dizaines $arrow.r.double.long upright(bold(112))$.
+- $78 + 56$ : unités $8 + 6 = 14$ (pose 4, retiens 1) ; dizaines $1 + 7 + 5 = 13 arrow.r.double.long upright(bold(134))$.
+- $89 + 35$ : unités $9 + 5 = 14$ (pose 4, retiens 1) ; dizaines $1 + 8 + 3 = 12 arrow.r.double.long upright(bold(124))$.
 
 #strong[Solution 4.9] On pose $92 - 35$ :
 
@@ -3453,19 +3452,10 @@ $46 + 12 = 58$, puis $58 - 9 = 49$ passagers.
 
 Il reste #strong[49 passagers] dans le bus.
 
-#strong[Solution 4.15] Pour avoir la plus grande somme possible avec deux
-nombres à deux chiffres, il faut choisir les deux plus grands chiffres
-pour les dizaines : 8 et 5. Le troisième chiffre (2) sera mis dans les
-unités de l'un des nombres, et on peut réutiliser le 8 ou le 5 si
-permis, mais si les chiffres doivent être distincts dans les nombres
-formés : On choisit les dizaines 8 et 5, et on met les plus grands
-chiffres possibles en unités. Par exemple 85 et 82 (ou si chaque carte
-est unique : 82 et 5?). Avec trois cartes 2, 5, 8 : On forme 82 et 5… ou
-85 et 2… Le maximum avec les chiffres 8, 5, 2 utilisés au mieux est
-$82 + 5 = 87$ ou en réutilisant les cartes : $85 + 82$. Si on utilise
-une fois chaque carte : le mieux est de faire deux chiffres pour l'un et
-un pour l'autre, ex. $85 + 2 = 87$ ou $52 + 8 = 60$. Si on forme deux
-nombres à 2 chiffres avec deux jeux de cartes : $85 + 82 = 167$.
+#strong[Solution 4.15] Pour maximiser la somme de deux nombres à deux chiffres, il faut placer le plus grand chiffre possible au rang des dizaines pour chacun des deux nombres, soit #strong[8] pour les dizaines des deux nombres.
+Pour les unités, on choisit les chiffres restants les plus grands, soit #strong[5] pour le premier nombre et #strong[2] pour le second.
+Les deux nombres cherchés sont donc #strong[85] et #strong[82], et leur somme maximale vaut :
+$ 85 + 82 = upright(bold(167)) . $
 
 #divider()
 
@@ -3933,18 +3923,18 @@ un par un :]
   align(center)[#table(
     columns: 4,
     align: (center,center,center,center,),
-    table.header([Défi], [Calcul], [Ta réponse], [Correction],),
+    table.header([Défi], [Calcul], [Ta réponse], [Auto-évaluation],),
     table.hline(),
-    [1], [$7 times 8$], […….], [#strong[56]],
-    [2], [$6 times 9$], […….], [#strong[54]],
-    [3], [$9 times 0$], […….], [#strong[0]],
-    [4], [$4 times 7$], […….], [#strong[28]],
-    [5], [$8 times 8$], […….], [#strong[64]],
-    [6], [$0 times 0$], […….], [#strong[0]],
-    [7], [$52 times 10$], […….], [#strong[520]],
-    [8], [$23 times 3$ posé], […….], [#strong[69]],
-    [9], [$15 times 4$ posé], […….], [#strong[60]],
-    [10], [$12 times 11$], […….], [#strong[132]],
+    [1], [$7 times 8$], […….], [ ],
+    [2], [$6 times 9$], […….], [ ],
+    [3], [$9 times 0$], […….], [ ],
+    [4], [$4 times 7$], […….], [ ],
+    [5], [$8 times 8$], […….], [ ],
+    [6], [$0 times 0$], […….], [ ],
+    [7], [$52 times 10$], […….], [ ],
+    [8], [$23 times 3$ posé], […….], [ ],
+    [9], [$15 times 4$ posé], […….], [ ],
+    [10], [$12 times 11$], […….], [ ],
   )]
   , kind: table
   )
@@ -4290,6 +4280,10 @@ $8 upright(" rangées de ") 8 = 8 times 8 = upright(bold(64 upright(" cases")))$
 \2. La moitié de 64, c'est la moitié de 60 (30) plus la moitié de 4 (2),
 soit #strong[32 cases noires] (et 32 cases blanches).
 
+
+
+#strong[Solution des Gammes du Praticien :]
+1. $7 times 8 = upright(bold(56))$ ; 2. $6 times 9 = upright(bold(54))$ ; 3. $9 times 0 = upright(bold(0))$ ; 4. $4 times 7 = upright(bold(28))$ ; 5. $8 times 8 = upright(bold(64))$ ; 6. $0 times 0 = upright(bold(0))$ ; 7. $52 times 10 = upright(bold(520))$ ; 8. $23 times 3 = upright(bold(69))$ ; 9. $15 times 4 = upright(bold(60))$ ; 10. $12 times 11 = upright(bold(132))$.
 #divider()
 
 === La question qui ouvre la suite…
@@ -4457,11 +4451,13 @@ fin de l'objet.
 <les-masses-la-balance-de-roberval-et-le-kilogramme>
 Combien pèse ton cartable ? Combien pèse une plume d'oiseau ?
 
-Pour peser, on utilise une balance à deux plateaux perfectionnée par un
-inventeur français nommé #strong[Gilles Personne de Roberval]. Sur un
-plateau, on pose l'objet à peser (par exemple un beau melon). Sur
-l'autre plateau, on pose des #strong[masses marquées] en métal jusqu'à
-ce que l'aiguille soit parfaitement verticale au milieu.
+Pour peser, on utilise une balance à deux plateaux perfectionnée en 1669 par le
+mathématicien et physicien français #strong[Gilles Personne de Roberval]. Contrairement aux balances antiques
+à simple fléau suspendu où l'équilibre dépendait de l'emplacement exact des objets sur le plateau, la balance
+de Roberval utilise un ingénieux mécanisme de parallélogramme articulé dissimulé sous les plateaux. Grâce à ce
+système, les plateaux restent rigoureusement horizontaux en toute position et la pesée est fidèle, que l'objet
+soit placé au centre ou sur le bord ! Sur un plateau, on pose l'objet à peser (par exemple un beau melon). Sur
+l'autre plateau, on pose des #strong[masses marquées] en métal jusqu'à ce que l'aiguille soit parfaitement verticale au milieu.
 
 #figure(image("figures/vol_1/fig_06_pesee_melon_1kg.svg", alt: "Pesée du melon : équilibre de masse de 1 kilogramme"),
   caption: [
@@ -4817,7 +4813,7 @@ exactement #strong[4 litres] d'eau à ramener au village ?
 #strong[Exercice 6.15] Le trésor des centimes. Léo a une tirelire pleine
 de pièces de 20 centimes et de pièces de 50 centimes. Il a exactement 4
 pièces au total, et elles valent ensemble
-$1 upright(" euro ") 60 upright(" centimes")$ ($160 upright(" c")$).
+$1 upright(" euro ") 40 upright(" centimes")$ ($140 upright(" c")$).
 Combien de pièces de 20 centimes et combien de pièces de 50 centimes
 possède-t-il ?
 
@@ -4905,25 +4901,15 @@ restants dans le seau de 3 L (il reste de la place pour 1 L). 5. Remplis
 jusqu'au bord (tu verses exactement 1 L) : il reste exactement #strong[4
 litres] dans le grand seau ! Tu as réussi !
 
-#strong[Solution 6.15] Si Léo a 2 pièces de 50 c et 2 pièces de 20 c :
-$\(2 times 50\)+\(2 times 20\)= 100 + 40 = 140 upright(" c")$ (pas
-assez). Essayons 2 pièces de 20 c et… Testons #strong[2 pièces de 50 c
-($100 upright(" c")$)] et #strong[3 pièces de 20 c ($60 upright(" c")$)]
-: total 160 c, mais cela ferait 5 pièces ! Avec 4 pièces :
+#strong[Solution 6.15] Testons méthodiquement les combinaisons possibles avec exactement 4 pièces de 50 c et 20 c :
 
-- 0 pièce de 50 c et 4 de 20 c = 80 c.
-- 1 pièce de 50 c et 3 de 20 c = $50 + 60 = 110 upright(" c")$.
-- 2 pièces de 50 c et 2 de 20 c = $100 + 40 = 140 upright(" c")$.
-- #strong[3 pièces de 50 c ($150 upright(" c")$)] et #strong[1 pièce de
-  10 c] feraient 160 c, mais avec 20 c : 2 de 50c (100) + 3 de 20c (60)
-  \= 5 pièces.
+- 4 pièces de 50 c = 200 c (2,00 €)
+- 3 pièces de 50 c et 1 pièce de 20 c = $150 + 20 = 170$ c (1,70 €)
+- 2 pièces de 50 c et 2 pièces de 20 c = $100 + 40 = 140$ c (1,40 €)
+- 1 pièce de 50 c et 3 pièces de 20 c = $50 + 60 = 110$ c (1,10 €)
+- 4 pièces de 20 c = 80 c (0,80 €)
 
-Si les pièces sont des pièces de 50 c et de 20 c :
-$2 times 50 + 3 times 20 = 160$ (5 pièces). Si on a 4 pièces dont une
-pièce de 1 euro, deux de 20 c et une de 20 c :
-$100 + 20 + 20 + 20 = 160$ ! Avec 4 pièces de monnaie faisant 1 € 60 : 1
-pièce de 1 €, et 3 pièces de 20 centimes
-($100 + 20 + 20 + 20 = 160 upright(" c")$).
+Pour obtenir exactement 1 € 40 (140 c), Léo possède donc impérativement #strong[2 pièces de 50 centimes et 2 pièces de 20 centimes].
 
 #divider()
 
@@ -5368,17 +5354,21 @@ quotidien au solide qui lui ressemble le plus :
 $5 upright(" cm")$. Quel est son diamètre ? 2. Un cercle a un diamètre
 de $12 upright(" cm")$. Quel est son rayon ?
 
-#strong[Exercice 7.5] Repérage de cases. Regarde le quadrillage
-ci-dessous :
+#strong[Exercice 7.5] Repérage de cases. Regarde le quadrillage ci-dessous :
 
 #cas_limite(title: [🛠️ Application Pratique — Chasse aux Trésors sur Quadrillage])[
-- A B C
-- 2 🍎
-- 1 🍌 🍇
+#align(center)[
+#table(
+  columns: (35pt, 45pt, 45pt, 45pt),
+  align: center + horizon,
+  [], [*A*], [*B*], [*C*],
+  [*2*], [], [🍎], [],
+  [*1*], [🍌], [], [🍇]
+)
+]
 ]
 
-Donne la case (Lettre, Chiffre) de chaque fruit : la pomme, la banane et
-le raisin.
+Donne la case (Lettre, Chiffre) de chaque fruit : la pomme, la banane et le raisin.
 
 #divider()
 
@@ -6656,21 +6646,18 @@ plus vite possible :]
   align(center)[#table(
     columns: (20%, 20%, 20%, 20%, 20%),
     align: (center,center,center,center,center,),
-    table.header([Défi], [Division], [Quotient $q$], [Reste
-      $r$], [Vérification ($a = b q + r$)],),
+    table.header([Défi], [Division], [Quotient $q$], [Reste $r$], [Vérification ($a = b q + r$)],),
     table.hline(),
-    [1], [$37 div 5$], [#strong[7]], [#strong[2]], [$5 times 7 + 2 = 37$],
-    [2], [$50 div 6$], [#strong[8]], [#strong[2]], [$6 times 8 + 2 = 50$],
-    [3], [$72 div 8$], [#strong[9]], [#strong[0]], [$8 times 9 + 0 = 72$
-    (tombe juste !)],
-    [4], [$43 div 7$], [#strong[6]], [#strong[1]], [$7 times 6 + 1 = 43$],
-    [5], [$0 div 9$], [#strong[0]], [#strong[0]], [$9 times 0 + 0 = 0$],
-    [6], [$612 div 3$], [#strong[204]], [#strong[0]], [#emph[\(attention
-    au zéro au quotient !)]],
-    [7], [$85 div 4$], [#strong[21]], [#strong[1]], [$4 times 21 + 1 = 85$],
-    [8], [$105 div 10$], [#strong[10]], [#strong[5]], [$10 times 10 + 5 = 105$],
-    [9], [$490 div 7$], [#strong[70]], [#strong[0]], [$7 times 70 = 490$],
-    [10], [$150 div 25$], [#strong[6]], [#strong[0]], [$25 times 6 = 150$],
+    [1], [$37 div 5$], […….], […….], […….],
+    [2], [$50 div 6$], […….], […….], […….],
+    [3], [$72 div 8$], […….], […….], […….],
+    [4], [$43 div 7$], […….], […….], […….],
+    [5], [$0 div 9$], […….], […….], […….],
+    [6], [$612 div 3$], […….], […….], […….],
+    [7], [$85 div 4$], […….], […….], […….],
+    [8], [$105 div 10$], […….], […….], […….],
+    [9], [$490 div 7$], […….], […….], […….],
+    [10], [$150 div 25$], […….], […….], […….],
   )]
   , kind: table
   )
@@ -6751,7 +6738,7 @@ plus vite possible :]
 + Dans une division, le diviseur est 7, le quotient est 13 et le reste
   est 4. Quel était le dividende ?
 + Trouve le nombre mystère : « Je suis compris entre 40 et 50. Si on me
-  divise par 6, il reste 3. Si on me divise par 7, il reste 1. Qui
+  divise par 6, il reste 3. Si on me divise par 7, il reste 3. Qui
   suis-je ? »
 ]
 
@@ -6823,28 +6810,11 @@ tulipe] ($8 - 7 = 1$) pour composer un bouquet de plus.
 22 élèves resteraient sur le trottoir. Il faut donc réserver #strong[4
 autocars]. #strong[\12.] On applique la formule :
 $a =\(b times q\)+ r =\(7 times 13\)+ 4 = 91 + 4 = 95$. Le dividende
-était #strong[95]. #strong[\13.] - Nombres entre 40 et 50 qui donnent un
-reste de 3 par 6 : ce sont les multiples de 6 augmentés de 3.
-$6 times 7 + 3 = 42 + 3 = upright(bold(45))$. ($6 times 8 + 3 = 51$,
-trop grand).
+était #strong[95]. #strong[\13.] Cherchons un nombre $N$ compris entre 40 et 50 satisfaisant les deux conditions :
+- Multiples de 6 augmentés de 3 compris entre 40 et 50 : $6 times 7 + 3 = 45$.
+- Vérifions avec la division par 7 : $45 = 7 times 6 + 3$, le quotient est 6 et le reste est bien 3 !
 
-- Vérifions avec 7 : $45 = 7 times 6 + 3$, le reste est 3, or on voulait
-  un reste de 1… Cherchons bien tous les multiples de 7 augmentés de 1
-  entre 40 et 50 : $7 times 6 + 1 = 42 + 1 = upright(bold(43))$.
-  Vérifions 43 avec 6 : $43 = 6 times 7 + 1$ (reste 1, pas 3). Regardons
-  $7 times 7 + 1 = 50$. Divisé par 6 : $50 = 6 times 8 + 2$. Reprenons :
-  cherchons les nombres $N in\[40\,50\]$. Divisés par 6 avec reste 3 :
-  \45. Divisés par 7 avec reste 1 : 43 ou 50. Y en a-t-il un autre ? Si
-  le nombre cherché est divisible par 6 avec reste 3, essayons 39 (hors
-  borne) ou regardons si le problème parlait de reste 3 et reste 1. Avec
-  $N = 45$, $45 div 7 = 6$ reste 3. Si le texte de l'énigme dit « reste
-  3 par 6 et reste 3 par 7 », ce serait 45 ! Si le texte dit reste 1 par
-  7 et reste 3 par 6 : il n'y en a pas entre 40 et 50 sauf si l'on
-  regarde 57 ($6 times 9 + 3 = 57$, $7 times 8 + 1 = 57$). Pour rester
-  entre 40 et 50 : $N = 45$ avec reste 3 par 7, ou si $N = 43$, reste 1
-  par 6 et 1 par 7. Ajustons l'énoncé de la question : « Si on me divise
-  par 6, il reste 3 ($45 = 6 times 7 + 3$). Si on me divise par 7, il
-  reste 3 ($45 = 7 times 6 + 3$). » Le nombre mystère est #strong[45].
+Le nombre mystère est donc #strong[45].
 
 #strong[\14.] a) $925 div 8$ :
 
@@ -6869,6 +6839,10 @@ qui nous ramène exactement à un mardi). Il reste ensuite #strong[2 jours
 supplémentaires]. Deux jours après mardi : mercredi (+1), puis
 #strong[jeudi] (+2). Dans 100 jours, ce sera un #strong[jeudi] !
 
+
+
+#strong[Solution des Gammes du Praticien :]
+1. $37 = 5 times upright(bold(7)) + upright(bold(2))$ ($q=7, r=2$) ; 2. $50 = 6 times upright(bold(8)) + upright(bold(2))$ ($q=8, r=2$) ; 3. $72 = 8 times upright(bold(9)) + upright(bold(0))$ ($q=9, r=0$) ; 4. $43 = 7 times upright(bold(6)) + upright(bold(1))$ ($q=6, r=1$) ; 5. $0 = 9 times upright(bold(0)) + upright(bold(0))$ ($q=0, r=0$) ; 6. $612 = 3 times upright(bold(204)) + upright(bold(0))$ ($q=204, r=0$) ; 7. $85 = 4 times upright(bold(21)) + upright(bold(1))$ ($q=21, r=1$) ; 8. $105 = 10 times upright(bold(10)) + upright(bold(5))$ ($q=10, r=5$) ; 9. $490 = 7 times upright(bold(70)) + upright(bold(0))$ ($q=70, r=0$) ; 10. $150 = 25 times upright(bold(6)) + upright(bold(0))$ ($q=6, r=0$).
 #divider()
 
 === La question qui ouvre la suite
@@ -7165,7 +7139,7 @@ Traçons une droite où chaque unité est partagée en #strong[4 parts
 
 - Le point A est situé à 1 quart du départ : c'est $1 / 4$.
 - Le point B est situé sur le chiffre 1 : c'est $4 / 4 = 1$.
-- Le point C est situé à 6 quarts du départ : c'est $6 / 4 = 1 + 2 / 4$.
+- Le point C est situé à 7 quarts du départ : c'est $7 / 4 = 1 + 3 / 4$.
 
 #exemple_resolu(title: [Exemple Résolu Pas à Pas])[
 #strong[Exemple résolu 3 --- Lire et placer sur la droite
@@ -7633,9 +7607,9 @@ décimaux].
 Pour comprendre le voyage sous le chiffre 1, prenons une grande bande
 unité de longueur 1 mètre.
 
-#figure(image("figures/vol_2/fig_11_glissement_virgule.svg", alt: "La règle graduée des dixièmes entre 3 et 4"),
+#figure(image("figures/vol_2/fig_11_glissement_virgule.svg", alt: "Multiplication par 10, 100, 1000 : glissement des rangs décimaux et de la virgule"),
   caption: [
-    La règle graduée des dixièmes entre 3 et 4
+    Multiplication par 10, 100, 1000 : glissement des rangs décimaux et de la virgule
   ]
 )
 
@@ -10593,6 +10567,235 @@ donc $38^compose$, $142^compose$, $38^compose$, $142^compose$.
 Vérification : $38 + 142 + 38 + 142 = 360$, un tour complet. ✔
 
 #divider()
+
+=== 5. La Somme des Angles d'un Triangle : Toujours $180^compose$
+<la-somme-des-angles-dun-triangle-toujours-180>
+Voici l'une des vérités les plus éblouissantes et universelles de toute la géométrie : prends n'importe quel triangle dans l'univers --- qu'il soit microscopique ou s'étende sur des années-lumière, effilé comme une aiguille ou aplati et obtus --- et mesure ses trois angles intérieurs. Additionne-les. #strong[La somme sera toujours exactement égale à $180^compose$ !]
+
+$ hat(A) + hat(B) + hat(C) = 180^compose $
+
+Explorons trois chemins distincts pour nous convaincre de cette vérité éternelle.
+
+==== 5.1 Preuve 1 : L'expérience du papier déchiré (Intuition physique)
+<preuve-1-lexpérience-du-papier-déchiré-intuition-physique>
++ Prends une feuille de papier blanc et trace un triangle quelconque à la règle.
++ Colorie chacun des trois coins avec une couleur différente : Bleu au sommet $A$, Rouge au sommet $B$, et Ambre au sommet $C$.
++ Découpe soigneusement le triangle, puis déchire les trois coins coloriés.
++ Rassemble les trois sommets sur une table plane de manière à faire coïncider leurs pointes en un point commun, en juxtaposant les bords coloriés :
+
+Les trois angles s'ajustent parfaitement sans aucun interstice pour former une ligne droite parfaite ! Puisqu'une ligne droite correspond à un angle plat de $180^compose$, leur somme fait sans équivoque possible $180^compose$.
+
+==== 5.2 Preuve 2 : La preuve euclidienne (Rigueur déductive)
+<preuve-2-la-preuve-euclidienne-rigueur-déductive>
+Pour transformer cette expérience sensible en une démonstration mathématique inébranlable, nous suivons le lumineux raisonnement d'Euclide utilisant les droites parallèles :
+
++ Soit un triangle quelconque $A B C$. Traçons la droite (D E) passant par le sommet $A$ et parallèle au côté opposé (B C).
+
++ Les trois angles réunis au point $A$ le long de la ligne droite (D E) forment un angle plat :
+  $ accent(D A B, ̂) + accent(B A C, ̂) + accent(C A E, ̂) = 180^compose $
+
++ Puisque la droite (D E) est parallèle à (B C), la droite (A B) agit comme une sécante coupant deux droites parallèles :
+  - L'angle $accent(D A B, ̂)$ et l'angle $accent(A B C, ̂)$ sont #strong[alternes-internes], ils sont donc égaux : $accent(D A B, ̂) = hat(B)$.
+  - De même, l'angle $accent(C A E, ̂)$ et l'angle $accent(A C B, ̂)$ sont alternes-internes, donc : $accent(C A E, ̂) = hat(C)$.
+
++ En remplaçant ces égalités dans notre somme, on obtient directement :
+  $ hat(B) + hat(A) + hat(C) = 180^compose $ La démonstration est complète !
+
+==== 5.3 Preuve 3 : Le tour du promeneur (Vision algorithmique / robotique)
+<preuve-3-le-tour-du-promeneur-vision-algorithmique-robotique>
+Imagine un petit explorateur (ou un robot) qui fait le tour du triangle $A B C$ le long de son périmètre :
+
+- Le promeneur part de $A$, marche vers $B$, et au sommet $B$ tourne à gauche d'un angle extérieur $theta_1 = 180^compose - hat(B)$.
+- Il marche jusqu'à $C$ et tourne à gauche de $theta_2 = 180^compose - hat(C)$.
+- Il revient vers $A$ et tourne à gauche pour retrouver son orientation initiale : $theta_3 = 180^compose - hat(A)$.
+
+De retour au point $A$, le promeneur a accompli exactement #strong[un tour complet] ($360^compose$) sur lui-même dans le plan :
+$ (180^compose - hat(A)) + (180^compose - hat(B)) + (180^compose - hat(C)) = 360^compose $
+$ 540^compose - (hat(A) + hat(B) + hat(C)) = 360^compose $
+$ hat(A) + hat(B) + hat(C) = 540^compose - 360^compose = 180^compose $
+
+#divider()
+
+=== 6. Triangles particuliers et le secret de la corde à treize nœuds
+<triangles-particuliers-et-le-secret-de-la-corde-à-treize-nœuds>
+==== 6.1 Le triangle équilatéral
+<le-triangle-équilatéral>
+Un #strong[triangle équilatéral] a ses trois côtés de même longueur. Par symétrie, ses trois angles intérieurs sont également strictement égaux :
+$ hat(A) = hat(B) = hat(C) = 180^compose / 3 = 60^compose $
+Tout triangle équilatéral dans l'univers possède trois angles de $60^compose$.
+
+==== 6.2 Le triangle isocèle
+<le-triangle-isocèle>
+Un #strong[triangle isocèle] a deux côtés de même longueur. Les deux angles situés à la base (face aux côtés égaux) sont strictement égaux :
+- Si l'angle au sommet principal mesure $40^compose$, les deux angles de base se partagent équitablement les $140^compose$ restants :
+  $ frac(180^compose - 40^compose, 2) = 70^compose quad upright("chacun") $
+
+==== 6.3 Le triangle rectangle
+<le-triangle-rectangle>
+Un #strong[triangle rectangle] possède un angle droit ($90^compose$). Les deux autres angles aigus doivent donc se partager les $90^compose$ restants :
+$ hat(A) + hat(B) = 90^compose $
+Les deux angles aigus d'un triangle rectangle sont toujours #strong[complémentaires]. Si l'un mesure $35^compose$, l'autre mesure nécessairement $90^compose - 35^compose = 55^compose$.
+
+==== 6.4 La corde à treize nœuds : l'arme secrète des harpedonaptes
+<la-corde-à-treize-nœuds-larme-secrète-des-harpedonaptes>
+Nous pouvons désormais résoudre l'énigme posée dans notre problème d'ouverture : comment les arpenteurs égyptiens (les #emph[harpedonaptes], ou « tendeurs de corde ») traçaient-ils un angle droit parfait sur le sol sans équerre ?
+
+Ils utilisaient une longue corde fermée en boucle portant #strong[treize nœuds régulièrement espacés] à intervalles strictement identiques :
+
+Puisque le treizième nœud rejoint le premier pour fermer la boucle, celle-ci contient exactement #strong[12 intervalles égaux].
+
+Les bâtisseurs plantaient trois piquets dans la terre et tendaient la corde fermement autour d'eux en répartissant les intervalles ainsi :
+- #strong[3 intervalles] sur le premier côté (du nœud 1 au nœud 4) ;
+- #strong[4 intervalles] sur le deuxième côté (du nœud 4 au nœud 8) ;
+- #strong[5 intervalles] sur le troisième côté (du nœud 8 au nœud 13/1).
+
+$ 3 + 4 + 5 = 12 upright(" intervalles") $
+
+#figure(image("figures/vol_4/fig_27_corde_treize_noeuds.svg", alt: "La corde égyptienne à treize nœuds et le triangle rectangle 3-4-5"),
+  caption: [
+    La corde égyptienne à treize nœuds et le triangle rectangle (3, 4, 5)
+  ]
+)
+
+Lorsque la corde est parfaitement tendue sur les trois piquets, l'angle formé entre le côté de 3 unités et le côté de 4 unités est #strong[garanti d'être un angle droit mathématique absolu ($90^compose$)] !
+
+#emph[Pourquoi cela fonctionne-t-il ?] Parce que $3^2 + 4^2 = 9 + 16 = 25 = 5^2$. C'est le fameux #strong[triplet pythagoricien $(3, 4, 5)$], une harmonie arithmétique et géométrique exploitée par les bâtisseurs des pyramides plus d'un millénaire avant la naissance de Pythagore !
+
+#divider()
+
+=== 7. 🛠️ Le laboratoire des cas limites
+<le-laboratoire-des-cas-limites>
+Pour aiguiser notre pensée géométrique, éprouvons les frontières de nos règles là où l'intuition ordinaire trébuche :
+
+==== Cas 1 : Un triangle peut-il avoir deux angles droits ?
+<cas-1-un-triangle-peut-il-avoir-deux-angles-droits>
+Supposons qu'un triangle possède deux angles droits : $hat(A) = 90^compose$ et $hat(B) = 90^compose$.
+La somme des trois angles devant valoir $180^compose$ :
+$ hat(C) = 180^compose - (90^compose + 90^compose) = 0^compose $
+Un angle de $0^compose$ signifie que les deux côtés sont strictement parallèles et ne se rencontrent jamais ! Dans le plan euclidien, #strong[il est rigoureusement impossible pour un triangle d'avoir deux angles droits].
+
+#alerte(title: [🌍 Au-delà du plan plat — Géométrie sphérique])[
+Cependant, sur la surface courbe d'une sphère --- comme notre planète Terre --- les méridiens coupent tous l'équateur à angle droit ($90^compose$) et se rejoignent pourtant au pôle Nord ! Un triangle formé par le pôle Nord, le point de l'équateur à $0^compose$ de longitude et le point à $90^compose$ de longitude Est possède #strong[trois angles droits] ($90^compose + 90^compose + 90^compose = 270^compose$). Le théorème de la somme des angles à $180^compose$ est vrai #strong[exclusivement dans un plan euclidien plat] !
+]
+
+==== Cas 2 : Le triangle dégénéré (plat)
+<cas-2-le-triangle-dégénéré-plat>
+Que se passe-t-il si l'on écrase le sommet $C$ directement sur le segment de base [A B] ?
+L'angle $hat(C)$ s'ouvre complètement jusqu'à atteindre $180^compose$, tandis que $hat(A)$ et $hat(B)$ s'aplatissent jusqu'à $0^compose$ :
+$ 0^compose + 180^compose + 0^compose = 180^compose $
+Le triangle devient un simple segment de droite. On l'appelle un #strong[triangle dégénéré].
+
+==== Cas 3 : Droites non coplanaires dans l'espace
+<cas-3-droites-non-coplanaires-dans-lespace>
+Dans l'espace à trois dimensions, deux droites qui ne se coupent jamais ne sont pas forcément parallèles ! Pense à un pont qui enjambe une autoroute : la route en dessous et le pont au-dessus ne se croisent jamais, et pourtant ils ne pointent pas dans la même direction. De telles droites sont dites #strong[non coplanaires] (ou gauches). La notion de parallélisme exige impérativement que les droites soient situées dans un #strong[même plan].
+
+#divider()
+
+=== Ce qu'il faut retenir
+<ce-quil-faut-retenir-13>
++ #strong[Nature d'un angle :] Un angle mesure une ouverture de rotation entre deux demi-droites issues d'un même sommet. Il est indépendant de la longueur des traits tracés.
++ #strong[Unités fondamentales :] Un tour complet vaut $360^compose$, un angle plat vaut $180^compose$, un angle droit vaut $90^compose$.
++ #strong[Contrôle au rapporteur :] Avant de lire la graduation, vérifie toujours si l'angle observé est aigu ($< 90^compose$) ou obtus ($> 90^compose$).
++ #strong[Angles opposés et supplémentaires :] Les angles opposés par le sommet sont égaux. Les angles adjacents formant une ligne droite sont supplémentaires (somme $= 180^compose$).
++ #strong[Somme des angles d'un triangle :] Pour tout triangle dans le plan, $hat(A) + hat(B) + hat(C) = 180^compose$.
++ #strong[Triangles particuliers :]
+  - Équilatéral : 3 côtés égaux, 3 angles de $60^compose$.
+  - Isocèle : 2 côtés égaux, 2 angles de base égaux.
+  - Rectangle : 1 angle droit de $90^compose$, deux angles aigus complémentaires (somme $= 90^compose$).
++ #strong[La corde à treize nœuds :] Une boucle de 12 intervalles égaux disposée en triangle $3-4-5$ garantit un angle droit parfait de $90^compose$.
+
+#divider()
+
+=== Exercices d'entraînement
+<exercices-dentraînement-13>
+==== Niveau ★ (Application directe)
+<niveau-application-directe-13>
+#strong[Exercice 15.1] Classe chacun des angles suivants selon sa nature (aigu, droit, obtus ou plat) :
+$12^compose$, $90^compose$, $144^compose$, $89^compose$, $180^compose$, $93^compose$.
+
+#strong[Exercice 15.2] Dans un triangle $A B C$, on mesure $hat(A) = 52^compose$ et $hat(B) = 68^compose$. Calcule la mesure du troisième angle $hat(C)$.
+
+#strong[Exercice 15.3] L'un des angles aigus d'un triangle rectangle mesure $37^compose$. Quelle est la mesure de son deuxième angle aigu ?
+
+#strong[Exercice 15.4] Un triangle isocèle possède un angle au sommet principal qui mesure $50^compose$. Quelle est la mesure de chacun des deux angles situés à sa base ?
+
+#strong[Exercice 15.5] Deux droites se coupent en un point $O$. L'un des quatre angles ainsi formés mesure $72^compose$. Quelles sont les mesures des trois autres angles ?
+
+#divider()
+
+==== Niveau ★★ (Réflexion et déductions géométriques)
+<niveau-réflexion-et-déductions-géométriques-13>
+#strong[Exercice 15.6] Dans un triangle $D E F$, l'angle $hat(D)$ est trois fois plus grand que l'angle $hat(E)$, et l'angle $hat(F)$ mesure $40^compose$. Quelles sont les mesures respectives de $hat(D)$ et $hat(E)$ ?
+
+#strong[Exercice 15.7] Peut-il exister un triangle dont les trois angles mesureraient $45^compose$, $65^compose$ et $75^compose$ ? Justifie rigoureusement ta réponse.
+
+#strong[Exercice 15.8] Dans un triangle isocèle, l'un des angles mesure $100^compose$. 1. Cet angle de $100^compose$ peut-il être situé à la base ? Pourquoi ? 2. Quelle est la mesure des deux autres angles du triangle ?
+
+#strong[Exercice 15.9] Un maçon médiéval désire vérifier si l'angle d'un mur est parfaitement d'équerre ($90^compose$). Il mesure $60 upright(" cm")$ le long du premier mur depuis le coin et y fait une marque $A$, puis mesure $80 upright(" cm")$ le long du second mur et marque un point $B$. Quelle distance doit impérativement séparer $A$ et $B$ pour que l'angle soit un angle droit parfait ?
+
+#strong[Exercice 15.10] Deux droites (d_1) et (d_2) sont parallèles. Une sécante coupe (d_1) sous un angle de $64^compose$. Quelles sont les mesures des huit angles formés au total au niveau des deux intersections ?
+
+#divider()
+
+==== Niveau ★★★ (Défis et recherches)
+<niveau-défis-et-recherches-13>
+#strong[Exercice 15.11 Somme des angles d'un quadrilatère quelconque.] 1. Dessine un polygone à quatre côtés quelconque (un quadrilatère) $A B C D$. 2. Découpe-le en deux triangles en traçant une diagonale [A C]. 3. Déduis-en la somme exacte des quatre angles intérieurs de n'importe quel quadrilatère.
+
+#strong[Exercice 15.12 L'Étoile d'Alexandrie.] Considère une étoile régulière à cinq branches. Quelle est la somme des cinq angles situés aux cinq pointes de l'étoile ? #emph[\(Indice : relie les angles des pointes aux triangles intérieurs de l'étoile\).]
+
+#divider()
+
+=== Solutions
+<solutions-13>
+#strong[Solution 15.1] $12^compose$ et $89^compose$ : aigus. $90^compose$ : droit. $93^compose$ et $144^compose$ : obtus. $180^compose$ : plat.
+
+#strong[Solution 15.2] La somme des angles dans le triangle $A B C$ vaut $180^compose$ :
+$ hat(C) = 180^compose - (52^compose + 68^compose) = 180^compose - 120^compose = 60^compose . $
+
+#strong[Solution 15.3] Les deux angles aigus d'un triangle rectangle sont complémentaires :
+$ upright("Deuxième angle") = 90^compose - 37^compose = 53^compose . $
+
+#strong[Solution 15.4] Les deux angles de base se partagent équitablement les degrés restants :
+$ upright("Angle de base") = frac(180^compose - 50^compose, 2) = 130^compose / 2 = 65^compose quad upright("chacun") . $
+
+#strong[Solution 15.5] L'angle opposé par le sommet mesure également $72^compose$. Les deux angles adjacents supplémentaires mesurent chacun :
+$ 180^compose - 72^compose = 108^compose . $
+Les quatre angles sont donc $72^compose$, $108^compose$, $72^compose$ et $108^compose$.
+
+#strong[Solution 15.6] Nous savons que $hat(D) + hat(E) + hat(F) = 180^compose$, donc :
+$ hat(D) + hat(E) = 180^compose - 40^compose = 140^compose . $
+Puisque $hat(D) = 3 times hat(E)$, on a :
+$ 3 times hat(E) + hat(E) = 4 times hat(E) = 140^compose . $
+D'où $hat(E) = 140^compose div 4 = 35^compose$, et $hat(D) = 3 times 35^compose = 105^compose$.
+Vérification : $105^compose + 35^compose + 40^compose = 180^compose$. ✔
+
+#strong[Solution 15.7] Calculons la somme des trois mesures proposées :
+$ 45^compose + 65^compose + 75^compose = 185^compose . $
+Comme $185^compose eq.not 180^compose$, un tel triangle #strong[ne peut pas exister] en géométrie euclidienne !
+
+#strong[Solution 15.8] 1. Non, car si un angle de base mesurait $100^compose$, le deuxième angle de base mesurerait aussi $100^compose$, ce qui donnerait $100^compose + 100^compose = 200^compose > 180^compose$, impossible. 2. L'angle de $100^compose$ est donc obligatoirement l'angle au sommet principal. Les deux angles de base mesurent :
+$ frac(180^compose - 100^compose, 2) = 80^compose / 2 = 40^compose quad upright("chacun") . $
+
+#strong[Solution 15.9] Le maçon utilise une version agrandie du triangle égyptien $(3, 4, 5)$ multiplié par $20$ :
+$3 times 20 = 60 upright(" cm")$, $4 times 20 = 80 upright(" cm")$. L'hypoténuse doit valoir :
+$ 5 times 20 = 100 upright(" cm") = 1 upright(" mètre") . $
+Si la distance mesurée en diagonale entre $A$ et $B$ est exactement de $100 upright(" cm")$, l'angle formé par les deux murs est un angle droit parfait.
+
+#strong[Solution 15.10] La sécante forme quatre angles aigus de $64^compose$ (opposés par le sommet et correspondants) et quatre angles obtus supplémentaires de $180^compose - 64^compose = 116^compose$.
+
+#strong[Solution 15.11] La diagonale [A C] partage le quadrilatère $A B C D$ en deux triangles distincts, $triangle.stroked.t A B C$ et $triangle.stroked.t A C D$. Chacun de ces triangles possède une somme d'angles intérieurs égale à $180^compose$. La somme des quatre angles du quadrilatère vaut donc :
+$ 180^compose + 180^compose = 360^compose . $
+
+#strong[Solution 15.12] En considérant le pentagone régulier central et les cinq triangles isocèles formant les pointes, chaque angle à la pointe d'une étoile régulière mesure $36^compose$. La somme des cinq pointes vaut donc :
+$ 5 times 36^compose = 180^compose ! $
+
+#divider()
+
+=== La question qui ouvre la suite…
+<la-question-qui-ouvre-la-suite-14>
+Nous savons désormais dompter les lignes droites, les perpendiculaires et les angles vifs des polygones. Mais que se passe-t-il lorsque la ligne commence à s'incurver et à glisser doucement dans l'espace sans le moindre coin ?
+
+Dans le coin sombre d'un atelier antique, un lourd disque de bois tourne régulièrement sur un pivot de fer : #strong[la roue du potier]. Comment mesurer le contour arrondi d'un cercle alors qu'aucune règle rigide ne peut s'y courber sans glisser ? Et quel est ce nombre infini et mystérieux que le grand #strong[Archimède de Syracuse] a traqué entre deux armées géantes de polygones ? C'est le secret du cercle et du nombre $pi$, que nous dévoilerons au chapitre suivant.
 
 #divider()
 
@@ -37533,6 +37736,10 @@ les rapports ». Le logarithme d'un nombre, c'est en quelque sorte
 #strong[le nombre de pas] qu'il faut faire dans la progression
 géométrique pour l'atteindre.
 
+#principe(title: [📐 Nuance d'Histoire Mathématique — Le logarithme de Napier vs le logarithme moderne])[
+Le logarithme originel défini par Napier en 1614 n'était pas notre fonction $ln(x)$ moderne (fondée sur la base naturelle $e$ d'Euler). Napier avait conçu un modèle cinématique ingénieux : sur un segment de longueur $10^7$, un point $P$ avance à une vitesse proportionnelle à la distance restante à parcourir, tandis qu'un point $Q$ avance sur une droite infinie à vitesse constante. Le logarithme népérien historique vérifiait ainsi $upright("NapLog")(10^7) = 0$ et $upright("NapLog")(x) approx 10^7 ln(10^7 / x)$. Ce sont les travaux ultérieurs d'Henry Briggs et de Leonhard Euler qui fixèrent la convention moderne où $ln(1) = 0$ et $ln(a b) = ln a + ln b$.
+]
+
 #decouvre(title: [Découverte & Histoire])[
 #strong[🔍 L'histoire vraie ---
 ]
@@ -45461,6 +45668,13 @@ $180^compose$ ! »] Quelle est la transformation géométrique élémentaire
 qui, répétée deux fois, fait un demi-tour ? #strong[C'est une rotation
 d'un quart de tour ($90^compose$ ou $pi / 2$ radians) dans le sens
 direct (anti-horaire) !]
+
+#alerte(title: [⚠️ Rigueur Mathématique — Pourquoi l'écriture $sqrt(- 1)$ est strictement prohibée])[
+Si Bombelli et Cardan utilisaient historiquement le symbole $sqrt(- 1)$, les mathématiques modernes #strong[interdisent formellement cette notation]. En effet, la propriété algébrique $sqrt(a b) = sqrt(a) times sqrt(b)$ n'est vraie que pour des nombres réels #strong[positifs]. Si on l'appliquait sans restriction aux négatifs, on aboutirait au sophisme destructeur :
+$ 1 = sqrt(1) = sqrt((- 1) times (- 1)) = sqrt(- 1) times sqrt(- 1) = i^2 = - 1 quad arrow.r.double quad 1 = - 1 ! $
+Pour préserver la cohérence logique absolue de l'édifice, #strong[on ne prend jamais la racine carrée d'un nombre négatif]. On définit rigoureusement l'unité imaginaire #strong[$i$] par la relation algébrique :
+$ upright(bold(i^2 = - 1)) $
+]
 
 #figure(image("figures/vol_6/fig_55_plan_complexe.svg", alt: "Le plan complexe d’Argand-Gauss : forme algébrique et trigonométrique"),
   caption: [

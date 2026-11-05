@@ -848,11 +848,12 @@ polished bone or flat piece of wood: #emph[Scritch!]
 
 #quote_box[
 #strong[🔍 True Story --- The Ishango Tally Bone] On the shores of Lake
-Edward, between Congo and Uganda in Africa, archaeologists unearthed a
+Edward, between the Democratic Republic of the Congo and Uganda in Africa, archaeologists unearthed a
 fossilized baboon fibula over #strong[20,000 years old]: the
-#strong[Ishango bone]. It bears notches arranged into clearly deliberate
-groupings. It is one of humanity's oldest surviving testimonies of
-mathematical thought.
+#strong[Ishango bone]. It bears notches arranged into regular series. While early researchers
+interpreted these as counting tally marks in base 5 or 10, ethnomathematicians and paleoanthropologists
+point out that they might equally represent a lunar calendar, an arithmetic game, or a rhythmic notation.
+It remains one of humanity's oldest surviving testimonies of mathematical abstraction and the physical inscription of quantity.
 ]
 
 
@@ -3108,9 +3109,7 @@ $ 80 - 36 $ Explain how you borrow a ten when the ones digit is zero.
 
 How many passengers remain on the bus after stop 2?
 
-#strong[Exercise 4.15] Giant abacus challenge. Using the digits
-#strong[2], #strong[5], and #strong[8], create two distinct two-digit
-numbers such that their sum is as large as possible. Compute that sum.
+#strong[Exercise 4.15] Giant abacus challenge. Using digits #strong[2], #strong[5], and #strong[8], form two distinct two-digit numbers (without repeating digits within a number) to obtain the largest possible sum. Compute that sum.
 
 #divider()
 
@@ -3168,9 +3167,7 @@ $7 - 3 = 4$. Result is #strong[44].
 $53 - 7 = 46$. - Stop 2: $46 + 12 = 58$\; $58 - 9 = 49$. #strong[49
 passengers] remain.
 
-#strong[Solution 4.15] Assigning highest available digits to tens (8 and
-5) and ones gives $82 + 5 = 87$ or with duplicate sets $85 + 82 = 167$.
-Using cards 2, 5, 8 once each: $82 + 5 = 87$ or $85 + 2 = 87$.
+#strong[Solution 4.15] To maximize the sum of two two-digit numbers, place the highest possible digit in the tens position for both numbers, which is #strong[8]. For the units positions, assign the remaining largest available digits, #strong[5] and #strong[2]. The two numbers are #strong[85] and #strong[82], giving the maximal sum: $85 + 82 = upright(bold(167))$. He holds #strong[85] and #strong[82].
 
 #divider()
 
@@ -3621,19 +3618,18 @@ one:]
   align(center)[#table(
     columns: 4,
     align: (center,center,center,center,),
-    table.header([Challenge], [Calculation], [Your
-      Answer], [Correction],),
+    table.header([Challenge], [Calculation], [Your Answer], [Self-Check],),
     table.hline(),
-    [1], [$7 times 8$], […….], [#strong[56]],
-    [2], [$6 times 9$], […….], [#strong[54]],
-    [3], [$9 times 0$], […….], [#strong[0]],
-    [4], [$4 times 7$], […….], [#strong[28]],
-    [5], [$8 times 8$], […….], [#strong[64]],
-    [6], [$0 times 0$], […….], [#strong[0]],
-    [7], [$52 times 10$], […….], [#strong[520]],
-    [8], [$23 times 3$ column], […….], [#strong[69]],
-    [9], [$15 times 4$ column], […….], [#strong[60]],
-    [10], [$12 times 11$], […….], [#strong[132]],
+    [1], [$7 times 8$], […….], [ ],
+    [2], [$6 times 9$], […….], [ ],
+    [3], [$9 times 0$], […….], [ ],
+    [4], [$4 times 7$], […….], [ ],
+    [5], [$8 times 8$], […….], [ ],
+    [6], [$0 times 0$], […….], [ ],
+    [7], [$52 times 10$], […….], [ ],
+    [8], [$23 times 3$ column], […….], [ ],
+    [9], [$15 times 4$ column], […….], [ ],
+    [10], [$12 times 11$], […….], [ ],
   )]
   , kind: table
   )
@@ -3958,6 +3954,10 @@ $8 upright(" rows of ") 8 = 8 times 8 = upright(bold(64 upright(" squares")))$.
 \2. Half of 64 is half of 60 (30) plus half of 4 (2), giving #strong[32
 black squares] (and 32 white squares).
 
+
+
+#strong[Solutions to the Practitioner's Scales:]
+1. $7 times 8 = upright(bold(56))$; 2. $6 times 9 = upright(bold(54))$; 3. $9 times 0 = upright(bold(0))$; 4. $4 times 7 = upright(bold(28))$; 5. $8 times 8 = upright(bold(64))$; 6. $0 times 0 = upright(bold(0))$; 7. $52 times 10 = upright(bold(520))$; 8. $23 times 3 = upright(bold(69))$; 9. $15 times 4 = upright(bold(60))$; 10. $12 times 11 = upright(bold(132))$.
 #divider()
 
 === The Question That Opens the Next Chapter…
@@ -4113,10 +4113,12 @@ object.
 <mass-and-weight-the-roberval-scale-and-the-kilogram>
 How heavy is your backpack? How heavy is a bird's feather?
 
-To weigh objects, we use a two-pan balance perfected by French
-mathematician and inventor #strong[Gilles Personne de Roberval]. On one
-pan, we place the object to be weighed (for instance, a ripe melon). On
-the other pan, we place calibrated metal #strong[weights] until the
+To weigh objects, we use a two-pan balance perfected in 1669 by French
+mathematician and inventor #strong[Gilles Personne de Roberval]. Unlike ancient hanging-beam balances
+where balance depended on the exact position of objects on the pan, Roberval's balance incorporates an ingenious
+articulated parallelogram mechanism concealed beneath the pans. Thanks to this system, both pans remain strictly horizontal
+throughout motion, ensuring exact measurement whether objects rest at the center or near the edge! On one
+pan, we place the object to be weighed (for instance, a ripe melon). On the other pan, we place calibrated metal #strong[weights] until the
 pointer rests perfectly vertical in the center.
 
 #figure(image("figures_en/vol_1/fig_06_pesee_melon_1kg.svg", alt: "Weighing the melon: mass balance of 1 kilogram"),
@@ -4431,9 +4433,7 @@ with two ungraduated buckets: a #strong[3-liter] bucket and a
 #strong[5-liter] bucket. How can you measure out exactly #strong[4
 liters] of water to bring back to the village?
 
-#strong[Exercise 6.15] The Cent Treasure. Leo has 4 coins totaling
-$1 upright(" euro ") 60 upright(" cents")$ ($160 upright(" c")$). If his
-coins are only 1 euro and 20-cent coins, how many of each does he hold?
+#strong[Exercise 6.15] Coins in the piggy bank. Leo has a piggy bank full of 20-cent and 50-cent coins. He has exactly #strong[4 coins in total], and together they are worth #strong[1 euro 40 cents] (140 c). How many 20-cent coins and how many 50-cent coins does he have?
 
 #divider()
 
@@ -4513,10 +4513,7 @@ Fill the 5L bucket completely again. 6. Pour into the 3L bucket until
 full (transferring exactly 1 L): exactly #strong[4 liters] remain in the
 5L bucket!
 
-#strong[Solution 6.15] With 4 coins making 1.60 €: One 1 € coin
-($100 upright(" c")$) and three 20-cent coins
-($3 times 20 = 60 upright(" c")$): $100 + 60 = 160 upright(" c")$. He
-holds #strong[one 1-euro coin] and #strong[three 20-cent coins].
+#strong[Solution 6.15] Testing combinations of 4 coins with 50 c and 20 c coins: 2 coins of 50 c and 2 coins of 20 c yield $2 times 50 + 2 times 20 = 100 + 40 = 140 upright(" c")$ (€1.40). Leo holds #strong[two 50-cent coins] and #strong[two 20-cent coins].
 
 #divider()
 
@@ -4924,14 +4921,19 @@ $12 upright(" cm")$. What is its radius?
 
 #strong[Exercise 7.5] Locating Grid Squares. Examine the grid below:
 
-#exemple_resolu(title: [Practical Application — Grid Treasure Hunt])[- A B C
-- 2 🍎
-- 1 🍌 🍇
+#exemple_resolu(title: [Practical Application — Grid Treasure Hunt])[
+#align(center)[
+#table(
+  columns: (35pt, 45pt, 45pt, 45pt),
+  align: center + horizon,
+  [], [*A*], [*B*], [*C*],
+  [*2*], [], [🍎], [],
+  [*1*], [🍌], [], [🍇]
+)
+]
 ]
 
-
-Give the coordinate (Letter, Number) of each fruit: apple, banana,
-grapes.
+Give the coordinate (Letter, Number) of each fruit: apple, banana, grapes.
 
 #divider()
 
@@ -6128,21 +6130,18 @@ paper as swiftly as possible:]
   align(center)[#table(
     columns: (20%, 20%, 20%, 20%, 20%),
     align: (center,center,center,center,center,),
-    table.header([Challenge], [Division], [Quotient $q$], [Remainder
-      $r$], [Verification ($a = b q + r$)],),
+    table.header([Challenge], [Division], [Quotient $q$], [Remainder $r$], [Verification ($a = b q + r$)],),
     table.hline(),
-    [1], [$37 div 5$], [#strong[7]], [#strong[2]], [$5 times 7 + 2 = 37$],
-    [2], [$50 div 6$], [#strong[8]], [#strong[2]], [$6 times 8 + 2 = 50$],
-    [3], [$72 div 8$], [#strong[9]], [#strong[0]], [$8 times 9 + 0 = 72$
-    (divides evenly!)],
-    [4], [$43 div 7$], [#strong[6]], [#strong[1]], [$7 times 6 + 1 = 43$],
-    [5], [$0 div 9$], [#strong[0]], [#strong[0]], [$9 times 0 + 0 = 0$],
-    [6], [$612 div 3$], [#strong[204]], [#strong[0]], [#emph[\(watch out
-    for the zero in the quotient!)]],
-    [7], [$85 div 4$], [#strong[21]], [#strong[1]], [$4 times 21 + 1 = 85$],
-    [8], [$105 div 10$], [#strong[10]], [#strong[5]], [$10 times 10 + 5 = 105$],
-    [9], [$490 div 7$], [#strong[70]], [#strong[0]], [$7 times 70 = 490$],
-    [10], [$150 div 25$], [#strong[6]], [#strong[0]], [$25 times 6 = 150$],
+    [1], [$37 div 5$], […….], […….], […….],
+    [2], [$50 div 6$], […….], […….], […….],
+    [3], [$72 div 8$], […….], […….], […….],
+    [4], [$43 div 7$], […….], […….], […….],
+    [5], [$0 div 9$], […….], […….], […….],
+    [6], [$612 div 3$], […….], […….], […….],
+    [7], [$85 div 4$], […….], […….], […….],
+    [8], [$105 div 10$], […….], […….], […….],
+    [9], [$490 div 7$], […….], […….], […….],
+    [10], [$150 div 25$], […….], […….], […….],
   )]
   , kind: table
   )
@@ -6315,6 +6314,10 @@ Tuesday). Then #strong[2 extra days] remain. Two days after Tuesday:
 Wednesday (+1), then #strong[Thursday] (+2). In 100 days, it will be
 #strong[Thursday]!
 
+
+
+#strong[Solutions to the Practitioner's Scales:]
+1. $37 = 5 times upright(bold(7)) + upright(bold(2))$ ($q=7, r=2$); 2. $50 = 6 times upright(bold(8)) + upright(bold(2))$ ($q=8, r=2$); 3. $72 = 8 times upright(bold(9)) + upright(bold(0))$ ($q=9, r=0$); 4. $43 = 7 times upright(bold(6)) + upright(bold(1))$ ($q=6, r=1$); 5. $0 = 9 times upright(bold(0)) + upright(bold(0))$ ($q=0, r=0$); 6. $612 = 3 times upright(bold(204)) + upright(bold(0))$ ($q=204, r=0$); 7. $85 = 4 times upright(bold(21)) + upright(bold(1))$ ($q=21, r=1$); 8. $105 = 10 times upright(bold(10)) + upright(bold(5))$ ($q=10, r=5$); 9. $490 = 7 times upright(bold(70)) + upright(bold(0))$ ($q=70, r=0$); 10. $150 = 25 times upright(bold(6)) + upright(bold(0))$ ($q=6, r=0$).
 #divider()
 
 === The Question that Opens What Lies Ahead
@@ -6596,8 +6599,8 @@ parts] (quarters):
 
 - Point A is located 1 quarter from the start: it represents $1 / 4$.
 - Point B is located right on 1: it represents $4 / 4 = 1$.
-- Point C is located 6 quarters from the start: it represents
-  $6 / 4 = 1 + 2 / 4$.
+- Point C is located 7 quarters from the start: it represents
+  $7 / 4 = 1 + 3 / 4$.
 
 #exemple_resolu(title: [Worked Example 3 — Reading and Placing on the Line])[#emph[Question:] On a number line where each unit is divided into 5
 equal parts (fifths), where does $8 / 5$ lie? #emph[Answer:] Start at 0
@@ -36009,6 +36012,10 @@ number that measures ratios”. The logarithm of a number is, in essence,
 #strong[the number of steps] one must take along the geometric
 progression to reach it.
 
+#principe(title: [📐 Mathematical History Nuance — Napier's Kinematic Logarithm vs Modern Logarithm])[
+Napier's original logarithm conceived in 1614 was not the modern natural logarithm $ln(x)$ based on Euler's constant $e$. Napier devised an ingenious kinematic model: along a segment of length $10^7$, point $P$ moves with a velocity proportional to its remaining distance, while point $Q$ advances along a line at constant speed. Napier's historical function satisfied $upright("NapLog")(10^7) = 0$ and $upright("NapLog")(x) approx 10^7 ln(10^7 / x)$. It was subsequent collaborations with Henry Briggs and later Euler's formulation that established our modern algebraic definitions where $ln(1) = 0$ and $ln(a b) = ln a + ln b$.
+]
+
 #decouvre(title: [💡 True History —])[The English mathematician #strong[Henry
 Briggs], reading Napier's work, was so astonished that he journeyed from
 London to Scotland in 1615 to meet him. It is said that when they met,
@@ -43527,6 +43534,13 @@ half-turn!”] What elementary geometric transformation, when applied
 twice consecutively, produces a half-turn? #strong[A rotation by a
 quarter-turn ($90^compose$ or $pi / 2$ radians) in the counterclockwise
 (positive) direction!]
+
+#alerte(title: [⚠️ Mathematical Rigor — Why the notation $sqrt(- 1)$ is strictly prohibited])[
+While Bombelli and Cardano historically wrote $sqrt(- 1)$, modern mathematics #strong[strictly prohibits this notation]. The familiar product rule $sqrt(a b) = sqrt(a) times sqrt(b)$ holds true only for #strong[non-negative real numbers]. Applying it indiscriminately to negatives creates catastrophic contradictions:
+$ 1 = sqrt(1) = sqrt((- 1) times (- 1)) = sqrt(- 1) times sqrt(- 1) = i^2 = - 1 quad arrow.r.double quad 1 = - 1! $
+To guarantee flawless logical consistency, #strong[we never apply the square root radical to negative numbers]. Instead, we define the imaginary unit #strong[$i$] purely through its fundamental algebraic relation:
+$ upright(bold(i^2 = - 1)) $
+]
 
 #figure(image("figures_en/vol_6/fig_55_plan_complexe.svg", alt: "The Argand-Gauss complex plane: algebraic and trigonometric forms"),
   caption: [
