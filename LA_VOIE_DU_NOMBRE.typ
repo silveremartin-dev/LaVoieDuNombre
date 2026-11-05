@@ -1101,9 +1101,9 @@ oisillon. Quel chiffre écris-tu pour chaque nid ? #emph[Résolution :]
 ci-dessous pendant un seul battement de cil. Donne la quantité de ronds
 de chaque boîte sans pointer ton doigt :
 
-- Boîte A : `  `
-- Boîte B : ``
-- Boîte C : `    `
+- Boîte A : #box(inset: (x: 8pt, y: 3pt), stroke: 1pt + rgb("#3b82f6"), radius: 4pt, fill: rgb("#eff6ff"))[#text(fill: rgb("#1d4ed8"))[●   ●]]
+- Boîte B : #box(inset: (x: 8pt, y: 3pt), stroke: 1pt + rgb("#3b82f6"), radius: 4pt, fill: rgb("#eff6ff"))[#text(fill: rgb("#1d4ed8"))[●]]
+- Boîte C : #box(inset: (x: 8pt, y: 3pt), stroke: 1pt + rgb("#3b82f6"), radius: 4pt, fill: rgb("#eff6ff"))[#text(fill: rgb("#1d4ed8"))[●   ●   ●]]
 
 #strong[Exercice 1.2] Les chevaux et les selles. Dans un pré, il y a 4
 chevaux. Dans l'écurie, il y a 4 selles. Y a-t-il assez de selles pour

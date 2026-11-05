@@ -1032,9 +1032,9 @@ digit do you write for each nest? #emph[Resolution:]
 for a single blink. State the quantity of dots without pointing your
 finger:
 
-- Box A: `  `
-- Box B: ``
-- Box C: `    `
+- Box A: #box(inset: (x: 8pt, y: 3pt), stroke: 1pt + rgb("#3b82f6"), radius: 4pt, fill: rgb("#eff6ff"))[#text(fill: rgb("#1d4ed8"))[●   ●]]
+- Box B: #box(inset: (x: 8pt, y: 3pt), stroke: 1pt + rgb("#3b82f6"), radius: 4pt, fill: rgb("#eff6ff"))[#text(fill: rgb("#1d4ed8"))[●]]
+- Box C: #box(inset: (x: 8pt, y: 3pt), stroke: 1pt + rgb("#3b82f6"), radius: 4pt, fill: rgb("#eff6ff"))[#text(fill: rgb("#1d4ed8"))[●   ●   ●]]
 
 #strong[Exercise 1.2] Horses and saddles. In a pasture, there are 4
 horses. In the stable, there are 4 saddles. Are there enough saddles for
