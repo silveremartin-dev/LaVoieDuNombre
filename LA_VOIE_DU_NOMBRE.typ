@@ -10692,6 +10692,19 @@ Les bâtisseurs plantaient trois piquets dans la terre et tendaient la corde fer
 
 $ 3 + 4 + 5 = 12 upright(" intervalles") $
 
+#alerte(title: [⚠️ Rigueur géométrique — Les 13 nœuds vs les 12 intervalles et la réciproque])[
+Ne commettez pas les deux confusions classiques de l'arpentage :
+1. #strong[Nœuds vs Intervalles (le problème des piquets et des clôtures) :]
+   Pour former un triangle de côtés 3, 4 et 5, il faut impérativement #strong[12 intervalles de longueur égale] ($3 + 4 + 5 = 12$).
+   - Sur une corde #strong[ouverte] (en ligne droite), il faut 13 nœuds pour délimiter 12 intervalles.
+   - Pour fermer le triangle sur le terrain, #strong[le 13\* nœud est superposé et noué exactement sur le 1\* nœud], formant une boucle fermée à 12 sommets/nœuds distincts. Ce sont bien les #strong[intervalles] (les longueurs d'un mètre entre deux nœuds) qui mesurent les côtés, et non les nœuds eux-mêmes !
+2. #strong[Théorème direct vs Réciproque de Pythagore :]
+   Les arpenteurs égyptiens n'utilisent pas le théorème direct, mais sa #strong[réciproque] !
+   - Le théorème direct affirme : « #emph[Si] l'angle est droit, #emph[alors] $a^2 + b^2 = c^2$ ».
+   - La réciproque affirme : « #emph[Si] les longueurs vérifient $a^2 + b^2 = c^2$, #emph[alors] l'angle est obligatoirement droit ».
+   Sur le terrain dévasté par la crue, personne ne connaît l'angle droit à l'avance : les arpenteurs assemblent les longueurs 3, 4 et 5, constatent que $3^2 + 4^2 = 5^2$, et #strong[créent ainsi l'angle droit avec une certitude mathématique absolue] !
+]
+
 #figure(image("figures/vol_4/fig_27_corde_treize_noeuds.svg", alt: "La corde égyptienne à treize nœuds et le triangle rectangle 3-4-5"),
   caption: [
     La corde égyptienne à treize nœuds et le triangle rectangle (3, 4, 5)
@@ -11072,6 +11085,12 @@ fois en 1706 dans un livre d'enseignement, mais c'est le géant suisse
 ]
 
 #divider()
+
+#decouvre(title: [💡 Rectification mécanique vs Quadrature impossible : le statut singulier de Pi])[
+Dérouler une roue circulaire sur le sol permet une #strong[rectification mécanique et physique] du cercle : la circonférence courbe s'étale sous nos yeux en un segment droit mesurable ($L = 2 pi R$).
+Cependant, pendant plus de deux mille ans, les géomètres ont cherché à réaliser cette rectification de manière purement théorique : tracer à la règle non graduée et au compas un segment de longueur exactement égale à la circonférence $2 pi R$, ou construire un carré de même aire qu'un disque donné (la célèbre #strong[quadrature du cercle]).
+Ce n'est qu'en #strong[1882] que le mathématicien allemand #strong[Ferdinand von Lindemann] a prouvé de façon définitive que cette construction est #strong[absolument impossible] : le nombre $pi$ est un #strong[nombre transcendant] (il n'est la racine d'aucun polynôme non nul à coefficients entiers). La géométrie euclidienne pure à la règle et au compas ne peut donc pas redresser exactement le cercle !
+]
 
 === 4. Le secret d'Archimède : dompter le cercle avec des polygones
 <le-secret-darchimède-dompter-le-cercle-avec-des-polygones>
@@ -11715,6 +11734,15 @@ simplement un #strong[agrandissement] de l'autre.
 Le rapport entre la hauteur et l'ombre est #strong[le même pour tous les
 objets verticaux à un instant donné] :
 $ upright("Hauteur Pyramide") / upright("Ombre Pyramide") = upright("Hauteur Bâton") / upright("Ombre Bâton") arrow.l.r.double H / L = h / l $
+
+#alerte(title: [⚠️ Les deux clés scientifiques indispensables à la mesure de Thalès])[
+1. #strong[L'hypothèse astrophysique des rayons solaires parallèles :]
+   Le théorème de Thalès exige impérativement que les rayons du Soleil frappant le sommet de la pyramide et le sommet du bâton soient rigoureusement parallèles. Cette condition géométrique n'est satisfaite que parce que le Soleil se trouve à une #strong[distance astronomique quasi-infinie] de la Terre ($approx 150 upright(" millions de kilomètres")$ par rapport aux quelques centaines de mètres du plateau de Gizeh).
+2. #strong[Le piège du centre invisible et la demi-base carrée :]
+   Pour un bâton planté dans le sable, son ombre commence directement à sa base visible. Mais pour la pyramide de Khéops, le sommet vertical tombe au #strong[centre géométrique de la base carrée], enfoui sous des millions de tonnes de calcaire ! La longueur totale d'ombre $L$ à introduire dans le calcul vaut impérativement :
+   $ L = L_(upright("ombre extérieure visible")) + frac(upright("côté de la base carrée"), 2) . $
+   Sans l'ajout obligatoire de cette demi-base ($230 / 2 = 115 upright(" m")$), le calcul de Thalès aurait sous-estimé la hauteur de la pyramide de plus de 115 mètres !
+]
 
 D'où la formule qui donne la hauteur sans attendre :
 $ H = L times h / l $
@@ -13324,6 +13352,13 @@ $\(7\,24\,25\)$.
 
 #divider()
 
+#principe(title: [💡 Existence géométrique face au néant arithmétique : le drame de l'incommensurabilité])[
+Le scandale découvert par Hippase met en lumière une fracture fondamentale de l'histoire des idées :
+- #strong[L'existence géométrique réelle :] La diagonale du carré de côté 1 existe de manière indéniable sous nos yeux. C'est un segment de droite concret, parfaitement traçable avec une règle et un crayon.
+- #strong[L'inexistence arithmétique dans $bb(Q)$ :] Pour les pythagoriciens, un « nombre » n'existait que s'il était entier ou fraction d'entiers ($p / q$). Démontrer que $sqrt(2)$ n'est pas une fraction signifiait que la longueur de cette diagonale #strong[n'était pas un nombre] !
+Deux grandeurs sont dites #strong[incommensurables] lorsqu'il n'existe aucune unité de mesure commune, si minuscule soit-elle (en millimètres, micromètres ou fraction infinitésimale), capable de mesurer à la fois le côté et la diagonale en un nombre entier de parts. La géométrie venait de briser l'arithmétique naïve de l'Antiquité.
+]
+
 === 6. La Crise pythagoricienne : le scandale de $sqrt(2)$
 <la-crise-pythagoricienne-le-scandale-de-sqrt2>
 Revenons maintenant à Hippase de Métaponte et à son carré de côté 1
@@ -14000,6 +14035,16 @@ en $C$ : $ A B^2 = A C^2 + B C^2 =\(x_B - x_A\)^2 +\(y_B - y_A\)^2 $
 
 En extrayant la racine carrée, on obtient la formule universelle de la
 distance cartésienne :
+
+#alerte(title: [⚠️ Pourquoi la formule de distance exige un repère strictement ORTHONORMÉ])[
+La formule $A B = sqrt((x_B - x_A)^2 + (y_B - y_A)^2)$ repose sur le théorème de Pythagore appliqué au triangle rectangle $A B C$.
+Pour que cette formule donne la véritable distance géométrique en centimètres ou en mètres, deux conditions indépendantes sont impératives :
+1. #strong[L'orthogonalité des axes :] Les axes $(O x)$ et $(O y)$ doivent être rigoureusement perpendiculaires (angle droit en $O$).
+2. #strong[L'égalité stricte des unités ($O I = O J$) :] L'unité de mesure sur l'axe des abscisses doit être identique à celle sur l'axe des ordonnées.
+Si un repère est orthogonal mais #strong[non normé] (par exemple $1 upright(" cm")$ en abscisse et $2 upright(" cm")$ en ordonnée) :
+- Un cercle géométrique réel apparaît visuellement déformé sous la forme d'une #strong[ellipse] aplatie.
+- La formule de distance numérique devient #strong[totalement fausse], car les variations d'abscisses et d'ordonnées n'ont plus la même valeur métrique !
+]
 
 #principe(title: [📐 Théorème — Distance entre deux points dans un repère orthonormé])[
  Pour tous points $A\(x_A thin\;thin y_A\)$ et

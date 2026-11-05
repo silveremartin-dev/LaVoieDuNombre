@@ -10082,6 +10082,19 @@ pulled the rope tight around them, distributing the segments as follows:
 
 $ 3 + 4 + 5 = 12 upright(" segments") $
 
+#alerte(title: [⚠️ Geometric Rigor — 13 Knots vs 12 Intervals and the Converse of Pythagoras])[
+Never confuse these two essential principles of field surveying:
+1. #strong[Knots vs Intervals (The Fence-Post Principle):]
+   To construct a triangle with sides measuring 3, 4, and 5 units, you strictly need #strong[12 equal intervals] ($3 + 4 + 5 = 12$).
+   - On an #strong[open rope] laid straight, 13 knots are required to bound 12 consecutive segments.
+   - To form a closed triangle in the field, #strong[the 13th knot is overlaid and tied directly onto the 1st knot], creating a closed loop of 12 distinct vertices. It is the #strong[intervals] (the distance units between consecutive knots) that form the side lengths, never the knots themselves!
+2. #strong[Direct Theorem vs Converse of Pythagoras:]
+   The Egyptian surveyors are not applying the direct Pythagorean theorem, but its #strong[converse]!
+   - The direct theorem states: "#emph[If] a triangle is right-angled, #emph[then] $a^2 + b^2 = c^2$."
+   - The converse states: "#emph[If] the side lengths satisfy $a^2 + b^2 = c^2$, #emph[then] the angle is guaranteed to be a right angle."
+   On silt-covered farmland, no right angle exists beforehand: surveyors lay out lengths 3, 4, and 5, verify that $3^2 + 4^2 = 5^2$, and #strong[generate a flawless right angle on the ground through deductive necessity]!
+]
+
 When pulled taut, the angle formed between the side of 3 units and the
 side of 4 units is #strong[guaranteed to be an absolute, mathematical
 right angle ($90^compose$)]! #emph[Why does this work?] Because
@@ -10544,6 +10557,12 @@ starting in 1737 by adopting it in all his master treatises.
 
 
 #divider()
+
+#decouvre(title: [💡 Mechanical Rectification vs The Impossible Squaring of the Circle: The Status of Pi])[
+Rolling a circular wheel along the ground accomplishes a #strong[physical and mechanical rectification] of the circle: the curved circumference unfolds before our eyes into a measurable straight line segment ($L = 2 pi R$).
+Yet for over two millennia, mathematicians sought to achieve this rectification through pure Euclidean geometry: constructing with an unmarked straightedge and compass a straight line segment of length exactly $2 pi R$, or constructing a square with the exact same area as a given disc (the legendary #strong[squaring of the circle]).
+Only in #strong[1882] did German mathematician #strong[Ferdinand von Lindemann] formally prove that this construction is #strong[strictly impossible]: the number $pi$ is a #strong[transcendental number] (it is not the root of any non-zero polynomial with integer coefficients). Pure ruler-and-compass geometry cannot rectify the circle exactly!
+]
 
 === 4. Archimedes' Secret: Taming the Circle with Polygons
 <archimedes-secret-taming-the-circle-with-polygons>
@@ -11165,7 +11184,16 @@ The ratio between vertical height and cast shadow is #strong[identical
 for all vertical objects standing under the sun at that same moment]:
 $ upright("Pyramid Height") / upright("Pyramid Shadow") = upright("Staff Height") / upright("Staff Shadow") arrow.l.r.double H / L = h / l $
 
-Hence, the formula that delivers the height at any time without waiting:
+Hence, the #alerte(title: [⚠️ The Two Scientific Pillars Indispensable to Thales' Measurement])[
+1. #strong[The Astrophysical Hypothesis of Parallel Sunbeams:]
+   Thales' proportionality theorem strictly requires the solar rays grazing the apex of the pyramid and the tip of the pole to be parallel. This geometric condition holds true only because the Sun lies at a #strong[quasi-infinite astronomical distance] from the Earth ($approx 150 upright(" million kilometers")$ compared to the few hundred meters of the Giza plateau).
+2. #strong[The Hidden Center of the Pyramid and the Half-Base Correction:]
+   For a vertical pole planted in the sand, its entire shadow is visible extending from its base. But for the Great Pyramid, the apex projects vertically down onto the #strong[hidden geometric center of the giant square base], buried beneath millions of tons of stone! The total shadow length $L$ required in Thales' formula must strictly include the half-width of the base:
+   $ L = L_(upright("external visible shadow")) + frac(upright("side of square base"), 2). $
+   Without adding this mandatory half-base ($230 / 2 = 115 upright(" m")$), Thales' calculation would have underestimated the height of the pyramid by more than 115 meters!
+]
+
+formula that delivers the height at any time without waiting:
 $ H = L times h / l $
 
 #divider()
@@ -12657,6 +12685,13 @@ $\(5\,12\,13\)$, $\(8\,15\,17\)$, and $\(7\,24\,25\)$.
 
 #divider()
 
+#principe(title: [💡 Geometric Existence vs Arithmetic Non-Existence: The Tragedy of Incommensurability])[
+The scandal uncovered by Hippasus exposed a profound fracture in the foundations of mathematics:
+- #strong[Concrete Geometric Existence:] The diagonal of a unit square indisputably exists in physical reality. It is a tangible straight line segment, drawn effortlessly in the sand with a stylus and straightedge.
+- #strong[Arithmetic Non-Existence in $bb(Q)$:] To the Pythagoreans, a "number" existed only if it was a whole integer or a ratio of integers ($p / q$). Proving that $sqrt(2)$ cannot be written as a fraction meant that the length of this real diagonal #strong[was not a number]!
+Two geometric segments are called #strong[incommensurable] when they share no common unit of measure, however microscopic (whether nanometers or infinitesimal subdivisions), that can measure both the side and the diagonal an exact integer number of times. Geometry had outgrown the naive rational arithmetic of the ancient world.
+]
+
 === 6. The Pythagorean Crisis: The Scandal of $sqrt(2)$
 <the-pythagorean-crisis-the-scandal-of-sqrt2>
 Let us return to Hippasus of Metapontum and his humble square measuring
@@ -13300,6 +13335,16 @@ $ A B^2 = A C^2 + B C^2 =\(x_B - x_A\)^2 +\(y_B - y_A\)^2 $
 
 Taking the square root delivers the universal Cartesian distance
 formula:
+
+#alerte(title: [⚠️ Why the Distance Formula Strictly Demands an ORTHONORMAL Coordinate System])[
+The formula $A B = sqrt((x_B - x_A)^2 + (y_B - y_A)^2)$ relies directly on the Pythagorean theorem applied to the right triangle $A B C$.
+For this formula to yield the true geometric distance in centimeters or meters, two distinct conditions are mandatory:
+1. #strong[Orthogonality of the Axes:] The axes $(O x)$ and $(O y)$ must be strictly perpendicular (meeting at a $90^compose$ right angle at origin $O$).
+2. #strong[Strict Equality of Units ($O I = O J$):] The graduation scale on the x-axis must be identical to that on the y-axis.
+If a coordinate system is orthogonal but #strong[not normalized] (for example, $1 upright(" cm")$ on the x-axis and $2 upright(" cm")$ on the y-axis):
+- A true geometric circle is distorted visually into a flattened #strong[ellipse].
+- The numerical distance formula becomes #strong[entirely false], because horizontal and vertical coordinate differences no longer represent the same physical metric!
+]
 
 #principe(title: [📐 Theorem — Cartesian Distance Formula])[In an orthonormal
 coordinate plane, the distance between points $A\(x_A thin\;thin y_A\)$
