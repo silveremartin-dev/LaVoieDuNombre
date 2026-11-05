@@ -1149,10 +1149,11 @@ sien. 1. Qui est le plus âgé ? 2. Combien de bougies Léo a-t-il de plus
 que Maya ?
 
 #strong[Exercice 1.10] Chiffre ou nombre ? Dans les phrases suivantes,
-dis si le mot souligné est un #strong[chiffre] ou un #strong[nombre] :
-\1. « Pour écrire le nombre 38, j'utilise le #strong[3] et le
-#strong[8]. » 2. « Dans ce panier, il y a #strong[38] pommes. » 3. «
-Mon numéro de dossard pour la course est le #strong[7]. »
+dis si l'élément en gras est utilisé comme un #strong[chiffre] (un symbole d'écriture) ou un #strong[nombre] (une quantité) :
+
++ « Pour écrire le nombre 38, j'utilise le #strong[3] et le #strong[8]. »
++ « Dans ce panier, il y a #strong[38] pommes. »
++ « Mon numéro de dossard pour la course est le #strong[7]. »
 
 #divider()
 
@@ -1178,9 +1179,9 @@ porte. Que va-t-il se passer à la fin pour le berger ?
 
 #strong[Exercice 1.13] Les dominos menteurs. Observe ces trois dominos :
 
-- Domino 1 : #box[`[ • • | • • • ]`]
-- Domino 2 : #box[`[ • • • • | • ]`]
-- Domino 3 : #box[`[ • • • | • • • ]`]
+- Domino 1 : #box(inset: (x: 5pt, y: 2pt), stroke: 0.75pt + rgb("#94a3b8"), radius: 3pt)[• • #text(fill: rgb("#cbd5e1"))[|] • • •]
+- Domino 2 : #box(inset: (x: 5pt, y: 2pt), stroke: 0.75pt + rgb("#94a3b8"), radius: 3pt)[• • • • #text(fill: rgb("#cbd5e1"))[|] •]
+- Domino 3 : #box(inset: (x: 5pt, y: 2pt), stroke: 0.75pt + rgb("#94a3b8"), radius: 3pt)[• • • #text(fill: rgb("#cbd5e1"))[|] • • •]
 
 Deux de ces dominos portent au total exactement le même nombre de
 points. Lesquels ?
@@ -1249,10 +1250,7 @@ Il en reste 2 sur le fil. Comme 3 est plus grand que 2, il y a
 bougies de Léo aux 4 bougies de Maya, il reste 2 bougies à Léo. Léo a
 #strong[2 bougies de plus] que sa sœur ($6 - 4 = 2$).
 
-#strong[Solution 1.10] 1. Un #strong[chiffre] (ce sont les symboles
-d'écriture). 2. Un #strong[nombre] (il indique la quantité totale de
-pommes dans le panier). 3. Un #strong[chiffre] (utilisé comme symbole ou
-numéro).
+#strong[Solution 1.10] 1. Des #strong[chiffres] (les briques de base servant à écrire les nombres). 2. Un #strong[nombre] (une quantité réelle d'objets dénombrés). 3. Un #strong[chiffre] utilisé comme identifiant (sur un dossard ou un maillot, le 7 sert d'étiquette nominale pour désigner un coureur, non pour mesurer une quantité).
 
 #strong[Solution 1.11] Analysons les informations une par une :
 
@@ -2509,12 +2507,11 @@ $25 + upright(bold(75)) = 100$.
 #strong[Solution 3.9] On cherche la différence entre 18 et 11 :
 $ 18 - 11 = 7 $ Jade a #strong[7 crayons de plus] que Manon.
 
-#strong[Solution 3.10] -
-$8 + 7 = 8 + upright(bold(2)) + upright(bold(5)) = 10 + 5 = upright(bold(15))$.
-\-
-$7 + 5 = 7 + upright(bold(3)) + upright(bold(2)) = 10 + 2 = upright(bold(12))$.
-\-
-$6 + 6 = 6 + upright(bold(4)) + upright(bold(2)) = 10 + 2 = upright(bold(12))$.
+#strong[Solution 3.10] Décompositions pas à pas pour franchir la dizaine :
+
+- $8 + 7 = 8 + upright(bold(2)) + upright(bold(5)) = 10 + 5 = upright(bold(15))$
+- $7 + 5 = 7 + upright(bold(3)) + upright(bold(2)) = 10 + 2 = upright(bold(12))$
+- $6 + 6 = 6 + upright(bold(4)) + upright(bold(2)) = 10 + 2 = upright(bold(12))$
 
 #strong[Solution 3.11] Avec 2, 5 et 7 :
 
@@ -4826,12 +4823,13 @@ possède-t-il ?
 Hauteur de la porte : 2 #strong[$m$]. 3. Longueur d'un stylo : 15
 #strong[$c m$]. 4. Cour de récréation : 30 #strong[$m$].
 
-#strong[Solution 6.2] -
-$2 upright(" m") = upright(bold(200)) upright(" cm")$ -
-$4 upright(" m") = upright(bold(400)) upright(" cm")$ -
-$300 upright(" cm") = upright(bold(3)) upright(" m")$ -
-$1 upright(" kg") = upright(bold(1 thin 000)) upright(" g")$ -
-$3 upright(" kg") = upright(bold(3 thin 000)) upright(" g")$
+#strong[Solution 6.2] Conversions directes :
+
+- $2 upright(" m") = upright(bold(200)) upright(" cm")$
+- $4 upright(" m") = upright(bold(400)) upright(" cm")$
+- $300 upright(" cm") = upright(bold(3)) upright(" m")$
+- $1 upright(" kg") = upright(bold(1 thin 000)) upright(" g")$
+- $3 upright(" kg") = upright(bold(3 thin 000)) upright(" g")$
 
 #strong[Solution 6.3] 1. Un chaton : 150 #strong[$g$]. 2. Sac de ciment :
 25 #strong[$k g$]. 3. Tablette de chocolat : 100 #strong[$g$]. 4.
@@ -5490,7 +5488,7 @@ il faut découper et assembler exactement #strong[6 carrés].
 #strong[Solution 7.11] 1. On obtient #strong[2 morceaux]. 2. Chaque
 morceau est un #strong[triangle rectangle] (il possède un angle droit
 issu du coin du carré et deux côtés de même longueur). On l'appelle un
-triangle rectangle isocèle.
+#strong[triangle rectangle isocèle] (un triangle qui possède à la fois un angle droit et deux côtés égaux).
 
 #strong[Solution 7.12] 1. Oui ! Un carré a 4 côtés égaux :
 $12 div 4 = 3$. On met #strong[3 allumettes par côté]. 2. Oui ! Il faut
@@ -11830,6 +11828,11 @@ absolue si deux poutres ou deux rails sont #strong[parallèles].
 
 C'est le rôle de la #strong[réciproque du théorème de Thalès].
 
+#alerte(title: [⚠️ Le piège classique du brevet — La condition indispensable d'ordre des points])[
+Vérifier l'égalité numérique des rapports de longueurs $frac(A M, A B) = frac(A N, A C)$ ne suffit #strong[absolument pas] pour conclure au parallélisme !
+Il faut impérativement que les points soient situés #strong[dans le même ordre] sur leurs droites respectives ($A, M, B$ et $A, N, C$). Si $M$ est placé de l'autre côté de $A$, les rapports peuvent être égaux sans que les droites ne soient parallèles (configuration asymétrique croisée).
+]
+
 #principe(title: [📐 Réciproque du Théorème de Thalès —])[
  Soient $\(A B\)$ et
 $\(A C\)$ deux droites sécantes en $A$. Soient $M$ un point de la droite
@@ -11886,6 +11889,12 @@ historiques :
 - La pyramide a une base carrée de $230 upright(" m")$ de côté.
 - L'ombre du sommet de la pyramide dépasse du pied de la paroi de
   $74 upright(" m")$.
+
+#alerte(title: [⚠️ Le piège historique de l'ombre de la pyramide])[
+Thalès ne pouvait pas mesurer l'ombre à partir du centre invisible de la pyramide, caché sous des millions de blocs de calcaire ! L'ombre mesurée au sol ($74 upright(" m")$) partait du pied de la paroi extérieure. Pour appliquer le théorème des proportions, Thalès a rigoureusement ajouté la moitié du côté de la base carrée ($230 / 2 = 115 upright(" m")$) :
+$ L_(upright("totale")) = 115 + 74 = 189 upright(" m") . $
+Sans cette correction géométrique capitale, son calcul aurait sous-estimé la hauteur de la pyramide de plus de 75 mètres !
+]
 
 Quelle est la hauteur $H$ de la pyramide ?
 
@@ -16132,6 +16141,12 @@ nous savons que cette aire doit être égale à $39$.
 + En retranchant 5 : $ x = 8 - 5 = 3 . $
 ]
 
+#principe(title: [📐 Du géométrique à l'algébrique — Pourquoi deux racines dans $bb(R)$ ?])[
+Pour Al-Khwarizmi, $x$ représentait la longueur d'un côté de terrain réel : seule la solution positive $x = 3$ avait un sens physique. Mais en algèbre formelle moderne sur l'ensemble des réels $bb(R)$, l'équation $X^2 = 64$ admet #strong[deux solutions réelles symétriques] :
+$ X = sqrt(64) = 8 quad upright("ou") quad X = - sqrt(64) = - 8 . $
+Ainsi, l'équation admet une seconde solution algébrique : $x + 5 = - 8 arrow.l.r.double x = - 13$. Vérification : $(- 13)^2 + 10(- 13) = 169 - 130 = 39$ !
+]
+
 Vérifions : pour $x = 3$, on a $3^2 + 10 times 3 = 9 + 30 = 39$. C'est
 parfaitement juste ! Toutes les formules du second degré que tu
 apprendras au lycée (au Chapitre 35) découlent de ce geste géométrique
@@ -19491,6 +19506,16 @@ extrêmes !
 ]
 
 #divider()
+
+#principe(title: [📐 Le Secret du 1/3 — Pourquoi le volume d'une pyramide vaut $1/3 times upright("Base") times upright("Hauteur")$])[
+Pourquoi ce coefficient $1 / 3$ surgit-il pour les solides pointus, alors qu'un triangle vaut $1 / 2 times upright("base") times upright("hauteur")$ ?
+La preuve la plus lumineuse réside dans la #strong[dissection d'un cube] :
+Prenons un cube de côté $c$. Choisissons l'un de ses huit sommets $S$. À partir de ce sommet commun, traçons les pyramides obliques ayant pour base chacune des faces opposées du cube.
+Le cube se décompose exactement en #strong[3 pyramides obliques identiques] (isométriques) de même base carrée $B = c^2$ et de même hauteur $h = c$ !
+Puisque les 3 pyramides remplissent parfaitement le volume du cube sans interstice ni chevauchement :
+$ 3 times V_(upright("pyramide")) = V_(upright("cube")) = B times h arrow.r.double.long V_(upright("pyramide")) = 1 / 3 times B times h . $
+Par décomposition infinitésimale d'Archimède (méthode des indivisibles), ce tiers s'applique à toute pyramide polygonale et à tout cône de révolution circulaire ($V = 1 / 3 pi R^2 h$) !
+]
 
 === 5. La pizza d'Archimède : l'aire du disque
 <la-pizza-darchimède-laire-du-disque>
@@ -28149,6 +28174,10 @@ $\(O\;arrow(i)\,arrow(j)\)$, les vecteurs de base vérifient :
 
 C'est ici que la magie de l'algèbre simplifie tous les calculs
 géométriques :
+
+#alerte(title: [⚠️ Condition absolue — Le repère doit être ORTHONORMÉ])[
+La formule analytique $arrow(u) dot.op arrow(v) = x x' + y y'$ est #strong[fondamentalement fausse] si le repère n'est pas orthonormé ! Dans une base quelconque ou oblique, la métrique fait intervenir le cosinus de l'angle des axes et la norme des vecteurs de base. Mentionnez toujours expressément l'hypothèse « dans un repère orthonormé » sur votre copie.
+]
 
 #principe(title: [📐 Théorème — Formule analytique du produit scalaire])[
  Dans un
@@ -41076,6 +41105,12 @@ l'envers ($a > b$), l'intégrale d'une fonction positive est
 #strong[négative] !
 ]
 
+#alerte(title: [⚠️ Aire Algébrique vs Aire Géométrique])[
+Ne confondez jamais l'intégrale et l'aire géométrique !
+L'intégrale $integral_a^b f(x) thin d x$ calcule une #strong[aire algébrique] : les zones situées au-dessus de l'axe des abscisses comptent positivement, et celles situées en dessous comptent négativement.
+Si la fonction change de signe sur $[a, b]$, l'aire géométrique réelle du domaine vaut $integral_a^b |f(x)| thin d x$, ce qui impose de découper l'intégrale avec la relation de Chasles en chacun des zéros de $f$.
+]
+
 ==== 5.4 Aire entre deux courbes
 <aire-entre-deux-courbes>
 Soient $f$ et $g$ deux fonctions continues sur $\[a thin\;b\]$ telles
@@ -42760,6 +42795,13 @@ l'autre à des hauteurs différentes sans jamais se croiser).
 ]
 
 #divider()
+
+#principe(title: [📐 Distinction lexicale stricte — Orthogonalité vs Perpendicularité dans l'espace])[
+Dans le plan, deux droites orthogonales sont nécessairement sécantes, donc perpendiculaires.
+Dans l'espace à 3 dimensions, la distinction est capitale :
+- Deux droites sont dites #strong[orthogonales] si leurs vecteurs directeurs sont orthogonaux ($arrow(u) dot.op arrow(v) = 0$), même si elles ne se rencontrent jamais (droites non coplanaires évoluant dans des plans parallèles distincts).
+- On réserve le terme #strong[perpendiculaires] exclusivement aux droites orthogonales #strong[ET sécantes] (qui se coupent en un point réel, donc coplanaires).
+]
 
 === 4. Le produit scalaire dans l'espace et l'orthogonalité
 <le-produit-scalaire-dans-lespace-et-lorthogonalité>
@@ -45823,6 +45865,12 @@ d'argument).]
 Puisque les coordonnées trigonométriques du point $M$ sont
 $a = r cos theta$ et $b = r sin theta$, on obtient :
 
+#alerte(title: [⚠️ Calcul pratique de l'argument et piège de l'arctangente])[
+Si l'on cherche l'argument $theta$ par la formule $tan theta = b / a$, la touche $arctan$ de la calculatrice ne renvoie l'angle exact #strong[que si $a > 0$] (demi-plan droit).
+Lorsque $a < 0$ (demi-plan gauche), le nombre est décalé d'un demi-tour : l'argument principal vaut impérativement :
+$ theta = arctan(b / a) + pi quad (upright("si ") b gt.eq 0) quad upright("ou") quad theta = arctan(b / a) - pi quad (upright("si ") b < 0) . $
+]
+
 #principe(title: [Définition Fondamentale])[
 #strong[📐 Définition --- Forme trigonométrique
 ]
@@ -46830,6 +46878,11 @@ $k in bb(Z)$.
 
 === 5. Le Théorème de Gauss
 <le-théorème-de-gauss>
+#alerte(title: [⚠️ L'impératif absolu de la primalité entre eux])[
+Ne jamais oublier la condition $upright("PGCD")(a, b) = 1$ ! Si $a$ et $b$ ne sont pas premiers entre eux, le théorème de Gauss est totalement faux.
+Exemple classique : $6$ divise le produit $4 times 3 = 12$, mais $6$ ne divise ni $4$ ni $3$, précisément parce que $upright("PGCD")(6, 4) = 2 eq.not 1$.
+]
+
 #principe(title: [📐 Théorème fondamental de Gauss])[
  Soient $a\,b\,c in bb(Z)$. Si
 #strong[$a$ divise le produit $b c$] et si
@@ -49321,6 +49374,8 @@ Le grand livre du monde est désormais ouvert devant tes yeux. Tu en connais la 
       $ sin(2 a) = 2 sin(a) cos(a) $
       #v(5pt)
       $ cos^2(a) + sin^2(a) = 1 $
+      #v(5pt)
+      $ tan(2 a) = frac(2 tan(a), 1 - tan^2(a)) quad [a eq.not pi/4 + k pi/2] $
     ]
   ]
 )

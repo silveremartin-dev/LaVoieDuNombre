@@ -1077,11 +1077,12 @@ on the wire or more birds in the sky?
 candles on his cake. His younger sister Maya has 4 candles on hers. 1.
 Who is older? 2. How many more candles does Leo have than Maya?
 
-#strong[Exercise 1.10] Digit or number? In each sentence, determine
-whether the underlined term is used as a #strong[digit] or a
-#strong[number]: 1. “To write the number 38, I use the #strong[3] and
-the #strong[8]\.” 2. “In this basket, there are #strong[38] apples.” 3.
-“My runner bib number for the race is #strong[7]\.”
+#strong[Exercise 1.10] Digit or number? In the following sentences,
+state whether the bold element is used as a #strong[digit] (a writing symbol) or a #strong[number] (a counted quantity):
+
++ “To write the number 38, I use the digits #strong[3] and #strong[8].”
++ “In this basket, there are #strong[38] apples.”
++ “My bib number for the race is #strong[7].”
 
 #divider()
 
@@ -1107,9 +1108,9 @@ enters?
 #strong[Exercise 1.13] The deceptive dominoes. Look at these three
 dominoes:
 
-- Domino 1: #box[`[ • • | • • • ]`]
-- Domino 2: #box[`[ • • • • | • ]`]
-- Domino 3: #box[`[ • • • | • • • ]`]
+- Domino 1: #box(inset: (x: 5pt, y: 2pt), stroke: 0.75pt + rgb("#94a3b8"), radius: 3pt)[• • #text(fill: rgb("#cbd5e1"))[|] • • •]
+- Domino 2: #box(inset: (x: 5pt, y: 2pt), stroke: 0.75pt + rgb("#94a3b8"), radius: 3pt)[• • • • #text(fill: rgb("#cbd5e1"))[|] •]
+- Domino 3: #box(inset: (x: 5pt, y: 2pt), stroke: 0.75pt + rgb("#94a3b8"), radius: 3pt)[• • • #text(fill: rgb("#cbd5e1"))[|] • • •]
 
 Two of these dominoes carry the exact same total number of dots. Which
 ones?
@@ -1173,9 +1174,7 @@ is older because he has more candles. 2. Pairing 4 of Leo's candles with
 Maya's 4 leaves 2 candles. Leo has #strong[2 more candles] than his
 sister ($6 - 4 = 2$).
 
-#strong[Solution 1.10] 1. A #strong[digit] (individual written glyphs).
-\2. A #strong[number] (expresses total count of apples). 3. A
-#strong[digit] (used as an identifying numeral).
+#strong[Solution 1.10] 1. #strong[Digits] (building blocks used for notation). 2. A #strong[number] (an actual counted quantity). 3. A #strong[digit] used as an identifier (on a race bib or jersey, 7 serves as a nominal label to identify a runner, not as a measured quantity).
 
 #strong[Solution 1.11] Analyzing the clues:
 
@@ -2317,12 +2316,11 @@ $25 + upright(bold(75)) = 100$.
 #strong[Solution 3.9] We compute the difference between 18 and 11:
 $ 18 - 11 = 7 $ Jade has #strong[7 more colored pencils] than Manon.
 
-#strong[Solution 3.10] -
-$8 + 7 = 8 + upright(bold(2)) + upright(bold(5)) = 10 + 5 = upright(bold(15))$.
-\-
-$7 + 5 = 7 + upright(bold(3)) + upright(bold(2)) = 10 + 2 = upright(bold(12))$.
-\-
-$6 + 6 = 6 + upright(bold(4)) + upright(bold(2)) = 10 + 2 = upright(bold(12))$.
+#strong[Solution 3.10] Step-by-step decomposition to bridge ten:
+
+- $8 + 7 = 8 + upright(bold(2)) + upright(bold(5)) = 10 + 5 = upright(bold(15))$
+- $7 + 5 = 7 + upright(bold(3)) + upright(bold(2)) = 10 + 2 = upright(bold(12))$
+- $6 + 6 = 6 + upright(bold(4)) + upright(bold(2)) = 10 + 2 = upright(bold(12))$
 
 #strong[Solution 3.11] With 2, 5, and 7:
 
@@ -4444,12 +4442,13 @@ liters] of water to bring back to the village?
 #strong[$m$]. 3. Pen length: 15 #strong[$c m$]. 4. Playground: 30
 #strong[$m$].
 
-#strong[Solution 6.2] -
-$2 upright(" m") = upright(bold(200)) upright(" cm")$ -
-$4 upright(" m") = upright(bold(400)) upright(" cm")$ -
-$300 upright(" cm") = upright(bold(3)) upright(" m")$ -
-$1 upright(" kg") = upright(bold(1\,000)) upright(" g")$ -
-$3 upright(" kg") = upright(bold(3\,000)) upright(" g")$
+#strong[Solution 6.2] Conversions:
+
+- $2 upright(" m") = upright(bold(200)) upright(" cm")$
+- $4 upright(" m") = upright(bold(400)) upright(" cm")$
+- $300 upright(" cm") = upright(bold(3)) upright(" m")$
+- $1 upright(" kg") = upright(bold(1 thin 000)) upright(" g")$
+- $3 upright(" kg") = upright(bold(3 thin 000)) upright(" g")$
 
 #strong[Solution 6.3] 1. Kitten: 150 #strong[$g$]. 2. Cement bag: 25
 #strong[$k g$]. 3. Chocolate bar: 100 #strong[$g$]. 4. Schoolbag: 3
@@ -11271,6 +11270,11 @@ need to prove with absolute certainty that two beams or property lines
 are #strong[parallel]. That is the purpose of the #strong[Converse of
 Thales' Theorem].
 
+#alerte(title: [⚠️ Critical Exam Trap — The Required Order of Points])[
+Testing equality of length ratios $frac(A M, A B) = frac(A N, A C)$ is #strong[not sufficient alone] to establish parallelism!
+Points must lie #strong[in the exact same order] along both transversals ($A, M, B$ and $A, N, C$). If $M$ lies on the opposite side of $A$, equal ratios can occur without parallel lines!
+]
+
 #principe(title: [📐 Converse of Thales' Theorem —])[Let $\(A B\)$ and $\(A C\)$
 be two lines intersecting at $A$. Let $M$ be a point on line $\(A B\)$
 and $N$ a point on line $\(A C\)$. If: 1. The points $A\,M\,B$ and
@@ -11325,6 +11329,12 @@ measurements:
   side.
 - The shadow cast by the pyramid's apex extends $74 upright(" m")$
   beyond the exterior edge of its base.
+
+#alerte(title: [⚠️ The Historical Trap of the Pyramid's Shadow])[
+Thales could not measure the shadow from the hidden center of the pyramid buried beneath stone! The shadow measured on the sand ($74 upright(" m")$) only extended from the outer wall. To apply scale proportionality, Thales rigorously added half the base width ($230 / 2 = 115 upright(" m")$):
+$ L_(upright("total")) = 115 + 74 = 189 upright(" m"). $
+Without this crucial geometric correction, his estimate would have undershot the real height by over 75 meters!
+]
 
 What is the vertical height $H$ of the pyramid?
 
@@ -15349,6 +15359,12 @@ we know this total area must equal $39$.
 + Subtracting 5: $ x = 8 - 5 = 3 . $
 ]
 
+#principe(title: [📐 Geometric Origins vs Modern Algebraic Roots])[
+For Al-Khwarizmi, $x$ measured an actual field boundary, so only positive length $x = 3$ made physical sense. In modern algebra over $bb(R)$, $X^2 = 64$ admits #strong[two symmetric real roots]:
+$ X = sqrt(64) = 8 quad upright("or") quad X = - sqrt(64) = - 8. $
+Hence a second negative algebraic solution exists: $x + 5 = - 8 arrow.l.r.double x = - 13$. Indeed: $(- 13)^2 + 10(- 13) = 169 - 130 = 39$!
+]
+
 Let us verify: for $x = 3$, we have $3^2 + 10 times 3 = 9 + 30 = 39$. It
 is completely exact! Every formula for quadratic equations taught in
 high school (in Chapter 35) directly descends from this geometric stroke
@@ -18533,6 +18549,16 @@ its extreme limits!
 
 
 #divider()
+
+#principe(title: [📐 The Secret of 1/3 — Why Pyramid Volume Is $1/3 times upright("Base") times upright("Height")$])[
+Why does a factor of $1 / 3$ govern pointed solids while triangles take $1 / 2 times upright("base") times upright("height")$?
+The most elegant concrete proof rests on #strong[cube dissection]:
+Take a solid cube of side $c$. Select one corner vertex $S$. From this common peak, connect edges to the three opposite square faces.
+The cube decomposes exactly into #strong[3 identical oblique square pyramids], each sharing base $B = c^2$ and altitude $h = c$!
+Because 3 congruent pyramids pack the cube with zero gaps:
+$ 3 times V_(upright("pyramid")) = V_(upright("cube")) = B times h arrow.r.double.long V_(upright("pyramid")) = 1 / 3 times B times h. $
+By Archimedean slicing, this $1 / 3$ ratio extends to all polygonal pyramids and circular cones ($V = 1 / 3 pi R^2 h$)!
+]
 
 === 5. Archimedes' Pizza: The Area of a Disk
 <archimedes-pizza-the-area-of-a-disk>
@@ -26744,6 +26770,10 @@ $\(O\;arrow(i)\,arrow(j)\)$, the unit basis vectors satisfy:
 
 Here the beauty of algebra dramatically simplifies geometric
 computations:
+
+#alerte(title: [⚠️ Absolute Requirement — Coordinate System Must Be ORTHONORMAL])[
+The Cartesian formula $arrow(u) dot.op arrow(v) = x x' + y y'$ fails completely if axes are not mutually perpendicular and unit-length! In skewed coordinates, cross-terms involving axis angles arise. Always verify and state that the coordinate system is orthonormal.
+]
 
 #principe(title: [📐 Theorem — Analytical Formula for the Dot Product])[In an
 #strong[orthonormal] coordinate system $\(O\;arrow(i)\,arrow(j)\)$, if
@@ -39227,6 +39257,12 @@ reversed ($a > b$), the integral of a strictly positive function is
 ]
 
 
+#alerte(title: [⚠️ Algebraic Area vs Geometric Area])[
+Never confuse the integral with geometric area!
+The definite integral $integral_a^b f(x) thin d x$ evaluates #strong[signed algebraic area]: regions above the x-axis are counted positively, while regions below are negative.
+When a function changes sign over $[a, b]$, total physical geometric area equals $integral_a^b |f(x)| thin d x$, requiring Chasles splitting at each zero of $f$.
+]
+
 ==== 5.4 Area Enclosed Between Two Curves
 <area-enclosed-between-two-curves>
 Let $f$ and $g$ be two continuous functions on $\[a thin\;b\]$ such that
@@ -40796,6 +40832,13 @@ different heights without ever crossing).
 
 
 #divider()
+
+#principe(title: [📐 Strict Lexical Distinction — Orthogonality vs Perpendicularity in Space])[
+In 2D plane geometry, orthogonal lines always intersect and are thus perpendicular.
+In 3D space, geometry draws a vital distinction:
+- Two lines are #strong[orthogonal] whenever their direction vectors have zero dot product ($arrow(u) dot.op arrow(v) = 0$), even if they never meet (skew lines situated in distinct parallel planes).
+- The term #strong[perpendicular] is strictly reserved for lines that are both orthogonal #strong[AND intersecting] (sharing a common point, hence coplanar).
+]
 
 === 4. Dot Product in Space and Orthogonality
 <dot-product-in-space-and-orthogonality>
@@ -43678,6 +43721,12 @@ argument lying in the interval $\(- pi\,pi\]$ is called the
 Since the coordinates of $M$ are $a = r cos theta$ and
 $b = r sin theta$, we obtain:
 
+#alerte(title: [⚠️ Computing Arguments and the Arctangent Trap])[
+While $tan theta = b / a$, using the $arctan$ function directly yields the correct angle #strong[only when $a > 0$] (right half-plane).
+When $a < 0$ (left half-plane), coordinates lie opposite the principal arctangent branch; the principal argument requires a $pi$ shift:
+$ theta = arctan(b / a) + pi quad (upright("if ") b gt.eq 0) quad upright("or") quad theta = arctan(b / a) - pi quad (upright("if ") b < 0). $
+]
+
 #principe(title: [📐 Definition — Trigonometric Form])[Every non-zero complex
 number $z$ can be written as:
 $ z = r\(cos theta + i sin theta\)quad upright("where ") r =\|z\|> 0 upright(" and ") theta equiv arg\(z\)med\(mod med 2 pi\) $
@@ -44618,6 +44667,11 @@ $\(x\,y\)$ indexed by an integer $k in bb(Z)$.
 
 === 5. Gauss's Lemma (Theorem)
 <gausss-lemma-theorem>
+#alerte(title: [⚠️ Absolute Requirement of Coprimality])[
+Never omit the condition $upright("gcd")(a, b) = 1$! Without coprimality, Gauss's theorem fails completely.
+Classic counter-example: $6$ divides $4 times 3 = 12$, yet $6$ divides neither $4$ nor $3$, because $upright("gcd")(6, 4) = 2 eq.not 1$.
+]
+
 #principe(title: [📐 Fundamental Theorem — Gauss's Lemma])[Let
 $a\,b\,c in bb(Z)$. If #strong[$a$ divides the product $b c$] and if
 #strong[$gcd\(a\,b\)= 1$], then:
@@ -47018,6 +47072,8 @@ The grand book of the world now lies wide open before your eyes. You speak its l
       $ sin(2 a) = 2 sin(a) cos(a) $
       #v(5pt)
       $ cos^2(a) + sin^2(a) = 1 $
+      #v(5pt)
+      $ tan(2 a) = frac(2 tan(a), 1 - tan^2(a)) quad [a eq.not pi/4 + k pi/2] $
     ]
   ]
 )
