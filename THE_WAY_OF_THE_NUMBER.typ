@@ -925,13 +925,18 @@ starting from the correct position:
 Three little squirrels gather hazelnuts. Hazelnut the squirrel found 3,
 Bushy found 5, and Chestnut found 3. Who has as many as whom?
 #emph[Step-by-step resolution:] 1. Let us compare Hazelnut (3 nuts) and
-Chestnut (3 nuts). Let us perform item-by-item pairing:
+Chestnut (3 nuts). Let us perform item-by-item pairing by aligning each nut face to face:
 
-- Hazelnut's 1st nut $arrow.l.r$ Chestnut's 1st nut
-
-- 2nd nut $arrow.l.r$ 2nd nut
-
-- 3rd nut $arrow.l.r$ 3rd nut
+#align(center)[
+  #table(
+    columns: (auto, auto, auto),
+    stroke: none,
+    align: (right + horizon, center + horizon, left + horizon),
+    [Hazelnut's 1#super[st] nut], [#text(fill: byrne-blue)[$arrow.l.r$]], [Chestnut's 1#super[st] nut],
+    [Hazelnut's 2#super[nd] nut], [#text(fill: byrne-blue)[$arrow.l.r$]], [Chestnut's 2#super[nd] nut],
+    [Hazelnut's 3#super[rd] nut], [#text(fill: byrne-blue)[$arrow.l.r$]], [Chestnut's 3#super[rd] nut],
+  )
+]
 
 #block[
 #set enum(numbering: "1.", start: 2)
@@ -2130,7 +2135,7 @@ Answer:] Sophie has #strong[6 more daisies] than her brother.
 #exemple_resolu(title: [Solved Example 4 — Missing Part (“How many more needed?”)])[#emph[Problem:] A sticker album has 20 pages. Tom has already completed
 14 pages. How many pages does he still need to complete his album?
 #emph[Diagnostic Question:] How much is needed to bridge from 14 to 20?
-This is a missing-addend equation: $14 + dots.h = 20$. Finding the
+This is a missing-addend equation (with an empty box to fill): $14 + square = 20$. Finding the
 difference: $ 20 - 14 = 6 $ #emph[Sentence Answer:] Tom needs #strong[6
 more pages] to finish his album.
 ]
@@ -3566,13 +3571,11 @@ This calculation is done in #strong[two distinct tiers]:
   ]
 ]
 
-#methode(title: [🧭 The Mechanical Algorithm in 4 Simple Gestures:])[1. Multiply
-the whole top number by the #strong[units] digit of the bottom number
-($146 times 3 = 438$). 2. On the line below, place a #strong[red zero]
-in the units column immediately (because we are now multiplying by
-tens!). 3. Multiply the whole top number by the #strong[tens] digit of
-the bottom number ($146 times 2 = 292$). 4. Draw a line and #strong[add
-the two tiers].
+#methode(title: [🧭 The Mechanical Algorithm in 4 Key Steps:])[
++ #strong[Ones Tier:] Multiply the entire top number by the #strong[units] digit of the bottom number ($146 times 3 = 438$).
++ #strong[The Place-Holder Zero:] On the line below, immediately write a #strong[red zero] in the units column (because we are now multiplying by tens!).
++ #strong[Tens Tier:] Multiply the entire top number by the #strong[tens] digit of the bottom number ($146 times 2 = 292$, shifted one rank left).
++ #strong[Final Sum:] Draw a line and #strong[add both tiers together] ($438 + 2 thin 920 = 3 thin 358$).
 ]
 
 
@@ -5482,17 +5485,17 @@ Let us inspect the first few whole numbers:
     align: (center,left,left,center,),
     table.header([Number], [Possible Rectangles], [Divisors], [Prime?],),
     table.hline(),
-    [1], [1 × 1], [1], [#strong[No] (only one divisor)],
-    [2], [1 × 2], [1, 2], [Yes],
-    [3], [1 × 3], [1, 3], [Yes],
-    [4], [1 × 4, 2 × 2], [1, 2, 4], [No],
-    [5], [1 × 5], [1, 5], [Yes],
-    [6], [1 × 6, 2 × 3], [1, 2, 3, 6], [No],
-    [7], [1 × 7], [1, 7], [Yes],
-    [8], [1 × 8, 2 × 4], [1, 2, 4, 8], [No],
-    [9], [1 × 9, 3 × 3], [1, 3, 9], [No],
-    [10], [1 × 10, 2 × 5], [1, 2, 5, 10], [No],
-    [11], [1 × 11], [1, 11], [Yes],
+    [1], [$1 times 1$], [1], [#strong[No] (only one divisor)],
+    [2], [$1 times 2$], [1, 2], [Yes],
+    [3], [$1 times 3$], [1, 3], [Yes],
+    [4], [$1 times 4$, $2 times 2$], [1, 2, 4], [No],
+    [5], [$1 times 5$], [1, 5], [Yes],
+    [6], [$1 times 6$, $2 times 3$], [1, 2, 3, 6], [No],
+    [7], [$1 times 7$], [1, 7], [Yes],
+    [8], [$1 times 8$, $2 times 4$], [1, 2, 4, 8], [No],
+    [9], [$1 times 9$, $3 times 3$], [1, 3, 9], [No],
+    [10], [$1 times 10$, $2 times 5$], [1, 2, 5, 10], [No],
+    [11], [$1 times 11$], [1, 11], [Yes],
   )]
   , kind: table
   )
@@ -5534,10 +5537,9 @@ factors are prime numbers: we say we have #strong[factored 60 into a
 product of prime factors].
 
 #exemple_resolu(title: [Worked Example 8 — Another Path for 60])[What if we had started
-with $60 = 4 times 15$? $4 = 2 times 2$ and $15 = 3 times 5$. We still
-obtain $60 = 2 times 2 times 3 times 5$! No matter which path you take,
-#strong[you always arrive at the exact same prime atoms] (only the order
-of factors might change). This is a profound law of arithmetic, already
+with $60 = 4 times 15$? Since $4 = 2 times 2$ and $15 = 3 times 5$, substituting each composite factor with its prime atoms gives:
+$ 60 = (2 times 2) times (3 times 5) = 2 times 2 times 3 times 5. $
+We arrive at the exact same prime factorization! No matter which decomposition path you take, #strong[you always arrive at the exact same prime atoms] (only the order of factors might change). This is a profound law of arithmetic, already
 known to the ancient Greek mathematician #strong[Euclid], which you will
 prove formally in high school.
 ]
@@ -6681,10 +6683,30 @@ size “eighth”. Therefore, they ate $5 / 8$ of the cake!
 
 $ 2 / 8 + 3 / 8 = frac(2 + 3, 8) = 5 / 8 $
 
-#exemple_resolu(title: [Solved Example — Dividing the Cake into Eighths])[- Cake cut into 8 slices:
-- Leo | Leo | Sarah | Sarah | Sarah | | | \]
-- 2/8 ---\> \<------- 3/8 -------\>
-- 5/8 ------------\>
+#exemple_resolu(title: [Solved Example — Dividing the Cake into Eighths (Singapore Bar Model)])[
+Imagine a rectangular cake sliced into #strong[8 equal parts]. Leo eats $2$ slices and Sarah eats $3$ slices:
+
+#align(center)[
+  #table(
+    columns: (1fr, 1fr, 1fr, 1fr, 1fr, 1fr, 1fr, 1fr),
+    stroke: 1pt + rgb("#64748b"),
+    align: center + horizon,
+    fill: (x, y) => if x < 2 { rgb("#dbeafe") } else if x < 5 { rgb("#fef3c7") } else { rgb("#ffffff") },
+    [#text(fill: byrne-blue, weight: "bold")[Leo]],
+    [#text(fill: byrne-blue, weight: "bold")[Leo]],
+    [#text(fill: byrne-yellow, weight: "bold")[Sarah]],
+    [#text(fill: byrne-yellow, weight: "bold")[Sarah]],
+    [#text(fill: byrne-yellow, weight: "bold")[Sarah]],
+    [#text(fill: rgb("#94a3b8"))[Left]],
+    [#text(fill: rgb("#94a3b8"))[Left]],
+    [#text(fill: rgb("#94a3b8"))[Left]],
+  )
+]
+
+- #strong[Leo's share:] $2 / 8$ ($2$ blue slices out of $8$).
+- #strong[Sarah's share:] $3 / 8$ ($3$ golden slices out of $8$).
+- #strong[Total eaten together:] $2 / 8 + 3 / 8 = frac(2 + 3, 8) = 5 / 8$ ($5$ slices eaten out of $8$).
+- #strong[Slices remaining on the tray:] $8 / 8 - 5 / 8 = 3 / 8$ ($3$ white slices left).
 ]
 
 
@@ -7485,7 +7507,7 @@ $045.20 arrow.r upright(bold(45.2))$ - $3.08 arrow.r$ #strong[no
 superfluous zeros] (the zero is trapped) -
 $7.500 arrow.r upright(bold(7.5))$ - $0.040 arrow.r upright(bold(0.04))$
 (only the final trailing zero is superfluous) -
-$120.0 arrow.r upright(bold(120))$
+$120.0 arrow.r upright(bold(120))$ (metrological note: in pure elementary arithmetic, this terminal zero is superfluous for numerical value; in physical science and experimental measurement, writing $120.0$ signifies precision to the nearest tenth with 4 significant figures).
 
 #strong[\4.] a) $5.40 > 5.19 arrow.r.double.long 5.4 > 5.19$. b)
 $8.30 = 8.3$. c) $12.08 < 12.80 arrow.r.double.long 12.08 < 12.8$. d)

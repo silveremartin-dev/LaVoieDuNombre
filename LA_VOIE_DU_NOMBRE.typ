@@ -982,14 +982,18 @@ du bon endroit :
 Trois petits écureuils ramassent des noisettes. Noisette l'écureuil en a
 trouvé 3, Panache en a trouvé 5, et Châtaigne en a trouvé 3. Qui en a
 autant que qui ? #emph[Résolution pas à pas :] 1. Comparons Noisette (3
-noisettes) et Châtaigne (3 noisettes). Faisons la correspondance terme à
-terme :
+noisettes) et Châtaigne (3 noisettes). Faisons la correspondance terme à terme en alignant chaque noisette face à face :
 
-- 1re noisette de Noisette $arrow.l.r$ 1re noisette de Châtaigne
-
-- 2e noisette $arrow.l.r$ 2e noisette
-
-- 3e noisette $arrow.l.r$ 3e noisette
+#align(center)[
+  #table(
+    columns: (auto, auto, auto),
+    stroke: none,
+    align: (right + horizon, center + horizon, left + horizon),
+    [1#super[re] noisette de Noisette], [#text(fill: byrne-blue)[$arrow.l.r$]], [1#super[re] noisette de Châtaigne],
+    [2#super[e] noisette de Noisette], [#text(fill: byrne-blue)[$arrow.l.r$]], [2#super[e] noisette de Châtaigne],
+    [3#super[e] noisette de Noisette], [#text(fill: byrne-blue)[$arrow.l.r$]], [3#super[e] noisette de Châtaigne],
+  )
+]
 
 #block[
 #set enum(numbering: "1.", start: 2)
@@ -2304,8 +2308,8 @@ manque-t-il ? »)
  #emph[Énoncé :] Un album d'images compte 20 pages. Tom
 a déjà rempli 14 pages d'autocollants. Combien de pages doit-il encore
 remplir pour finir son album ? #emph[Question magique :] Combien
-manque-t-il pour aller de 14 jusqu'à 20 ? C'est une addition à trou :
-$14 + dots.h = 20$. On cherche la différence : $ 20 - 14 = 6 $
+manque-t-il pour aller de 14 jusqu'à 20 ? C'est une addition à trou (avec une case vide à remplir) :
+$14 + square = 20$. On cherche la différence : $ 20 - 14 = 6 $
 #emph[Phrase réponse :] Il manque #strong[6 pages] à Tom pour terminer
 son album.
 ]
@@ -3868,14 +3872,11 @@ Ce calcul se fait en #strong[deux étages] bien rangés :
   ]
 ]
 
-#methode(title: [🧭 L'Algorithme Mécanique en 4 Gestes Simples :])[
- 1. Multiplier
-tout le nombre du haut par le chiffre des #strong[unités] du bas
-($146 times 3 = 438$). 2. À la ligne du dessous, poser immédiatement un
-#strong[zéro rouge] dans la colonne des unités (car on passe aux
-dizaines !). 3. Multiplier tout le nombre du haut par le chiffre des
-#strong[dizaines] du bas ($146 times 2 = 292$). 4. Tracer un trait et
-#strong[additionner les deux étages].
+#methode(title: [🧭 L'Algorithme Mécanique en 4 Gestes Clés :])[
++ #strong[Étage des unités :] Multiplier tout le nombre du haut par le chiffre des #strong[unités] du bas ($146 times 3 = 438$).
++ #strong[Le zéro décalogue :] À la ligne du dessous, poser immédiatement un #strong[zéro rouge] dans la colonne des unités (car on passe aux dizaines !).
++ #strong[Étage des dizaines :] Multiplier tout le nombre du haut par le chiffre des #strong[dizaines] du bas ($146 times 2 = 292$, décalé d'un rang).
++ #strong[Somme finale :] Tracer un trait et #strong[additionner les deux étages] ($438 + 2 thin 920 = 3 thin 358$).
 ]
 
 #divider()
@@ -5966,17 +5967,17 @@ Faisons l'inventaire des premiers nombres :
     table.header([Nombre], [Rectangles possibles], [Diviseurs], [Premier
       ?],),
     table.hline(),
-    [1], [1 × 1], [1], [#strong[Non] (un seul diviseur)],
-    [2], [1 × 2], [1, 2], [Oui],
-    [3], [1 × 3], [1, 3], [Oui],
-    [4], [1 × 4, 2 × 2], [1, 2, 4], [Non],
-    [5], [1 × 5], [1, 5], [Oui],
-    [6], [1 × 6, 2 × 3], [1, 2, 3, 6], [Non],
-    [7], [1 × 7], [1, 7], [Oui],
-    [8], [1 × 8, 2 × 4], [1, 2, 4, 8], [Non],
-    [9], [1 × 9, 3 × 3], [1, 3, 9], [Non],
-    [10], [1 × 10, 2 × 5], [1, 2, 5, 10], [Non],
-    [11], [1 × 11], [1, 11], [Oui],
+    [1], [$1 times 1$], [1], [#strong[Non] (un seul diviseur)],
+    [2], [$1 times 2$], [1, 2], [Oui],
+    [3], [$1 times 3$], [1, 3], [Oui],
+    [4], [$1 times 4$, $2 times 2$], [1, 2, 4], [Non],
+    [5], [$1 times 5$], [1, 5], [Oui],
+    [6], [$1 times 6$, $2 times 3$], [1, 2, 3, 6], [Non],
+    [7], [$1 times 7$], [1, 7], [Oui],
+    [8], [$1 times 8$, $2 times 4$], [1, 2, 4, 8], [Non],
+    [9], [$1 times 9$, $3 times 3$], [1, 3, 9], [Non],
+    [10], [$1 times 10$, $2 times 5$], [1, 2, 5, 10], [Non],
+    [11], [$1 times 11$], [1, 11], [Oui],
   )]
   , kind: table
   )
@@ -6026,10 +6027,9 @@ produit de facteurs premiers].
 #strong[Exemple résolu 8 --- Un autre chemin pour 60
 ]
  Et si on avait
-commencé par $60 = 4 times 15$ ? $4 = 2 times 2$ et $15 = 3 times 5$. On
-trouve encore $60 = 2 times 2 times 3 times 5$ ! Quel que soit le
-chemin, #strong[on arrive toujours aux mêmes atomes] (seul l'ordre peut
-changer). C'est une loi très profonde des nombres, que le Grec
+commencé par $60 = 4 times 15$ ? Or $4 = 2 times 2$ et $15 = 3 times 5$. En remplaçant chaque facteur par sa décomposition en nombres premiers, on obtient :
+$ 60 = (2 times 2) times (3 times 5) = 2 times 2 times 3 times 5 . $
+On retrouve rigoureusement le même produit ! Quel que soit le chemin de décomposition emprunté, #strong[on arrive toujours aux mêmes atomes premiers] (seul l'ordre des facteurs peut changer). C'est une loi très profonde des nombres, que le Grec
 #strong[Euclide] connaissait déjà et que tu démontreras au lycée.
 ]
 
@@ -7228,14 +7228,32 @@ taille « huitième ». Ils ont donc mangé $5 / 8$ du gâteau !
 $ 2 / 8 + 3 / 8 = frac(2 + 3, 8) = 5 / 8 $
 
 #exemple_resolu(title: [Exemple Résolu Pas à Pas])[
-#strong[Exemple résolu --- Partage du Gâteau en Huitièmes
+#strong[Exemple résolu --- Partage du Gâteau en Huitièmes (Modèle en barres de Singapour)
 ]
 
+Imagine un gâteau rectangulaire découpé en #strong[8 parts égales]. Léo en mange $2$ parts et Sarah en mange $3$ parts :
 
-- Gâteau en 8 parts :
-- Léo | Léo | Sarah | Sarah | Sarah | | | \]
-- 2/8 ---\> \<------- 3/8 -------\>
-- 5/8 ------------\>
+#align(center)[
+  #table(
+    columns: (1fr, 1fr, 1fr, 1fr, 1fr, 1fr, 1fr, 1fr),
+    stroke: 1pt + rgb("#64748b"),
+    align: center + horizon,
+    fill: (x, y) => if x < 2 { rgb("#dbeafe") } else if x < 5 { rgb("#fef3c7") } else { rgb("#ffffff") },
+    [#text(fill: byrne-blue, weight: "bold")[Léo]],
+    [#text(fill: byrne-blue, weight: "bold")[Léo]],
+    [#text(fill: byrne-yellow, weight: "bold")[Sarah]],
+    [#text(fill: byrne-yellow, weight: "bold")[Sarah]],
+    [#text(fill: byrne-yellow, weight: "bold")[Sarah]],
+    [#text(fill: rgb("#94a3b8"))[Reste]],
+    [#text(fill: rgb("#94a3b8"))[Reste]],
+    [#text(fill: rgb("#94a3b8"))[Reste]],
+  )
+]
+
+- #strong[Part de Léo :] $2 / 8$ ($2$ parts bleues sur $8$).
+- #strong[Part de Sarah :] $3 / 8$ ($3$ parts dorées sur $8$).
+- #strong[Total consommé ensemble :] $2 / 8 + 3 / 8 = frac(2 + 3, 8) = 5 / 8$ ($5$ parts mangées sur $8$).
+- #strong[Ce qu'il reste sur le plat :] $8 / 8 - 5 / 8 = 3 / 8$ ($3$ parts blanches restantes).
 ]
 
 #principe(title: [📐 Règle — Addition et soustraction de même dénominateur])[
@@ -8081,7 +8099,7 @@ $2\,456$. #strong[\2.] a) Dizaines : #strong[8] \; b) Dixièmes :
 #strong[aucun zéro inutile] (le 0 est coincé) -
 $7\,500 arrow.r upright(bold(7\,5))$ -
 $0\,040 arrow.r upright(bold(0\,04))$ (seul le dernier 0 est inutile) -
-$120\,0 arrow.r upright(bold(120))$
+$120\,0 arrow.r upright(bold(120))$ (remarque de rigueur métrologique : en écriture arithmétique de base de l'école primaire, ce zéro final n'affecte pas la valeur numérique ; en sciences physiques et expérimentales, écrire $120{,}0$ n'est pas redondant car cela exprime une mesure précise au dixième d'unité près avec 4 chiffres significatifs).
 
 #strong[\4.] a) $5\,40 > 5\,19$ donc $5\,4 > 5\,19$. b) $8\,30 = 8\,3$.
 c) $12\,08 < 12\,80$ donc $12\,08 < 12\,8$. d) $0\,750 > 0\,705$ donc
