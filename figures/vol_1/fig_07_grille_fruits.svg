@@ -12,9 +12,21 @@
     <line x1="140" y1="0" x2="140" y2="90" stroke="#cbd5e1" stroke-width="1.5"/>
     <line x1="20" y1="45" x2="200" y2="45" stroke="#cbd5e1" stroke-width="1.5"/>
     
-    <text x="110" y="32" font-size="20" text-anchor="middle">🍎</text>
-    <text x="50" y="77" font-size="20" text-anchor="middle">🍌</text>
-    <text x="170" y="77" font-size="20" text-anchor="middle">🍇</text>
+    <!-- Pomme (B, 2) -->
+    <g transform="translate(110, 22)">
+      <circle cx="0" cy="0" r="14" fill="#fee2e2" stroke="#b91c1c" stroke-width="1.5"/>
+      <text x="0" y="4" font-family="Liberation Sans, sans-serif" font-size="9" font-weight="bold" fill="#b91c1c" text-anchor="middle">Pomme</text>
+    </g>
+    <!-- Banane (A, 1) -->
+    <g transform="translate(50, 67)">
+      <circle cx="0" cy="0" r="14" fill="#fef3c7" stroke="#d97706" stroke-width="1.5"/>
+      <text x="0" y="4" font-family="Liberation Sans, sans-serif" font-size="9" font-weight="bold" fill="#d97706" text-anchor="middle">Banane</text>
+    </g>
+    <!-- Raisin (C, 1) -->
+    <g transform="translate(170, 67)">
+      <circle cx="0" cy="0" r="14" fill="#f3e8ff" stroke="#7e22ce" stroke-width="1.5"/>
+      <text x="0" y="4" font-family="Liberation Sans, sans-serif" font-size="9" font-weight="bold" fill="#7e22ce" text-anchor="middle">Raisin</text>
+    </g>
   </g>
   <g transform="translate(280, 50)" font-family="Liberation Sans" font-size="12">
     <text x="0" y="15" fill="#b91c1c" font-weight="bold">🍎 Pomme : (B, 2)</text>

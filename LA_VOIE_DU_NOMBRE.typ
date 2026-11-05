@@ -1178,9 +1178,9 @@ porte. Que va-t-il se passer à la fin pour le berger ?
 
 #strong[Exercice 1.13] Les dominos menteurs. Observe ces trois dominos :
 
-- Domino 1 : `[ • • | • • • ]`
-- Domino 2 : `[ • • • • | • ]`
-- Domino 3 : `[ • • • | • • • ]`
+- Domino 1 : #box[`[ • • | • • • ]`]
+- Domino 2 : #box[`[ • • • • | • ]`]
+- Domino 3 : #box[`[ • • • | • • • ]`]
 
 Deux de ces dominos portent au total exactement le même nombre de
 points. Lesquels ?
@@ -3348,7 +3348,7 @@ pour casser une dizaine alors que le chiffre des unités est un zéro.
 
 Combien de passagers restent dans le bus après le deuxième arrêt ?
 
-#strong[Exercice 4.15] Le défi du boulier géant. À l'aide des chiffres #strong[2], #strong[5] et #strong[8], forme deux nombres à deux chiffres distincts (sans répéter le même chiffre dans un nombre) pour obtenir la somme la plus grande possible. Calcule ensuite cette somme.
+#strong[Exercice 4.15] Le défi du boulier géant. En choisissant les chiffres de chaque nombre parmi #strong[2], #strong[5] et #strong[8] (sans répéter le même chiffre au sein d'un même nombre), forme deux nombres à deux chiffres pour obtenir la somme la plus grande possible. Calcule ensuite cette somme.
 
 #divider()
 
@@ -4713,10 +4713,11 @@ $2 upright(" €")$ à la boulangère. Combien d'argent doit-elle te rendre
 <exercices-5>
 ==== Niveau  (Je m'entraîne et j'applique)
 <niveau-je-mentraîne-et-japplique-5>
-#strong[Exercice 6.1] Choisis la bonne unité ($c m$ ou $m$) : 1. La
-longueur d'une coccinelle : 7 $dots.h$ 2. La hauteur de la porte du
-salon : 2 $dots.h$ 3. La longueur d'un stylo à bille : 15 $dots.h$ 4. La
-longueur de la cour de récréation : 30 $dots.h$
+#strong[Exercice 6.1] Choisis la bonne unité ($m m$, $c m$ ou $m$) :
+1. La longueur d'une coccinelle : 7 $dots.h$
+2. La hauteur de la porte du salon : 2 $dots.h$
+3. La longueur d'un stylo à bille : 15 $dots.h$
+4. La longueur de la cour de récréation : 30 $dots.h$
 
 #strong[Exercice 6.2] Conversions simples. Complète les pointillés :
 
@@ -4821,7 +4822,7 @@ possède-t-il ?
 
 === Solutions
 <solutions-5>
-#strong[Solution 6.1] 1. Longueur d'une coccinelle : 7 #strong[$c m$]. 2.
+#strong[Solution 6.1] 1. Longueur d'une coccinelle : 7 #strong[$m m$] (un insecte se mesure en millimètres !). 2.
 Hauteur de la porte : 2 #strong[$m$]. 3. Longueur d'un stylo : 15
 #strong[$c m$]. 4. Cour de récréation : 30 #strong[$m$].
 
@@ -5359,11 +5360,11 @@ de $12 upright(" cm")$. Quel est son rayon ?
 #cas_limite(title: [🛠️ Application Pratique — Chasse aux Trésors sur Quadrillage])[
 #align(center)[
 #table(
-  columns: (35pt, 45pt, 45pt, 45pt),
+  columns: (35pt, 65pt, 65pt, 65pt),
   align: center + horizon,
   [], [*A*], [*B*], [*C*],
-  [*2*], [], [🍎], [],
-  [*1*], [🍌], [], [🍇]
+  [*2*], [], [#block(fill: rgb("#fee2e2"), inset: (x: 4pt, y: 3pt), radius: 4pt)[#text(fill: rgb("#b91c1c"), weight: "bold")[Pomme]]], [],
+  [*1*], [#block(fill: rgb("#fef3c7"), inset: (x: 4pt, y: 3pt), radius: 4pt)[#text(fill: rgb("#d97706"), weight: "bold")[Banane]]], [], [#block(fill: rgb("#f3e8ff"), inset: (x: 4pt, y: 3pt), radius: 4pt)[#text(fill: rgb("#7e22ce"), weight: "bold")[Raisin]]]
 )
 ]
 ]
@@ -9908,7 +9909,7 @@ $10 upright(" m (au-dessus de l’eau)") + 45 upright(" m (sous l’eau)") = upr
   #set enum(numbering: "a)", start: 1)
   + À quel âge Socrate est-il mort ?
   + Qui est né en premier : Socrate ou Euclide ?
-  + Combien d'années séparent la naissance de Socrate de l'an 0 ?
+  + En mathématiques, on pose conventionnellement l'origine temporelle à 0. Combien d'années séparent la naissance de Socrate de cette origine 0 ? (Remarque : dans le calendrier civil des historiens, l'an 0 n'existe pas, on passe directement de l'an 1 avant notre ère à l'an 1 de notre ère !).
   ]
 
 + #emph[Le jeu des deux dés rouge et vert :] On lance deux dés spéciaux
@@ -9991,8 +9992,8 @@ banque).
 #strong[\13.] a) De $- 470$ à $- 399$ :
 $\(- 399\)-\(- 470\)= 470 - 399 = upright(bold(71 upright(" ans")))$.
 Socrate est mort à 71 ans. b) C'est #strong[Socrate] qui est né en
-premier ($- 470$ est plus ancien que $- 325$). c) Il y a exactement
-#strong[$470 upright(" ans")$] entre la naissance de Socrate et l'an 0.
+premier ($- 470$ est plus ancien que $- 325$). c) Sur la droite graduée, la distance entre $- 470$ et l'origine $0$ est $|- 470 - 0| =$
+#strong[$470 upright(" ans")$]. (Historiquement, l'an 0 n'existe pas dans le calendrier civil : on saute directement de l'an 1 av. J.-C. à l'an 1 ap. J.-C. ; mais sur l'axe arithmétique continu des mathématiciens et des astronomes, l'écart jusqu'au point zéro vaut bien 470 unités).
 
 #strong[\14.] - Score : $\(+ 3\)+\(- 5\)= upright(bold(- 2))$. - Pour
 faire un score de 0, il faut que le dé vert et le dé rouge affichent

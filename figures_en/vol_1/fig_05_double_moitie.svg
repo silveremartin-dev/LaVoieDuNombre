@@ -27,7 +27,8 @@
     <circle cx="45" cy="42" r="8" fill="#15803d"/>
     <circle cx="65" cy="42" r="8" fill="#15803d"/>
     <line x1="80" y1="20" x2="80" y2="65" stroke="#b91c1c" stroke-width="2" stroke-dasharray="3"/>
-    <text x="105" y="47" font-family="Liberation Sans" font-size="12" fill="#64748b">(share)</text>
+    <text x="105" y="41" font-family="Liberation Sans, sans-serif" font-size="10" font-weight="bold" fill="#64748b" text-anchor="middle">shared</text>
+    <text x="105" y="53" font-family="Liberation Sans, sans-serif" font-size="10" font-weight="bold" fill="#64748b" text-anchor="middle">in two</text>
     <text x="65" y="95" font-family="Liberation Sans, sans-serif" font-size="12" font-weight="bold" fill="#15803d" text-anchor="middle">Half of 6 = 3</text>
   </g>
   <text x="270" y="145" font-family="Liberation Sans, sans-serif" font-size="12" fill="#475569" text-anchor="middle">Doubling and halving are inverse operations</text>

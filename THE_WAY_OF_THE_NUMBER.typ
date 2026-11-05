@@ -1107,9 +1107,9 @@ enters?
 #strong[Exercise 1.13] The deceptive dominoes. Look at these three
 dominoes:
 
-- Domino 1: `[ • • | • • • ]`
-- Domino 2: `[ • • • • | • ]`
-- Domino 3: `[ • • • | • • • ]`
+- Domino 1: #box[`[ • • | • • • ]`]
+- Domino 2: #box[`[ • • • • | • ]`]
+- Domino 3: #box[`[ • • • | • • • ]`]
 
 Two of these dominoes carry the exact same total number of dots. Which
 ones?
@@ -3109,7 +3109,7 @@ $ 80 - 36 $ Explain how you borrow a ten when the ones digit is zero.
 
 How many passengers remain on the bus after stop 2?
 
-#strong[Exercise 4.15] Giant abacus challenge. Using digits #strong[2], #strong[5], and #strong[8], form two distinct two-digit numbers (without repeating digits within a number) to obtain the largest possible sum. Compute that sum.
+#strong[Exercise 4.15] Giant abacus challenge. By choosing the digits of each number from #strong[2], #strong[5], and #strong[8] (without repeating the same digit within a single number), form two two-digit numbers to obtain the largest possible sum. Compute that sum.
 
 #divider()
 
@@ -4344,10 +4344,11 @@ Convert to cents:
 <exercises-1>
 ==== Level  (Practice and Apply)
 <level-practice-and-apply-1>
-#strong[Exercise 6.1] Choose the correct unit ($c m$ or $m$): 1. Length
-of a ladybug: 7 $dots.h$ 2. Height of a living room door: 2 $dots.h$ 3.
-Length of a ballpoint pen: 15 $dots.h$ 4. Length of the school
-playground: 30 $dots.h$
+#strong[Exercise 6.1] Choose the correct unit ($m m$, $c m$, or $m$):
+1. Length of a ladybug: 7 $dots.h$
+2. Height of a living room door: 2 $dots.h$
+3. Length of a ballpoint pen: 15 $dots.h$
+4. Length of the school playground: 30 $dots.h$
 
 #strong[Exercise 6.2] Basic Conversions. Fill in the blanks:
 
@@ -4439,7 +4440,7 @@ liters] of water to bring back to the village?
 
 === Solutions
 <solutions-5>
-#strong[Solution 6.1] 1. Ladybug: 7 #strong[$c m$]. 2. Door height: 2
+#strong[Solution 6.1] 1. Ladybug: 7 #strong[$m m$] (an insect is measured in millimeters!). 2. Door height: 2
 #strong[$m$]. 3. Pen length: 15 #strong[$c m$]. 4. Playground: 30
 #strong[$m$].
 
@@ -4924,11 +4925,11 @@ $12 upright(" cm")$. What is its radius?
 #exemple_resolu(title: [Practical Application — Grid Treasure Hunt])[
 #align(center)[
 #table(
-  columns: (35pt, 45pt, 45pt, 45pt),
+  columns: (35pt, 65pt, 65pt, 65pt),
   align: center + horizon,
   [], [*A*], [*B*], [*C*],
-  [*2*], [], [🍎], [],
-  [*1*], [🍌], [], [🍇]
+  [*2*], [], [#block(fill: rgb("#fee2e2"), inset: (x: 4pt, y: 3pt), radius: 4pt)[#text(fill: rgb("#b91c1c"), weight: "bold")[Apple]]], [],
+  [*1*], [#block(fill: rgb("#fef3c7"), inset: (x: 4pt, y: 3pt), radius: 4pt)[#text(fill: rgb("#d97706"), weight: "bold")[Banana]]], [], [#block(fill: rgb("#f3e8ff"), inset: (x: 4pt, y: 3pt), radius: 4pt)[#text(fill: rgb("#7e22ce"), weight: "bold")[Grapes]]]
 )
 ]
 ]
@@ -9234,7 +9235,7 @@ $10 upright(" m (above water)") + 45 upright(" m (underwater)") = upright(bold(5
   #set enum(numbering: "a)", start: 1)
   + At what age did Socrates die?
   + Who was born first: Socrates or Euclid?
-  + How many years elapsed between the birth of Socrates and year 0?
+  + On the mathematical timeline, the origin is set at 0. How many years separate Socrates' birth from this origin 0? (Historical note: in the civil calendar, year 0 does not exist; dates skip directly from 1 BC to AD 1!).
   ]
 
 + #emph[The Game of Red and Green Dice:] Two special dice are rolled:
@@ -9314,9 +9315,8 @@ by $\$50$).
 #strong[\13.] a) From $- 470$ to $- 399$:
 $\(- 399\)-\(- 470\)= 470 - 399 = upright(bold(71 upright(" years old")))$.
 Socrates died at age 71. b) #strong[Socrates] was born first ($- 470$ is
-further back in time than $- 325$). c) Exactly
-#strong[$470 upright(" years")$] elapsed between Socrates' birth and
-year 0.
+further back in time than $- 325$). c) On the number line, the distance from $- 470$ to origin $0$ is $|- 470 - 0| =$
+#strong[$470 upright(" years")$]. (In historical civil calendars, year 0 does not exist as historians jump directly from 1 BC to AD 1; however, on the continuous coordinate axis of mathematicians and astronomers, the distance to zero is exactly 470 units).
 
 #strong[\14.] - Score: $\(+ 3\)+\(- 5\)= upright(bold(- 2))$. - To score
 0, the green die and red die must show identical numbers (for instance
