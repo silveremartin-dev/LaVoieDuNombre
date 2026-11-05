@@ -3720,6 +3720,13 @@ Rappelons notre tableau de maisons :
 ]
 
 
+#principe(title: [💡 Comprendre le glissement décimal : déplacement des chiffres vs déplacement de la virgule])[
+Ne confondez jamais le mouvement des chiffres et celui de la virgule :
+- Dans un #strong[tableau de numération aux colonnes fixes] (Unités, Dizaines, Centaines), multiplier par 10 grandit chaque groupement : les chiffres glissent d'une colonne vers la #strong[gauche] ($4$ unités deviennent $4$ dizaines).
+- Sur une feuille d'écriture décimale en ligne ($3{,}45$), où les chiffres restent fixes sur la ligne, c'est la virgule qui semble reculer d'un cran vers la #strong[droite] ($3{,}45 times 10 = 34{,}5$).
+Ces deux descriptions expriment exactement la même réalité : le nombre devient dix fois plus grand !
+]
+
 - Multiplier par #strong[10] : chaque unité devient une dizaine. Le
   nombre glisse d'#strong[une case vers la gauche], et on ajoute un
   #strong[0] à droite.
@@ -5538,8 +5545,7 @@ reste toujours une pierre solitaire au fond du panier ! Et quand une
 maman doit partager une unique galette de pain entre 3 enfants affamés,
 il faut briser la pierre et inventer des nombres qui se cassent…
 
-Prépare-toi à entrer dans #strong[l'Âge du Marché et des Partages] avec
-le #strong[Volume II : Les Pierres Rebelles et les Nombres Solitaires] !
+Prépare-toi à entrer dans le #strong[Volume II : Le Secret du Partage et les Grandeurs du Monde] !
 
 #divider()
 
@@ -7469,8 +7475,7 @@ parts].
 #strong[\11.] a) #strong[Faux], car $3 < 5$ avec le même dénominateur,
 donc $3 / 4 < 5 / 4$. b) #strong[Vrai], car
 $frac(2 times 3, 3 times 3) = 6 / 9$. c) #strong[Vrai], car
-$frac(1 + 1, 2) = 2 / 2 = 1$. d) #strong[Faux], on n'additionne pas les
-dénominateurs ! $3 / 5 + 1 / 5 = 4 / 5$, pas $4 / 10$.
+$frac(1 + 1, 2) = 2 / 2 = 1$. d) #strong[Faux], on n'additionne pas les dénominateurs ! $3 / 5 + 1 / 5 = 4 / 5$, et non $4 / 10$. Remarque de bon sens physique : $4 / 10 = 2 / 5 < 3 / 5$. Ajouter un cinquième à trois cinquièmes ne peut évidemment pas donner une part plus petite que celle dont on est parti !
 
 #strong[\12.] - Manon : $1 / 2$ de 24 carrés = $24 div 2 =$ #strong[12
 carrés]. - Arthur : 1 huitième vaut $24 div 8 = 3$ carrés. Donc 3
@@ -8347,15 +8352,18 @@ quotidienne, on parle plutôt de mètre cube).]
   align(center)[#table(
     columns: (10%, 10%, 10%, 10%, 10%, 10%, 10%, 10%, 10%, 10%),
     align: (center,center,center,center,center,center,center,center,center,center,),
-    table.header([Tonne ($t$)], [Quintal ($q$)], [-], [Kilogramme
+    table.header([Tonne ($t$)], [Quintal ($q$)], [- (\*)], [Kilogramme
       ($k g$)], [Hectogramme ($h g$)], [Décagramme ($d a g$)], [Gramme
       ($g$)], [Décigramme ($d g$)], [Centigramme ($c g$)], [Milligramme
       ($m g$)],),
     table.hline(),
-    [$1 thin 000 upright(" kg")$], [$100 upright(" kg")$], [], [#strong[$1 upright(" kg")$]], [$100 upright(" g")$], [$10 upright(" g")$], [#strong[$1 upright(" g")$]], [$0\,1 upright(" g")$], [$0\,01 upright(" g")$], [$0\,001 upright(" g")$],
+    [$1 thin 000 upright(" kg")$], [$100 upright(" kg")$], [$10 upright(" kg")$], [#strong[$1 upright(" kg")$]], [$100 upright(" g")$], [$10 upright(" g")$], [#strong[$1 upright(" g")$]], [$0\,1 upright(" g")$], [$0\,01 upright(" g")$], [$0\,001 upright(" g")$],
   )]
   , kind: table
   )
+
+#decouvre(title: [💡 La colonne sans nom officiel — La dizaine de kilogrammes])[
+(\*) La colonne sans nom officiel entre le quintal ($100 upright(" kg")$) et le kilogramme ($1 upright(" kg")$) correspond à la #strong[dizaine de kilogrammes] ($10 upright(" kg")$, autrefois appelée _myriagramme_). Même si elle ne porte plus de nom d'usage courant aujourd'hui, elle représente une colonne à part entière : lors d'une conversion, il faut impérativement y inscrire un chiffre (souvent un zéro) !]
 
 #alerte(title: [Attention au Piège !])[
 #strong[⚠️ Attention, piège ! --- La règle du tableau de conversion
@@ -8822,8 +8830,13 @@ dévoiler toutes les autres. C'est l'art secret de la proportionnalité.
 <le-problème-le-festin-danniversaire-et-le-gâteau-pour-4>
 C'est bientôt l'anniversaire de Thomas. Pour régaler ses amis, sa
 grand-mère sort son précieux carnet de cuisine taché de chocolat et
-corné par les années. Elle trouve sa célèbre recette du fondant aux
-poires :
+corné par les années. Elle trouve sa célèbre recette du #strong[fondant aux poires pour 4 personnes] :
+- $200 upright(" g")$ de bon chocolat noir ;
+- $3$ belles poires mûres ;
+- $4$ œufs frais ;
+- $100 upright(" g")$ de sucre de canne ;
+- $80 upright(" g")$ de beurre doux ;
+- $50 upright(" g")$ de farine.
 
 #figure(image("figures/vol_2/fig_13_regle_trois.svg", alt: "Le tableau de proportionnalité et la règle de trois"),
   caption: [
@@ -9033,6 +9046,17 @@ divise par le troisième nombre restant ! C'est ce qu'on appelle aussi le
 
 === 5. Deux applications royales : vitesse et échelles
 <deux-applications-royales-vitesse-et-échelles>
+#alerte(title: [⚠️ Le piège universel du collège — La vitesse moyenne n'est PAS la moyenne des vitesses !])[
+Voici le piège classique par excellence :
+Si un automobiliste effectue un trajet aller-retour sur la même distance $d = 120 upright(" km")$ :
+- À l'aller, il roule à $60 upright(" km/h")$ : durée $t_1 = 120 / 60 = 2 upright(" h")$.
+- Au retour, il roule à $40 upright(" km/h")$ : durée $t_2 = 120 / 40 = 3 upright(" h")$.
+La distance totale parcourue est $2 times 120 = 240 upright(" km")$ pour un temps total de $2 + 3 = 5 upright(" h")$.
+La vitesse moyenne réelle sur l'ensemble du voyage est donc :
+$ v_m = frac(240 upright(" km"), 5 upright(" h")) = 48 upright(" km/h") quad upright(bold("(et absolument pas 50 km/h !)")) $
+Pourquoi ? Parce qu'on passe #strong[plus de temps] à rouler à faible vitesse ($3 upright(" h")$) qu'à vive allure ($2 upright(" h")$). La vitesse moyenne globale est une #strong[moyenne harmonique pondérée par le temps], jamais une simple moyenne arithmétique !
+]
+
 ==== 1. Rouler à vitesse constante : les kilomètres par heure ($k m\/h$)
 <rouler-à-vitesse-constante-les-kilomètres-par-heure-kmh>
 Quand un train ou une voiture roule à une vitesse constante de
@@ -13307,9 +13331,7 @@ raisonnement pas à pas :
 #methode(title: [✍️ Démonstration — Irrationalité de $sqrt(2)$])[
 + #strong[L'hypothèse absurde :] Supposons le contraire de ce que l'on
   veut prouver : imaginons qu'il existe une fraction d'entiers $p / q$
-  égale à $sqrt(2)$. On choisit cette fraction #strong[irréductible]
-  (simplifiée au maximum : $p$ et $q$ ne peuvent pas être tous les deux
-  pairs, sinon on aurait déjà divisé par 2).
+  égale à $sqrt(2)$. On choisit cette fraction #strong[irréductible] (avec $p$ et $q$ premiers entre eux, c'est-à-dire sans aucun facteur commun autre que 1 : ils ne peuvent donc en aucun cas être tous les deux pairs).
 
 + #strong[Élevons au carré :]
   $ sqrt(2) = p / q arrow.r.double.long 2 = p^2 / q^2 arrow.r.double.long p^2 = 2 times q^2 $
@@ -16772,6 +16794,11 @@ $- 5^compose upright("C")$. Sur la droite graduée, $- 2$ est situé
   ]
 )
 
+#alerte(title: [⚠️ Rupture du modèle physique : pourquoi la balance à plateaux s'arrête ici !])[
+L'analogie de la balance à deux plateaux (qui fonctionne si bien pour les équations et les additions/soustractions d'inégalités) devient totalement inopérante pour la multiplication par un nombre négatif : on ne peut pas poser physiquement « $-2$ masses » sur un plateau mécanique pour voir son inclinaison s'inverser !
+Ici, le modèle mécanique cède la place à la géométrie rigoureuse de la droite graduée (Chapitre 14) : multiplier par un nombre négatif correspond exactement à un #strong[demi-tour de 180° (symétrie centrale autour de l'origine 0)] combiné à un agrandissement. Ce retournement géométrique de l'espace inverse naturellement l'ordre des grandeurs !
+]
+
 #principe(title: [📐 Règle fondamentale 3 — Multiplication et division par un nombre NÉGATIF ($c < 0$).])[
  #strong[Quand on multiplie ou que l'on divise
 les deux membres d'une inégalité par un nombre STRICTEMENT NÉGATIF, ON
@@ -17846,6 +17873,14 @@ calculs interminable, utilise la règle des marches d'escalier :
 Si une droite passe par deux points connus $A\(x_A thick\;thick y_A\)$
 et $B\(x_B thick\;thick y_B\)$ (avec $x_A eq.not x_B$), son coefficient
 directeur se calcule par le rapport fondamental :
+
+#alerte(title: [⚠️ Condition impérative d'existence de la pente et droites verticales])[
+La formule de calcul du coefficient directeur $a = frac(y_B - y_A, x_B - x_A)$ exige impérativement #strong[$x_B eq.not x_A$] (le dénominateur ne peut jamais s'annuler) !
+Lorsque deux points ont la même abscisse ($x_A = x_B = c$), ils sont superposés à la verticale :
+- La droite a pour équation cartésienne $x = c$.
+- Sa pente est « infinie » (indéfinie dans $bb(R)$).
+- #strong[Une droite verticale ne représente jamais une fonction], car une même entrée $x = c$ posséderait une infinité d'images différentes !
+]
 
 $ a = upright("Variation verticale") / upright("Variation horizontale") = frac(y_B - y_A, x_B - x_A) = frac(Delta y, Delta x) . $
 
@@ -20760,6 +20795,12 @@ cinq cent mille fois ! C'est une perte de temps absurde. Heureusement,
 Euclide a eu une idée de génie.
 ]
 
+#principe(title: [📐 Théorème d'invariance fondamentale d'Euclide])[
+Pour tous entiers naturels $a$ et $b$ non nuls vérifiant la division euclidienne $a = b q + r$, on a rigoureusement :
+$ upright("PGCD")(a, b) = upright("PGCD")(b, r) = upright("PGCD")(b, a med(mod med b)) . $
+C'est cette invariance mathématique absolue à chaque étape qui distingue l'algorithme d'Euclide d'une simple division : chaque reste hérite exactement du plus grand diviseur commun, jusqu'au dernier reste non nul qui est le PGCD !
+]
+
 ==== 6.2 L'algorithme d'Euclide (divisions successives)
 <lalgorithme-deuclide-divisions-successives>
 Au lieu de soustraire $b$ un par un, pourquoi ne pas soustraire d'un
@@ -23174,6 +23215,13 @@ milieu.
 
 === 3. Les opérations sur les vecteurs
 <les-opérations-sur-les-vecteurs>
+#alerte(title: [⚠️ Rigueur de notation — Norme scalaire vs Vecteur orienté])[
+Ne confondez jamais le vecteur $arrow(u)$ ou $accent(A B, ⃗)$ et sa norme $\|arrow(u)\|$ ou $A B$ :
+- Un vecteur est un #strong[déplacement orienté] (direction, sens, longueur).
+- Sa norme $\|arrow(u)\|$ est un simple nombre réel positif mesurant sa longueur en mètres ou centimètres.
+La célèbre relation de Chasles $accent(A B, ⃗) + accent(B C, ⃗) = accent(A C, ⃗)$ est toujours vraie pour les vecteurs. En revanche, l'égalité des longueurs $A B + B C = A C$ n'est vraie #strong[que si les points sont alignés dans cet ordre] ; dans tous les autres cas, l'inégalité triangulaire impose $A C < A B + B C$ !
+]
+
 ==== 3.1 La relation de Chasles : le relais des coursiers
 <la-relation-de-chasles-le-relais-des-coursiers>
 Comment additionner deux déplacements successifs ? Imagine un message
@@ -24760,6 +24808,13 @@ mathématiciens appellent une #strong[Fonction].
 
 === 2. Anatomie d'une fonction : vocabulaire et ensemble de définition
 <anatomie-dune-fonction-vocabulaire-et-ensemble-de-définition>
+#principe(title: [📐 Rigueur de vocabulaire — Fonction, variable et image])[
+Bannissez l'abus de langage « la fonction $f(x)$ » ! Il faut rigoureusement distinguer trois concepts mathématiques distincts :
+1. La #strong[fonction $f$] : c'est l'application globale, la machine ou la loi de correspondance.
+2. La #strong[variable $x$] : c'est le nombre réel générique introduit en entrée (l'antécédent).
+3. Le nombre #strong[$f(x)$] : c'est le nombre réel produit en sortie (l'image de $x$ par $f$).
+]
+
 ==== 2.1 La boîte noire ($x mapsto f\(x\)$)
 <la-boîte-noire-x-mapsto-fx>
 Oublie pour l'instant les courbes compliquées. Pense à une
@@ -29002,6 +29057,13 @@ directeur de ton ski] !
 - Δx Avancée horizontale
 ]
 
+#alerte(title: [⚠️ Tangente verticale vs Dérivabilité — Le cas pathologique de la racine carrée en 0])[
+Ne confondez jamais « posséder une droite tangente » et « être dérivable » !
+La courbe de la fonction racine carrée $f(x) = sqrt(x)$ admet bien une demi-tangente verticale au point origine $(0, 0)$ (l'axe des ordonnées). Pourtant, la fonction $f$ n'est #strong[pas dérivable en 0], car le taux d'accroissement tend vers l'infini :
+$ lim_(h arrow.r 0^+) frac(sqrt(h) - 0, h) = lim_(h arrow.r 0^+) frac(1, sqrt(h)) = + oo . $
+Le coefficient directeur étant infini, le nombre dérivé n'appartient pas à $bb(R)$.
+]
+
 ==== 2.2 Le taux d'accroissement : la corde sécante
 <le-taux-daccroissement-la-corde-sécante>
 Pour calculer cette pente sans tricher avec le zéro, imaginons que la
@@ -30121,6 +30183,13 @@ Les décimales se stabilisent vers un nombre mystérieux :
 #strong[$2\,71828 dots.h$]
 
 #divider()
+
+#principe(title: [📐 Théorème d'unicité — Pourquoi la condition initiale f(0) = 1 est indispensable])[
+L'équation différentielle $f' = f$ seule admet une infinité de solutions réelles de la forme $x mapsto C e^x$ (où $C in bb(R)$ est une constante quelconque).
+Pour définir de façon unique et rigoureuse la fonction exponentielle, la condition initiale $f(0) = 1$ est indispensable :
+$ { f' = f \ f(0) = 1 . } $
+Ce problème de Cauchy possède une unique solution sur $bb(R)$, que l'on nomme la #strong[fonction exponentielle népérienne].
+]
 
 === 3. Théorème d'existence et démonstration d'unicité
 <théorème-dexistence-et-démonstration-dunicité>
@@ -33684,8 +33753,7 @@ position de $q$ par rapport à $- 1$ et $1$.
 
 - Si $- 1 < q < 1$ : $lim_(n arrow.r + oo) q^n = 0$.
 
-- Si $q lt.eq - 1$ : la suite n'a pas de limite (elle oscille en
-  changeant de signe).
+- Si $q lt.eq - 1$ : la suite n'admet #strong[absolument aucune limite] (ni finie, ni infinie). Elle oscille sans fin en alternant de signe ($(-2)^0 = 1, (-2)^1 = -2, (-2)^2 = 4, (-2)^3 = -8, dots$) ; il est donc rigoureusement faux d'écrire qu'elle tend vers $+oo$ ou $-oo$ !
 ]
 
 ==== Démonstration exigible au baccalauréat (cas $q > 1$)
@@ -36733,6 +36801,13 @@ Lorsque $x arrow.r x_0$ :
 ]
 
 #divider()
+
+#principe(title: [📐 Règle fondamentale — Le facteur multiplicatif u' dans la dérivation composée])[
+Dans toutes les formules de dérivation de fonctions composées, ne commettez jamais l'oubli du facteur dérivé $u'(x)$ :
+- $(e^u)' = u' e^u$
+- $(ln u)' = frac(u', u) quad (upright("pour ") u > 0)$
+- $(u^n)' = n u' u^(n - 1) quad (n in bb(Z)^*) . $
+]
 
 === 3. Les Trois Formules Reines du Baccalauréat
 <les-trois-formules-reines-du-baccalauréat>
@@ -41795,6 +41870,14 @@ la vitesse de son changement. Tout le reste est équation différentielle.
 
 === 1. Le problème : la tasse de thé fumante sur la table
 <le-problème-la-tasse-de-thé-fumante-sur-la-table>
+#alerte(title: [⚠️ Loi de refroidissement de Newton — Ne pas confondre avec le zéro absolu !])[
+La vitesse de refroidissement d'un corps chaud est proportionnelle à l'écart avec la température ambiante $T_(upright("ext"))$ :
+$ frac(d T, d t) = - k (T - T_(upright("ext"))) . $
+Sa solution analytique rigoureuse s'écrit :
+$ T(t) = T_(upright("ext")) + (T_0 - T_(upright("ext"))) e^(- k t) . $
+Ne confondez jamais avec la solution simplifiée $T(t) = T_0 e^(- k t)$, qui ferait tendre la température de la tasse vers $0 upright(" K")$ (le zéro absolu) au lieu de la température de la pièce !
+]
+
 ==== 1.1 L'observation d'Isaac Newton (1701)
 <lobservation-disaac-newton-1701>
 Imagine une tasse de thé que l'on vient de verser, bouillante à
@@ -44920,6 +45003,12 @@ directement de la variance et décroît très vite (comme l'inverse du
 carré de la distance $epsilon^2$).
 
 #divider()
+
+#alerte(title: [⚠️ Conditions de validité de l'approximation normale (Théorème de De Moivre-Laplace)])[
+L'approximation d'une variable binomiale $X tilde cal(B)(n, p)$ par une loi normale $cal(N)(n p, n p (1 - p))$ n'est mathématiquement licite que si les trois critères de stabilité sont simultanément satisfaits :
+$ n gt.eq 30, quad n p gt.eq 5, quad upright("et") quad n(1 - p) gt.eq 5 . $
+Lorsque ces conditions sont réunies, la cloche gaussienne épouse fidèlement les bâtons de la loi binomiale.
+]
 
 === 5. La Loi Faible des Grands Nombres
 <la-loi-faible-des-grands-nombres>

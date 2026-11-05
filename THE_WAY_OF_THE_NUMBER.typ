@@ -3422,6 +3422,13 @@ place-value chart:
 ]
 
 
+#principe(title: [💡 Understanding Decimal Shifting: Moving Digits vs Moving the Decimal Point])[
+Never confuse the movement of digits with the shift of the decimal separator:
+- In a #strong[fixed-column place-value chart] (Ones, Tens, Hundreds), multiplying by 10 promotes each bundle: digits slide one column to the #strong[left] ($4$ ones become $4$ tens).
+- In standard linear paper notation ($3.45$), where digits remain in place, the decimal point appears to shift one rank to the #strong[right] ($3.45 times 10 = 34.5$).
+Both descriptions convey the exact same mathematical reality: the quantity becomes ten times greater!
+]
+
 - Multiplying by #strong[10]: each unit becomes a ten. The number shifts
   #strong[one place to the left], and we append a #strong[0] on the
   right.
@@ -5090,8 +5097,7 @@ bottom of the basket! And when a mother must share a single loaf of
 flatbread among 3 hungry children, stone must break and we must invent
 numbers that break into pieces…
 
-Prepare to enter #strong[the Age of the Market and Partitions] with
-#strong[Volume II: The Rebel Stones and the Lonely Numbers]!
+Prepare to enter #strong[Volume II: The Secret of Sharing and the Magnitudes of the World]!
 
 #divider()
 
@@ -6910,8 +6916,7 @@ remain.
 #strong[\11.] a) #strong[False], because $3 < 5$ with the same
 denominator, so $3 / 4 < 5 / 4$. b) #strong[True], because
 $frac(2 times 3, 3 times 3) = 6 / 9$. c) #strong[True], because
-$frac(1 + 1, 2) = 2 / 2 = 1$. d) #strong[False], we never add
-denominators! $3 / 5 + 1 / 5 = 4 / 5$, not $4 / 10$.
+$frac(1 + 1, 2) = 2 / 2 = 1$. d) #strong[False], we never add denominators! $3 / 5 + 1 / 5 = 4 / 5$, not $4 / 10$. Physical common sense: $4 / 10 = 2 / 5 < 3 / 5$. Adding one fifth to three fifths cannot possibly yield a share smaller than the starting quantity!
 
 #strong[\12.] - Manon: $1 / 2$ of 24 squares = $24 div 2 =$ #strong[12
 squares]. - Arthur: 1 eighth is $24 div 8 = 3$ squares. Thus 3 eighths
@@ -7745,15 +7750,18 @@ usually refer to cubic meters).]
   align(center)[#table(
     columns: (10%, 10%, 10%, 10%, 10%, 10%, 10%, 10%, 10%, 10%),
     align: (center,center,center,center,center,center,center,center,center,center,),
-    table.header([Metric Ton ($t$)], [Quintal ($q$)], [---], [Kilogram
+    table.header([Metric Ton ($t$)], [Quintal ($q$)], [--- (\*)], [Kilogram
       ($k g$)], [Hectogram ($h g$)], [Decagram ($d a g$)], [Gram
       ($g$)], [Decigram ($d g$)], [Centigram ($c g$)], [Milligram
       ($m g$)],),
     table.hline(),
-    [$1 thin 000 upright(" kg")$], [$100 upright(" kg")$], [], [#strong[$1 upright(" kg")$]], [$100 upright(" g")$], [$10 upright(" g")$], [#strong[$1 upright(" g")$]], [$0.1 upright(" g")$], [$0.01 upright(" g")$], [$0.001 upright(" g")$],
+    [$1 thin 000 upright(" kg")$], [$100 upright(" kg")$], [$10 upright(" kg")$], [#strong[$1 upright(" kg")$]], [$100 upright(" g")$], [$10 upright(" g")$], [#strong[$1 upright(" g")$]], [$0.1 upright(" g")$], [$0.01 upright(" g")$], [$0.001 upright(" g")$],
   )]
   , kind: table
   )
+
+#decouvre(title: [💡 The Unnamed Intermediate Column — The Ten-Kilogram Unit])[
+(\*) The intermediate column between the quintal ($100 upright(" kg")$) and the kilogram ($1 upright(" kg")$) corresponds to the #strong[ten-kilogram unit] ($10 upright(" kg")$, historically known as the _myriagram_). Even though it lacks a common modern name, it represents a mandatory place-value column: during unit conversions, you must fill it with a digit (typically a zero)!]
 
 #alerte(title: [Pitfall Warning — The Conversion Table Rules])[1. Place only
 #strong[one digit per column] in the conversion chart. 2. The
@@ -8206,8 +8214,13 @@ of proportionality.”]
 <the-problem-the-birthday-feast-and-the-cake-for-4>
 Thomas's birthday is just around the corner. To treat his friends, his
 grandmother pulls out her treasured recipe notebook, stained with cocoa
-and dog-eared from years of love. She turns to her legendary pear
-chocolate fudge cake:
+and dog-eared from years of love. She turns to her legendary #strong[pear chocolate fudge cake recipe for 4 people]:
+- $200 upright(" g")$ of fine dark chocolate;
+- $3$ ripe pears;
+- $4$ fresh eggs;
+- $100 upright(" g")$ of cane sugar;
+- $80 upright(" g")$ of butter;
+- $50 upright(" g")$ of flour.
 
 #figure(image("figures_en/vol_2/fig_13_regle_trois.svg", alt: "The proportionality table and the rule of three"),
   caption: [
@@ -8404,6 +8417,17 @@ the third remaining number! This is also known as
 
 === 5. Two Classic Applications: Speed and Map Scales
 <two-classic-applications-speed-and-map-scales>
+#alerte(title: [⚠️ The Universal Middle School Trap — Average Speed Is NOT the Arithmetic Mean of Speeds!])[
+Consider this quintessential real-world pitfall:
+A driver travels a round trip over the same distance $d = 120 upright(" km")$ in each direction:
+- Outbound at $60 upright(" km/h")$: duration $t_1 = 120 / 60 = 2 upright(" h")$.
+- Inbound at $40 upright(" km/h")$: duration $t_2 = 120 / 40 = 3 upright(" h")$.
+Total travel distance is $2 times 120 = 240 upright(" km")$ over a total duration of $2 + 3 = 5 upright(" h")$.
+The true overall average speed is therefore:
+$ v_m = frac(240 upright(" km"), 5 upright(" h")) = 48 upright(" km/h") quad upright(bold("(and strictly NOT 50 km/h!)")) $
+Why? Because more time is spent cruising at the slower speed ($3 upright(" h")$) than at the higher speed ($2 upright(" h")$). Average speed is a #strong[harmonic mean weighted by time], never a naive arithmetic average!
+]
+
 ==== 1. Traveling at Constant Speed: Kilometers per Hour ($k m\/h$)
 <traveling-at-constant-speed-kilometers-per-hour-kmh>
 When a train or car travels at a steady speed of
@@ -12640,9 +12664,7 @@ the logic step-by-step:
 
 #exemple_resolu(title: [Formal Proof — The Irrationality of $sqrt(2)$])[+ #strong[The Counter-Hypothesis (Assumption for Contradiction):]
   Suppose the opposite of our claim: assume there exists a fraction of
-  integers $p / q$ equal to $sqrt(2)$. Assume this fraction is written
-  in #strong[irreducible form] (simplified to lowest terms: $p$ and $q$
-  cannot both be even numbers, or we would have divided them by 2).
+  integers $p / q$ equal to $sqrt(2)$. Assume this fraction is written in #strong[irreducible form] (with $p$ and $q$ coprime, meaning sharing no common divisor other than 1: in particular, they cannot both be even).
 
 + #strong[Square Both Sides:]
   $ sqrt(2) = p / q arrow.r.double.long 2 = p^2 / q^2 arrow.r.double.long p^2 = 2 times q^2 $
@@ -15967,6 +15989,11 @@ $ - 2 > - 5 upright(" !") $
   ]
 )
 
+#alerte(title: [⚠️ Breakdown of the Physical Model: Why the Balance Scale Ends Here!])[
+The balance scale analogy (which served so well for linear equations and inequality additions/subtractions) fails completely when multiplying by negative quantities: one cannot physically place "$-2$ kilograms" on a pan to make the beam tilt backwards!
+Here the mechanical model yields to the rigorous geometry of the coordinate number line (Chapter 14): multiplication by a negative scalar is strictly a #strong[180° geometric rotation (central reflection around the origin 0)] combined with scaling. This spatial reversal naturally inverts inequality order!
+]
+
 #principe(title: [📐 Fundamental Rule 3 — Multiplying and Dividing by a NEGATIVE
 Number ($c < 0$).])[#strong[Whenever you multiply or divide both sides of
 an inequality by a STRICTLY NEGATIVE number, YOU MUST REVERSE THE
@@ -17000,6 +17027,14 @@ values, use the staircase rule (rise over run):
 If a line passes through two known points $A\(x_A\,y_A\)$ and
 $B\(x_B\,y_B\)$ (with $x_A eq.not x_B$), its slope is calculated using
 the fundamental ratio:
+
+#alerte(title: [⚠️ Mandatory Condition for Slope Existence and Vertical Lines])[
+The slope formula $a = frac(y_B - y_A, x_B - x_A)$ strictly requires #strong[$x_B eq.not x_A$] (the denominator must never be zero)!
+When two points share the exact same x-coordinate ($x_A = x_B = c$), they align vertically:
+- The line has Cartesian equation $x = c$.
+- Its slope is undefined in $bb(R)$.
+- #strong[A vertical line never represents a function], as a single input $x = c$ would map to infinitely many outputs!
+]
 
 $ a = upright("Vertical change") / upright("Horizontal change") = frac(y_B - y_A, x_B - x_A) = frac(Delta y, Delta x) = upright("Rise") / upright("Run") . $
 
@@ -19737,6 +19772,12 @@ conceived a stroke of brilliance.
 ]
 
 
+#principe(title: [📐 Euclid's Fundamental Invariance Theorem])[
+For any non-zero natural integers $a$ and $b$ governed by Euclidean division $a = b q + r$, we have strictly:
+$ upright("gcd")(a, b) = upright("gcd")(b, r) = upright("gcd")(b, a med(mod med b)). $
+This exact preservation of the greatest common divisor at every iteration distinguishes Euclid's algorithm from simple division: each remainder inherits the exact common factors, until the last non-zero remainder yields the gcd!
+]
+
 ==== 6.2 The Euclidean Algorithm (Successive Divisions)
 <the-euclidean-algorithm-successive-divisions>
 Instead of subtracting $b$ one step at a time, why not subtract all
@@ -22012,6 +22053,13 @@ other.
 
 === 3. Operations on Vectors
 <operations-on-vectors>
+#alerte(title: [⚠️ Notation Rigor — Scalar Norm vs Directed Vector])[
+Never confuse vector $arrow(u)$ or $accent(A B, ⃗)$ with its scalar norm $\|arrow(u)\|$ or distance $A B$:
+- A vector represents a #strong[directed displacement] (direction, sense, and magnitude).
+- Its norm $\|arrow(u)\|$ is a non-negative real scalar expressing geometric length.
+Chasles' vector relation $accent(A B, ⃗) + accent(B C, ⃗) = accent(A C, ⃗)$ holds unconditionally. By contrast, the scalar sum of lengths $A B + B C = A C$ holds #strong[only if the points lie collinear in that exact sequence]; otherwise, the triangle inequality dictates $A C < A B + B C$!
+]
+
 ==== 3.1 Chasles' Relation: The Courier Relay
 <chasles-relation-the-courier-relay>
 How do we add two successive displacements? Picture a royal missive
@@ -23516,6 +23564,13 @@ thought is the very soul of what mathematicians define as a
 
 === 2. Anatomy of a Function: Vocabulary and Domain
 <anatomy-of-a-function-vocabulary-and-domain>
+#principe(title: [📐 Vocabulary Rigor — Function, Variable, and Image])[
+Avoid the colloquial inaccuracy "the function $f(x)$"! Mathematics strictly separates three distinct concepts:
+1. The #strong[function $f$]: the overall mapping, transformation rule, or engine.
+2. The #strong[variable $x$]: the generic input real number (the preimage).
+3. The evaluation #strong[$f(x)$]: the specific real number produced at the output (the image of $x$ under $f$).
+]
+
 ==== 2.1 The Black Box ($x mapsto f\(x\)$)
 <the-black-box-x-mapsto-fx>
 Put aside complicated graphs for a moment. Picture an
@@ -27575,6 +27630,13 @@ of the Mountain])[- Curve of the mountain
 ]
 
 
+#alerte(title: [⚠️ Vertical Tangent vs Differentiability — The Square Root at 0])[
+Never confuse having a tangent line with being differentiable!
+The graph of the square root function $f(x) = sqrt(x)$ possesses a vertical half-tangent at the origin $(0, 0)$ (the y-axis). Yet $f$ is #strong[not differentiable at 0], because its difference quotient diverges to infinity:
+$ lim_(h arrow.r 0^+) frac(sqrt(h) - 0, h) = lim_(h arrow.r 0^+) frac(1, sqrt(h)) = + oo . $
+Because the slope is infinite, the derivative does not exist as a finite real number in $bb(R)$.
+]
+
 ==== 2.2 The Difference Quotient: The Secant Line
 <the-difference-quotient-the-secant-line>
 To compute this slope without cheating with zero, imagine that the tail
@@ -28653,6 +28715,13 @@ The decimals steadily stabilize toward a mysterious number:
 #strong[$2.71828 dots.h$]
 
 #divider()
+
+#principe(title: [📐 Uniqueness Theorem — Why Initial Condition f(0) = 1 Is Essential])[
+The differential relation $f' = f$ alone admits infinitely many distinct solutions of the form $x mapsto C e^x$ for any constant $C in bb(R)$.
+To isolate a unique mathematical function, the initial condition $f(0) = 1$ is indispensable:
+$ { f' = f \ f(0) = 1 . } $
+This Cauchy initial value problem admits a single unique solution on $bb(R)$, defining the canonical #strong[exponential function].
+]
 
 === 3. Existence Theorem and Proof of Uniqueness
 <existence-theorem-and-proof-of-uniqueness>
@@ -32087,8 +32156,7 @@ the position of $q$ relative to $- 1$ and $1$.
 
 - If $- 1 < q < 1$: $lim_(n arrow.r + oo) q^n = 0$.
 
-- If $q lt.eq - 1$: the sequence has no limit (it oscillates,
-  alternating signs).
+- If $q lt.eq - 1$: the sequence admits #strong[strictly no limit] (neither finite nor infinite). It oscillates indefinitely, alternating signs ($(-2)^0 = 1, (-2)^1 = -2, (-2)^2 = 4, (-2)^3 = -8, dots$); it is mathematically false to state that it diverges to $+oo$ or $-oo$!
 ]
 
 
@@ -35043,6 +35111,13 @@ As $x arrow.r x_0$:
 
 
 #divider()
+
+#principe(title: [📐 Core Chain Rule — Never Omit the Inner Derivative u'])[
+In all composite differentiation formulas, never omit the mandatory multiplying factor $u'(x)$:
+- $(e^u)' = u' e^u$
+- $(ln u)' = frac(u', u) quad (upright("for ") u > 0)$
+- $(u^n)' = n u' u^(n - 1) quad (n in bb(Z)^*) . $
+]
 
 === 3. The Three Powerhouse Formulas of the Baccalaureate
 <the-three-powerhouse-formulas-of-the-baccalaureate>
@@ -39899,6 +39974,14 @@ Everything else is a differential equation.”])[--- Henri Poincaré
 
 === 1. The Problem: The Steaming Cup of Tea on the Table
 <the-problem-the-steaming-cup-of-tea-on-the-table>
+#alerte(title: [⚠️ Newton's Law of Cooling — Ambient Temperature Asymptote])[
+The rate of cooling of a hot object is proportional to its temperature difference with the surrounding medium $T_(upright("ext"))$:
+$ frac(d T, d t) = - k (T - T_(upright("ext"))). $
+Its exact analytical solution is:
+$ T(t) = T_(upright("ext")) + (T_0 - T_(upright("ext"))) e^(- k t). $
+Never confound this with the naive formula $T(t) = T_0 e^(- k t)$, which would cause temperature to decay toward absolute zero ($0 upright(" K")$) rather than room temperature!
+]
+
 ==== 1.1 Isaac Newton's Observation (1701)
 <isaac-newtons-observation-1701>
 Imagine a freshly poured cup of tea, scalding at
@@ -42831,6 +42914,12 @@ proportional to its variance, decaying rapidly with the inverse square
 of the distance $epsilon^2$.
 
 #divider()
+
+#alerte(title: [⚠️ Validity Conditions for the Normal Approximation (De Moivre-Laplace)])[
+Approximating a binomial distribution $X tilde cal(B)(n, p)$ with a continuous Gaussian distribution $cal(N)(n p, n p (1 - p))$ is valid only when three curriculum criteria hold simultaneously:
+$ n gt.eq 30, quad n p gt.eq 5, quad upright("and") quad n(1 - p) gt.eq 5. $
+Under these conditions, the smooth bell curve accurately models discrete binomial probabilities.
+]
 
 === 5. The Weak Law of Large Numbers
 <the-weak-law-of-large-numbers>
