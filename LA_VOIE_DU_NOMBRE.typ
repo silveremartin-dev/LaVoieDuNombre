@@ -1179,9 +1179,9 @@ porte. Que va-t-il se passer à la fin pour le berger ?
 
 #strong[Exercice 1.13] Les dominos menteurs. Observe ces trois dominos :
 
-- Domino 1 : #box(inset: (x: 5pt, y: 2pt), stroke: 0.75pt + rgb("#94a3b8"), radius: 3pt)[• • #text(fill: rgb("#cbd5e1"))[|] • • •]
-- Domino 2 : #box(inset: (x: 5pt, y: 2pt), stroke: 0.75pt + rgb("#94a3b8"), radius: 3pt)[• • • • #text(fill: rgb("#cbd5e1"))[|] •]
-- Domino 3 : #box(inset: (x: 5pt, y: 2pt), stroke: 0.75pt + rgb("#94a3b8"), radius: 3pt)[• • • #text(fill: rgb("#cbd5e1"))[|] • • •]
+- Domino 1 : #box(inset: (x: 5pt, y: 2pt), stroke: 0.75pt + rgb("#94a3b8"), radius: 3pt)[● ● #text(fill: rgb("#cbd5e1"))[|] ● ● ●] (2 points à gauche, 3 points à droite)
+- Domino 2 : #box(inset: (x: 5pt, y: 2pt), stroke: 0.75pt + rgb("#94a3b8"), radius: 3pt)[● ● ● ● #text(fill: rgb("#cbd5e1"))[|] ●] (4 points à gauche, 1 point à droite)
+- Domino 3 : #box(inset: (x: 5pt, y: 2pt), stroke: 0.75pt + rgb("#94a3b8"), radius: 3pt)[● ● ● #text(fill: rgb("#cbd5e1"))[|] ● ● ●] (3 points à gauche, 3 points à droite)
 
 Deux de ces dominos portent au total exactement le même nombre de
 points. Lesquels ?
@@ -27530,6 +27530,14 @@ $2\,5$ rad en degrés.
 ]
 ]
 
+#alerte(title: [⚠️ Pourquoi le radian est la seule unité naturelle en analyse et en cinématique])[
+En géométrie pratique, le degré divise le cercle en 360 parts arbitraires. Mais en physique et en analyse supérieure, le #strong[radian] est incontournable pour deux raisons fondamentales :
+- #strong[En cinématique :] La vitesse linéaire $v$ d'un point à distance $R$ de l'axe tournant à la vitesse angulaire $omega$ s'écrit $v = R omega$ #strong[si et seulement si] $omega$ est en radians par seconde ($upright("rad") dot upright("s")^(-1)$). En degrés par seconde, un facteur parasite $pi / 180$ gâcherait la formule !
+- #strong[En dérivation :] La célèbre formule $(sin x)' = cos x$ n'est vraie #strong[que si la variable $x$ est en radians]. Si l'on dérivait par rapport à un angle mesuré en degrés, la règle de dérivation en chaîne imposerait :
+$ (sin(x^compose))' = frac(pi, 180) cos(x^compose) . $
+C'est pour éliminer ce coefficient $pi / 180$ de toutes les équations différentielles de la physique que le radian est l'unité internationale absolue des mathématiciens.
+]
+
 ==== 2.3 Longueur d'arc et aire d'un secteur
 <longueur-darc-et-aire-dun-secteur>
 Puisque le radian est défini par « arc = rayon pour 1 rad », la longueur
@@ -31094,6 +31102,14 @@ moyenne :
 $ #box(stroke: black, inset: 3pt, [$ V = 1 / N sum_(i = 1)^p n_i\(x_i - macron(x)\)^2 = sum_(i = 1)^p f_i\(x_i - macron(x)\)^2 $]) $
 ]
 
+#alerte(title: [⚠️ Échantillon vs Population : pourquoi la calculatrice affiche σ et s (division par n ou n - 1)])[
+Lorsque vous calculez un écart-type, vos calculatrices affichent systématiquement deux valeurs distinctes ($sigma_x$ et $s_x$, ou $sigma$ et $sigma_(n-1)$). Ne les confondez jamais :
+- #strong[Population complète ($sigma$, division par $N$) :] Si vous disposez de l'ensemble absolu des données (par exemple toutes les notes d'une classe), la variance descriptive est $V = 1/N sum (x_i - macron(x))^2$ et son écart-type est $sigma = sqrt(V)$.
+- #strong[Échantillon représentatif ($s$, division par $n - 1$) :] Si vous prélevez au hasard un échantillon de $n$ individus pour #strong[estimer] la dispersion d'une immense population inconnue, la moyenne empirique de l'échantillon $macron(x)$ s'ajuste trop fidèlement aux données recueillies, sous-estimant légèrement la vraie dispersion globale. Pour éliminer ce biais mathématique, la théorie de Gauss et Bessel démontre qu'il faut diviser par $n - 1$ :
+$ s = sqrt(frac(1, n - 1) sum_(i=1)^n (x_i - macron(x))^2) . $
+$s$ est appelé l'#strong[écart-type échantillonnal non biaisé]. Dès que $n$ grandit ($n > 100$), la différence entre $1/n$ et $1/(n-1)$ devient négligeable, mais elle est cruciale en inférence statistique.
+]
+
 ==== 4.3 L'écart-type ($sigma$) : retrouver l'unité physique
 <lécart-type-sigma-retrouver-lunité-physique>
 La variance résout le problème du signe, mais elle crée un monstre
@@ -32899,6 +32915,15 @@ est vraie. On démontre une implication, pas une vérité.
 ]
 
 #divider()
+
+#alerte(title: [⚠️ Le piège mortel de la rupture d'indice : le paradoxe des chevaux de Pólya])[
+L'analogie de la chute des dominos est séduisante, mais elle recèle un piège redoutable : l'implication d'hérédité $cal(P)(n) arrow.r.double cal(P)(n+1)$ doit impérativement être démontrée #strong[pour tout entier $n gt.eq n_0$ sans la moindre rupture].
+Pour illustrer ce danger, le mathématicien George Pólya a forgé une démonstration fallacieuse prouvant que « tous les chevaux sont de la même couleur » :
+- #strong[Initialisation :] Dans tout ensemble composé d'un seul cheval ($n = 1$), tous les chevaux ont manifestement la même couleur. $cal(P)(1)$ est vraie.
+- #strong[Fausse hérédité :] Supposons la propriété vraie pour tout troupeau de $n$ chevaux. Prenons un groupe de $n + 1$ chevaux $\{C_1, C_2, dots, C_(n+1)\}$. Par hypothèse, les $n$ premiers $\{C_1, dots, C_n\}$ ont la même couleur, et les $n$ derniers $\{C_2, dots, C_(n+1)\}$ ont aussi la même couleur. Comme les deux sous-groupes partagent les chevaux intermédiaires $\{C_2, dots, C_n\}$, on en déduirait que tous les $n+1$ chevaux ont la même teinte.
+- #strong[Où se cache l'erreur ?] L'argument d'intersection s'effondre lamentablement pour $n = 1$ ! Entre le groupe formé de $\{C_1\}$ et celui de $\{C_2\}$, l'intersection des chevaux intermédiaires est #strong[vide]. L'implication $cal(P)(1) arrow.r.double cal(P)(2)$ est donc fausse. La chaîne s'arrête net dès le départ !
+Retenez cette règle d'or : une récurrence exige une passerelle sans faille dès l'indice de départ $n_0$.
+]
 
 === 3. La méthode : rédiger une récurrence
 <la-méthode-rédiger-une-récurrence>
@@ -35548,6 +35573,12 @@ vaut :
 
 #divider()
 
+#alerte(title: [⚠️ Existence vs Unicité : ne confondez jamais le TVI et son corollaire !])[
+C'est l'une des erreurs les plus pénalisées aux examens :
+- Le #strong[Théorème des Valeurs Intermédiaires (TVI)] classique garantit uniquement l'#strong[existence d'au moins une solution] à l'équation $f(x) = k$. Si la fonction ondule, il peut exister 3, 5 ou une infinité de solutions !
+- Pour prouver l'#strong[unicité de la solution], le TVI seul est totalement impuissant : il faut impérativement convoquer son corollaire (dit #strong[théorème de la bijection]), qui exige la condition supplémentaire que la fonction soit #strong[strictement monotone] (strictement croissante ou strictement décroissante) sur l'intervalle.
+]
+
 === 3. Le Théorème des Valeurs Intermédiaires (TVI)
 <le-théorème-des-valeurs-intermédiaires-tvi>
 ==== 3.1 L'énoncé général
@@ -37766,8 +37797,13 @@ les rapports ». Le logarithme d'un nombre, c'est en quelque sorte
 #strong[le nombre de pas] qu'il faut faire dans la progression
 géométrique pour l'atteindre.
 
-#principe(title: [📐 Nuance d'Histoire Mathématique — Le logarithme de Napier vs le logarithme moderne])[
-Le logarithme originel défini par Napier en 1614 n'était pas notre fonction $ln(x)$ moderne (fondée sur la base naturelle $e$ d'Euler). Napier avait conçu un modèle cinématique ingénieux : sur un segment de longueur $10^7$, un point $P$ avance à une vitesse proportionnelle à la distance restante à parcourir, tandis qu'un point $Q$ avance sur une droite infinie à vitesse constante. Le logarithme népérien historique vérifiait ainsi $upright("NapLog")(10^7) = 0$ et $upright("NapLog")(x) approx 10^7 ln(10^7 / x)$. Ce sont les travaux ultérieurs d'Henry Briggs et de Leonhard Euler qui fixèrent la convention moderne où $ln(1) = 0$ et $ln(a b) = ln a + ln b$.
+#principe(title: [📐 Histoire Mathématique — De la cinématique de Napier à la constante d'Euler])[
+Le logarithme originel publié par John Napier en 1614 n'était pas encore notre fonction $ln(x)$ moderne :
+1. #strong[Napier (1614) :] Conception cinématique sur un segment de rayon $10^7$. Un point ralentit proportionnellement à la distance restante tandis qu'un second avance à vitesse constante. Ce logarithme historique était décroissant et vérifiait $upright("NapLog")(10^7) = 0$, soit $upright("NapLog")(x) approx 10^7 ln(10^7 / x)$.
+2. #strong[Henry Briggs (1617–1624) :] Collaboration avec Napier pour convertir le système en logarithmes décimaux de base 10 avec $log_(10)(1) = 0$ et $log_(10)(10) = 1$.
+3. #strong[Grégoire de Saint-Vincent (1647) & Alphonse Antonio de Sarasa (1649) :] Découverte capitale du lien entre l'aire sous l'hyperbole équilatère $y = 1/x$ et la propriété d'addition des logarithmes.
+4. #strong[Nicolaus Mercator (1668) :] Introduction formelle du terme « logarithme naturel » dans sa #emph[Logarithmotechnia].
+5. #strong[Leonhard Euler (1748) :] Formalisation moderne définitive de la constante $e approx 2{,}71828$ et de la fonction $ln(x)$ comme bijection réciproque de l'exponentielle $e^x$.
 ]
 
 #decouvre(title: [Découverte & Histoire])[
@@ -42703,6 +42739,14 @@ segment $\[A B\]$ est la grande diagonale intérieure :
 
 === 3. Les droites dans l'espace : la représentation paramétrique
 <les-droites-dans-lespace-la-représentation-paramétrique>
+#alerte(title: [⚠️ Piège analytique classique — Une équation scalaire dans l'espace définit un PLAN, jamais une droite !])[
+En géométrie plane 2D, l'équation linéaire $a x + b y + c = 0$ trace une droite.
+Dans l'espace tridimensionnel $bb(R)^3$, le réflexe consistant à écrire une seule relation linéaire $a x + b y + c z + d = 0$ ne produit #strong[jamais] une droite, mais #strong[un plan infini] (un objet à deux dimensions de liberté) !
+Pour immobiliser une droite (objet à 1 seule dimension) dans l'espace 3D, il existe seulement deux voies mathématiques :
+1. Soit un #strong[système de deux équations cartésiennes] représentant l'intersection de deux plans sécants distincts ;
+2. Soit une #strong[représentation paramétrique] décrivant les coordonnées $(x, y, z)$ en fonction d'un paramètre temporel unique $t in bb(R)$ piloté par un vecteur directeur.
+]
+
 ==== 3.1 Pourquoi une seule équation ne suffit pas
 <pourquoi-une-seule-équation-ne-suffit-pas>
 Dans le plan en 2D, une droite a pour équation cartésienne
@@ -45715,6 +45759,13 @@ direct (anti-horaire) !]
 #alerte(title: [⚠️ Rigueur Mathématique — Pourquoi l'écriture $sqrt(- 1)$ est strictement prohibée])[
 Si Bombelli et Cardan utilisaient historiquement le symbole $sqrt(- 1)$, les mathématiques modernes #strong[interdisent formellement cette notation]. En effet, la propriété algébrique $sqrt(a b) = sqrt(a) times sqrt(b)$ n'est vraie que pour des nombres réels #strong[positifs]. Si on l'appliquait sans restriction aux négatifs, on aboutirait au sophisme destructeur :
 $ 1 = sqrt(1) = sqrt((- 1) times (- 1)) = sqrt(- 1) times sqrt(- 1) = i^2 = - 1 quad arrow.r.double quad 1 = - 1 ! $
+#alerte(title: [⚠️ Proscription formelle de la notation $i = sqrt(-1)$])[
+L'écriture $i = sqrt(-1)$ est formellement proscrite dans l'enseignement mathématique moderne rigoureux. En effet, la propriété algébrique $sqrt(a b) = sqrt(a) sqrt(b)$ n'est démontrée et valide #strong[que pour des réels positifs ou nuls]. Si l'on osait l'appliquer à des nombres négatifs, on obtiendrait le sophisme absurde :
+$ 1 = sqrt(1) = sqrt((-1) times (-1)) = sqrt(-1) times sqrt(-1) = i times i = i^2 = -1 quad arrow.r.double.long 1 = -1 ! $
+Pour préserver la cohérence absolue de l'analyse, #strong[on ne prend jamais la racine carrée d'un nombre négatif]. On définit l'unité imaginaire $i$ uniquement par son identité algébrique fondamentale :
+$ upright(bold(i^2 = -1)) . $
+]
+
 Pour préserver la cohérence logique absolue de l'édifice, #strong[on ne prend jamais la racine carrée d'un nombre négatif]. On définit rigoureusement l'unité imaginaire #strong[$i$] par la relation algébrique :
 $ upright(bold(i^2 = - 1)) $
 ]
@@ -46993,6 +47044,14 @@ l'#strong[inverse modulaire] de $a$ modulo 26, c'est-à-dire l'entier
 $a'$ tel que $a a' equiv 1 med\(mod med 26\)$ (fourni par l'algorithme
 de Bézout). La fonction de décodage est alors :
 $ x equiv a'\(y - b\)med\(mod med 26\) $
+
+#alerte(title: [⚠️ Piège classique de cryptographie — Le module de calcul de la clé secrète])[
+Ne confondez jamais le module public $n = p times q$ et le module de génération des clés $phi(n) = (p - 1)(q - 1)$ !
+- Les messages chiffrés et déchiffrés évoluent #strong[modulo $n$] : $C equiv M^e med(mod med n)$ et $M equiv C^d med(mod med n)$.
+- En revanche, l'exposant secret $d$ est calculé comme l'inverse de la clé publique $e$ #strong[modulo $phi(n)$] :
+$ e dot.op d equiv 1 med(mod med phi(n)) quad upright("(et absolument pas modulo ") n upright(" !)") $
+Calculer l'inverse modulaire modulo $n$ au lieu de modulo $phi(n)$ ruinerait intégralement l'algorithme : l'élévation à la puissance $d$ ne déchiffrerait jamais le message.
+]
 
 ==== 7.2 Le principe du chiffrement asymétrique RSA
 <le-principe-du-chiffrement-asymétrique-rsa>

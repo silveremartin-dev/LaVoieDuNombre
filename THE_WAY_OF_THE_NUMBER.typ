@@ -1108,9 +1108,9 @@ enters?
 #strong[Exercise 1.13] The deceptive dominoes. Look at these three
 dominoes:
 
-- Domino 1: #box(inset: (x: 5pt, y: 2pt), stroke: 0.75pt + rgb("#94a3b8"), radius: 3pt)[• • #text(fill: rgb("#cbd5e1"))[|] • • •]
-- Domino 2: #box(inset: (x: 5pt, y: 2pt), stroke: 0.75pt + rgb("#94a3b8"), radius: 3pt)[• • • • #text(fill: rgb("#cbd5e1"))[|] •]
-- Domino 3: #box(inset: (x: 5pt, y: 2pt), stroke: 0.75pt + rgb("#94a3b8"), radius: 3pt)[• • • #text(fill: rgb("#cbd5e1"))[|] • • •]
+- Domino 1: #box(inset: (x: 5pt, y: 2pt), stroke: 0.75pt + rgb("#94a3b8"), radius: 3pt)[● ● #text(fill: rgb("#cbd5e1"))[|] ● ● ●] (2 dots on the left, 3 dots on the right)
+- Domino 2: #box(inset: (x: 5pt, y: 2pt), stroke: 0.75pt + rgb("#94a3b8"), radius: 3pt)[● ● ● ● #text(fill: rgb("#cbd5e1"))[|] ●] (4 dots on the left, 1 dot on the right)
+- Domino 3: #box(inset: (x: 5pt, y: 2pt), stroke: 0.75pt + rgb("#94a3b8"), radius: 3pt)[● ● ● #text(fill: rgb("#cbd5e1"))[|] ● ● ●] (3 dots on the left, 3 dots on the right)
 
 Two of these dominoes carry the exact same total number of dots. Which
 ones?
@@ -26155,6 +26155,14 @@ Convert $2.5 upright(" rad")$ to degrees.
 ]
 
 
+#alerte(title: [⚠️ Why the Radian Is the Only Natural Unit in Calculus and Kinematics])[
+In elementary surveying, degrees divide the circle into 360 arbitrary historical slices. But in physics and mathematical analysis, the #strong[radian] is mandatory for two profound reasons:
+- #strong[In kinematics:] The linear velocity $v$ of a particle at radius $R$ rotating at angular speed $omega$ is simply $v = R omega$ #strong[if and only if] $omega$ is in radians per second ($upright("rad") dot upright("s")^(-1)$). In degrees per second, an unnatural conversion factor $pi / 180$ would infect the relation!
+- #strong[In calculus:] The famous differentiation law $(sin x)' = cos x$ holds #strong[only when $x$ is measured in radians]. If differentiated with respect to degrees, the chain rule forces an unwanted scalar:
+$ (sin(x^compose))' = frac(pi, 180) cos(x^compose) . $
+To eliminate this parasitic factor $pi / 180$ from every differential equation in mechanics and wave theory, the radian is the universal standard of mathematics.
+]
+
 ==== 2.3 Arc Length and Sector Area
 <arc-length-and-sector-area>
 Because the radian is defined by “$upright("arc") = upright("radius")$
@@ -29574,6 +29582,14 @@ $ #box(stroke: black, inset: 3pt, [$ V = 1 / N sum_(i = 1)^p n_i\(x_i - macron(x
 ]
 
 
+#alerte(title: [⚠️ Sample vs Population: Why Your Calculator Displays Both σ and s (Dividing by n or n - 1)])[
+When evaluating dispersion, modern calculators systematically display two distinct figures ($sigma_x$ and $s_x$, or $sigma$ and $sigma_(n-1)$). They serve two very different statistical purposes:
+- #strong[Entire population ($sigma$, dividing by $N$):] When you have access to the full census of data (e.g., every test score in a specific class), the exact descriptive variance is $V = 1/N sum (x_i - macron(x))^2$ with standard deviation $sigma = sqrt(V)$.
+- #strong[Sample estimation ($s$, dividing by $n - 1$):] When sampling $n$ individuals at random to #strong[estimate] the dispersion of a vast unknown population, the sample mean $macron(x)$ naturally hugs the sample points too closely, creating a systematic downward bias. To neutralize this bias, Gauss and Bessel proved that one must divide by $n - 1$:
+$ s = sqrt(frac(1, n - 1) sum_(i=1)^n (x_i - macron(x))^2) . $
+Here $s$ is the #strong[unbiased sample standard deviation]. For large surveys ($n > 100$), the numerical difference between $1/n$ and $1/(n-1)$ fades, but it remains essential in inferential statistics.
+]
+
 ==== 4.3 Standard Deviation ($sigma$): Restoring the Physical Unit
 <standard-deviation-sigma-restoring-the-physical-unit>
 Variance overcomes the sign problem, but introduces a dimensional
@@ -31307,6 +31323,15 @@ implication, not asserting unconditional truth.
 
 
 #divider()
+
+#alerte(title: [⚠️ The Fatal Trap of Index Rupture: George Pólya's Horse Paradox])[
+The domino analogy is intuitively vivid, but it hides a treacherous flaw: the induction step $cal(P)(n) arrow.r.double cal(P)(n+1)$ must hold #strong[for every integer $n gt.eq n_0$ without any gap].
+To demonstrate this peril, mathematician George Pólya designed a famous fallacious argument claiming that "all horses are the same color":
+- #strong[Base step:] In any set containing a single horse ($n = 1$), all horses trivially share the same color. $cal(P)(1)$ is true.
+- #strong[Flawed induction step:] Assume the property holds for any herd of $n$ horses. Consider a set of $n + 1$ horses $\{C_1, C_2, dots, C_(n+1)\}$. By hypothesis, the first $n$ horses $\{C_1, dots, C_n\}$ share a color, and the last $n$ horses $\{C_2, dots, C_(n+1)\}$ share a color. Because these two sets overlap across the middle horses $\{C_2, dots, C_n\}$, one might naively conclude that all $n + 1$ horses share identical colors.
+- #strong[Where is the trap?] The overlap argument breaks down completely for $n = 1$! Between $\{C_1\}$ and $\{C_2\}$, the middle set of shared horses is #strong[empty]. Thus, $cal(P)(1) arrow.r.double cal(P)(2)$ fails, and the domino chain never even begins to fall!
+Remember this rule: mathematical induction requires an unbroken bridge starting directly from the base index $n_0$.
+]
 
 === 3. Method: Writing an Impeccable Induction Proof
 <method-writing-an-impeccable-induction-proof>
@@ -33899,6 +33924,12 @@ $lim_(x arrow.r 0)\|x\|= 0 =\|0\|$. However, its difference quotient at
 
 #divider()
 
+#alerte(title: [⚠️ Existence vs Uniqueness: Never Confound the IVT with Its Monotone Corollary!])[
+This represents one of the most common pitfalls in advanced calculus examinations:
+- The standard #strong[Intermediate Value Theorem (IVT)] guarantees solely the #strong[existence of at least one solution] to the equation $f(x) = k$. If the curve oscillates, there may be 3, 7, or infinitely many crossing points!
+- To establish the #strong[uniqueness] of that solution, the IVT alone is completely insufficient: you must invoke its corollary (the #strong[bijection theorem]), which demands the strict condition that the function be #strong[strictly monotonic] (strictly increasing or strictly decreasing) throughout the interval.
+]
+
 === 3. The Intermediate Value Theorem (IVT)
 <the-intermediate-value-theorem-ivt>
 ==== 3.1 The General Statement
@@ -36042,8 +36073,13 @@ number that measures ratios”. The logarithm of a number is, in essence,
 #strong[the number of steps] one must take along the geometric
 progression to reach it.
 
-#principe(title: [📐 Mathematical History Nuance — Napier's Kinematic Logarithm vs Modern Logarithm])[
-Napier's original logarithm conceived in 1614 was not the modern natural logarithm $ln(x)$ based on Euler's constant $e$. Napier devised an ingenious kinematic model: along a segment of length $10^7$, point $P$ moves with a velocity proportional to its remaining distance, while point $Q$ advances along a line at constant speed. Napier's historical function satisfied $upright("NapLog")(10^7) = 0$ and $upright("NapLog")(x) approx 10^7 ln(10^7 / x)$. It was subsequent collaborations with Henry Briggs and later Euler's formulation that established our modern algebraic definitions where $ln(1) = 0$ and $ln(a b) = ln a + ln b$.
+#principe(title: [📐 Mathematical History — From Napier's Kinematics to Euler's Constant])[
+The original logarithm published by John Napier in 1614 was not yet our modern function $ln(x)$:
+1. #strong[Napier (1614):] Designed through a kinematic model on a radius of $10^7$. A particle decelerates proportionally to remaining distance while another advances steadily. This historical logarithm was strictly decreasing, with $upright("NapLog")(10^7) = 0$, giving $upright("NapLog")(x) approx 10^7 ln(10^7 / x)$.
+2. #strong[Henry Briggs (1617–1624):] Collaborated with Napier to establish the base-10 decimal system where $log_(10)(1) = 0$ and $log_(10)(10) = 1$.
+3. #strong[Grégoire de Saint-Vincent (1647) & Alphonse Antonio de Sarasa (1649):] Groundbreaking discovery linking the area beneath the hyperbola $y = 1/x$ directly to the additive logarithmic law.
+4. #strong[Nicolaus Mercator (1668):] Formally coined the term "natural logarithm" in his #emph[Logarithmotechnia].
+5. #strong[Leonhard Euler (1748):] Crowned modern calculus by identifying $e approx 2.71828$ and defining $ln(x)$ rigorously as the inverse of the natural exponential $e^x$.
 ]
 
 #decouvre(title: [💡 True History —])[The English mathematician #strong[Henry
@@ -40748,6 +40784,14 @@ segment $\[A B\]$:
 
 === 3. Lines in Space: Parametric Representation
 <lines-in-space-parametric-representation>
+#alerte(title: [⚠️ Classical Analytical Trap — A Scalar Equation in 3D Defines a PLANE, Never a Line!])[
+In 2D plane Cartesian geometry, a linear equation $a x + b y + c = 0$ represents a straight line.
+In three-dimensional space $bb(R)^3$, writing a single linear relation $a x + b y + c z + d = 0$ #strong[never] describes a line, but rather an #strong[infinite 2D plane] (possessing two degrees of freedom)!
+To determine a one-dimensional line in 3D space, mathematics provides only two rigorous routes:
+1. Either a #strong[system of two linear Cartesian equations] describing the intersection of two distinct, non-parallel planes;
+2. Or a #strong[parametric representation] expressing coordinates $(x, y, z)$ through a single scalar parameter $t in bb(R)$ steered by a direction vector.
+]
+
 ==== 3.1 Why a Single Equation Does Not Suffice
 <why-a-single-equation-does-not-suffice>
 In the 2D plane, a line has a Cartesian equation of the form
@@ -43581,6 +43625,13 @@ quarter-turn ($90^compose$ or $pi / 2$ radians) in the counterclockwise
 #alerte(title: [⚠️ Mathematical Rigor — Why the notation $sqrt(- 1)$ is strictly prohibited])[
 While Bombelli and Cardano historically wrote $sqrt(- 1)$, modern mathematics #strong[strictly prohibits this notation]. The familiar product rule $sqrt(a b) = sqrt(a) times sqrt(b)$ holds true only for #strong[non-negative real numbers]. Applying it indiscriminately to negatives creates catastrophic contradictions:
 $ 1 = sqrt(1) = sqrt((- 1) times (- 1)) = sqrt(- 1) times sqrt(- 1) = i^2 = - 1 quad arrow.r.double quad 1 = - 1! $
+#alerte(title: [⚠️ Strict Prohibition of the Notation $i = sqrt(-1)$])[
+The expression $i = sqrt(-1)$ is strictly banished from modern rigorous mathematics. The algebraic identity $sqrt(a b) = sqrt(a) sqrt(b)$ holds #strong[exclusively for non-negative real numbers]. Extending it blindly to negative values produces an immediate logical contradiction:
+$ 1 = sqrt(1) = sqrt((-1) times (-1)) = sqrt(-1) times sqrt(-1) = i times i = i^2 = -1 quad arrow.r.double.long 1 = -1 ! $
+To preserve the infallible coherence of mathematics, #strong[we never place a negative real under the square root radical]. We define the imaginary unit $i$ solely through its defining algebraic property:
+$ upright(bold(i^2 = -1)) . $
+]
+
 To guarantee flawless logical consistency, #strong[we never apply the square root radical to negative numbers]. Instead, we define the imaginary unit #strong[$i$] purely through its fundamental algebraic relation:
 $ upright(bold(i^2 = - 1)) $
 ]
@@ -44779,6 +44830,14 @@ neither 2 nor 13. To decrypt, one looks for the #strong[modular inverse]
 of $a$ modulo 26, that is, the integer $a'$ such that
 $a a' equiv 1 med\(mod med 26\)$ (provided by Bézout's algorithm). The
 decryption function is then: $ x equiv a'\(y - b\)med\(mod med 26\) $
+
+#alerte(title: [⚠️ Classical Cryptographic Trap — The Secret Key Modulus])[
+Never confuse the public modulus $n = p times q$ with the key-generation totient modulus $phi(n) = (p - 1)(q - 1)$!
+- Encrypted and decrypted messages transit #strong[modulo $n$]: $C equiv M^e med(mod med n)$ and $M equiv C^d med(mod med n)$.
+- By contrast, the secret exponent $d$ is computed as the modular inverse of the public exponent $e$ #strong[modulo $phi(n)$]:
+$ e dot.op d equiv 1 med(mod med phi(n)) quad upright("(and never modulo ") n upright("!)") $
+Attempting to invert $e$ modulo $n$ instead of $phi(n)$ renders decryption mathematically defunct, destroying the RSA protocol.
+]
 
 ==== 7.2 The Principle of Asymmetric RSA Encryption
 <the-principle-of-asymmetric-rsa-encryption>
