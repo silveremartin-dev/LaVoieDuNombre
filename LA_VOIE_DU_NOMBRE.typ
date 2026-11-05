@@ -12737,6 +12737,15 @@ la puissance ne porte QUE sur le 3, pas sur le signe moins ! 3.
 #set enum(numbering: "1.", start: 4)
 + #strong[Multiplier les bases au lieu d'additionner les exposants :]
   $ 2^3 times 2^4 eq.not 4^7 quad upright("mais") quad 2^(3 + 4) = 2^7 = 128 $
+
++ #strong[Le piège de l'échiquier (dernière case vs somme totale) :]
+  Ne confonds jamais le nombre de grains posés sur la #strong[dernière case] et la #strong[somme totale] accumulée sur l'échiquier !
+  - Sur la 64ᵉ case seule, il y a :
+    $ 2^63 approx 9\,22 times 10^18 upright(" grains") $
+    (car la première case porte $2^0 = 1$ grain, décalant l'exposant d'une unité).
+  - En revanche, la récolte totale sur l'ensemble des 64 cases est la somme de la progression géométrique :
+    $ sum_(k=0)^63 2^k = 2^64 - 1 = upright(bold(18 thin 446 thin 744 thin 073 thin 709 thin 551 thin 615)) upright(" grains !") $
+  Écrire $2^64$ tout rond au lieu de $2^64 - 1$, ou confondre $2^63$ et la somme totale, est une faute classique d'exactitude arithmétique.
 ]
 ]
 
@@ -14674,6 +14683,20 @@ départ] !
   $ C = 1 - t / 100 $ #emph[\(Exemple : une baisse de
   $15 % arrow.r.double.long times 0\,85$ \; une baisse de
   $40 % arrow.r.double.long times 0\,60$)]
+]
+
+==== 3.3 Évolutions successives et évolution réciproque
+<évolutions-successives-et-évolution-réciproque>
+#principe(title: [📐 Règle — Évolutions successives et évolution réciproque])[
+- #strong[Évolutions successives :] Pour combiner plusieurs pourcentages consécutifs, on #strong[multiplie] les coefficients multiplicateurs :
+  $ C_("global") = C_1 times C_2 times dots.h times C_n $
+  (On n'additionne JAMAIS des pourcentages successifs !)
+- #strong[Évolution réciproque :] Pour ramener une grandeur à sa valeur initiale après une évolution de coefficient $C$, il faut appliquer le coefficient multiplicateur inverse :
+  $ C' = frac(1, C) $
+  Pour une hausse de $+ t$ (avec $C = 1 + t$), la variation réciproque $t'$ est donnée par :
+  $ t' = C' - 1 = frac(1, 1 + t) - 1 = frac(- t, 1 + t) $
+  #emph[Exemple frappant :] Pour annuler une hausse de $+ 20 %$ ($t = 0{,}20$), la baisse requise n'est #strong[pas] de $- 20 %$, mais de :
+  $ t' = frac(- 0{,}20, 1 + 0{,}20) = - frac(0{,}20, 1{,}20) = - frac(1, 6) approx - 16{,}67 % ! $
 ]
 
 #divider()
@@ -18582,6 +18605,13 @@ n'importe quelle droite $\(d\)$ en une droite $\(d'\)$ qui lui est
 #strong[strictement parallèle] ! Elle n'inverse pas le sens
 d'orientation (une boucle horaire reste horaire après un demi-tour).
 
+#principe(title: [📐 Classification géométrique — Déplacement vs Anti-déplacement])[
+- #strong[La symétrie axiale est un anti-déplacement (isométrie indirecte) :]
+  Elle inverse l'orientation du plan (le sens trigonométrique direct devient le sens des aiguilles d'une montre). Deux figures symétriques par rapport à un axe ne peuvent jamais être superposées par simple glissement dans le plan : il est indispensable de sortir de la feuille en effectuant un retournement spatial en 3D !
+- #strong[La symétrie centrale est un déplacement (isométrie directe) :]
+  Étant rigoureusement équivalente à une rotation plane de $180^compose$ autour du centre $O$, elle #strong[conserve] l'orientation du plan. Deux figures symétriques par rapport à un point se superposent parfaitement par simple pivotement dans la feuille, sans jamais quitter le plan.
+]
+
 #divider()
 
 === 3. Les deux mouvements rigides : Translation et Rotation
@@ -21841,6 +21871,15 @@ prix de leurs contrats, aux météorologues de prévoir les tempêtes et aux
 casinos d'être certains de ne jamais perdre d'argent sur l'ensemble de
 l'année !
 
+#alerte(title: [Attention au Piège ! --- L'illusion du joueur (Gambler's Fallacy)])[
+Supposons qu'une pièce équilibrée tombe sur #strong[Pile 10 fois de suite]. Quelle est la probabilité d'obtenir Pile au 11ᵉ lancer ?
+- #strong[L'erreur commune :] Croire que Face a « plus de chances » de sortir pour « compenser » la série, ou au contraire que la pièce est « chaude » pour Pile.
+- #strong[La vérité mathématique :] La probabilité reste #strong[rigoureusement égale à $1/2$ (ou 50 %)].
+#strong[La pièce n'a pas de mémoire !] Les lancers successifs sont des événements #strong[stochastiquement indépendants] :
+$ P(A inter B) = P(A) times P(B) $
+Le passé n'a aucune prise sur le futur. La loi des grands nombres n'agit pas par « compensation » miraculeuse à court terme, mais par #strong[dilution] de l'écart sur un nombre gigantesque d'essais.
+]
+
 #decouvre(title: [Découverte & Histoire])[
 #strong[🔍 L'histoire vraie --- Les lettres de Pascal et Fermat (1654)
 ]
@@ -23036,6 +23075,44 @@ trou » entre $- 3$ et $3$.
 
 ⚠️ L'erreur classique « $x^2 > 9 arrow.l.r.double x > 3$ » oublie toute
 la partie négative : $x = - 4$ vérifie bien $\(- 4\)^2 = 16 > 9$.
+]
+
+=== 4. Les Règles du Tribunal : Implication, Réciproque et Négation
+<les-règles-du-tribunal-implication-réciproque-et-négation>
+Au tribunal des mathématiques, chaque mot a un sens chirurgical. Confondre une proposition avec sa réciproque est le sophisme le plus ravageur de l'esprit humain.
+
+==== 4.1 L'Implication Matérielle ($A arrow.r.double B$) et son Paradoxe
+<limplication-matérielle-et-son-paradoxe>
+L'énoncé « Si $A$, alors $B$ » se note $A arrow.r.double B$. Dans le langage quotidien, on sous-entend un lien de cause à effet temporel ou physique. En logique mathématique, c'est une #strong[relation formelle régie exclusivement par les valeurs de vérité] :
+
+#figure(
+  align(center)[#table(
+    columns: (25%, 25%, 50%),
+    table.header([Hypothèse $A$], [Conclusion $B$], [Implication $A arrow.r.double B$]),
+    table.hline(),
+    [Vraie], [Vraie], [#text(weight: "bold", fill: rgb("#15803d"))[VRAIE]],
+    [Vraie], [Fausse], [#text(weight: "bold", fill: rgb("#dc2626"))[FAUSSE]],
+    [Fausse], [Vraie], [#text(weight: "bold", fill: rgb("#15803d"))[VRAIE]],
+    [Fausse], [Fausse], [#text(weight: "bold", fill: rgb("#15803d"))[VRAIE]],
+  )]
+  , kind: table
+)
+
+#principe(title: [📐 Règle d'or — Le principe d'explosion (Ex falso quodlibet)])[
+Une implication $A arrow.r.double B$ n'est fausse que dans un #strong[unique cas] : lorsque l'hypothèse $A$ est vraie et que la conclusion $B$ est fausse.
+Dès que l'hypothèse $A$ est #strong[fausse], l'implication $A arrow.r.double B$ est #strong[toujours vraie], quelle que soit la vérité de $B$ !
+#emph[Exemple :] L'affirmation « Si $0 = 1$, alors la Lune est en fromage » est une implication formellement #strong[vraie], car son hypothèse de départ est fausse.
+]
+
+==== 4.2 Réciproque vs Contraposée
+<réciproque-vs-contraposée>
+À partir d'une implication directe $A arrow.r.double B$ :
+- Sa #strong[réciproque] est l'énoncé inversé : $B arrow.r.double A$. Une implication peut être vraie sans que sa réciproque le soit !
+- Sa #strong[contraposée] est l'énoncé des négations inversées : $not B arrow.r.double not A$.
+#principe(title: [📐 Théorème d'équivalence logique])[
+Une implication et sa contraposée ont #strong[exactement la même valeur de vérité] :
+$ (A arrow.r.double B) quad arrow.l.r.double quad (not B arrow.r.double not A) $
+Démontrer la contraposée revient à démontrer l'implication de départ.
 ]
 
 #divider()
@@ -25917,10 +25994,10 @@ Deux cas se présentent selon le signe de $a$ :
   $\[alpha thin\;+ oo\[$.
 
 #principe(title: [📐 Propriétés fondamentales de la parabole —])[
-- Le #strong[sommet] de la parabole est le point $S\(alpha thin\;beta\)$
-  avec $alpha = - frac(b, 2 a)$ et $beta = f\(alpha\)$.
-- La droite verticale d'équation $x = alpha$ est l'#strong[axe de
-  symétrie] de la parabole.
+- Le #strong[sommet] de la parabole est le point $S\(alpha thin\;beta\)$ avec :
+  $ alpha = - frac(b, 2 a) quad upright("et") quad beta = f\(alpha\)= - frac(Delta, 4 a) = - frac(b^2 - 4 a c, 4 a) $
+  #strong[Attention impérative au signe moins :] Le piège le plus classique consiste à oublier le signe négatif devant $b / (2 a)$ ou devant $Delta / (4 a)$ !
+- La droite verticale d'équation $x = alpha = - frac(b, 2 a)$ est l'#strong[axe de symétrie] de la parabole.
 ]
 
 #divider()
@@ -26835,6 +26912,12 @@ arithmétique :
 $ #box(stroke: black, inset: 3pt, [$ S = sum_(k = p)^n u_k = u_p + u_(p + 1) + dots.h + u_n =\(upright("nombre de termes")\)times frac(upright("premier terme") + upright("dernier terme"), 2) $]) $
 où le nombre de termes est donné par :
 $upright("dernier indice") - upright("premier indice") + 1 = n - p + 1$.
+]
+
+#alerte(title: [Attention au Piège ! --- Le comptage des termes ($n+1$ vs $n$)])[
+Pour une somme démarrant à l'indice $0$ :
+$ sum_(k=0)^n u_k = u_0 + u_1 + dots.h + u_n = (n + 1) times frac(u_0 + u_n, 2) $
+L'erreur la plus fréquente des élèves est d'écrire $n$ au lieu de $n + 1$ parce que le dernier indice est $n$. Or, de $0$ à $n$, il y a #strong[$n - 0 + 1 = n + 1$ termes] (tout comme il y a 11 piquets pour délimiter 10 intervalles consécutifs) !
 ]
 
 #divider()
@@ -33078,6 +33161,11 @@ sert.\] Donc $cal(P)\(n + 1\)$ est vraie.
 vraie pour tout entier $n gt.eq n_0$.
 ]
 
+#alerte(title: [Attention au Piège de Rédaction ! --- Ne jamais supposer la propriété vraie pour tout $n$])[
+Dans la phase d'hérédité, il faut impérativement écrire : #emph[« Soit un entier $n gt.eq n_0$ fixé. Supposons $cal(P)(n)$ vraie pour cet entier $n$… »]
+#strong[L'erreur fatale :] Écrire « Supposons que $cal(P)(n)$ est vraie pour tout $n$ » ! Si tu supposes que la propriété est vraie pour tout $n$, tu supposes le résultat final avant même de l'avoir démontré : c'est une faute logique grave de pétition de principe qui invalide toute la démonstration.
+]
+
 Trois conseils d'expert : 1. #strong[Écris le but] (l'énoncé au rang
 $n + 1$) avant de calculer : tu sais où tu vas. 2. #strong[Pars du
 membre au rang $n + 1$] et fais-y apparaître le membre au rang $n$ pour
@@ -34804,17 +34892,17 @@ Quand la fonction exponentielle affronte un polynôme ou une puissance de
 $x$ en l'infini, l'explosion de $e^x$ surpasse infiniment toute
 croissance polynomiale.
 
-#principe(title: [📐 Théorème — Croissances comparées de l'exponentielle.])[
- Pour
-tout entier naturel $n gt.eq 1$ : 1.
-$lim_(x arrow.r + oo) e^x / x = + oo$ $quad$ et plus généralement $quad$
-$lim_(x arrow.r + oo) e^x / x^n = + oo$ 2.
-$lim_(x arrow.r - oo) x thin e^x = 0$ $quad$ et plus généralement $quad$
-$lim_(x arrow.r - oo) x^n thin e^x = 0$
+#principe(title: [📐 Théorème — Croissances comparées (Exponentielle, Puissances, Logarithme).])[
+Pour tout entier naturel $n gt.eq 1$ :
+1. #strong[Domination de l'exponentielle en $+ oo$ :]
+   $lim_(x arrow.r + oo) frac(e^x, x^n) = + oo quad upright("et") quad lim_(x arrow.r + oo) frac(x^n, e^x) = 0$
+2. #strong[Domination de l'exponentielle en $- oo$ :]
+   $lim_(x arrow.r - oo) x^n thin e^x = 0$
+3. #strong[Domination des puissances sur le logarithme en $+ oo$ et en $0$ :]
+   $lim_(x arrow.r + oo) frac(ln x, x^n) = 0 quad upright("et") quad lim_(x arrow.r 0^+) x^n thin ln x = 0$
 ]
 
-#emph[Règle mnémotechnique :] En $+ oo$ comme en $- oo$,
-#strong[l'exponentielle l'emporte toujours sur les puissances de $x$].
+#emph[Hiérarchie universelle en $+ oo$ :] $ln x thin thin << thin thin x^n thin thin << thin thin e^x$. L'exponentielle écrase les puissances, qui écrasent le logarithme !
 
 ==== Démonstration exigible au baccalauréat : $lim_(x arrow.r + oo) e^x / x = + oo$
 <démonstration-exigible-au-baccalauréat-lim_x-to-infty-fracexx-infty>
@@ -40057,6 +40145,20 @@ $ y = x . $ Pour $x approx 0$, l'approximation affine donne
 #strong[$sin x approx x$]. C'est la célèbre approximation des petits
 angles utilisée par tous les physiciens !
 
+==== 4.3 Étude de la fonction tangente
+<étude-de-la-fonction-tangente>
+La fonction tangente est définie par le quotient :
+$ tan(x) = frac(sin x, cos x) $
+Elle est définie pour tous les réels où le dénominateur ne s'annule pas, c'est-à-dire pour $x eq.not pi / 2 + k pi$ ($k in bb(Z)$).
+
+#principe(title: [📐 Propriétés fondamentales de la fonction tangente])[
+- #strong[Périodicité et parité :] La fonction tangente est #strong[impaire] ($tan(- x) = - tan(x)$) et #strong[$pi$-périodique] (et non $2 pi$) :
+  $ tan(x + pi) = frac(sin(x + pi), cos(x + pi)) = frac(- sin x, - cos x) = tan(x) $
+- #strong[Dérivée remarquable :] Pour tout $x in bb(R) backslash {pi / 2 + k pi}$ :
+  $ tan'(x) = frac(cos(x) cos(x) - sin(x) (- sin x), cos^2(x)) = frac(cos^2 x + sin^2 x, cos^2 x) = frac(1, cos^2(x)) = 1 + tan^2(x) $
+  Puisque $1 + tan^2(x) > 0$, la fonction tangente est #strong[strictement croissante] sur chaque intervalle $]- pi / 2 + k pi thin;thin pi / 2 + k pi[$.
+]
+
 #divider()
 
 === 5. Résolution d'équations et inéquations trigonométriques
@@ -42143,6 +42245,11 @@ $ y_p\(t\)= - b / a . $ On l'appelle souvent #strong[l'état d'équilibre]
 ou le régime permanent du système.
 ]
 
+#alerte(title: [Rigueur d'Analyse --- Forme canonique et raccordement aux points singuliers])[
+Pour une équation différentielle générale de la forme $a(t) y' + b(t) y = c(t)$, la division par $a(t)$ pour obtenir la forme canonique $y' + frac(b(t), a(t)) y = frac(c(t), a(t))$ n'est licite que sur un intervalle où $a(t) eq.not 0$.
+Aux points où $a(t_0) = 0$, les solutions obtenues sur les intervalles disjoints doivent faire l'objet d'un #strong[raccordement par continuité et dérivabilité].
+]
+
 ==== 3.2 Théorème de structure des solutions
 <théorème-de-structure-des-solutions>
 #principe(title: [📐 Théorème (Résolution générale de $y' = a y + b$) —])[
@@ -44047,6 +44154,11 @@ On retrouve exactement notre calcul intuitif du vestiaire !
 
 ==== 4.3 Propriétés fondamentales des combinaisons
 <propriétés-fondamentales-des-combinaisons>
++ #strong[Condition d'existence et convention de prolongement :]
+  Pour tous entiers $n gt.eq 0$ et $0 lt.eq k lt.eq n$, $binom(n, k) = frac(n !, k ! (n - k) !)$.
+  Si $k < 0$ ou si $k > n$, il est impossible de choisir $k$ éléments parmi $n$ : par convention combinatoire universelle, on pose :
+  $ binom(n, k) = 0 quad upright("pour tout ") k < 0 upright(" ou ") k > n $
+
 + #strong[Valeurs remarquables :]
   $ binom(n, 0) = 1 quad upright("(un seul ensemble vide)")\,quad binom(n, 1) = n\,quad binom(n, n) = 1 $
 
@@ -49591,6 +49703,30 @@ Le grand livre du monde est désormais ouvert devant tes yeux. Tu en connais la 
   ]
 )
 
+#v(8pt)
+#grid(
+  columns: (1fr, 1fr),
+  gutter: 14pt,
+  block(fill: rgb("#fefce8"), stroke: 1.5pt + rgb("#ca8a04"), inset: 12pt, radius: 6pt, width: 100%)[
+    #align(center)[#text(weight: "bold", fill: rgb("#854d0e"), size: 11pt)[Formules d'Euler]]
+    #v(6pt)
+    #align(center)[
+      $ cos(theta) = frac(e^(i theta) + e^(- i theta), 2) $
+      #v(6pt)
+      $ sin(theta) = frac(e^(i theta) - e^(- i theta), 2 i) $
+    ]
+  ],
+  block(fill: rgb("#faf5ff"), stroke: 1.5pt + rgb("#7c3aed"), inset: 12pt, radius: 6pt, width: 100%)[
+    #align(center)[#text(weight: "bold", fill: rgb("#6b21a8"), size: 11pt)[Formule de De Moivre]]
+    #v(6pt)
+    #align(center)[
+      $ (cos theta + i sin theta)^n = cos(n theta) + i sin(n theta) $
+      #v(6pt)
+      $ upright("pour tout ") theta in bb(R) upright(" et tout ") n in bb(Z) $
+    ]
+  ]
+)
+
 #v(0.3cm)
 == III. Table Universelle des Dérivées Usuelles & Opérations
 
@@ -49607,8 +49743,9 @@ Le grand livre du monde est désormais ouvert devant tes yeux. Tu en connais la 
   [$k$ (constante)], [$0$], [$x in bb(R)$],
   [$x$], [$1$], [$x in bb(R)$],
   [$x^n$ ($n in bb(N)^*$)], [$n x^(n-1)$], [$x in bb(R)$],
-  [$1 / x$], [$- 1 / x^2$], [$x in bb(R)^*$],
+  [$1 / x$], [$- 1 / x^2$], [$x in ]-infinity thin; 0[ union ]0 thin; +infinity[$ (domaine non connexe)],
   [$sqrt(x)$], [$1 / (2 sqrt(x))$], [$x in ]0\,;+infinity[$],
+  [$tan(x)$], [$1 + tan^2(x) = frac(1, cos^2(x))$], [$x in bb(R) backslash {pi/2 + k pi thin; k in bb(Z)}$],
   [$e^x$], [$e^x$], [$x in bb(R)$ (l'unique fonction égale à sa dérivée avec $f(0)=1$)],
   [$ln(x)$], [$1 / x$], [$x in ]0\,;+infinity[$],
   [$cos(x)$], [$- sin(x)$], [$x in bb(R)$],

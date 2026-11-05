@@ -12111,6 +12111,15 @@ preceding minus sign! 3. #strong[Non-Standard Scientific Format:]
 #set enum(numbering: "1.", start: 4)
 + #strong[Multiplying Bases Instead of Adding Exponents:]
   $ 2^3 times 2^4 eq.not 4^7 quad upright("correct is") quad 2^(3 + 4) = 2^7 = 128 $
+
++ #strong[The Chessboard Pitfall (Last Square vs. Total Sum):]
+  Never confuse the number of grains placed on the #strong[final square] with the #strong[total cumulative sum] across the entire board!
+  - On the 64th square alone, there are:
+    $ 2^63 approx 9.22 times 10^18 upright(" grains") $
+    (since the first square holds $2^0 = 1$ grain, shifting the exponent down by one).
+  - In contrast, the grand total across all 64 squares is the sum of the geometric progression:
+    $ sum_(k=0)^63 2^k = 2^64 - 1 = upright(bold(18 thin 446 thin 744 thin 073 thin 709 thin 551 thin 615)) upright(" grains!") $
+  Writing $2^64$ flat instead of $2^64 - 1$, or confusing $2^63$ with the full sum, is a classic arithmetic error.
 ]
 ]
 
@@ -13946,6 +13955,20 @@ Paying with a $30 %$ discount is mathematically identical to paying
   $ C = 1 - t / 100 $ #emph[\(Example: a $15 %$ discount
   $arrow.r.double.long times 0.85$\; a $40 %$ discount
   $arrow.r.double.long times 0.60$)]
+]
+
+==== 3.3 Successive Changes and Reciprocal Evolution
+<successive-changes-and-reciprocal-evolution>
+#principe(title: [📐 Rule — Successive Changes and Reciprocal Evolution])[
+- #strong[Successive percentage changes:] To combine several consecutive percentage changes, one #strong[multiplies] the multipliers:
+  $ C_("global") = C_1 times C_2 times dots.h times C_n $
+  (One NEVER adds consecutive percentages directly!)
+- #strong[Reciprocal evolution:] To restore a quantity to its original value after a change governed by multiplier $C$, one must apply the inverse multiplier:
+  $ C' = frac(1, C) $
+  For an increase of $+ t$ (with $C = 1 + t$), the reciprocal rate $t'$ is given by:
+  $ t' = C' - 1 = frac(1, 1 + t) - 1 = frac(- t, 1 + t) $
+  #emph[Striking example:] To undo a $+ 20 %$ hike ($t = 0.20$), the required decrease is #strong[not] $- 20 %$, but:
+  $ t' = frac(- 0.20, 1 + 0.20) = - frac(0.20, 1.20) = - frac(1, 6) approx - 16.67 % ! $
 ]
 
 
@@ -17702,6 +17725,14 @@ $\(d\)$ into a line $\(d'\)$ that is #strong[strictly parallel] to it!
 It preserves orientation (a clockwise loop remains clockwise after a
 $180^compose$ rotation).
 
+#principe(title: [📐 Geometric Classification — Displacement vs. Anti-Displacement])[
+- #strong[Axial reflection is an anti-displacement (indirect isometry):]
+  It reverses the orientation of the plane (counterclockwise becomes clockwise). Two figures related by axial reflection can never be superimposed by sliding within the plane: one must lift off the page and perform a 3D spatial flip!
+- #strong[Central symmetry (point reflection) is a displacement (direct isometry):]
+  Being strictly equivalent to a planar rotation of $180^compose$ about center $O$, it #strong[preserves] the orientation of the plane. Two figures related by point reflection superimpose perfectly by a simple half-turn within the page, without ever leaving the plane.
+]
+
+
 #divider()
 
 === 3. The Two Rigid Motions: Translation and Rotation
@@ -20741,6 +20772,15 @@ fairly, meteorologists to predict storm patterns, and casinos to
 guarantee they never operate at a net loss over the course of a full
 year!
 
+#alerte(title: [Watch Out! Pitfall — The Gambler's Fallacy])[
+Suppose an honest coin lands on #strong[Heads 10 times in a row]. What is the probability of obtaining Heads on the 11th toss?
+- #strong[The common fallacy:] Believing that Tails is “due” to “balance” the series, or conversely that the coin is on a “hot streak.”
+- #strong[The mathematical truth:] The probability remains #strong[strictly equal to $1/2$ (or 50%)].
+#strong[Coins have no memory!] Consecutive tosses are #strong[stochastically independent] events:
+$ P(A inter B) = P(A) times P(B) $
+The past holds no influence over future independent trials. The Law of Large Numbers operates not by mystical short-term “compensation,” but by the gradual #strong[dilution] of random fluctuations over millions of trials.
+]
+
 #decouvre(title: [💡 True History — The Letters of Pascal and Fermat (1654)])[In
 1654, a Parisian gambler, the #strong[Chevalier de Méré], presented
 #strong[Blaise Pascal] with an enigma that set tavern arguments ablaze:
@@ -21887,6 +21927,44 @@ $- 3$ and $3$.
 ⚠️ The classic mistake “$x^2 > 9 arrow.l.r.double x > 3$” completely
 ignores the negative branch: $x = - 4$ indeed satisfies
 $\(- 4\)^2 = 16 > 9$.
+]
+
+=== 4. The Rules of the Court: Implication, Converse, and Negation
+<the-rules-of-the-court-implication-converse-and-negation>
+In the courtroom of mathematics, every word carries surgical precision. Confusing a conditional statement with its converse is the most widespread logical fallacy.
+
+==== 4.1 Material Implication ($A arrow.r.double B$) and Its Paradox
+<material-implication-and-its-paradox>
+The proposition “If $A$, then $B$” is denoted by $A arrow.r.double B$. In colloquial speech, one implies a physical or causal link. In mathematical logic, it is a #strong[formal truth relationship defined strictly by its truth table]:
+
+#figure(
+  align(center)[#table(
+    columns: (25%, 25%, 50%),
+    table.header([Premise $A$], [Conclusion $B$], [Implication $A arrow.r.double B$]),
+    table.hline(),
+    [True], [True], [#text(weight: "bold", fill: rgb("#15803d"))[TRUE]],
+    [True], [False], [#text(weight: "bold", fill: rgb("#dc2626"))[FALSE]],
+    [False], [True], [#text(weight: "bold", fill: rgb("#15803d"))[TRUE]],
+    [False], [False], [#text(weight: "bold", fill: rgb("#15803d"))[TRUE]],
+  )]
+  , kind: table
+)
+
+#principe(title: [📐 Golden Rule — The Principle of Explosion (Ex falso quodlibet)])[
+A conditional statement $A arrow.r.double B$ is false in #strong[only one single case]: when premise $A$ is true and conclusion $B$ is false.
+Whenever premise $A$ is #strong[false], the implication $A arrow.r.double B$ is #strong[vacuously true], regardless of the truth of $B$!
+#emph[Example:] The statement “If $0 = 1$, then the Moon is made of green cheese” is a mathematically #strong[true] implication, because its starting premise is false.
+]
+
+==== 4.2 Converse vs. Contrapositive
+<converse-vs-contrapositive>
+Starting from a direct conditional $A arrow.r.double B$:
+- Its #strong[converse] is the reversed statement: $B arrow.r.double A$. An implication can be true while its converse is false!
+- Its #strong[contrapositive] is the reversed negation: $not B arrow.r.double not A$.
+#principe(title: [📐 Logical Equivalence Theorem])[
+An implication and its contrapositive share #strong[the exact same truth value]:
+$ (A arrow.r.double B) quad arrow.l.r.double quad (not B arrow.r.double not A) $
+Proving the contrapositive is strictly equivalent to proving the direct statement.
 ]
 
 
@@ -24610,10 +24688,10 @@ Two cases arise depending on the sign of $a$:
 #quote_box[
 #strong[📐 Fundamental Properties of the Parabola ---]
 
-- The #strong[vertex] of the parabola is the point $S\(alpha\,beta\)$
-  with $alpha = - frac(b, 2 a)$ and $beta = f\(alpha\)$.
-- The vertical line with equation $x = alpha$ is the #strong[axis of
-  symmetry] of the parabola.
+- The #strong[vertex] of the parabola is the point $S\(alpha\,beta\)$ with:
+  $ alpha = - frac(b, 2 a) quad upright("and") quad beta = f\(alpha\)= - frac(Delta, 4 a) = - frac(b^2 - 4 a c, 4 a) $
+  #strong[Mandatory warning on minus signs:] The most common error is forgetting the negative sign in front of $b / (2 a)$ or in front of $Delta / (4 a)$!
+- The vertical line with equation $x = alpha = - frac(b, 2 a)$ is the #strong[axis of symmetry] of the parabola.
 ]
 
 
@@ -25492,6 +25570,12 @@ sequence:
 $ #box(stroke: black, inset: 3pt, [$ S = sum_(k = p)^n u_k = u_p + u_(p + 1) + dots.h + u_n =\(upright("number of terms")\)times frac(upright("first term") + upright("last term"), 2) $]) $
 where the number of terms is given by:
 $upright("last index") - upright("first index") + 1 = n - p + 1$.
+]
+
+#alerte(title: [Watch Out! Pitfall — Counting Terms ($n+1$ vs. $n$)])[
+For a sum beginning at index $0$:
+$ sum_(k=0)^n u_k = u_0 + u_1 + dots.h + u_n = (n + 1) times frac(u_0 + u_n, 2) $
+The most common student pitfall is writing $n$ instead of $n + 1$ because the upper index is $n$. However, from $0$ to $n$, there are #strong[$n - 0 + 1 = n + 1$ terms] (just as there are 11 fence posts bounding 10 consecutive fence sections)!
 ]
 
 
@@ -31492,6 +31576,11 @@ mathematical induction, $cal(P)\(n\)$ is true for every integer
 $n gt.eq n_0$.
 ]
 
+#alerte(title: [Watch Out! Proof Phrasing Trap — Never Assume the Property for All $n$])[
+In the induction step, one must strictly state: #emph[“Let $n gt.eq n_0$ be a fixed integer. Assume $cal(P)(n)$ holds for this fixed $n$…”]
+#strong[The fatal error:] Writing “Assume $cal(P)(n)$ holds for all $n$”! Assuming the property for all $n$ begs the question and assumes the conclusion in advance—a fatal circular logic fallacy that destroys the entire proof.
+]
+
 
 Three golden rules from exam graders: 1. #strong[Always write down the
 goal] (the statement at rank $n + 1$) before computing: know exactly
@@ -33188,16 +33277,17 @@ When the exponential function confronts a polynomial or a power of $x$
 at infinity, the explosive growth of $e^x$ infinitely surpasses any
 polynomial growth.
 
-#principe(title: [📐 Theorem — Comparative growth of the exponential function.])[For any natural number $n gt.eq 1$: 1.
-$lim_(x arrow.r + oo) e^x / x = + oo$ $quad$ and more generally $quad$
-$lim_(x arrow.r + oo) e^x / x^n = + oo$ 2.
-$lim_(x arrow.r - oo) x thin e^x = 0$ $quad$ and more generally $quad$
-$lim_(x arrow.r - oo) x^n thin e^x = 0$
+#principe(title: [📐 Theorem — Comparative Growth Rates (Exponential, Powers, Logarithm).])[
+For any positive integer $n gt.eq 1$:
+1. #strong[Exponential dominance at $+ oo$:]
+   $lim_(x arrow.r + oo) frac(e^x, x^n) = + oo quad upright("and") quad lim_(x arrow.r + oo) frac(x^n, e^x) = 0$
+2. #strong[Exponential dominance at $- oo$:]
+   $lim_(x arrow.r - oo) x^n thin e^x = 0$
+3. #strong[Power dominance over logarithm at $+ oo$ and $0$:]
+   $lim_(x arrow.r + oo) frac(ln x, x^n) = 0 quad upright("and") quad lim_(x arrow.r 0^+) x^n thin ln x = 0$
 ]
 
-
-#emph[Rule of thumb:] At $+ oo$ as well as at $- oo$, #strong[the
-exponential always dominates any power of $x$].
+#emph[Universal hierarchy at $+ oo$:] $ln x thin thin << thin thin x^n thin thin << thin thin e^x$. The exponential crushes polynomial powers, which in turn crush the logarithm!
 
 ==== Required Baccalaureate Proof: $lim_(x arrow.r + oo) e^x / x = + oo$
 <required-baccalaureate-proof-lim_x-to-infty-fracexx-infty>
@@ -38265,6 +38355,21 @@ The tangent line at the origin is: $ y = x . $ For $x approx 0$, the
 first-order approximation yields #strong[$sin x approx x$]. This is the
 celebrated small-angle approximation widely used in physics!
 
+==== 4.3 Comprehensive Analysis of the Tangent Function
+<comprehensive-analysis-of-the-tangent-function>
+The tangent function is defined as the quotient:
+$ tan(x) = frac(sin x, cos x) $
+It is defined for all real numbers where the denominator does not vanish: $x eq.not pi / 2 + k pi$ ($k in bb(Z)$).
+
+#principe(title: [📐 Fundamental Properties of the Tangent Function])[
+- #strong[Periodicity and parity:] Tangent is an #strong[odd] function ($tan(- x) = - tan(x)$) and is #strong[$pi$-periodic] (not $2 pi$):
+  $ tan(x + pi) = frac(sin(x + pi), cos(x + pi)) = frac(- sin x, - cos x) = tan(x) $
+- #strong[Remarkable derivative:] For all $x in bb(R) backslash {pi / 2 + k pi}$ :
+  $ tan'(x) = frac(cos(x) cos(x) - sin(x) (- sin x), cos^2(x)) = frac(cos^2 x + sin^2 x, cos^2 x) = frac(1, cos^2(x)) = 1 + tan^2(x) $
+  Since $1 + tan^2(x) > 0$, the tangent function is #strong[strictly increasing] on every open interval $]- pi / 2 + k pi thin;thin pi / 2 + k pi[$.
+]
+
+
 #divider()
 
 === 5. Solving Trigonometric Equations and Inequalities
@@ -40241,6 +40346,11 @@ $ y_p\(t\)= - b / a . $ In physical modeling, this value represents the
 #strong[steady-state equilibrium] of the system.
 ]
 
+#alerte(title: [Analytical Rigor — Canonical Form and Singular Points])[
+For a general differential equation of the form $a(t) y' + b(t) y = c(t)$, dividing by $a(t)$ to obtain the canonical form $y' + frac(b(t), a(t)) y = frac(c(t), a(t))$ is valid only on open intervals where $a(t) eq.not 0$.
+At points where $a(t_0) = 0$, solutions defined on disjoint intervals must be smoothly pasted together through #strong[continuity and differentiability matching].
+]
+
 
 ==== 3.2 Solution Structure Theorem
 <solution-structure-theorem>
@@ -42028,6 +42138,11 @@ We recover our intuitive calculation from the locker room!
 
 ==== 4.3 Fundamental Properties of Combinations
 <fundamental-properties-of-combinations>
++ #strong[Domain condition and extension convention:]
+  For all integers $n gt.eq 0$ and $0 lt.eq k lt.eq n$, $binom(n, k) = frac(n !, k ! (n - k) !)$.
+  If $k < 0$ or $k > n$, it is impossible to choose $k$ elements from $n$: by standard combinatorial convention:
+  $ binom(n, k) = 0 quad upright("for all ") k < 0 upright(" or ") k > n $
+
 + #strong[Notable Values:]
   $ binom(n, 0) = 1 quad upright("(a single empty set)")\,quad binom(n, 1) = n\,quad binom(n, n) = 1 $
 
@@ -47293,6 +47408,30 @@ The grand book of the world now lies wide open before your eyes. You speak its l
   ]
 )
 
+#v(8pt)
+#grid(
+  columns: (1fr, 1fr),
+  gutter: 14pt,
+  block(fill: rgb("#fefce8"), stroke: 1.5pt + rgb("#ca8a04"), inset: 12pt, radius: 6pt, width: 100%)[
+    #align(center)[#text(weight: "bold", fill: rgb("#854d0e"), size: 11pt)[Euler's Formulas]]
+    #v(6pt)
+    #align(center)[
+      $ cos(theta) = frac(e^(i theta) + e^(- i theta), 2) $
+      #v(6pt)
+      $ sin(theta) = frac(e^(i theta) - e^(- i theta), 2 i) $
+    ]
+  ],
+  block(fill: rgb("#faf5ff"), stroke: 1.5pt + rgb("#7c3aed"), inset: 12pt, radius: 6pt, width: 100%)[
+    #align(center)[#text(weight: "bold", fill: rgb("#6b21a8"), size: 11pt)[De Moivre's Formula]]
+    #v(6pt)
+    #align(center)[
+      $ (cos theta + i sin theta)^n = cos(n theta) + i sin(n theta) $
+      #v(6pt)
+      $ upright("for all ") theta in bb(R) upright(" and all ") n in bb(Z) $
+    ]
+  ]
+)
+
 #v(0.3cm)
 == III. Universal Table of Standard Derivatives & Operations
 
@@ -47309,8 +47448,9 @@ The grand book of the world now lies wide open before your eyes. You speak its l
   [$k$ (constant)], [$0$], [$x in bb(R)$],
   [$x$], [$1$], [$x in bb(R)$],
   [$x^n$ ($n in bb(N)^*$)], [$n x^(n-1)$], [$x in bb(R)$],
-  [$1 / x$], [$- 1 / x^2$], [$x in bb(R)^*$],
+  [$1 / x$], [$- 1 / x^2$], [$x in ]-infinity thin; 0[ union ]0 thin; +infinity[$ (disconnected domain)],
   [$sqrt(x)$], [$1 / (2 sqrt(x))$], [$x in ]0\,;+infinity[$],
+  [$tan(x)$], [$1 + tan^2(x) = frac(1, cos^2(x))$], [$x in bb(R) backslash {pi/2 + k pi thin; k in bb(Z)}$],
   [$e^x$], [$e^x$], [$x in bb(R)$ (unique function equal to its derivative with $f(0)=1$)],
   [$ln(x)$], [$1 / x$], [$x in ]0\,;+infinity[$],
   [$cos(x)$], [$- sin(x)$], [$x in bb(R)$],
