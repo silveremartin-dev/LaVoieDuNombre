@@ -1033,13 +1033,39 @@ digit do you write for each nest? #emph[Resolution:]
 <practice-exercises>
 ==== Level  (Foundation & Fluency)
 <level-foundation-fluency>
-#strong[Exercise 1.1] Flash glance! Look at each of the three boxes below
-for a single blink. State the quantity of dots without pointing your
-finger:
+#strong[Exercise 1.1] Quick flash! Look at the three boxes below for a
+single blink of an eye. State the quantity of dots in each box without
+pointing your finger:
 
-- Box A: #box(inset: (x: 8pt, y: 3pt), stroke: 1pt + rgb("#3b82f6"), radius: 4pt, fill: rgb("#eff6ff"))[#text(fill: rgb("#1d4ed8"))[●   ●]]
-- Box B: #box(inset: (x: 8pt, y: 3pt), stroke: 1pt + rgb("#3b82f6"), radius: 4pt, fill: rgb("#eff6ff"))[#text(fill: rgb("#1d4ed8"))[●]]
-- Box C: #box(inset: (x: 8pt, y: 3pt), stroke: 1pt + rgb("#3b82f6"), radius: 4pt, fill: rgb("#eff6ff"))[#text(fill: rgb("#1d4ed8"))[●   ●   ●]]
+#v(4pt)
+#align(center)[
+  #grid(
+    columns: (100pt, 100pt, 100pt),
+    gutter: 16pt,
+    block(stroke: 1.5pt + rgb("#1d4ed8"), fill: rgb("#eff6ff"), inset: 8pt, radius: 6pt)[
+      #text(weight: "bold", fill: rgb("#1e40af"), size: 10pt)[Box A]
+      #v(6pt)
+      #grid(columns: (1fr, 1fr), align: center,
+        circle(radius: 5pt, fill: rgb("#1d4ed8")),
+        circle(radius: 5pt, fill: rgb("#1d4ed8"))
+      )
+    ],
+    block(stroke: 1.5pt + rgb("#1d4ed8"), fill: rgb("#eff6ff"), inset: 8pt, radius: 6pt)[
+      #text(weight: "bold", fill: rgb("#1e40af"), size: 10pt)[Box B]
+      #v(6pt)
+      #circle(radius: 5pt, fill: rgb("#1d4ed8"))
+    ],
+    block(stroke: 1.5pt + rgb("#1d4ed8"), fill: rgb("#eff6ff"), inset: 8pt, radius: 6pt)[
+      #text(weight: "bold", fill: rgb("#1e40af"), size: 10pt)[Box C]
+      #v(6pt)
+      #grid(columns: (1fr, 1fr, 1fr), align: center,
+        circle(radius: 5pt, fill: rgb("#1d4ed8")),
+        circle(radius: 5pt, fill: rgb("#1d4ed8")),
+        circle(radius: 5pt, fill: rgb("#1d4ed8"))
+      )
+    ]
+  )
+]
 
 #strong[Exercise 1.2] Horses and saddles. In a pasture, there are 4
 horses. In the stable, there are 4 saddles. Are there enough saddles for

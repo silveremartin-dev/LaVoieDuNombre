@@ -1101,13 +1101,39 @@ oisillon. Quel chiffre écris-tu pour chaque nid ? #emph[Résolution :]
 <exercices>
 ==== Niveau  (Je m'entraîne et j'applique)
 <niveau-je-mentraîne-et-japplique>
-#strong[Exercice 1.1] Coup d'œil flash ! Regarde les trois dessins
+#strong[Exercice 1.1] Coup d'œil flash ! Regarde les trois boîtes
 ci-dessous pendant un seul battement de cil. Donne la quantité de ronds
 de chaque boîte sans pointer ton doigt :
 
-- Boîte A : #box(inset: (x: 8pt, y: 3pt), stroke: 1pt + rgb("#3b82f6"), radius: 4pt, fill: rgb("#eff6ff"))[#text(fill: rgb("#1d4ed8"))[●   ●]]
-- Boîte B : #box(inset: (x: 8pt, y: 3pt), stroke: 1pt + rgb("#3b82f6"), radius: 4pt, fill: rgb("#eff6ff"))[#text(fill: rgb("#1d4ed8"))[●]]
-- Boîte C : #box(inset: (x: 8pt, y: 3pt), stroke: 1pt + rgb("#3b82f6"), radius: 4pt, fill: rgb("#eff6ff"))[#text(fill: rgb("#1d4ed8"))[●   ●   ●]]
+#v(4pt)
+#align(center)[
+  #grid(
+    columns: (100pt, 100pt, 100pt),
+    gutter: 16pt,
+    block(stroke: 1.5pt + rgb("#1d4ed8"), fill: rgb("#eff6ff"), inset: 8pt, radius: 6pt)[
+      #text(weight: "bold", fill: rgb("#1e40af"), size: 10pt)[Boîte A]
+      #v(6pt)
+      #grid(columns: (1fr, 1fr), align: center,
+        circle(radius: 5pt, fill: rgb("#1d4ed8")),
+        circle(radius: 5pt, fill: rgb("#1d4ed8"))
+      )
+    ],
+    block(stroke: 1.5pt + rgb("#1d4ed8"), fill: rgb("#eff6ff"), inset: 8pt, radius: 6pt)[
+      #text(weight: "bold", fill: rgb("#1e40af"), size: 10pt)[Boîte B]
+      #v(6pt)
+      #circle(radius: 5pt, fill: rgb("#1d4ed8"))
+    ],
+    block(stroke: 1.5pt + rgb("#1d4ed8"), fill: rgb("#eff6ff"), inset: 8pt, radius: 6pt)[
+      #text(weight: "bold", fill: rgb("#1e40af"), size: 10pt)[Boîte C]
+      #v(6pt)
+      #grid(columns: (1fr, 1fr, 1fr), align: center,
+        circle(radius: 5pt, fill: rgb("#1d4ed8")),
+        circle(radius: 5pt, fill: rgb("#1d4ed8")),
+        circle(radius: 5pt, fill: rgb("#1d4ed8"))
+      )
+    ]
+  )
+]
 
 #strong[Exercice 1.2] Les chevaux et les selles. Dans un pré, il y a 4
 chevaux. Dans l'écurie, il y a 4 selles. Y a-t-il assez de selles pour
